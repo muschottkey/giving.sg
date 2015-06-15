@@ -91,8 +91,3 @@ $('#signupForm').validate({
         }
     });
 })
-
-/*
-YUI().use(
-  'aui-viewport'
-);*/

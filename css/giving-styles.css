@@ -1,26 +1,20 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 html, body {height:100%;}
-body {
-    font:16px/1.25 Arial, Helvetica, sans-serif; margin:0 auto; 
-  
-}
-.wrapper { width:100%; }
+body { font:16px/1.25 Arial, Helvetica, sans-serif; margin:0 auto; }
 
+.wrapper { width:100%; }
 .navbar { background: #efefef; }
 
 /* Modal Boxes */
-.modal {  max-width: 600px; }
 .modal-header { text-align: center; }
 .modal-body { max-height: 100%; }
 .modal.fade { display: none; }
 .modal.fade.in { display: block; }
-
 .control-group { margin-top:1.5em; }
 
 /* Social Media */ 
 .modal .social-media-signup { margin:30px auto; padding:0 1em 0 0; }
-
 .modal .social-media-signup a {
     padding: 8px; margin:0 0 30px 0; clear: both; float: left;
     color: #fff; border-radius: 5px; width:100%;
@@ -31,7 +25,6 @@ body {
 .modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
     .modal .social-media-signup a.facebook { background-color: #334479; }
     .modal .social-media-signup a.linkedin { background-color: #1379C3; }
-
 
 /* Modal Box - FORMs */
 .modal input { font-size:1em; }
@@ -47,82 +40,26 @@ body {
 .modal .forgot-pwd { display: block; }
     .forgot-pwd a.txt-forgot { position: absolute; right:0; font-size:.9em; }
 
-
-/* line 52, ../sass/main.scss */
-.modal .modal-footer {
-  padding: 0;
-  background: #535353;
-  text-align: center;
-  padding: 10px 5px;
-}
-/* line 58, ../sass/main.scss */
-.modal .modal-footer span {
-  color: #ffffff;
-}
-/* line 62, ../sass/main.scss */
-.modal .modal-footer a {
-  margin-left: 10px;
-  color: #E58A23;
-}
-
-
-
-
-
 /* UI Controls  */
 .error-feedback { display:none; }
 .validation-feedback i { font-size: 1.2em; top:-18px; }
 
-
 .control-group.error .validation-feedback i { color: #FC353A; }
 .control-group.success .validation-feedback i { color: #468847; }
 
-/* line 145, ../sass/main.scss */
-.form-wrapper form button {
-  margin: 0 auto;
-}
+/* Modal Box - Footer */
+.modal .modal-footer { background: #535353; text-align: center; padding: 10px 5px; }
+.modal .modal-footer span {  color: #fff; }
+.modal .modal-footer a { margin-left: 10px; color: #E58A23; }
 
-/* line 164, ../sass/main.scss */
+.social-media-signup:after { content:""; clear:both; display:block; }
 
 
 @media (min-width: 1200px) {
-  /* line 192, ../sass/main.scss */
-  .form-wrapper .sign-up {
-    width: 250px;
-  }
-  /* line 195, ../sass/main.scss */
-  .form-wrapper .modal {
-    width: 600px;
-  }
-  /* line 198, ../sass/main.scss */
-  .form-wrapper .span6.float-reset {
-    border-left: 2px solid #e3e3e3;
-    padding-left: 20px;
-    margin-left: 0;
-  }
 }
-@media (min-width: 768px) and (max-width: 979px) {
-  /* line 207, ../sass/main.scss */
-  .form-wrapper .modal {
-    width: 500px;
-  }
-  /* line 210, ../sass/main.scss */
-  .form-wrapper .span6.float-reset {
-    border-left: 2px solid #e3e3e3;
-    padding-left: 20px;
-    margin-left: 0;
-  }
+@media (min-width: 768px)  {
+    #signupModal .float-reset { border-left:1px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
 }
 @media (max-width: 767px) {
-  /* line 225, ../sass/main.scss */
-  .form-wrapper .span6.float-reset {
-    float: none !important;
-    border-left: none;
-  }
-  /* line 233, ../sass/main.scss */
-  .form-wrapper .social-media-signup a {
-    text-align: center;
-    clear: none;
-    width: 95%;
-  }
+    .social-media-signup a { text-align: center;  }
 }

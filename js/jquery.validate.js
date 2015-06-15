@@ -10,7 +10,6 @@
  */
 
 (function($) {
-
 $.extend($.fn, {
 	// http://docs.jquery.com/Plugins/Validation/validate
 	validate: function( options ) {
