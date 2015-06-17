@@ -1,6 +1,6 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-html, body {height:100%;}
+html, body {height:100%;padding-top: 30px;}
 body { font:16px/1.25 Arial, Helvetica, sans-serif; margin:0 auto; }
 
 .wrapper { width:100%; }
@@ -54,12 +54,53 @@ body { font:16px/1.25 Arial, Helvetica, sans-serif; margin:0 auto; }
 
 .social-media-signup:after { content:""; clear:both; display:block; }
 
+/*Signup verification page*/
+
+.signup-wrapper{
+    margin: 0 auto;
+    float: none;
+    min-width: 300px;
+}
+
+
+/*Signup page icon*/
+i.signup-envelope{
+    font-size: 3em;
+}
+
+/*signup sections*/
+.signup-section{
+    margin-bottom:20px;
+    font: 14px/1.25 Arial, Helvetica, sans-serif;}
+a.resendmail{
+    text-decoration: underline;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-top: 10px;
+}
+.signup-section .alert{
+    padding: 20px;
+}
+
+.signup-section .alert p{
+    margin: 0 0 5px;
+}
+
+.signup-section h3, .signup-section h5{
+    font-weight: 700;
+}
 
 @media (min-width: 1200px) {
 }
+
+@media (max-width: 979px){
+    html, body {height:100%;padding-top: 0px;}
+}
+
 @media (min-width: 768px)  {
     #signupModal .float-reset { border-left:1px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
 }
 @media (max-width: 767px) {
     .social-media-signup a { text-align: center;  }
 }
+
