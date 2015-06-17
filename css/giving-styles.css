@@ -122,6 +122,14 @@ a.resendmail{
 
 /* reset password */
 
+#resetpwd-header h2{
+    margin-bottom: 0;
+}
+
+#resetpwd-header h3{
+    margin-top: 0;
+}
+
 #respwdForm input:not([type="checkbox"]){
     margin-bottom: 0;
 }
