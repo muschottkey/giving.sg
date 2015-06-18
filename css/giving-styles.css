@@ -54,8 +54,8 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
 .social-media-signup:after { content:""; clear:both; display:block; }
 
-/*Signup verification page*/
 
+<<<<<<< HEAD
 .signup-wrapper{
     margin: 0 auto;
     float: none;
@@ -143,6 +143,20 @@ a.resendmail{
     text-transform: uppercase;
     text-decoration: underline;
 }
+
+/* Details  page*/
+.row h3 { font-size:2em; } 
+.row h4 { font-size:1.375em; }
+.row h5 { font-size:1.125em; font-weight:normal; }
+
+.signup-wrapper { margin: 0 auto; float: none; min-width: 320px; }
+    i.signup-envelope { font-size: 4em; }
+
+.signup-section { margin-bottom:20px; }
+a.resendmail{ text-decoration: underline; font-size: 0.8em; display: inline-block; margin-top: 10px; }
+.signup-section .alert{ padding:1em 2em; }
+
+
 
 @media (min-width: 1200px) {
 }
