@@ -3,7 +3,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 html, body {padding-top: 30px;}
 body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
-.wrapper { width:100%; }
+.wrapper { width:100%; } 
 .navbar { background: #efefef; }
 
 /* Modal Boxes */
