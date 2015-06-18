@@ -56,6 +56,97 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+.signup-wrapper{
+    margin: 0 auto;
+    float: none;
+    min-width: 300px;
+    max-width:300px;
+}
+
+.signup-wrapper h1, .signup-wrapper h2, .signup-wrapper h3, .signup-wrapper h4, .signup-wrapper h5{
+    font-family: "Nunito", sans-serif;
+}
+
+.signup-wrapper h2{
+    font-size: 36px;
+
+}
+
+.signup-wrapper h3{
+    font-size: 24px;
+}
+
+.signup-wrapper h4{
+    font-size: 18px;
+}
+
+
+
+
+
+/*Signup page icon*/
+i.signup-envelope{
+    font-size: 90px;
+}
+
+/*signup sections*/
+.signup-section{
+    margin-bottom:20px;
+}
+a.resendmail{
+    text-decoration: underline;
+    font-size: 0.8em;
+    display: inline-block;
+    margin-top: 10px;
+}
+.signup-section .alert{
+    padding: 20px;
+}
+
+.signup-section .alert p{
+    margin: 0 0 5px;
+    font-weight: normal;
+    color: #3a87ad;
+}
+
+.signup-section h1, .signup-section h2, .signup-section h3 {
+    font-weight: 700;
+    color: #4a4a4a;
+}
+
+.signup-section h4{
+    font-weight: normal;
+    color: #333333;
+}
+
+
+/* reset password */
+
+#resetpwd-header h2{
+    margin-bottom: 0;
+}
+
+#resetpwd-header h3{
+    margin-top: 0;
+}
+
+#respwdForm input:not([type="checkbox"]){
+    margin-bottom: 0;
+}
+
+#respwdForm .validation-feedback {
+    position: absolute; display: none; background: transparent; 
+    height: 15px; margin-top:7px; right: initial; margin-left: 280px;
+}
+
+.alternate-actions{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+>>>>>>> origin/master
 /* Details  page*/
 .row h3 { font-size:2em; } 
 .row h4 { font-size:1.375em; }
@@ -70,6 +161,7 @@ a.resendmail{ text-decoration: underline; font-size: 0.8em; display: inline-bloc
 
 
 
+<<<<<<< HEAD
 =======
 .signup-wrapper{
     margin: 0 auto;
@@ -160,6 +252,8 @@ a.resendmail{
 }
 >>>>>>> origin/byryan
 
+=======
+>>>>>>> origin/master
 @media (min-width: 1200px) {
 }
 
