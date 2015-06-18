@@ -3,7 +3,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 html, body {padding-top: 30px;}
 body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
-.wrapper { width:100%; } 
+/* Typography */
+h1, h2, h3, h4, h5 { font-family: "Roboto", Arial, sans-serif; color:#4a4a4a; font-weight:700; }
+h3 { font-size:2.25em; }
+h4 { font-size: 1.5em; }
+h5 { font-size: 1.2em; font-weight:normal; color:#333; }
+
+.wrapper { width:100%; }
 .navbar { background: #efefef; }
 
 /* Modal Boxes */
@@ -11,7 +17,7 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 .modal-body { max-height: 100%; }
 .modal.fade { display: none; }
 .modal.fade.in { display: block; }
-.control-group { margin-top:1.5em; }
+.control-group { margin-top:2em; position:relative; }
 
 /* Social Media */ 
 .modal .social-media-signup { margin:30px auto; padding:0 1em 0 0; }
@@ -35,7 +41,6 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
     position: absolute; display: none; background: transparent; 
     height: 15px; margin-top:7px; right:15px;
 }
-    .modal .success .validation-feedback { margin-top:7px; }
 
 .modal .forgot-pwd { display: block; }
     .forgot-pwd a.txt-forgot { position: absolute; right:0; font-size:.9em; }
@@ -54,72 +59,14 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
 .social-media-signup:after { content:""; clear:both; display:block; }
 
-.signup-wrapper{
-    margin: 0 auto;
-    float: none;
-    min-width: 300px;
-    max-width:300px;
-}
-
-.signup-wrapper h1, .signup-wrapper h2, .signup-wrapper h3, .signup-wrapper h4, .signup-wrapper h5{
-    font-family: "Nunito", sans-serif;
-}
-
-.signup-wrapper h2{
-    font-size: 36px;
-
-}
-
-.signup-wrapper h3{
-    font-size: 24px;
-}
-
-.signup-wrapper h4{
-    font-size: 18px;
-}
-
-
-
-
-
-/*Signup page icon*/
-i.signup-envelope{
-    font-size: 90px;
-}
-
-/*signup sections*/
-.signup-section{
-    margin-bottom:20px;
-}
-a.resendmail{
-    text-decoration: underline;
-    font-size: 0.8em;
-    display: inline-block;
-    margin-top: 10px;
-}
-.signup-section .alert{
-    padding: 20px;
-}
-
-.signup-section .alert p{
-    margin: 0 0 5px;
-    font-weight: normal;
-    color: #3a87ad;
-}
-
-.signup-section h1, .signup-section h2, .signup-section h3 {
-    font-weight: 700;
-    color: #4a4a4a;
-}
-
-.signup-section h4{
-    font-weight: normal;
-    color: #333333;
-}
-
+/* Sign Up Page */
+.signup-wrapper .span4 { margin: 0 auto; float:none; max-width:320px; width:320px; }
+.signup-section { margin-bottom:30px; }
+i.signup-envelope { font-size:5.625em; }
+a.resendmail { text-decoration:underline; font-size:.875em; }
+.signup-section .alert { padding:1em 1.5em; }
 
 /* reset password */
-
 #resetpwd-header h2{
     margin-bottom: 0;
 }
@@ -127,119 +74,9 @@ a.resendmail{
 #resetpwd-header h3{
     margin-top: 0;
 }
-
 #respwdForm input:not([type="checkbox"]){
     margin-bottom: 0;
 }
-
-#respwdForm .validation-feedback {
-    position: absolute; display: none; background: transparent; 
-    height: 15px; margin-top:7px; right: initial; margin-left: 280px;
-}
-
-.alternate-actions{
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-/* Details  page*/
-.row h3 { font-size:2em; } 
-.row h4 { font-size:1.375em; }
-.row h5 { font-size:1.125em; font-weight:normal; }
-
-.signup-wrapper { margin: 0 auto; float: none; min-width: 320px; }
-    i.signup-envelope { font-size: 4em; }
-
-.signup-section { margin-bottom:20px; }
-a.resendmail{ text-decoration: underline; font-size: 0.8em; display: inline-block; margin-top: 10px; }
-.signup-section .alert{ padding:1em 2em; }
-
-
-
-
-.signup-wrapper{
-    margin: 0 auto;
-    float: none;
-    min-width: 300px;
-    max-width:300px;
-}
-
-.signup-wrapper h1, .signup-wrapper h2, .signup-wrapper h3, .signup-wrapper h4, .signup-wrapper h5{
-    font-family: "Nunito", sans-serif;
-}
-
-.signup-wrapper h2{
-    font-size: 36px;
-
-}
-
-.signup-wrapper h3{
-    font-size: 24px;
-}
-
-.signup-wrapper h4{
-    font-size: 18px;
-}
-
-
-
-
-
-/*Signup page icon*/
-i.signup-envelope{
-    font-size: 90px;
-}
-
-/*signup sections*/
-.signup-section{
-    margin-bottom:20px;
-}
-a.resendmail{
-    text-decoration: underline;
-    font-size: 0.8em;
-    display: inline-block;
-    margin-top: 10px;
-}
-.signup-section .alert{
-    padding: 20px;
-}
-
-.signup-section .alert p{
-    margin: 0 0 5px;
-    font-weight: normal;
-    color: #3a87ad;
-}
-
-.signup-section h1, .signup-section h2, .signup-section h3 {
-    font-weight: 700;
-    color: #4a4a4a;
-}
-
-.signup-section h4{
-    font-weight: normal;
-    color: #333333;
-}
-
-
-/* reset password */
-
-#resetpwd-header h2{
-    margin-bottom: 0;
-}
-
-#resetpwd-header h3{
-    margin-top: 0;
-}
-
-#respwdForm input:not([type="checkbox"]){
-    margin-bottom: 0;
-}
-
-#respwdForm .validation-feedback {
-    position: absolute; display: none; background: transparent; 
-    height: 15px; margin-top:7px; right: initial; margin-left: 280px;
-}
-
 .alternate-actions{
     text-transform: uppercase;
     text-decoration: underline;
@@ -258,4 +95,3 @@ a.resendmail{
 @media (max-width: 767px) {
     .social-media-signup a { text-align: center;  }
 }
-

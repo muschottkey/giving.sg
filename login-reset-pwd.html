@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Sign Up page</title>
+	<title>Reset Password | Log In</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="">
 	<meta name="author" content="">
@@ -11,10 +11,10 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/giving-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link href='http://fonts.googleapis.com/css?family=Nunito:400,700,300|Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:500,400italic,700italic,300,700,500italic,300italic,400' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<!-- 	<div class="wrapper"> -->
+	<div class="wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 	      	<div class="navbar-inner">
 	        	<div class="container">
@@ -27,58 +27,52 @@
 	        	</div>
 	      	</div>
 	    </div>
-	<!-- </div> -->
-	<div class="container">
-		<div class="row text-center">
-			<div class="span4 signup-wrapper resetpwd">
-				<div class="signup-section" id="resetpwd-header">
-					<h2>Create</h2>
-					<h3>New Password</h3>
-				</div>
-
-				<div class="signup-section">
-					<form id="respwdForm">
-						<div class="control-group">
-							<label class="control-label" for="password"><h4>Enter Your New Password</h4></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
-								<input name="spassword" id="spassword" placeholder="" class="form-control field-required" type="password">
-								<span class="help-block"><small>Your password should be 8-24 characters and contain atleast one number</small></span>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="conf_password"><h4>Re-enter Your New Password</h4></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="conf_password" id="conf_password" placeholder="" class="form-control field-required" type="password">
-								<span class="help-block"><small>Make sure the two passwords match</small></span>
-							</div>
-						</div>
-						<div class="control-group">	
-							<div class="controls">
-								<button type="button" class="btn btn-success btn-large ">SET PASSWORD</button>
-							</div>
-						</div>
-				    </form>
-				</div>
-
-				<div class="signup-section">
-					<small>Nah, I want to <a href="#" class="alternate-actions">Sign Up</a> or <a href="#" class="alternate-actions">Log In</a> instead</small>
-				</div>
-
-				
-			</div>
-			<div class="signup-section">
-					<small><a href="index.html" class="alternate-actions">Take me back to the home page</a></small>
-				</div>
-
-		</div>
-	</div>
-	<footer class="footer">
-		
-	</footer>
-
 	
+		<div class="container signup-wrapper">
+			<div class="row text-center">
+				<div class="span4 resetpwd" id="resetpwd-header">
+					<div class="signup-section">
+						<h3>Create</h3>
+						<h4>New Password</h4>
+					</div>
+
+					<div class="signup-section">
+						<form id="respwdForm">
+							<div class="control-group">
+								<label class="control-label" for="password"><h5>Enter Your New Password</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
+									<input name="spassword" id="spassword" placeholder="" class="form-control field-required" type="password">
+									<span class="help-block"><small>Your password should be 8-24 characters and contain atleast one number</small></span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="conf_password"><h5>Re-Enter Your New Password</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+									<input name="conf_password" id="conf_password" placeholder="" class="form-control field-required" type="password">
+									<span class="help-block"><small>Make sure the two passwords match</small></span>
+								</div>
+							</div>
+							<div class="control-group">	
+								<div class="controls">
+									<button type="button" class="btn btn-success btn-large ">SET PASSWORD</button>
+								</div>
+							</div>
+					    </form>
+					</div>
+					<div class="signup-section">
+						<small>Nah, I want to <a href="#" class="alternate-actions">Sign Up</a> or <a href="#" class="alternate-actions">Log In</a> instead</small>
+					</div>
+					<div class="signup-section">
+						<small><a href="index.html" class="alternate-actions">Take me back to the home page</a></small>
+					</div>
+				</div>
+			</div>
+		</div> <!-- container -->
+		<footer class="footer"> </footer>
+
+	</div> <!-- Wrapper -->
 
 	<script type="text/javascript" src="js/aui-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
