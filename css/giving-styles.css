@@ -54,10 +54,6 @@ body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
 
 .social-media-signup:after { content:""; clear:both; display:block; }
 
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 .signup-wrapper{
     margin: 0 auto;
     float: none;
@@ -146,7 +142,6 @@ a.resendmail{
     text-decoration: underline;
 }
 
->>>>>>> origin/master
 /* Details  page*/
 .row h3 { font-size:2em; } 
 .row h4 { font-size:1.375em; }
@@ -161,8 +156,7 @@ a.resendmail{ text-decoration: underline; font-size: 0.8em; display: inline-bloc
 
 
 
-<<<<<<< HEAD
-=======
+
 .signup-wrapper{
     margin: 0 auto;
     float: none;
@@ -250,10 +244,7 @@ a.resendmail{
     text-transform: uppercase;
     text-decoration: underline;
 }
->>>>>>> origin/byryan
 
-=======
->>>>>>> origin/master
 @media (min-width: 1200px) {
 }
 
