@@ -34,52 +34,70 @@
 		</div>
 	    <div class="modal-header">
 	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <h3 id="signupLabel">SIGN UP</h3>
+	        <div class="signup-section">
+		        <h3 id="signupLabel">Sign Up</h3>
+		        <h4 >for GIVING.SG</h4>
+	        </div>
 	    </div>
 	    <div class="modal-body">
 			<div class="row-fluid">
+				<div class="span12 text-center">
+					<div class="btn-group accTypeToggles" data-toggle="buttons-radio">
+						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Personal Account</span></button>
+						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i>Corporate Account</button>
+						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i>Not-for-profit Account</button>
+					</div>
+				</div>
 			    <div class="span6 social-media-signup">
+			    <h5 id="" class="text-center">Sign up via</h5>
 			        <a href="#" class="span-6 facebook"><i class="fa fa-facebook-square"></i>Login with Facebook</a>
 					<a href="#" class="span-6 linkedin"><i class="fa fa-linkedin-square"></i>Sign Up with LinkedIn</a>
 			    </div>
 				<div class="span6 float-reset">
+				<h5 id="" class="text-center">Create an account</h5>
 					<form id="signupForm">
 						<div class="control-group">
-							<label class="control-label" for="username"><h5>Name:</h5></label>
+							<label class="control-label" for="username"><h5>Display Name</h5></label>
 							<div class="controls">
 								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="username" id="username" placeholder="Enter your name" class="form-control field-required" type="text">
+								<input name="username" id="username" placeholder="E.g David the donor" class="form-control field-required" type="text">
+								<span class="help-block"><small>Enter your First name or a nickname</small></span>
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="email"><h5>Email:</h5></label>
+							<label class="control-label" for="email"><h5>Email Address</h5></label>
 							<div class="controls">
 								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="email" id="email" placeholder="Enter your email" class="form-control field-required field-email" type="email">
+								<input name="email" id="email" placeholder="mail@domain.com" class="form-control field-required field-email" type="email">
+								<span class="help-block"><small>We will be sending a verification email to this address</small></span>
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="password"><h5>Password:</h5></label>
+							<label class="control-label" for="password"><h5>Password</h5></label>
 							<div class="controls">
 								<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
-								<input name="spassword" id="spassword" placeholder="Enter your password" class="form-control field-required" type="password">
+								<input name="spassword" id="spassword" placeholder="Type your password here" class="form-control field-required" type="password">
+								<span class="help-block"><small>Your password should be 8-24 characters and contain atleast one number</small></span>
 							</div>
 						</div>
 						<div class="control-group">
-							<label class="control-label" for="conf_password"><h5>Confirm password:</h5></label>
+							<label class="control-label" for="conf_password"><h5>Re-Enter New password:</h5></label>
 							<div class="controls">
 								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="conf_password" id="conf_password" placeholder="Confirm your password" class="form-control field-required" type="password">
+								<input name="conf_password" id="conf_password" placeholder="Type your password here again" class="form-control field-required" type="password">
+								<span class="help-block"><small>Make sure the two passwords match</small></span>
 							</div>
 						</div>
 						<div class="control-group">
 							<div class="controls">
-								<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> <span style="font-size: 12px">By Signing up, I agree to Giving.sg's Terms &amp; Conditions and Privacy Policy<span>
+								<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
+								<span><small>YES, I AGREE</small></span>
+								<p><small>to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a></small></p>
 							</div> 
 						</div>
 						<div class="control-group">	
 							<div class="controls">
-								<button type="button" class="btn btn-default btn-large ">Sign Up</button>
+								<button type="button" class="btn btn-success btn-large ">Sign Up</button>
 							</div>
 						</div>
 				    </form>
