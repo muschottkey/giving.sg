@@ -15,15 +15,17 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
 /* Modal Boxes */
 .modal-header { text-align: center; }
 .modal-header .signup-section { margin-bottom: 0;}
+#signupModal .modal-header{border-bottom: none;}
 .modal.fade { display: none; }
 .modal.fade.in { display: block; }
 .control-group { margin-top:2em; position:relative; }
 
+
 /* Social Media */ 
-.modal .social-media-signup { margin:30px auto; padding:0 1em 0 0; }
+.modal .social-media-signup { margin:0; padding:0 1.8em 0 1.8em; }
 .modal .social-media-signup a {
-    padding: 8px; margin:0 0 30px 0; clear: both; float: left;
-    color: #fff; border-radius: 5px; width:100%;
+    padding: 8px; margin-bottom: 30px; clear: both; float: left;
+    color: #fff; border-radius: 2px; width:90%;text-align: center;
 }
 .modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
   text-decoration: none; opacity: 0.8;
@@ -53,11 +55,11 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
 .control-group.success .validation-feedback i { color: #468847; }
 
 /* Modal Box - Footer */
-.modal .modal-footer { background: #535353; text-align: center; padding: 10px 5px; }
-.modal .modal-footer span {  color: #fff; }
-.modal .modal-footer a { margin-left: 10px; color: #E58A23; }
+.modal .modal-footer { background: #A8A8A8; text-align: center; padding: 10px 5px; }
+.modal .modal-footer a { margin: 0 5px 0 5px;text-decoration: underline; }
 
 .social-media-signup:after { content:""; clear:both; display:block; }
+.sign-up-form{padding-left: 30px;padding-right: 30px;}
 
 /* Sign Up Page */
 .signup-wrapper .span4 { margin: 0 auto; float:none; max-width:320px; width:320px; }
@@ -65,24 +67,48 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
 i.signup-envelope { font-size:5.625em; }
 a.resendmail { text-decoration:underline; font-size:.875em; }
 .signup-section .alert { padding:1em 1.5em; }
-#signupModal .modal-header{
-    border-bottom: none;
-}
 
 .accTypeToggles{
-
+    margin-bottom: 20px;
+    width: 100%;
 }
 .accTypeToggles .btn{
     padding: 5px;
     width: 33%;
+    height: 60px;
+    background:#e6e6e6;
+}
+
+.accTypeToggles .btn.active{
+    background:#ffffff;
+    border-bottom-color: #DDDDDD;
+    box-shadow: none;
 }
 
 .accTypeToggles .btn i{
     margin-right: 10px;
+    font-size: 40px;
+    color: #cfcfcf;
 }
 
-accTypeToggles .btn span{
-    margin-right: 10px;
+.accTypeToggles .btn span{
+    margin-right: 0px;
+    width: 85px;
+    text-align: left;
+    font-size: 12px;
+    display: inline-block;
+    white-space: normal;
+}
+
+.or-separator{
+    right: calc(50% - 8px);
+    background: #cfcfcf;
+    border: 1px solid #7c7c7c;
+    border-radius: 50%;
+    padding: 6px;
+    position: absolute;
+    margin-top: 30px;
+    font-size: 0.8em;
 }
 
 /* reset password */
@@ -114,5 +140,12 @@ accTypeToggles .btn span{
     #signupModal .float-reset { border-left:1px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
 }
 @media (max-width: 767px) {
-    .social-media-signup a { text-align: center;  }
+    .modal .social-media-signup a { text-align: center;width: 100%;float: none;}
+    .modal form, .modal input:not([type=checkbox]){text-align: center;}
+    .accTypeToggles .btn{height: auto;}
+    .accTypeToggles .btn span{width: 100%;float: left;text-align: center;}
+    .or-separator{position: relative;right: auto;left: calc(50% - 10px);top: 30px;}
+    .sign-up-form{margin-top: 50px;}
+
+
 }
