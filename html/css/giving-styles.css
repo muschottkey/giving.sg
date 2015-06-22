@@ -33,7 +33,7 @@ p.small { font-size:.875em; margin-top:5px; }
 .control-group { margin-top:2em; position:relative; }
 
 
-#signupModal .modal-header{border-bottom: none;}
+#signupModal .modal-header,#signupModalNPO .modal-header{border-bottom: none;}
 
 #loginModal.modal { max-width:600px !important; } 
 #signupModal.modal { max-width:720px !important; } 
@@ -179,8 +179,18 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
     line-height: 1em;
     font-size: 0.7em;
     text-align: left;
-
 }
+
+#signupModalNPO .progress-dots ul li .step-label{
+    margin-right: 0;
+    margin-left:10px;width: 40%;
+    line-height: 1em;
+    font-size: 0.7em;
+    text-align: left;
+}
+
+/* NPO signup modal */
+#signupModalNPO input:not([type=checkbox]){text-align: center;}
 
 
 

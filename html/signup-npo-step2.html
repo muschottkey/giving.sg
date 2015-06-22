@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Sign Up</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/giving-styles.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Lato:400,700,900,400italic,700italic,900italic|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      	<div class="navbar-inner">
+	        	<div class="container">
+	          		<a class="brand" href="./index.html">Giving.SG</a>
+		          	<div class="pull-right">
+			            <ul class="nav nav-pills">
+			            	<li><a id="btn-signupnpo" href="#">Sign Up</a></li>
+			            </ul>
+	          		</div>
+	        	</div>
+	      	</div>
+	    </div>
+	</div>
+
+	<div id="signupModalNPO" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
+		<div class="modal-content">
+			<div class="alert alert-error error-feedback">
+				<h6><i class="fa fa-minus-circle"></i> Some information was incorrect. Please see below for details.</h6>
+			</div>
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+		        	<i class="fa fa-times-circle-o"></i>
+		        </button>
+		        <div class="signup-section">
+			        <h2 id="signupLabel">Sign Up</h2>
+			        <h3>for Giving.SG</h3>
+		        </div>
+		    </div>
+		    <div class="modal-body">
+		    	<div class="modalwrapper">
+					<div class="row-fluid">
+						<div class="span12 text-center">
+							
+							<div class="progress-dots">
+								<ul class="ul">
+									<li>
+										<span class="step-dot active">1</span>
+										<span class="step-label">Create Account</span>
+									</li>
+
+									<li>
+										<span class="step-dot active">2</span>
+										<span class="step-label">Provide Details</span>
+									</li>
+
+									<li>
+										<span class="step-dot">3</span>
+										<span class="step-label">Verify Identity</span>
+									</li>
+								</ul>
+							</div>
+							<hr>
+							<form id="signupForm">
+								<div class="control-group">
+									<label class="control-label" for="orgname"><h5>Organisational Name</h5></label>
+									<div class="controls">
+										<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+										<input name="orgname" id="orgname" placeholder="e.g. National Volunteer and Philanthropy Center" 
+										class="form-control field-required" type="text">
+										<span class="help-block"><p class="small">Enter the name of your Organisation</p></span>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="shortname"><h5>Short Name</h5></label>
+									<div class="controls">
+										<span class="validation-feedback pull-right">
+											<i class="fa fa-check-circle" ></i>
+										</span>
+										<input name="shortname" id="shortname" placeholder="e.g. NVPC" class="form-control field-required field-email" type="text">
+										<span class="help-block">
+										<p class="small">Enter the abbreviated name of your Organisation</p></span>
+									</div>
+								</div>
+								<div class="control-group">
+									<label class="control-label" for="uennumber"><h5>UEN Number</h5></label>
+									<div class="controls">
+										<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
+										<input name="uennumber" id="uennumber" 
+										placeholder="e.g. 200817256W" class="form-control field-required" type="text">
+										<span class="help-block"><p class="small">Enter your Organisations <a href="">UEN Number</a></p></span>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<div class="controls">
+										<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
+										<span><small>YES, I AGREE</small></span>
+										<p class="small">to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+									</div> 
+								</div>
+								<div class="control-group">	
+									<div class="controls">
+										<button type="button" class="btn btn-success btn-large ">YES</button>
+									</div>
+								</div>
+						    </form>
+					    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="js/aui-min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.validate.js"></script>
+	<script type="text/javascript" src="js/additional-methods.js"></script>
+	<script type="text/javascript" src="js/alternate.js"></script>
+</body>
+</html>

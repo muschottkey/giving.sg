@@ -1,6 +1,7 @@
 $(function(){
     $('#btn-login').click(function(){ $('#loginModal').modal(); })
     $('#btn-signup').click(function(){ $('#signupModal').modal(); })
+    $('#btn-signupnpo').click(function(){ $('#signupModalNPO').modal(); })
     $('#toSignin').click(function(){
         $('#loginModal').modal('hide');
         setTimeout(function(){
