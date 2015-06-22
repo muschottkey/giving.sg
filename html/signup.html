@@ -11,10 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/giving-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Lato:400,700,900,400italic,700italic,900italic|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="wrapper">
-		<div class="navbar navbar-fixed-top">
+		<div class="navbar navbar-inverse navbar-fixed-top">
 	      	<div class="navbar-inner">
 	        	<div class="container">
 	          		<a class="brand" href="./index.html">Giving.SG</a>
@@ -29,84 +30,86 @@
 	</div>
 
 	<div id="signupModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="signupLabel" aria-hidden="true">
-		<div class="alert alert-error error-feedback">
-			<h6><i class="fa fa-minus-circle"></i> Some information was incorrect. Please see below for details.</h6>
-		</div>
-	    <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        <div class="signup-section">
-		        <h3 id="signupLabel">Sign Up</h3>
-		        <h4 >for GIVING.SG</h4>
-	        </div>
-	    </div>
-	    <div class="modal-body">
-			<div class="row-fluid">
-				<div class="span12 text-center">
-					<div class="btn-group accTypeToggles" data-toggle="buttons-radio">
-						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Personal Account</span></button>
-						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Corporate Account</span></button>
-						<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Not-for-profit Account</span></button>
-					</div>
-				</div>
-			    <div class="span6 social-media-signup">
-			    <h5 id="" class="text-center">Sign up via</h5>
-			        <a href="#" class="span-6 facebook"><i class="fa fa-facebook-square"></i>Facebook</a>
-					<a href="#" class="span-6 linkedin"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-					<span class="or-separator">Or</span><hr class="visible-phone">
-			    </div>
-				<div class="span6 float-reset sign-up-form">
-				<h5 id="" class="text-center">Create an account</h5>
-					<form id="signupForm">
-						<div class="control-group">
-							<label class="control-label" for="username"><h5>Display Name</h5></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="username" id="username" placeholder="E.g David the donor" class="form-control field-required" type="text">
-								<span class="help-block"><small>Enter your First name or a nickname</small></span>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="email"><h5>Email Address</h5></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="email" id="email" placeholder="mail@domain.com" class="form-control field-required field-email" type="email">
-								<span class="help-block"><small>We will be sending a verification email to this address</small></span>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="password"><h5>Password</h5></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
-								<input name="spassword" id="spassword" placeholder="Type your password here" class="form-control field-required" type="password">
-								<span class="help-block"><small>Your password should be 8-24 characters and contain atleast one number</small></span>
-							</div>
-						</div>
-						<div class="control-group">
-							<label class="control-label" for="conf_password"><h5>Re-Enter New password:</h5></label>
-							<div class="controls">
-								<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-								<input name="conf_password" id="conf_password" placeholder="Type your password here again" class="form-control field-required" type="password">
-								<span class="help-block"><small>Make sure the two passwords match</small></span>
-							</div>
-						</div>
-						<div class="control-group">
-							<div class="controls">
-								<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
-								<span><small>YES, I AGREE</small></span>
-								<p><small>to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a></small></p>
-							</div> 
-						</div>
-						<div class="control-group">	
-							<div class="controls">
-								<button type="button" class="btn btn-success btn-large ">Sign Up</button>
-							</div>
-						</div>
-				    </form>
-			    </div>
+		<div class="modal-content">
+			<div class="alert alert-error error-feedback">
+				<h6><i class="fa fa-minus-circle"></i> Some information was incorrect. Please see below for details.</h6>
 			</div>
-		</div>
-		<div class="modal-footer">
-			<span>I'd like to <a href="#" id="toLogin">LOGIN</a> instead</span>
+		    <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <div class="signup-section">
+			        <h2 id="signupLabel">Sign Up</h2>
+			        <h3>for Giving.SG</h3>
+		        </div>
+		    </div>
+		    <div class="modal-body">
+				<div class="row-fluid">
+					<div class="span12 text-center">
+						<div class="btn-group accTypeToggles" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Personal Account</span></button>
+							<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Corporate Account</span></button>
+							<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Not-for-profit Account</span></button>
+						</div>
+					</div>
+				    <div class="span6 social-media-signup">
+				    	<h4 id="" class="text-center">Sign up via</h4>
+				        <a href="#" class="span-6 facebook"><i class="fa fa-facebook-square"></i>Facebook</a>
+						<a href="#" class="span-6 linkedin"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+						<span class="or-separator">Or</span><hr class="visible-phone">
+				    </div>
+					<div class="span6 float-reset sign-up-form">
+						<h4 id="" class="text-center">Create an account</h4>
+						<form id="signupForm">
+							<div class="control-group">
+								<label class="control-label" for="username"><h5>Display Name</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+									<input name="username" id="username" placeholder="E.g David the donor" class="form-control field-required" type="text">
+									<span class="help-block"><p class="small">Enter your First name or a nickname</p></span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="email"><h5>Email Address</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+									<input name="email" id="email" placeholder="mail@domain.com" class="form-control field-required field-email" type="email">
+									<span class="help-block"><p class="small">We will be sending a verification email to this address</p></span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="password"><h5>Password</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
+									<input name="spassword" id="spassword" placeholder="Type your password here" class="form-control field-required" type="password">
+									<span class="help-block"><p class="small">Your password should be 8-24 characters and contain atleast one number</p></span>
+								</div>
+							</div>
+							<div class="control-group">
+								<label class="control-label" for="conf_password"><h5>Re-Enter New password:</h5></label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+									<input name="conf_password" id="conf_password" placeholder="Type your password here again" class="form-control field-required" type="password">
+									<span class="help-block"><p class="small">Make sure the two passwords match</p></span>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
+									<span><small>YES, I AGREE</small></span>
+									<p class="small">to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+								</div> 
+							</div>
+							<div class="control-group">	
+								<div class="controls">
+									<button type="button" class="btn btn-success btn-large ">Sign Up</button>
+								</div>
+							</div>
+					    </form>
+				    </div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<span>I'd like to <a href="#" id="toLogin">LOGIN</a> instead</span>
+			</div>
 		</div>
 	</div>
 

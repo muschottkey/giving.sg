@@ -1,11 +1,6 @@
 $(function(){
-    $('#btn-login').click(function(){
-        $('#loginModal').modal();
-    })
-
-    $('#btn-signup').click(function(){
-        $('#signupModal').modal();
-    })
+    $('#btn-login').click(function(){ $('#loginModal').modal(); })
+    $('#btn-signup').click(function(){ $('#signupModal').modal(); })
     $('#toSignin').click(function(){
         $('#loginModal').modal('hide');
         setTimeout(function(){
@@ -19,7 +14,7 @@ $(function(){
         }, 1000);
     })
 
-$('#LoginForm').validate({
+    $('#LoginForm').validate({
         rules: {
             email: {
                 required: true,
@@ -52,7 +47,7 @@ $('#LoginForm').validate({
         }
     });
 
-$('#signupForm').validate({
+    $('#signupForm').validate({
         rules: {
             username: {
                 required: true
@@ -91,7 +86,7 @@ $('#signupForm').validate({
         }
     });
 
-$('#respwdForm').validate({
+    $('#respwdForm').validate({
         rules: {
             
             spassword: {

@@ -1,30 +1,46 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-html, body {padding-top: 30px;}
-body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto; }
+html, body { }
+body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto;  }
 
 /* Typography */
-h1, h2, h3, h4, h5 { font-family: "Roboto", Arial, sans-serif; color:#4a4a4a; font-weight:700; }
-h3 { font-size:2.25em; }
-h4 { font-size: 1.5em; }
-h5 { font-size: 1.2em; font-weight:normal; color:#333; }
+h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#4a4a4a; font-weight:900;  }
+h2 { font-size:2.25em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.2em; }
 
 .wrapper { width:100%; }
 .navbar { background: #efefef; }
 
+.main-content, .modal-content { margin-top:40px; padding:2em 0 0; }
+.modal-content { margin-top:0; }
+
+/* Typography */
+.modal h2, .modal h3, 
+.form-content h2, .form-content h3 { margin-bottom:0; line-height:1.1;  }
+input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
+p { line-height: 1.4; }
+p.small { font-size:.875em; margin-top:5px; }
+
 /* Modal Boxes */
+.modal { position:absolute; margin:0 auto 2em; right:0; left:0; }
 .modal-header { text-align: center; }
-.modal-header .signup-section { margin-bottom: 0;}
-#signupModal .modal-header{border-bottom: none;}
-.modal.fade { display: none; }
+.modal-header .signup-section { margin-bottom: 0; }
+.modal-body,.modal-backdrop  { max-height:100%; }
+
+.modal.fade { display:none; }
 .modal.fade.in { display: block; }
 .control-group { margin-top:2em; position:relative; }
+
+
+#signupModal .modal-header{border-bottom: none;}
+#loginModal.modal { max-width:600px !important; } 
 
 /* Social Media */ 
 .modal .social-media-signup { margin:0; padding:0 1.8em 0 1.8em; }
 .modal .social-media-signup a {
-    padding: 8px; margin-bottom: 30px; clear: both; float: left;
-    color: #fff; border-radius: 2px; width:90%;text-align: center;
+    padding: 8px; margin-top: 30px; clear:both; float: left;
+    color:#fff; border-radius: 2px; width:90%; text-align: center;
 }
 .modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
   text-decoration: none; opacity: 0.8;
@@ -42,7 +58,6 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
     position: absolute; display: none; background: transparent; 
     height: 15px; margin-top:7px; right:15px;
 }
-
 .modal .forgot-pwd { display: block; }
     .forgot-pwd a.txt-forgot { position: absolute; right:0; font-size:.9em; }
 
@@ -52,12 +67,14 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
 
 .control-group.error .validation-feedback i { color: #FC353A; }
 .control-group.success .validation-feedback i { color: #468847; }
+.btn { font-family: "Lato", Arial, sans-serif; font-weight: 900; text-transform:uppercase; }
+
 
 /* Modal Box - Footer */
 .modal .modal-footer { background: #A8A8A8; text-align: center; padding: 10px 5px; }
 .modal .modal-footer a { margin: 0 5px 0 5px;text-decoration: underline; }
 
-.social-media-signup:after { content:""; clear:both; display:block; }
+
 .sign-up-form{padding-left: 30px;padding-right: 30px;}
 
 /* Sign Up Page */
@@ -126,29 +143,29 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
     text-decoration: underline;
 }
 
-
-
-@media (min-width: 1200px) {
-    .modal { width:1002px; }
-}
-
-@media (min-width: 980px) {
-    .modal { width:860px; left:35%; }
-}
-@media (max-width: 979px){
-    html, body {padding-top: 0px;}
-}
-
-@media (min-width: 768px)  {
-    #signupModal .float-reset { border-left:1px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
+/* Clear Fix */
+body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
+@media ( max-width: 600px) { 
+    .help-block { padding:0 1em; }
 }
 @media (max-width: 767px) {
+    .modal { max-width:480px; width:93.5%; }
     .modal .social-media-signup a { text-align: center;width: 100%;float: none;}
     .modal form, .modal input:not([type=checkbox]){text-align: center;}
+    .radio input[type="radio"], .checkbox input[type="checkbox"] { float:none; margin-top:0; }
     .accTypeToggles .btn{height: auto;}
     .accTypeToggles .btn span{width: 100%;float: left;text-align: center;}
     .or-separator{position: relative;right: auto;left: calc(50% - 10px);top: 30px;}
-    .sign-up-form{margin-top: 50px;}
+    .sign-up-form { margin-top: 50px; }
+}
 
-
+@media (min-width: 768px) and (max-width:979px)  {
+    .modal { max-width:600px; width:75%; }
+    #signupModal .float-reset { border-left:1px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
+}
+@media (min-width: 980px) {
+    .modal { max-width:860px; width:85%; }
+}
+@media (min-width: 1200px) {
+    .modal { max-width:1202px; }
 }
