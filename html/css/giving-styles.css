@@ -20,7 +20,6 @@ h5 { font-size: 1.2em; font-weight:normal; color:#333; }
 .modal.fade.in { display: block; }
 .control-group { margin-top:2em; position:relative; }
 
-
 /* Social Media */ 
 .modal .social-media-signup { margin:0; padding:0 1.8em 0 1.8em; }
 .modal .social-media-signup a {
@@ -130,8 +129,12 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 
 @media (min-width: 1200px) {
+    .modal { width:1002px; }
 }
 
+@media (min-width: 980px) {
+    .modal { width:860px; left:35%; }
+}
 @media (max-width: 979px){
     html, body {padding-top: 0px;}
 }
