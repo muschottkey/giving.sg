@@ -116,5 +116,11 @@ $(function(){
             $(element).closest('.modal').find('.error-feedback').delay(1000).slideUp();
         }
     });
+
+    $('#resendEmail').click(function(e){
+        e.stopPropagation();
+        e.preventDefault();
+        $('#emailFeedback').text("Sending Another Email...").delay(1500).text("We've sent another email to you");
+    });
 })
 
