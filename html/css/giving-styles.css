@@ -14,6 +14,11 @@ h4 { font-size: 1.2em; }
 
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
 .modal-content, .modal-body { margin: 0 auto; }
+.underlined{text-decoration: underline;margin-top: 10px;}
+.btn-large-custom{
+    width:180px;height: 40px;
+
+}
 
 /* Typography */
 .modal h2, .modal h3, 
@@ -191,8 +196,22 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 /* NPO signup modal */
 #signupModalNPO input:not([type=checkbox]){text-align: center;}
+.signupnpo .alert{
+    padding: 8px 14px 8px 14px;
+    height: 280px;
+}
 
-
+.upload-section{padding: 10px 0;}
+.upload-section .control-group{margin-top: 0.5em;}
+.upload-section .input-append{margin-left:0;width: 200px;margin: 0 auto 10px -17px;}
+.upload-section  .btn {border-width: 0 0 1px;color: #0088cc;}
+.npo-header p{width: 300px;margin:0 auto 20px;}
+.start-cta,.span12.start-cta{padding:20px 30px;background-color: #fffaed;margin-left: 0;border:1px solid #fae0a8;border-radius: 4px;}
+.modal-tiles{width: 70%;display: inline-block;padding: 30px 80px 30px;}
+.tile{width:90px;height: 90px;display: block;background-color: #ffffff;float: left;margin-right:12px;border:1px solid #e3e3e3;padding: 3px;}
+/*.tile:before{content: " ";position: absolute;z-index: -1;top: 5px;left: 5px;right: 5px;bottom: 5px;border: 5px solid #ffea00;}*/
+.tile-inner{background-color: #e3e3e3;padding:30px 0;line-height:1em;text-align: center;}
+.tile-inner p{text-transform: uppercase;font-size: 0.70em;width: 67px;margin: 0 auto;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
@@ -213,6 +232,11 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .progress-dots ul{text-align: center;}
     .progress-dots ul li{width: auto;margin-right: 12px;}
     .step-label{display: none;}
+    .start-cta, .span12.start-cta{padding: 20px 20px;}
+    .modal-tiles{width: 100%;padding: 30px 0px 30px;}
+    .tile{width:60px;height: 60px;margin-right: 5px;}
+    .tile-inner{padding: 16px 0;}
+    .tile-inner p{width: 58px;font-size: 0.6em;}
 }
 
 @media (min-width: 768px) and (max-width:979px)  {
