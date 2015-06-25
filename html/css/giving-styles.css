@@ -8,58 +8,45 @@ h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#4a4a4a; font
 h2 { font-size:2.25em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.2em; }
+p, textarea, input { line-height: 1.4; word-wrap: break-word; }
+a { text-decoration:underline; }
 
+textarea, input { font-size:1em !important; }
+    input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
+label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
+
+.small { font-size:.875em; margin-top:5px; }
+.text-uppercase { text-transform:uppercase; }
+.underlined { text-decoration: underline;margin-top: 10px; }
+
+/* CONTENT LAYOUT */
 .wrapper { width:100%; }
 .navbar { background: #efefef; }
-
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
-.modal-content, .modal-body { margin: 0 auto; }
-.underlined{text-decoration: underline;margin-top: 10px;}
-.btn-large-custom{
-    width:180px;height: 40px;
 
-}
+/* UI Controls - BUTTONS */
+.control-group { margin-top:3em; position:relative; }
 
-/* Typography */
-.modal h2, .modal h3, 
-.form-content h2, .form-content h3 { margin-bottom:0; line-height:1.1;  }
-input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
-p { line-height: 1.4; }
-p.small { font-size:.875em; margin-top:5px; }
-
-/* Modal Boxes */
-.modal { position:absolute; margin:0 auto 2em; right:0; left:0; }
-.modal-header { text-align: center; }
-.modal-header .signup-section { margin-bottom: 0; }
-.modal-body,.modal-backdrop  { max-height:100%; }
-.close i, .close{color: #333; opacity: 1;}
+/* MODAL */
+.modal, .modal-content, .modal-body { margin:0 auto; }
+.modal-body, .modal-backdrop  { max-height:100%; }
+    
+.modal { position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; }
 .modal.fade { display:none; }
-.modal.fade.in { display: block; }
-.control-group { margin-top:2em; position:relative; }
+.modal.fade.in { display:block; }
 
+.modal-header { border-bottom: none; }
+.modal-body { max-width:800px; }
+.modal-footer { background:#d8d8d8; text-align:center; padding: 10px 5px; }
 
-#signupModal .modal-header,#signupModalNPO .modal-header{border-bottom: none;}
+/* MODAL - Typography */
+.modal h2, .main-content h2, .main-content h3 { margin-bottom:0; line-height:1.1; }
+    .modal-header h3 { margin-bottom:.5em; }
+    .modal-body h3 { margin-bottom:1em; }
 
-#loginModal.modal { max-width:600px !important; } 
-#signupModal.modal { max-width:720px !important; } 
-
-/* Social Media */ 
-.modal .social-media-signup { margin:0; padding:0 1.8em 0 1.8em; }
-.modal .social-media-signup a {
-    padding: 8px; margin-top: 30px; clear:both; float: left;
-    color:#fff; border-radius: 2px; width:90%; text-align: center;
-}
-.modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
-  text-decoration: none; opacity: 0.8;
-}
-.modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
-    .modal .social-media-signup a.facebook { background-color: #334479; }
-    .modal .social-media-signup a.linkedin { background-color: #1379C3; }
-
-/* Modal Box - FORMs */
-.modal input { font-size:1em; }
-.modal input:not([type="checkbox"]), #respwdForm input:not([type="checkbox"]) { 
-    width: 96%; padding:4px 0px; line-height: 1.4; border-width: 0 0 1px; box-shadow: none;border-radius: 0;
+/* MODAL - UI Controls - BUTTONS */
+.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]) { 
+    width: 96%; padding:4px 0px; line-height:1.4; border-width: 0 0 1px; box-shadow:none; border-radius: 0;
 }
 .modal .validation-feedback , #respwdForm .validation-feedback {
     position: absolute; display: none; background: transparent; 
@@ -68,134 +55,82 @@ p.small { font-size:.875em; margin-top:5px; }
 .modal .forgot-pwd { display: block; }
     .forgot-pwd a.txt-forgot { position: absolute; right:0; font-size:.9em; }
 
-/* UI Controls  */
+/* UI Controls - BUTTONS */
+.btn { font-family: "Lato", Arial, sans-serif;   }
+    .btn-large { font-weight:900; }
+    .btn-large-custom { width:180px;height: 40px; }
+
 .error-feedback { display:none; }
 .validation-feedback i { font-size: 1.2em; top:-18px; }
+.close i, .close{color: #333; opacity: 1;}
 
 .control-group.error .validation-feedback i { color: #FC353A; }
 .control-group.success .validation-feedback i { color: #468847; }
-.btn { font-family: "Lato", Arial, sans-serif; font-weight: 900; text-transform:uppercase; }
 
+/* UI Controls - BUTTONS (Button Group / Toggle)  */
+.btn-toggle { margin-bottom:40px; width:100%; }
+.btn-toggle .btn { padding:5px; width:33%; height:5em; background:#EEE; line-height:1.3; }
+    .btn-toggle .btn.active{ background:#fff; border-bottom-color:#DDD; box-shadow: none; }
 
-/* Modal Box - Footer */
-.modal .modal-footer { background: #A8A8A8; text-align: center; padding: 10px 5px; }
-.modal .modal-footer a { margin: 0 5px 0 5px;text-decoration: underline; }
+    .btn-toggle .btn i { margin-right:10px; font-size:36px; color:#DDD; }
+    .btn-toggle .btn span{
+        display: inline-block; white-space: normal; text-transform: capitalize;
+        margin-right:0; width:100px; text-align: left;
+    }
 
-
-.sign-up-form{padding-left: 30px;padding-right: 0px;border-left:2px solid #e3e3e3;}
+/* MODAL - ONE COLUMN */
+.modal-one-column, .modal-one-column input:not([type=checkbox]) { text-align:center; }
+.modal-one-column { max-width:600px !important; } 
+.modal-one-column .modal-body, .one-column .span4 { max-width:400px; width:100%; margin:0 auto; float: none; }
+    .one-column .span4 { margin-top:40px; }
+.modal-one-column .radio input[type="radio"], 
+    .modal-one-column .checkbox input[type="checkbox"] { float:none; margin-top: 0; }
 
 /* Sign Up Page */
-.signup-wrapper .span4 { margin: 0 auto; float:none; max-width:320px; width:320px; }
+.modal-header .signup-section { margin-bottom: 0; }
+.sign-up-form { border-left:1px solid #e3e3e3; } 
+
 .signup-section { margin-bottom:30px; }
 i.signup-envelope { font-size:5.625em; }
 a.resendmail { text-decoration:underline; font-size:.875em; }
 .signup-section .alert { padding:1em 1.5em; }
 
-.accTypeToggles{
-    margin-bottom: 20px;
-    width: 100%;
+/* Social Media */ 
+.modal .row-fluid .span6 { margin:0; padding: 0 5%; } 
+.modal .social-media-signup a {
+    padding:13px; margin:20px auto 0; clear:both; 
+    color:#fff; border-radius:2px; text-align: center;
 }
-.accTypeToggles .btn{
-    padding: 5px;
-    width: 33%;
-    height: 60px;
-    background:#e6e6e6;
+.modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
+    text-decoration: none; opacity: 0.8;
 }
-
-.accTypeToggles .btn.active{
-    background:#ffffff;
-    border-bottom-color: #DDDDDD;
-    box-shadow: none;
-}
-
-.accTypeToggles .btn i{
-    margin-right: 10px;
-    font-size: 40px;
-    color: #cfcfcf;
-}
-
-.accTypeToggles .btn span{
-    margin-right: 0px;
-    width: 85px;
-    text-align: left;
-    font-size: 12px;
-    display: inline-block;
-    white-space: normal;
-    text-transform: capitalize;
-}
+.modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
+    .modal .social-media-signup a.facebook { background-color: #334479; }
+    .modal .social-media-signup a.linkedin { background-color: #1379C3; }
 
 .or-separator{
-    right: calc(50% - 6px);
-    background: #cfcfcf;
-    border: 1px solid #7c7c7c;
-    border-radius: 50%;
-    padding: 6px;
-    position: absolute;
-    margin-top: 30px;
-    font-size: 0.8em;
-}
-.mobile-separator{
-    border-top: 2px solid #969696;
-}
-
-/* reset password */
-#resetpwd-header h2{
-    margin-bottom: 0;
-}
-
-#resetpwd-header h3{
-    margin-top: 0;
-}
-#respwdForm input:not([type="checkbox"]){
-    margin-bottom: 0;
-}
-.alternate-actions{
-    text-transform: uppercase;
-    text-decoration: underline;
+    position: absolute; top: 15em; right:calc(50% - 15px); background:#d8d8d8; 
+    padding:12px; border:1px solid #a1a1a1; border-radius: 50%; font-size: 0.875em;
 }
 
 /* npo signup Progress Indicators */
-.progress-dots{margin: 30px 0;}
-.progress-dots ul{
-    margin: 0;
+.progress-dots { margin: 30px 0; }
+.progress-dots ul { margin: 0; }
+.progress-dots ul li {
+    width: 30%; display: inline-block; margin-right: 5px;
 }
-
-.progress-dots ul li{
-    width: 30%;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.progress-dots ul li span{float: left;}
+.progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
-    text-align: center;
-    width: 22px;
-    height: 22px;
-    background-color: #bbbbbb;
-    border-radius: 50%;
-    color: #ffffff;font-size: 0.7em;line-height: 2em;
+    text-align: center; width:24px; height:24px; border-radius: 50%;
+    background:#bbb; color:#fff; font-size:0.75em;line-height: 2em;
 }
-
-.progress-dots ul li .step-dot.active{background-color: #54a954;}
-
+    .progress-dots ul li .step-dot.active { background-color: #54a954; }
 .progress-dots ul li .step-label{
-    margin-right: 0;
-    margin-left:6px;width: 60%;
-    line-height: 1em;
-    font-size: 0.7em;
-    text-align: left;
-}
-
-#signupModalNPO .progress-dots ul li .step-label{
-    margin-right: 0;
-    margin-left:10px;width: 40%;
-    line-height: 1em;
-    font-size: 0.7em;
-    text-align: left;
+    margin-right: 0; margin-left:6px; width: 60%;
+    line-height: 1em; font-size: 0.7em;  text-align: left;
 }
 
 /* NPO signup modal */
-#signupModalNPO input:not([type=checkbox]){text-align: center;}
 .signupnpo .alert{
     padding: 8px 14px 8px 14px;
     height: 280px;
@@ -215,20 +150,32 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
-@media ( max-width: 600px) { 
-    .help-block { padding:0 1em; }
+
+@media (min-width: 1200px) {
+    .modal { max-width:1000px; }
 }
-@media (max-width: 767px) {
-    .modal { max-width:480px; width:93.5%; }
-    .modal-body{width:270px;}
-    .modal .social-media-signup a { text-align: center;width: 100%;float: none;}
-    .modal form, .modal input:not([type=checkbox]){text-align: center;}
+@media (min-width: 768px) and (max-width: 979px) { 
+}
+
+@media (max-width: 979px) {
+    /* CONTENT LAYOUT */
+    .row-fluid .span6, .row-fluid .span4  { width:100%; margin:0; padding:0; }
+    .modal { max-width:598px; }
+    .modal-body { max-width:280px; }
+    .sign-up-form { margin-top:50px; border-left:none; }
+
+    /* UI Controls - FORM ELEMENTS  */
+    form { text-align: center; }
+    input:not([type=checkbox]) { text-align:center; }
     .radio input[type="radio"], .checkbox input[type="checkbox"] { float:none; margin-top:0; }
-    .accTypeToggles .btn{height: auto;}
-    .accTypeToggles .btn span{width: 100%;float: left;text-align: center;font-size: 0.8em}
-    .accTypeToggles .btn i {margin-right: 0;}
-    .or-separator{position: relative;right: auto;left: calc(50% - 10px);top: 30px;}
-    .sign-up-form { margin-top: 50px; border-left: none;}
+
+    .btn-toggle .btn { height: auto; }
+    .btn-toggle .btn span { width: 100%; float:left; text-align: center;font-size:0.7858em;}
+    .btn-toggle .btn i { margin:0; }
+
+    .mobile-separator { margin:5em 0; }
+    .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:6.2em; }
+
     .progress-dots ul{text-align: center;}
     .progress-dots ul li{width: auto;margin-right: 12px;}
     .step-label{display: none;}
@@ -237,20 +184,14 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .tile{width:60px;height: 60px;margin-right: 5px;}
     .tile-inner{padding: 16px 0;}
     .tile-inner p{width: 58px;font-size: 0.6em;}
+    .help-block { padding:0 1em; }
 }
 
-@media (min-width: 768px) and (max-width:979px)  {
-    .modal { max-width:600px; width:75%; }
-    #signupModal .sign-up-form { border-left:2px solid #e3e3e3; padding-left: 20px; margin-left: 0; }
-    .modal-body{width: 546px;}
-}
-@media (min-width: 980px) {
-    .modal { max-width:860px; width:85%; }
-    .or-separator{ right: calc(50% - 22px); }
-    .modal-body{width: 546px;}
+@media (max-width: 767px) {
+    .modal, .modal-one-column { max-width:294px !important; }
+    .modal-body, .modal-one-column .modal-body { max-width:280px; }
 }
 
-}
-@media (min-width: 1200px) {
-    .modal { max-width:1202px; }
+@media (max-width:310px) {
+    body { width:100%; max-width:300px; overflow: visible;}
 }

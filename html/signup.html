@@ -34,7 +34,7 @@
 			<div class="alert alert-error error-feedback">
 				<h6><i class="fa fa-minus-circle"></i> Some information was incorrect. Please see below for details.</h6>
 			</div>
-		    <div class="modal-header">
+		    <div class="modal-header text-center">
 		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 		        	<i class="fa fa-times-circle-o"></i>
 		        </button>
@@ -44,34 +44,38 @@
 		        </div>
 		    </div>
 		    <div class="modal-body">
-		    	<div class="modalwrapper">
-					<div class="row-fluid">
-						<div class="span12 text-center">
-							<div class="btn-group accTypeToggles" data-toggle="buttons-radio">
-								<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Personal Account</span></button>
-								<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Corporate Account</span></button>
-								<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Not-for-profit Account</span></button>
-							</div>
+				<div class="row-fluid">
+					<div class="span12 text-center">
+						<div class="btn-group btn-toggle" data-toggle="buttons-radio">
+							<button type="button" class="btn btn-default active">
+								<i class="fa fa-picture-o"></i>
+								<span>Personal Account</span>
+							</button>
+							<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Corporate Account</span></button>
+							<button type="button" class="btn btn-default"><i class="fa fa-picture-o"></i><span>Not-for-profit Account</span></button>
 						</div>
-					    <div class="span6 social-media-signup">
-					    	<h4 id="" class="text-center">Sign up via</h4>
-					        <a href="#" class="span-6 facebook"><i class="fa fa-facebook-square"></i>Facebook</a>
-							<a href="#" class="span-6 linkedin"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
-							<span class="or-separator">Or</span><hr class="visible-phone mobile-separator">
-					    </div>
-						<div class="span6 sign-up-form">
-							<h4 id="" class="text-center">Create an account</h4>
-							<form id="signupForm">
-								<div class="control-group">
-									<label class="control-label" for="username"><h5>Display Name</h5></label>
-									<div class="controls">
-										<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
-										<input name="username" id="username" placeholder="E.g David the donor" class="form-control field-required" type="text">
-										<span class="help-block"><p class="small">Enter your First name or a nickname</p></span>
-									</div>
+					</div>
+				</div>
+				<div class="row-fluid">
+				    <div class="span6 social-media-signup">
+				    	<h3 class="text-center">Sign up via</h3>
+				        <a href="#" class="span-6 facebook"><i class="fa fa-facebook-square"></i>Facebook</a>
+						<a href="#" class="span-6 linkedin"><i class="fa fa-linkedin-square"></i>LinkedIn</a>
+						<span class="or-separator">OR</span><hr class="mobile-separator">
+				    </div>
+					<div class="span6 sign-up-form">
+						<h3 class="text-center">Create Account</h3>
+						<form id="signupForm">
+							<div class="control-group">
+								<label class="control-label" for="username">Display Name</label>
+								<div class="controls">
+									<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
+									<input name="username" id="username" placeholder="E.g David the donor" class="form-control field-required" type="text">
+									<span class="help-block"><p class="small">Enter your First name or a nickname</p></span>
 								</div>
+							</div>
 								<div class="control-group">
-									<label class="control-label" for="email"><h5>Email Address</h5></label>
+									<label class="control-label" for="email">Email Address</label>
 									<div class="controls">
 										<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
 										<input name="email" id="email" placeholder="mail@domain.com" class="form-control field-required field-email" type="email">
@@ -79,7 +83,7 @@
 									</div>
 								</div>
 								<div class="control-group">
-									<label class="control-label" for="password"><h5>Password</h5></label>
+									<label class="control-label" for="password">Password</label>
 									<div class="controls">
 										<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>
 										<input name="spassword" id="spassword" placeholder="Type your password here" class="form-control field-required" type="password">
@@ -87,7 +91,7 @@
 									</div>
 								</div>
 								<div class="control-group">
-									<label class="control-label" for="conf_password"><h5>Re-Enter New password:</h5></label>
+									<label class="control-label" for="conf_password">Re-Enter New password</label>
 									<div class="controls">
 										<span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span>
 										<input name="conf_password" id="conf_password" placeholder="Type your password here again" class="form-control field-required" type="password">
@@ -96,23 +100,23 @@
 								</div>
 								<div class="control-group">
 									<div class="controls">
-										<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
-										<span><small>YES, I AGREE</small></span>
-										<p class="small">to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+										<label class="checkbox">
+											<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> <span class="small">YES, I AGREE <br>
+											to the <a href="">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</span> 
+										</label>
 									</div> 
 								</div>
 								<div class="control-group">	
 									<div class="controls">
-										<button type="button" class="btn btn-success btn-large ">Sign Up</button>
+										<button type="button" class="btn btn-success btn-large text-uppercase">Create Account</button>
 									</div>
 								</div>
-						    </form>
-					    </div>
+						 </form>
 					</div>
 				</div>
 			</div>
 			<div class="modal-footer">
-				<span>I'd like to <a href="#" id="toLogin">LOGIN</a> instead</span>
+				<p class="small">I'd like to <a href="#" class="text-uppercase" id="toLogin">LOGIN</a> instead.</p>
 			</div>
 		</div>
 	</div>
