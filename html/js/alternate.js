@@ -1,7 +1,6 @@
 $(function(){
     $('#btn-login').click(function(){ $('#loginModal').modal(); })
     $('#btn-signup').click(function(){ $('#signupModal').modal(); })
-    $('#btn-signupnpo').click(function(){ $('#signupModalNPO').modal(); })
     $('#toSignin').click(function(){
         $('#loginModal').modal('hide');
         setTimeout(function(){
@@ -122,5 +121,15 @@ $(function(){
         e.preventDefault();
         $('#emailFeedback').text("Sending Another Email...").delay(1500).text("We've sent another email to you");
     });
+    $('.carousel').carousel();
+
+     $(document).ready(function() {  
+         $(".carousel").swiperight(function() {  
+              $(this).carousel('prev');  
+                });  
+           $(".carousel").swipeleft(function() {  
+              $(this).carousel('next');  
+       });  
+    });  
 })
 
