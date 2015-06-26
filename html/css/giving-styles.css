@@ -86,17 +86,8 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .modal-one-column .radio input[type="radio"], 
     .modal-one-column .checkbox input[type="checkbox"] { float:none; margin-top: 0; }
 
-/* Sign Up Page */
-.modal-header .signup-section { margin-bottom: 0; }
-.sign-up-form { border-left:1px solid #e3e3e3; } 
-
-.signup-section { margin-bottom:30px; }
-i.signup-envelope { font-size:5.625em; }
-a.resendmail { text-decoration:underline; font-size:.875em; }
-.signup-section .alert { padding:1em 1.5em; }
-
 /* Social Media */ 
-.modal .row-fluid .span6 {padding: 0 5%; } 
+.modal .row-fluid .span6 {padding:1em .5em; } 
 .modal .social-media-signup a {
     padding:13px; margin:20px auto 0; clear:both; 
     color:#fff; border-radius:2px; text-align: center;
@@ -113,7 +104,17 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
     padding:12px; border:1px solid #a1a1a1; border-radius: 50%; font-size: 0.875em;
 }
 
-/* npo signup Progress Indicators */
+/* Sign Up As Individual Page */
+.signup-section { margin-bottom:30px; }
+    .modal-header .signup-section { margin-bottom:0; }
+.sign-up-form { border-left:1px solid #e3e3e3; } 
+
+i.signup-envelope { font-size:5.625em; }
+a.resendmail { text-decoration:underline; font-size:.875em; }
+.signup-section .alert { padding:1em 1.5em; }
+.signupnpo .alert { min-height:320px; }
+
+/* NPO signup Progress Indicators */
 .progress-dots { margin: 30px 0; }
 .progress-dots ul { margin: 0 auto; width: 70%; padding-left: 7%;}
 .progress-dots ul li {
@@ -127,39 +128,31 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
     .progress-dots ul li .step-dot.active { background-color: #54a954; }
 .progress-dots ul li .step-label{
     margin-right: 0; margin-left:6px; width: 60%;
-    line-height: 1em; font-size: 0.7em;  text-align: left;
+    line-height: 1em; font-size: 0.7em; text-align: left;
 }
 
-/* NPO signup modal */
-.signupnpo .alert{
-    padding: 8px 14px 8px 14px;
-    height: 280px;
-}
-.signupnpo .title{color:#3a87ad;text-transform: uppercase;}
-.upload-section{padding: 10px 0;}
+.signupnpo .title { color:#3a87ad;text-transform: uppercase; }
+.upload-section { padding: 10px 0; }
 .upload-section .control-group{margin-top: 0.5em;}
 .upload-section .input-append{margin-left:0px;width: 240px;background-color: #ffffff;color: #333;font-size: 0.8em;line-height:2.3em;text-align: left;padding-left:8px;}
-.upload-section  .btn {border-width: 0 0 1px;color: #0088cc;}.npo-header p{width: 300px;margin:0 auto 20px;}
+.upload-section .btn {border-width: 0 0 1px;color: #0088cc;}.npo-header p{width: 300px;margin:0 auto 20px;}
 .start-cta,.span12.start-cta{padding:20px 30px;background-color: #fffaed;margin-left: 0;border:1px solid #fae0a8;border-radius: 4px;}
 .modal-tiles{width: auto;display: inline-block;padding: 30px 120px 30px;}
 .tile{width:90px;height: 90px;display: block;background-color: #ffffff;float: left;margin-right:12px;border:1px solid #e3e3e3;padding: 3px;}
-/*.tile:before{content: " ";position: absolute;z-index: -1;top: 5px;left: 5px;right: 5px;bottom: 5px;border: 5px solid #ffea00;}*/
 .tile-inner{background-color: #e3e3e3;padding:30px 0;line-height:1em;text-align: center;}
 .tile-inner p{text-transform: uppercase;font-size: 0.70em;width: auto;margin: 0 auto;}
 
 /* NPO step3b modal carousel */
-.carousel-indicators{top:inherit;right: inherit;bottom: -30px;left:50%;}
-.carousel-indicators li{background-color: transparent;border: 1px solid #5bb75b;}
-.carousel-indicators li.active{background-color: #5bb75b;}
+.carousel-indicators { top:inherit;right: inherit;bottom: -30px;left:50%; }
+.carousel-indicators li { background-color: transparent;border: 1px solid #5bb75b; }
+.carousel-indicators li.active { background-color: #5bb75b; }
+
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
 
 @media (min-width: 1200px) {
     .modal { max-width:1000px; }
 }
-@media (min-width: 768px) and (max-width: 979px) { 
-}
-
 @media (max-width: 979px) {
     /* CONTENT LAYOUT */
     .row-fluid .span6, .row-fluid .span4  { width:100%; margin:0; padding:0; }
@@ -194,9 +187,12 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .carousel-control{display: none;}
 }
 
+@media (min-width: 768px) and (max-width: 979px) { 
+    
 @media (max-width: 767px) {
     .modal, .modal-one-column { max-width:294px !important; }
     .modal-body, .modal-one-column .modal-body { max-width:280px; }
+    .signupnpo .alert { min-height:100%; }
 }
 
 @media (max-width:310px) {
