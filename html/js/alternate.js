@@ -121,9 +121,12 @@ $(function(){
         e.preventDefault();
         $('#emailFeedback').text("Sending Another Email...").delay(1500).text("We've sent another email to you");
     });
-    $('.carousel').carousel('pause');
 
-     $(document).ready(function() {  
+    $('.carousel').carousel('pause');
+    
+    $('.carousel').carousel();
+
+    $(document).ready(function() {  
          $(".carousel").swiperight(function() {  
               $(this).carousel('prev');  
                 });  
