@@ -124,8 +124,6 @@ $(function(){
 
     $('.carousel').carousel('pause');
     
-    $('.carousel').carousel();
-
     $(document).ready(function() {  
          $(".carousel").swiperight(function() {  
               $(this).carousel('prev');  
