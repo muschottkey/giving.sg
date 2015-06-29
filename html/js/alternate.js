@@ -123,6 +123,7 @@ $(function(){
     });
 
     $('.carousel').carousel('pause');
+    $('.carousel-indicators').hide();
     
     $(document).ready(function() {  
          $(".carousel").swiperight(function() {  
@@ -135,6 +136,8 @@ $(function(){
 
     $('#btnStartYes').click(function(){
         $(this).closest('.carousel').carousel('next');
+        $('.carousel-indicators').delay(1000).slideDown();
+
     });
 })
 
