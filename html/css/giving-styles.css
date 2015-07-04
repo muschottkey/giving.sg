@@ -11,8 +11,10 @@ h4 { font-size: 1.2em; }
 p, textarea, input { line-height: 1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 
-textarea, input { font-size:1em !important; }
-    input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
+textarea, input { font-size:1.325em !important; }
+    input[type="text"] { height:100%; }
+    /* Patrick Hand|Short Stack|Neucha|Dekko|Schoolbell|Gloria Hallelujah|Architects Daughter*/
+    input:not([type=checkbox]) { font-family: "Architects Daughter","Neucha", Arial, sans-serif;  }
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
 .small { font-size:.875em; margin-top:5px; }
@@ -117,9 +119,7 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 /* NPO signup Progress Indicators */
 .progress-dots { margin: 30px 0; }
 .progress-dots ul { margin: 0 auto; width: 70%; padding-left: 7%;}
-.progress-dots ul li {
-    width: 25%; display: inline-block; margin-right: 5px;
-}
+.progress-dots ul li { width: 27%; display: inline-block; margin-right: 5px; }
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
     text-align: center; width:24px; height:24px; border-radius: 50%;
@@ -152,7 +152,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .carousel-indicators li.active{background-color: #5bb75b;}
 .carousel .item button{margin-top: 20px;}
 
-
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
 
@@ -171,7 +170,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
     .sign-up-form { margin-top:50px; border-left:none; }
-    .carousel-indicators{left:41%;}
+    .carousel-indicators { left:41%; }
 
     /* UI Controls - FORM ELEMENTS  */
     form { text-align: center; }
