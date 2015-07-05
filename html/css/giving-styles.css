@@ -15,9 +15,14 @@ textarea, input { font-size:1em !important; }
     input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
+/* GLOBAL STYLES */
 .small { font-size:.875em; margin-top:5px; }
 .text-uppercase { text-transform:uppercase; }
+.text-center{text-align: center;}
 .underlined { text-decoration: underline;margin-top: 10px; }
+.border-left{border-left: 1px solid #efefef;}
+.m-left0{margin-left: 0;}
+.m-bot15{margin-bottom: 15px;}
 
 /* CONTENT LAYOUT */
 .wrapper { width:100%; }
@@ -152,6 +157,21 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .carousel-indicators li.active{background-color: #5bb75b;}
 .carousel .item button{margin-top: 20px;}
 
+/* NPO step 3b*/
+.section-page{
+    text-align: center;
+}
+#btnDonate{
+    position: absolute;top: 50%;
+}
+#spca{font-family: "Lato", Arial, sans-serif;color: #4a4a4a;font-weight: 900;text-align: center;background-color: #ffffff;font-size: 2em !important;}
+#donateForm .form-group{
+    margin-bottom: 20px;
+}
+/* giving custom selects */
+#selAmount.sod_select{border-radius: 0;}
+#selAmount.sod_select:before{display: none;}
+
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
@@ -198,6 +218,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .modal .row-fluid .span6{margin-bottom: 20px;}
     .upload-section .input-append{padding-left: 2px;}
     .carousel-control{display: none;}
+    .border-left{border-left: none;}
 }
 
 @media (max-width: 767px) {
@@ -205,7 +226,6 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .modal-body, .modal-one-column .modal-body { max-width:280px; }
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
-
 }
 
 @media (max-width:310px) {
