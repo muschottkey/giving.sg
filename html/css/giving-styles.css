@@ -179,6 +179,32 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #selAmount.sod_select{border-radius: 0;}
 #selAmount.sod_select:before{display: none;}
 
+/* Donation Logged In Page */
+#donateLoggedModal{background-color: #efefef;}
+.user-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #e3e3e3;
+    margin: 0 auto;
+    border:1px solid #a9a9a9;
+}
+.box{background-color: #ffffff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;}
+.summary-wrapper{max-width: 400px;margin:0 auto;left:0;right: 0;}
+.minimal{font-weight: 400;}
+.minimal i{margin-right: 10px;font-size: 2em;}
+.tax-status{color: #59B259!important;}
+.tax-status i{margin-right: 6px;}
+.box .small.grey{color: #a5a5a5;}
+.box .small{}
+.box > h4{margin-bottom: 20px;}
+.box.span6{padding: 1em 2em !important;}
+.box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
+.box-footer h5{margin: 15px 0;}
+.box-footer p{font-size: 0.8em;}
+.buttons{margin-top: 30px;}
+.btn-ghost{background: #ffffff;color: #000;font-weight:700;font-size:0.75em;width: 100px;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
+
 
 
 

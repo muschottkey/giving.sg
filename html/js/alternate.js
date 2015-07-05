@@ -148,5 +148,8 @@ $(function(){
 
     $('.select-giving').selectOrDie();
 
+    $('#donateLoggedModal').modal('show');
+
+
 })
 
