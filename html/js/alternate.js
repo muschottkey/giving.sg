@@ -139,7 +139,7 @@ $(function(){
     $('#selectAmount').selectOrDie({
         prefix: "DOLLARS"
     })
-    $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input id="customAmt" type="text"><small>dollars</small></span>');
+    $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input id="customAmt" type="text"><small>dollars</small></span>');
     $('#customAmt').change(function(){
         var amtvalue = $(this).val();
         $('#selectAmount').append('<option value="'+amtvalue+' selected">'+amtvalue+'</option>').selectOrDie("update");

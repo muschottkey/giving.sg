@@ -4,21 +4,20 @@ html, body { }
 body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto;  }
 
 /* Typography */
-h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#4a4a4a; font-weight:900;  }
+h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#000; font-weight:900;  }
 h2 { font-size:2.25em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.2em; }
-p, textarea, input { line-height: 1.4; word-wrap: break-word; }
+p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 
-textarea, input { font-size:1em !important; }
-    input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; }
+textarea, input { font-size:1.25em !important; height:1.3em; }
+    input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; height:1.3em; }
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
 /* GLOBAL STYLES */
 .small { font-size:.875em; margin-top:5px; }
 .text-uppercase { text-transform:uppercase; }
-.text-center{text-align: center;}
 .underlined { text-decoration: underline;margin-top: 10px; }
 .border-left{border-left: 1px solid #efefef;}
 .m-left0{margin-left: 0 !important;}
@@ -50,8 +49,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 
 /* MODAL - Typography */
 .modal h2, .main-content h2, .main-content h3 { margin-bottom:0; line-height:1.1; }
-    .modal-header h3 { margin-bottom:.5em; }
-    .modal-body h3 { margin-bottom:1em; }
+    .modal-header h3, .modal-body h3 { margin-bottom:.5em; }
 
 /* MODAL - UI Controls - BUTTONS */
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]) { 
@@ -95,8 +93,11 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .modal-one-column .radio input[type="radio"], 
     .modal-one-column .checkbox input[type="checkbox"] { float:none; margin-top: 0; }
 
+/* MODAL - TWO COLUMN */
+.modal .row-fluid .span6 { padding:1em .5em 1em 2em; } 
+    .modal .row-fluid .span6:first-child { padding:1em 1.5em; } 
+
 /* Social Media */ 
-.modal .row-fluid .span6 {padding:1em .5em; } 
 .modal .social-media-signup a {
     padding:13px; margin:20px auto 0; clear:both; 
     color:#fff; border-radius:2px; text-align: center;
@@ -125,10 +126,8 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 /* NPO signup Progress Indicators */
 .progress-dots { margin: 30px 0; }
-.progress-dots ul { margin: 0 auto; width: 70%; padding-left: 7%;}
-.progress-dots ul li {
-    width: 25%; display: inline-block; margin-right: 5px;
-}
+.progress-dots ul { margin: 0 auto; width:80%; padding-left:5%;}
+.progress-dots ul li { width:27%; display: inline-block; margin-right:5px; }
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
     text-align: center; width:24px; height:24px; border-radius: 50%;
@@ -168,7 +167,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #btnDonate{
     position: absolute;top: 50%;
 }
-#spca{font-family: "Lato", Arial, sans-serif;color: #000000;font-weight: 900;text-align: center;background-color: #ffffff;font-size: 2em !important;}
+#spca { font:900 2em/1em "Lato", Arial, sans-serif; font-size:3em !important; color:#000; text-align:center; background:#FFF; }
 #donateForm .form-group{
     margin-bottom: 30px;
 }
@@ -246,8 +245,8 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .btn-toggle .btn span { width: 100%; float:left; text-align: center;font-size:0.7858em;}
     .btn-toggle .btn i { margin:0; }
 
-    .mobile-separator { margin:5em 0; }
-    .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:6.2em; }
+    .mobile-separator { margin:4em -40px 1em; }
+    .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:5.2em; }
 
     .progress-dots ul{text-align: center;}
     .progress-dots ul li{width: auto;margin-right: 12px;}
@@ -259,7 +258,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .tile-inner p{width: auto;font-size: 0.6em;}
     .npo-header p{width: auto;}
     .help-block { padding:0 1em; }
-    .modal .row-fluid .span6{margin-bottom: 20px;}
+    .modal .row-fluid .span6, .modal .row-fluid .span6:first-child { margin-bottom:20px; padding: 1em .5em; }
     .upload-section .input-append{padding-left: 2px;}
     .carousel-control{display: none;}
     .border-left{border-left: none;}
