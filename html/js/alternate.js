@@ -142,6 +142,9 @@ $(function(){
     $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     
     $('.customAmt').on("change",function(){
+
+    $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input id="customAmt" type="text"><small>dollars</small></span>');
+    $('#customAmt').change(function(){
         var amtvalue = $(this).val();
         var length = amtvalue.length;
         console.log("changed");

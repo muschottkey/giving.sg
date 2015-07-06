@@ -8,10 +8,6 @@
  *  Copyright (c) 2014 Per Vestman
  *  Dual licensed under the MIT and GPL licenses.
  *
- *  No, I don't usually comment my CSS, but in this
- *  case it might "help" someone.
- *
- *  Oddny | Cogs 'n Kegs
  * =========================================================== */
 
 /* Remove, change to fit your needs */
@@ -31,18 +27,17 @@
     }
 
 /* The SoD - Please keep this first three lines intact, otherwise all hell will break looooooose */
-.sod_select
-    {
+.sod_select {
         display: inline-block;
         position: relative;
         line-height: 1;
 
         width: 200px;
-        padding: 15px 10px;
+        padding: 10px ;
         border: 1px solid #cccccc;
         background: #ffffff;
         color: #000000;
-        font-size: 11px;
+        font-size: .875em;
         font-weight: 700;
         text-align: left;
         text-transform: uppercase;
@@ -64,12 +59,11 @@
         }
 
         /* Down arrow */
-        .sod_select:after
-            {
+        .sod_select:after {
                 content: "\f078";
                 font: normal normal normal 14px/1 FontAwesome;
                 top: auto;
-                bottom: 16px;
+                bottom:11px;
             }
         .sod_select:before{
             content: "";
@@ -104,7 +98,6 @@
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
-            text-align: center;
             padding-right: 15px;
         }
 
@@ -236,14 +229,11 @@
             .sod_select .sod_option.link { /* If data-link is set on a specific option */ }
             .sod_select .sod_option.linkexternal { /* If data-link-external is set on a specific option */ }
 
-
-
     /* Hide native select */
     .sod_select select { display: none !important; }
 
         /* The native select in touch mode. Keep this first line. Sorry, keep everything. */
-        .sod_select.touch select
-            {
+        .sod_select.touch select            {
                 -webkit-appearance: menulist-button;
 
                 position: absolute;
@@ -260,12 +250,17 @@
         border:1px solid #efefef !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);
     }
-    #selAmount{border:none;border-bottom: 2px solid #cccccc;font-size: 16px;}
+    #selAmount{border:none;border-bottom: 2px solid #cccccc;font-size: 1em;}
     #selAmount.focus{box-shadow: none;}
     #selAmount .sod_option{text-align: center;}
-    #selAmount .sod_label{font-size: 1.5em;}
+    #selAmount .sod_label{font-size: 1.8em;}
     .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
+
     .sod_option.custom:before{display: none !important;}
     .sod_option.custom small{width: 100%;display:block;color: #555555;}
+    .sod_option.custom input{clear: both;height: 40px;text-align: center;}
+
+
+    .sod_option.custom small{width: 100%;display:block;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
 
