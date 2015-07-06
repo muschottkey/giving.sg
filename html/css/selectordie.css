@@ -110,7 +110,7 @@
 
         .sod_select .sod_prefix { 
             float: right;
-            margin-right: 20px;
+            margin-right: 10px;
             text-transform: lowercase; 
         }
         .sod_select .sod_placeholder { /* Use this if you're using a placeholder and want to style it */ }
@@ -209,7 +209,7 @@
             .sod_select .sod_option.selected
                 {
                     font-weight: 700;
-                    padding-right: 25px;
+                    padding-right: 10px;
                 }
 
                 /* Displays a check mark for the selected option */
@@ -265,6 +265,7 @@
     #selAmount .sod_option{text-align: center;}
     #selAmount .sod_label{font-size: 1.5em;}
     .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
+    .sod_option.custom:before{display: none !important;}
     .sod_option.custom small{width: 100%;display:block;color: #555555;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
 
