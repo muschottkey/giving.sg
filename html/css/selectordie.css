@@ -33,7 +33,7 @@
         line-height: 1;
 
         width: 200px;
-        padding: 10px ;
+        padding:5px 10px ;
         border: 1px solid #cccccc;
         background: #ffffff;
         color: #000000;
@@ -102,13 +102,9 @@
         }
 
         .sod_select .sod_prefix { 
-            float: right;
-            margin-right: 10px;
-            text-transform: lowercase; 
+            float:right; font-size:.775em; line-height:1.4em; margin-right:10px; text-transform: lowercase;
         }
         .sod_select .sod_placeholder { /* Use this if you're using a placeholder and want to style it */ }
-
-
 
     /* Options list wrapper */
     .sod_select .sod_list_wrapper
@@ -253,14 +249,12 @@
     #selAmount{border:none;border-bottom: 2px solid #cccccc;font-size: 1em;}
     #selAmount.focus{box-shadow: none;}
     #selAmount .sod_option{text-align: center;}
-    #selAmount .sod_label{font-size: 1.8em;}
+    #selAmount .sod_label{ font-size: 1.8em; }
     .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
 
     .sod_option.custom:before{display: none !important;}
     .sod_option.custom small{width: 100%;display:block;color: #555555;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
 
-
     .sod_option.custom small{width: 100%;display:block;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
-
