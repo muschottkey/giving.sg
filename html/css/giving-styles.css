@@ -11,15 +11,10 @@ h4 { font-size: 1.2em; }
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 
-<<<<<<< HEAD
-textarea, input { font-size:1.325em !important; }
-    input[type="text"] { height:100%; }
-    /* Patrick Hand|Short Stack|Neucha|Dekko|Schoolbell|Gloria Hallelujah|Architects Daughter*/
-    input:not([type=checkbox]) { font-family: "Architects Daughter","Neucha", Arial, sans-serif;  }
-=======
-textarea, input { font-size:1.25em !important; height:1.3em; }
+textarea, input { font-size:1.325em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; height:1.3em; }
->>>>>>> origin/step3b
+    /* Patrick Hand|Short Stack|Neucha|Dekko|Schoolbell|Gloria Hallelujah|Architects Daughter*/
+
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
 /* GLOBAL STYLES */
@@ -133,13 +128,10 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 /* NPO signup Progress Indicators */
 .progress-dots { margin: 30px 0; }
-<<<<<<< HEAD
-.progress-dots ul { margin: 0 auto; width: 70%; padding-left: 7%;}
-.progress-dots ul li { width: 27%; display: inline-block; margin-right: 5px; }
-=======
+
 .progress-dots ul { margin: 0 auto; width:80%; padding-left:5%;}
 .progress-dots ul li { width:27%; display: inline-block; margin-right:5px; }
->>>>>>> origin/step3b
+
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
     text-align: center; width:24px; height:24px; border-radius: 50%;
@@ -172,8 +164,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .carousel-indicators li.active{background-color: #5bb75b;}
 .carousel .item button{margin-top: 20px;}
 
-<<<<<<< HEAD
-=======
 /* Make Donation page*/
 .section-page{
     text-align: center;
@@ -236,8 +226,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .more-donations{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px;text-transform: lowercase;font-weight: 400;}
 .more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: absolute;margin-left: -20px;margin-top: 2px;}
 
-
->>>>>>> origin/step3b
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
 
@@ -256,12 +244,9 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
     .sign-up-form { margin-top:50px; border-left:none; }
-<<<<<<< HEAD
-    .carousel-indicators { left:41%; }
-=======
+
     .carousel-indicators{left:41%;}
     .box{margin-bottom: 20px;}
->>>>>>> origin/step3b
 
     /* UI Controls - FORM ELEMENTS  */
     form { text-align: center; }
