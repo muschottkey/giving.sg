@@ -221,11 +221,12 @@
     #selAmount.focus{box-shadow: none;}
     #selAmount .sod_option{text-align: center;}
     #selAmount .sod_label{ font-size: 1.8em; }
-    .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
+    #selAmount.long_input{width: 220px;}
+    #selAmount.long_input .sod_prefix{margin-right: 5px;}
 
+    .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
     .sod_option.custom:before{display: none !important;}
     .sod_option.custom small{width: 100%;display:block;color: #555555;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
-
     .sod_option.custom small{width: 100%;display:block;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}

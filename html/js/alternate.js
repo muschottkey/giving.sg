@@ -141,15 +141,13 @@ $(function(){
     })
     $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     
-    $('.customAmt').on("change",function(){
+    $('.sod_list').on('change','.customAmt',function(){
         var amtvalue = $(this).val();
         var length = amtvalue.length;
         console.log("changed");
-        // console.log(typeof(length));
         if(length >= 5 ){
-            $('.sod_prefix').css("margin-right","5px");
+            $('#selAmount').addClass('long_input');
         }
-        // $('.sod_option.custom').detach();
         $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
         $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     });
