@@ -47,32 +47,45 @@
 		    	<div class="modalwrapper">
 					<div class="row-fluid">
 						<div class="span12 text-center">
-							<div class="user-img"></div>
-							<h4 class="black">Hello, jamie</h4>
+							<div class="user-img">
+								<img src="images/cat.jpg">
+							</div>
+							<p class="small grey m-top20">You are logged in as</p>
+							<h4 class="black">francis</h4>
 					    </div>
 					    <div class="span6 text-center box m-left0">
-					    	<h4 class="black">Summary of <br> Jamie's Donations</h4>
-					    	<div class="summary-wrapper">
-					    		<div class="headings">
-					    			<span class="pull-left">ORGANIZATION</span>
-					    			<span class="pull-right">AMOUNT $</span>
-					    		</div>
-					    		<div class="row-fluid">
-				    				<h3 class="m-0 minimal org-name span9 pull-left">SPCA</h3>
-				    				<h3 class="m-0 amt-value minimal span3 pull-right">50</h3>
-					    			<div class="pull-left text-left">
-						    			<p class="small co-desc grey">Society for the Prevention of Cruelty to Animals(SPCA)</p>
-						    			<span class="small tax-status"><i class="fa fa-check-circle-o"></i>donation eligible for tax deduction</span>
-					    			</div>
-					    		</div>
-					    	</div>
+					    	<form id="donateForm">
+										<div class="form-group>">
+											<h4 class="black m-0">Yes, I want to donate</h4>
+											<select data-custom-class="giving-minimal" data-custom-id="selAmount" 
+											id="selectAmount">
+												<option>10</option>
+												<option>50</option>
+												<option>100</option>
+												<option>250</option>
+												<option>500</option>
+											</select>
+											<p class="span12 small m-left0 m-bot30">Would you like to donate more? <br>Only donations $50 and above to this <br>organization are elligible for tax deduction</p>
+										</div>
+										<br>
+										<div class="form-group m-bot15">
+											<h4 class="clearfix black m-0">to the</h4>
+											<input id="spca" name="spca" value="SPCA" class="black" disabled>
+											<p class="span12 small m-left0">This organization has IPC status. <br>
+											Donations are elligible for tax deduction</p>
+											<p class="small m-bot15">
+												<a class="underlined" href="#">Learn more about IPC</a>
+											</p>
+										</div>
+										<div class="form-group">
+											<h5 class="clearfix black">I'd like to pay by</h5>
+											<select class="select-giving">
+												<option>Credit Card</option>
+												<option>Internet Banking</option>
+											</select>
+										</div>
+									</form>
 					    	<button class="btn btn-ghost btn-block more-donations">
-					    		<i class="fa fa-plus-circle"></i>ADD ANOTHER DONATION
-					    	</button>
-					    	<button class="btn btn-ghost btn-block more-donations visible-desktop">
-					    		<i class="fa fa-plus-circle"></i>ADD ANOTHER DONATION
-					    	</button>
-					    	<button class="btn btn-ghost btn-block more-donations visible-desktop">
 					    		<i class="fa fa-plus-circle"></i>ADD ANOTHER DONATION
 					    	</button>
 					    </div>
@@ -109,6 +122,9 @@
 												<label class="control-label small" for="name_nric">Name as in NRIC
 												</label>
 												<div class="controls">
+													<span class="validation-feedback pull-right" style="display: inline-block;">
+														<a href="javascript:;"><i class="fa fa-pencil" ></i></a>
+													</span>
 													<input name="name_nric" id="name_nric" placeholder="e.g. Jamie Ng Mei Yen" 
 													class="form-control field-required text-center"  type="text">
 												</div>
@@ -116,6 +132,7 @@
 											<div class="control-group">
 												<label class="control-label small" for="nric">NRIC</label>
 												<div class="controls">
+													<span class="validation-feedback pull-right" style="display: inline-block;"><i class="fa fa-pencil" ></i></span>
 													<input name="nric" id="nric" placeholder="e.g. S1234567G" class="form-control field-required text-center" type="text">
 												</div>
 											</div>

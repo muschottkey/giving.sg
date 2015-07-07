@@ -137,17 +137,21 @@ $(function(){
 
 
     $('#selectAmount').selectOrDie({
-        prefix: "DOLLARS"
+        prefix: "DOLLARS",
+        onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length - 2;
+            var dynamic_width = 160 + 15*length;
+            $('#selAmount').css('width', dynamic_width);
+        }
     })
     $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     
     $('.sod_list').on('change','.customAmt',function(){
         var amtvalue = $(this).val();
-        var length = amtvalue.length;
-        console.log("changed");
-        if(length >= 5 ){
-            $('#selAmount').addClass('long_input');
-        }
+        var length = amtvalue.length - 2;
+        var dynamic_width = 160 + 15*length;
+        $('#selAmount').css('width', dynamic_width);
         $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
         $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Enter Your own amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     });
@@ -156,6 +160,12 @@ $(function(){
 
     $('#donateLoggedModal').modal('show');
 
+     $('.widget').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            if($(this).hasClass('fadeInRight')){$(this).removeClass('animated fadeInRight')}
+            if($(this).hasClass('fadeOutLeft')){$(this).removeClass('animated fadeOutLeft')}
+
+        });
+
     $('.Anon .yes').click(function(){
         $(this).closest('div').find('button.active').removeClass('active');
         $(this).addClass('active');
@@ -163,24 +173,30 @@ $(function(){
 
         var isFirst = $('.Tax > .widget.active').next().length;
         if(isFirst == 1){
-            // do nothing
+
             $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active')
             $('.Tax .box-footer > .widget.active').removeClass('active').next().addClass('active')
         }else{
-            $('.Tax > .widget.active').removeClass('active').prev().addClass('active')
+            if($('.Anon .box-footer > .widget.active').prev().length == 1){
+                $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active');
+            }else{
+                $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active');
+            }
+            $('.Tax > .widget.active').removeClass('active').prev().addClass('active');
         }
     })
 
-     $('.Anon .no').click(function(){
+    $('.Anon .no').click(function(){
         $(this).closest('div').find('button.active').removeClass('active');
         $(this).addClass('active');
         $('.Tax .no').removeClass('active')
         var isFirst = $('.Tax > .widget.active').next().length;
-        if(isFirst == 1){
-            $('.Tax > .widget.active').removeClass('active').next().addClass('active')
+        console.log(isFirst);
+        $('.Tax > .widget.active').removeClass('active').next().addClass('active');
+        if($('.Anon .box-footer > .widget.active').prev().length == 1){
+            $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active');
         }else{
-            $('.Tax > .widget.active').removeClass('active').prev().addClass('active')
-            $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active')
+            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active');
         }
     })
 
