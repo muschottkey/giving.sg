@@ -195,7 +195,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 /* Donation Logged In Page */
 #donateLoggedModal{background-color: #efefef;}
-#donateLoggedModal .modal-footer{padding: 15px 5px;}
+#donateLoggedModal .modal-footer{padding: 15px 5px;background: #F5EAB1;}
 .user-img{
     width: 60px;
     height: 60px;
@@ -205,28 +205,36 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     border:1px solid #a9a9a9;
 }
 
-.box{background-color: #ffffff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;}
-.summary-wrapper{max-width: 500px;margin:0 auto;left:0;right: 0;padding: 0 10px;}
-.summary-wrapper .pull-left{width: 70%;}
+.box{background-color: #ffffff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em 0.6em !important;}
+.summary-wrapper{max-width: 500px;margin:0 auto;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
+.summary-wrapper .pull-left{width: auto;}
+.summary-wrapper .headings{border-bottom: 1px solid #cccccc;margin-bottom: 8px;margin-top: 10px;height: 20px;}
+.summary-wrapper .headings span{font-size: 0.75em;}
+.summary-wrapper .headings .pull-left{width: auto;}
+.box:first-child {margin-top:4px;margin-left: 0 }
 .minimal{font-weight: 400;}
 .minimal i{margin-right: 10px;font-size: 2em;position: absolute;margin-left:-34px;margin-top: -5px;}
-.co-desc{font-size: 12px;margin: 0;font-weight: 600;}
-.tax-status{color: #59B259!important;font-size: 12px;}
+.org-name{width: 80%;}
+.co-desc{font-size: 12px;margin-top: 0;margin-bottom:20px;font-weight: 600;}
+.tax-status{color: #59B259!important;font-size: 12px;display:block;margin-bottom: 15px;}
 .tax-status i{margin-right: 6px;}
 .box .small.grey{color: #a5a5a5;}
 .box .small{}
 .box > h4{margin-bottom: 20px;}
-.box.span6{padding: 1em 2em !important;}
+.box.span6{padding: 1em 2em 4.6em !important;}
 .box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .box-footer p{font-size: 0.8em;}
-.buttons{margin-top: 30px;}
-.btn-ghost{background: #ffffff;color: #000;font-weight:700;font-size:0.75em;width: 30%;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
-.amount-pledged{width: 70px;margin-top: 20px;}
+.choice-buttons{margin-top: 30px;}
+.choice-buttons button{width: 35%;padding: 7px;}
+.choice-buttons button.yes{}
+.choice-buttons button.no{}
+.btn-ghost{background: #ffffff;color: #000;font-weight:700;font-size:0.75em;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
+.amount-pledged{width: 40px;margin-top: 4px;}
 .amount-pledged span{float: left;}
-.amt-value{font-size: 40px;}
-.amt-title{font-size: 10px;clear: both;}
-
+.amt-value{font-size: 24px;}
+.more-donations{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px;text-transform: lowercase;font-weight: 400;}
+.more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: absolute;margin-left: -20px;margin-top: 2px;}
 
 
 >>>>>>> origin/step3b
@@ -281,6 +289,11 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .upload-section .input-append{padding-left: 2px;}
     .carousel-control{display: none;}
     .border-left{border-left: none;}
+
+    /*Donate Logged In*/
+    .org-name{width: 80%;float: left !important;}
+    .amt-value{float: right !important;width: auto !important;}
+
 }
 
 @media (max-width: 767px) {
