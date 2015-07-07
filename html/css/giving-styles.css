@@ -209,7 +209,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .tax-status{color: #59B259!important;font-size: 12px;display:block;margin-bottom: 15px;}
 .tax-status i{margin-right: 6px;}
 .box .small.grey{color: #a5a5a5;}
-.box .small{}
 .box > h4{margin-bottom: 20px;}
 .box.span6{padding: 1em 2em 4.6em !important;}
 .box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
@@ -217,14 +216,23 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .box-footer p{font-size: 0.8em;}
 .choice-buttons{margin-top: 30px;}
 .choice-buttons button{width: 35%;padding: 7px;}
-.choice-buttons button.yes{}
-.choice-buttons button.no{}
+.choice-buttons button.active{outline: none;border:none;color: #ffffff;box-shadow: none;}
+.choice-buttons button.yes.active{background-color: #51a351;}
+.choice-buttons button.no.active{background-color: #bd362f;}
 .btn-ghost{background: #ffffff;color: #000;font-weight:700;font-size:0.75em;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
 .amount-pledged{width: 40px;margin-top: 4px;}
 .amount-pledged span{float: left;}
 .amt-value{font-size: 24px;}
 .more-donations{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px;text-transform: lowercase;font-weight: 400;}
 .more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: absolute;margin-left: -20px;margin-top: 2px;}
+
+/* Widgets*/
+.widget{display: none;opacity:0.5;margin-top: 100px;transition:all 2s ease-in-out;}
+.widget.active{display: block;opacity:1;margin-top: 0px;transition:all 2s ease-in-out;}
+.widget form input{  margin-bottom: 0;height: 1em;font-size: 1em !important;}
+.widget form .control-group{margin-top:15px;}
+.widget form label{margin-bottom:8px;}
+.widget .box-footer{border-top: none;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }

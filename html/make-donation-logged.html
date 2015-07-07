@@ -12,6 +12,7 @@
 	<link rel="stylesheet" type="text/css" href="css/giving-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/selectordie.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Lato:400,700,900,400italic,700italic,900italic|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
@@ -76,7 +77,7 @@
 					    	</button>
 					    </div>
 					    <div class="span6">
-					    	<div class="span12 box text-center">
+					    	<div class="span12 box text-center Anon">
 						    	<h4 class="black">Anonymous Donations</h4>
 						    	<p class="small">Would you like your donation to be anonymous to the organization?</p>
 						    	<div class="choice-buttons m-top20">
@@ -84,19 +85,46 @@
 						    		<button class="btn btn-ghost no">NO</button>
 						    	</div>
 						    	<div class="box-footer">
-						    		<p class="small grey">Jerry, if you select "Yes" the donation <br>will not be tax deductable.</p>
+						    		<p class="small grey widget active">Jamie, if you select "Yes" the donation <br>will not be tax deductable.</p>
+						    		<p class="small grey widget">Jamie, you selected "Yes".<br> Your donation is no longer eligible for tax deduction.</p>
 						    	</div>
 					    	</div>
-						    <div class="span12 box m-left0 text-center pull-right">
+						    <div class="span12 box m-left0 text-center pull-right Tax">
 						    	<h4 class="black">Tax Deductions</h4>
-						    	<p class="small">Your donation is eligible for tax deduction. Would you like to claim?</p>
-						    	<div class="choice-buttons">
-						    		<button class="btn btn-ghost yes">YES</button>
-						    		<button class="btn btn-ghost no">NO</button>
-						    	</div>
-						    	<div class="box-footer">
-						    		<p class="small grey">Jerry, if you select "Yes" we will need you to provide your details.</p>
-						    	</div>
+						    	<div class="widget active">
+							    	<p class="small">Your donation is eligible for tax deduction. Would you like to claim?</p>
+							    	<div class="choice-buttons">
+							    		<button class="btn btn-ghost yes">YES</button>
+							    		<button class="btn btn-ghost no">NO</button>
+							    	</div>
+							    	<div class="box-footer">
+							    		<p class="small grey widget active">Jamie, if you select "Yes" we will need you to provide your details.</p>
+							    		<p class="small grey widget">"Yes" is no longer an option as you have chosen to keep your donation anonymous.</p>
+							    	</div>
+							    </div>
+							    <div class="widget">
+							    	<p class="small">Please provide your details for tax deduction</p>
+							    	<form id="loginForm">
+											<div class="control-group">
+												<label class="control-label small" for="name_nric">Name as in NRIC
+												</label>
+												<div class="controls">
+													<input name="name_nric" id="name_nric" placeholder="e.g. Jamie Ng Mei Yen" 
+													class="form-control field-required text-center"  type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label small" for="nric">NRIC</label>
+												<div class="controls">
+													<input name="nric" id="nric" placeholder="e.g. S1234567G" class="form-control field-required text-center" type="text">
+												</div>
+											</div>
+										</form>
+							    	<div class="box-footer">
+							    		<a href="javascript:;" class="small">I changed my mind</a>
+							    		<p class="small grey">I don't want to claim tax reduction</p>
+							    	</div>
+							    </div>
 						    </div>
 					    </div>
 					</div>

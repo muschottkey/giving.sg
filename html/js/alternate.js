@@ -156,6 +156,34 @@ $(function(){
 
     $('#donateLoggedModal').modal('show');
 
+    $('.Anon .yes').click(function(){
+        $(this).closest('div').find('button.active').removeClass('active');
+        $(this).addClass('active');
+        $('.Tax .no').addClass('active');
+
+        var isFirst = $('.Tax > .widget.active').next().length;
+        if(isFirst == 1){
+            // do nothing
+            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active')
+            $('.Tax .box-footer > .widget.active').removeClass('active').next().addClass('active')
+        }else{
+            $('.Tax > .widget.active').removeClass('active').prev().addClass('active')
+        }
+    })
+
+     $('.Anon .no').click(function(){
+        $(this).closest('div').find('button.active').removeClass('active');
+        $(this).addClass('active');
+        $('.Tax .no').removeClass('active')
+        var isFirst = $('.Tax > .widget.active').next().length;
+        if(isFirst == 1){
+            $('.Tax > .widget.active').removeClass('active').next().addClass('active')
+        }else{
+            $('.Tax > .widget.active').removeClass('active').prev().addClass('active')
+            $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active')
+        }
+    })
+
 
 })
 
