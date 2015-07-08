@@ -160,9 +160,9 @@ $(function(){
 
     $('#donateLoggedModal').modal('show');
 
-     $('.widget').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-            if($(this).hasClass('fadeInRight')){$(this).removeClass('animated fadeInRight')}
-            if($(this).hasClass('fadeOutLeft')){$(this).removeClass('animated fadeOutLeft')}
+     $('.widget').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+            if($(this).hasClass('fadeIn')){$(this).removeClass('animated fadeIn')}
+            if($(this).hasClass('fadeOut')){$(this).removeClass('animated fadeOut')}
 
         });
 
@@ -174,15 +174,15 @@ $(function(){
         var isFirst = $('.Tax > .widget.active').next().length;
         if(isFirst == 1){
 
-            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active')
-            $('.Tax .box-footer > .widget.active').removeClass('active').next().addClass('active')
+            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
+            $('.Tax .box-footer > .widget.active').removeClass('active').next().addClass('active');
         }else{
             if($('.Anon .box-footer > .widget.active').prev().length == 1){
-                $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active');
+                $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active animated fadeIn');
             }else{
-                $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active');
+                $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
             }
-            $('.Tax > .widget.active').removeClass('active').prev().addClass('active');
+            $('.Tax > .widget.active').removeClass('active').prev().addClass('active animated fadeIn');
         }
     })
 
@@ -192,14 +192,15 @@ $(function(){
         $('.Tax .no').removeClass('active')
         var isFirst = $('.Tax > .widget.active').next().length;
         console.log(isFirst);
-        $('.Tax > .widget.active').removeClass('active').next().addClass('active');
+        $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
         if($('.Anon .box-footer > .widget.active').prev().length == 1){
-            $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active');
+            $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active animated fadeIn');
         }else{
-            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active');
+            $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
         }
     })
 
-
 })
+
+
 

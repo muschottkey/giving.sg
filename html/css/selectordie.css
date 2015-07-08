@@ -33,6 +33,8 @@
     font-size: .875em; font-weight: 700; text-align:left; text-transform: uppercase;
     outline: 0; outline-offset: -2px; /* Opera */
     cursor: default;
+    transition: width 0.5s ease;
+    -webkit-transition: width 0.5s ease;
         
 }
 
