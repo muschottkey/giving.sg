@@ -213,6 +213,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .co-desc{font-size: 12px;margin-top: 0;margin-bottom:20px;font-weight: 600;}
 .tax-status{color: #59B259!important;font-size: 12px;display:block;margin-bottom: 15px;}
 .tax-status i{margin-right: 6px;}
+.tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
 .box .small.grey{color: #a5a5a5;}
 .box > h4{margin-bottom: 20px;}
 .box.span6{padding: 1em 2em 4.6em !important;}

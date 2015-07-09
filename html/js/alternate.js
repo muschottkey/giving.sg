@@ -195,9 +195,24 @@ $(function(){
         $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
         if($('.Anon .box-footer > .widget.active').prev().length == 1){
             $('.Anon .box-footer > .widget.active').removeClass('active').prev().addClass('active animated fadeIn');
-        }else{
+        }else if(isFirst == 1){
+            //do nothing
+        }
+        else{
             $('.Anon .box-footer > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
         }
+    })
+
+     $('.Tax .yes').click(function(){
+        // $('.Anon .choice-buttons').find('button.active').removeClass('active').addClass('active');
+        // $(this).addClass('active');
+        $('.Anon .choice-buttons').find('button.active').removeClass('active');
+
+        $('.Anon .no').addClass('active');
+
+        $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
+
+       
     })
 
 })
