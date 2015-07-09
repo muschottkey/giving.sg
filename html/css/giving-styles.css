@@ -201,7 +201,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .user-img img{max-height:100%;max-width: 100%; }
 
 .box{background-color: #ffffff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em 0.6em !important;}
-.summary-wrapper{max-width: 500px;margin:0 auto;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
+.summary-wrapper{max-width: 500px;min-height:40px;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
 .summary-wrapper .pull-left{width: auto;}
 .summary-wrapper .headings{border-bottom: 1px solid #cccccc;margin-bottom: 8px;margin-top: 10px;height: 20px;}
 .summary-wrapper .headings span{font-size: 0.75em;}
@@ -244,6 +244,17 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #userDetails{}
 #userDetails .validation-feedback {margin-top: 0;}
 #userDetails .validation-feedback i{font-size: 1em;color: #999999;}
+
+
+/* Donation Confirmed Logged In Individual */
+.summary-wrapper.email-ack{margin-top: 20px;padding: 10px 60px 25px;}
+.share-box{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;}
+.share-box a{margin-right: 10px;margin-left:10px;line-height: 1;}
+.share-box a i{font-size: 2.5em;margin-top: 5px;}
+.share-box a.facebook{color: #46629E;}
+.share-box a.twitter{color: #55acee}
+.share-box a.gplus{color:#DC4A3D; }
+.share-box a.shareit{color:#BBBBBB; }
 
 
 /* Clear Fix */
@@ -294,6 +305,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .upload-section .input-append{padding-left: 2px;}
     .carousel-control{display: none;}
     .border-left{border-left: none;}
+    .summary-wrapper.email-ack {padding: 10px 15px 25px;}
 
     /*Donate Logged In*/
     .org-name{width: 80%;float: left !important;}
