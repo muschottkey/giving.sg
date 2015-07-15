@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#000; font-we
 h2 { font-size:2.25em; }
 h3 { font-size: 1.5em; }
 h4 { font-size: 1.2em; }
+h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 
@@ -39,7 +40,7 @@ div.centered{margin-left: auto !important;margin-right: auto !important;float: n
 
 /* UI Controls - BUTTONS */
 .control-group { margin-top:3em; position:relative; }
-.bootstrap-switch{box-shadow: none !important;border-color: #BBBBBB;}
+.bootstrap-switch{box-shadow: none !important;border-color: #ccc !important;}
 
 /* MODAL */
 .modal, .modal-content, .modal-body { margin:0 auto; overflow-y:initial; }
@@ -393,23 +394,18 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .amt-value{float: right !important;width: auto !important;}
 
     #causes-wrapper{margin-top: 10px;}
-    .cause-box.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;}
-    .cause-box input[type=checkbox] + label:before {
-      width: 220px;
-      height: 40px;
-      line-height: 2.3em;
-      bottom: -42px;
-      left: 42px;
-      top: 0px;
-      border: none;
-    }
-    .cause-box input[type=checkbox]:checked + label:after {
-      top: 9px;
-    }
-    .cause-box input[type=checkbox] + label {height: 40px;background-size: contain;border-radius: 0;border-bottom-left-radius: 6px;border-top-left-radius: 6px;border:none;}
+    .cause-box.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
+    .cause-box input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 2.7em;bottom: -41px;left: 42px;top: 0px;border-left:1px solid #efefef;
+        border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}
+    .cause-box input[type=checkbox]:checked + label:after {top: 13px;}
+    .cause-box input[type=checkbox]:checked + label:before {background-color: #ffffff;}
+
+    .cause-box input[type=checkbox] + label {height: 50px;background-size: contain;margin:0;border-radius: 0;border:none;}
     #tax-deduc, .box.reset{padding-left: 5px !important;}
     #save-actions .btn{width: auto;}
     #save-status{width: 100%;margin-left: 0;margin-bottom: 20px;margin-top: 15px;}
+    #tax-deduc .span6:last-child {border-left: none;}
+    #tax-deduc, .box.reset{padding-left: 0 !important;}
 }
 
 @media (max-width: 767px) {
