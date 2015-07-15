@@ -211,11 +211,42 @@ $(function(){
         $('.Anon .no').addClass('active');
 
         $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
-
-       
     })
 
+    $('.switch').bootstrapSwitch({
+        offColor: "danger",
+        onColor:  "success",
+        offText: "NO",
+        onText:  "YES"
+
+    });
+
+    //Adds titles to custom checkboxes in set-up-donation
+    $('.cause-box').each(function(){
+        label = $(this).find('label');
+        chkBox = $(this).find('input[type=checkbox]');
+        content = label.attr('data-content');
+        inputId =   chkBox.attr('id');
+        addRule(".cause-box input[type=checkbox]#"+inputId+" + label:before", {
+        content: content
+        });
+
+    })
 })
+
+
+/* This function inserts css to head section of html dynamically.Being used to set content
+for pseudo elements in the custom checkboxes*/
+
+var addRule = (function (style) {
+    var sheet = document.head.appendChild(style).sheet;
+    return function (selector, css) {
+        var propText = typeof css === "string" ? css : Object.keys(css).map(function (p) {
+            return p + ":" + (p === "content" ? "'" + css[p] + "'" : css[p]);
+        }).join(";");
+        sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
+    };
+})(document.createElement("style"));
 
 
 

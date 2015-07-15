@@ -1,0 +1,1263 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"height",
+				"height1"
+			],
+			[
+				"heigh",
+				"heights"
+			],
+			[
+				"hei",
+				"heights"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"fade",
+				"fadeOutLeft"
+			],
+			[
+				"cla",
+				"classes"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"re",
+				"registered"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"paddi",
+				"padding-left"
+			],
+			[
+				"ac",
+				"active"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"padding",
+				"padding"
+			],
+			[
+				"paddin",
+				"padding"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"span",
+				"span6"
+			],
+			[
+				"fff",
+				"ffffff"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"bl",
+				"inline-block"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"mag",
+				"margin-top"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"po",
+				"post〔function〕"
+			],
+			[
+				"laz",
+				"lazyDelete〔function〕"
+			],
+			[
+				"isse",
+				"isset〔function〕"
+			],
+			[
+				"is",
+				"is_visible=1"
+			],
+			[
+				"print",
+				"print_r〔function〕"
+			],
+			[
+				"include",
+				"include_once〔function〕"
+			],
+			[
+				"dele",
+				"$delete〔variable〕"
+			],
+			[
+				"lazy",
+				"lazyUpdate〔function〕"
+			],
+			[
+				"els",
+				"else〔keyword〕"
+			],
+			[
+				"upda",
+				"$update〔variable〕"
+			],
+			[
+				"start",
+				"$startDate〔variable〕"
+			],
+			[
+				"array",
+				"array〔function〕"
+			],
+			[
+				"requi",
+				"require_once〔keyword〕"
+			],
+			[
+				"t",
+				"tr	Tag"
+			],
+			[
+				"fonr",
+				"font-style: 〔property〕"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pad",
+				"padt10"
+			],
+			[
+				"th",
+				"thead	Tag"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"conta",
+				"container"
+			],
+			[
+				"FFF",
+				"ffffff"
+			],
+			[
+				"json",
+				"json_encode〔function〕"
+			],
+			[
+				"da",
+				"$data〔variable〕"
+			],
+			[
+				"getJon",
+				"getJobIdsByPersonnel"
+			],
+			[
+				"j_is",
+				"j_isdeleted=0"
+			],
+			[
+				"j",
+				"j_fsrno"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"per",
+				"$personnel〔variable〕"
+			],
+			[
+				"pri",
+				"print_r〔function〕"
+			],
+			[
+				"pers",
+				"$personnel_id〔variable〕"
+			],
+			[
+				"getJobs",
+				"getJobIdsByPersonnel〔function〕"
+			],
+			[
+				"perso",
+				"personnel_id"
+			],
+			[
+				"ar",
+				"array"
+			],
+			[
+				"ret",
+				"$returnInfo〔variable〕"
+			],
+			[
+				"for",
+				"foreach	foreach …"
+			],
+			[
+				"getPer",
+				"get_personnel"
+			],
+			[
+				"hidd",
+				"hidden_pickers"
+			],
+			[
+				"dat",
+				"datepicker"
+			],
+			[
+				"cont",
+				"controls"
+			],
+			[
+				"ty",
+				"type=\"text"
+			],
+			[
+				"All",
+				"$AllUnfinishedCount〔variable〕"
+			],
+			[
+				"cho",
+				"chosen"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"arra",
+				"array〔function〕"
+			],
+			[
+				"_S",
+				"$_SESSION〔variable〕"
+			],
+			[
+				"de",
+				"delete"
+			],
+			[
+				"ur",
+				"url"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"pro",
+				"projects"
+			],
+			[
+				"login",
+				"login"
+			],
+			[
+				"projects",
+				"ProjectsController"
+			],
+			[
+				"va",
+				"var_dump"
+			],
+			[
+				"aja",
+				"ajaxform_options"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"fals",
+				"FALSE"
+			],
+			[
+				"cl",
+				"console"
+			],
+			[
+				"Sl",
+				"slideUp"
+			],
+			[
+				"f",
+				"function"
+			],
+			[
+				"Proje",
+				"Project"
+			],
+			[
+				"s",
+				"span	Tag"
+			],
+			[
+				"con",
+				"count"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"des",
+				"destinationPath"
+			],
+			[
+				"file",
+				"filepath"
+			],
+			[
+				"uplo",
+				"upload_success"
+			],
+			[
+				"red",
+				"reductr"
+			],
+			[
+				"fil",
+				"filename"
+			],
+			[
+				"Projec",
+				"ProjectsController"
+			],
+			[
+				"Pro",
+				"ProjectsController"
+			],
+			[
+				"r",
+				"reductr"
+			],
+			[
+				"pr",
+				"protected"
+			],
+			[
+				"reda",
+				"redactor"
+			],
+			[
+				"proj",
+				"project"
+			],
+			[
+				"proje",
+				"project"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"bod",
+				"bodyEl"
+			],
+			[
+				"body",
+				"bodyEl"
+			],
+			[
+				"open",
+				"openBtn"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"co",
+				"compressed"
+			],
+			[
+				"output",
+				"output_style"
+			],
+			[
+				"contr",
+				"control_padding"
+			],
+			[
+				"ca",
+				"carousel-control"
+			],
+			[
+				"slide",
+				"slideparent_height"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"tre",
+				"true"
+			],
+			[
+				"FA",
+				"false"
+			],
+			[
+				"CLOSES",
+				"closestelem_state"
+			],
+			[
+				"closes",
+				"closestelem_state"
+			],
+			[
+				"clo",
+				"closestelem"
+			],
+			[
+				"fo",
+				"font-family"
+			],
+			[
+				"ba",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/make-donation-logged-ind-user.html",
+			"settings":
+			{
+				"buffer_size": 7529,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/css/giving-styles.css",
+			"settings":
+			{
+				"buffer_size": 13321,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/make-donation-logged.html",
+			"settings":
+			{
+				"buffer_size": 6968,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/css/selectordie.css",
+			"settings":
+			{
+				"buffer_size": 9227,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/make-donation.html",
+			"settings":
+			{
+				"buffer_size": 6040,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/var/www/html/freelance/giving.sg/html/js/alternate.js",
+			"settings":
+			{
+				"buffer_size": 8556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/ryan/Desktop/alternate.js",
+			"settings":
+			{
+				"buffer_size": 8556,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/ryan/Desktop/giving-styles.css",
+			"settings":
+			{
+				"buffer_size": 13321,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"",
+				"Preferences: Browse Packages"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/var/www/html/freelance/giving.sg/html/signup-npo-step3.html",
+		"/var/www/html/freelance/giving.sg/html/giving.sg.sublime-project",
+		"/var/www/html/freelance/study-WF/index.html",
+		"/var/www/html/freelance/giving.sg/.git/config",
+		"/home/ryan/Desktop/giving-styles.css",
+		"/var/www/html/freelance/giving.sg/html/css/giving-styles.css",
+		"/var/www/html/freelance/giving.sg/html/js/alternate.js",
+		"/var/www/html/freelance/giving.sg/html/signup-npo-step3b.html",
+		"/home/ryan/Desktop/carousel-swipe-events.js",
+		"/home/ryan/Desktop/DBConn.class.php",
+		"/var/www/html/freelance/giving.sg/html/signup-verifyemail.html",
+		"/var/www/html/freelance/giving.sg/html/signup.html",
+		"/var/www/html/freelance/giving.sg/js/alternate.js",
+		"/var/www/html/freelance/giving.sg/signup-verifyemail.html",
+		"/var/www/html/freelance/giving.sg/css/giving-styles.css",
+		"/var/www/html/freelance/giving.sg/signup.html",
+		"/var/www/html/freelance/giving.sg/login-reset-pwd.html",
+		"/var/www/html/freelance/giving.sg/login.html",
+		"/var/www/html/ceva/basco/fetch.php",
+		"/var/www/html/freelance/Logins/js/alternate.js",
+		"/var/www/html/freelance/giving.sg/css/font-awesome.min.css",
+		"/var/www/html/freelance/Logins/css/main.css",
+		"/var/www/html/ceva/basco/ImageHandler.php",
+		"/var/www/html/ceva/meridian/footer1.php",
+		"/var/www/html/ceva/meridian/footer.php",
+		"/var/www/html/ceva/meridian/css/main.css",
+		"/var/www/html/ceva/meridian/header.php",
+		"/var/www/html/ceva/meridian/gallery.php",
+		"/var/www/html/ceva/meridian/offers.php",
+		"/var/www/html/ceva/meridian/nav.php",
+		"/var/www/html/ceva/meridian/siteadmin/classes/DBConn.class.php",
+		"/var/www/html/ceva/meridian/contact.php",
+		"/var/www/html/ceva/meridian/siteadmin/classes/Gallery.class.php",
+		"/var/www/html/ceva/meridian/siteadmin/exec/gallery-exec.php",
+		"/var/www/html/ceva/meridian/siteadmin/editoffer.php",
+		"/var/www/html/ceva/phtl/classes/Personnel.class.php",
+		"/var/www/html/ceva/securex/footer.php",
+		"/var/www/html/ceva/phtl/footer.php",
+		"/var/www/html/ceva/meridian/facilities.php",
+		"/var/www/html/ceva/phtl/js/application.js",
+		"/var/www/html/ceva/securex/css/charisma-app.css",
+		"/var/www/html/ceva/securex/css/bootstrap-united.css",
+		"/var/www/html/ceva/securex/exec/blog-exec.php",
+		"/var/www/html/ceva/securex/classes/Blog.class.php",
+		"/var/www/html/ceva/meridian/siteadmin/css/redactor.css",
+		"/var/www/html/ryan-main/public/js/main.js",
+		"/var/www/html/ceva/securex/editpost.php",
+		"/var/www/html/ryan-main/app/views/layouts/master.blade.php",
+		"/var/www/html/ryan-main/app/views/projects/edit.blade.php",
+		"/var/www/html/ceva/meridian/siteadmin/uploadify.php",
+		"/var/www/html/ceva/phtl/classes/Job.class.php",
+		"/var/www/html/ceva/phtl/viewjob.php",
+		"/var/www/html/ceva/meridian/siteadmin/exec/Offers-exec.php",
+		"/var/www/html/ceva/phtl/exec/jobs-exec.php",
+		"/var/www/html/ceva/securex/newpost.php",
+		"/var/www/html/ceva/securex/header.php",
+		"/var/www/html/ceva/phtl/newjob.php",
+		"/home/ryan/www.webagate.com/demos/alia/wish/Dark-Version/index.html",
+		"/var/www/html/ceva/meridian/css/2035.responsive.css",
+		"/var/www/html/ceva/meridian/accommodation.php",
+		"/var/www/html/ceva/meridian/css/2035-reset.css",
+		"/var/www/html/ceva/meridian/js/main.js",
+		"/var/www/html/ceva/meridian/Gruntfile.js",
+		"/var/www/html/ceva/meridian/siteadmin/msg.php",
+		"/var/www/html/ceva/meridian/conferencing.php",
+		"/home/ryan/Downloads/luxen/room-single.html",
+		"/var/www/html/ceva/meridian/Dimens",
+		"/var/www/html/ceva/meridian/index.php",
+		"/home/ryan/Downloads/luxen/about.html",
+		"/home/ryan/Downloads/luxen/js/main.js",
+		"/var/www/html/ceva/meridian/suites.php",
+		"/var/www/html/ceva/meridian/dining.php",
+		"/var/www/html/ceva/meridian/quick_reservation_form.php",
+		"/var/www/html/ceva/meridian/css/bootstrap.min.css",
+		"/var/www/html/ref/bestwestern/js/custom.js",
+		"/var/www/html/ceva/phtl/classes/Admins.class.php",
+		"/var/www/html/ceva/phtl/exec/auth-exec.php",
+		"/var/www/html/ceva/phtl/header.php",
+		"/var/www/html/ceva/phtl/editrole.php",
+		"/var/www/html/ceva/phtl/choices.php",
+		"/var/www/html/ryan-main/app/views/layouts/nav.blade.php",
+		"/home/ryan/Downloads/luxen/index.html",
+		"/var/www/html/ceva/classes/DBConn.class.php",
+		"/var/www/html/ceva/classes/Admins.class.php",
+		"/var/www/html/ceva/index.php",
+		"/var/www/html/ceva/update.php",
+		"/var/www/html/ceva/crud.php",
+		"/var/www/html/ceva/insert.php",
+		"/var/www/html/ceva/projects.php",
+		"/var/www/html/ceva/delete.php",
+		"/var/www/html/Ceva/Dashboard.class.php",
+		"/var/www/html/Ceva/DBConn.class.php",
+		"/var/www/html/Ceva/Admins.class.php",
+		"/var/www/html/Ceva/DBConn.php",
+		"/home/ryan/Downloads/DBConn.class.php",
+		"/var/www/html/ryan-main/app/views/Dash/projectsmanager.blade.php",
+		"/var/www/html/ryan-main/app/routes.php",
+		"/var/www/html/ryan-main/app/views/Dash/master.blade.php",
+		"/var/www/html/ryan-main/app/views/auth/login.blade.php",
+		"/var/www/html/ryan-main/public/sass/dashboard_styles.scss",
+		"/var/www/html/ryan-main/public/sass/style.scss",
+		"/var/www/html/ryan-main/app/controllers/AuthController.php",
+		"/var/www/html/ryan-main/app/controllers/ProjectsController.php",
+		"/var/www/html/ryan-main/app/views/projects/single.blade.php",
+		"/var/www/html/ryan-main/app/controllers/UsersController.php",
+		"/var/www/html/ryan-main/app/views/Dash/nav.blade.php",
+		"/var/www/html/ryan-main/app/views/Dash/index.blade.php",
+		"/var/www/html/ryan-main/composer.json",
+		"/var/www/html/ryan-main/package.json",
+		"/var/www/html/ryan-main/app/views/projects/create.blade.php",
+		"/var/www/html/ryan-main/app/database/migrations/2015_01_22_124833_create_users_table.php",
+		"/var/www/html/ryan-main/app/views/auth/register.blade.php",
+		"/var/www/html/ryan-main/Gruntfile.js",
+		"/var/www/html/ryan-main/app/views/Dash/dashmaster.blade.php",
+		"/var/www/html/ryan-main/public/css/dropzone.css",
+		"/var/www/html/ryan-main/app/views/projects/index.blade.php",
+		"/var/www/html/ryan-main/app/models/User.php",
+		"/var/www/html/mv/app/controllers/AuthController.php",
+		"/var/www/html/ryan-main/app/views/Auth/register.blade.php",
+		"/var/www/html/ryan-main/app/controllers/HomeController.php",
+		"/var/www/html/ryan-main/app/config/auth.php",
+		"/var/www/html/ryan-main/app/views/uploader.blade.php",
+		"/var/www/html/ryan-main/app/database/seeds/ProjectsTableSeeder.php",
+		"/var/www/html/ryan-main/public/js/dropzone-4.0.0/dist/min/dropzone-amd-module.min.js",
+		"/home/ryan/Desktop/The devil was seating a few feet away from me.txt",
+		"/var/www/html/ryan-main/app/controllers/AuthContoller.php",
+		"/var/www/html/ryan-main/app/models/Project.php",
+		"/var/www/html/ryan-main/app/controllers/BaseController.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Organization",
+			"signup",
+			"$o",
+			"photo",
+			"$_GET",
+			"control-group",
+			"col-md-6",
+			"span6",
+			"location",
+			"Room Rates",
+			"bread",
+			"uppercase",
+			"upper-case",
+			"center",
+			"pretty",
+			"about",
+			"footer",
+			"bread",
+			"noty",
+			"quick",
+			"bread",
+			"justify",
+			"center",
+			"room",
+			"datepicker",
+			"date",
+			"Varela Round",
+			"margint40",
+			");\n",
+			"category",
+			"();\n",
+			"	    \n",
+			"write",
+			"dit",
+			"',",
+			"form",
+			"$background",
+			"#e9e9e9",
+			"300px",
+			"icon",
+			"icon-list",
+			">\n",
+			"dcjq",
+			"ryan_pixel",
+			"footer-",
+			"1200px",
+			"#5e081e",
+			"#5e",
+			";\n",
+			"width:5%",
+			".carou",
+			"767",
+			"Pesapal",
+			"carousel",
+			".cart",
+			"alert",
+			"mobile-logo",
+			"navbar-collapse",
+			"main-nav",
+			"prop",
+			"input",
+			"z-index",
+			"thumbnail",
+			"\"Open Sans\",",
+			"991",
+			"trad",
+			"tra",
+			"wrap",
+			"items",
+			"search-overlay",
+			"aler",
+			"alert-",
+			"body",
+			"alert",
+			"Futurastd",
+			"Helvetica",
+			"disabled",
+			"@media",
+			"768",
+			"read",
+			"maridadi",
+			"thumbnail",
+			"thumbnaol",
+			"#wrap",
+			"carousel",
+			".btn",
+			"state",
+			"wp_listings_post_nav()",
+			"DOPBSPCalendar-info-message dopbsp-error",
+			".DOPBSPCalendar-navigation .dopbsp-month-year {",
+			".DOPBSPCalendar-day.dopbsp-selected .dopbsp-body, .DOPBSPCalendar-day.dopbsp-selected .dopbsp-body .dopbsp-co, .DOPBSPCalendar-day.dopbsp-selected .dopbsp-body .dopbsp-ci, .DOPBSPCalendar-day.dopbsp-selected .dopbsp-bind-left.dopbsp-extended .dopbsp-body",
+			".DOPBSPCalendar-day.dopbsp-next-month {",
+			".DOPBSPCalendar-navigation .dopbsp-week .dopbsp-day",
+			".DOPBSPCalendar-navigation .dopbsp-week .dopbsp-day ",
+			"target=\"_parent\" ",
+			"shared",
+			"device-width",
+			";	",
+			"@media",
+			"2D2D2E",
+			"body {",
+			"body{",
+			"body",
+			".navbar-fixed-top",
+			".navbar",
+			".nav",
+			"top-menu",
+			"form-control",
+			".search",
+			"text-shadow",
+			"linear",
+			"sidebar-nav",
+			"navbar-inner",
+			"navbar",
+			"sidebar",
+			"main-menu-span",
+			".navbar",
+			"-->\n",
+			";\n",
+			".cssmenu",
+			".group",
+			".cssmenu",
+			".col",
+			".btn",
+			"'));\n",
+			"width",
+			".padder-small",
+			".padder"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Organisation",
+			"upload",
+			"$g",
+			"$_POST",
+			"form-group",
+			"col-md-9",
+			"col-md-6",
+			"\"Lato\", Helvetica, sans-serif",
+			"Form",
+			"#eaeaea",
+			"#f8f8f8",
+			"270px",
+			" #a50e34",
+			" ",
+			"alert-default",
+			"'Futurastd'",
+			"Futurastd",
+			"street",
+			"target=\"_parent\" class=\"read-more\"",
+			"width",
+			"#333333",
+			"Bariol"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/var/www/html/freelance/giving.sg/html/make-donation-logged-ind-user.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7529,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1984,
+								1984
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 921.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/var/www/html/freelance/giving.sg/html/css/giving-styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13321,
+								13321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/var/www/html/freelance/giving.sg/html/make-donation-logged.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6968,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2358,
+								2358
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/var/www/html/freelance/giving.sg/html/css/selectordie.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1293,
+								1293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 396.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/var/www/html/freelance/giving.sg/html/make-donation.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6040,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6040,
+								6040
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 853.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/var/www/html/freelance/giving.sg/html/js/alternate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6948,
+								6948
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3696.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/home/ryan/Desktop/alternate.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8556,
+								8556
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3806.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "/home/ryan/Desktop/giving-styles.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								13321,
+								13321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": -0.0,
+						"translation.y": 6193.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 35.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 112.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "giving.sg.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/html/Oak/sass/app.scss"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/var/www/html/freelance/giving.sg/css/giving.sg.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
