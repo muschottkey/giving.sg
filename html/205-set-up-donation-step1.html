@@ -33,7 +33,7 @@
 	    </div>
 	</div>
 	<div class="section-page">
-		<div class="boxed-wrapper">
+		<div class="boxed-wrapper wide">
 			<div class="row-fluid">
 				<div class="span12 text-center" id="setup-donation-content">
 					<h6 class="small black m-0">Set Up</h6>
@@ -55,153 +55,162 @@
 						</ul>
 					</div>
 					<hr>
-					<h4 class="text-left">Your Organization</h4>
-					<div class="alert alert-info">
-						<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
-					</div>
-					<h4 class="text-left">Tax Deduction</h4>
-					<div class="box span12" id="tax-deduc">
-						<h6 class="small black m-0">Preset Amounts</h6>
-						<span class="small">We've set up these 1-click donation buttons for you.</span><br>
-						<span class="small">Donors will also be able to key in any amount they wish.</span>
-							<div class="m-top20">
-								<button class="btn btn-ghost">$10</button>
-								<button class="btn btn-ghost">$50</button>
-								<button class="btn btn-ghost">$100</button>
-								<button class="btn btn-ghost">$250</button>
-								<button class="btn btn-ghost">$500</button>
+					<div class="donation-wrapper">
+						<div class="p-section row-fluid">
+							<h4 class="text-left">Your Organization</h4>
+							<div class="alert alert-info">
+								<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
 							</div>
-						<div class="m-top20 bordered-t">
-							<div class="row-fluid">
-								<div class="span6">
-									<h6 class="small black">IPC Status</h6>
-									<span class="small">Does your organization<br> have IPC Status?</span>
-	                            	<div class="cleafix m-top20">
-	                            		<input type="checkbox" class="switch cleafix" checked>
-	                            	</div>
-								</div>
-								<div class="span6">
-									<h6 class="small black">Minimum Amount</h6>
-									<span class="small">What is the minimum donation amount <br> to be eligile for Tax deduction?</span>
-									<div class="clearfix m-top20">
-										<select class="select-giving" data-custom-class="giving-minimal">
-											<option>$10</option>
-											<option>$50</option>
-											<option>$100</option>
-											<option>$250</option>
-											<option>$500</option>
-										</select>
+						</div>
+						<div class="p-section row-fluid">
+							<h4 class="text-left">Tax Deduction</h4>
+							<div class="box span12" id="tax-deduc">
+								<h6 class="small black m-0">Preset Amounts</h6>
+								<span class="small">We've set up these 1-click donation buttons for you.</span><br>
+								<span class="small">Donors will also be able to key in any amount they wish.</span>
+									<div class="m-top20">
+										<button class="btn btn-ghost">$10</button>
+										<button class="btn btn-ghost">$50</button>
+										<button class="btn btn-ghost">$100</button>
+										<button class="btn btn-ghost">$250</button>
+										<button class="btn btn-ghost">$500</button>
+									</div>
+								<div class="m-top20 bordered-t">
+									<div class="row-fluid">
+										<div class="span6">
+											<h6 class="small black">IPC Status</h6>
+											<span class="small">Does your organization<br> have IPC Status?</span>
+			                            	<div class="cleafix m-top20">
+			                            		<input type="checkbox" id="ipc_status" class="cleafix" checked>
+			                            	</div>
+										</div>
+										<div class="span6">
+											<h6 class="small black" id="ipc_data">Minimum Amount</h6>
+											<span class="small">What is the minimum donation amount <br> to be eligile for Tax deduction?</span>
+											<div class="clearfix m-top20">
+												<select class="select-giving-autofit" data-custom-class="giving-minimal autofit">
+													<option>$10</option>
+													<option>$50</option>
+													<option>$100</option>
+													<option>$250</option>
+													<option>$500</option>
+												</select>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<h4 class="text-left m-top20">Causes and Crowd Fundraising</h4>
-					<div class="box reset span12">
-						<h4 class="">Main Causes</h4>
-						<span class="small">What are the causes your organisation supports?</span><br>	
-						<span class="small m-top20">Select up to 4 causes</span>
-						<div id="causes-wrapper" class="row-fluid">
-							<div class="span12">
-								<div class="cause-box span4">
-									<input type="checkbox" id="input1" />
-									<label for="input1" data-content="Adults"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input2" />
-									<label for="input2" data-content="Animals"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input3" />
-									<label for="input3" data-content="Arts & Heritage"></label>
-								</div>
-							</div>
-							<div class="span12">
-								<div class="cause-box span4">
-									<input type="checkbox" id="input4" />
-									<label for="input4" data-content="Children & Youth"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" disabled id="input5" />
-									<label for="input5" data-content="Disabled"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input6" />
-									<label for="input6" data-content="Education"></label>
-								</div>
-							</div>
-							<div class="span12">
-								<div class="cause-box span4">
-									<input type="checkbox" id="input7" />
-									<label for="input7" data-content="Elderly"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input8" />
-									<label for="input8" data-content="Environment"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input9" />
-									<label for="input9" data-content="Health"></label>
-								</div>
-							</div>
-							<div class="span12">
-								<div class="cause-box span4">
-									<input type="checkbox" id="input10" />
-									<label for="input10" data-content="Social Service"></label>
-								</div>
-								<div class="cause-box span4">
-									<input type="checkbox" id="input11" />
-									<label for="input11" data-content="Women & Girls"></label>
-								</div>
-							</div>
-						</div>	
-					</div>
-					<h4 class="text-left m-top20">Causes and Crowd Fundraising</h4>
-					<div class="box reset span12">
-						<h4 class="">Crowd Fundraising Preferences</h4>
-						<span class="small">Giving.sg members who believe in your cause can start campaigns to raise money for you.</span>
-						<span class="small">Do you want to approve such campaigns before they can be launched?</span>
-						<div class="cleafix m-top20">
-                    		<input type="checkbox" class="switch cleafix">
-                    	</div>
-                    	<p class="small m-bot15">
-							<a class="underlined" href="#">Learn more about crowd fundraising</a>
-						</p>
-					</div>
-
-					<h4 class="text-left m-top20">Your Contact Info</h4>
-					<div class="box reset span12">
-						<span class="small">One last thing.<br> Provide your contact info so that our members can get in touch with you</span>
-						<div class="span6 centered">
-							<form id="donation-userDetails" class="form">
-								<div class="control-group">
-									<label class="control-label small" for="user_email">Email Address</label>
-									<div class="controls">
-										<input name="user_email" id="user_email" placeholder="name@organization.com" class="form-control field-required text-center" type="text">
+						<div class="p-section row-fluid">
+							<h3 class="text-left">Causes and Crowd Fundraising</h3>
+							<div class="box reset span12">
+								<h4 class="">Main Causes</h4>
+								<span class="small">What are the causes your organisation supports?</span><br>	
+								<span class="smaller block m-top20">Select up to 4 causes</span>
+								<div id="causes-wrapper" class="row-fluid">
+									<div class="span12">
+										<div class="cause-box span4">
+											<input type="checkbox" id="input1" />
+											<label for="input1" data-content="Adults"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input2" />
+											<label for="input2" data-content="Animals"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input3" />
+											<label for="input3" data-content="Arts & Heritage"></label>
+										</div>
 									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label small" for="user_telephone">Telephone</label>
-									<div class="controls">
-										<input name="user_telephone" id="user_telephone" placeholder="enter your 8-digit phone number" class="form-control field-required text-center" type="text">
+									<div class="span12">
+										<div class="cause-box span4">
+											<input type="checkbox" id="input4" />
+											<label for="input4" data-content="Children & Youth"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" disabled id="input5" />
+											<label for="input5" data-content="Disabled"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input6" />
+											<label for="input6" data-content="Education"></label>
+										</div>
 									</div>
-								</div>
-								<div class="control-group">
-									<label class="control-label small" for="user_address1">Address</label>
-									<div class="controls">
-										<input name="user_address1" id="user_address1" placeholder="first line of your address" class="form-control field-required text-center" type="text">
-										<input name="user_address2" id="user_address2" placeholder="second line of your address" class="form-control field-required text-center" type="text">
+									<div class="span12">
+										<div class="cause-box span4">
+											<input type="checkbox" id="input7" />
+											<label for="input7" data-content="Elderly"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input8" />
+											<label for="input8" data-content="Environment"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input9" />
+											<label for="input9" data-content="Health"></label>
+										</div>
 									</div>
+									<div class="span12">
+										<div class="cause-box span4">
+											<input type="checkbox" id="input10" />
+											<label for="input10" data-content="Social Service"></label>
+										</div>
+										<div class="cause-box span4">
+											<input type="checkbox" id="input11" />
+											<label for="input11" data-content="Women & Girls"></label>
+										</div>
+									</div>
+								</div>	
+								<div class="box reset span12">
+									<h4 class="">Crowd Fundraising Preferences</h4>
+									<span class="small">Giving.sg members who believe in your cause can start campaigns to raise money for you.</span>
+									<span class="small">Do you want to approve such campaigns before they can be launched?</span>
+									<div class="cleafix m-top20">
+			                    		<input type="checkbox" class="switch cleafix">
+			                    	</div>
+			                    	<p class="small m-bot15">
+										<a class="underlined" href="#">Learn more about crowd fundraising</a>
+									</p>
 								</div>
-							</form>
+							</div>
 						</div>
-					</div>
-					<div class="span12 box reset" id="save-actions">
-						<button class="pull-left btn btn-large-custom btn-ghost">SAVE DRAFT</button>
-						<button class="pull-right btn btn-large-custom btn-success">PREVIEW PAGE</button>
-						<span class="small pull-left" id="save-status">Autosaved 1 minute ago</span>
-					</div>
 
+						<div class="p-section row-fluid">
+							<h3 class="text-left">Your Contact Info</h3>
+							<div class="box reset span12">
+								<span class="small">One last thing.<br> Provide your contact info so that our members can get in touch with you</span>
+								<div class="span6 centered">
+									<form id="donation-userDetails" class="form">
+										<div class="control-group">
+											<label class="control-label small" for="user_email">Email Address</label>
+											<div class="controls">
+												<input name="user_email" id="user_email" placeholder="name@organization.com" class="form-control field-required text-center" type="text">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label small" for="user_telephone">Telephone</label>
+											<div class="controls">
+												<input name="user_telephone" id="user_telephone" placeholder="enter your 8-digit phone number" class="form-control field-required text-center" type="text">
+											</div>
+										</div>
+										<div class="control-group">
+											<label class="control-label small" for="user_address1">Address</label>
+											<div class="controls">
+												<input name="user_address1" id="user_address1" placeholder="first line of your address" class="form-control field-required text-center" type="text">
+												<input name="user_address2" id="user_address2" placeholder="second line of your address" class="form-control field-required text-center" type="text">
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="span12 box reset" id="save-actions">
+							<button class="pull-left btn btn-large-custom btn-ghost">SAVE DRAFT</button>
+							<button class="pull-right btn btn-large-custom btn-success">PREVIEW PAGE</button>
+							<span class="small pull-left" id="save-status">Autosaved 1 minute ago</span>
+						</div>
+
+					</div>
 				</div>
 			</div>
 		</div>

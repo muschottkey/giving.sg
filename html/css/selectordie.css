@@ -38,6 +38,7 @@
         
 }
 
+
     /* Up/Down arrows */
     .sod_select:before, .sod_select:after {
         content: "\25B2"; position: absolute; right: 10px; top: 12px; font-size: 7px;
@@ -59,7 +60,7 @@
 
 
     /* Change the border color on hover, focus and when open */
-    .sod_select:hover, .sod_select.open, .sod_select.focus { border-color: #000000; }
+    .sod_select:hover, .sod_select.open, .sod_select.focus { border-color: #9B9B9B; }
 
         .sod_select.open { color: #919191; }
         .sod_select.focus { box-shadow: 0 0 5px rgba(0,0,0,.2); }
@@ -215,6 +216,7 @@
                 z-index: 1;
             }
 
+    .sod_select.autofit{width: 80px;}
     .sod_select .sod_list_wrapper{
         border:1px solid #efefef !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);

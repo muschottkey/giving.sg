@@ -230,9 +230,38 @@ $(function(){
         addRule(".cause-box input[type=checkbox]#"+inputId+" + label:before", {
         content: content
         });
-
     })
+
+     $('#ipc_status').bootstrapSwitch({
+        offColor: "danger",
+        onColor:  "success",
+        offText: "NO",
+        onText:  "YES",
+        onSwitchChange: function(event, state){
+            message_elem = $('#ipc_data');
+
+            if(state == true)
+            {
+                message_elem.text("Minimum Amount");
+            }
+            else{
+                message_elem.text("Charity Status");
+            }
+        }
+     });
+
+    $('.select-giving-autofit').selectOrDie({
+         onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length - 2;
+            var dynamic_width = 70 + 15*length;
+            $(this).closest('.sod_select').css('width', dynamic_width);
+        }
+    });
+    
 })
+
+
 
 
 /* This function inserts css to head section of html dynamically.Being used to set content

@@ -21,9 +21,11 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 
 /* GLOBAL STYLES */
 .small { font-size:.875em; margin-top:5px; }
+.smaller { font-size:.775em; margin-top:5px; }
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline;margin-top: 10px; }
 .border-left{border-left: 1px solid #efefef;}
+.block{display: block;}
 div.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-left0{margin-left: 0 !important;}
 .m-bot30{margin-bottom: 30px;}
@@ -208,6 +210,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .user-img img{max-height:100%;max-width: 100%; }
 
 .box{background-color:#fff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em !important;}
+.box .box{border-left: none;border-right: none;border-bottom: none;padding-right:10px !important; padding-left: 10px !important;}
+
 .summary-wrapper{max-width: 500px;min-height:40px;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
 .summary-wrapper .pull-left{width: auto;}
 .summary-wrapper .headings{border-bottom: 1px solid #cccccc;margin-bottom: 8px;margin-top: 10px;height: 20px;}
@@ -224,7 +228,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .tax-status.large i{margin-right: 6px;font-size: 1.5em;}
 .tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
 .box .small.grey{color: #a5a5a5;}
-.box > h4{margin-bottom: 20px;}
+.box > h4{margin-bottom: 0px;}
 .box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .box-footer p{font-size: 0.8em;}
@@ -269,11 +273,12 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .gift-box span.badge{position: absolute;top: 20%;right: -20%;padding: 12px;width: 15px;}
 
 /* set up donation */
-#setup-donation-content > .box.span12 {margin-bottom: 40px;}
+/*#setup-donation-content  .box.span12 {margin-bottom: 40px;}*/
 #tax-deduc{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             -moz-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             padding-bottom: 0 !important;}
+.p-section{margin-bottom: 40px;}
 #tax-deduc,.box.reset{margin:0;padding-left: 0 !important;padding-right: 0 !important;}
 #tax-deduc .span6{padding-bottom: 15px;}
 #tax-deduc .span6:last-child{border-left: 1px solid #e3e3e3;}
@@ -282,7 +287,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 /* Causes selection */
-#causes-wrapper{max-width: 90%;margin-right: auto;margin-left: auto;margin-top: 40px;}
+#causes-wrapper{max-width: 90%;margin-right: auto;margin-left: auto;margin-top: 40px;margin-bottom: 30px;}
 #causes-wrapper > .span12{margin-left: 0;}
 .cause-box.span4 {margin-bottom: 50px;}
 .cause-box input[type=checkbox] {
@@ -297,7 +302,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
   border-top-right-radius: 8px;
   position: relative;
   transition: all 0.4s;
-  border: solid 1px #efefef;
+  border: solid 1px #d3d3d3;
   box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
 }
 
@@ -310,7 +315,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     height: 40px;
     line-height: 2em;
     bottom: -41px;
-    border: 1px solid #efefef;
+    border: solid 1px #d3d3d3;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     left: -1px;
@@ -328,10 +333,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     right:10px;
 }
 #save-actions{border:none;}
-#donation-userDetails{padding: 20px;margin-top: 40px;
-    -webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
-    -moz-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
-    box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);}
+#donation-userDetails{padding: 20px;margin-top: 40px;border: 2px solid #e3e3e3;}
 #donation-userDetails .control-group{margin-top: 1em;}
 #donation-userDetails input{margin-bottom: 15px;height: 1em;font-size: 1em !important;}
 
@@ -356,6 +358,9 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 @media (min-width: 1200px) {
     .modal { max-width:1000px; }
     .start-cta, .span12.start-cta{height: 377px;}
+    .boxed-wrapper.wide{max-width: 1000px;}
+    .donation-wrapper{max-width: 700px;float: right;}
+    .text-left{width: 200px;float: left;margin-left: -230px;margin-top: 0;line-height: 1em;}
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
