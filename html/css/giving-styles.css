@@ -12,9 +12,10 @@ h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 
-textarea, input { font-size:1.325em !important; height:1.3em; }
-    input:not([type=checkbox]) { font-family: "Shadows Into Light Two", Arial, sans-serif; height:1.3em; }
-    /* Patrick Hand|Short Stack|Neucha|Dekko|Schoolbell|Gloria Hallelujah|Architects Daughter*/
+textarea, input { font-size:1em !important; height:1.3em; }
+    input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
+    /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
+
 
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
@@ -29,7 +30,7 @@ div.centered{margin-left: auto !important;margin-right: auto !important;float: n
 .m-bot15{margin-bottom: 15px;}
 .m-bot0{margin-bottom: 0px;}
 .m-top20{margin-top: 20px;}
-.m-0{margin: 0 !important;}
+.m-0 { margin: 0 !important; line-height:1; }
 
 /* CONTENT LAYOUT */
 .wrapper { width:100%; }
@@ -60,7 +61,7 @@ div.centered{margin-left: auto !important;margin-right: auto !important;float: n
 
 /* MODAL - UI Controls - BUTTONS */
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]) { 
-    width: 96%; padding:4px 0px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
+    width:98%; padding:8px 0px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
 }
 .modal .validation-feedback , #respwdForm .validation-feedback {
     position: absolute; display: none; background: transparent; 
@@ -206,7 +207,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 .user-img img{max-height:100%;max-width: 100%; }
 
-.box{background-color: #ffffff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em 0.6em !important;}
+.box{background-color:#fff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em !important;}
 .summary-wrapper{max-width: 500px;min-height:40px;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
 .summary-wrapper .pull-left{width: auto;}
 .summary-wrapper .headings{border-bottom: 1px solid #cccccc;margin-bottom: 8px;margin-top: 10px;height: 20px;}
@@ -216,26 +217,23 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .minimal{font-weight: 400;}
 .minimal i{margin-right: 10px;font-size: 2em;position: absolute;margin-left:-34px;margin-top: -5px;}
 .org-name{width: 80%;}
-.co-desc{font-size: 12px;margin-top: 0;margin-bottom:20px;font-weight: 600;}
+.co-desc{ margin-top: 0;margin-bottom:20px;font-weight: 600;}
 .tax-status{color: #59B259!important;font-size: 12px;display:block;margin-bottom: 15px;}
 .tax-status.large{font-size: 1em;}
 .tax-status i{margin-right: 6px;}
 .tax-status.large i{margin-right: 6px;font-size: 1.5em;}
 .tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
 .box .small.grey{color: #a5a5a5;}
-.smaller{font-size: 12px;}
-.smaller.dark{font-weight: 800;}
 .box > h4{margin-bottom: 20px;}
-.box.span6{padding: 1em 2em 4.6em !important;}
 .box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .box-footer p{font-size: 0.8em;}
 .choice-buttons{margin-top: 30px;}
 .choice-buttons button{width: 35%;padding: 7px;}
-.choice-buttons button.active{outline: none;border:none;color: #ffffff;box-shadow: none;}
+.choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
 .choice-buttons button.yes.active{background-color: #51a351;}
 .choice-buttons button.no.active{background-color: #bd362f;}
-.btn-ghost{background: #ffffff;color: #000;font-weight:700;font-size:0.75em;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
+.btn-ghost{ background: #FFF;color: #000;font-weight:700;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
 .amount-pledged{width: 40px;margin-top: 4px;}
 .amount-pledged span{float: left;}
 .amt-value{font-size: 24px;}
@@ -367,6 +365,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 @media (max-width: 979px) {
     /* CONTENT LAYOUT */
     .row-fluid .span6, .row-fluid .span4  { width:100%; margin:0; padding:0; }
+        .row-fluid .box.span6 { padding:0 1em  !important; }
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
     .boxed-wrapper { max-width:280px; }
