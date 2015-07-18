@@ -33,41 +33,46 @@
 	    </div>
 	</div>
 	<div class="section-page">
-		<div class="boxed-wrapper wide">
+		<div class="boxed-wrapper wide" id="setup-donation-wrapper">
 			<div class="row-fluid">
 				<div class="span12 text-center" id="setup-donation-content">
-					<h6 class="small black m-0">Set Up</h6>
-					<h3 class="black m-0">Donation Page</h3>
-					<div class="progress-dots">
-						<ul class="ul">
-							<li>
-								<span class="step-dot active">1</span>
-								<span class="step-label">Enter some <br> basic info</span>
-							</li>
-							<li>
-								<span class="step-dot">2</span>
-								<span class="step-label">Preview <br>Your Page</span>
-							</li>
-							<li>
-								<span class="step-dot">3</span>
-								<span class="step-label">Submit for <br>Approval</span>
-							</li>
-						</ul>
+					<div class="section-header">
+						<h6 class="small black m-0">Set Up</h6>
+						<h3 class="black m-0">Donation Page</h3>
+						<div class="mobile-title m-top20 centered hidden-desktop">
+							<span class="small" >Abilities Beyond Limitations and Expectations Ltd. (ABLE)</span>
+						</div>
+						<div class="progress-dots">
+							<ul class="ul">
+								<li>
+									<span class="step-dot active">1</span>
+									<span class="step-label">Enter some <br> basic info</span>
+								</li>
+								<li>
+									<span class="step-dot">2</span>
+									<span class="step-label">Preview <br>Your Page</span>
+								</li>
+								<li>
+									<span class="step-dot">3</span>
+									<span class="step-label">Submit for <br>Approval</span>
+								</li>
+							</ul>
+						</div>
 					</div>
-					<hr>
+					<hr class="visible-desktop">
 					<div class="donation-wrapper">
-						<div class="p-section row-fluid">
-							<h4 class="text-left">Your Organization</h4>
+						<div class="p-section row-fluid m-top20 visible-desktop">
+							<h4 class="text-left">Your Organisation</h4>
 							<div class="alert alert-info">
 								<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
 							</div>
 						</div>
-						<div class="p-section row-fluid">
-							<h4 class="text-left">Tax Deduction</h4>
+						<div class="p-section row-fluid active">
+							<h4 class="text-left acc-toggle">Tax Deduction</h4>
 							<div class="box span12" id="tax-deduc">
 								<h5 class="m-0">Preset Amounts</h5>
-								<span class="small">We've set up these 1-click donation buttons for you.</span><br>
-								<span class="small">Donors will also be able to key in any amount they wish.</span>
+								<span class="smaller">We've set up these 1-click donation buttons for you.</span><br class="visible-desktop">
+								<span class="smaller">Donors will also be able to key in any amount they wish.</span>
 									<div class="m-top20 preset-amts">
 										<button class="btn btn-ghost">$10</button>
 										<button class="btn btn-ghost">$50</button>
@@ -102,10 +107,10 @@
 							</div>
 						</div>
 						<div class="p-section row-fluid">
-							<h4 class="text-left">Causes and Crowd Fundraising</h4>
+							<h4 class="text-left acc-toggle">Causes and Crowd Fundraising</h4>
 							<div class="box reset span12">
 								<h5 class="m-0">Main Causes</h5>
-								<span class="smaller em">What are the causes your organisation supports?</span><br>	
+								<span class="small em">What are the causes your organisation supports?</span><br>	
 								<span class="smaller block m-top20">Select up to 4 causes</span>
 								<div id="causes-wrapper" class="row-fluid">
 									<div class="span12">
@@ -161,10 +166,12 @@
 										</div>
 									</div>
 								</div>	
-								<div class="box reset span12">
+								<div class="box reset span12" id="fundr-prefs">
 									<h5 class="">Crowd Fundraising Preferences</h5>
-									<span class="small">Giving.sg members who believe in your cause can start campaigns to raise money for you.</span>
-									<span class="small">Do you want to approve such campaigns before they can be launched?</span>
+									<div id="fundr-content">
+										<span class="small">Giving.sg members who believe in your cause can start campaigns to raise money for you.</span>
+										<span class="small">Do you want to approve such campaigns before they can be launched?</span>
+									</div>
 									<div class="cleafix m-top20">
 			                    		<input type="checkbox" class="switch cleafix">
 			                    	</div>
@@ -175,16 +182,17 @@
 							</div>
 						</div>
 
-						<div class="p-section row-fluid">
-							<h4 class="text-left">Your Contact Info</h4>
+						<div class="p-section row-fluid" id="contact-info">
+							<h4 class="text-left acc-toggle">Your Contact Info</h4>
 							<div class="box reset span12">
-								<span class="small">One last thing.<br> Provide your contact info so that our members can get in touch with you</span>
+								<span class="small em">One last thing.<br> Provide your contact info so that our members can get in touch with you</span>
 								<div class="span6 centered">
 									<form id="donation-userDetails" class="form">
-										<div class="control-group">
+										<div class="control-group error">
 											<label class="control-label small" for="user_email">Email Address</label>
 											<div class="controls">
 												<input name="user_email" id="user_email" placeholder="name@organization.com" class="form-control field-required text-center" type="text">
+												<span class="help-block smaller">Enter a valid email address</span>
 											</div>
 										</div>
 										<div class="control-group">
@@ -224,6 +232,7 @@
 	<script type="text/javascript" src="js/additional-methods.js"></script>
 	<script type="text/javascript" src="js/selectordie.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 </body>
 </html>

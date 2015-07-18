@@ -259,8 +259,37 @@ $(function(){
         }
     });
 
+    var winWidth = $(window).innerWidth();
+
+    var waypoints = $('.p-section > .box.span12').waypoint({
+      handler: function(direction) {
+        if(winWidth > 979 ){
+            $('.donation-wrapper').find('.focused').removeClass('focused');
+            $(this.element).addClass('focused');
+        }
+      },
+      offset: '40%'
+    })
+
+
+    $(window).resize(function(){
+        var winWidth = $(window).innerWidth();
+    })
+
     // Creating accordions on body resize
-    
+    $('.acc-toggle').each( function(){
+        $(this).click(function(){
+        nodde = $(this);
+        console.log(winWidth);
+        content = nodde.closest('.p-section').find('.box');
+        parentAll = $('.donation-wrapper');
+        if(winWidth < 980 ){
+            content.slideToggle();
+        }
+        })
+    })
+
+
 })
 
 
