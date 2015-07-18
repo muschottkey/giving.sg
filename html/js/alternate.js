@@ -258,6 +258,8 @@ $(function(){
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
+
+    // Creating accordions on body resize
     
 })
 
