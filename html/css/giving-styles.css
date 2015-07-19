@@ -19,7 +19,7 @@ textarea, input { font-size:1em !important; height:1.3em; }
 
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
-/* GLOBAL STYLES */
+/* GLOBAL STYLES & HELPER CLASSES */
 
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .small { font-size:.875em; margin-top:5px; }
@@ -31,6 +31,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .block{display: block;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-left0{margin-left: 0 !important;}
+.m-left10{margin-left: 10px;}
 .m-bot30{margin-bottom: 30px;}
 .m-bot20{margin-bottom: 20px;}
 .m-bot15{margin-bottom: 15px;}
@@ -45,7 +46,8 @@ hr.m5{margin: 5px 0;}
 .bg-grey{background-color: #e3e3e3;}
 .btn a, .btn-group a{text-decoration: none;}
 .grey{color: #A0A0A0;}
-
+.clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
+.clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 /* CONTENT LAYOUT */
 
 .wrapper { width:100%; }
@@ -374,6 +376,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #user-about-links .input-append.input-prepend .add-on{height: 30px;font-size: 12px;line-height: 2.5em;}
 #user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686;}
 #user-about-links .input-append.input-prepend .add-on:first-child{width: 60px;}
+#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #54a954;content: "\f058";}
 
 /* Set-up donation step 2*/
 .action-link{color: #555555;text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;}
@@ -383,6 +386,23 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #dtn-cause-images > div:first-child{padding: 73px;}
 #cause-image-preview{border: none;overflow: hidden;}
 .img-box{width: 60px;height:60px;display:inline-block;background-color: #f7f7f7;margin-right: 30px;font-size:0.8em;line-height: 1em;border-radius: 8px;overflow: hidden; }
+.img-box:before{
+    content: "\f040";
+    font-family: 'FontAwesome';
+    width:60px;
+    height: 60px;
+    position: absolute;
+    display: none;
+    line-height: 4.5em;
+    background-color: #F5EFEF;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0;
+    -webkit-transition:all 1s ease;
+    transition:all 1s ease;
+}
+.img-box:hover:before{display: block;opacity: 1;-webkit-transition:opacity 0.4s ease;transition:opacity 0.4s ease;}
+
 .img-box span.small{margin-top: 15px;display: block;font-size: 1em;line-height: 1.2em;}
 
 #setup-donation-cta{border:none;padding-left: 0;padding-right: 0;}
@@ -402,6 +422,11 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     font-weight: 800;
     margin-top: 15px;
 }
+#donate-buttons button.active {
+    background-color: #54a954;border-color: #54a954;color: #ffffff;
+}
+#donate-buttons button:focus{outline: none;}
+
 
 #dtn-user-about{border: none;margin-top: 0 !important;}
 #dtn-about-us-wrapper{padding: 30px;border: 1px solid #E3E3E3;padding-bottom: 0;}
@@ -518,12 +543,19 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #tax-deduc .span6 h6{margin-bottom: 0;margin-top: 20px;font-size: 0.95em;}
     #cause-image-preview{padding: 0 !important;}
     .img-box{width: 50px;height:50px;background-color: #f7f7f7;float: none;margin-right: 5px;line-height:1em;border-radius: 8px;overflow: hidden; }
-    #contact-info{margin-bottom:0; }
-    #setup-donation-cta{padding-left: 0!important;padding-right: 0!important;}
-    #dtn-about-us-container,#dtn-cause-images{width: 100%;}
-    .tax-status{border:none;}
-    #dtn-user-large-cta .span6.box.reset{margin-left:0;margin-bottom: 30px;padding-bottom: 30px !important;}
+    .img-box:before{
+        width:50px;
+        height: 50px;
+        line-height: 4em;
 
+    }
+    .img-box span.small {margin-top: 10px;}
+    #contact-info{margin-bottom:0; }
+    #setup-donation-cta{padding-left: 0!important;padding-right: 0!important;padding-top: 0 !important;}
+    #dtn-about-us-container,#dtn-cause-images{width: 100%;padding: 0 !important;}
+    .tax-status{border:none;}
+    #dtn-user-large-cta .span6.box.reset{margin-left:0;margin-bottom: 30px;padding-bottom: 30px !important;padding-top: 20px!important;}
+    #dtn-add-description{border: none;}
 
 
 
@@ -573,6 +605,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
     #user-about-links input{width: 64% !important;}
+    #save-actions .btn {width: 47%;}
 
 }
 
