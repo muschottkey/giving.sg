@@ -54,7 +54,7 @@
 						</ul>
 					</div>
 					<hr>
-					<span class="label label-warning pull-right">PREVIEW</span>
+					<span class="label label-warning pull-right" id="preview-label">PREVIEW</span>
 					<div class="m-bot20 m-top20">
 						<h3 class="m-0">ABLE</h3>
 						<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
@@ -79,7 +79,7 @@
 
 					</div>
 
-					<div class="span4  m-top0" id="dtn-user-actions-desktop">
+					<div class="span4  visible-desktop m-top0" id="dtn-user-actions-desktop">
 						<button class="btn btn-block">BOOKMARK</button>
 						<div class="btn-group btn-block">
 						  <a class="btn btn-block dropdown-toggle" data-toggle="dropdown" href="javascript:;">
@@ -106,21 +106,23 @@
 					<hr class="hidden m5 clearfix span12">
 
 					
-					<div class="span12 box reset visible-phone" id="setup-donation-cta">
+					<div class="span12 box reset hidden-desktop" id="setup-donation-cta">
 						<div class="span4 centered">
-							<button class="span6 btn btn-large-custom btn-default">BOOKMARK</button>
-							<button class="span6 btn btn-large-custom btn-default">ADD TO</button>
+							<div class="btn-group span12" data-toggle="buttons-checkbox">
+							  <button type="button" class="btn btn-large-custo  btn-default">BOOKMARK</button>
+							  <button type="button" class="btn btn-default">ADD TO</button>
+							</div>
 							<button class="span12 m-0 btn btn-large-custom btn-success">DONATE</button>
 						</div>
 					</div>
 
 					<div class="row-fluid">
-						<div class="span8" >
+						<div class="span8" id="dtn-about-us-container" >
 							<div class="span12" id="dtn-about-us-wrapper">
 								<h4 class="">ABOUT US</h4>
 								<div class="box reset span12">
 									<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Add Description</a><br>
-									<span class="small">Add a short para describing <br> who you are and what you do</span>
+									<span class="small grey">Add a short para describing <br> who you are and what you do</span>
 								</div>
 								<div class="box reset span12" id="dtn-user-about">
 									<div class="span12 centered">
@@ -162,17 +164,17 @@
 							<div class="span12 m-left0" id="dtn-user-large-cta">
 									<div class="span6 box reset">
 										<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Start a Campaign</a>
-										<span class="small centered">After you've set up your donation page, you'll be able to start campaigns</span>
+										<span class="small grey centered">After you've set up your donation page, you'll be able to start campaigns</span>
 									</div>
 
 									<div class="span6 box reset">
 										<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Recruit Volunteers</a>
-										<span class="small centered">After you've set up your donation page, you'll be able to recruit voluteers</span>
+										<span class="small grey centered">After you've set up your donation page, you'll be able to recruit voluteers</span>
 									</div>
 								</div>
 						</div>
 
-						<div class="span4 hidden-phone" id="dtn-impact-s">
+						<div class="span4 visible-desktop" id="dtn-impact-s">
 							<div class="box reset">
 								<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Add IMPACT Statements</a><br>
 								<span class="small"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec</span>
