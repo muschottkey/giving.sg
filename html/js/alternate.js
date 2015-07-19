@@ -261,15 +261,29 @@ $(function(){
 
     var winWidth = $(window).innerWidth();
 
-    var waypoints = $('.p-section > .box.span12').waypoint({
-      handler: function(direction) {
+    var $things = $('.acc-section');
+
+    $things.waypoint(function(direction) {
+      if (direction === 'down') {
         if(winWidth > 979 ){
             $('.donation-wrapper').find('.focused').removeClass('focused');
             $(this.element).addClass('focused');
         }
-      },
+      }
+    }, {
       offset: '40%'
-    })
+    });
+
+    $things.waypoint(function(direction) {
+      if (direction === 'up') {
+        if(winWidth > 979 ){
+            $('.donation-wrapper').find('.focused').removeClass('focused');
+            $(this.element).addClass('focused');
+        }
+      }
+    }, {
+      offset: '0%'
+    });
 
 
     $(window).resize(function(){
@@ -281,7 +295,7 @@ $(function(){
         $(this).click(function(){
         nodde = $(this);
         console.log(winWidth);
-        content = nodde.closest('.p-section').find('.box');
+        content = nodde.closest('.p-section').find('.acc-section');
         parentAll = $('.donation-wrapper');
         if(winWidth < 980 ){
             content.slideToggle();

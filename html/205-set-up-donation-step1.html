@@ -39,7 +39,7 @@
 					<div class="section-header">
 						<h6 class="small black m-0">Set Up</h6>
 						<h3 class="black m-0">Donation Page</h3>
-						<div class="mobile-title m-top20 centered hidden-desktop">
+						<div class="mobile-title m-top20 centered visible-phone">
 							<span class="small" >Abilities Beyond Limitations and Expectations Ltd. (ABLE)</span>
 						</div>
 						<div class="progress-dots">
@@ -61,7 +61,7 @@
 					</div>
 					<hr class="visible-desktop">
 					<div class="donation-wrapper">
-						<div class="p-section row-fluid m-top20 visible-desktop">
+						<div class="p-section row-fluid m-top20 hidden-phone">
 							<h4 class="text-left">Your Organisation</h4>
 							<div class="alert alert-info">
 								<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
@@ -69,28 +69,28 @@
 						</div>
 						<div class="p-section row-fluid active">
 							<h4 class="text-left acc-toggle">Tax Deduction</h4>
-							<div class="box span12" id="tax-deduc">
+							<div class="box span12 acc-section" id="tax-deduc">
 								<h5 class="m-0">Preset Amounts</h5>
-								<span class="smaller">We've set up these 1-click donation buttons for you.</span><br class="visible-desktop">
+								<span class="smaller">We've set up these 1-click donation buttons for you.</span><br class="hidden-phone">
 								<span class="smaller">Donors will also be able to key in any amount they wish.</span>
 									<div class="m-top20 preset-amts">
-										<button class="btn btn-ghost">$10</button>
-										<button class="btn btn-ghost">$50</button>
-										<button class="btn btn-ghost">$100</button>
-										<button class="btn btn-ghost">$250</button>
-										<button class="btn btn-ghost">$500</button>
+										<button data-toggle="button" class="btn btn-ghost">$10</button>
+										<button data-toggle="button" class="btn btn-ghost">$50</button>
+										<button data-toggle="button" class="btn btn-ghost">$100</button>
+										<button data-toggle="button" class="btn btn-ghost">$250</button>
+										<button data-toggle="button" class="btn btn-ghost">$500</button>
 									</div>
 								<div class="m-top20 bordered-t">
 									<div class="row-fluid">
 										<div class="span6 p-top20 p-bot30">
-											<h6 class="small black">IPC Status</h6>
+											<h5>IPC Status</h5>
 											<span class="small">Does your organization<br> have IPC Status?</span>
 			                            	<div class="cleafix m-top20">
 			                            		<input type="checkbox" id="ipc_status" class="cleafix" checked>
 			                            	</div>
 										</div>
 										<div class="span6 p-top20 p-bot30">
-											<h6 class="small black" id="ipc_data">Minimum Amount</h6>
+											<h5 id="ipc_data">Minimum Amount</h5>
 											<span class="small">What is the minimum donation amount <br> to be eligile for Tax deduction?</span>
 											<div class="clearfix m-top20">
 												<select class="select-giving-autofit" data-custom-class="giving-minimal autofit">
@@ -108,9 +108,9 @@
 						</div>
 						<div class="p-section row-fluid">
 							<h4 class="text-left acc-toggle">Causes and Crowd Fundraising</h4>
-							<div class="box reset span12">
+							<div class="box reset span12 acc-section">
 								<h5 class="m-0">Main Causes</h5>
-								<span class="small em">What are the causes your organisation supports?</span><br>	
+								<span class="small em" id="causes-span">What are the causes your organisation supports?</span><br>	
 								<span class="smaller block m-top20">Select up to 4 causes</span>
 								<div id="causes-wrapper" class="row-fluid">
 									<div class="span12">
@@ -184,7 +184,7 @@
 
 						<div class="p-section row-fluid" id="contact-info">
 							<h4 class="text-left acc-toggle">Your Contact Info</h4>
-							<div class="box reset span12">
+							<div class="box reset span12 acc-section">
 								<span class="small em">One last thing.<br> Provide your contact info so that our members can get in touch with you</span>
 								<div class="span6 centered">
 									<form id="donation-userDetails" class="form">
