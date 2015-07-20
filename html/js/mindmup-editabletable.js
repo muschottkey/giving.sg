@@ -12,16 +12,11 @@ $.fn.editableTableWidget = function (options) {
 			element = $(this),
 			editor = activeOptions.editor.css('position', 'absolute').hide().appendTo(element.parent()),
 			active,
-			append,
 			showEditor = function (select) {
 				active = element.find('td:focus');
-				append = 0;
 				if(active.html().slice(1,2) == 'i'){
 					active = element.find('td:focus').prev('td');
-					append = 1;
 				}
-				// console.log("active is");
-				// console.log();
 				if (active.length && active.attr('data-function')=="editable") {
 					editor.val(parseInt(active.text().replace(/[^0-9\.]+/g,"")))
 						.removeClass('error')
@@ -40,7 +35,6 @@ $.fn.editableTableWidget = function (options) {
 				var text = editor.val(),
 					evt = $.Event('change'),
 					originalContent;
-					console.log("Changing for:"+active.html());
 				if (active.text() === text || editor.hasClass('error')) {
 					return true;
 				}
@@ -124,9 +118,6 @@ $.fn.editableTableWidget = function (options) {
 		});
 
 		$('.edit-table').on('click keypress dblclick', function(){
-			console.log("clicked");
-			editor = activeOptions.editor.css('position', 'absolute').hide().appendTo(element.parent());
-
 			active = $(this).parent().prev('td');
 				if (active.length && active.attr('data-function')=="editable") {
 					editor.val(parseInt(active.text().replace(/[^0-9\.]+/g,"")))
@@ -140,6 +131,15 @@ $.fn.editableTableWidget = function (options) {
 						$(this).blur().parent().blur();
 					}
 		});
+
+		$(document).click(function(e){
+			if($(e.target).is('div.section-page') ){
+				if (editor.is(':visible')) {
+					editor.hide();
+				}
+
+			}
+		})
 
 		element.find('td').prop('tabindex', 1);
 

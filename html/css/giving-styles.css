@@ -655,21 +655,30 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #user-about-links input{width: 64% !important;}
     #save-actions .btn {width: 47%;}
     #dtn-cause-images .bg-grey .img-placeholder-btn { top: 23%; left: 10%; width: 80%; }
-   .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
-   .gf-bkt tbody tr td:first-child{height: 130px; width:75%;}
+    .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
+    .gf-bkt tbody tr td:first-child{height: 130px; width:75%;}
         .gf-bkt tr td:first-child { width:75%;}
-   .gf-bkt tbody tr td span.tax-statement{display: block !important;}
-   .gf-bkt tr td { position: relative; }
-.gf-bkt tr td i.visible-phone{
+    .gf-bkt tbody tr td span.tax-statement{display: block !important;}
+    .gf-bkt tr td { position: relative; }
+    .gf-bkt tr td i.visible-phone{
 
-    padding: 10px 20px !important;
-    right: 0;
-    bottom: 0;
-    border: 1px solid #ddd;
-    border-bottom-width: 0;
-    border-right-width: 0;
-    
-}
+        padding: 10px 20px !important;
+        right: 0;
+        bottom: 0;
+        border: 1px solid #ddd;
+        border-bottom-width: 0;
+        border-right-width: 0;
+        
+    }
+    button.btn.btn-ghost.btn-large-custom.m-left20 {
+        background: transparent;
+        text-decoration: underline;
+        width: 100px;
+        margin-left: 0;
+        color: #0088cc;
+        border: none;
+    }
+    button.btn.btn-ghost.btn-large-custom.m-left20:focus{outline: none;}
     
 }
 
