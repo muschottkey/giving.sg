@@ -39,6 +39,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-bot0{margin-bottom: 0px;}
 .m-top20{margin-top: 20px;}
 .m-top0{margin-top: 0;}
+.m-top10{margin-top: 10px;}
 .m-0 { margin: 0 !important; line-height:1; }
 .p-20{padding: 20px;}
 .p-top20{padding-top: 20px;}
@@ -670,15 +671,6 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
         border-right-width: 0;
         
     }
-    button.btn.btn-ghost.btn-large-custom.m-left20 {
-        background: transparent;
-        text-decoration: underline;
-        width: 100px;
-        margin-left: 0;
-        color: #0088cc;
-        border: none;
-    }
-    button.btn.btn-ghost.btn-large-custom.m-left20:focus{outline: none;}
     
 }
 
