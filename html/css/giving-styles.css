@@ -32,6 +32,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-left0{margin-left: 0 !important;}
 .m-left10{margin-left: 10px;}
+.m-left20{margin-left: 20px;}
 .m-bot30{margin-bottom: 30px;}
 .m-bot20{margin-bottom: 20px;}
 .m-bot15{margin-bottom: 15px;}
@@ -77,10 +78,10 @@ hr.m5{margin: 5px 0;}
     .modal-header h3, .modal-body h3 { margin-bottom:.5em; }
 
 /* MODAL - UI Controls - BUTTONS */
-.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]) { 
+.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]) { 
     width:98%; padding:8px 0px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
 }
-.modal .validation-feedback , #respwdForm .validation-feedback {
+.modal .validation-feedback , #respwdForm .validation-feedback,#gf-bkt-login .validation-feedback ,#donation-userDetails .validation-feedback{
     position: absolute; display: none; background: transparent; 
     height: 15px; margin-top:7px; right:15px;
 }
@@ -299,7 +300,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .gift-box span.badge{position: absolute;top: 20%;right: -20%;padding: 12px;width: 15px;}
 
 /* set up donation */
-/*#setup-donation-content  .box.span12 {margin-bottom: 40px;}*/
 .focused{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             -moz-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
@@ -368,7 +368,7 @@ input::-webkit-input-placeholder {color: #c0c0c0 !important;}
 input:-moz-placeholder{color: #c0c0c0 !important;} 
 input:-ms-input-placeholder{color: #c0c0c0 !important;} 
 #donation-userDetails .control-group{margin-top: 1em;margin-bottom: 20px;}
-#donation-userDetails .control-group span.validation-feedback.pull-right {margin-bottom: -20px;line-height: 0px;}
+#donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
 #donation-userDetails input{margin-bottom: 3px;height: 1em;font-size: 1em !important;color: #989898 !important;}
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 0.75em;}
@@ -442,6 +442,35 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
 
+/*       GIFT BASKET       */
+
+#gf-bkt-wrapper{margin-bottom: 60px;}
+.gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px;}
+.gf-bkt thead tr td{font-size: 0.875em;}
+.gf-bkt tr{border-top:0px solid #333;border-left:1px solid #333;border-rigt:1px solid #333;}
+.gf-bkt tr td{border-right:1px solid #DDD;text-align: center;font-size: 0.875em;vertical-align: middle;}
+.gf-bkt tr td i{color:#BABABA;display: block;margin-bottom: 1px;}
+.gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;margin-left: calc(22% + 60px);}
+.gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#5bb75b;}
+.gf-bkt tr td.warning,.gf-bkt tr td .tax-statement.warning,.gf-bkt tr td.warning i {color:#faa732;}
+.gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#49afcd;}
+.gf-bkt tr td:last-child{border-right:none;}
+.gf-bkt tbody tr td:first-child{width: 49%;height:100px;text-align: left;padding: 0 20px;}
+.gf-bkt tbody tr td:nth-child(2) {width: 20%;font-size: 0.80em;line-height: 1.3em;}
+.gf-bkt tbody tr td:nth-child(2) i {font-size: 1.85em;}
+.gf-bkt tbody tr.summary {font-weight: 800;}
+.gf-bkt tbody tr.summary a{color: #333;text-decoration: none;}
+.gf-bkt tbody tr.summary td:first-child{height: 60px;font-weight:500;}
+.gf-bkt tbody tr.summary td {font-weight: 800;}
+.gf-bkt tbody tr.summary i {color:#333;display: inline-block;}
+.gf-bkt tbody tr.visible-phone.summary td {text-align: center;}
+.gf-bkt tbody tr td span.tax-statement{display: block;margin-top: 20px;}
+#gf-bkt-login{max-width: 350px;margin-left: auto;margin-right: auto;}
+#gf-bkt-login .control-group{margin-top: 1em;}
+#gf-bkt-login input{padding: 5px 0 !important;}
+#gf-bkt-login .help-block{font-size: 0.875em;}
+.p-footer{background-color:#F5EAB1;padding: 15px 5px; }
+
 
 
 
@@ -462,7 +491,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .start-cta, .span12.start-cta{height: 377px;}
     .boxed-wrapper.wide{max-width: 1000px;}
     .donation-wrapper{max-width: 700px;float: right;}
-    .text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
+    #setup-donation-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
     #setup-donation-content .progress-dots{margin-bottom: 0;}
     #setup-donation-content .progress-dots ul li { width:15%; display: inline-block; margin-right:5px; }
     #setup-donation-content .progress-dots ul {width: 100%;padding-left: 0;}
@@ -501,6 +530,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .modal-body { max-width:280px; }
     .boxed-wrapper { max-width:280px; }
     .boxed-wrapper.wide{max-width: none;padding: 0 30px;}
+    .boxed-wrapper.gf{max-width: 800px;padding: 0 30px;}
     .sign-up-form { margin-top:50px; border-left:none; }
 
     .carousel-indicators{left:41%;}
@@ -618,6 +648,10 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #user-about-links input{width: 64% !important;}
     #save-actions .btn {width: 47%;}
     #dtn-cause-images .bg-grey .img-placeholder-btn { top: 23%; left: 10%; width: 80%; }
+   .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
+   .gf-bkt tr td{font-size: 0.775em;}
+   .gf-bkt tbody tr td:first-child{height: 130px;}
+   .gf-bkt tbody tr td span.tax-statement{display: block !important;}
 
 
 }
