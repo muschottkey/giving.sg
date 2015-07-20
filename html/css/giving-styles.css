@@ -450,7 +450,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 .gf-bkt tr{border-top:0px solid #333;border-left:1px solid #333;border-rigt:1px solid #333;}
 .gf-bkt tr td{border-right:1px solid #DDD;text-align: center;font-size: 0.875em;vertical-align: middle;}
 .gf-bkt tr td i{color:#BABABA;display: block;margin-bottom: 1px;}
-.gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;margin-left: calc(22% + 60px);}
+.gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;right:70px;}
 .gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#5bb75b;}
 .gf-bkt tr td.warning,.gf-bkt tr td .tax-statement.warning,.gf-bkt tr td.warning i {color:#faa732;}
 .gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#49afcd;}
