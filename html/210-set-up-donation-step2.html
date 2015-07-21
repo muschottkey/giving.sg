@@ -32,32 +32,33 @@
 	    </div>
 	</div>
 	<div class="section-page">
-		<div class="boxed-wrapper wide">
+		<div class="boxed-wrapper wide" id="setup-donation-wrapper">
 			<div class="row-fluid">
 				<div class="span12 text-center" id="setup-donation-content">
-					<h6 class="small black m-0">Set Up</h6>
-					<h3 class="black m-0">Donation Page</h3>
-					<div class="progress-dots" id="dtn-user-step2">
-						<ul class="ul">
-							<li>
-								<span class="step-dot active">1</span>
-								<span class="step-label">Enter some <br> basic info</span>
-							</li>
-							<li>
-								<span class="step-dot active">2</span>
-								<span class="step-label">Preview <br>Your Page</span>
-							</li>
-							<li>
-								<span class="step-dot">3</span>
-								<span class="step-label">Submit for <br>Approval</span>
-							</li>
-						</ul>
+					<div class="section-header">	
+						<h6 class="small black m-0">Set Up</h6>
+						<h3 class="black m-0">Donation Page</h3>
+						<div class="progress-dots" id="dtn-user-step2">
+							<ul class="ul">
+								<li>
+									<span class="step-dot active">1</span>
+									<span class="step-label">Enter some <br> basic info</span>
+								</li>
+								<li>
+									<span class="step-dot active">2</span>
+									<span class="step-label">Preview <br>Your Page</span>
+								</li>
+								<li>
+									<span class="step-dot">3</span>
+									<span class="step-label">Submit for <br>Approval</span>
+								</li>
+							</ul>
+						</div>
 					</div>
 					<hr>
 					<span class="label label-warning pull-right" id="preview-label">PREVIEW</span>
 					<div class="m-bot20 m-top20">
-						<h3 class="m-0">ABLE</h3>
-						<span class="small black">Abilities Beyond Limitations and Expectations Ltd (ABLE)</span>
+						<h4 class="m-0">Abilities Beyond Limitations and Expectations Ltd</h4>
 					</div>
 					<span class="small tax-status large">
 		    			<i class="fa fa-check-circle-o"></i>
@@ -87,7 +88,6 @@
 						<div class="btn-group btn-block">
 						  <a class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown" href="javascript:;">
 						    ADD TO
-						    <span class="fa fa-chevron-down m-left10"></span>
 						  </a>
 						  <ul class="dropdown-menu">
 						    <!-- dropdown menu links -->
@@ -99,14 +99,14 @@
 							<h4>DONATE</h4>
 							<div id="donate-buttons" class="m-top20 row-fluid">
 								<button data-toggle="button" class="btn btn-ghost">$10</button>
-								<button data-toggle="button" class="btn btn-ghost">$50</button>
-								<button data-toggle="button" class="btn btn-ghost">$250</button>
+								<button data-toggle="button" class="btn btn-ghost active">$50</button>
 								<button data-toggle="button" class="btn btn-ghost">$100</button>
 								<button data-toggle="button" class="btn btn-ghost">$500</button>
-								<button data-toggle="button" class="btn btn-ghost">$10</button>
+								<div id="custom-amt-input" class="m-bot10"><span>$</span><input class="button-input"></div>
+								<span class="smaller m-top10">Donations $50 and above are eligible for tax deduction</span>
 							</div>
-							<div class="visible-tablet" id="dtn-impact-s">
-								<div class="box reset">
+							<div class="visible-tablet border-round" id="dtn-impact-s">
+								<div class="box reset border-round">
 									<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Add IMPACT Statements</a><br>
 									<span class="small"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec</span>
 								</div>
@@ -117,20 +117,25 @@
 						
 					</div>
 					<hr class="hidden m5 clearfix span12 visible-desktop">
-					<!-- <div class="span12 box reset hidden-desktop" id="setup-donation-cta">
-						<div class="span4 centered">
-							<div class="btn-group span12" data-toggle="buttons-checkbox">
-							  <button type="button" class="btn btn-large-custo  btn-default">BOOKMARK</button>
-							  <button type="button" class="btn btn-default">ADD TO<span class="fa fa-chevron-down m-left10"></span></button>
-							</div>
-						</div>
-					</div> -->
-
 					<div class="row-fluid">
 						<div class="span8" id="dtn-about-us-container" >
 							<div class="span12" id="dtn-about-us-wrapper">
+								<div class="visible-phone border-round" id="dtn-impact-s">
+									<div class="box reset border-round">
+										<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Add IMPACT Statements</a><br>
+										<span class="small"> Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec</span>
+									</div>
+									<hr class="m5 visible-phone m-bot30">
+								</div>
 								<h4 class="">ABOUT US</h4>
-								<div class="box reset span12" id="dtn-add-description">
+								<div class="border-round" id="dtn-add-logo">
+									<div class="box reset border-round">
+										<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Upload Logo</a><br>
+										<span class="small">Upload a logo that looks nice in a 480 &times; 270 pixel triangle.</span>
+									</div>
+								</div>
+								<hr class="m5 visible-phone">
+								<div class="box reset span12 border-round" id="dtn-add-description">
 									<a href="#" class="action-link small"><i class="fa fa-plus-circle"></i>Add Description</a><br>
 									<span class="small grey">Add a short para describing <br> who you are and what you do</span>
 								</div>
@@ -160,11 +165,11 @@
 									<div class="span6 text-left" >
 										<h5>Contact Us</h5>
 										<p>
-										<span class="smaller m-bot15">Abilities Beyond Limitations and Expectations Ltd (ABLE) 
+										<span class="smaller black m-bot15">Abilities Beyond Limitations and Expectations Ltd (ABLE) 
 										</span>
 										</p>
 										<p>
-										<span class="smaller">Tel: (65) 777 5342</span><br>
+										<span class="smaller black">Tel: (65) 777 5342</span><br>
 										<a class="underlined small" href="#">ennah.kwek@able-sg.org</a>
 										</p>
 									</div>
