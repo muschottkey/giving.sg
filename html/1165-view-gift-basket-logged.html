@@ -37,7 +37,14 @@
 			<div class="row-fluid">
 				<div class="span12 text-center" id="">
 					<div class="section-header">
-						<h3 class="black m-0">View My Gift Basket
+						<div class="span12 text-center">
+							<div class="user-img">
+								<img src="images/cat.jpg">
+							</div>
+							<h4 class="black m-top20 m-bot0">Hi Francis.</h4>
+							<h4 class="black m-0">Here's what is in your</h4>
+							<h3 class="m-top0 m-bot30">Gift Basket</h3> 
+					    </div>
 					</div>
 					<div class="p-section">
 						<table class="table gf-bkt">
@@ -116,41 +123,49 @@
 		</div>
 		<div class="p-section">
 			<div class="row-fluid">
-				<h2 class="black m-0">LOGIN</h2>
-				<h4 class="black m-0">to make payment now</h4>
-				<div id="gf-bkt-login"
-					<form id="loginForm" class="m-top20">
-						<div class="control-group success">
-							<label class="control-label" for="email">Email Address</label>
-							<div class="controls">
-								<span class="validation-feedback pull-right" style="display: inline-block;">
-									<i class="fa fa-check-circle" ></i></span>
-								<input name="email" id="email" placeholder="name@domain.com" 
-								class="form-control field-required text-center"  type="text">
-							</div>
-						</div>
-						<div class="control-group error">
-							<label class="control-label" for="password">Password</label>
-							<div class="controls">
-								<span class="validation-feedback forgot-pwd show pull-right" style="display: inline-block;">
-									<i class="fa fa-check-circle"></i>
-								</span>
-								<input name="password" id="password" placeholder="Your password" class="form-control field-required field-email text-center" type="password">
-								<label for="email" class="error help-block">Please enter a valid email address.</label>
-							</div>
-						</div>
-						<div class="form-group m-top20">
-							<h5 class="clearfix black">I'd like to pay by</h5>
+				<h4 class="black m-0">Donation Preferences</h4>
+				<div id="vw-gift-bkt-donate">
+					<form>
+						<div class="box border-round">
+							<span class="m-right20 small">I would like to donate using</span>
 							<select class="select-giving">
 								<option>Credit Card</option>
 								<option>Internet Banking</option>
 							</select>
 						</div>
-						<div class="control-group">	
-							<div class="controls">
-								<button type="button" class="btn btn-success btn-block btn-large m-bot30">LOGIN 
-								TO PAY</button>
-							</div>
+						<div class="box border-round" id="payment-type">
+							<ul>
+								<li>
+									For this transaction
+								</li>
+								<li>
+									<input type="checkbox" name="">
+									<label class="small">I want to claim tax deduction</label>
+										<div class="input-wrapper">
+											<div class="control-group">
+												<label class="control-label small" for="name_nric">Name as in NRIC</label>
+												<div class="controls">
+													<span class="validation-feedback pull-right" style="display: inline-block;"><a href="#"><i class="fa fa-pencil" ></i></a></span>
+													<input name="name_nric" id="name_nric" placeholder="Francis Tan Wei Liang" class="form-control field-required text-center"  type="text">
+												</div>
+											</div>
+											<div class="control-group">
+												<label class="control-label small" for="nric">NRIC</label>
+												<div class="controls">
+													<span class="validation-feedback pull-right" style="display: inline-block;"><a href="#"><i class="fa fa-pencil" ></i></a></span>
+													<input name="nric" id="nric" placeholder="S8023456W" class="form-control field-required text-center" type="text">
+												</div>
+											</div>
+										</div>
+								</li>
+								<li>
+									<input type="checkbox" name=""> <label>Be anonymous</label>
+								</li>
+								<li>
+									<input type="checkbox" name=""> <label>None of the above</label>
+								</li>
+							</ul>
+							
 						</div>
 					</form>
 				</div>

@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
 	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Lato:400,700,900,400italic,700italic,900italic|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Margarine|Shadows Into Light Two' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="wrapper">
@@ -56,9 +57,10 @@
 						</div>
 					</div>
 					<hr>
+					<div id="setup-dtn-2-wrapper">
 					<span class="label label-warning pull-right" id="preview-label">PREVIEW</span>
-					<div class="m-bot20 m-top20">
-						<h4 class="m-0">Abilities Beyond Limitations and Expectations Ltd</h4>
+					<div class="m-bot30 m-top30">
+						<h4 class="m-0" id="dtn-org-name">Abilities Beyond Limitations and Expectations Ltd</h4>
 					</div>
 					<span class="small tax-status large">
 		    			<i class="fa fa-check-circle-o"></i>
@@ -66,12 +68,39 @@
 	    			</span>
 					
 					<div class="span8 box reset " id="dtn-cause-images">
-						<div class="bg-grey clickable">
-							<a href="#" class="action-link m-bot15">
-								<img class="img-placeholder" src="images/img-placeholder.png">
-								<span class="img-placeholder-btn"> <i class="fa fa-plus-circle"></i>IMAGES<br>
-								<span class="small">Add images to make it more <br class="hidden-phone"> compelling for users to donate</span></span>
-							</a>
+						<div class="bg-rey clickable">
+							<div id="setup-dtn-carousel" class="carousel slide">
+								<!-- Indicators -->
+								<ol class="carousel-indicators">
+								    <li data-target="#setup-dtn-carousel" data-slide-to="0" class="active"></li>
+								    <li data-target="#setup-dtn-carousel" data-slide-to="1"></li>
+								    <li data-target="#setup-dtn-carousel" data-slide-to="2"></li>
+								</ol>
+								<div class="carousel-inner">
+									<div class="item active">
+										<img class="img-placeolder" src="images/img-placeholder.png">
+									</div>
+									<div class="item">
+										<img class="img-placeholder" src="images/img-placeholder-4.png">
+									</div>
+									<div class="item">
+										<img class="img-placeholder" src="images/img-placeholder-2.png">
+									</div>
+									<div class="item">
+										<img class="img-placeholder" src="images/img-placeholder-3.png">
+									</div>
+									<div class="item">
+										<img class="img-placeholder" src="images/img-placeholder-4.png">
+									</div>
+								</div>
+															 <!-- Controls -->
+							  <a class="left carousel-control" href="#setup-dtn-carousel" data-slide="prev">
+							    <span class="fa fa-chevron-left"></span>
+							  </a>
+							  <a class="right carousel-control" href="#setup-dtn-carousel" data-slide="next">
+							    <span class="fa fa-chevron-right"></span>
+							  </a>
+							</div>
 						</div>
 						<div class="span12 box text-center" id="cause-image-preview">
 							<div class="img-box"><span class="small">cause icon<span></div>
@@ -202,6 +231,7 @@
 						<button class="pull-right btn btn-large-custom btn-success">SUBMIT</button>
 						<span class="small pull-left" id="save-status">Autosaved 1 minute ago</span>
 					</div>
+					</div><!--end of wrapper-->
 
 				</div>
 			</div>
@@ -215,6 +245,7 @@
 	<script type="text/javascript" src="js/additional-methods.js"></script>
 	<script type="text/javascript" src="js/selectordie.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 </body>
 </html>

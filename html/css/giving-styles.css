@@ -30,18 +30,20 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .border-left{border-left: 1px solid #efefef;}
 .block{display: block;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
+.m-0 { margin: 0 !important; line-height:1; }
+.m-bot0{margin-bottom: 0px;}
+.m-bot10{margin-bottom: 10px;}
+.m-bot15{margin-bottom: 15px;}
+.m-bot20{margin-bottom: 20px;}
+.m-bot30{margin-bottom: 30px;}
+.m-top0{margin-top: 0;}
+.m-top10{margin-top: 10px;}
+.m-top20{margin-top: 20px;}
+.m-top30{margin-top: 30px;}
 .m-left0{margin-left: 0 !important;}
 .m-left10{margin-left: 10px;}
 .m-left20{margin-left: 20px;}
-.m-bot30{margin-bottom: 30px;}
-.m-bot20{margin-bottom: 20px;}
-.m-bot15{margin-bottom: 15px;}
-.m-bot10{margin-bottom: 10px;}
-.m-bot0{margin-bottom: 0px;}
-.m-top20{margin-top: 20px;}
-.m-top0{margin-top: 0;}
-.m-top10{margin-top: 10px;}
-.m-0 { margin: 0 !important; line-height:1; }
+.m-right20{margin-right: 20px;}
 .p-20{padding: 20px;}
 .p-top20{padding-top: 20px;}
 .p-bot30{padding-bottom: 30px;}
@@ -238,7 +240,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 .user-img img{max-height:100%;max-width: 100%; }
 
-.box{background-color:#fff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em !important;}
+.box{background-color:#fff;border:1px solid #e3e3e3;margin-top: 20px;margin-bottom: 0px;padding: 1em 2em;}
 .box .box{border-left: none;border-right: none;border-bottom: none;padding-right:10px !important; padding-left: 10px !important;}
 .p-section h4{font-size: 1.4em;}
 .box h5{font-size: 1.2em;  margin-bottom: 5px !important;}
@@ -285,7 +287,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 /* Logged In Modal user form */
 #userDetails{}
 #userDetails .validation-feedback {margin-top: 0;}
-#userDetails .validation-feedback i{font-size: 1em;color: #999999;}
+#userDetails .validation-feedback i, #payment-type .validation-feedback i{font-size: 1em;color: #999999;}
 
 
 /* Donation Confirmed Logged In Individual */
@@ -390,7 +392,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 .action-link:focus,.action-link:hover{color: #1FADE8;text-decoration: none;}
 .action-link i{width: 100%;color:#A3A3A3;margin-bottom: 10px;font-size: 24px;}
 #dtn-cause-images { padding-top: 0 !important;overflow: hidden; }
-    #dtn-cause-images > div:first-child{ padding:10px; }
+    /*#dtn-cause-images > div:first-child{ padding:10px; }*/
 .bg-grey { position: relative; }
     .bg-grey .img-placeholder { max-width:100%; }
     .bg-grey .img-placeholder-btn { position:absolute; z-index:1; top:25%; left: 35%; margin:0 auto;  }
@@ -458,6 +460,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     height: 20px !important;
     padding: 0 !important;
     margin: 10px 5px;
+    text-align: center;
 }
 
 .button-input:focus{border: 1px solid #efefef;outline: none;}
@@ -527,6 +530,36 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 .qk-bkt-li:hover > ul{display: block;}
 .qk-basket-wrapper{position: relative;top: 46px;}
 
+#setup-dtn-carousel .carousel-control {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+}
+
+#vw-gift-bkt-donate{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#vw-gift-bkt-donate .box{
+    padding:15px;
+}
+#vw-gift-bkt-donate ul {margin: 0;}
+#vw-gift-bkt-donate ul li{list-style: none;text-align: left;padding: 10px 8px 10px 30px;border-bottom: 1px solid #e3e3e3;}
+
+#payment-type.box{padding: 0;}
+#payment-type ul li > label{display: inline-block;}
+#payment-type .input-wrapper{width: 350px;}
+#payment-type .input-wrapper .control-group{margin-top: 20px;}
+#payment-type .input-wrapper .control-group label{display: inline-block;}
+#payment-type .input-wrapper .control-group .controls{float: right;}
+#payment-type .input-wrapper .control-group .controls input:not([type=checkbox]){line-height: 1.4;border-width: 0 0 2px;
+  box-shadow: none;
+  border-radius: 0;
+}
+
 
 
 
@@ -549,6 +582,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #setup-donation-content .progress-dots ul li:last-child {float: right;width: 11%;margin-right: 0;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px;}
+    #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -569,6 +603,9 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #dtn-user-large-cta .span6.box.reset{width: 48%;margin-left: 3.6% !important;}
     #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0 !important; }
         .bg-grey .img-placeholder-btn { top:35%; left:38%; margin:0 auto;  }
+    #dtn-user-about{padding-left: 0px !important;}
+    #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
+
 }
 
 @media (max-width: 979px) {
@@ -647,16 +684,16 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #dtn-user-actions > .box{background-color: #efefef;margin-top: 20px;}
     #dtn-user-actions #dtn-impact-s{background-color: #fff;border: 1px solid #dddddd;}
     #dtn-add-logo .box.reset{background-color: #efefef;}
-
     #custom-amt-input{
         float: left;
-        width: 200px;
+        width: 150px;
         margin-left: 20px;
         margin-top: 14px;
     }
 
     #custom-amt-input .button-input{margin: 7px 5px;}
-
+    /* custom wrapper for setup donation step 2*/
+    div#setup-dtn-2-wrapper{max-width: 620px;margin-right: auto;margin-left: auto;}
 
 }
 
@@ -730,7 +767,9 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #dtn-about-us-wrapper .box.reset{margin-top: 0;padding-top:1em!important;}
     #dtn-about-us-wrapper hr.m-bot30{margin-bottom: 30px;}
     .tax-status{border:none;border-top: 1px solid #e5e5e5;padding-top: 10px;padding-bottom: 0;}
-
+    #dtn-org-name{width: 70%;margin-right: auto !important;margin-left: auto !important;}
+    #save-status{width: 100%;margin-left: 0;margin-top: 20px;margin-bottom: 20px;}
+    h4.td-large-sm{margin:auto 15px;}
     
 }
 
