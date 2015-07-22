@@ -54,6 +54,7 @@ hr.m5{margin: 5px 0;}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round{border-radius: 6px;}
+.show-desktop-only{display: inherit;}
 /* CONTENT LAYOUT */
 
 .wrapper { width:100%; }
@@ -559,6 +560,13 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
   border-radius: 0;
 }
 
+#vw-gft-dtn-prefs{}
+#vw-gft-dtn-prefs tr td{text-align: left;padding: 10px 15px;height: 40px;}
+#vw-gft-dtn-prefs tr:first-child td{border-top: 0;}
+#vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
+#vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
+#vw-gft-dtn-prefs tr td label{display: inline-block;}
+
 
 
 
@@ -593,9 +601,13 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #dtn-user-about{padding-left: 0px !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
 
+
 }
 
 @media (max-width: 979px) {
+    /* HELPER CLASSES */
+    .tr-show-desktop-only{display: none !important;}
+
     /* CONTENT LAYOUT */
     .row-fluid .span6, .row-fluid .span4  { width:100%; margin:0; padding:0; }
         .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1em !important; }
@@ -675,6 +687,10 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #custom-amt-input .button-input{margin: 7px 5px;}
     /* custom wrapper for setup donation step 2*/
     div#setup-dtn-2-wrapper{max-width: 600px;margin-right: auto;margin-left: auto;}
+    #vw-gift-bkt-donate{margin-top: 40px;}
+    #vw-gft-dtn-prefs tr:nth-child(2) td{border-top: 0;}
+    
+
 
 }
 
@@ -759,6 +775,10 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     #dtn-org-name{width: 70%;margin-right: auto !important;margin-left: auto !important;}
     #save-status{width: 100%;margin-left: 0;margin-top: 20px;margin-bottom: 20px;}
     h4.td-large-sm{margin:auto 15px;}
+    #vw-gift-bkt-donate{max-width: 300px;margin-top: 40px;}
+    #vw-gift-bkt-donate div.box{padding-left: 0;padding-right: 0;}
+    #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
+    #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
     
 }
 

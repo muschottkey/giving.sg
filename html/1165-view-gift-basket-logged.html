@@ -126,52 +126,45 @@
 				<h4 class="black m-0">Donation Preferences</h4>
 				<div id="vw-gift-bkt-donate">
 					<form>
-						<div class="box border-round">
+						<div class="box border-round hidden-desktop">
 							<span class="m-right20 small">I would like to donate using</span>
 							<select class="select-giving">
 								<option>Credit Card</option>
 								<option>Internet Banking</option>
 							</select>
 						</div>
-						<div class="box border-round" id="payment-type">
-							<ul>
-								<li>
-									For this transaction
-								</li>
-								<li>
-									<input type="checkbox" name="">
-									<label class="small">I want to claim tax deduction</label>
-										<div class="input-wrapper">
-											<div class="control-group">
-												<label class="control-label small" for="name_nric">Name as in NRIC</label>
-												<div class="controls">
-													<span class="validation-feedback pull-right" style="display: inline-block;"><a href="#"><i class="fa fa-pencil" ></i></a></span>
-													<input name="name_nric" id="name_nric" placeholder="Francis Tan Wei Liang" class="form-control field-required text-center"  type="text">
-												</div>
-											</div>
-											<div class="control-group">
-												<label class="control-label small" for="nric">NRIC</label>
-												<div class="controls">
-													<span class="validation-feedback pull-right" style="display: inline-block;"><a href="#"><i class="fa fa-pencil" ></i></a></span>
-													<input name="nric" id="nric" placeholder="S8023456W" class="form-control field-required text-center" type="text">
-												</div>
-											</div>
-										</div>
-								</li>
-								<li>
-									<input type="checkbox" name=""> <label>Be anonymous</label>
-								</li>
-								<li>
-									<input type="checkbox" name=""> <label>None of the above</label>
-								</li>
-							</ul>
-							
-						</div>
 					</form>
+					<table class="table gf-bkt" id="vw-gft-dtn-prefs">
+						<tbody>
+							<tr class="tr-show-desktop-only">
+								<td>I would like to donate using</td>
+								<td>
+									<select class="select-giving">
+										<option>Credit Card</option>
+										<option>Internet Banking</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td class="long tr-show-desktop-only" rowspan="3">For this transaction</td>
+								<td>
+									<input type="checkbox" name="" id="claim-tax"> <label for="claim-tax">I want to claim tax deduction</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="" id="b-anon"> <label for="b-anon">Be anonymous</label>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<input type="checkbox" name="" id="non-above"> <label for="non-above">None of the above</label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="p-footer">
-					<span>I don't have an account yet.</span> <a class="visible-phone m-top10" href="javascript:;">Sign Me Up!</a><button class="hidden-phone btn btn-ghost btn-large-custom m-left20" >Sign Me Up</button>
-				</div>
+				
 			</div>
 		</div>
 	</div>
