@@ -679,10 +679,9 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 }
 
 @media (max-width: 767px) {
-    body { padding-right:8px; padding-left:8px; }
     .modal, .modal-one-column { max-width:294px !important; }
     .modal-body, .modal-one-column .modal-body { max-width:280px; }
-    .boxed-wrapper.gf, .boxed-wrapper { max-width:280px; padding: 0; }
+    .boxed-wrapper.gf, .boxed-wrapper { max-width:300px; padding: 0; }
     .boxed-wrapper.wide { max-width:320px; }
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
@@ -740,7 +739,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
     .gf-bkt tbody tr td:first-child{height: 130px; width:75%;}
         .gf-bkt tr td:first-child { width:75%;}
     .gf-bkt tbody tr td span.tax-statement{display: block !important;}
-    .gf-bkt tr td { position: relative; }
+    .gf-bkt tr td { position:relative; width:60px; }
     .gf-bkt tr td i.visible-phone{
         padding: 10px 20px !important;
         right: 0;
