@@ -538,7 +538,7 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 }
 
 #vw-gift-bkt-donate{
-    max-width: 500px;
+    max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -783,5 +783,6 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 }
 
 @media (max-width:310px) {
-    body { width:100%; max-width:300px; overflow: visible;}
+    body {max-width:300px; overflow: visible;overflow}
+    .mobile-separator {margin: 4em -20px 1em;}
 }
