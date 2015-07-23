@@ -163,7 +163,6 @@ $(function(){
      $('.widget').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
             if($(this).hasClass('fadeIn')){$(this).removeClass('animated fadeIn')}
             if($(this).hasClass('fadeOut')){$(this).removeClass('animated fadeOut')}
-
         });
      
 
@@ -315,10 +314,7 @@ $(function(){
            $(this).removeClass('animated fadeOutLeft').addClass('hide').next('.boxed.span12').removeClass('hide').addClass('animated fadeInRight');
         });
     })
-
 })
-
-
 
 
 /* This function inserts css to head section of html dynamically.Being used to set content

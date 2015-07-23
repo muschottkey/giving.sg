@@ -709,7 +709,7 @@ h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
     .boxed-wrapper.md{padding-top: 0;}
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
-    .navbar-fixed-top {  margin-bottom: 0px; }
+    .navbar-fixed-top {  margin: 0px; }
      #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 0;}
     #fundr-content{padding: 10px 0;}
     .donation-wrapper{background-color: #e3e3e3;}
@@ -719,9 +719,9 @@ h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
     #setup-donation-wrapper{margin-top: 0;}
 
     .progress-dots ul { text-align: center; }
-    .progress-dots ul li, #setup-donation-content .progress-dots ul li { width:auto; margin-right:12px; }
+    .progress-dots ul li, #setup-donation-content .progress-dots ul li { width:auto; margin-right:0; }
 
-    #setup-donation-content .progress-dots ul { width:50%; }
+    #setup-donation-content .progress-dots ul { width:auto; max-width:150px; }
     #setup-donation-content .progress-dots ul li .step-dot {
         -webkit-text-stroke:0.5px;color:#000; font-size:0.8em;line-height: 1.8em;
         text-align: center; width:24px; height:24px;background:#fff;  border: 1px solid #bbb;
@@ -790,6 +790,7 @@ h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
     .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
+    .border-round .centered { padding:15px 35px; }
     
 }
 
