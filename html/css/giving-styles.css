@@ -477,7 +477,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 #dtn-add-logo .box.reset{background-color: #efefef;}
 
 /* Clear Fix */
-body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both; display:block; }
+body:after, .wrapper:after, .social-media-signup:after, .section-header:after { content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
 
