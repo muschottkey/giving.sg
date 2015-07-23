@@ -311,8 +311,8 @@ $(function(){
     $('#setup-dtn-carousel').carousel();
 
     $('#setup-dtn-conf-submission').click(function(){
-        $(this).closest('.boxed.span6').addClass('animated fadeOutUp').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-           $(this).removeClass('animated fadeOutUp').addClass('hide').next('.boxed.span6').removeClass('hide').addClass('animated fadeInDown');
+        $(this).closest('.boxed.span12').addClass('animated fadeOutUp').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+           $(this).removeClass('animated fadeOutUp').addClass('hide').next('.boxed.span12').removeClass('hide').addClass('animated fadeInDown');
         });
     })
 

@@ -567,10 +567,11 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
 #vw-gft-dtn-prefs tr td label{display: inline-block;}
 
-.box-footer{display: block;padding: 10px 5px;background-color: #F5EAB1;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
-#conf-state2-box {}
-.conf-states-wrapper .box.reset.span12{ }
+.box-r-footer{display: block;padding: 5px 5px;margin-top:20px;background-color: #F5EAB1;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+.conf-states-wrapper{max-width: 400px; }
+.conf-states-wrapper .box.reset.span12{margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
 .with-padding { }
+h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
 
 
 
@@ -619,6 +620,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
     .modal-body { max-width:280px; }
     .boxed-wrapper { max-width:280px; }
     .boxed-wrapper.wide{max-width: none; }
+    .boxed-wrapper.md{max-width: 610px; margin-top: 0;}
     .boxed-wrapper.gf{max-width: 800px;padding: 0 30px;}
     .sign-up-form { margin-top:50px; border-left:none; }
 
@@ -699,19 +701,22 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
 }
 
 @media (max-width: 767px) {
+    body{padding-right: 0;padding-left: 0;}
     .modal, .modal-one-column { max-width:294px !important; }
     .modal-body, .modal-one-column .modal-body { max-width:280px; }
     .boxed-wrapper.gf, .boxed-wrapper { max-width:300px; padding: 0; }
     .boxed-wrapper.wide { max-width:320px; }
+    .boxed-wrapper.md{padding-top: 0;}
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
+    .navbar-fixed-top {  margin-bottom: 0px; }
      #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 0;}
     #fundr-content{padding: 10px 0;}
     .donation-wrapper{background-color: #e3e3e3;}
     #donation-userDetails{border: none;}
     #donation-userDetails  .control-label.small {font-size: 1.1em;}
    
-    #setup-donation-wrapper{margin-top: 0;padding-top: 10px;}
+    #setup-donation-wrapper{margin-top: 0;}
 
     .progress-dots ul { text-align: center; }
     .progress-dots ul li, #setup-donation-content .progress-dots ul li { width:auto; margin-right:12px; }
@@ -784,7 +789,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
     #vw-gift-bkt-donate div.box{padding-left: 0;padding-right: 0;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
-
+    .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
     
 }
 
