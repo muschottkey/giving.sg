@@ -567,6 +567,10 @@ body:after, .wrapper:after, .social-media-signup:after { content:""; clear:both;
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
 #vw-gft-dtn-prefs tr td label{display: inline-block;}
 
+.box-footer{display: block;padding: 10px 5px;background-color: #F5EAB1;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+#conf-state2-box{}
+.conf-states-wrapper .box.reset.span12{padding-bottom: 0;margin-bottom: 20px;padding-left: 0!important;padding-right: 0!important;}
+
 
 
 

@@ -165,6 +165,7 @@ $(function(){
             if($(this).hasClass('fadeOut')){$(this).removeClass('animated fadeOut')}
 
         });
+     
 
     $('.Anon .yes').click(function(){
         $(this).closest('div').find('button.active').removeClass('active');
@@ -308,6 +309,12 @@ $(function(){
     }
 
     $('#setup-dtn-carousel').carousel();
+
+    $('#setup-dtn-conf-submission').click(function(){
+        $(this).closest('.boxed.span6').addClass('animated fadeOutUp').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+           $(this).removeClass('animated fadeOutUp').addClass('hide').next('.boxed.span6').removeClass('hide').addClass('animated fadeInDown');
+        });
+    })
 
 })
 
