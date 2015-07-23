@@ -476,11 +476,12 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 #dtn-user-actions .btn{height: 40px;line-height: 30px;}
 #dtn-add-logo .box.reset{background-color: #efefef;}
 
+.border-round .centered { padding:15px 0; }
+
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after { content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
-
 #gf-bkt-wrapper{margin-bottom: 60px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
 .gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px;}
@@ -543,9 +544,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
     margin-right: auto;
 }
 
-#vw-gift-bkt-donate .box{
-    padding:15px;
-}
+#vw-gift-bkt-donate .box{ padding:15px; }
 #vw-gift-bkt-donate ul {margin: 0;}
 #vw-gift-bkt-donate ul li{list-style: none;text-align: left;padding: 10px 8px 10px 30px;border-bottom: 1px solid #e3e3e3;}
 
@@ -571,7 +570,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
 .conf-states-wrapper{max-width: 400px; }
 .conf-states-wrapper .box.reset.span12{margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
 .with-padding { }
-h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
+h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 
@@ -788,7 +787,7 @@ h4.box.reset{padding-top: 1em !important;margin-bottom: 1em !important;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
     .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
-    .border-round .centered { padding:15px 35px; }
+    .border-round .centered { padding-left:40px; padding-right:40px; }
     
 }
 
