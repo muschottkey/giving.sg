@@ -651,7 +651,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     float: left;
     margin-right: 10px;
     font-size: 0.75em;
-    width: 100px;
+    width: 145%;
 }
 /* Campaign Story */
 .cpn-story{}
@@ -758,7 +758,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* Suggestions widget */
 .cpn-suggestions{
-    width: auto;
+    width: 96%;
+    height: 500px;
     max-height: 500px;
     overflow-x: scroll;
     overflow-y:hidden;

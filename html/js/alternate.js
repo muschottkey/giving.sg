@@ -323,6 +323,7 @@ $(function(){
         hotSpotScrolling: false,
         touchScrolling: true
     });
+    
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);
