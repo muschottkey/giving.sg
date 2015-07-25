@@ -123,7 +123,7 @@ $(function(){
     });
 
     $('.carousel').carousel('pause');
-    $('.carousel-indicators').hide();
+    $('#npoCarousel .carousel-indicators').hide();
 
     $('#btnStartYes').click(function(){
         $(this).closest('.carousel').carousel('next');
@@ -314,6 +314,15 @@ $(function(){
            $(this).removeClass('animated fadeOutLeft').addClass('hide').next('.boxed.span12').removeClass('hide').addClass('animated fadeInRight');
         });
     })
+
+    $('.donate-trig').click(function(){
+        $('#donationAmt').modal();
+    });
+
+    $(".cpn-suggestions").smoothDivScroll({
+        hotSpotScrolling: false,
+        touchScrolling: true
+    });
 })
 
 
