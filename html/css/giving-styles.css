@@ -772,7 +772,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     -webkit-tap-highlight-color: transparent;
 }
 .cpn-wrapper { 
-
     position: relative;
     display: block;
     overflow: hidden;
@@ -781,7 +780,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .cpn-suggestions{
     height:500px; max-height: 500px; position:relative;
-    top: 0; left: 0;  display: block;
+    top: 0; left: 0;  display: block; padding: 0 30px;
 }
 .cpn-sgtn-item{
  width: 300px;
@@ -1062,7 +1061,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .left-mobile{text-align: left;}
     .no-border-mobile{border:none !important;}
     
-    
+    .causes { padding: 1em 0; }
 }
 
 @media (max-width:310px) {
