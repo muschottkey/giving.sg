@@ -350,6 +350,9 @@ $(function(){
         $('#user-input-holder').closest('button').next().addClass('hide');
         $('#donationAmt').modal('hide');
     });
+
+    var cp_client = new ZeroClipboard($("#copy-url"));
+
 })
 
 
@@ -365,6 +368,5 @@ var addRule = (function (style) {
         sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
     };
 })(document.createElement("style"));
-
 
 
