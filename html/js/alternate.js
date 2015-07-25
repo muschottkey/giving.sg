@@ -323,6 +323,32 @@ $(function(){
         hotSpotScrolling: false,
         touchScrolling: true
     });
+    $('#custom-amt-input-modal>input').change(function(){
+        amt = $(this).val();
+        console.log('cnahbed to '+amt);
+        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').closest('button').next().addClass('hide');
+        $('#donationAmt').modal('hide');
+    })
+    $('#toggleReadmore').click(function(){
+        content = $('#cpn-body');
+        if(content.hasClass('closed')){
+            content.removeClass('closed').addClass('open');
+            $(this).text('+ HIDE DETAILS');
+        }
+        else{
+            content.removeClass('open').addClass('closed');
+            $(this).text('+ MORE DETAILS');
+        }
+    });
+
+    $('#donationAmt .dtn-amt-item').click(function(){
+        amt = parseInt($(this).find('.dtn-amt h3').text());
+        console.log('Clicked amount '+amt);
+        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').closest('button').next().addClass('hide');
+        $('#donationAmt').modal('hide');
+    });
 })
 
 
