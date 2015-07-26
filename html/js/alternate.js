@@ -319,10 +319,14 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    $(".cpn-suggestions").smoothDivScroll({
-        hotSpotScrolling: false,
-        touchScrolling: true
-    });
+    //initialize swiper when document ready  
+    var suggestionsSwiper = new Swiper ('.swiper-container', {
+      // parameters
+        slidesPerView: 'auto',
+        spaceBetween: 30,
+        mode: 'horizontal',
+        freeMode: true
+    })        
     
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
