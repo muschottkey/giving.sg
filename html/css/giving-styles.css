@@ -45,6 +45,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-left0{margin-left: 0 !important;}
 .m-left10{margin-left: 10px;}
 .m-left20{margin-left: 20px;}
+.m-right10{margin-right: 10px;}
 .m-right20{margin-right: 20px;}
 .p-10{padding: 10px;}
 .p-20{padding: 20px;}
@@ -547,6 +548,8 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after { 
     width: 30px;
     font-size: 15px;
 }
+#setup-dtn-carousel .carousel-indicators li{border:1px solid #b3b3b3;background-color: #ffffff;}
+#setup-dtn-carousel .carousel-indicators li.active{background-color:  #b3b3b3;}
 
 #vw-gift-bkt-donate{
     max-width: 800px;
@@ -633,6 +636,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .more-days.inline h4{
     display: inline-block;
 }
+.more-days span.em{color: #adadad;}
 .dtn-amt-item{}
 .dtn-amt-item:hover{
     background-color: #efefef;
@@ -645,13 +649,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     padding:1em 1em;
 }
 .dtn-amt-item .dtn-btns{
-    padding: 1.7em 0;
+    padding: 1em 0;
 }
 .dtn-amt-item .dtn-btns .btn{
     float: left;
-    margin-right: 10px;
+    margin-top: 10px;
     font-size: 0.75em;
-    width: 45%;
+    width: 70%;
 }
 /* Campaign Story */
 .cpn-story{}
@@ -783,7 +787,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     top: 0; left: 0;  display: block; padding: 0 30px;
 }
 .cpn-sgtn-item{
- width: 300px;
+ width: 240px;
  float: left;
  margin-right: 30px;
  -webkit-user-select: none;
@@ -791,6 +795,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     -moz-user-select: none;
     -o-user-select: none;
     user-select: none;
+    overflow: hidden;
+    -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  position: relative;
 }
 .cpn-sgtn-item .sgtn-img{}
 .cpn-sgtn-item .sgtn-body{
@@ -805,6 +814,31 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .cpn-sgtn-item .box-r-footer .more-days{
     padding: 10px;
+}
+.cpn-sgtn-item .sgtn-body .sgt-avatar{
+    position: absolute;
+    margin-left: 65px;
+    width: 30px;
+    height: 30px;
+    margin-top: -27px;
+    border: 1px solid #cccccc;
+}
+
+.cpn-sgtn-item .cpn-featured-status{
+    position: absolute;
+    width: 130px;
+    padding: 5px;
+    top: 20px;
+    left: -30px;
+    font-size: 12px;
+    line-height: 18px;
+    background-color:#ffffff; 
+    -moz-transform: scale(1) rotate(-45deg) translate(0px);
+    -webkit-transform: scale(1) rotate(-45deg) translate(0px);
+    -o-transform: scale(1) rotate(-45deg) translate(0px);
+    transform: scale(1) rotate(-45deg) translate(0px);
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
+}
 }
 
 .modal-dtn-amts{}
@@ -833,6 +867,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
+    .dtn-amt-item .dtn-btns{
+        padding: 1.7em 0;
+    }
+    .dtn-amt-item .dtn-btns .btn{
+        float: left;
+        margin-right: 10px;
+        font-size: 0.75em;
+        width: 45%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -947,11 +990,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
         border-left: 1px solid #ccc;
     }
 
-    .dtn-amt-item .dtn-btns .btn{float: none;}
+    .dtn-amt-item .dtn-btns .btn{float: none;width: 30%;}
     .dtn-amt-item .dtn-desc{width: 100%;}
 
     #cpn-info{width: 100%;}
     #cpn-meta{width: 100%;}
+    .cpn-end-date.smaller{margin-top: 15px;}
     #cpn-donate-now .box > h4{text-transform: capitalize;}
     #cpn-donate-now, #cpn-donate-now .box{background-color: #efefef;}
     #cpn-donate-now .box{border: none;}
@@ -1062,10 +1106,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .no-border-mobile{border:none !important;}
     
     .causes { padding: 1em 0; }
+    .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
 }
 
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;overflow}
     .mobile-separator {margin: 4em -20px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
+    .cpn-story-title{font-size: 1em;}
 }
