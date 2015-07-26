@@ -347,6 +347,20 @@ $(function(){
         }
     });
 
+    $('.open-more').each(function(){
+        $(this).click(function(){
+            target = $(this).attr('data-target');
+            if($(target).hasClass('open')){
+                $(target).removeClass('open').addClass('closed');
+                $(this).text('MORE');
+            }
+            else{
+                $(target).removeClass('closed').addClass('open');
+                $(this).text('LESS');
+            }
+        })
+    })
+
     $('#donationAmt .dtn-amt-item').click(function(){
         amt = parseInt($(this).find('.dtn-amt h3').text());
         console.log('Clicked amount '+amt);

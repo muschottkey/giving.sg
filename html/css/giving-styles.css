@@ -32,6 +32,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .block{display: block;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-0 { margin: 0 !important; line-height:1; }
+.m-top-5{margin-top:-5px; }
 .m-bot0{margin-bottom: 0px;}
 .m-bot5{margin-bottom: 5px;}
 .m-bot10{margin-bottom: 10px;}
@@ -45,6 +46,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-left0{margin-left: 0 !important;}
 .m-left10{margin-left: 10px;}
 .m-left20{margin-left: 20px;}
+.m-left30{margin-left: 30px;}
 .m-right10{margin-right: 10px;}
 .m-right20{margin-right: 20px;}
 .p-10{padding: 10px;}
@@ -409,7 +411,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 .bg-grey .img-placeholder-btn { max-width:100%; margin:17% auto; width: 80%; }
     
 #cause-image-preview{border: none;overflow: hidden;}
-.img-box{width: 60px;height:60px;display:inline-block;background-color: #f7f7f7;margin-right: 30px;font-size:0.8em;line-height: 1em;border-radius: 8px;overflow: hidden; }
+.img-box{width: 60px;height:60px;display:inline-block;background-color: #f7f7f7;margin-right: 25px;font-size:0.8em;line-height: 1em;border-radius: 8px;overflow: hidden; }
 .img-box:before{
     content: "\f040";
     font-family: 'FontAwesome';
@@ -686,6 +688,18 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 /* Fundraiser Widgets */
+.fr-widget-wrapper{
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.fr-widget-wrapper.open{
+    max-height: 2000px;
+    transition: max-height 1s ease;
+}
+.fr-widget-wrapper.closed{
+    max-height: 500px;
+    transition: max-height 1s ease;
+}
 .fr-widget { margin-top:20px; padding-top:10px; }
 .fr-widget .box-r-footer{
     background-color: #ffffff;
@@ -701,12 +715,22 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .dr-img-wrapper{
     text-align: center;
+    transition: max-height 1s ease;
+    overflow: hidden;
+}
+.dr-img-wrapper.closed{
+    max-height: 130px;
+    transition: max-height 1s ease;
+}
+.dr-img-wrapper.open{
+    max-height: 500px;
+    transition: max-height 1s ease;
 }
 .dr-img{
-    width: 50px;
-    height: 50px;
+    width: 52px;
+    height: 52px;
      float: left;
-     margin-right:30px;
+     margin-right:28px;
      display: inline-block;
      margin-bottom: 20px;
  }
@@ -838,6 +862,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.9em;width: 80%;float: right;}
 .modal-dtn-amts .dtn-amt-item:hover{border: 1px solid #4cae4c;}
 .modal-dtn-amts .dtn-amt-item:hover .dtn-desc{border-left: 1px solid #4cae4c;}
+.modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #cccccc;background-color: #ffffff;color: #333;}
 .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 2px solid #333;outline: none; }
 
@@ -881,6 +906,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0 !important; }
     #dtn-user-about{padding-left: 0px !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
+    .dr-img{margin-right: 28px;}
+
 
 
 }
@@ -1086,15 +1113,18 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
     .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
     .border-round .centered { padding-left:40px; padding-right:40px; }
-    #cpn-donate-now .btn{margin: 0;border-radius: 0;}
+    #cpn-donate-now .btn{margin: 0;border-radius: 0;width: 48%;float: left;}
+    #cpn-donate-now .btn:last-child{margin-left:2%;}
     .social-share{text-align: center;}
     .social-share a{width: 20% !important;clear:none;margin: 0;display: inline-block !important;}
-    .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px;padding:20px;}
+    .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px;padding:20px;text-align: left;}
     .left-mobile{text-align: left;}
     .no-border-mobile{border:none !important;}
-    
+    #cpn-url{width: calc(100% - 60px);}
     .causes { padding: 1em 0; }
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
+    .social-share{border: 1px solid #ccc;padding:30px 0;}
+    .dr-img{margin-right: 40px;}
 }
 
 @media (max-width:310px) {
