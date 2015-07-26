@@ -49,7 +49,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-right20{margin-right: 20px;}
 .p-10{padding: 10px;}
 .p-20{padding: 20px;}
-.p-top20{padding-top: 20px;}
+.p-top20 { padding-top: 20px;}
 .p-bot30{padding-bottom: 30px;}
 hr.m5{margin: 5px 0;}
 
@@ -658,11 +658,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     width: 70%;
 }
 /* Campaign Story */
-.cpn-story{}
-.cpn-story .head{}
-.cpn-story .body{
-    height: inherit;
-}
+.cpn-story { position:relative; } 
+.cpn-story .body {  height: inherit; }
 .cpn-story .body.open{
     transition:all 0.8s ease;
 }
@@ -671,41 +668,32 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     display: none;
 }
 .cpn-story .body.closed{
-    height: 170px;
-    overflow: hidden;
+    height:11em; overflow: hidden;
     transition:all 0.8s ease;
 
 }
 .cpn-story .body.closed:before{
-    content: "";
-    width: 45%;
-    height: 170px;
-    position: absolute;
+    content: ""; width:100%; height:11em; position: absolute;
     background: rgba(255,255,255,0);
-    background: -moz-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 78%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(78%, rgba(255,255,255,0.78)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 78%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 78%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 78%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.78) 78%, rgba(255,255,255,1) 100%);
+    background: -moz-linear-gradient(top, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(60%, rgba(255,255,255,0)), color-stop(90%, rgba(255,255,255,0.78)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 
 }
 
 /* Fundraiser Widgets */
-
-.fr-widget{
-    margin-top:20px;
-     }
+.fr-widget { margin-top:20px; padding-top:10px; }
 .fr-widget .box-r-footer{
     background-color: #ffffff;
     border-top:1px solid #cccccc;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
-.fr-widget .fr-person{
-    font-weight: 600;
-}
+.fr-widget .fr-person{ font-weight: 600; }
 .fr-widget .fr-person img{
     width: 40px;
     height: 40px;
@@ -999,7 +987,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #cpn-donate-now .box > h4{text-transform: capitalize;}
     #cpn-donate-now, #cpn-donate-now .box{background-color: #efefef;}
     #cpn-donate-now .box{border: none;}
-    .cpn-story .body.closed:before{width:inherit;max-width: 570px;}
     .p-title{margin-top: 20px !important;}
 
 }
