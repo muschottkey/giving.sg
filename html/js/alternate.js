@@ -360,7 +360,7 @@ $(function(){
         $(this).click(function(){
             target = $(this).attr('data-target');
             if($(target).hasClass('open')){
-                $('html, body').animate( { scrollTop: $(target).offset().top-200 }, {duration: 500 } );
+                $('html, body').animate( { scrollTop: $(target).offset().top-180 }, {duration: 500 } );
                 $(target).removeClass('open').addClass('closed');
                 $(this).text('MORE');
             }

@@ -634,7 +634,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
      margin-right: 8px;
      margin-bottom: 0;
  }
->>>>>>> origin/setupDtn
 .campaign-stats span.em{
     color: #919191;
     font-size: 0.9em;
@@ -791,12 +790,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /* Copy Url Box */
 .cpn-url-box {
     font-size: 12px;
+    position: relative;
+    padding-right: 57px;
+    float: none;
 }
 .cpn-url-box input, .cpn-url-box button{
     height: 40px;
     background-color: #ffffff;
 }
-.cpn-url-box button{background:#efefef; }
+.cpn-url-box button{background:#efefef; position: absolute;right: 0;top:0;}
+
 
 /* Suggestions widget */
 .cpn-holder { 
@@ -1276,9 +1279,22 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .left-mobile{text-align: left;}
     .no-border-mobile{border:none !important;}
-    #cpn-url{width: calc(100% - 60px);}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
     .social-share{border: 1px solid #ccc;padding:30px 0;}
+    .cpn-url-box{
+        position: relative;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cpn-url-box input{
+        text-align: left;
+    }
+    .cpn-url-box button{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 
     .dr-img { margin:6px 2.5%; margin-right:40px; }
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
