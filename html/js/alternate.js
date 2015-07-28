@@ -375,6 +375,17 @@ $(function(){
 
     var cp_client = new ZeroClipboard($("#copy-url"));
 
+
+    /* ----------------------------------------------------
+            MATCHING HEIGHTS OF ELEMENTS
+     ----------------------------------------------------*/
+
+   $('#dtn-impact-s').matchHeight({
+    target: $('#dtn-about-us-container')
+    });
+
+   $('.match-height-abt-impact').matchHeight();
+
 })
 
 

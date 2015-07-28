@@ -11,7 +11,7 @@ h4 { font-size: 1.2em; }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
-button{background-image: none !important;}
+button, .btn{background-image: none !important;}
 
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
@@ -39,6 +39,8 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-bot15{margin-bottom: 15px;}
 .m-bot20{margin-bottom: 20px;}
 .m-bot30{margin-bottom: 30px;}
+.m-bot40{margin-bottom: 40px;}
+.m-bot50{margin-bottom: 50px;}
 .m-top0{margin-top: 0;}
 .m-top-5{margin-top:-5px; }
 .m-top5{margin-top: 5px;}
@@ -46,10 +48,13 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-top20{margin-top: 20px;}
 .m-top30{margin-top: 30px;}
 .m-top40{margin-top: 40px;}
+.m-top50{margin-top: 50px;}
+.m-top60{margin-top: 60px;}
 .m-left0{margin-left: 0 !important;}
 .m-left10{margin-left: 10px;}
 .m-left20{margin-left: 20px;}
 .m-left30{margin-left: 30px;}
+.m-right0{margin-right: 0px !important;}
 .m-right10{margin-right: 10px;}
 .m-right20{margin-right: 20px;}
 .p-10{padding: 10px;}
@@ -92,7 +97,7 @@ hr.m5{margin: 5px 0;}
 .modal.fade.in { display:block; }
 
 .modal-header { border-bottom: none; }
-.modal-body { max-width:800px; }
+.modal-body { max-width:800px;padding: 0;}
 .modal-footer { background:#d8d8d8; text-align:center; padding: 10px 5px; }
 
 /* MODAL - Typography */
@@ -321,7 +326,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .share-box a.shareit{color:#BBBBBB; }
 
 /* Gift Box */
-.gift-box{font-size: 8em !important;}
+.gift-box{font-size: 8em !important;position: relative;}
 .gift-box span.badge{position: absolute;top: 20%;right: -20%;padding: 12px;width: 15px;}
 
 /* set up donation */
@@ -483,7 +488,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 #dtn-user-about{border: none;margin-top: 0 !important;}
 #dtn-about-us-wrapper{padding: 30px;border: 1px solid #E3E3E3;padding-bottom: 0;}
 #dtn-about-us-wrapper .box.reset{margin-top: 20px;padding-bottom: 30px !important; }
-#dtn-impact-s .box{padding:484px 0 !important;}
+#dtn-impact-s .box{padding:492px 0 !important;}
 #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0;}
 #dtn-user-large-cta .span6.box.reset{margin-left: 2.064103%;padding-bottom: 30px;}
 #dtn-user-large-cta .span6.box.reset .action-link{margin-top: 40px;}
@@ -499,7 +504,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
-#gf-bkt-wrapper{margin-bottom: 60px;}
+#gf-bkt-wrapper{margin-bottom: 0px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
 .gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px;}
 .gf-bkt thead tr td{font-size: 0.875em;}
@@ -548,6 +553,9 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .qk-bkt-li:hover > ul{display: block;}
 .qk-basket-wrapper{position: relative;top: 46px;}
 
+#setup-dtn-carousel{
+    margin-bottom: 0;
+}
 #setup-dtn-carousel .carousel-control {
     margin-top: 10px;
     height: 30px;
@@ -1001,7 +1009,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .donation-wrapper{max-width: 700px;float: right;}
     #setup-donation-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
-    #save-actions{margin-bottom: 30px;}
+    #save-actions{margin-bottom: 30px;padding-top: 0 !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
     .dtn-amt-item .dtn-btns{
         padding: 1.7em 0;
@@ -1073,6 +1081,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .boxed-wrapper.md{max-width: 610px; margin-top: 0;}
     .boxed-wrapper.gf{max-width: 800px;padding: 0 30px;}
     .sign-up-form { margin-top:50px; border-left:none; }
+    .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{padding:0;border:none;}
 
     /* UI Controls - FORM ELEMENTS  */
     form { text-align: center; }
@@ -1083,7 +1092,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .btn-toggle .btn span { width: 100%; float:left; text-align: center;font-size:0.7858em;}
     .btn-toggle .btn i { margin:0; }
 
-    .mobile-separator { margin:4em -40px 1em; }
+    .mobile-separator { margin:4em -15px 1em; }
     .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:5.2em; }
 
     .step-label{display: none;}
@@ -1177,7 +1186,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .navbar-fixed-top {  margin: 0px; }
     #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 0;}
     #fundr-content{padding: 10px 0;}
-    .donation-wrapper{background-color: #e3e3e3;}
+    .donation-wrapper{background-color: #ffffff;}
     #donation-userDetails{border: none;}
     #donation-userDetails  .control-label.small {font-size: 1.1em;}
    
@@ -1307,13 +1316,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 @media (max-width:360px) {
     .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
+    .qk-bkt-li ul{width:300px;}
 }    
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;overflow}
-    .mobile-separator {margin: 4em -20px 1em;}
+    .mobile-separator {margin: 4em -15px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
     .cpn-story-title{font-size: 1em;}
     .dr-img {
         margin-right: 8px;
     }
+    .qk-bkt-li ul{width:300px;}
+
 }
