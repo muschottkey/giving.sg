@@ -884,11 +884,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #cccccc;background-color: #ffffff;color: #333;}
 .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 2px solid #333;outline: none; }
-<<<<<<< HEAD
+
 .carousel > .ico{
     position:absolute; right:17px; top:17px; font-size:1em; z-index:10; 
     padding:6px; background:#fff; cursor:pointer; border:1px solid #ccc;
-}
+
 .carousel > .active { left:auto; }
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa { color:#d33030; left:0;}
 .side-logo{
