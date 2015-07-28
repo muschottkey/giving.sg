@@ -322,8 +322,8 @@ $(function(){
     //initialize swiper when document ready  
     var suggestionsSwiper = new Swiper ('.swiper-container', {
       // parameters
-        slidesPerView: 'auto',
-        spaceBetween: 30,
+        slidesPerView:'auto',
+        spaceBetween:15,
         mode: 'horizontal',
         freeMode: true
     })        

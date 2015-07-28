@@ -33,7 +33,13 @@ $(function(){
 		$(this).closest('.accordion-content').find('.img-area-holder img:eq(i_):gt(5)').show();
 	});
 	
-	$('.carousel-inner > .item .ico').click(function(){
+	$('.carousel-inner > .ico').click(function(){
 		$(this).toggleClass('active');
 	});
+
+	var addCpnBtn = $('.swiper-wrapper').height();
+	
+	$('.add-cpn-btn').height(addCpnBtn);
+
+		
 });
