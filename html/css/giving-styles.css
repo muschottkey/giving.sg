@@ -601,9 +601,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #CCC; }
 .cn-days-wrapper{ width:19%; float:left; margin-left:3%; padding-top:10px; line-height:1; }
 
-<<<<<<< HEAD
+
 .campaign-stats h4{ display: inline-block; font-size:1.5em; margin-right: 8px; margin-bottom: 0; }
-=======
+
 .cn-stats-wrapper{
     width: 70%;
     float: left;
@@ -888,7 +888,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .carousel > .ico{
     position:absolute; right:17px; top:17px; font-size:1em; z-index:10; 
     padding:6px; background:#fff; cursor:pointer; border:1px solid #ccc;
-
+}
 .carousel > .active { left:auto; }
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa { color:#d33030; left:0;}
 .side-logo{
