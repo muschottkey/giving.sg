@@ -1136,6 +1136,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .dtn-amt-item .dtn-btns{
         width: 100%;
+        text-align: center;
         padding: 0.5em 0;
         border-top: 1px solid #ccc;
         border-left: 1px solid #ccc;
