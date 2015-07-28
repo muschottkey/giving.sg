@@ -332,9 +332,18 @@ $(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);
         $('#user-input-holder').text("ADDED $"+amt+" TO");
-        $('#user-input-holder').closest('button').next().addClass('hide');
+        $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     })
+
+     $('#donationAmt .dtn-amt-item').click(function(){
+        amt = parseInt($(this).find('.dtn-amt h3').text());
+        console.log('Clicked amount '+amt);
+        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
+        $('#donationAmt').modal('hide');
+    });
+     
     $('#toggleReadmore').click(function(){
         content = $('#cpn-body');
         if(content.hasClass('closed')){
@@ -351,6 +360,7 @@ $(function(){
         $(this).click(function(){
             target = $(this).attr('data-target');
             if($(target).hasClass('open')){
+                $('html, body').animate( { scrollTop: $(target).offset().top-200 }, {duration: 500 } );
                 $(target).removeClass('open').addClass('closed');
                 $(this).text('MORE');
             }
@@ -361,13 +371,7 @@ $(function(){
         })
     })
 
-    $('#donationAmt .dtn-amt-item').click(function(){
-        amt = parseInt($(this).find('.dtn-amt h3').text());
-        console.log('Clicked amount '+amt);
-        $('#user-input-holder').text("ADDED $"+amt+" TO");
-        $('#user-input-holder').closest('button').next().addClass('hide');
-        $('#donationAmt').modal('hide');
-    });
+   
 
     var cp_client = new ZeroClipboard($("#copy-url"));
 

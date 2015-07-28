@@ -11,6 +11,7 @@ h4 { font-size: 1.2em; }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
+button{background-image: none !important;}
 
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
@@ -598,11 +599,24 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     float: left;
     padding: 0 10px 10px;
     border-right: 1px solid #cccccc;
+
 }
 .cn-days-wrapper{
     width: 18%;
     float: left;
     margin-left: 4%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .campaign-stats{}
 .campaign-stats h4{
@@ -612,6 +626,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
  }
 .campaign-stats span.em{
     color: #919191;
+    font-size: 0.9em;
 }
 .campaign-stats span.darker{
     color: #5d5d5d;
@@ -687,6 +702,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 }
 
+.open-more{
+    font-size: 0.9em;
+    font-weight: 900;
+}
+
 /* Fundraiser Widgets */
 .fr-widget-wrapper{
     overflow: hidden;
@@ -712,11 +732,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     width: 40px;
     height: 40px;
 }
+.fr-widget .fr-days{padding-top: 5px;}
 
 .dr-img-wrapper{
     text-align: center;
     transition: max-height 1s ease;
     overflow: hidden;
+    margin-top: 20px;
 }
 .dr-img-wrapper.closed{
     max-height: 130px;
@@ -865,6 +887,22 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #cccccc;background-color: #ffffff;color: #333;}
 .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 2px solid #333;outline: none; }
+#contact-logo{
+    background-color: #e3e3e3;
+    min-height: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
 
 /***************************************************************************
                             Media Queries
@@ -1016,7 +1054,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #cpn-donate-now, #cpn-donate-now .box{background-color: #efefef;}
     #cpn-donate-now .box{border: none;}
     .p-title{margin-top: 20px !important;}
-
+    .fr-widget-wrapper.closed{max-height: 440px;}
 }
 
 @media (max-width: 767px) {
@@ -1114,9 +1152,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
     .border-round .centered { padding-left:40px; padding-right:40px; }
     #cpn-donate-now .btn{margin: 0;border-radius: 0;width: 48%;float: left;}
+    #cpn-donate-now .btn.with-amount{width: 100%;}
     #cpn-donate-now .btn:last-child{margin-left:2%;}
     .social-share{text-align: center;}
-    .social-share a{width: 20% !important;clear:none;margin: 0;display: inline-block !important;}
+    .social-share a{width: 4em !important;height:4em;clear:none;margin: 0;display: inline-block !important;margin-right:0.5em !important;border-radius: 6px;}
+    .social-share a i{line-height:2em;}
     .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px;padding:20px;text-align: left;}
     .left-mobile{text-align: left;}
     .no-border-mobile{border:none !important;}
@@ -1125,6 +1165,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
     .social-share{border: 1px solid #ccc;padding:30px 0;}
     .dr-img{margin-right: 40px;}
+    .fr-widget .fr-person span.smaller{font-size: 0.875em;}
+
 }
 
 @media (max-width:310px) {
@@ -1132,4 +1174,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .mobile-separator {margin: 4em -20px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
     .cpn-story-title{font-size: 1em;}
+    .dr-img {
+        margin-right: 8px;
+    }
 }
