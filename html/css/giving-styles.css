@@ -446,9 +446,10 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     width: 48%;
     float: left;
     margin-left: 2%;
-    height: 40px;
+    height: 50px;
     font-weight: 800;
-    margin-top: 15px;
+    margin-top: 25px;
+    font-size: 1.3em;
 }
 #donate-buttons button.active {
     background-color: #54a954;border-color: #54a954;color: #ffffff;
@@ -468,7 +469,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     margin-top: 20px;
     border: 2px solid #e3e3e3;
     border-radius:6px;
-    padding: 0px;
+    padding: 4px 0 0 0;
 }
 
 #custom-amt-input span { font-weight: 900; }
@@ -482,6 +483,11 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     padding: 0 !important;
     margin: 10px 5px;
     text-align: center;
+}
+
+.donate-btns .btn{
+    height: 50px;
+    border-radius: 0;
 }
 
 .button-input:focus{border-bottom: 2px solid #efefef;outline: none;}
@@ -605,10 +611,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 /* CAMPAIGN WIDGETS*/
-.cn-details { padding:0 2%; }
+.cn-details { padding:0 2%; position: relative;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #CCC; }
-.cn-days-wrapper{ width:19%; float:left; margin-left:3%; padding-top:10px; line-height:1; }
 
+.cn-details .more-days h4{font-size: 1.5em;}
 
 .campaign-stats h4{ display: inline-block; font-size:1.5em; margin-right: 8px; margin-bottom: 0; }
 
@@ -619,24 +625,25 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     border-right: 1px solid #cccccc;
 
 }
+
+.cn-stats-inner{
+    padding:10px 0;
+}
+
 .cn-days-wrapper{
     width: 18%;
-    float: left;
-    margin-left: 4%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    right: 5%;
+    top: 30%;
+    position: absolute;
+    display: block;
 }
+
+.cn-days-wrapper .more-days{
+}
+
+.campaign-stats h4
 .campaign-stats{}
+
 .campaign-stats h4{
     display: inline-block;
      margin-right: 8px;
@@ -665,9 +672,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     box-shadow: none;
 }
 
-.cn-days-wrapper .more-days{
-    padding: 12px 0;
-}
 .more-days.inline h4{
     display: inline-block;
 }
@@ -720,6 +724,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 }
 
+.cpn-end-date.smaller{
+    margin-top: 15px;
+}
+
 .open-more{
     font-size: 0.9em;
     font-weight: 900;
@@ -735,10 +743,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     transition: max-height 1s ease;
 }
 .fr-widget-wrapper.closed{
-    max-height: 500px;
+    max-height: 540px;
     transition: max-height 1s ease;
 }
 .fr-widget { margin-top:20px; padding-top:10px; }
+
+.fr-widget > h4 { margin-top:20px; }
+
 .fr-widget .box-r-footer{
     background:#FFF; border-top:1px solid #CCC; padding-top: 0.5em;
     padding-bottom: 0.5em;
@@ -1073,14 +1084,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0 !important; }
     #dtn-user-about{padding-left: 0px !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
-    .dr-img{margin-right: 28px;}
+   .dr-img-wrapper .dr-img {
+      margin: 0 20px 20px;
+    }
     .donate-btns  { padding:0 2em 2em; }
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
-
+    .fr-widget .span6.centered{padding: 0 25%;}
 }
 
 @media (max-width: 979px) {
-    .dr-img-wrapper .dr-img{margin:0 15px 20px;}
+    .dr-img-wrapper .dr-img{margin:0 20px 20px;}
     .border-all .dtn-btns{padding-right:26px !important;}
     .border-all .dtn-btns .btn{margin-left:14px;}
     .dtn-amt-item .dtn-btns{text-align:right;}
@@ -1202,10 +1215,26 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #cpn-donate-now .box{border: none;}
         #cpn-donate-now .btn:last-child { margin-left:2%;}
     .p-title{margin-top: 20px !important;}
-    .fr-widget-wrapper.closed{max-height: 440px;}
+    .fr-widget-wrapper.closed{max-height: 480px;}
 
-    .social-share { text-align: center; max-width:400px; padding:30px 5% 0; margin:0 auto; }
+    .social-share { text-align: center; max-width:400px; /*padding:30px 5% 0;*/ margin:0 auto;border: 1px solid #ccc;padding:30px 0; }
     .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
+    .social-share{}
+    .cpn-url-box{
+        position: relative;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cpn-url-box input{
+        text-align: left;
+    }
+    .cpn-url-box button{
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 
 }
 
@@ -1332,25 +1361,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .left-mobile{text-align: left;}
     .no-border-mobile{border:none !important;}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
-    .social-share{border: 1px solid #ccc;padding:30px 0;}
-    #cpn-url{width: calc(100% - 60px);}
-    .cpn-url-box{
-        position: relative;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .cpn-url-box input{
-        text-align: left;
-    }
-    .cpn-url-box button{
-        position: absolute;
-        top: 0;
-        right: 0;
-    }
-
-    .dr-img { margin:6px 2.5%; margin-right:40px; }
+    
+    .dr-img-wrapper .dr-img { margin:6px 0; margin-right:15px; }
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
+    .donate-btns{margin-top: 0;}
 }
 
 @media (min-width:360px) and (max-width:767px) {
@@ -1361,6 +1375,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
     .qk-bkt-li ul{width:300px;}
+    .fr-widget-wrapper.closed {
+      max-height: 500px;
+    }
 }    
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;overflow}
