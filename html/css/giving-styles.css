@@ -11,7 +11,7 @@ h4 { font-size: 1.2em; }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
-button, .btn{background-image: none !important;}
+button, .btn {background-image: none !important;}
 
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
@@ -916,7 +916,44 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .side-contact-lst li:first-child{  color:#000; font-weight:600; }
 .side-contact p .fa{width:18px;color:#666;}
-.accordion-content{display:none;}
+
+.start-campaign-holder{padding:0 10px;}
+.start-campaign-area{
+    max-width:580px;
+    border-radius:4px;
+    margin:12px auto;
+    padding:33px 10px;
+    text-align:center;
+    -webkit-border-radius:4px;
+    border:1px solid #ccc;
+}
+.start-campaign-area a{
+    cursor:pointer;
+    text-decoration:none;
+}
+.start-campaign-area .fa{
+    font-size:24px;
+    line-height:28px;
+    color:#333;
+    margin:0 0 5px;
+}
+.start-campaign-area .txt{
+    display:block;
+    font-size:15px;
+    line-height:19px;
+    color:#333;
+}
+.accordion-content{
+    max-width:860px;
+    padding:0 20px;
+    margin:30px auto 50px;
+}
+/* .accordion-content{display:none;} */
+.accordion-content.content-inner{max-width:720px;}
+
+
+
+
 .donors-area{max-width:900px;margin:0 auto;}
 .donors-area .dr-img-wrapper{max-width:800px;margin:0 auto;max-height:none; width:95%;}
 .img-area-holder{text-align:left;}
@@ -1173,6 +1210,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 @media (max-width: 767px) {
+    .start-campaign-area a br{display:none;}
+    .accordion-content{
+        padding:0 5px;
+        margin:30px auto 50px;
+    }
+    .accordion-title{font-size:16px;}
     body{padding-right: 0;padding-left: 0;}
     .row-fluid.border-all { margin-right:-1px !important; margin-left:-2px !important; }
     .carousel-indicators{bottom: 10px;}
@@ -1290,6 +1333,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .no-border-mobile{border:none !important;}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
     .social-share{border: 1px solid #ccc;padding:30px 0;}
+    #cpn-url{width: calc(100% - 60px);}
     .cpn-url-box{
         position: relative;
         max-width: 400px;
