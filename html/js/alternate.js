@@ -331,7 +331,7 @@ $(function(){
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);
-        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     })
@@ -339,7 +339,7 @@ $(function(){
      $('#donationAmt .dtn-amt-item').click(function(){
         amt = parseInt($(this).find('.dtn-amt h3').text());
         console.log('Clicked amount '+amt);
-        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     });
