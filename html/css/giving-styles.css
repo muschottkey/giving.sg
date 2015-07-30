@@ -1047,8 +1047,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
-
-
 @media (min-width: 1200px) {
     .modal { max-width:1000px; }
     .start-cta, .span12.start-cta{height: 377px;}
@@ -1092,9 +1090,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0 !important; }
     #dtn-user-about{padding-left: 0px !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
-   .dr-img-wrapper .dr-img {
-      margin: 0 20px 20px;
-    }
+    .dr-img-wrapper .dr-img { margin-left:2.5%; margin-right:2.5%; }
     .donate-btns  { padding:0 2em 2em; }
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
         .span8.modal-dtn-amts { width:100%; }
@@ -1102,9 +1098,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 @media (max-width: 979px) {
-    .img-area-holder img.dr-img{
-        margin:0 12px 20px;
-    }
     .centered-small-screen{text-align: center;}
     .border-all .dtn-btns{padding-right:26px !important;}
     .border-all .dtn-btns .btn{margin-left:14px;}
@@ -1130,7 +1123,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     
     .f-block .social-share .span1{padding: 8px;}
-
     .f-block .input-append{margin:0;}
 
     /* HELPER CLASSES */
