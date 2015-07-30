@@ -679,15 +679,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .dtn-amt-item:hover{
     background-color: #efefef;
 }
+.dtn-amt-item .dtn-amt { display:table; }
+.dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell;  }
+.dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {min-height:100px; }
 /*
-.dtn-amt-item .dtn-amt{
-    padding:0; position: absolute;  top: 20%; left: 0%;
-}
+
 
 .dtn-amt-item > .span10{
     padding-left: 120px;
 }*/
-.dtn-amt-item .dtn-desc { border-left: 1px solid #CCC; padding:1.5em 1em; }
+.dtn-amt-item .dtn-desc { border-left: 1px solid #CCC; padding:1.3em 1em; }
 .dtn-amt-item .dtn-btns { padding: 1em 0; }
 .dtn-amt-item .dtn-btns .btn{
     float: left;
@@ -892,7 +893,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
 .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #5cb85c;color: #ffffff;}
 .modal-dtn-amts .dtn-amt-item:focus .dtn-amt h3, .modal-dtn-amts .dtn-amt-item:hover .dtn-amt h3{color: #ffffff !important;}
-.modal-dtn-amts .dtn-amt-item .dtn-amt{float:left; padding: 0.6em 0;}
+.modal-dtn-amts .dtn-amt-item .dtn-amt{float:left; }
     .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
 
 .modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.9em;width: 80%;float: right;}
@@ -1054,19 +1055,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px;padding-top: 0 !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
-    .dtn-amt-item .dtn-amt{
+    /* .dtn-amt-item .dtn-amt{
         position: absolute;
         top: 20%;
         left: 0%;
     }
-
     .dtn-amt-item > .span10{
         padding-left: 140px;
-    }
+    }*/
 
-    .dtn-amt-item .dtn-btns{
-        padding: 1.4em 0;
-    }
+    .dtn-amt-item .dtn-btns{  padding: 1.4em 0; }
     .dtn-amt-item .dtn-btns .btn{
         float: left;
         margin-right: 10px;
@@ -1094,6 +1092,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     .donate-btns  { padding:0 2em 2em; }
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
+        .span8.modal-dtn-amts { width:100%; }
     .fr-widget .span6.centered{padding: 0 25%;}
 }
 
@@ -1201,9 +1200,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gft-dtn-prefs tr:nth-child(2) td{border-top: 0;}
 
-    .dtn-amt-item > .span10{
+    /*.dtn-amt-item > .span10{
         padding-left: 80px;
-    }
+    }*/
 
     .dtn-amt-item .dtn-btns{
         width: 100%;
