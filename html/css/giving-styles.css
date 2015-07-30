@@ -676,12 +676,19 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     display: inline-block;
 }
 .more-days span.em{color: #adadad;}
-.dtn-amt-item{}
+.dtn-amt-item{position: relative;}
 .dtn-amt-item:hover{
     background-color: #efefef;
 }
 .dtn-amt-item .dtn-amt{
-    padding:1em 1em;
+    padding:0;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+}
+
+.dtn-amt-item > .span10{
+    padding-left: 120px;
 }
 .dtn-amt-item .dtn-desc{
     border-left: 1px solid #cccccc;
@@ -1059,8 +1066,18 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px;padding-top: 0 !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
+    .dtn-amt-item .dtn-amt{
+        position: absolute;
+        top: 20%;
+        left: 0%;
+    }
+
+    .dtn-amt-item > .span10{
+        padding-left: 140px;
+    }
+
     .dtn-amt-item .dtn-btns{
-        padding: 1.7em 0;
+        padding: 1.4em 0;
     }
     .dtn-amt-item .dtn-btns .btn{
         float: left;
@@ -1187,7 +1204,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
         float: left;
         width: 150px;
         margin-left: 20px;
-        margin-top: 14px;
+        margin-bottom: 0px;
+        margin-top: 25px;
+        padding-top: 9px;
     }
 
     #custom-amt-input .button-input{margin: 7px 5px;}
@@ -1195,6 +1214,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     div#setup-dtn-2-wrapper{max-width: 600px;margin-right: auto;margin-left: auto;}
     #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gft-dtn-prefs tr:nth-child(2) td{border-top: 0;}
+    .dtn-amt-item .dtn-amt{
+        position: absolute;
+        top: 25%;
+        left: 0%;
+    }
+
+    .dtn-amt-item > .span10{
+        padding-left: 80px;
+    }
 
     .dtn-amt-item .dtn-btns{
         width: 100%;
@@ -1215,7 +1243,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #cpn-donate-now .box{border: none;}
         #cpn-donate-now .btn:last-child { margin-left:2%;}
     .p-title{margin-top: 20px !important;}
-    .fr-widget-wrapper.closed{max-height: 480px;}
+    .fr-widget-wrapper.closed{max-height: 460px;}
 
     .social-share { text-align: center; max-width:400px; /*padding:30px 5% 0;*/ margin:0 auto;border: 1px solid #ccc;padding:30px 0; }
     .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
