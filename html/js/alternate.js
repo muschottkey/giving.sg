@@ -331,7 +331,7 @@ $(function(){
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);
-        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     })
@@ -339,7 +339,7 @@ $(function(){
      $('#donationAmt .dtn-amt-item').click(function(){
         amt = parseInt($(this).find('.dtn-amt h3').text());
         console.log('Clicked amount '+amt);
-        $('#user-input-holder').text("ADDED $"+amt+" TO");
+        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     });
@@ -360,7 +360,7 @@ $(function(){
         $(this).click(function(){
             target = $(this).attr('data-target');
             if($(target).hasClass('open')){
-                $('html, body').animate( { scrollTop: $(target).offset().top-200 }, {duration: 500 } );
+                $('html, body').animate( { scrollTop: $(target).offset().top-180 }, {duration: 500 } );
                 $(target).removeClass('open').addClass('closed');
                 $(this).text('MORE');
             }
@@ -374,6 +374,17 @@ $(function(){
    
 
     var cp_client = new ZeroClipboard($("#copy-url"));
+
+
+    /* ----------------------------------------------------
+            MATCHING HEIGHTS OF ELEMENTS
+     ----------------------------------------------------*/
+
+   $('#dtn-impact-s').matchHeight({
+    target: $('#dtn-about-us-container')
+    });
+
+   $('.match-height-abt-impact').matchHeight();
 
 })
 
