@@ -13,11 +13,24 @@ $(function(){
 	});
 	
 	if($('.img-area-holder img').length){
-		$('.img-area-holder img:lt(12)').show();
+		var items_visible;
+		var winWidth = $(window).innerWidth();
+		console.log(winWidth);
+		if(winWidth <= 767){
+			items_visible = 8;
+		}
+		if(winWidth >= 768 && winWidth < 980){
+			items_visible = 12;
+		}
+		if(winWidth >= 980){
+			items_visible = 18;
+		}
+		console.log(items_visible);
+		$('.img-area-holder img:lt('+items_visible+')').show();
 		var items = $('.img-area-holder img').length;
 		var shown = 12;
 		$('.btn-more-img').click(function () {
-			shown = $('.img-area-holder img:visible').size()+12;
+			shown = $('.img-area-holder img:visible').size()+items_visible;
 			if(shown < items){
 				$('.img-area-holder img:lt('+shown+')').stop().fadeIn(400);
 			}
