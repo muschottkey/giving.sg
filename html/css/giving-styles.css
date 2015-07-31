@@ -35,7 +35,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-0 { margin: 0 !important; line-height:1; }
 .m-bot0{margin-bottom: 0px;}
 .m-bot5{margin-bottom: 5px;}
-.m-bot10{margin-bottom: 10px;}
+.m-bot10{margin-bottom: 10px !important;}
 .m-bot15{margin-bottom: 15px;}
 .m-bot20{margin-bottom: 20px;}
 .m-bot30{margin-bottom: 30px;}
@@ -57,6 +57,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .p-30{padding: 30px;}
 .p-top20 { padding-top: 20px;}
 .p-top40 { padding-top:40px;}
+.p-bot0 { padding-bottom:0 !important;}
 .p-bot30{padding-bottom: 30px;}
 .p-bot40{padding-bottom:40px;}
 hr.m5{margin: 5px 0;}
@@ -330,7 +331,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
             box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
             padding-bottom: 0 !important;}
 .p-section{margin-bottom: 40px;}
-#tax-deduc,.box.reset{margin:0;padding-left: 0 !important;padding-right: 0 !important;padding-top: 2em !important;}
+#tax-deduc,.box.reset{margin:0;padding-left: 0 !important;padding-right: 0 !important;}
 .box.m-top0{margin-top: 0 !important;}
 .box .box{padding-right: 20px !important;padding-left: 20px !important;}
 #tax-deduc .span6{padding-bottom: 30px;}
@@ -398,9 +399,9 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 0.75em;}
 
-#user-about-links input{width: 80% !important;border-width:1px !important;font-size: 14px !important;padding-left:5px !important;height: 40px;}
+#user-about-links input{ border-width:1px !important;font-size: 14px !important;padding-left:5px !important;height: 40px; margin:0 auto !important;}
 #user-about-links .control-group{margin-top: 10px;}
-#user-about-links .input-append.input-prepend{width: 75%;float: left;}
+#user-about-links .input-append.input-prepend{width: 55%;float: left;}
 #user-about-links .input-append.input-prepend .add-on{height: 30px;font-size: 12px;line-height: 2.5em;}
 #user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686;}
 #user-about-links .input-append.input-prepend .add-on:first-child{width: 60px;}
@@ -635,7 +636,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
      margin-right: 8px;
      margin-bottom: 0;
  }
->>>>>>> origin/setupDtn
+/*>>>>>>> origin/setupDtn*/
 .campaign-stats span.em{
     color: #919191;
     font-size: 0.9em;
@@ -1031,7 +1032,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .dr-img{margin-right: 28px;}
     .donate-btns  { padding:0 2em 2em; }
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
-	#dtn-about-us-container {margin-left:0;}
+	#dtn-about-us-container {/*margin-left:0;*/}
 	.box.reset {padding-top:10px !important;}
 	#cause-image-preview {margin:0 15px 15px;}
 }
@@ -1293,12 +1294,33 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .causes { padding:1em 10%; }
     .img-box { margin-right:3%; width:16%; max-width:52px; height:52px; }
 }
+@media (width:768px) {
+	#user-about-links .input-append.input-prepend{width: 75%;float: left; margin-left:18px;}
+	#dtn-add-logo h4{ margin:0 0 20px 0; text-align:left; padding-right:0 !important;}
+	#dtn-add-description { padding-right:0 !important; }
+	#dtn-cause-images {margin-bottom:20px;}
+	h4 {text-align:center !important;}
+	.contact-us p {margin-left:10px;}
+	#cause-image-preview {padding:20px !important;}
+	.contact-us h4 {margin-left: 10px;}
+	.row-fluid .span8 {width:100% !important;}
+	.btn-block + .btn-block {margin-top:0;}
+	h5 {margin-left:10px; font-size:14px !important;}
+}
 @media (max-width:360px) {
     .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
+}
+@media (width:320px) {
+	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
+	h4 {text-align:center !important;}
+	.box.reset {padding-top:5px !important;}
+	#cause-image-preview {padding:10px !important;}
+	h5 {font-size:14px !important;}
+	.indicate-tdr {font-size:13px !important;}
 }    
 @media (max-width:310px) {
-    body {max-width:300px; overflow: visible;overflow}
+    body {max-width:300px; overflow: visible;}
     .mobile-separator {margin: 4em -20px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
     .cpn-story-title{font-size: 1em;}
