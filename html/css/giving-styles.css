@@ -987,6 +987,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 }
 
+.btn-block + .btn-block {margin-top:0 !important;}
+
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -1034,10 +1036,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
 	#dtn-about-us-container {/*margin-left:0;*/}
 	.box.reset {padding-top:10px !important;}
-	#cause-image-preview {margin:0 15px 15px;}
+	#cause-image-preview {margin:15px !important;}
+	h5 {margin-left:10px; font-size:15px !important;}
+	.contact-us p {margin-left:10px;}
+	#dtn-add-logo>h4{text-align:center !important;}
 }
 
-@media (max-width: 979px) {
+@media (max-width: 979px) {	
+	.row-fluid .span8 {width:100% !important;}
+	 #user-about-links .input-append.input-prepend {width:75%; margin-left:20px; }
     .dr-img-wrapper .dr-img{margin:0 15px 20px;}
     .border-all .dtn-btns{padding-right:26px !important;}
     .border-all .dtn-btns .btn{margin-left:14px;}
@@ -1163,7 +1170,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .social-share { text-align: center; max-width:400px; padding:30px 5% 0; margin:0 auto; }
     .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
-
 }
 
 @media (max-width: 767px) {
@@ -1288,37 +1294,25 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .dr-img { margin:6px 2.5%; margin-right:40px; }
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
+	
+	/*from @320*/
+	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
+	h4 {text-align:center !important;}
+	#dtn-add-logo>h4{text-align:center !important;}
+	.box.reset {padding-top:5px !important;}
+	#cause-image-preview {padding:10px !important;}
+	h5 {font-size:14px !important;}
+	.indicate-tdr {font-size:13px !important;}
 }
 
 @media (min-width:360px) and (max-width:767px) {
     .causes { padding:1em 10%; }
     .img-box { margin-right:3%; width:16%; max-width:52px; height:52px; }
 }
-@media (width:768px) {
-	#user-about-links .input-append.input-prepend{width: 75%;float: left; margin-left:18px;}
-	#dtn-add-logo h4{ margin:0 0 20px 0; text-align:left; padding-right:0 !important;}
-	#dtn-add-description { padding-right:0 !important; }
-	#dtn-cause-images {margin-bottom:20px;}
-	h4 {text-align:center !important;}
-	.contact-us p {margin-left:10px;}
-	#cause-image-preview {padding:20px !important;}
-	.contact-us h4 {margin-left: 10px;}
-	.row-fluid .span8 {width:100% !important;}
-	.btn-block + .btn-block {margin-top:0;}
-	h5 {margin-left:10px; font-size:14px !important;}
-}
 @media (max-width:360px) {
     .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
-}
-@media (width:320px) {
-	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
-	h4 {text-align:center !important;}
-	.box.reset {padding-top:5px !important;}
-	#cause-image-preview {padding:10px !important;}
-	h5 {font-size:14px !important;}
-	.indicate-tdr {font-size:13px !important;}
-}    
+}   
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;}
     .mobile-separator {margin: 4em -20px 1em;}
