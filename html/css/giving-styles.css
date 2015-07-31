@@ -1413,7 +1413,5 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .mobile-separator {margin: 4em -20px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
     .cpn-story-title{font-size: 1em;}
-    .dr-img {
-        margin-right: 8px;
-    }
+    .dr-img { margin-right: 8px;  }
 }
