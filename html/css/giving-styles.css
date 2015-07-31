@@ -511,7 +511,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
-.social-share:after, .causes ul:after { 
+.social-share:after, .causes ul:after, .accordion-content:after { 
     content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
@@ -784,7 +784,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     max-height: 500px;
     transition: max-height 1s ease;
 }
-.dr-img { width:50px; height:50px; float: left; margin: 6px 1.9% 15px; display: inline-block; }
+.dr-img { width:50px; height:50px; float: left; margin: 6px 1% 15px; display: inline-block; }
 
  /* TELL A FRIEND: Social Share */
 .mod-tell-friends h4 { font-size:1.125em;  }
@@ -966,11 +966,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     margin:30px auto 50px;
 }
 /* .accordion-content{display:none;} */
-.accordion-content.content-inner{max-width:720px;}
+.accordion-content.content-inner{max-width:760px;}
 .accordion-content .cpn-suggestions.swiper-wrapper{padding: 0;}
 
 .donors-area{max-width:900px;margin:0 auto;}
-.donors-area .dr-img-wrapper{max-width:800px;margin:0 auto;max-height:none; width:95%;}
+.donors-area .dr-img-wrapper{max-width:800px;margin:0 auto;max-height:none; width:98%; }
 
 .img-area-holder img { display:none; float:none; }
 .donors-area .btn-area span{margin:20px auto 0;display:block;max-width:800px;}
@@ -1200,10 +1200,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gft-dtn-prefs tr:nth-child(2) td{border-top: 0;}
 
-    /*.dtn-amt-item > .span10{
-        padding-left: 80px;
-    }*/
-
     .dtn-amt-item .dtn-btns{
         width: 100%;
         text-align: center;
@@ -1234,7 +1230,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     .social-share a i{line-height:1.5em;}
 
-
+    .donors-area .dr-img-wrapper { max-width:500px;  }
     .cpn-url-box{
         position: relative;
         max-width: 400px;
@@ -1381,6 +1377,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 @media (min-width:360px) and (max-width:767px) {
     .causes { padding:1em 10%; }
     .img-box { margin-right:3%; width:16%; max-width:52px; height:52px; }
+    .donors-area .dr-img-wrapper { max-width:320px;  }
 }
 @media (max-width:360px) {
     .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
