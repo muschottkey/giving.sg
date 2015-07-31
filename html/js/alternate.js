@@ -319,13 +319,30 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    //initialize swiper when document ready  
+    //initialize campaign suggestions swiper when document ready  
     var suggestionsSwiper = new Swiper ('.swiper-container', {
       // parameters
         slidesPerView:'auto',
         spaceBetween:15,
         mode: 'horizontal',
         freeMode: true
+    })       
+
+    //initialize campaign suggestions swiper when document ready  
+    var suggestionsSwiper = new Swiper ('.swiper-container-3', {
+      // parameters
+        slidesPerView:3,
+        spaceBetween:40,
+        mode: 'horizontal'
+    })      
+
+     //initialize Campaign Landing swiper when document ready  
+    var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
+        pagination: '.swiper-pagination',
+        sliderPerView: 1,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
     })        
     
     $('#custom-amt-input-modal>input').change(function(){
@@ -380,8 +397,8 @@ $(function(){
             MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
 
-   $('#dtn-impact-s').matchHeight({
-    target: $('#dtn-about-us-container')
+   $('.cpn-slide-right').matchHeight({
+    target: $('.cpn-slide-left')
     });
 
    $('.match-height-abt-impact').matchHeight();
