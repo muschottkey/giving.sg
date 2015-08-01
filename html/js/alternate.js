@@ -288,14 +288,27 @@ $(function(){
 
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
+        createMobSlider(winWidth)
     })
-
+    createMobSlider(winWidth);
     // Creating accordions on body resize
     $('.acc-toggle').each( function(){
         $(this).click(function(){
         nodde = $(this);
-        console.log(winWidth);
         content = nodde.closest('.p-section').find('.acc-section');
+        parentAll = $('.donation-wrapper');
+        if(winWidth < 980 ){
+            content.slideToggle();
+            nodde.toggleClass('closed');
+        }
+        })
+    })
+
+    $('.acc-toggle.landing').each( function(){
+        $(this).click(function(){
+        nodde = $(this);
+
+        content = nodde.closest('.wrapper-925').find('.cpn-holder');
         parentAll = $('.donation-wrapper');
         if(winWidth < 980 ){
             content.slideToggle();
@@ -319,21 +332,39 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    //initialize campaign suggestions swiper when document ready  
-    var suggestionsSwiper = new Swiper ('.swiper-container', {
-      // parameters
-        slidesPerView:'auto',
-        spaceBetween:15,
-        mode: 'horizontal',
-        freeMode: true
-    })       
+   
+    function createMobSlider(winWidth){
+        //initialize campaign suggestions swiper when document ready  
+        if(winWidth < 768){
+            console.log(winWidth)
+            var causesSwiper = new Swiper ('#causes-mobile', {
+              // parameters
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
+            })  
+        }
+          
+    }
+
+     //initialize campaign suggestions swiper when document ready  
+     var suggestionsSwiper = new Swiper ('.swiper-container', {
+          // parameters
+            slidesPerView:'auto',
+            spaceBetween:15,
+            mode: 'horizontal',
+            freeMode: true
+        })      
+
 
     //initialize campaign suggestions swiper when document ready  
     var suggestionsSwiper = new Swiper ('.swiper-container-3', {
       // parameters
-        slidesPerView:3,
-        spaceBetween:40,
-        mode: 'horizontal'
+        slidesPerView:"auto",
+        spaceBetween:20,
+        mode: 'horizontal',
+        freeMode: true
     })      
 
      //initialize Campaign Landing swiper when document ready  
@@ -402,7 +433,7 @@ $(function(){
     });
 
    $('.match-height-abt-impact').matchHeight();
-   $('.cpn-suggestions .cpn-sgtn-item').matchHeight();
+   // $('.cpn-suggestions .cpn-sgtn-item').matchHeight();
    // $('.cpn-wrapper').matchHeight({
    //  target: $('.cpn-suggestions .cpn-sgtn-item')
    // });
