@@ -11,7 +11,7 @@ h4 { font-size: 1.2em; }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
-button, .btn {background-image: none !important;}
+button, .btn {background-image: none !important;box-shadow: none;font-weight: 800;}
 
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
@@ -24,12 +24,18 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .small { font-size:.875em; margin-top:5px; }
 .smaller { font-size:.775em; margin-top:5px; }
+<<<<<<< HEAD
 .em {font-weight:500;color: #454545;}
+=======
+.em{font-weight:700;color: #454545;}
+.square-border{border-radius: 0;}
+>>>>>>> origin/setupDtn
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline;margin-top: 10px; }
 .border-left{border-left: 1px solid #efefef;}
 .border-all{border: 1px solid #cccccc;}
 .block{display: block;}
+.relative{position: relative;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-0 { margin: 0 !important; line-height:1; }
 .m-bot0{margin-bottom: 0px !important;}
@@ -62,6 +68,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .p-20{padding: 20px;}
 .p-30{padding: 30px;}
 .p-top20 { padding-top: 20px;}
+.p-top30 { padding-top: 30px;}
 .p-top40 { padding-top:40px;}
 .p-bot0 { padding-bottom:0 !important;}
 .p-bot30{padding-bottom: 30px;}
@@ -74,6 +81,12 @@ hr.m5{margin: 5px 0;}
     background-color: #5cb85c;
     color: #ffffff;
 }
+.bg-lightgrey{
+    background-color: #f8f8f8;
+}
+.bg-darkgrey{
+    background-color: #999;
+}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round {border-radius: 6px;}
@@ -81,8 +94,10 @@ hr.m5{margin: 5px 0;}
 /* CONTENT LAYOUT */
 
 .wrapper { width:100%; }
+.wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
 .navbar { background: #efefef; }
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
+.main-content{margin-top: 46px;}
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
 
 
@@ -557,6 +572,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 }
 
 /* Basket Quick Access */
+
 #qk-bkt-toggle{background-color: #ffffff;color: #000;font-weight: 900;border-radius: 0;margin: 0;padding: 15px 15px 15px;}
 #qk-bkt-toggle img{margin-top: -5px;margin-right: 2px;}
 .qk-bkt-li ul{display: none;width: 370px;background-color: #ffffff;position: absolute;right: 0;border: 1px solid #E3E3E3;}
@@ -620,7 +636,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 /* CAMPAIGN WIDGETS*/
+
 .cn-details { padding:0 2%; position: relative;}
+.cn-ln-details { padding:0; position: relative;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #CCC; }
 
 .cn-details .more-days h4{font-size: 1.5em;}
@@ -843,7 +861,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     height:500px; max-height: 500px; position:relative;
     top: 0; left: 0;  display: block; padding: 0 10px;
 }
-.swiper-slide{width: 240px !important;}
+.cpn-suggestions .swiper-slide{width: 240px !important;}
 .cpn-sgtn-item{
     width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden;
     -webkit-user-select: none; -khtml-user-select: none;
@@ -877,7 +895,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     border: 1px solid #cccccc;
 }
 
-.cpn-sgtn-item .cpn-featured-status{
+.cpn-sgtn-item .cpn-featured-status, .cpn-featured-status{
     position: absolute;
     width: 130px;
     padding: 5px;
@@ -1039,6 +1057,90 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .btn-block + .btn-block {margin-top:0 !important;}
 
+/* CAMPAIGN LANDING */
+
+.landing-cpn-slider-wrapper{
+    margin-top: 80px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.landing-cpn-slider-wrapper .cpn-slide-img{
+    border:1px solid #d7d7d7;
+    border-bottom: none;
+    overflow: hidden;
+}
+.landing-cpn-slider-wrapper .cn-ln-details{
+    border:1px solid #d7d7d7;
+}
+
+.landing-cpn-slider-wrapper .cn-ln-details .causes{
+    border:none;
+    border-right:1px solid #d7d7d7;
+}
+
+.landing-cpn-slider-wrapper .cpn-slide-right{
+    margin-left: 0;
+    border-left: none;
+    position: relative;
+}
+
+.landing-cpn-slider-wrapper .swiper-slide{
+    margin:0;
+}
+
+.landing-cpn-slider-wrapper .slider-navigation{
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+.landing-cpn-slider-wrapper .slider-navigation .navigation-inner{
+    bottom: 10px;
+    width: 220px;
+}
+
+.landing-cpn-slider-wrapper .swiper-pagination{
+    position: relative;
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 16px;
+    border:1px solid #e3e3e3;
+}
+
+.cpn-slider-inner.swiper-wrapper{
+    padding-bottom: 70px;
+}
+
+.landing-cpn-slider-wrapper span.swiper-pagination-bullet {
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+}
+
+.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 11px;
+    height: 11px;
+    border-radius: 1px solid #d7d7d7;
+    background-color: #ffffff;
+}
+.landing-cpn-slider-wrapper .swiper-button-next,.landing-cpn-slider-wrapper .swiper-button-prev{
+    width: 27px;
+    height: 15px;
+    margin-top: -7px;
+    z-index: 11;
+}
+
+#causes-mobile {
+}
+
+#causes-mobile .acc-toggle{
+    color: #ffffff;
+}
+#causes-mobile .swiper-wrapper{display: block;}
+
+
+
+
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -1061,6 +1163,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     .dr-img-wrapper { width:620px;} 
     .donors-area .dr-img { width:55px; height:55px; }
+    #causes-mobile #causes-wrapper{
+        max-width: 80%;
+    }
 }
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
@@ -1085,6 +1190,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
         .span8.modal-dtn-amts { width:100%; }
     .fr-widget .span6.centered{padding: 0 25%;}
+    .row-fluid.breakpoint-override .span6 { width:48.61878453038674%; margin:0; padding:0; }
+    .row-fluid.breakpoint-override .span8 { width:65.74585635359117% !important; margin:0; padding:0; }
+    .row-fluid.breakpoint-override .span4 { width:31.491712707182323% !important; margin:0; padding:0; }
 }
 
 @media (max-width: 979px) {
@@ -1094,6 +1202,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 	h5 {margin-left:10px; font-size:15px !important;}
 	.contact-us p {margin-left:10px;}
 	#dtn-add-logo>h4{text-align:center !important;}
+   .wrapper-925{
+    max-width: 715px;
+   } 
 }
 
 @media (max-width: 979px) {	
@@ -1132,6 +1243,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     /* CONTENT LAYOUT */
     .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 { width:100%; margin:0; padding:0; }
+   
         .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1em !important; }
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
@@ -1250,6 +1362,19 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .social-share { text-align: center; max-width:400px; padding:30px 5% 0; margin:0 auto; }
     .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
+
+    .landing-cpn-slider-wrapper .img-box{
+        margin-right: 5px;
+    }
+
+    .landing-cpn-slider-wrapper h3.text-left{
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+
+    .landing-cpn-slider-wrapper .campaign-stats{
+        margin:20px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1295,13 +1420,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .p-section h4 { font-size:1.2em; }
 
     #causes-wrapper{margin-top: 10px;}
-    .cause-box.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
-    .cause-box input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
+    #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;}
+    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
+    .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
         border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}
-    .cause-box input[type=checkbox]:checked + label:after {top: 13px;}
-    .cause-box input[type=checkbox]:checked + label:before {background-color: #ffffff;}
+    .cause-box.inline-mobile input[type=checkbox]:checked + label:after {top: 13px;}
+    .cause-box.inline-mobile input[type=checkbox]:checked + label:before {background-color: #ffffff;}
 
-    .cause-box input[type=checkbox] + label {height: 50px;background-size: contain;margin:0;border-radius: 0;border:none;}
+    .cause-box.inline-mobile input[type=checkbox] + label {height: 50px;background-size: contain;margin:0;border-radius: 0;border:none;}
+    
     #causes-span{margin-left: 30px;margin-right: 30px;display: block;}
 
     .causes { padding: 1em 7px; }
@@ -1323,6 +1450,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     .acc-toggle:before{float: right;width: 20px;height: 20px;display: inline-block;
         background-color: transparent;margin-top:2px;position: relative;content: "\f068";font-family: 'FontAwesome';}
+
+    .acc-toggle.closed:before{float: right;width: 20px;height: 20px;display: inline-block;
+        background-color: transparent;margin-top:2px;position: relative;content: "\f067";font-family: 'FontAwesome';}
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
     #user-about-links input{width: 64% !important;}
@@ -1377,6 +1507,75 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
     .donate-btns{margin-top: 0;}
 
+
+    /* Campaign landing */
+    .wrapper-925{max-width: 270px;}
+    .landing-cpn-slider-wrapper {
+        margin-top: 30px;
+    }
+   
+    .landing-cpn-slider-wrapper h3.text-left{
+        text-align: center !important;
+        font-size: 1.1em;
+        margin-top: 0 !important;
+        padding:0 5%;
+    }
+     .landing-cpn-slider-wrapper span.small.text-left{
+        text-align: center !important;
+        font-size: 0.8em;
+    }
+
+    .landing-cpn-slider-wrapper .campaign-stats{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .landing-cpn-slider-wrapper .cpn-slide-right{
+        height: auto !important;
+        border:none;
+    }
+
+    .landing-cpn-slider-wrapper .swiper-slide{
+        border:1px solid #d7d7d7;
+    }
+
+    .cause-box.mobile-block.span4{
+    margin-top: 15px;
+    border-radius: 6px;
+    border:none;
+    width: 180px !important;
+    margin-right:20px;
+    float: left; 
+    }
+
+    #causes-mobile .swiper-wrapper{
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    #causes-mobile{
+        overflow: hidden;
+    }
+    .cause-box.block-mobile input[type=checkbox] + label{
+        width: 140px;
+    }
+
+    #causes-mobile .span12.clearfix.swiper-slide{
+        width: 600px;
+    }
+
+    .acc-toggle.landing{
+        text-align: left !important;
+    }
+
+    .p-title.landing{
+        margin-top: 0 !important;
+        padding-top:30px;
+    }
+
+    #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 	
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
