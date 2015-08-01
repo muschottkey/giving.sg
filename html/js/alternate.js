@@ -402,6 +402,10 @@ $(function(){
     });
 
    $('.match-height-abt-impact').matchHeight();
+   $('.cpn-suggestions .cpn-sgtn-item').matchHeight();
+   // $('.cpn-wrapper').matchHeight({
+   //  target: $('.cpn-suggestions .cpn-sgtn-item')
+   // });
 
 })
 

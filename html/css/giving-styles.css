@@ -1108,6 +1108,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     width: 12px;
     height: 12px;
 }
+
+.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    width: 11px;
+    height: 11px;
+    border-radius: 1px solid #d7d7d7;
+    background-color: #ffffff;
+}
 .landing-cpn-slider-wrapper .swiper-button-next,.landing-cpn-slider-wrapper .swiper-button-prev{
     width: 27px;
     height: 15px;
@@ -1161,6 +1168,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
         .span8.modal-dtn-amts { width:100%; }
     .fr-widget .span6.centered{padding: 0 25%;}
+    .row-fluid.breakpoint-override .span6 { width:48.61878453038674%; margin:0; padding:0; }
+    .row-fluid.breakpoint-override .span8 { width:65.74585635359117% !important; margin:0; padding:0; }
+    .row-fluid.breakpoint-override .span4 { width:31.491712707182323% !important; margin:0; padding:0; }
 }
 
 @media (max-width: 979px) {
@@ -1170,6 +1180,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 	h5 {margin-left:10px; font-size:15px !important;}
 	.contact-us p {margin-left:10px;}
 	#dtn-add-logo>h4{text-align:center !important;}
+   .wrapper-925{
+    max-width: 715px;
+   } 
 }
 
 @media (max-width: 979px) {	
@@ -1208,6 +1221,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     /* CONTENT LAYOUT */
     .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 { width:100%; margin:0; padding:0; }
+   
         .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1em !important; }
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
@@ -1326,6 +1340,19 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .social-share { text-align: center; max-width:400px; padding:30px 5% 0; margin:0 auto; }
     .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
+
+    .landing-cpn-slider-wrapper .img-box{
+        margin-right: 5px;
+    }
+
+    .landing-cpn-slider-wrapper h3.text-left{
+        font-size: 1.2em;
+        line-height: 1.3;
+    }
+
+    .landing-cpn-slider-wrapper .campaign-stats{
+        margin:20px 0;
+    }
 }
 
 @media (max-width: 767px) {
@@ -1452,6 +1479,37 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .dr-img-wrapper, .donors-area .dr-img-wrapper { max-width:280px; }
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
     .donate-btns{margin-top: 0;}
+
+
+    /* Campaign landing */
+    .wrapper-925{max-width: 270px;}
+    .landing-cpn-slider-wrapper {
+        margin-top: 30px;
+    }
+   
+    .landing-cpn-slider-wrapper h3.text-left{
+        text-align: center !important;
+        font-size: 1.1em;
+        margin-top: 0 !important;
+        padding:0 5%;
+    }
+     .landing-cpn-slider-wrapper span.small.text-left{
+        text-align: center !important;
+        font-size: 0.8em;
+    }
+
+    .landing-cpn-slider-wrapper .campaign-stats{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .landing-cpn-slider-wrapper .cpn-slide-right{
+        height: auto !important;
+        border:none;
+    }
+
+    .landing-cpn-slider-wrapper .swiper-slide{
+        border:1px solid #d7d7d7;
+    }
 
 	
 	/*from @320 RICH*/
