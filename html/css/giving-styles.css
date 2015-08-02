@@ -1157,6 +1157,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* Refine search */
 
+.inline-search{
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+}
+
 .refine-inputs{
     margin-top: 6px;
     margin-bottom: 12px;
