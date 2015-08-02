@@ -25,6 +25,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .small { font-size:.875em; margin-top:5px; }
 .smaller { font-size:.775em; margin-top:5px; }
 .em {font-weight:500;color: #454545;}
+.big{font-size: 1.5em;}
 
 .square-border{border-radius: 0;}
 .text-uppercase { text-transform:uppercase; }
@@ -260,8 +261,13 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .black{color: #000;}
 
 /* giving custom selects */
+
 #selAmount.sod_select{border-radius: 0;}
 #selAmount.sod_select:before{display: none;}
+#sortSearchResults{
+    border:none;
+    border-bottom: 2px solid #ddd;
+}
 
 /* Donation Logged In Page */
 #donateLoggedModal{background-color: #efefef;}
@@ -868,6 +874,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
     box-sizing: border-box; 
 }
+
 .add-cpn-btn { display: table; }
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
@@ -1141,6 +1148,54 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
       bottom: -70px !important;
 }
 
+/**************************************************************************
+                            Search Results
+**************************************************************************/
+.search-results-wrapper .cpn-sgtn-item{
+    margin-bottom: 20px;
+}
+
+/* Refine search */
+
+.refine-inputs{
+    margin-top: 6px;
+    margin-bottom: 12px;
+}
+
+.refine-inputs input[type=checkbox]{
+    display: none;
+}
+
+.refine-inputs input[type=checkbox] + label{
+    display: inline-block;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border:1px solid #cccccc;
+    width: auto;
+    padding: 3px 30px 6px 6px;
+    margin-right: 6px;
+    font-size: 1em;
+    position: relative;
+}
+
+.refine-inputs input[type=checkbox] + label:before{
+    content: "\f058";
+    font-family: "FontAwesome";
+    display: block;
+    color: #BABABA;
+    background: transparent;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 3px;
+    right: 3px;
+    font-size: 1.2em;
+}
+
+.refine-inputs input[type=checkbox]:checked + label:before{
+    color: #62c462;
+}
 
 
 
@@ -1170,7 +1225,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
 	#dtn-about-us-container {margin-left:0;}
-    .collapse{height: auto;}
+    .collapse.visible-desktops{height: auto;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     .collapse{height: auto;}
@@ -1502,6 +1557,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px; padding:30px 6% ; }
 
     .left-mobile{text-align: left;}
+    .center-mobile{text-align: center !important;}
     .no-border-mobile{border:none !important;}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
 
@@ -1575,6 +1631,14 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
     h3.landing{font-size: 1em;color: #ffffff;}
+
+    /* Search results page*/
+
+    .search-results-wrapper .cpn-sgtn-item{
+        margin-left:auto;
+        margin-right:auto;
+        float: none;
+    }
 	
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}

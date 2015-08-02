@@ -39,50 +39,54 @@
 				<div class="row-fluid breakpoint-override">
 					<div class="span12 bg-lightgrey">
 						<div class="wrapper-925">
-							<div class="row-fluid search-controls">
+							<div class="row-fluid search-controls m-bot20">
 								<form id="search-form" class=" text-left">
-									<div class="span10">
+									<div class="span10 centered">
 										<div class="control-group">
 											<label class="control-label small span2" for="search_term">You searched for</label>
 											<div class="controls span8">
-												<!--<span class="validation-feedback pull-right"><i class="fa fa-check-circle"></i></span>-->
 												<input name="search_term" id="search_term" placeholder="Search for elderly, cats, dogs" class="form-control field-required text-center" type="text" value="elderly">
 											</div>
-											<a class="span2" href="#">REFINE SEARCH</a>
+											<a class="span2 small" data-toggle="collapse" href="javascript:;" data-target="#collapse-refsearch" >REFINE SEARCH</a>
 										</div>
 									</div>
 								</form>
 							</div>
-							<div class="row-fluid refine-search ">
-								<form id="nl-form" class="nl-form text-left">
-										in	<select>
-												<option value="1" selected>all campaigns</option>
-												<option value="2">staff Picks</option>
-												<option value="3">most popular</option>
-												<option value="4">most Recent</option>
-											</select>
+							<div class="collapse" id="collapse-refsearch">
+								<div class="row-fluid refine-search">
+									<div class="span10 centered">
+										<form id="" class=" text-left">
+											in
+											<div class="form-control refine-inputs" >
+												<input type="checkbox" id="ref_campaigns">
+												<label for="ref_campaigns">campaigns</label>
+
+												<input type="checkbox" id="ref_organisations">
+												<label for="ref_organisations">organisations</label>
+
+												<input type="checkbox" id="ref_something">
+												<label for="ref_something">something else</label>
+											</div>
 											that are
-											<br/>
-											<select>
-												<option value="1" selected>featured,trending and ending soon</option>
-												<option value="2">fancy</option>
-												<option value="3">hip</option>
-												<option value="4">traditional</option>
-												<option value="2">romantic</option>
-											</select>
-											<br />
+											<div class="form-control refine-inputs" >
+												<input type="checkbox" id="ref_taxdeductable">
+												<label for="ref_taxdeductable">tax deductable</label>
+
+												<input type="checkbox" id="ref_ntaxded">
+												<label for="ref_ntaxded">not tax deductable</label>
+											</div>
 											related to
-											<select>
-												<option value="1" selected>any cause.</option>
-											 	<option value="1">environment.</option>
-											 	<option value="2">dance.</option>
-											 	<option value="3">education.</option>
-											</select>
-											<div class="nl-overlay"></div>
-											<button class="btn btn-success btn-large-custom square-border m-top20 pull-right	">REFRESH RESULTS</button>
-								</form>
-							</div>
+											<div class="form-control refine-inputs" >
+												<input type="checkbox" id="ref_anycause">
+												<label for="ref_anycause">any cause</label>
+											</div>
+											
+											<button class="btn btn-success btn-large-custom square-border m-top20">REFRESH RESULTS</button>
+										</form>
+									</div>
+								</div>
 							<!-- Search Controls -->
+							</div>
 						</div>
 					</div>
 				</div>
@@ -91,15 +95,12 @@
 				<div class="row-fluid">
 					<div class="span12">
 						<div class="wrapper-925">
-							<div class="title-search">
-								<div class="span6 text-uppercase">Explore these <span class="em big">24</span> matches</div>
+							<div class="title-search clearfix m-top20">
+								<div class="span6 text-uppercase text-left center-mobile small pull-left">Explore these <strong class="big">24</strong> matches</div>
 								<div class="span6 text-uppercase">
 									<span class="inline-block mobile-block">
-										<span class="text">sorted by</span>
-										<span class="ksr-select ksr-select-light ksr-select-big has-options filter sorts ksr-popover-active" id="sorts">
-											<div class="title">magic</div>
-											<span aria-hidden="true" class="ksr-icon__arrow-down" role="button" tabindex="0"></span>
-											<select class="normal_type" name="sort">
+										<span class="text small">sorted by</span>
+											<select class="select-giving-autofit" id="sortSearchResults" data-custom-id="sortSearchResults" name="sort">
 												<option data-alt-label="magic" selected="selected" value="magic">Magic</option>
 												<option data-alt-label="popularity" value="popularity">Popularity</option>
 												<option data-alt-label="newest" value="newest">Newest</option>
@@ -110,412 +111,376 @@
 									</span>
 								</div>
 							</div>
-							
-							<div class="cpn-holder">
-								<div class="cpn-wrapper">
-									<div class="cpn-suggestions">
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/cat.jpg" class="img-circle sgt-avatar" >
-												<h5>1 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4>
-														<span class="em">raised</span>
-														<div class="progress">
-														  	<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes multiple">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+							<div class="search-results-wrapper">
+								<div class="cpn-holder clearfix">
+									<div class="cpn-wrapper">
+										<div class="cpn-suggestions">
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
 												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round ">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">New</span>
-											</div>
-											<div class="sgtn-body">
-												<h5>2 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4>
-														<span class="em">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes multiple">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-02.png" class="img-circle sgt-avatar" >
-												<h5>3 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4>
-														<span class="em">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes multiple">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-03.png" class="img-circle sgt-avatar" >
-												<h5>4 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes multiple">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-04.png" class="img-circle sgt-avatar" >
-												<h5>5 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em">raised</span>
-														<div class="progress">
-														 	<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round ">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-05.png" class="img-circle sgt-avatar" >
-												<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em ">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline clickable">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round ">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-11.png" class="img-circle sgt-avatar" >
-												<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline clickable">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-03.png" class="img-circle sgt-avatar" >
-												<h5>4 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em">raised</span>
-														<div class="progress">
-															<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes multiple">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-04.png" class="img-circle sgt-avatar" >
-												<h5>5 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-												<div class="span10 centered">
-													<div class="campaign-stats">
-														<h4 class="">$679,123</h4><span class="em">raised</span>
-														<div class="progress">
-														 	<div class="bar" style="width: 86%;"></div>
-														</div>
-														<span class="em darker">86% of $800,000 goal</span>
-													</div>
-													<div class="causes">
-														<ul class="">
-															<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-															<li><a href="#"><i class="fa fa-compass"></i></a></li>
-															<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-															<li><a href="#"><i class="fa fa-adn"></i></a></li>
-														</ul>
-													</div>
-													<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
-												</div>
-											</div>
-											<div class="box-r-footer">
-												<div class="more-days inline">
-													<h4 class="m-0">357</h4>
-													<span class="em">more days</span>			
-												</div>
-											</div>
-										</div>
-										<div class="cpn-sgtn-item border-all border-round ">
-											<div class="sgtn-img">
-												<img src="images/img-placeholder.png">
-												<span class="cpn-featured-status">Featured</span>
-											</div>
-											<div class="sgtn-body">
-												<img src="images/img-avatar-05.png" class="img-circle sgt-avatar" >
-														<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-														<div class="span10 centered">
-															<div class="campaign-stats">
-																<h4 class="">$679,123</h4><span class="em ">raised</span>
-																<div class="progress">
-																  <div class="bar" style="width: 86%;"></div>
-																</div>
-																<span class="em darker">86% of $800,000 goal</span>
+												<div class="sgtn-body">
+													<img src="images/cat.jpg" class="img-circle sgt-avatar" >
+													<h5>1 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4>
+															<span class="em">raised</span>
+															<div class="progress">
+															  	<div class="bar" style="width: 86%;"></div>
 															</div>
-															<div class="causes">
-																<ul class="">
-																	<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-																	<li><a href="#"><i class="fa fa-compass"></i></a></li>
-																	<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-																	<li><a href="#"><i class="fa fa-adn"></i></a></li>
-																</ul>
-															</div>
-															<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+															<span class="em darker">86% of $800,000 goal</span>
 														</div>
-													</div>
-													<div class="box-r-footer">
-														<div class="more-days inline clickable">
-															<h4 class="m-0">357</h4>
-															<span class="em">more days</span>			
+														<div class="causes multiple">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
 														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
 													</div>
 												</div>
-												
-												
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
 											</div>
 											<div class="cpn-sgtn-item border-all border-round ">
-													<div class="sgtn-img">
-														<img src="images/img-placeholder.png">
-														<span class="cpn-featured-status">Featured</span>
-													</div>
-													<div class="sgtn-body">
-														<img src="images/img-avatar-11.png" class="img-circle sgt-avatar" >
-														<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
-														<div class="span10 centered">
-															<div class="campaign-stats">
-																<h4 class="">$679,123</h4><span class="em">raised</span>
-																<div class="progress">
-																  <div class="bar" style="width: 86%;"></div>
-																</div>
-																<span class="em darker">86% of $800,000 goal</span>
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">New</span>
+												</div>
+												<div class="sgtn-body">
+													<h5>2 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4>
+															<span class="em">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
 															</div>
-															<div class="causes">
-																<ul class="">
-																	<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
-																	<li><a href="#"><i class="fa fa-compass"></i></a></li>
-																	<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-																	<li><a href="#"><i class="fa fa-adn"></i></a></li>
-																</ul>
-															</div>
-															<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+															<span class="em darker">86% of $800,000 goal</span>
 														</div>
-													</div>
-													<div class="box-r-footer">
-														<div class="more-days inline clickable">
-															<h4 class="m-0">357</h4>
-															<span class="em">more days</span>			
+														<div class="causes multiple">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
 														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
 													</div>
 												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-02.png" class="img-circle sgt-avatar" >
+													<h5>3 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4>
+															<span class="em">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes multiple">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-03.png" class="img-circle sgt-avatar" >
+													<h5>4 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes multiple">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-04.png" class="img-circle sgt-avatar" >
+													<h5>5 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em">raised</span>
+															<div class="progress">
+															 	<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round ">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-05.png" class="img-circle sgt-avatar" >
+													<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em ">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline clickable">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round ">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-11.png" class="img-circle sgt-avatar" >
+													<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline clickable">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-03.png" class="img-circle sgt-avatar" >
+													<h5>4 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em">raised</span>
+															<div class="progress">
+																<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes multiple">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-04.png" class="img-circle sgt-avatar" >
+													<h5>5 For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em">raised</span>
+															<div class="progress">
+															 	<div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
+											<div class="cpn-sgtn-item border-all border-round ">
+												<div class="sgtn-img">
+													<img src="images/img-placeholder.png">
+													<span class="cpn-featured-status">Featured</span>
+												</div>
+												<div class="sgtn-body">
+													<img src="images/img-avatar-05.png" class="img-circle sgt-avatar" >
+													<h5>For Tanjong Katong Girls Remembered Forever in our Hearts</h5>
+													<div class="span10 centered">
+														<div class="campaign-stats">
+															<h4 class="">$679,123</h4><span class="em ">raised</span>
+															<div class="progress">
+															  <div class="bar" style="width: 86%;"></div>
+															</div>
+															<span class="em darker">86% of $800,000 goal</span>
+														</div>
+														<div class="causes">
+															<ul class="">
+																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
+																<li><a href="#"><i class="fa fa-compass"></i></a></li>
+																<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+																<li><a href="#"><i class="fa fa-adn"></i></a></li>
+															</ul>
+														</div>
+														<div class="txt-npo">by Society For The Prevention Of Cruelty To Animals</div>
+													</div>
+												</div>
+												<div class="box-r-footer">
+													<div class="more-days inline clickable">
+														<h4 class="m-0">357</h4>
+														<span class="em">more days</span>			
+													</div>
+												</div>
+											</div>
 										</div>
 									</div>
-									<div class="span12 m-left0 btn-area">
-										<span class="block border-all border-round m-top20 small p-10 clickable btn-more-img">
-										MORE</span>
-									</div>
 								</div>
-							</div>
-						</div>
-					</div>
-					<!--end of Search result listing -->
+								<div class="span4 centered btn-area clearfix">
+									<span class="block border-all border-round m-top20 small p-10 clickable btn-more-img">
+									MORE</span>
+								</div>
+							</div><!--end of search results wrapper-->
+						</div><!--end of 925-wrapper-->
+					</div><!--end of span 12-->
+				</div><!--end of row fluid -->
+				<!--end of Search result listing -->
 
-				</div>
-			</div>
-		</div>
+				<!-- </div> -->
+			</div><!--end of main content-->
+		</div><!--end of section page-->
 		<footer class="footer"> <p>&nbsp;</p></footer>
 
-	</div>
+	</div><!--end of page wrapper-->
 	<script type="text/javascript" src="js/aui-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -532,8 +497,5 @@
 	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
-	<script>
-			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-	</script>
 </body>
 </html>
