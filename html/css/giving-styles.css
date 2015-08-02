@@ -1153,6 +1153,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 **************************************************************************/
 .search-results-wrapper .cpn-sgtn-item{
     margin-bottom: 20px;
+    display: none;
 }
 
 /* Refine search */
