@@ -289,27 +289,16 @@ $(function(){
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
         createMobSlider(winWidth)
-        resetCollapses(winWidth);
     })
-
     createMobSlider(winWidth);
 
     // Creating accordions on body resize
 
-    $('.acc-toggle[data-toggle="collapse"]').click(function(e){
+    $('[data-toggle="collapse"]').click(function(e){
       if ($(window).width() >= 768) {  
         e.stopPropagation();
       }    
     });
-
-    function resetCollapses(winWidth){
-        if(winWidth >= 768){
-            $('.collapse').each(function() {
-                $(this).css("height","auto");
-                $(this).parent().find('.acc-toggle').removeClass('collapsed');
-            })
-        }
-    }
 
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
@@ -341,7 +330,6 @@ $(function(){
                 freeMode: true
             })  
         }
-          
     }
 
      //initialize campaign suggestions swiper when document ready  
@@ -351,11 +339,10 @@ $(function(){
             spaceBetween:15,
             mode: 'horizontal',
             freeMode: true
-        })      
-
+        })  
 
     //initialize campaign suggestions swiper when document ready  
-    /*var suggestionsSwiper = new Swiper ('.swiper-container-3', {
+    var suggestionsSwiper = new Swiper ('.swiper-container-3', {
       // parameters
         scrollbar: '.swiper-scrollbar',
         scrollbarHide: true,
@@ -363,21 +350,8 @@ $(function(){
         spaceBetween:20,
         mode: 'horizontal',
         freeMode: true
-    })     */ 
+    })      
 
-    $('.swiper-container-3').each(function(){
-            $(this).swiper({
-                scrollContainer:true,
-                mousewheelControl : true,
-                mode:'vertical',
-                //Enable Scrollbar
-                scrollbar: {
-                    container : $(this).find('.swiper-scrollbar')[0],
-                    hide: false,
-                    draggable: true  
-                }
-            })
-        });
      //initialize Campaign Landing swiper when document ready  
     var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
         pagination: '.swiper-pagination',
