@@ -288,20 +288,17 @@ $(function(){
 
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
+        createMobSlider(winWidth)
     })
+    createMobSlider(winWidth);
 
     // Creating accordions on body resize
-    $('.acc-toggle').each( function(){
-        $(this).click(function(){
-        nodde = $(this);
-        console.log(winWidth);
-        content = nodde.closest('.p-section').find('.acc-section');
-        parentAll = $('.donation-wrapper');
-        if(winWidth < 980 ){
-            content.slideToggle();
-        }
-        })
-    })
+
+    $('[data-toggle="collapse"]').click(function(e){
+      if ($(window).width() >= 768) {  
+        e.stopPropagation();
+      }    
+    });
 
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
@@ -319,13 +316,59 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    //initialize swiper when document ready  
-    var suggestionsSwiper = new Swiper ('.swiper-container', {
-      // parameters
-        slidesPerView:'auto',
-        spaceBetween:15,
-        mode: 'horizontal',
-        freeMode: true
+    function createMobSlider(winWidth){
+        //initialize campaign suggestions swiper when document ready  
+        if(winWidth < 768){
+            console.log(winWidth)
+            var causesSwiper = new Swiper ('#causes-mobile', {
+              // parameters
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
+            })  
+        }
+    }
+
+    $('.swiper-container').each(function(){
+        new Swiper($(this), {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: $(this).find('.swiper-pagination'),
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
+            loop: true,
+            slidesPerView:'auto',
+            spaceBetween:15,
+            mode: 'horizontal',
+            freeMode: true
+        });
+    });
+    $('.swiper-container-3').each(function(){
+        new Swiper($(this), {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: $(this).find('.swiper-pagination'),
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
+            loop: true,
+            scrollbar: $(this).find('.swiper-scrollbar') ,
+            scrollbarHide: true,
+            slidesPerView:"auto",
+            spaceBetween:20,
+            mode: 'horizontal',
+            freeMode: true
+        });
+    });
+
+
+
+
+     //initialize Campaign Landing swiper when document ready  
+    var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
+        pagination: '.swiper-pagination',
+        sliderPerView: 1,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
     })        
     
     $('#custom-amt-input-modal>input').change(function(){
@@ -370,9 +413,6 @@ $(function(){
             }
         })
     })
-
-   
-
     var cp_client = new ZeroClipboard($("#copy-url"));
 
 
@@ -380,11 +420,15 @@ $(function(){
             MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
 
-   $('#dtn-impact-s').matchHeight({
-    target: $('#dtn-about-us-container')
+   $('.cpn-slide-right').matchHeight({
+    target: $('.cpn-slide-left')
     });
 
    $('.match-height-abt-impact').matchHeight();
+   // $('.cpn-suggestions .cpn-sgtn-item').matchHeight();
+   // $('.cpn-wrapper').matchHeight({
+   //  target: $('.cpn-suggestions .cpn-sgtn-item')
+   // });
 
 })
 
