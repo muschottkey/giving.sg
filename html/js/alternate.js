@@ -316,8 +316,6 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-
-   
     function createMobSlider(winWidth){
         //initialize campaign suggestions swiper when document ready  
         if(winWidth < 768){
@@ -332,25 +330,37 @@ $(function(){
         }
     }
 
-     //initialize campaign suggestions swiper when document ready  
-     var suggestionsSwiper = new Swiper ('.swiper-container', {
-          // parameters
+    $('.swiper-container').each(function(){
+        new Swiper($(this), {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: $(this).find('.swiper-pagination'),
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
+            loop: true,
             slidesPerView:'auto',
             spaceBetween:15,
             mode: 'horizontal',
             freeMode: true
-        })  
+        });
+    });
+    $('.swiper-container-3').each(function(){
+        new Swiper($(this), {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: $(this).find('.swiper-pagination'),
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
+            loop: true,
+            scrollbar: $(this).find('.swiper-scrollbar') ,
+            scrollbarHide: true,
+            slidesPerView:"auto",
+            spaceBetween:20,
+            mode: 'horizontal',
+            freeMode: true
+        });
+    });
 
-    //initialize campaign suggestions swiper when document ready  
-    var suggestionsSwiper = new Swiper ('.swiper-container-3', {
-      // parameters
-        scrollbar: '.swiper-scrollbar',
-        scrollbarHide: true,
-        slidesPerView:"auto",
-        spaceBetween:20,
-        mode: 'horizontal',
-        freeMode: true
-    })      
+
+
 
      //initialize Campaign Landing swiper when document ready  
     var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
