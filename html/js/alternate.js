@@ -296,7 +296,7 @@ $(function(){
 
     // Creating accordions on body resize
 
-    $('[data-toggle="collapse"]').click(function(e){
+    $('.acc-toggle[data-toggle="collapse"]').click(function(e){
       if ($(window).width() >= 768) {  
         e.stopPropagation();
       }    
