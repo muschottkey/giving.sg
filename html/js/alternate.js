@@ -291,30 +291,14 @@ $(function(){
         createMobSlider(winWidth)
     })
     createMobSlider(winWidth);
+
     // Creating accordions on body resize
-    $('.acc-toggle').each( function(){
-        $(this).click(function(){
-        nodde = $(this);
-        content = nodde.closest('.p-section').find('.acc-section');
-        parentAll = $('.donation-wrapper');
-        if(winWidth < 980 ){
-            content.slideToggle();
-            nodde.toggleClass('closed');
-        }
-        })
-    })
 
-    $('.acc-toggle.landing').each( function(){
-        $(this).click(function(){
-        nodde = $(this);
-
-        content = nodde.closest('.wrapper-925').find('.cpn-holder');
-        parentAll = $('.donation-wrapper');
-        if(winWidth < 980 ){
-            content.slideToggle();
-        }
-        })
-    })
+    $('[data-toggle="collapse"]').click(function(e){
+      if ($(window).width() >= 768) {  
+        e.stopPropagation();
+      }    
+    });
 
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
@@ -361,6 +345,8 @@ $(function(){
     //initialize campaign suggestions swiper when document ready  
     var suggestionsSwiper = new Swiper ('.swiper-container-3', {
       // parameters
+        scrollbar: '.swiper-scrollbar',
+        scrollbarHide: true,
         slidesPerView:"auto",
         spaceBetween:20,
         mode: 'horizontal',
