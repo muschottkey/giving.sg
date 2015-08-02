@@ -24,12 +24,9 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .small { font-size:.875em; margin-top:5px; }
 .smaller { font-size:.775em; margin-top:5px; }
-<<<<<<< HEAD
 .em {font-weight:500;color: #454545;}
-=======
-.em{font-weight:700;color: #454545;}
+
 .square-border{border-radius: 0;}
->>>>>>> origin/setupDtn
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline;margin-top: 10px; }
 .border-left{border-left: 1px solid #efefef;}
