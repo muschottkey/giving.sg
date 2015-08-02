@@ -294,11 +294,13 @@ $(function(){
 
     // Creating accordions on body resize
 
-    $('[data-toggle="collapse"]').click(function(e){
+    $('.acc-toggle').click(function(e){
       if ($(window).width() >= 768) {  
         e.stopPropagation();
       }    
     });
+
+    $('.refine-inputs input[type=checkbox]').prop('checked',true);
 
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
