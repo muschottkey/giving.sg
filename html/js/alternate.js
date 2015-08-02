@@ -361,9 +361,6 @@ $(function(){
         });
     });
 
-
-
-
      //initialize Campaign Landing swiper when document ready  
     var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
         pagination: '.swiper-pagination',
