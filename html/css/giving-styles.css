@@ -1470,7 +1470,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .acc-toggle:before{float: right;width: 20px;height: 20px;display: inline-block;
         background-color: transparent;margin-top:2px;position: relative;content: "\f068";font-family: 'FontAwesome';}
 
-    .acc-toggle.closed:before{float: right;width: 20px;height: 20px;display: inline-block;
+    .acc-toggle.collapsed:before{float: right;width: 20px;height: 20px;display: inline-block;
         background-color: transparent;margin-top:2px;position: relative;content: "\f067";font-family: 'FontAwesome';}
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}

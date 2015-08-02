@@ -289,7 +289,9 @@ $(function(){
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
         createMobSlider(winWidth)
+        resetCollapses(winWidth);
     })
+
     createMobSlider(winWidth);
 
     // Creating accordions on body resize
@@ -299,6 +301,15 @@ $(function(){
         e.stopPropagation();
       }    
     });
+
+    function resetCollapses(winWidth){
+        if(winWidth >= 768){
+            $('.collapse').each(function() {
+                $(this).css("height","auto");
+                $(this).parent().find('.acc-toggle').removeClass('collapsed');
+            })
+        }
+    }
 
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
