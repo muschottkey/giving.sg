@@ -300,8 +300,6 @@ $(function(){
       }    
     });
 
-    $('.refine-inputs input[type=checkbox]').prop('checked',true);
-
     if($('.gf-bkt').length){
         $('.gf-bkt').editableTableWidget();
     }
@@ -412,11 +410,39 @@ $(function(){
             }
         })
     })
+
+    /* refine search inputs */
+    
+    $('#close-more-causes').click(function(){
+        $('#select-more-causes').modalPopover('hide');
+    })
+
+    $('.refine-inputs input[type=checkbox]').prop('checked',true);
+
+    $('#ref_allcauses').change(function(){
+        var checked = $(this).prop('checked');
+        if(checked == true){
+            $('#causes-toggle').addClass('checked');
+            $(this).closest('.span12').find('input[type=checkbox]:checked').prop("checked",false);
+            $(this).prop('checked',true);
+        }
+        else{
+            $('#causes-toggle').removeClass('checked');
+        }
+    })
+
+
+
+  /* ----------------------------------------------------
+                    COPY TO CLIPBOARD
+     ----------------------------------------------------*/
+
+
     var cp_client = new ZeroClipboard($("#copy-url"));
 
 
     /* ----------------------------------------------------
-            MATCHING HEIGHTS OF ELEMENTS
+                MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
 
    $('.cpn-slide-right').matchHeight({
