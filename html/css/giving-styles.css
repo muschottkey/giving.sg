@@ -12,7 +12,6 @@ h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a { text-decoration:underline; }
 button, .btn {background-image: none !important;box-shadow: none;font-weight: 800;}
-
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
@@ -76,22 +75,16 @@ hr.m5{margin: 5px 0;}
 
 .btn a, .btn-group a{text-decoration: none;}
 .grey{color: #A0A0A0;}
-.bg-green{
-    background-color: #5cb85c;
-    color: #ffffff;
-}
-.bg-lightgrey{
-    background-color: #f8f8f8;
-}
-.bg-darkgrey{
-    background-color: #999;
-}
+.bg-green{ background-color: #5cb85c; color: #FFF; }
+.bg-lightgrey{ background-color: #f8f8f8; }
+.bg-darkgrey{  background-color: #999; }
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round {border-radius: 6px;}
 .show-desktop-only{display: inherit;}
-/* CONTENT LAYOUT */
 
+
+/* CONTENT LAYOUT */
 .wrapper { width:100%; }
 .wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
 .navbar { background: #efefef; }
@@ -336,7 +329,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #userDetails .validation-feedback {margin-top: 0;}
 #userDetails .validation-feedback i, #payment-type .validation-feedback i{font-size: 1em;color: #999999;}
 
-
 /* Donation Confirmed Logged In Individual */
 .summary-wrapper.email-ack{margin-top: 20px;padding: 10px 60px 25px;}
 .share-box{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;}
@@ -526,6 +518,15 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 #dtn-add-logo .box.reset{background-color: #efefef;}
 
 .border-round .centered { padding:15px 0; }
+
+/* Search Results */
+.main-content  .search-controls input { 
+    padding-left:1em; font-family:"Open Sans"; font-size:1.1em !important; color: #333; text-align:left;
+}
+.search-controls .control-label { line-height:2em; }
+.search-controls .inline-search { right:10px; }
+    #search-results #sortSearchResults { text-align:left; }
+
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
@@ -858,7 +859,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-wrapper { 
     position: relative;
     display: block;
-    /*overflow: hidden;*/
+    overflow: hidden;
     margin: 0;
     padding: 0;
 }
@@ -1151,43 +1152,22 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /**************************************************************************
                             Search Results
 **************************************************************************/
-.search-results-wrapper .cpn-sgtn-item{
-    margin-bottom: 20px;
-    display: none;
+.search-results-wrapper .cpn-sgtn-item {
+    display: none; width:31%; margin:1em 1%;
 }
 
 /* Refine search */
-
 .inline-search{
-    position: absolute;
-    right: 30px;
-    top: 8px;
-    font-size: 1.2em;
-    color: #333;
-    cursor: pointer;
+    position: absolute; right: 30px;  top: 8px;
+    font-size: 1.2em; color: #333; cursor: pointer;
 }
-
-.refine-inputs{
-    margin-top: 6px;
-    margin-bottom: 12px;
-}
-
-.refine-inputs input[type=checkbox]{
-    display: none;
-}
-
+.refine-inputs{ margin-top:6px; margin-bottom:12px; }
+.refine-inputs input[type=checkbox] { display: none; }
 .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone{
-    display: inline-block;
-    height: auto;
-    background-color: #ffffff;
-    border-radius: 6px;
-    border:1px solid #cccccc;
-    width: auto;
-    padding: 3px 30px 6px 6px;
-    margin-right: 6px;
-    font-size: 1em;
-    position: relative;
-    cursor: pointer;
+    display: inline-block; height: auto; background-color: #ffffff;
+    border-radius: 6px; border:1px solid #CCC; width: auto;
+    padding: 3px 30px 6px 6px; margin-right: 6px; font-size:.875em;
+    position: relative; cursor: pointer;
 }
 
 .refine-inputs input[type=checkbox] + label:before, .refine-inputs .checkbox-clone:before{
@@ -1607,9 +1587,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .fr-widget .fr-person span.smaller{font-size: 0.875em;}
     .donate-btns{margin-top: 0;}
 
-
     /* Campaign landing */
-    .wrapper-925{max-width: 270px;}
+    .wrapper-925 { max-width:300px; }
     .landing-cpn-slider-wrapper {
         margin-top: 30px;
     }
@@ -1677,9 +1656,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     /* Search results page*/
 
     .search-results-wrapper .cpn-sgtn-item{
-        margin-left:auto;
-        margin-right:auto;
-        float: none;
+        width:auto;  float: none;
     }
 	
 	/*from @320 RICH*/

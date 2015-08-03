@@ -39,16 +39,16 @@
 				<div class="row-fluid breakpoint-override">
 					<div class="span12 bg-lightgrey">
 						<div class="wrapper-925">
-							<div class="row-fluid search-controls m-bot20">
-								<form id="search-form" class=" text-left">
+							<div class="row-fluid search-controls">
+								<form id="search-form" class="text-left">
 									<div class="span10 centered">
-										<div class="control-group">
-											<label class="control-label small span2" for="search_term">You searched for</label>
-											<div class="controls relative span8">
-												<input name="search_term" id="search_term" placeholder="Search for elderly, cats, dogs" class="form-control field-required text-center" type="text" value="elderly">
+										<div class="control-group row-fluid">
+											<label class="control-label span3 text-right left-mobile" for="search_term">You searched for</label>
+											<div class="controls relative span7">
+												<input name="search_term" id="search_term" placeholder="Search for elderly, cats, dogs" class="form-control field-required " type="text" value="elderly">
 												<a class="inline-search"><i class="fa fa-search"></i></a>
 											</div>
-											<a class="span2 small" data-toggle="collapse" href="javascript:;" data-target="#collapse-refsearch" >REFINE SEARCH</a>
+											<a class="span2 smaller link-refine" data-toggle="collapse" href="javascript:;" data-target="#collapse-refsearch">REFINE SEARCH</a>
 										</div>
 									</div>
 								</form>
@@ -56,25 +56,21 @@
 							<div class="collapse" id="collapse-refsearch">
 								<div class="row-fluid refine-search">
 									<div class="span10 centered">
-										<form id="" class=" text-left">
+										<form id="" class=" text-left ">
 											in
-											<div class="form-control refine-inputs" >
+											<div class="group-control form-control refine-inputs" >
 												<input type="checkbox" id="ref_campaigns">
 												<label for="ref_campaigns">campaigns</label>
-
 												<input type="checkbox" id="ref_organisations">
 												<label for="ref_organisations">organisations</label>
-
-												<input type="checkbox" id="ref_something">
-												<label for="ref_something">something else</label>
 											</div>
 											that are
 											<div class="form-control refine-inputs" >
 												<input type="checkbox" id="ref_taxdeductable">
-												<label for="ref_taxdeductable">tax deductable</label>
+												<label for="ref_taxdeductable">tax deductible</label>
 
 												<input type="checkbox" id="ref_ntaxded">
-												<label for="ref_ntaxded">not tax deductable</label>
+												<label for="ref_ntaxded">not tax deductible</label>
 											</div>
 											related to
 											<div class="form-control refine-inputs" >
@@ -85,8 +81,7 @@
 											<button class="btn btn-success btn-large-custom square-border m-top20">REFRESH RESULTS</button>
 										</form>
 									</div>
-								</div>
-							<!-- Search Controls -->
+								</div> <!-- Search Controls -->
 							</div>
 						</div>
 					</div>
@@ -97,8 +92,8 @@
 					<div class="span12">
 						<div class="wrapper-925">
 							<div class="title-search clearfix m-top20">
-								<div class="span6 text-uppercase text-left center-mobile small pull-left">Explore these <strong class="big">24</strong> matches</div>
-								<div class="span6 text-uppercase">
+								<div class="span6 text-uppercase text-left center-mobile small">Explore these <strong class="big">24</strong> matches</div>
+								<div class="span6 text-uppercase text-right center-mobile">
 									<span class="inline-block mobile-block">
 										<span class="text small">sorted by</span>
 										<select class="select-giving-autofit" id="sortSearchResults" data-custom-id="sortSearchResults" name="sort">
@@ -114,7 +109,7 @@
 							<div class="search-results-wrapper">
 								<div class="cpn-holder clearfix">
 									<div class="cpn-wrapper">
-										<div class="cpn-suggestions">
+										<div class="">
 											<div class="cpn-sgtn-item border-all border-round">
 												<div class="sgtn-img">
 													<img src="images/img-placeholder.png">
@@ -532,11 +527,13 @@
 											</div>
 										</div>
 									</div>
+
+									<div class="span4 centered btn-area clearfix">
+										<span class="block border-all border-round m-top20 small p-10 clickable btn-more-img">
+										MORE</span>
+									</div>
 								</div>
-								<div class="span4 centered btn-area clearfix">
-									<span class="block border-all border-round m-top20 small p-10 clickable btn-more-img">
-									MORE</span>
-								</div>
+
 							</div><!--end of search results wrapper-->
 						</div><!--end of 925-wrapper-->
 					</div><!--end of span 12-->
