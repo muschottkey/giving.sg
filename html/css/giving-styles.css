@@ -452,10 +452,11 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     display:inline-block; margin:.5em 3.3% 0; width:24px; height:24px; float:left;
     background-color: #EEE; border-radius:5px; padding: .25em; line-height: 1.5;
  }
-    .causes.multiple li {  margin:.5em 1% 0; }
+    .causes.multiple li { width:12%; margin:.5em 2% 0; padding:2%; }
  .causes li a { color:#666; }
- .causes li a:hover { color:#000; }
- .txt-npo { font-size: 0.875em; color:#666; min-height:3.75em; }
+    .causes li a:hover { color:#000; }
+        .ico-tdr a i { color:#FFF; }
+ .txt-npo { font-size:.75em; color:#666; min-height:3.75em; }
 
 #setup-donation-cta{border:none;padding-left: 0;padding-right: 0;}
 #setup-donation-cta .btn-group button{width: 50%;height: 40px;font-weight: 800;background: #f5f5f5;}
@@ -674,10 +675,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
      margin-bottom: 0;
  }
 
-.campaign-stats span.em{
-    color: #919191;
-    font-size: 0.9em;
-}
+.campaign-stats span.em{ color: #919191; font-size: 0.875em; }
 .campaign-stats span.darker{
     color: #5d5d5d;
 }
@@ -867,24 +865,22 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     height:500px; max-height: 500px; position:relative;
     top: 0; left: 0;  display: block; padding: 0 10px;
 }
-.cpn-suggestions .swiper-slide{width: 240px !important;}
+.cpn-suggestions .swiper-slide { width:246px !important;}
 .cpn-sgtn-item{
-    width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden;
-    -webkit-user-select: none; -khtml-user-select: none;
+    width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden; 
+    -webkit-user-select: none; -khtml-user-select: none; 
     -moz-user-select: none; -o-user-select: none; user-select: none;
-    -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
 }
 
 .add-cpn-btn { display: table; }
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body{
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
-    padding:10px;
+    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px;
 }
-.sgtn-body h5 { min-height:3.75em;  }
+.sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
+.sgtn-body p { font-size:.875em; color:#4A4A4A; margin:5px 0 15px; min-height:6.7em; }
 .cpn-sgtn-item .box-r-footer{
     background-color: #ffffff;
     padding: 0px;
@@ -1152,9 +1148,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /**************************************************************************
                             Search Results
 **************************************************************************/
-.search-results-wrapper .cpn-sgtn-item {
-    display: none; width:31%; margin:1em 1%;
-}
+.search-results-wrapper .cpn-sgtn-item { display: none; width:30%; margin:1em 1.65% 1.5em; min-height:495px; }
 
 /* Refine search */
 .inline-search{
@@ -1167,7 +1161,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     display: inline-block; height: auto; background-color: #ffffff;
     border-radius: 6px; border:1px solid #CCC; width: auto;
     padding: 3px 30px 6px 6px; margin-right: 6px; font-size:.875em;
-    position: relative; cursor: pointer;
+    position: relative; cursor: pointer; 
 }
 
 .refine-inputs input[type=checkbox] + label:before, .refine-inputs .checkbox-clone:before{
@@ -1250,7 +1244,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .collapse.visible-desktops{height: auto;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
-    .collapse{height: auto;}
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
@@ -1277,7 +1270,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .centered-small-screen{text-align: center;}
 	.box.reset {padding-top:10px !important;}
 	#cause-image-preview {margin:15px !important;}
-	h5 {margin-left:10px; font-size:15px !important;}
+	h5 {margin:10px; font-size:15px; }
 	.contact-us p {margin-left:10px;}
 	#dtn-add-logo>h4{text-align:center !important;}
    .wrapper-925{
@@ -1415,12 +1408,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .p-title {margin-top: 20px !important; padding:0 10%;  }
     .fr-widget-wrapper.closed{max-height: 460px;}
 
-    .social-share { text-align:center; max-width:400px; margin:0 auto; border:1px solid #ccc; padding:30px 0;  }
+    .social-share { text-align:center; max-width:400px; margin:0 auto; border:1px solid #ccc; padding:30px 5%;  }
     .social-share a { 
-        width:3em !important; height:3em; margin: 0; border-radius: 6px;
+        width:3em !important; height:3em; margin: 0; border-radius: 6px; 
         display: inline-block !important; margin-right:0.5em !important;
     }
+        .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
+
     .social-share a i{line-height:1.5em;}
+
     .dr-img-wrapper { max-width:500px;  }
     .cpn-url-box{
         position: relative;
@@ -1437,9 +1433,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
         right: 0;
     }
 
-
-    .social-share { text-align: center; max-width:400px; padding:30px 5% 0; margin:0 auto; }
-    .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
 
     .landing-cpn-slider-wrapper .img-box{
         margin-right: 5px;
@@ -1569,12 +1562,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .conf-states-wrapper{padding-left: 20px;padding-right: 20px;}
     .border-round .centered { padding-left:8%; padding-right:8%; }
 
-    #cpn-donate-now .btn { margin:0; border-radius:0; width:48%; float: left;}
+    #cpn-donate-now .btn { margin:0; border-radius:0; width:100%; float:none;}
     #cpn-donate-now .btn.with-amount{width: 100%;}
-    #cpn-donate-now .btn:last-child{margin-left:2%;}
-
-    #cpn-donate-now .btn { width:100%; float:none; }
-    #cpn-donate-now .btn:last-child { margin:0;}
+    #cpn-donate-now .btn:last-child{ margin:0; }
 
     .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px; padding:30px 6% ; }
 
@@ -1662,10 +1652,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
 	h4 {text-align:center !important;}
+    h5 { font-size:.875em; }
 	#dtn-add-logo>h4{text-align:center !important;}
 	.box.reset {padding-top:5px !important;}
 	#cause-image-preview {padding:10px !important;}
-	h5 {font-size:14px !important;}
 	.indicate-tdr {font-size:13px !important;}
 }
 

@@ -42,7 +42,7 @@ $(function(){
 	}
 
 	/* Progressive display of search results*/
-	$('.search-results-wrapper .cpn-sgtn-item:lt(6)').show();
+	$('.search-results-wrapper .cpn-sgtn-item:lt(9)').show();
 	$('.btn-more-img').click(function () {
 			var items = $('.search-results-wrapper .cpn-sgtn-item').length;
 			shown = $('.search-results-wrapper .cpn-sgtn-item:visible').size()+6;
@@ -54,7 +54,6 @@ $(function(){
 			 	$('.btn-area').hide();
 			 }
 		});
-
 	
 	$('').click(function(){
 		var i_ = $(this).closest('.accordion-content').find('.img-area-holder img:visible:last').index();
@@ -66,8 +65,6 @@ $(function(){
 	});
 
 	var addCpnBtn = $('.swiper-wrapper').height();
-	
 	$('.add-cpn-btn').height(addCpnBtn);
-
 		
 });

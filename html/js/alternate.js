@@ -135,7 +135,6 @@ $(function(){
         $('#donateModal').modal();
     })
 
-
     $('#selectAmount').selectOrDie({
         prefix: "DOLLARS",
         onChange: function(){
@@ -207,9 +206,7 @@ $(function(){
         // $('.Anon .choice-buttons').find('button.active').removeClass('active').addClass('active');
         // $(this).addClass('active');
         $('.Anon .choice-buttons').find('button.active').removeClass('active');
-
         $('.Anon .no').addClass('active');
-
         $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
     })
 
@@ -218,7 +215,6 @@ $(function(){
         onColor:  "success",
         offText: "NO",
         onText:  "YES"
-
     });
 
     //Adds titles to custom checkboxes in set-up-donation
@@ -260,7 +256,6 @@ $(function(){
     });
 
     var winWidth = $(window).innerWidth();
-
     var $things = $('.acc-section');
 
     $things.waypoint(function(direction) {
@@ -285,7 +280,6 @@ $(function(){
       offset: '0%'
     });
 
-
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
         createMobSlider(winWidth)
@@ -293,7 +287,6 @@ $(function(){
     createMobSlider(winWidth);
 
     // Creating accordions on body resize
-
     $('.acc-toggle').click(function(e){
       if ($(window).width() >= 768) {  
         e.stopPropagation();
@@ -321,7 +314,6 @@ $(function(){
         if(winWidth < 768){
             console.log(winWidth)
             var causesSwiper = new Swiper ('#causes-mobile', {
-              // parameters
                 slidesPerView:'auto',
                 spaceBetween:15,
                 mode: 'horizontal',
@@ -376,7 +368,7 @@ $(function(){
         $('#donationAmt').modal('hide');
     })
 
-     $('#donationAmt .dtn-amt-item').click(function(){
+    $('#donationAmt .dtn-amt-item').click(function(){
         amt = parseInt($(this).find('.dtn-amt h3').text());
         console.log('Clicked amount '+amt);
         $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
@@ -412,13 +404,10 @@ $(function(){
     })
 
     /* refine search inputs */
-    
     $('#close-more-causes').click(function(){
         $('#select-more-causes').modalPopover('hide');
     })
-
     $('.refine-inputs input[type=checkbox]').prop('checked',true);
-
     $('#ref_allcauses').change(function(){
         var checked = $(this).prop('checked');
         if(checked == true){
@@ -431,22 +420,14 @@ $(function(){
         }
     })
 
-
-
-  /* ----------------------------------------------------
-                    COPY TO CLIPBOARD
-     ----------------------------------------------------*/
-
-
+    /*  COPY TO CLIPBOARD     ------*/
     var cp_client = new ZeroClipboard($("#copy-url"));
-
 
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
-
-   $('.cpn-slide-right').matchHeight({
-    target: $('.cpn-slide-left')
+    $('.cpn-slide-right').matchHeight({
+        target: $('.cpn-slide-left')
     });
 
    $('.match-height-abt-impact').matchHeight();
@@ -457,10 +438,8 @@ $(function(){
 
 })
 
-
 /* This function inserts css to head section of html dynamically.Being used to set content
 for pseudo elements in the custom checkboxes*/
-
 var addRule = (function (style) {
     var sheet = document.head.appendChild(style).sheet;
     return function (selector, css) {
@@ -470,5 +449,3 @@ var addRule = (function (style) {
         sheet.insertRule(selector + "{" + propText + "}", sheet.cssRules.length);
     };
 })(document.createElement("style"));
-
-
