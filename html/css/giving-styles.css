@@ -1660,6 +1660,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .refine-search .text { font-size:1.1em; display:block; }
     .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
     .refine-search .btn-large-custom { display:block; margin:15px auto 40px; width:100%; }
+    /*refine search */
+    .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, .refine-inputs .checkbox-clone{
+        font-size: 0.875em;
+    }
+    #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
+    #select-more-causes .popover-content{width: 220px;}
 
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}

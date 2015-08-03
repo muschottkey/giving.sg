@@ -412,6 +412,7 @@ $(function(){
         var checked = $(this).prop('checked');
         if(checked == true){
             $('#causes-toggle').addClass('checked');
+            $('#causes-holder').find('span.checkbox-clone').fadeOut(400);
             $(this).closest('.span12').find('input[type=checkbox]:checked').prop("checked",false);
             $(this).prop('checked',true);
         }
