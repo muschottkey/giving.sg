@@ -420,6 +420,28 @@ $(function(){
         }
     })
 
+    $('#causes-holder').on('click','.checkbox-clone',function(){
+        $this = $(this);
+        var parent = $this.attr('data-parent'); 
+        $this.fadeOut(400);
+        $("#"+parent).prop('checked',false);
+    })
+
+    $('#select-more-causes').on('change','input', function(){
+        // console.log($(this));
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        console.log(checked);
+        if(checked == true){
+            $('#causes-holder').append('<span class="checkbox-clone checked" data-parent="'+parent+'" >'+content+'</span>');
+        }
+        else{
+            console.log($('#causes-holder span[data-parent='+parent+']'));
+            $('#causes-holder').find('span[data-parent='+parent+']').fadeOut(400);
+        }
+    })
+
     /*  COPY TO CLIPBOARD     ------*/
     var cp_client = new ZeroClipboard($("#copy-url"));
 

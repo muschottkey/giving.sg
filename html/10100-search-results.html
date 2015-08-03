@@ -72,9 +72,12 @@
 												<label for="ref_ntaxded">not tax deductible</label>
 											</div>
 											<span class="text inline-block">related to</span>
-											<div class="form-control refine-inputs inline-block">
-												<span class="checkbox-clone checked" href="#select-more-causes" data-toggle="modal-popover" 
-												data-placement="bottom" id="causes-toggle">any causes</span>
+											<div class="form-control refine-inputs inline-block" id="causes-holder">
+												<span class="checkbox-add checked" href="#select-more-causes" data-toggle="modal-popover" 
+												data-placement="bottom" id="causes-toggle">&nbsp;</span>
+
+												<span class="checkbox-clone checked" data-parent="ref_allcauses" >any causes</span>
+												
 											</div>
 											<button class="btn btn-success btn-large-custom square-border inline-block
 											">REFRESH RESULTS</button>
@@ -527,63 +530,57 @@
     	<button class="btn btn-small btn-success pull-right" id="close-more-causes">done</button>
     	<div class="row-fluid m-top10">
 			<div class="span12">
-				<div class="span6">
-					<ul>
-						<li>
-							<input type="checkbox" checked id="ref_allcauses">
-							<label for="ref_allcauses">all causes</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_adults">
-							<label for="ref_adults">adults</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_animals">
-							<label for="ref_animals">animals</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_artsnheritage">
-							<label for="ref_artsnheritage">arts & heritage</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_ch&yth">
-							<label for="ref_ch&yth">children & youth</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_disabled">
-							<label for="ref_disabled">disabled</label>
-						</li>
-						
-					</ul>
-				</div>
-				<div class="span6">
-					<ul>
-						<li>
-							<input type="checkbox" id="ref_edu">
-							<label for="ref_edu">education</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_elderly">
-							<label for="ref_elderly"elderly</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_env">
-							<label for="ref_env">environment</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_hlth">
-							<label for="ref_hlth">health</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_soc-serv">
-							<label for="ref_soc-serv">social service</label>
-						</li>
-						<li>
-							<input type="checkbox" id="ref_wom&grls">
-							<label for="ref_wom&grls">women & girls</label>
-						</li>
-					</ul>
-				</div>
+				<ul>
+					<li>
+						<input type="checkbox" checked id="ref_allcauses">
+						<label for="ref_allcauses">all causes</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_adults">
+						<label for="ref_adults">adults</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_animals">
+						<label for="ref_animals">animals</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_artsnheritage">
+						<label for="ref_artsnheritage">arts & heritage</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_ch&yth">
+						<label for="ref_ch&yth">children & youth</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_disabled">
+						<label for="ref_disabled">disabled</label>
+					</li>
+				
+					<li>
+						<input type="checkbox" id="ref_edu">
+						<label for="ref_edu">education</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_elderly">
+						<label for="ref_elderly">elderly</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_env">
+						<label for="ref_env">environment</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_hlth">
+						<label for="ref_hlth">health</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_soc-serv">
+						<label for="ref_soc-serv">social service</label>
+					</li>
+					<li>
+						<input type="checkbox" id="ref_wom&grls">
+						<label for="ref_wom&grls">women & girls</label>
+					</li>
+				</ul>
 			</div>
 		</div>
     </div>
