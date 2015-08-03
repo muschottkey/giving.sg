@@ -450,14 +450,9 @@ $(function(){
                 MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
     $('.cpn-slide-right').matchHeight({
-        target: $('.cpn-slide-left')
+         target: $('.cpn-slide-left')
     });
-
-   $('.match-height-abt-impact').matchHeight();
-   // $('.cpn-suggestions .cpn-sgtn-item').matchHeight();
-   // $('.cpn-wrapper').matchHeight({
-   //  target: $('.cpn-suggestions .cpn-sgtn-item')
-   // });
+    $('.match-height-abt-impact').matchHeight();
 
 })
 
