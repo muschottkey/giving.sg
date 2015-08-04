@@ -255,6 +255,20 @@ $(function(){
         }
     });
 
+    $('.select-giving-autofit-text').selectOrDie({
+         onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length - 2;
+            if(length >= 8){
+                var dynamic_width = 15*length;
+            }
+            else{
+                var dynamic_width = 30 + 15*length;
+            }
+            $(this).closest('.sod_select').css('width', dynamic_width);
+        }
+    });
+
     var winWidth = $(window).innerWidth();
     var $things = $('.acc-section');
 
@@ -312,7 +326,6 @@ $(function(){
     function createMobSlider(winWidth){
         //initialize campaign suggestions swiper when document ready  
         if(winWidth < 768){
-            console.log(winWidth)
             var causesSwiper = new Swiper ('#causes-mobile', {
                 slidesPerView:'auto',
                 spaceBetween:15,
@@ -357,7 +370,8 @@ $(function(){
         sliderPerView: 1,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
+        prevButton: '.swiper-button-prev',
+        loop:true
     })        
     
     $('#custom-amt-input-modal>input').change(function(){
@@ -438,6 +452,9 @@ $(function(){
             $('#causes-holder').find('span[data-parent='+parent+']').addClass('to-hide');
         }
     })
+
+    $('.cpn-holder .btn-close').click(function(e){e.preventDefault();})
+
 
     /*$('#collapse-refsearch').on('shown', function () {
         $('#link-refine').fadeOut(400);

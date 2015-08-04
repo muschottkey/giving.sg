@@ -34,7 +34,7 @@
 	      	</div>
 	    </div>
 
-		<div class="section-page" id="campaign-landing">
+		<div class="section-page">
 			<div class="wrapper main-content">
 				<div class="row-fluid breakpoint-override">
 					<div class="span12 bg-lightgrey">
@@ -44,7 +44,7 @@
 							</div>
 							<div class="row-fluid">
 								<div class="span6">
-									<div class="c-inner p-20">
+									<div class="c-inner p-20 hidden-phone">
 										<form id="" class="nl-form text-left">
 											Showing
 											<select>
@@ -73,7 +73,49 @@
 											<div class="nl-overlay"></div>
 										</form>
 
-										<button class="btn btn-success btn-large-custom square-border m-top20 pull-left">REFINE SEARCH</button>
+										<button class="btn btn-success btn-large-custom btn-full-mobile square-border m-top20 pull-left">REFRESH LIST</button>
+									</div>
+									<div class="span6 visible-phone">
+										<div class="span11 centered">
+										<form id="refine-search-form" class="m-top20 m-bot20 text-left ">
+											<table>
+												<tbody>
+													<tr>
+														<td width="100"><strong class="small">showing</strong></td>
+														<td>
+															<div class="refine-inputs">
+																<input type="checkbox" id="ref_allcampaigns">
+																<label for="ref_allcampaigns">all campaigns</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td><strong class="small">that are</strong></td>
+														<td>
+															<div class="refine-inputs">
+																<input type="checkbox" id="ref_featured">
+																<label for="ref_featured">featured</label>
+																<input type="checkbox" id="ref_trending">
+																<label for="ref_trending">trending</label>
+																<input type="checkbox" id="ref_endsoon">
+																<label for="ref_endsoon">ending soon</label>
+															</div>
+														</td>
+													</tr>
+													<tr>
+														<td><strong class="small">related to</strong></td>
+														<td>
+															<div class="refine-inputs" id="causes-holder">
+																<span class="checkbox-clone checked" data-parent="ref_allcauses" >any cause</span>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
+											<button class="btn btn-success btn-large-custom square-border btn-full-mobile m-top20 inline-block
+											">REFRESH RESULTS</button>
+										</form>
+									</div>
 									</div>
 								</div>
 								<div class="span6 hidden-phone">
@@ -1025,8 +1067,6 @@
 	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
-	<script>
-			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-	</script>
+	
 </body>
 </html>
