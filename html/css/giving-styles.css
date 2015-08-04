@@ -92,6 +92,8 @@ hr.m5{margin: 5px 0;}
     .navbar-fixed-top { position:fixed; }
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
+.footer {background: #DFDFDF;}
+.footer p {text-align:center;margin: 0; padding:10px 0;}
 
 /* UI Controls - BUTTONS */
 .control-group { margin-top:3em; position:relative; }
