@@ -439,9 +439,9 @@ $(function(){
         }
     })
 
-    $('#collapse-refsearch').on('shown', function () {
+    /*$('#collapse-refsearch').on('shown', function () {
         $('#link-refine').fadeOut(400);
-    })
+    })*/
 
     $('#causes-holder').on('click', '.checkbox-clone',function(){
         $('#select-more-causes').modalPopover({

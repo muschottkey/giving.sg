@@ -21,10 +21,10 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 /* GLOBAL STYLES & HELPER CLASSES */
 
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
-.small { font-size:.875em; margin-top:5px; }
+.small { font-size:.875em; }
 .smaller { font-size:.775em; margin-top:5px; }
-.em {font-weight:500;color: #454545;}
-.big{font-size: 1.5em;}
+.em { font-weight:500;color: #454545;}
+.big { font-size: 1.5em; }
 
 .square-border{border-radius: 0;}
 .text-uppercase { text-transform:uppercase; }
@@ -449,10 +449,10 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 .sgtn-body .causes { padding:.5em 0; }
 .causes ul { margin:0 auto;  }
 .causes li { 
-    display:inline-block; margin:.5em 3.3% 0; width:24px; height:24px; float:left;
-    background-color: #EEE; border-radius:5px; padding: .25em; line-height: 1.5;
+    display:inline-block; margin:.5em 3.3% 0; width:24px; height:24px; 
+    background-color:#EEE; border-radius:5px; padding: .25em; line-height: 1.5;
  }
-    .causes.multiple li { width:12%; margin:.5em 2% 0; padding:2%; }
+    .causes.multiple li { width:11%; margin:.5em 1% 0; padding:2%; }
  .causes li a { color:#666; }
     .causes li a:hover { color:#000; }
         .ico-tdr a i { color:#FFF; }
@@ -524,6 +524,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     padding-left:1em; font-family:"Open Sans"; font-size:1.1em !important; color: #333; text-align:left;
 }
 .search-controls .control-label { line-height:2em; }
+    .search-controls .link-refine { line-height:3em; }
 .search-controls .inline-search { right:10px; }
     #search-results #sortSearchResults { text-align:left; }
 
@@ -643,7 +644,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .cn-details .more-days h4{font-size: 1.5em;}
 
-.campaign-stats h4{ display: inline-block; font-size:1.5em; margin-right: 8px; margin-bottom: 0; }
+.campaign-stats h4{ display: inline-block; font-size:1.5em; margin:0 5px;}
 
 .cn-stats-wrapper{
     width: 70%;
@@ -668,11 +669,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cn-days-wrapper .more-days{
 }
 
-.campaign-stats h4{
-    display: inline-block;
-     margin-right: 8px;
-     margin-bottom: 0;
- }
 
 .campaign-stats span.em{ color: #919191; font-size: 0.875em; }
 .campaign-stats span.darker{
@@ -849,10 +845,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-
-.wrapper-925 .cpn-holder { 
-    margin: 30px auto 80px;
-}
+.wrapper-925 .cpn-holder { margin:40px auto 80px; }
 .cpn-wrapper { 
     position: relative;
     display: block;
@@ -878,15 +871,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px;
 }
 .sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
-.sgtn-body p { font-size:.875em; color:#4A4A4A; margin:5px 0 15px; min-height:6.7em; }
+.sgtn-body p { font-size:.875em; color:#4A4A4A; margin:5px 0; min-height:6.7em; }
 .cpn-sgtn-item .box-r-footer{
     background-color: #ffffff;
     padding: 0px;
     margin-top: 0;
 }
-.cpn-sgtn-item .box-r-footer .more-days{
-    padding: 10px;
-}
+.cpn-sgtn-item .box-r-footer .more-days{ padding:15px 8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
     position: absolute;
     margin-left: 65px;
@@ -1130,7 +1121,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /**************************************************************************
                             Search Results
 **************************************************************************/
-.search-results-wrapper .cpn-sgtn-item { display: none; width:30%; margin:1em 1.65% 1.5em; min-height:495px; }
+.search-results-wrapper .cpn-sgtn-item { display: none; width:30%; margin:1em 1.65% 1.5em; min-height:480px; }
 
 /* Refine search */
 .inline-search{ position:absolute; right:30px; top:8px; font-size: 1.2em; color:#333; cursor:pointer; }
@@ -1157,10 +1148,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
      display: inline-block; height:auto; background-color:#62c462; border-radius: 6px;
     border:1px solid #3DC83D; width:auto; padding: 3px 6px 6px 6px; margin-right: 6px; 
     position: relative; cursor: pointer; font-size:1.25em;width: 30px;
-}
-
-.refine-inputs .checkbox-clone{
-    margin-top: 10px;
 }
 .refine-inputs .checkbox-clone.hidden{
     display: none;
@@ -1274,8 +1261,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     z-index:100;
 }
 .cpn-holder .btn-close{
+    display:none;
     margin:40px 0 0;
-    display:inline-block;
     vertical-align:top;
     text-decoration:none;
     color:#000;
@@ -1455,6 +1442,7 @@ form.text-left input:not([type="checkbox"]){
 }
 
 @media (max-width: 979px) {
+    .cpn-holder .btn-close{display:inline-block;}
     .centered-small-screen{text-align: center;}
 	.box.reset {padding-top:10px !important;}
 	#cause-image-preview {margin:15px !important;}
@@ -1648,14 +1636,14 @@ form.text-left input:not([type="checkbox"]){
 }
 
 @media (max-width: 767px) {
-    body{overflow-x:hidden;}
+    body{overflow-x:hidden; padding-right: 0;padding-left: 0;}
     .start-campaign-area a br{display:none;}
     .accordion-content{
         padding:0 5px;
         margin:30px auto 50px;
     }
     .accordion-title{font-size:16px;}
-    body{padding-right: 0;padding-left: 0;}
+    .wrapper-925 .title-search .span6 { width:100%; }
     .row-fluid.border-all { margin-right:-1px !important; margin-left:-2px !important; }
     .carousel-indicators{bottom: 10px;}
     .modal, .modal-one-column { max-width:294px !important; }
@@ -1888,7 +1876,7 @@ form.text-left input:not([type="checkbox"]){
     .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
     .refine-search .btn-large-custom { display:block; margin:15px auto 40px; width:100%; }
     /*refine search */
-    .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, .refine-inputs .checkbox-clone{
+    .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label{
         font-size: 0.875em;
     }
     #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}

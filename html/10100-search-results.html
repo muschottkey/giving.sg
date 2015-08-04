@@ -97,11 +97,8 @@
 									<span class="inline-block mobile-block">
 										<span class="text small">sorted by</span>
 										<select class="select-giving-autofit" id="sortSearchResults" data-custom-id="sortSearchResults" name="sort">
-											<option data-alt-label="magic" selected="selected" value="magic">Relevance</option>
-											<option data-alt-label="popularity" value="popularity">Popularity</option>
-											<option data-alt-label="newest" value="newest">Newest</option>
-											<option data-alt-label="end date" value="end_date">End Date</option>
-											<option data-alt-label="most funded" value="most_funded">Most Funded</option>
+											<option data-alt-label="Relevance" selected="selected" value="relevance">Relevance</option>
+											<option data-alt-label="alphabetically" value="alphabetically">Alphabetically</option>
 										</select>
 									</span>
 								</div>
@@ -376,7 +373,7 @@
 															</div>
 															<span class="em darker">53% of $8,000 goal</span>
 														</div>
-														<div class="causes">
+														<div class="causes multiple">
 															<ul class="">
 																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
 																<li><a href="#"><i class="fa fa-compass"></i></a></li>
@@ -410,7 +407,7 @@
 															</div>
 															<span class="em darker">86% of $800,000 goal</span>
 														</div>
-														<div class="causes">
+														<div class="causes multiple">
 															<ul class="">
 																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
 																<li><a href="#"><i class="fa fa-compass"></i></a></li>
@@ -444,7 +441,7 @@
 															</div>
 															<span class="em darker">86% of $800,000 goal</span>
 														</div>
-														<div class="causes">
+														<div class="causes multiple">
 															<ul class="">
 																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
 																<li><a href="#"><i class="fa fa-compass"></i></a></li>
@@ -478,7 +475,7 @@
 															</div>
 															<span class="em darker">86% of $800,000 goal</span>
 														</div>
-														<div class="causes">
+														<div class="causes multiple">
 															<ul class="">
 																<li><a href="#"><i class="fa fa-circle-thin"></i></a></li>
 																<li><a href="#"><i class="fa fa-compass"></i></a></li>
@@ -499,7 +496,7 @@
 										</div>
 									</div>
 
-									<div class="span4 centered btn-area clearfix">
+									<div class="span5 centered btn-area clearfix">
 										<span class="block border-all border-round m-top20 small p-10 clickable btn-more-img">
 										MORE</span>
 									</div>
@@ -507,82 +504,78 @@
 
 							</div><!--end of search results wrapper-->
 						</div><!--end of 925-wrapper-->
-					</div><!--end of span 12-->
+					</div>
 				</div><!--end of row fluid -->
 				<!--end of Search result listing -->
 
-				<!-- </div> -->
 			</div><!--end of main content-->
 		</div><!--end of section page-->
 		<footer class="footer"> <p>&nbsp;</p></footer>
-
 	</div><!--end of page wrapper-->
-	<div >
-		
-	</div>
  
-<!-- Define content -->
-<div class="popover" id="select-more-causes">
-    <div class="arrow"></div>
-    <div class="popover-content">
-    	<button class="btn btn-small btn-success pull-right" id="close-more-causes">done</button>
-    	<div class="row-fluid m-top10">
-			<div class="span12">
-				<ul>
-					<li>
-						<input type="checkbox" checked id="ref_allcauses">
-						<label for="ref_allcauses">all causes</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_adults">
-						<label for="ref_adults">adults</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_animals">
-						<label for="ref_animals">animals</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_artsnheritage">
-						<label for="ref_artsnheritage">arts & heritage</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_chnyth">
-						<label for="ref_chnyth">children & youth</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_disabled">
-						<label for="ref_disabled">disabled</label>
-					</li>
-				
-					<li>
-						<input type="checkbox" id="ref_edu">
-						<label for="ref_edu">education</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_elderly">
-						<label for="ref_elderly">elderly</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_env">
-						<label for="ref_env">environment</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_hlth">
-						<label for="ref_hlth">health</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_soc-serv">
-						<label for="ref_soc-serv">social service</label>
-					</li>
-					<li>
-						<input type="checkbox" id="ref_wom&grls">
-						<label for="ref_wom&grls">women & girls</label>
-					</li>
-				</ul>
+	
+	<div class="popover" id="select-more-causes">
+	    <div class="arrow"></div>
+	    <div class="popover-content">
+	    	<button class="btn btn-small btn-success pull-right" id="close-more-causes">done</button>
+	    	<div class="row-fluid m-top10">
+				<div class="span12">
+					<ul>
+						<li>
+							<input type="checkbox" checked id="ref_allcauses">
+							<label for="ref_allcauses">all causes</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_adults">
+							<label for="ref_adults">adults</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_animals">
+							<label for="ref_animals">animals</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_artsnheritage">
+							<label for="ref_artsnheritage">arts & heritage</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_chnyth">
+							<label for="ref_chnyth">children & youth</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_disabled">
+							<label for="ref_disabled">disabled</label>
+						</li>
+					
+						<li>
+							<input type="checkbox" id="ref_edu">
+							<label for="ref_edu">education</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_elderly">
+							<label for="ref_elderly">elderly</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_env">
+							<label for="ref_env">environment</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_hlth">
+							<label for="ref_hlth">health</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_soc-serv">
+							<label for="ref_soc-serv">social service</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_wom&grls">
+							<label for="ref_wom&grls">women & girls</label>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-    </div>
-</div>
+	    </div>
+	</div>
+
 	<script type="text/javascript" src="js/aui-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -596,7 +589,6 @@
 	<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap-modal-popover-custom.js"></script>
-	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 </body>
