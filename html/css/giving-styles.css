@@ -1456,9 +1456,7 @@ form.text-left input:not([type="checkbox"]){
 	h5 {margin:10px; font-size:15px; }
 	.contact-us p {margin-left:10px;}
 	#dtn-add-logo>h4{text-align:center !important;}
-   .wrapper-925{
-    max-width: 715px;
-   } 
+   
    .tab-nav-area{display:none;}
    .tab-section .tab{
     top:0;
@@ -1466,9 +1464,10 @@ form.text-left input:not([type="checkbox"]){
     display:block !important;
    }
     .top-title-area{display:block;}
-    .wrapper-925 .title-search{padding-bottom:20px;}
+    .wrapper-925 { max-width: 715px; } 
+    .wrapper-925 .title-search { padding-bottom:20px; }
     .wrapper-925 .title-search .span6 { width:48.618%; float:left; }
-    .wrapper-925 .cpn-holder{display:none;}
+    .wrapper-925 .tab .cpn-holder { display:none; }
 
 	.row-fluid .span8 {width:100% !important;}
 	 #user-about-links .input-append.input-prepend {width:75%; margin-left:20px; }
