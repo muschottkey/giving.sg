@@ -1225,6 +1225,84 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 
+/***************************************************************************
+                            DASHBOARD
+***************************************************************************/
+#sidebar{
+    width: 315px;
+    position: fixed;
+    left:0;
+    border-right: 1px solid #cccccc;
+    height: 100%;
+}
+
+#sidebar ul{
+    margin: 0;
+    /*margin-top: 42px;*/
+}
+#sidebar ul li{
+    list-style: none;
+}
+#sidebar ul li.dark{
+    background-color: #999999;
+}
+#sidebar .b-top{
+   border-top: 1px solid #cccccc;
+}
+#sidebar ul li > a{
+    padding:10px 12px 10px 55px;
+    display: block;
+    text-decoration: none;
+    color: #6c6c6c;
+    font-weight: 600;
+    /*font-size: 0.9em;*/
+} 
+#sidebar ul li.dark a{
+    color: #ffffff;
+} 
+
+#sidebar ul li > a .li-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border:1px solid #cccccc;
+    border-radius: 100px;
+}
+
+#sidebar ul li > a .li-icon.pull-left{
+    margin-right: 6px;
+}
+#sidebar .profile-nav{
+    padding:30px;
+    background-color: #f8f8f8;
+    border-bottom:1px solid #cccccc;
+}
+
+aside.profile-nav.mobile-fallback{
+    width: 190px;
+}
+aside.profile-nav.mobile-fallback img{
+}
+aside.profile-nav.mobile-fallback h4{
+   display: inline-block;
+}
+
+.dashboard{
+    margin-left: 315px;
+}
+
+.dashboard .control-group{margin-top:1em;}
+.dashboard .section-title{font-weight: 800;font-size: 1.3em;text-align: left;}
+.section-bordered-bottom{
+    border-bottom:1px solid #cccccc;
+}
+form.text-left input:not([type="checkbox"]){
+    text-align: left;
+}
+
+
+
+
 
 
 /***************************************************************************
@@ -1458,6 +1536,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .landing-cpn-slider-wrapper .campaign-stats{
         margin:20px 0;
     }
+
+    #sidebar{display: none;}
+    .dashboard{margin-left: 0;padding:0 30px;}
+    .panel-title{display: none;}
 }
 
 @media (max-width: 767px) {
@@ -1532,6 +1614,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
       margin: 0;
       cursor: pointer;
     }
+    .acc-toggle.minimal{
+        background-color: #ffffff;
+        border:1px solid #cccccc;
+        color: #000;
+        border-radius:20px;
+    }
     .acc-toggle:before{float: right;width: 20px;height: 20px;display: inline-block;
         background-color: transparent;margin-top:2px;position: relative;content: "\f068";font-family: 'FontAwesome';}
     .acc-toggle.collapsed:before{float: right;width: 20px;height: 20px;display: inline-block;
@@ -1582,6 +1670,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
     .left-mobile{text-align: left;}
     .center-mobile{text-align: center !important;}
+    .float-reset-mobile{float: none !important;}
     .no-border-mobile{border:none !important;}
     .cpn-end-date.smaller{font-size: 0.675em;margin-top: 15px;}
 
@@ -1666,6 +1755,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     }
     #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
     #select-more-causes .popover-content{width: 220px;}
+
+    /* DASHBOARD*/
+    .section-bordered-bottom{border-bottom: none;}
+
 
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
