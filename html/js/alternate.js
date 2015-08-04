@@ -406,14 +406,16 @@ $(function(){
     /* refine search inputs */
     $('#close-more-causes').click(function(){
         $('#select-more-causes').modalPopover('hide');
+        $('#causes-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
+        $('#causes-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
     })
+
     $('.refine-inputs input[type=checkbox]').prop('checked',true);
     $('#ref_allcauses').change(function(){
         var checked = $(this).prop('checked');
         if(checked == true){
-            $('#causes-toggle').addClass('checked');
-            $('#causes-holder').find('span.checkbox-clone').fadeOut(400);
             $(this).closest('.span12').find('input[type=checkbox]:checked').prop("checked",false);
+            $('#causes-holder').find('.checkbox-clone').addClass('to-hide');
             $(this).prop('checked',true);
         }
         else{
@@ -421,27 +423,36 @@ $(function(){
         }
     })
 
-    $('#causes-holder').on('click','.checkbox-clone',function(){
-        $this = $(this);
-        var parent = $this.attr('data-parent'); 
-        $this.fadeOut(400);
-        $("#"+parent).prop('checked',false);
-    })
-
     $('#select-more-causes').on('change','input', function(){
-        // console.log($(this));
         var checked = $(this).prop('checked');
         var parent = $(this).attr('id');
         var content = $(this).next('label').text(); 
-        console.log(checked);
         if(checked == true){
-            $('#causes-holder').append('<span class="checkbox-clone checked" data-parent="'+parent+'" >'+content+'</span>');
+            $('#causes-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >'+content+'</span>');
+            if(parent != "ref_allcauses"){
+                $("#ref_allcauses").prop('checked',false);
+                $('#causes-holder').find('span[data-parent=ref_allcauses]').addClass('to-hide');
+            }
         }
         else{
-            console.log($('#causes-holder span[data-parent='+parent+']'));
-            $('#causes-holder').find('span[data-parent='+parent+']').fadeOut(400);
+            $('#causes-holder').find('span[data-parent='+parent+']').addClass('to-hide');
         }
     })
+
+    $('#collapse-refsearch').on('shown', function () {
+        $('#link-refine').fadeOut(400);
+    })
+
+    $('#causes-holder').on('click', '.checkbox-clone',function(){
+        $('#select-more-causes').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+
+        $('#select-more-causes').modalPopover('show')
+    })
+    
+
 
     /*  COPY TO CLIPBOARD     ------*/
     var cp_client = new ZeroClipboard($("#copy-url"));
