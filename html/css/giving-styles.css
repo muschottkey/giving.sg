@@ -1893,6 +1893,15 @@ form.text-left input:not([type="checkbox"]){
     }
     #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
     #select-more-causes .popover-content{width: 220px;}
+    #select-more-causes{
+        margin-left: 100px;
+    }
+    #select-more-causes.popover.bottom .arrow {
+        top: -11px;
+        left: 50%;
+        margin-left: -100px;
+    }
+
 
     /* DASHBOARD*/
     .section-bordered-bottom{border-bottom: none;}
