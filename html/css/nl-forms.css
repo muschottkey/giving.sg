@@ -45,6 +45,7 @@
 }
 
 /* the toggle is the visible part in the form */
+.form-control.inner span, 
 .nl-field-toggle,
 .nl-form input,
 .nl-form select  {
@@ -61,12 +62,22 @@
 	font-weight: 500;
 }
 
+.form-control.inner span:hover,
 .nl-field-toggle:hover,
 .nl-form input:hover,
 .nl-form select:hover{
 	text-decoration: none;
 } 
 
+.form-control.inner span{
+	background:none;
+	font-size:1em;
+	line-height:1.1;
+	margin:0 4px;
+	border:0;
+	border-bottom: 2px solid #DDD;
+	padding:0;
+}
 /* drop-down list / text element */
 .nl-field ul {
 	position: absolute;

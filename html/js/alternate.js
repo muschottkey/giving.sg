@@ -247,10 +247,24 @@ $(function(){
      });
 
     $('.select-giving-autofit').selectOrDie({
+        onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length - 2;
+            var dynamic_width = 15*length;
+            $(this).closest('.sod_select').css('width', dynamic_width);
+        }
+    });
+
+    $('.select-giving-autofit-text').selectOrDie({
          onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
-            var dynamic_width = 70 + 15*length;
+            if(length >= 8){
+                var dynamic_width = 15*length;
+            }
+            else{
+                var dynamic_width = 30 + 15*length;
+            }
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -311,6 +325,7 @@ $(function(){
 
     function createMobSlider(winWidth){
         //initialize campaign suggestions swiper when document ready  
+<<<<<<< HEAD
         if(winWidth < 768){
             console.log(winWidth)
             var causesSwiper = new Swiper ('#causes-mobile', {
@@ -319,6 +334,17 @@ $(function(){
                 mode: 'horizontal',
                 freeMode: true
             })  
+=======
+        if(winWidth < 767){
+            $('#causes-mobile').each(function(){
+                new Swiper($(this), {
+                    slidesPerView:'auto',
+                    spaceBetween:'15',
+                    mode: 'horizontal',
+                    freeMode: true
+                });
+            });
+>>>>>>> origin/setupDtn
         }
     }
 
@@ -357,7 +383,8 @@ $(function(){
         sliderPerView: 1,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
+        prevButton: '.swiper-button-prev',
+        loop:true
     })        
     
     $('#custom-amt-input-modal>input').change(function(){
@@ -402,6 +429,69 @@ $(function(){
             }
         })
     })
+<<<<<<< HEAD
+=======
+
+    /* refine search inputs */
+    $('#close-more-causes').click(function(){
+        $('#select-more-causes').modalPopover('hide');
+        $('#causes-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
+        $('#causes-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
+    })
+    
+    $('#close-more-camp').click(function(){
+        $('#select-more-camp').modalPopover('hide');
+        $('#camp-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
+        $('#camp-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
+    })
+
+    $('.refine-inputs input[type=checkbox]').prop('checked',true);
+    $('#ref_allcauses').change(function(){
+        var checked = $(this).prop('checked');
+        if(checked == true){
+            $(this).closest('.span12').find('input[type=checkbox]:checked').prop("checked",false);
+            $('#causes-holder').find('.checkbox-clone').addClass('to-hide');
+            $(this).prop('checked',true);
+        }
+        else{
+            $('#causes-toggle').removeClass('checked');
+        }
+    })
+
+    $('#select-more-causes').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        if(checked == true){
+            $('#causes-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >' + content + '</span>');
+            if(parent != "ref_allcauses"){
+                $("#ref_allcauses").prop('checked',false);
+                $('#causes-holder').find('span[data-parent=ref_allcauses]').addClass('to-hide');
+            }
+        }
+        else{
+            $('#causes-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+        }
+    })
+    $('#select-more-camp').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        if(checked == true){
+            $('#camp-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >'+content+'</span>');
+            if(parent != "ref_allcauses"){
+                $("#ref_allcamp").prop('checked',false);
+                $('#camp-holder').find('span[data-parent=ref_allcamp]').addClass('to-hide');
+            }
+        }
+        else{
+            $('#camp-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+        }
+    })
+
+
+    $('.cpn-holder .btn-close').click(function(e){e.preventDefault();})
+>>>>>>> origin/setupDtn
 
     /* refine search inputs */
     $('#close-more-causes').click(function(){
@@ -450,6 +540,33 @@ $(function(){
         });
 
         $('#select-more-causes').modalPopover('show')
+    })
+    
+
+
+    /*  COPY TO CLIPBOARD     ------*/
+    var cp_client = new ZeroClipboard($("#copy-url"));
+
+    /*$('#collapse-refsearch').on('shown', function () {
+        $('#link-refine').fadeOut(400);
+    })*/
+
+    $('#causes-holder').on('click', '.checkbox-clone',function(){
+        $('#select-more-causes').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+
+        $('#select-more-causes').modalPopover('show')
+    })
+    
+    $('#camp-holder').on('click', '.checkbox-clone',function(){
+        $('#select-more-camp').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+
+        $('#select-more-camp').modalPopover('show')
     })
     
 
