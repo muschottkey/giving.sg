@@ -1455,7 +1455,7 @@ form.text-left input:not([type="checkbox"]){
         border-right: 1px solid #cccccc;border-left: 1px solid #cccccc;}
     #setup-donation-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
-    #save-actions{margin-bottom: 30px;padding-top: 0 !important;}
+    #save-actions{margin-bottom: 30px; /**padding-top: 0 !important; hided by yen**/}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
     .dtn-amt-item .dtn-btns{  padding: 1.4em 0; }
     .dtn-amt-item .dtn-btns .btn{
@@ -1467,6 +1467,14 @@ form.text-left input:not([type="checkbox"]){
     .dr-img-wrapper { width:620px;} 
     .donors-area .dr-img { width:55px; height:55px; }
 }
+
+@media (max-width: 1199px){
+    #donate-buttons{margin: 0;}
+    #donate-now{margin-top: 0;}
+    #donate-buttons button{margin: 10px 1% 0; height: 44px;}
+    #custom-amt-input{margin: 10px 0 0 !important;}
+}
+
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
 	#dtn-about-us-container {margin-left:0;}
@@ -1486,7 +1494,7 @@ form.text-left input:not([type="checkbox"]){
     #dtn-user-about{padding-left: 0px !important;}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
         .donors-area .dr-img { margin-left:2.5%; margin-right:2.5%; }
-    .donate-btns  { padding:0 2em 2em; }
+    .donate-btns  { padding:0 1.7em 2em; }
     .donate-btns button { width:48%; display: inline-block; margin-bottom:0; }
         .span8.modal-dtn-amts { width:100%; }
     .fr-widget .span6.centered{padding: 0 25%;}
@@ -1560,7 +1568,7 @@ form.text-left input:not([type="checkbox"]){
     .modal { max-width:598px; }
     .modal-body { max-width:280px; }
     .boxed-wrapper { max-width:280px; }
-    .boxed-wrapper.wide{max-width: none; }
+    .boxed-wrapper.wide{max-width: 610px; }
     .boxed-wrapper.md{max-width: 610px; margin-top: 0;padding-top: 0;}
     .boxed-wrapper.gf{max-width: 800px;}
     .sign-up-form { margin-top:50px; border-left:none; }
@@ -1616,7 +1624,7 @@ form.text-left input:not([type="checkbox"]){
     #dtn-user-actions > .box{background-color: #efefef;margin-top: 20px;}
     #dtn-user-actions #dtn-impact-s{background-color: #fff;border: 1px solid #dddddd;}
     #dtn-add-logo .box.reset{background-color: #efefef;}
-    #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:10px 1% 10px 2%; }
+    #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:10px 1% 10px 2% !important; }
     .npo-deet #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:2px 1% 10px 2%; }
 
     #custom-amt-input .button-input{margin: 7px 5px;}
