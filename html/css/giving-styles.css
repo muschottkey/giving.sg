@@ -1900,9 +1900,7 @@ form.text-left input:not([type="checkbox"]){
     #causes-wrapper .cause-box, .cause-box.block-mobile input[type=checkbox] + label{
         width: 140px;
     }
-    #causes-mobile .span12.clearfix.swiper-slide{
-        width: 600px;
-    }
+    #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
 
     .acc-toggle.landing{
         text-align: left !important;
