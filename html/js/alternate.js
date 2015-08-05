@@ -296,7 +296,8 @@ $(function(){
 
     $(window).resize(function(){
         var winWidth = $(window).innerWidth();
-        createMobSlider(winWidth)
+        createMobSlider(winWidth);
+        showSidebar(winWidth);
     })
     createMobSlider(winWidth);
 
@@ -324,18 +325,32 @@ $(function(){
     });
 
     function createMobSlider(winWidth){
-        //initialize campaign suggestions swiper when document ready  
+        //initialize campaign suggestions swiper when mobile ready  
+        var mobSwiper;
         if(winWidth < 767){
             $('#causes-mobile').each(function(){
-                new Swiper($(this), {
+                mobSwiper = new Swiper($(this), {
                     slidesPerView:'auto',
                     spaceBetween:'15',
                     mode: 'horizontal',
                     freeMode: true
                 });
             });
+            // console.log(mobSwiper);
+        }
+        if(winWidth >= 768){
+            console.log(mobSwiper);
+            
+            if(typeof mobSwiper != 'undefined'){
+                mobSwiper.destroy();
+                mobSwiper = undefined;
+
+                $('.swiper-wrapper').removeAttr('style');
+                $('.swiper-slide').removeAttr('style');
+            }
         }
     }
+
 
     $('.swiper-container').each(function(){
         new Swiper($(this), {
@@ -507,6 +522,41 @@ $(function(){
     /*  COPY TO CLIPBOARD     ------*/
     var cp_client = new ZeroClipboard($("#copy-url"));
 
+    /* Navigation Menu Toggle */
+    $('.nav-menu-toggle').click(function(e){
+        e.preventDefault();
+        var happening =  $('#sidebar').on("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend");
+        console.log(happening);
+            if(!$(this).hasClass('active')){
+                $('#sidebar').removeClass('hide').addClass('animated slideInLeft show');
+                $(this).addClass('active');  
+            }
+            else{
+                $('#sidebar').addClass('animated slideOutLeft');
+                $(this).removeClass('active');  
+            }
+       
+    })
+
+    $('#sidebar').on("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend", function(){
+        if($(this).hasClass('slideInLeft')){
+            $(this).removeClass('slideInLeft');
+        }
+        else if($(this).hasClass('slideOutLeft')){
+            $(this).removeClass('slideOutLeft show').addClass('hide');
+        }
+    })
+
+    function showSidebar(winWidth){
+        console.log('resizing');
+        console.log(winWidth);
+        if(winWidth >= 980){
+            if(!$('.nav-menu-toggle').hasClass('active')){
+                // $('#sidebar').css('display','initial');
+            }
+        }
+    }
+
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
@@ -514,6 +564,8 @@ $(function(){
          target: $('.cpn-slide-left')
     });
     $('.match-height-abt-impact').matchHeight();
+
+    $('.landing-cpn-slider-wrapper .swiper-slide').matchHeight();
 
 })
 
