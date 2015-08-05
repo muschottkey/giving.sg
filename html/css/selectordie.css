@@ -39,7 +39,6 @@
     .sod_select:before, .sod_select:after {
         content: "\25B2"; position: absolute; right: 10px; top: 12px; font-size: 7px;
     }
-
         /* Down arrow */
         .sod_select:after {
             font: normal normal normal 14px/1 FontAwesome; content: "\f078"; top: auto; bottom:11px;
@@ -199,9 +198,9 @@
 
     #sortSearchResults{border:none;border-bottom: 1px solid #979797;font-size: 1em;border-radius: 0;}
     #sortSearchResults .sod_label{font-size: 1em;}
-    #sortSearchResults{padding:5px; width: 130px;text-align: center;}
-    #sortSearchResults:before{display: none;}
-    #sortSearchResults:after{top: 5px;}
+    #sortSearchResults{padding:5px; width:180px; }
+        #sortSearchResults:before {display: none;}
+        #sortSearchResults:after {top: 5px;}
 
     .sod_option.custom {border-top: 1px solid #cccccc;padding-top: 15px;}
     .sod_option.custom:before{display: none !important;}
