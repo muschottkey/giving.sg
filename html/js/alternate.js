@@ -247,10 +247,10 @@ $(function(){
      });
 
     $('.select-giving-autofit').selectOrDie({
-         onChange: function(){
+        onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
-            var dynamic_width = 70 + 15*length;
+            var dynamic_width = 15*length;
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -423,6 +423,12 @@ $(function(){
         $('#causes-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
         $('#causes-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
     })
+    
+    $('#close-more-camp').click(function(){
+        $('#select-more-camp').modalPopover('hide');
+        $('#camp-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
+        $('#camp-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
+    })
 
     $('.refine-inputs input[type=checkbox]').prop('checked',true);
     $('#ref_allcauses').change(function(){
@@ -442,7 +448,7 @@ $(function(){
         var parent = $(this).attr('id');
         var content = $(this).next('label').text(); 
         if(checked == true){
-            $('#causes-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >'+content+'</span>');
+            $('#causes-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >' + content + '</span>');
             if(parent != "ref_allcauses"){
                 $("#ref_allcauses").prop('checked',false);
                 $('#causes-holder').find('span[data-parent=ref_allcauses]').addClass('to-hide');
@@ -452,6 +458,22 @@ $(function(){
             $('#causes-holder').find('span[data-parent='+parent+']').addClass('to-hide');
         }
     })
+    $('#select-more-camp').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        if(checked == true){
+            $('#camp-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >'+content+'</span>');
+            if(parent != "ref_allcauses"){
+                $("#ref_allcamp").prop('checked',false);
+                $('#camp-holder').find('span[data-parent=ref_allcamp]').addClass('to-hide');
+            }
+        }
+        else{
+            $('#camp-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+        }
+    })
+
 
     $('.cpn-holder .btn-close').click(function(e){e.preventDefault();})
 
@@ -467,6 +489,15 @@ $(function(){
         });
 
         $('#select-more-causes').modalPopover('show')
+    })
+    
+    $('#camp-holder').on('click', '.checkbox-clone',function(){
+        $('#select-more-camp').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+
+        $('#select-more-camp').modalPopover('show')
     })
     
 

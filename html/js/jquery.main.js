@@ -1,6 +1,5 @@
 function MainTabs(){
 	var item_click = $('.tab-nav-area a');
-	
 	item_click.click(function(){
 		var id_ = $(this).attr('href');
 		
