@@ -325,13 +325,15 @@ $(function(){
 
     function createMobSlider(winWidth){
         //initialize campaign suggestions swiper when document ready  
-        if(winWidth < 768){
-            var causesSwiper = new Swiper ('#causes-mobile', {
-                slidesPerView:'auto',
-                spaceBetween:15,
-                mode: 'horizontal',
-                freeMode: true
-            })  
+        if(winWidth < 767){
+            $('#causes-mobile').each(function(){
+                new Swiper($(this), {
+                    slidesPerView:'auto',
+                    spaceBetween:'15',
+                    mode: 'horizontal',
+                    freeMode: true
+                });
+            });
         }
     }
 

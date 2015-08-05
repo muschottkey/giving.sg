@@ -89,6 +89,7 @@ hr.m5{margin: 5px 0;}
 .bg-green{ background-color: #5cb85c; color: #FFF; }
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
+    .bg-darkgrey h3 { color:#FFF; }
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round {border-radius: 6px;}
@@ -384,13 +385,15 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 /* Causes selection */
-#causes-wrapper{max-width:645px; margin: 40px auto; }
+#causes-wrapper { max-width:750px; margin: 40px auto; }
+    .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
-.cause-box.span4 { margin-bottom: 50px; }
     .cause-box { text-decoration: none; }
-    #causes-mobile .cause-box.span4 {
-        width:28% !important; margin-left:4% !important; margin-bottom: 20px !important; 
-    }
+#causes-wrapper .cause-box { 
+    width:22%; float:left; margin:0 1.2% 20px; border: solid 1px #d3d3d3; 
+    border-radius: 8px;
+}   
+    #causes-wrapper .cause-box.span4 { width:30.5%; margin-bottom: 50px; }
 .cause-box input[type=checkbox] { display: none; }
 .cause-box input[type=checkbox] + label, .cause-box img {
   background: #f9f9f9; height: 100px; width: auto; display: block;
@@ -398,18 +401,19 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
   border-top-right-radius: 8px;
   position: relative;
   transition: all 0.4s;
-  border: solid 1px #d3d3d3;
   box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
 }
+.cause-box a { text-decoration: none; }
 .cause-box h4 {
     display:block; background:#ffffff; height:40px; line-height:40px; font-size: 0.8em; 
     border: solid 1px #d3d3d3; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
-    text-decoration: none; margin: 0;
+    margin: 0;
 }
 .cause-box input[type=checkbox] + label:before {
     content: "Adults"; display: block; background: #FFF; position: absolute;
     width: 100%;height: 40px; font-size: 0.8em; line-height: 2.8em;
     bottom: -41px; left: -1px; border: solid 1px #d3d3d3; border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 .cause-box input[type=checkbox]:checked + label:after{
     content: "\f058";
@@ -556,7 +560,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
-.social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after { 
+.social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after { 
     content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
@@ -1439,9 +1443,6 @@ form.text-left input:not([type="checkbox"]){
 
 
 
-
-
-
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -1481,6 +1482,8 @@ form.text-left input:not([type="checkbox"]){
     .collapse.visible-desktops{height: auto;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
+    #causes-wrapper { max-width:600px; }
+    #causes-wrapper .cause-box { width:28%; margin-right:2%; margin-left:2%; }
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
@@ -1770,7 +1773,11 @@ form.text-left input:not([type="checkbox"]){
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper{margin-top: 10px;}
+    #causes-wrapper { margin-top:10px; margin-left:15px;  }
+    #causes-mobile .swiper-wrapper{
+        display: -webkit-box; display: -moz-box; display: -ms-flexbox;
+        display: -webkit-flex; display: flex;
+    }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
     .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
     .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
@@ -1889,22 +1896,10 @@ form.text-left input:not([type="checkbox"]){
     .cause-box.mobile-block.span4, #causes-mobile .cause-box.span4 {
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
-
-    #causes-mobile .swiper-wrapper{
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-    }
-
-    #causes-mobile{
-        overflow: hidden;
-    }
-    .cause-box.block-mobile input[type=checkbox] + label{
+    #causes-mobile { overflow: hidden; }
+    #causes-wrapper .cause-box, .cause-box.block-mobile input[type=checkbox] + label{
         width: 140px;
     }
-
     #causes-mobile .span12.clearfix.swiper-slide{
         width: 600px;
     }
@@ -1920,8 +1915,9 @@ form.text-left input:not([type="checkbox"]){
 
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
-    h3.landing{font-size: 1em;color: #ffffff;}
-    .bg-lightgrey h3.landing{font-size: 1.5em;color: #333;}
+    h3.landing{ font-size:1.0625em; color:#FFF; padding:20px 20px 10px; }
+        .bg-lightgrey h3.landing{ font-size: 1.5em ;color: #333; }
+
     .span12.bg-lightgrey{padding-bottom:40px;}
     .wrapper-925.inner .title-search .span6{ float:none; width:auto;  }
     .tab-section .cpn-suggestions { transform:none; display:block; padding:0; max-height:100%; height:auto; }
