@@ -1102,7 +1102,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .landing-cpn-slider-wrapper .slider-navigation{
     position: absolute;
-    bottom: 10px;
+    bottom: 0;
     width: 100%;
 }
 .landing-cpn-slider-wrapper .slider-navigation .navigation-inner{
