@@ -325,16 +325,6 @@ $(function(){
 
     function createMobSlider(winWidth){
         //initialize campaign suggestions swiper when document ready  
-<<<<<<< HEAD
-        if(winWidth < 768){
-            console.log(winWidth)
-            var causesSwiper = new Swiper ('#causes-mobile', {
-                slidesPerView:'auto',
-                spaceBetween:15,
-                mode: 'horizontal',
-                freeMode: true
-            })  
-=======
         if(winWidth < 767){
             $('#causes-mobile').each(function(){
                 new Swiper($(this), {
@@ -344,7 +334,6 @@ $(function(){
                     freeMode: true
                 });
             });
->>>>>>> origin/setupDtn
         }
     }
 
@@ -429,8 +418,6 @@ $(function(){
             }
         })
     })
-<<<<<<< HEAD
-=======
 
     /* refine search inputs */
     $('#close-more-causes').click(function(){
@@ -491,61 +478,7 @@ $(function(){
 
 
     $('.cpn-holder .btn-close').click(function(e){e.preventDefault();})
->>>>>>> origin/setupDtn
 
-    /* refine search inputs */
-    $('#close-more-causes').click(function(){
-        $('#select-more-causes').modalPopover('hide');
-        $('#causes-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
-        $('#causes-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
-    })
-
-    $('.refine-inputs input[type=checkbox]').prop('checked',true);
-    $('#ref_allcauses').change(function(){
-        var checked = $(this).prop('checked');
-        if(checked == true){
-            $(this).closest('.span12').find('input[type=checkbox]:checked').prop("checked",false);
-            $('#causes-holder').find('.checkbox-clone').addClass('to-hide');
-            $(this).prop('checked',true);
-        }
-        else{
-            $('#causes-toggle').removeClass('checked');
-        }
-    })
-
-    $('#select-more-causes').on('change','input', function(){
-        var checked = $(this).prop('checked');
-        var parent = $(this).attr('id');
-        var content = $(this).next('label').text(); 
-        if(checked == true){
-            $('#causes-holder').append('<span class="checkbox-clone checked hidden" data-parent="'+parent+'" >'+content+'</span>');
-            if(parent != "ref_allcauses"){
-                $("#ref_allcauses").prop('checked',false);
-                $('#causes-holder').find('span[data-parent=ref_allcauses]').addClass('to-hide');
-            }
-        }
-        else{
-            $('#causes-holder').find('span[data-parent='+parent+']').addClass('to-hide');
-        }
-    })
-
-    /*$('#collapse-refsearch').on('shown', function () {
-        $('#link-refine').fadeOut(400);
-    })*/
-
-    $('#causes-holder').on('click', '.checkbox-clone',function(){
-        $('#select-more-causes').modalPopover({
-            target: $(this),
-            placement: 'bottom'
-        });
-
-        $('#select-more-causes').modalPopover('show')
-    })
-    
-
-
-    /*  COPY TO CLIPBOARD     ------*/
-    var cp_client = new ZeroClipboard($("#copy-url"));
 
     /*$('#collapse-refsearch').on('shown', function () {
         $('#link-refine').fadeOut(400);

@@ -102,7 +102,6 @@ hr.m5{margin: 5px 0;}
     .navbar-fixed-top { position:fixed; }
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
-
 .footer {background: #DFDFDF;}
 .footer p {text-align:center;margin:0; padding:10px 0;}
 
@@ -902,7 +901,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
-
 .sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
 .sgtn-body p { font-size:.875em; color:#4A4A4A; margin:5px 0; min-height:6.7em; }
 .cpn-sgtn-item .box-r-footer{
@@ -1157,32 +1155,19 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body{border-bottom: none;}
 .search-results-wrapper .cpn-sgtn-item .box-r-footer{position: absolute;bottom:0;width: 100%;border-top: 1px solid #cccccc;}
-
 /* Refine search */
 .inline-search{ position:absolute; right:30px; top:8px; font-size: 1.2em; color:#333; cursor:pointer; }
 .refine-search .text { font-size:1.5em; padding-right:5px; }
 .refine-inputs{ margin-top:6px; margin-bottom:12px; }
 .refine-inputs input[type=checkbox] { display: none; }
+
 .refine-inputs input[type=checkbox] + label,
 #select-more-causes input[type=checkbox] + label,
  .refine-inputs .checkbox-clone {
     display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
     border:1px solid #CCC; padding:0 25px 5px 8px; margin-right:6px; position:relative;
     cursor: pointer; font:1.25em/1.4 "Lato", Arial, sans-serif;
-}
-.refine-inputs input[type=checkbox] + label:before,
-#select-more-causes input[type=checkbox] + label:before,
-.refine-inputs .checkbox-clone:before,
-.refine-inputs .checkbox-add:before{
-    content: "\f058"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
-    position: absolute; width:16px; height:16px; top:5px; right:5px; font-size:.9em;
-}
-
-.refine-inputs .checkbox-add{
-     display: inline-block; height:auto; background-color:#62c462; border-radius: 6px;
-    border:1px solid #3DC83D; width:auto; padding: 3px 6px 6px 6px; margin-right: 6px; 
-    position: relative; cursor: pointer; font-size:1.25em;width: 30px;
-}
+} 
 
 .refine-inputs .checkbox-clone{
     margin-top: 10px;
@@ -1229,7 +1214,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     display: inline-block;
     margin-bottom: 4px;
 }
-#select-more-camp .popover-content ul,
+#select-more-camp .popover-content ul ,
 #select-more-causes .popover-content ul {
     margin: 0 30px 10px 15px;
 }
@@ -1238,10 +1223,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #select-more-causes input[type=checkbox]{
     display: none;
 }
-
-/*#select-more-causes input[type=checkbox]:checked + label{
-    color:  #62c462;
-}*/
 
 #select-more-camp,
 #select-more-causes{
@@ -1254,6 +1235,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     width: 330px;
     max-width: 400px;
 }
+
 
 #refine-search-form table tr{border-top: 1px solid #cccccc;padding-top: 10px;}
 #refine-search-form table tr:last-child{border-bottom: 1px solid #cccccc;}
@@ -1377,7 +1359,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 ***************************************************************************/
 #sidebar{
     width: 315px;
-    position: fixed;
+    position: absolute;
     left:0;
     background-color: #999999;
     border-right: 1px solid #cccccc;
@@ -1458,23 +1440,6 @@ form.text-left input:not([type="checkbox"]){
 .dashboard .main-content > .row-fluid{
     padding: 0 0px; 
 }
-
-.dashboard{
-    margin-left: 315px;
-}
-
-.dashboard .control-group{margin-top:1em;}
-.dashboard .section-title{font-weight: 800;font-size: 1.3em;text-align: left;}
-.section-bordered-bottom{
-    border-bottom:1px solid #cccccc;
-}
-form.text-left input:not([type="checkbox"]){
-    text-align: left;
-    color: #989898;
-}
-
-
-
 
 
 
@@ -1948,71 +1913,6 @@ form.text-left input:not([type="checkbox"]){
 
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
-<<<<<<< HEAD
-    h3.landing{font-size: 1em;color: #ffffff;}
-    .bg-lightgrey h3.landing{font-size: 1.5em;color: #333;}
-    .span12.bg-lightgrey{padding-bottom:40px;}
-    .wrapper-925.inner .title-search .span6{
-        float:none;
-        width:auto;
-    }
-    .tab-section .cpn-wrapper .swiper-scrollbar{display:none;}
-    .tab-section .swiper-wrapper{
-        transform:none !important;
-        display:block;
-        padding:0;
-        max-height:none;
-    }
-    .tab-section .cpn-sgtn-item .sgtn-body{
-        border:0;
-    }
-    .tab-section .sgtn-img{display:none;}
-    .tab-section .campaign-stats .causes{text-align:center;}
-    .tab-section .campaign-stats .btn{
-        display:block;
-        width:100%;
-    }
-    .tab-section .border-round .centered{padding:0;}
-    .tab-section .causes li{margin:0 12px 10px 0;}
-    .tab-section .sgtn-body p,
-    .tab-section .sgtn-body h5{width:auto;min-height:1px;}
-    .tab-section .sgtn-body{
-        text-align:left;
-        padding-bottom:20px;
-    }
-    .nl-field ul{
-        font-size:1.2em !important;
-    }
-    .tab-section .swiper-slide{
-        float:none;
-        border-width:0 0 1px;
-        transform:none !important;
-        width:100% !important;
-        margin-right:0 !important;
-        height:auto !important;
-        flex-shrink:none !important;
-    }
-
-    /* Search results page*/
-    .search-results-wrapper .cpn-sgtn-item { width:auto; float:none; }
-    .refine-search .text { font-size:1.1em; display:block; }
-    .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
-    .refine-search .btn-large-custom { display:block; margin:15px auto 40px; width:100%; }
-    /*refine search */
-    .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label{
-        font-size: 0.875em;
-    }
-    #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
-    #select-more-causes .popover-content{width: 220px;}
-    #select-more-causes{
-        margin-left: 100px;
-    }
-    #select-more-causes.popover.bottom .arrow {
-        top: -11px;
-        left: 50%;
-        margin-left: -100px;
-    }
-
     h3.landing{ font-size:1.0625em; color:#FFF; padding:20px 20px 10px; }
         .bg-lightgrey h3.landing{ font-size: 1.5em ;color: #333; }
 
@@ -2060,7 +1960,6 @@ form.text-left input:not([type="checkbox"]){
         left: 50%;
         margin-left: -100px;
     }
->>>>>>> origin/setupDtn
 
     /* DASHBOARD*/
     .section-bordered-bottom{border-bottom: none;}

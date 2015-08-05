@@ -1,9 +1,5 @@
 function MainTabs(){
 	var item_click = $('.tab-nav-area a');
-<<<<<<< HEAD
-	
-=======
->>>>>>> origin/setupDtn
 	item_click.click(function(){
 		var id_ = $(this).attr('href');
 		
