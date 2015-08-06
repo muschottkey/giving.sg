@@ -730,6 +730,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     box-shadow: none;
 }
 
+.load-all-box {height:509px; background:#f9f9f9;}
+.load-all-results {height:16px; margin:100% 0;}
+
 .more-days.inline h4{
     display: inline-block;
 }
