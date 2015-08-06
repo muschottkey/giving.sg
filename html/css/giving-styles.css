@@ -918,7 +918,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body {
-    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; background:#ffffff;
+    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; background:#ffffff; text-align:center;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
