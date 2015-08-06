@@ -45,7 +45,7 @@
 							<div class="row-fluid">
 								<div class="span6">
 									<div class="c-inner p-20 hidden-phone">
-										<form id="" class="nl-form text-left">
+										<form id="nl-form" class="nl-form text-left">
 											Showing
 											<select>
 												<option value="1" selected>all campaigns</option>
@@ -323,7 +323,7 @@
 					<div class="row-fluid">
 						<div class="span12">
 							<div class="wrapper-925">
-								<h3 class="acc-toggle landing collapsed" data-toggle="collapse" data-target="#collapse-trending">Trending</h3>
+								<h3 class="acc-toggle landing" data-toggle="collapse" data-target="#collapse-trending">Trending</h3>
 								<div class="collapse in visible-desktops" id="collapse-trending">	
 									<div class="cpn-holder">
 										<div class="cpn-wrapper swiper-container-3">
@@ -622,7 +622,7 @@
 					<div class="row-fluid">
 						<div class="span12">
 							<div class="wrapper-925">
-								<h3 class="acc-toggle landing collapsed" data-toggle="collapse" data-target="#collapse-endingsoon">Ending Soon</h3>
+								<h3 class="acc-toggle landing " data-toggle="collapse" data-target="#collapse-endingsoon">Ending Soon</h3>
 								<div class="collapse in visible-desktops" id="collapse-endingsoon">
 									<div class="cpn-holder">
 										<div class="cpn-wrapper swiper-container-3">
@@ -986,7 +986,7 @@
 
 					<div class="row-fluid">
 						<div class="span12">
-							<div class="wrapper-925 bg-darkgrey" id="causes-mobile">
+							<div class="wrapper-925 bg-darkgrey swiper-container swiper-container-4" id="causes-mobile">
 							<h3 class="text-center landing p-top30 white">Explore Campaigns by Causes</h3>
 								<div id="causes-wrapper" class="row-fluid swiper-wrapper cpn-holder p-bot30">
 									<div class="swiper-slide cause-box">
@@ -1078,9 +1078,12 @@
 	<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
 	<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
 	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modal-popover.js"></script>
 	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
-	
+	<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
 </body>
 </html>

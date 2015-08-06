@@ -294,12 +294,6 @@ $(function(){
       offset: '0%'
     });
 
-    $(window).resize(function(){
-        var winWidth = $(window).innerWidth();
-        createMobSlider(winWidth);
-        showSidebar(winWidth);
-    })
-    createMobSlider(winWidth);
 
     // Creating accordions on body resize
     $('.acc-toggle').click(function(e){
@@ -324,36 +318,41 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    function createMobSlider(winWidth){
+    function createMobSlider(){
         //initialize campaign suggestions swiper when mobile ready  
-        var mobSwiper;
+        var mobswiper;
+        var winWidth = $(window).innerWidth();
         if(winWidth < 767){
-            $('#causes-mobile').each(function(){
-                mobSwiper = new Swiper($(this), {
-                    slidesPerView:'auto',
-                    spaceBetween:'15',
-                    mode: 'horizontal',
-                    freeMode: true
-                });
+            mobswiper = new Swiper($('.swiper-container-4'), {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true,
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
             });
-            // console.log(mobSwiper);
+            // mobswiper.destroy();
         }
-        if(winWidth >= 768){
-            console.log(mobSwiper);
-            
-            if(typeof mobSwiper != 'undefined'){
-                mobSwiper.destroy();
-                mobSwiper = undefined;
 
-                $('.swiper-wrapper').removeAttr('style');
-                $('.swiper-slide').removeAttr('style');
-            }
+        if(winWidth > 767 ){
+
+           // var m = $('.swiper-container.swiper-container-4')[0].swiper;
+           // if(typeof(m) != undefined){
+           //  console.log(m);
+           //      m.destroy();
+           //      m = undefined
+           // }
+           // console.log(m);
         }
+        
     }
 
-
-    $('.swiper-container').each(function(){
-        new Swiper($(this), {
+    createMobSlider();
+   
+     var mswiper = new Swiper($('.swiper-container.swiper-auto'), {
             pagination: $(this).find('.swiper-pagination'),
             paginationClickable: $(this).find('.swiper-pagination'),
             nextButton: $(this).find('.swiper-button-next'),
@@ -364,16 +363,33 @@ $(function(){
             mode: 'horizontal',
             freeMode: true
         });
-    });
+
+     $('#donateLoggedModal').on("shown", function(){
+         $('.swiper-container').each(function(){
+            mswiper.destroy();
+            mswiper = new Swiper($(this)[0], {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true,
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
+            });
+        });
+    })
+
     $('.swiper-container-3').each(function(){
-        new Swiper($(this), {
+        new Swiper($(this)[0], {
             pagination: $(this).find('.swiper-pagination'),
             paginationClickable: $(this).find('.swiper-pagination'),
             nextButton: $(this).find('.swiper-button-next'),
             prevButton: $(this).find('.swiper-button-prev'),
             loop: true,
             scrollbar: $(this).find('.swiper-scrollbar') ,
-            scrollbarHide: true,
+            scrollbarHide: false,
             slidesPerView:"auto",
             spaceBetween:20,
             mode: 'horizontal',
@@ -391,6 +407,13 @@ $(function(){
         loop:true
     })        
     
+
+    $(window).on("resize",function(){
+        var winWidth = $(window).innerWidth();
+        createMobSlider();
+        showSidebar(winWidth);
+    })
+
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);

@@ -1917,7 +1917,7 @@ form.text-left input:not([type="checkbox"]){
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
     #causes-mobile { overflow: hidden; }
-    #causes-wrapper .cause-box,  #causes-wrapper .swdiper-slide, .cause-box.block-mobile input[type=checkbox] + label{
+    #causes-wrapper .cause-box,  #causes-wrapper .swiper-slide, .cause-box.block-mobile input[type=checkbox] + label{
         width: 140px;
     }
     #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
