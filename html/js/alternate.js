@@ -332,25 +332,20 @@ $(function(){
                 mobSwiper = new Swiper($(this), {
                     slidesPerView:'auto',
                     spaceBetween:'15',
-                    mode: 'horizontal',
                     freeMode: true
                 });
             });
-            // console.log(mobSwiper);
         }
         if(winWidth >= 768){
             console.log(mobSwiper);
-            
             if(typeof mobSwiper != 'undefined'){
                 mobSwiper.destroy();
                 mobSwiper = undefined;
-
                 $('.swiper-wrapper').removeAttr('style');
                 $('.swiper-slide').removeAttr('style');
             }
         }
     }
-
 
     $('.swiper-container').each(function(){
         new Swiper($(this), {
