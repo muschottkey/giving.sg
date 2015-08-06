@@ -262,6 +262,10 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .carousel-indicators li.active{background-color: #5bb75b;}
 .carousel .item button{margin-top: 20px;}
 
+/*NPO Detail*/
+#cpn-meta .action-link {margin-bottom:0;}
+#view-campaign div.f-holder{margin:0 auto; width:90%;}
+
 /* Make Donation page*/
 .section-page{
     text-align: center;
@@ -279,6 +283,16 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 #donateLoggedModal .sgt-avatar {margin-left:175px;}
 #donateLoggedModal .cpn-featured-status {transform: scale(1) rotate(-45deg) translate(-5px); -moz-transform: scale(1) rotate(-45deg) translate(-5px); -webkit-transform: scale(1) rotate(-45deg) translate(-5px); -o-transform: scale(1) rotate(-45deg) translate(-5px);}
+#donateLoggedModal  div.span6 {padding:1em;}
+
+#donateLoggedModal .more-days {text-align:center; height:17px;}
+#donateLoggedModal .cpn-featured-status {text-align: center; height: 9px; left: -45px; line-height: 9px; top: 11px; font-size: 10px;}
+#donateLoggedModal .summary-wrapper {margin:20px 0 15px 0;}
+#donateLoggedModal .black {margin: 10px 0 -5px 0;}
+#donateLoggedModal .tax-status {padding:5px;}
+#donateLoggedModal .sgtn-body img {margin-left:175px;}
+.cpn-sgtn-item li {text-align:center;}
+#donateLoggedModal .modal-body {max-width:80%;}
 
 /* giving custom selects */
 
@@ -368,7 +382,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 /* Gift Box */
 .gift-box{font-size: 8em !important;position: relative;}
-.gift-box span.badge{position: absolute;top: 20%;right: -20%;padding: 12px;width: 15px;}
+.gift-box img {width:128px;}
+.gift-box span.badge{position: absolute;top: 35%;right: 22%;padding: 12px;width: 15px;}
 
 /* set up donation */
 .focused{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
@@ -720,6 +735,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     box-shadow: none;
 }
 
+.load-all-box {height:509px; background:#f9f9f9;}
+.load-all-results {height:16px; margin:100% 0;}
+.load-all-box .action-link {margin-bottom:3px;}
+
 .more-days.inline h4{
     display: inline-block;
 }
@@ -899,7 +918,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body {
-    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px;
+    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; background:#ffffff; text-align:center;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
@@ -923,16 +942,18 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     position: absolute;
     width: 130px;
     padding: 5px;
-    top: 20px;
-    left: -30px;
-    font-size: 12px;
-    line-height: 18px;
+    top: 11px;
+    left: -48px;
+    font-size: 10px;
+    line-height: 9px;
     background-color:#ffffff; 
     -moz-transform: scale(1) rotate(-45deg) translate(0px);
     -webkit-transform: scale(1) rotate(-45deg) translate(0px);
     -o-transform: scale(1) rotate(-45deg) translate(0px);
     transform: scale(1) rotate(-45deg) translate(0px);
     box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.2);
+	height:9px;
+	text-align:center;
 }
 
 
@@ -1495,7 +1516,8 @@ form.text-left input:not([type="checkbox"]){
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     #causes-wrapper { max-width:600px; }
-    #causes-wrapper .cause-box { width:28%; margin-right:2%; margin-left:2%; }
+    #causes-wrapper .cause-box { width:28%; margin-right:2.5%; margin-left: 2.5%; }
+    #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
@@ -1517,6 +1539,8 @@ form.text-left input:not([type="checkbox"]){
     .row-fluid.breakpoint-override .span8 { width:65.74585635359117% !important; margin:0; padding:0; }
     .row-fluid.breakpoint-override .span4 { width:31.491712707182323% !important; margin:0; padding:0; }
     aside.profile-nav.mobile-fallback{margin-left: 60px;}
+	
+	.gift-box span.badge{right: 28%;}
 }
 
 @media (max-width: 979px) {
@@ -1722,7 +1746,7 @@ form.text-left input:not([type="checkbox"]){
     #sidebar.hide{display: none;}
     .panel-title{margin-top: 20px !important;}
 
-
+	#donateLoggedModal .modal-body .modalwrapper .span6 div.box {padding-bottom:10px !important;}
 
 }
 
@@ -2011,6 +2035,7 @@ form.text-left input:not([type="checkbox"]){
     .qk-bkt-li ul{width:300px;}
     .fr-widget-wrapper.closed {  max-height: 500px; }
     .donors-area .dr-img { margin-left:1.2%; margin-right:1.2%;  }
+	.gift-box span.badge{right: -10%;}
 }    
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;}
