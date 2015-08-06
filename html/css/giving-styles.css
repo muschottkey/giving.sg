@@ -1495,7 +1495,8 @@ form.text-left input:not([type="checkbox"]){
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     #causes-wrapper { max-width:600px; }
-    #causes-wrapper .cause-box { width:28%; margin-right:2%; margin-left:2%; }
+    #causes-wrapper .cause-box { width:28%; margin-right:2.5%; margin-left: 2.5%; }
+    #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
