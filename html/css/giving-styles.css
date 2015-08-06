@@ -279,6 +279,16 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 #donateLoggedModal .sgt-avatar {margin-left:175px;}
 #donateLoggedModal .cpn-featured-status {transform: scale(1) rotate(-45deg) translate(-5px); -moz-transform: scale(1) rotate(-45deg) translate(-5px); -webkit-transform: scale(1) rotate(-45deg) translate(-5px); -o-transform: scale(1) rotate(-45deg) translate(-5px);}
+#donateLoggedModal  div.span6 {padding:1em;}
+
+#donateLoggedModal .more-days {text-align:center; height:17px;}
+#donateLoggedModal .cpn-featured-status {text-align: center; height: 9px; left: -48px; line-height: 9px; top: 11px; font-size: 10px;}
+#donateLoggedModal .summary-wrapper {margin:20px 0 15px 0;}
+#donateLoggedModal .black {margin: 10px 0 -5px 0;}
+#donateLoggedModal .tax-status {padding:5px;}
+#donateLoggedModal .sgtn-body img {margin-left:175px;}
+.cpn-sgtn-item li {text-align:center;}
+#donateLoggedModal .modal-body {max-width:80%;}
 
 /* giving custom selects */
 
@@ -899,7 +909,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body {
-    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px;
+    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; background:#ffffff;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body h5 { min-height:4em; width:80%; margin:10px auto 0; line-height:1.4em; }
@@ -1723,7 +1733,7 @@ form.text-left input:not([type="checkbox"]){
     #sidebar.hide{display: none;}
     .panel-title{margin-top: 20px !important;}
 
-
+	#donateLoggedModal .modal-body .modalwrapper .span6 div.box {padding-bottom:10px !important;}
 
 }
 
