@@ -247,10 +247,11 @@ $(function(){
      });
 
     $('.select-giving-autofit').selectOrDie({
+
         onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
-            var dynamic_width = 15*length;
+            var dynamic_width = 30 + 15*length;
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -548,8 +549,6 @@ $(function(){
     /* Navigation Menu Toggle */
     $('.nav-menu-toggle').click(function(e){
         e.preventDefault();
-        var happening =  $('#sidebar').on("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend");
-        console.log(happening);
             if(!$(this).hasClass('active')){
                 $('#sidebar').removeClass('hide').addClass('animated slideInLeft show');
                 $(this).addClass('active');  
@@ -579,6 +578,18 @@ $(function(){
             }
         }
     }
+
+
+    $(document).click(function(e){
+        if($(e.target).is('.row-fluid') ){
+            console.log('outside clicked');
+            if ($('#sidebar').hasClass('show')) {
+                $('#sidebar').addClass('animated slideOutLeft');
+                $('.nav-menu-toggle').removeClass('active');  
+            }
+
+        }
+    })
 
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS

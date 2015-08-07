@@ -1982,7 +1982,7 @@ form.text-left input:not([type="checkbox"]){
     .search-results-wrapper .cpn-sgtn-item { width:auto; float:none; }
     .refine-search .text { font-size:1.1em; display:block; }
     .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
-    .refine-search .btn-large-custom { display:block; margin:15px auto 0px; width:100%; }
+    .refine-search .btn-large-custom { display:block; margin:15px auto 15px; width:100%; }
 
     /* Search results page*/
 
