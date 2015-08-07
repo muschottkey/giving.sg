@@ -27,7 +27,7 @@ $.fn.editableTableWidget = function (options) {
 						.css(active.css(activeOptions.cloneProperties))
 						.focus();
 					if (select) {
-						editor.select();
+					editor.select();
 					}
 				}
 			},
@@ -118,7 +118,7 @@ $.fn.editableTableWidget = function (options) {
 		});
 
 		$('.edit-table').on('click keypress dblclick', function(){
-			active = $(this).parent().prev('td');
+			active = $(this).closest('td').prev('td');
 				if (active.length && active.attr('data-function')=="editable") {
 					editor.val(parseInt(active.text().replace(/[^0-9\.]+/g,"")))
 						.removeClass('error')
