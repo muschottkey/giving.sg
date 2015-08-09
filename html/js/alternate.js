@@ -134,16 +134,6 @@ $(function(){
     $('#btnDonate').click(function(){
         $('#donateModal').modal();
     })
-
-    $('#selectAmount').selectOrDie({
-        prefix: "DOLLARS",
-        onChange: function(){
-            var amtvalue = $(this).val();
-            var length = amtvalue.length - 2;
-            var dynamic_width = 160 + 15*length;
-            $('#selAmount').css('width', dynamic_width);
-        }
-    })
     $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     
     $('.sod_list').on('change','.customAmt',function(){
@@ -154,8 +144,6 @@ $(function(){
         $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
         $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     });
-
-    $('.select-giving').selectOrDie();
 
     $('#donateLoggedModal').modal('show');
 
@@ -246,12 +234,25 @@ $(function(){
         }
      });
 
-    $('.select-giving-autofit').selectOrDie({
 
+
+    $('.select-giving').selectOrDie();
+
+    $('#selectAmount').selectOrDie({
+        prefix: "DOLLARS",
         onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
-            var dynamic_width = 30 + 15*length;
+            var dynamic_width = 160 + 15*length;
+            $('#selAmount').css('width', dynamic_width);
+        }
+    })
+
+    $('.select-giving-autofit').selectOrDie({
+        onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length;
+            var dynamic_width = 14*length;
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -261,7 +262,7 @@ $(function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
             if(length >= 8){
-                var dynamic_width = 15*length;
+                var dynamic_width = 13*length;
             }
             else{
                 var dynamic_width = 30 + 15*length;
