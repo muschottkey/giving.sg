@@ -583,25 +583,46 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 /*       GIFT BASKET       */
 #gf-bkt-wrapper{margin-bottom: 0px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
-.gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px;}
+.gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px; width:100%;}
 .gf-bkt thead tr td{font-size: 0.875em;}
 .gf-bkt tr{border-top:0px solid #333;border-left:1px solid #333;border-rigt:1px solid #333;}
 .gf-bkt tr td{border-right:1px solid #DDD;text-align: center;font-size: 0.875em;vertical-align: middle;}
-.gf-bkt tr td i{color:#BABABA;display: block;margin-bottom: 1px;}
+.gf-bkt .check-col{width:20px !important;}
+.edit-pencil-area .fa{color:#bababa;}
+.delete-all-area{
+    display:none; text-align:left; padding:0 0 0 12px;
+}
+.delete-all-area a{
+    color:#333;  text-decoration:none; font-size:14px;
+    line-height:22px; text-transform:capitalize;
+}
+.delete-all-area a .fa{font-size:18px;margin:0 4px 0 0;}
+.gf-bkt tr.active td{background:#fff8e1;}
+.delete-all-area .check,
+.gf-bkt .check-col .check{
+    display:block; width:17px; height:13px; overflow:hidden; margin:0 auto;
+    background:url(../images/bg-checkbox.png) no-repeat;
+}
+.delete-all-area .check{float:left;}
+.gf-bkt .edit-box{display:none;}
+.delete-all-area .check.active,
+.gf-bkt .check-col .check.active{background-position:0 -20px;}
+.gf-bkt tr td i{color:#BABABA;display: block;margin-bottom:4px;}
 .gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;right:70px;}
 .gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#5bb75b;}
 .gf-bkt tr td.warning,.gf-bkt tr td .tax-statement.warning,.gf-bkt tr td.warning i {color:#faa732;}
 .gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#49afcd;}
 .gf-bkt tr td:last-child{border-right:none;}
-.gf-bkt tbody tr td:first-child{width: 49%;height:100px;text-align: left;padding:10px 15px;}
-.gf-bkt tbody tr td:nth-child(2) {width: 20%;font-size: 0.80em;line-height: 1.3em;}
-.gf-bkt tbody tr td:nth-child(2) i {font-size: 1.85em;}
+.gf-bkt tbody tr td:nth-child(2) {width: 49%;height:100px;text-align: left;padding:10px 15px;}
+.gf-bkt tbody tr td:nth-child(3) {width: 20%;font-size: 0.80em;line-height: 1.3em;}
+.gf-bkt tbody tr td:nth-child(3) i {font-size: 1.85em;}
+
 .gf-bkt tbody tr.summary {font-weight: 800;}
 .gf-bkt tbody tr.summary a{color: #333;text-decoration: none;}
 .gf-bkt tbody tr.summary td:first-child{height: 60px;font-weight:500;}
 .gf-bkt tbody tr.summary td {font-weight: 800;}
 .gf-bkt tbody tr.summary i {color:#333;display: inline-block;}
-.gf-bkt tbody tr td i.edit-table {padding: 30px 5px;}
+.gf-bkt tbody tr td i.edit-table {padding: 7px 0;}
 .gf-bkt tbody tr.visible-phone.summary td {text-align: center;}
 .gf-bkt tbody tr td span.tax-statement{display: block;margin-top: 20px;}
 #gf-bkt-login{max-width: 350px;margin-left: auto;margin-right: auto;}
@@ -1474,6 +1495,7 @@ form.text-left input:not([type="checkbox"]){
     padding:10px 20px 10px;
     display: none;
 }
+.phone-box{display:none;}
 
 
 
@@ -1867,18 +1889,24 @@ form.text-left input:not([type="checkbox"]){
     #user-about-links input{width: 64% !important;}
     #save-actions .btn {width: 47%;}
     .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
-    .gf-bkt tbody tr td:first-child{height: 130px; width:75%;}
+    .gf-bkt tbody tr td:first-child{height: 130px;}
+    .gf-bkt tbody tr td:nth-child(2) {width:65%;}
         .gf-bkt tr td:first-child { width:75%;}
     .gf-bkt tbody tr td span.tax-statement{display: block !important;}
     .gf-bkt tr td { position:relative; width:60px; }
-    .gf-bkt tr td i.visible-phone{
-        padding: 10px 20px !important;
+    .gf-bkt tr td .phone-box{ /* .gf-bkt tr td i.visible-phone*/
+        display:block;
+        padding: 10px !important;
         right: 0;
         bottom: 0;
         border: 1px solid #ddd;
         border-bottom-width: 0;
         border-right-width: 0;
+        position:absolute;
+        bottom:0;
+        right:0;
     }
+    .gf-bkt tr td .phone-box .edit-box i{display:inline-block;padding:0 5px;}
     #dtn-impact-s .box.reset{border: none;margin-top: 0;}
     #dtn-about-us-wrapper{padding:0 0 30px 0;}
     .row-fluid .link-box {padding: 15px 30px !important;}
@@ -1942,7 +1970,8 @@ form.text-left input:not([type="checkbox"]){
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
     #causes-mobile { overflow: hidden; }
-    #causes-wrapper .cause-box,  #causes-wrapper .swiper-slide, .cause-box.block-mobile input[type=checkbox] + label{
+    #causes-wrapper .cause-box,  #causes-wrapper .swdiper-slide, 
+        .cause-box.block-mobile input[type=checkbox] + label{
         width: 140px;
     }
     #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
@@ -1983,7 +2012,7 @@ form.text-left input:not([type="checkbox"]){
     .search-results-wrapper .cpn-sgtn-item { width:auto; float:none; }
     .refine-search .text { font-size:1.1em; display:block; }
     .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
-    .refine-search .btn-large-custom { display:block; margin:15px auto 15px; width:100%; }
+    .refine-search .btn-large-custom { display:block; margin:15px auto 0px; width:100%; }
 
     /* Search results page*/
 
@@ -2011,8 +2040,22 @@ form.text-left input:not([type="checkbox"]){
     aside.profile-nav.mobile-fallback{margin-left: -10px;}
     .panel-title{display: none;}
 
-
-
+    .delete-all-area{
+        position:fixed;
+        bottom:0;
+        left:0;
+        background:#fff;
+        display:block;
+        padding:15px 45px;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        width:100%;
+        z-index:10000;
+        overflow:hidden;
+        border-top:1px solid #ccc;
+    }
+    .delete-all-area a{float:right;}
+    
 	/*from @320 RICH*/
 	#user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
 	h4 {text-align:center !important;}

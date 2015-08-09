@@ -13,8 +13,71 @@ function MainTabs(){
 	});
 }
 
+$(window).resize(function(){
+	TableCheck();
+});
+
+function TableCheck(){
+	if($(window).width() < 370){
+		if($('.table.gf-bkt').length){
+			$('.table.gf-bkt').find('.check-col .check').addClass('active');
+			$('.table.gf-bkt').find('tbody > tr').addClass('active');
+		}
+	}
+}
+
 $(function(){
 	MainTabs();
+	TableCheck();
+	$('.check:not(.main)').click(function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+			$(this).closest('tr').addClass('active');
+		}
+		else{
+			$(this).removeClass('active');
+			$(this).closest('tr').removeClass('active');
+		}
+	});
+	
+	$('.check.main:not(.main-mobile)').click(function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+			$(this).closest('table').find('tbody > tr').addClass('active');
+			$(this).closest('table').find('tbody > tr .check').addClass('active');
+			$('.delete-all-area').show();
+		}
+		else{
+			$(this).removeClass('active');
+			$(this).closest('table').find('tbody > tr').removeClass('active');
+			$(this).closest('table').find('tbody > tr .check').removeClass('active');
+			$('.delete-all-area').hide();
+		}
+	});
+	
+	$('.check.main-mobile').click(function(){
+		if(!$(this).hasClass('active')){
+			$(this).addClass('active');
+			$(this).closest('.p-section').find('table tbody > tr').addClass('active');
+			$(this).closest('.p-section').find('table tbody > tr .check').addClass('active');
+			$(this).closest('.delete-all-area').find('.delete').css('visibility', 'visible');
+		}
+		else{
+			$(this).removeClass('active');
+			$(this).closest('.p-section').find('table tbody > tr').removeClass('active');
+			$(this).closest('.p-section').find('table tbody > tr .check').removeClass('active');
+			$(this).closest('.delete-all-area').find('.delete').css('visibility', 'hidden');
+		}
+	});
+	
+	$('.edit-pencil-area .fa').click(function(){
+		$(this).closest('td').find('.edit-box').show();
+		$(this).closest('td').find('.edit-pencil-area').hide();
+	});
+	
+	$('.edit-box .delete-row').click(function(){
+		$(this).closest('tr').remove();
+	});
 	$('.accordion-title').click(function(){
 		if(!$(this).hasClass('active')){
 			$(this).addClass('active');
