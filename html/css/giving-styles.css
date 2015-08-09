@@ -920,11 +920,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-wrapper { 
     position: relative;
     display: block;
-    /*overflow: hidden;*/
     overflow: visible;
     margin: 0;
     padding: 0;
 }
+.swiper-auto { overflow: hidden; }
 .cpn-suggestions{
     height:510px; max-height:510px; position:relative; top:0; left:0; display:block; padding:0 10px;
 }

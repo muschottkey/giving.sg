@@ -252,7 +252,13 @@ $(function(){
         onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length;
-            var dynamic_width = 14*length;
+            if(length >= 8){
+                var dynamic_width = 14*length;
+            }
+            else{
+                length = length + 2;
+                var dynamic_width = 30 + 15*length;
+            }
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -265,6 +271,7 @@ $(function(){
                 var dynamic_width = 13*length;
             }
             else{
+                length = length + 2;
                 var dynamic_width = 30 + 15*length;
             }
             $(this).closest('.sod_select').css('width', dynamic_width);
@@ -354,24 +361,11 @@ $(function(){
         }
         
     }
-
     createMobSlider();
-   
-     var mswiper = new Swiper($('.swiper-container.swiper-auto'), {
-            pagination: $(this).find('.swiper-pagination'),
-            paginationClickable: $(this).find('.swiper-pagination'),
-            nextButton: $(this).find('.swiper-button-next'),
-            prevButton: $(this).find('.swiper-button-prev'),
-            loop: true,
-            slidesPerView:'auto',
-            spaceBetween:15,
-            mode: 'horizontal',
-            freeMode: true
-        });
 
-     $('#donateLoggedModal').on("shown", function(){
-         $('.swiper-container').each(function(){
-            // mswiper.destroy();
+    /* FOR MODALS */
+    $('.modal').on("shown", function(){ 
+         $('.swiper-auto').each(function(){
             mswiper = new Swiper($(this)[0], {
                 pagination: $(this).find('.swiper-pagination'),
                 paginationClickable: $(this).find('.swiper-pagination'),
@@ -386,6 +380,22 @@ $(function(){
         });
     })
 
+    /* For normal swiper */
+    $('.swiper-auto').each(function(){
+        new Swiper($(this)[0], {
+            pagination: $(this).find('.swiper-pagination'),
+            paginationClickable: $(this).find('.swiper-pagination'),
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
+            loop: true,
+            slidesPerView:'auto',
+            spaceBetween:15,
+            mode: 'horizontal',
+            freeMode: true
+        });
+    });
+
+    /* For swiper with scrollbars */
     $('.swiper-container-3').each(function(){
         new Swiper($(this)[0], {
             pagination: $(this).find('.swiper-pagination'),
@@ -402,7 +412,7 @@ $(function(){
         });
     });
 
-     //initialize Campaign Landing swiper when document ready  
+     // Initiate swiper for Carousel when document ready  
     var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
         pagination: '.swiper-pagination',
         sliderPerView: 1,
