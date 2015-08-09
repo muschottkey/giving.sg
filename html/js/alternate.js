@@ -134,16 +134,6 @@ $(function(){
     $('#btnDonate').click(function(){
         $('#donateModal').modal();
     })
-
-    $('#selectAmount').selectOrDie({
-        prefix: "DOLLARS",
-        onChange: function(){
-            var amtvalue = $(this).val();
-            var length = amtvalue.length - 2;
-            var dynamic_width = 160 + 15*length;
-            $('#selAmount').css('width', dynamic_width);
-        }
-    })
     $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     
     $('.sod_list').on('change','.customAmt',function(){
@@ -154,8 +144,6 @@ $(function(){
         $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
         $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
     });
-
-    $('.select-giving').selectOrDie();
 
     $('#donateLoggedModal').modal('show');
 
@@ -246,11 +234,31 @@ $(function(){
         }
      });
 
-    $('.select-giving-autofit').selectOrDie({
+
+
+    $('.select-giving').selectOrDie();
+
+    $('#selectAmount').selectOrDie({
+        prefix: "DOLLARS",
         onChange: function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
-            var dynamic_width = 15*length;
+            var dynamic_width = 160 + 15*length;
+            $('#selAmount').css('width', dynamic_width);
+        }
+    })
+
+    $('.select-giving-autofit').selectOrDie({
+        onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length;
+            if(length >= 8){
+                var dynamic_width = 14*length;
+            }
+            else{
+                length = length + 2;
+                var dynamic_width = 30 + 15*length;
+            }
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
@@ -260,14 +268,17 @@ $(function(){
             var amtvalue = $(this).val();
             var length = amtvalue.length - 2;
             if(length >= 8){
-                var dynamic_width = 15*length;
+                var dynamic_width = 13*length;
             }
             else{
+                length = length + 2;
                 var dynamic_width = 30 + 15*length;
             }
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
+
+    // $('.sod_select')
 
     var winWidth = $(window).innerWidth();
     var $things = $('.acc-section');
@@ -277,6 +288,7 @@ $(function(){
         if(winWidth > 979 ){
             $('.donation-wrapper').find('.focused').removeClass('focused');
             $(this.element).addClass('focused');
+            console.log("stuff just got focused");
         }
       }
     }, {
@@ -294,12 +306,6 @@ $(function(){
       offset: '0%'
     });
 
-    $(window).resize(function(){
-        var winWidth = $(window).innerWidth();
-        createMobSlider(winWidth);
-        showSidebar(winWidth);
-    })
-    createMobSlider(winWidth);
 
     // Creating accordions on body resize
     $('.acc-toggle').click(function(e){
@@ -324,36 +330,59 @@ $(function(){
         $('#donationAmt').modal();
     });
 
-    function createMobSlider(winWidth){
+    function createMobSlider(){
         //initialize campaign suggestions swiper when mobile ready  
-        var mobSwiper;
+        var mobswiper;
+        var winWidth = $(window).innerWidth();
         if(winWidth < 767){
-            $('#causes-mobile').each(function(){
-                mobSwiper = new Swiper($(this), {
-                    slidesPerView:'auto',
-                    spaceBetween:'15',
-                    mode: 'horizontal',
-                    freeMode: true
-                });
+            mobswiper = new Swiper($('.swiper-container-4'), {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true,
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
             });
-            // console.log(mobSwiper);
+            // mobswiper.destroy();
         }
-        if(winWidth >= 768){
-            console.log(mobSwiper);
-            
-            if(typeof mobSwiper != 'undefined'){
-                mobSwiper.destroy();
-                mobSwiper = undefined;
 
-                $('.swiper-wrapper').removeAttr('style');
-                $('.swiper-slide').removeAttr('style');
-            }
+        if(winWidth > 767 ){
+
+           // var m = $('.swiper-container.swiper-container-4')[0].swiper;
+           // if(typeof(m) != undefined){
+           //  console.log(m);
+           //      m.destroy();
+           //      m = undefined
+           // }
+           // console.log(m);
         }
+        
     }
+    createMobSlider();
 
+    /* FOR MODALS */
+    $('.modal').on("shown", function(){ 
+         $('.swiper-auto').each(function(){
+            mswiper = new Swiper($(this)[0], {
+                pagination: $(this).find('.swiper-pagination'),
+                paginationClickable: $(this).find('.swiper-pagination'),
+                nextButton: $(this).find('.swiper-button-next'),
+                prevButton: $(this).find('.swiper-button-prev'),
+                loop: true,
+                slidesPerView:'auto',
+                spaceBetween:15,
+                mode: 'horizontal',
+                freeMode: true
+            });
+        });
+    })
 
-    $('.swiper-container').each(function(){
-        new Swiper($(this), {
+    /* For normal swiper */
+    $('.swiper-auto').each(function(){
+        new Swiper($(this)[0], {
             pagination: $(this).find('.swiper-pagination'),
             paginationClickable: $(this).find('.swiper-pagination'),
             nextButton: $(this).find('.swiper-button-next'),
@@ -365,15 +394,17 @@ $(function(){
             freeMode: true
         });
     });
+
+    /* For swiper with scrollbars */
     $('.swiper-container-3').each(function(){
-        new Swiper($(this), {
+        new Swiper($(this)[0], {
             pagination: $(this).find('.swiper-pagination'),
             paginationClickable: $(this).find('.swiper-pagination'),
             nextButton: $(this).find('.swiper-button-next'),
             prevButton: $(this).find('.swiper-button-prev'),
             loop: true,
             scrollbar: $(this).find('.swiper-scrollbar') ,
-            scrollbarHide: true,
+            scrollbarHide: false,
             slidesPerView:"auto",
             spaceBetween:20,
             mode: 'horizontal',
@@ -381,7 +412,7 @@ $(function(){
         });
     });
 
-     //initialize Campaign Landing swiper when document ready  
+     // Initiate swiper for Carousel when document ready  
     var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
         pagination: '.swiper-pagination',
         sliderPerView: 1,
@@ -391,6 +422,13 @@ $(function(){
         loop:true
     })        
     
+
+    $(window).on("resize",function(){
+        var winWidth = $(window).innerWidth();
+        createMobSlider();
+        showSidebar(winWidth);
+    })
+
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
         console.log('cnahbed to '+amt);
@@ -525,8 +563,6 @@ $(function(){
     /* Navigation Menu Toggle */
     $('.nav-menu-toggle').click(function(e){
         e.preventDefault();
-        var happening =  $('#sidebar').on("webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend");
-        console.log(happening);
             if(!$(this).hasClass('active')){
                 $('#sidebar').removeClass('hide').addClass('animated slideInLeft show');
                 $(this).addClass('active');  
@@ -557,6 +593,18 @@ $(function(){
         }
     }
 
+
+    $(document).click(function(e){
+        if($(e.target).is('.row-fluid') ){
+            console.log('outside clicked');
+            if ($('#sidebar').hasClass('show')) {
+                $('#sidebar').addClass('animated slideOutLeft');
+                $('.nav-menu-toggle').removeClass('active');  
+            }
+
+        }
+    })
+
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/
@@ -566,6 +614,13 @@ $(function(){
     $('.match-height-abt-impact').matchHeight();
 
     $('.landing-cpn-slider-wrapper .swiper-slide').matchHeight();
+
+
+    $('#donateLoggedModal').on("shown",function(){
+    // $('.mk-dtn-match').matchHeight();
+        
+    })
+    
 
 })
 
