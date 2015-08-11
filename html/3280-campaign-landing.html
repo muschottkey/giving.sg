@@ -19,7 +19,7 @@
 	<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic,700italic,900italic|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Margarine|Shadows Into Light Two' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="popup-inner-page">
 	<div class="wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 	      	<div class="navbar-inner">
@@ -43,80 +43,41 @@
 								<h3 class="m-top20 p-title landing">Campaigns</h3>
 							</div>
 							<div class="row-fluid">
-								<div class="span6">
-									<div class="c-inner p-20 hidden-phone">
+								<div class="span7">
+									<div class="c-inner p-20">
 										<form id="nl-form" class="nl-form text-left">
 											Showing
 											<select>
 												<option value="1" selected>all campaigns</option>
-												<option value="2">staff Picks</option>
-												<option value="3">most popular</option>
-												<option value="4">most Recent</option>
-											</select>
-											with
-											<br/>
+												<option value="2">campaigns by member</option>
+												<option value="3">campaigns by company</option>
+												<option value="4">campaigns by NPOs</option>
+											</select> with
 											<select>
 												<option value="1" selected>any type of donations</option>
 												<option value="2">tax deductible donations only</option>
 												<option value="3">non-tax deductible donations only</option>
-											</select>
-											<br />
-											 related to
+											</select> related to
 											<select>
-												<option value="1" selected>any cause.</option>
-											 	<option value="1">environment.</option>
-											 	<option value="2">dance.</option>
-											 	<option value="3">education.</option>
-											</select>
+												<option value="1" selected>any cause</option>
+											 	<option value="1">adults</option>
+											 	<option value="2">animals</option>
+											 	<option value="3">arts &amp; heritage</option>
+											 	<option value="4">children &amp; youth</option>
+											 	<option value="5">disabled</option>
+											 	<option value="6">education</option>
+											 	<option value="7">elderly</option>
+											 	<option value="8">environment</option>
+											 	<option value="9">health</option>
+											 	<option value="10">social service</option>
+											 	<option value="11">women &amp; girls</option>
+											</select>.
 											<div class="nl-overlay"></div>
 										</form>
-
-										<button class="btn btn-success btn-large-custom btn-full-mobile square-border m-top20 pull-left">REFRESH LIST</button>
-									</div>
-									<div class="span6 visible-phone">
-										<div class="span11 centered">
-										<form id="refine-search-form" class="m-top20 m-bot20 text-left">
-											<table>
-												<tbody>
-													<tr>
-														<td width="100"><strong class="small">showing</strong></td>
-														<td>
-															<div class="refine-inputs">
-																<input type="checkbox" id="ref_allcampaigns">
-																<label for="ref_allcampaigns">all campaigns</label>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td><strong class="small">that are</strong></td>
-														<td>
-															<div class="refine-inputs">
-																<input type="checkbox" id="ref_featured">
-																<label for="ref_featured">featured</label>
-																<input type="checkbox" id="ref_trending">
-																<label for="ref_trending">trending</label>
-																<input type="checkbox" id="ref_endsoon">
-																<label for="ref_endsoon">ending soon</label>
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td><strong class="small">related to</strong></td>
-														<td>
-															<div class="refine-inputs" id="causes-holder">
-																<span class="checkbox-clone checked" data-parent="ref_allcauses" >any cause</span>
-															</div>
-														</td>
-													</tr>
-												</tbody>
-											</table>
-											<button class="btn btn-success btn-large-custom square-border btn-full-mobile m-top20 inline-block
-											">REFRESH RESULTS</button>
-										</form>
-									</div>
+										<button class="btn btn-success btn-large-custom btn-full-mobile square-border m-top20 m-bot40 pull-left">REFRESH LIST</button>
 									</div>
 								</div>
-								<div class="span5 hidden-phone">
+								<div class="span5 pull-right hidden-phone">
 									<div class="c-inner p-20">
 										<div class="border-all" style="padding:5.5em;">Image</div>
 									</div>
@@ -1182,12 +1143,76 @@
 			</div>
 		</div>
 		<footer class="footer"><p>FOOTER</p></footer>
-
 	</div>
+
+	<div class="popover" id="select-more-causes">
+    	<div class="arrow"></div>
+	    <div class="popover-content">
+	    	<div class="btn-row">
+	    		<h3>Causes</h3>
+				<button class="btn btn-small btn-success pull-right" id="close-more-causes">done</button>
+			</div>
+	    	<div class="row-fluid m-top10">
+				<div class="span12">
+					<ul>
+						<li>
+							<input type="checkbox" checked id="ref_allcauses">
+							<label for="ref_allcauses">all causes</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_adults">
+							<label for="ref_adults">adults</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_animals">
+							<label for="ref_animals">animals</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_artsnheritage">
+							<label for="ref_artsnheritage">arts & heritage</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_chnyth">
+							<label for="ref_chnyth">children & youth</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_disabled">
+							<label for="ref_disabled">disabled</label>
+						</li>
+					
+						<li>
+							<input type="checkbox" id="ref_edu">
+							<label for="ref_edu">education</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_elderly">
+							<label for="ref_elderly">elderly</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_env">
+							<label for="ref_env">environment</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_hlth">
+							<label for="ref_hlth">health</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_soc-serv">
+							<label for="ref_soc-serv">social service</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_wom&grls3">
+							<label for="ref_wom&grls3">women & girls</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+	    </div>
+	</div>
+
 	<script type="text/javascript" src="js/aui-min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<!-- <script type="text/javascript" src="js/modernizr.custom.js"></script> -->
 	<script type="text/javascript" src="js/jquery.validate.js"></script>
 	<script type="text/javascript" src="js/jquery-mobile-1.3.2.js"></script>
 	<script type="text/javascript" src="js/jquery.matchHeight.min.js"></script>
@@ -1201,8 +1226,9 @@
 	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
+	<script type="text/javascript" src="js/bootstrap-modal-popover-custom.js"></script>
 	<script>
-			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
-		</script>
+		var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+	</script>
 </body>
 </html>

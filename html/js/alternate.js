@@ -530,12 +530,6 @@ $(function(){
 
 
     $('.cpn-holder .btn-close').click(function(e){e.preventDefault();})
-
-
-    /*$('#collapse-refsearch').on('shown', function () {
-        $('#link-refine').fadeOut(400);
-    })*/
-
     $('#causes-holder').on('click', '.checkbox-clone',function(){
         $('#select-more-causes').modalPopover({
             target: $(this),
