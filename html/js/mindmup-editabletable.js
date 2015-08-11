@@ -14,7 +14,7 @@ $.fn.editableTableWidget = function (options) {
 			active,
 			showEditor = function (select) {
 				active = element.find('td:focus');
-				if(active.html().slice(1,2) == 'i'){
+				if(active.hasClass('edit-holder')){
 					active = element.find('td:focus').prev('td');
 				}
 				if (active.length && active.attr('data-function')=="editable") {
