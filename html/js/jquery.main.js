@@ -13,58 +13,66 @@ function MainTabs(){
 	});
 }
 
-$(window).resize(function(){
-	TableCheck();
-});
-
-function TableCheck(){
-	if($(window).width() < 370){
-		if($('.table.gf-bkt').length){
-			$('.table.gf-bkt').find('.check-col .check').addClass('active');
-			$('.table.gf-bkt').find('tbody > tr').addClass('active');
-		}
-	}
-}
-
 $(function(){
+	$(document).click(function(e){
+		if($(e.target).closest('.table.gf-bkt').get(0) == null){
+			$('.table.gf-bkt .edit-box').hide();
+			$('.table.gf-bkt .edit-pencil-area').show();
+		}
+	});
+	
 	MainTabs();
-	TableCheck();
+	
 	$('.check:not(.main)').click(function(){
 		if(!$(this).hasClass('active')){
 			$(this).addClass('active');
 			$(this).closest('tr').addClass('active');
+			$('.delete-all-area').show();
 		}
 		else{
 			$(this).removeClass('active');
 			$(this).closest('tr').removeClass('active');
+			if($(this).closest('tbody').find('tr.active').length == 0){
+				$('.delete-all-area').hide();
+			}
 		}
+	});
+	
+	$('.delete-all-area .delete').click(function(){
+		$(this).closest('.p-section').find('table.gf-bkt tr.active').remove();
+		$(this).closest('.delete-all-area').hide();
+		return false;
 	});
 	
 	$('.check.main:not(.main-mobile)').click(function(){
 		if(!$(this).hasClass('active')){
 			$(this).addClass('active');
-			$(this).closest('table').find('tbody > tr').addClass('active');
+			$(this).closest('table').find('tbody > tr:not(.summary)').addClass('active');
 			$(this).closest('table').find('tbody > tr .check').addClass('active');
 			$('.delete-all-area').show();
 		}
 		else{
 			$(this).removeClass('active');
-			$(this).closest('table').find('tbody > tr').removeClass('active');
+			$(this).closest('table').find('tbody > tr:not(.summary)').removeClass('active');
 			$(this).closest('table').find('tbody > tr .check').removeClass('active');
 			$('.delete-all-area').hide();
 		}
 	});
 	
+	$('.check-col .add-txt.main').click(function(){
+		$(this).closest('td').find('.check').trigger('click');
+	});
+	
 	$('.check.main-mobile').click(function(){
 		if(!$(this).hasClass('active')){
 			$(this).addClass('active');
-			$(this).closest('.p-section').find('table tbody > tr').addClass('active');
+			$(this).closest('.p-section').find('table tbody > tr:not(.summary)').addClass('active');
 			$(this).closest('.p-section').find('table tbody > tr .check').addClass('active');
 			$(this).closest('.delete-all-area').find('.delete').css('visibility', 'visible');
 		}
 		else{
 			$(this).removeClass('active');
-			$(this).closest('.p-section').find('table tbody > tr').removeClass('active');
+			$(this).closest('.p-section').find('table tbody > tr:not(.summary)').removeClass('active');
 			$(this).closest('.p-section').find('table tbody > tr .check').removeClass('active');
 			$(this).closest('.delete-all-area').find('.delete').css('visibility', 'hidden');
 		}
