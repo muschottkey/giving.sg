@@ -293,7 +293,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #donateLoggedModal .sgtn-body img {margin-left:175px;}
 .cpn-sgtn-item li {text-align:center;}
 #donateLoggedModal .modal-body {max-width:80%;}
-
+.dock-donate-btn {padding:10px 10px 0 10px; margin-top: 10px; background:#f7f7f7; border: 1px solid #cccccc; position:fixed; bottom:0; z-index:1000; visibility:hidden;}
+.dock-donate-btn button {width: 250px; float:right; margin-right:20px;}
 /* giving custom selects */
 
 #selAmount.sod_select{border-radius: 0;}
