@@ -334,6 +334,9 @@ $(function(){
         //initialize campaign suggestions swiper when mobile ready  
         var mobswiper;
         var winWidth = $(window).innerWidth();
+        $('#causes-mobile').removeClass('swiper-no-swiping');
+        $('#causes-mobile .swiper-wrapper').removeClass('reset');
+        $('#causes-mobile .swiper-slide').removeClass('reset');
         if(winWidth < 767){
             mobswiper = new Swiper($('.swiper-container-4'), {
                 pagination: $(this).find('.swiper-pagination'),
@@ -346,18 +349,14 @@ $(function(){
                 mode: 'horizontal',
                 freeMode: true
             });
-            // mobswiper.destroy();
         }
 
         if(winWidth > 767 ){
 
-           // var m = $('.swiper-container.swiper-container-4')[0].swiper;
-           // if(typeof(m) != undefined){
-           //  console.log(m);
-           //      m.destroy();
-           //      m = undefined
-           // }
-           // console.log(m);
+           $('#causes-mobile').addClass('swiper-no-swiping');
+           $('#causes-mobile .swiper-wrapper').addClass('reset');
+           $('#causes-mobile .swiper-slide').addClass('reset');
+
         }
         
     }

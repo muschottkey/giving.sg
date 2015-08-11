@@ -1194,6 +1194,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     color: #ffffff;
 }
 #causes-mobile .swiper-wrapper{display: block;}
+#causes-mobile .swiper-wrapper.reset{
+    -webkit-transform: translate3d(0px, 0px, 0px) !important;
+    transition-duration: 0ms;
+   -webkit-transition-duration: 0ms;
+    transform: translate3d(0px, 0px, 0px) !important;
+}
+#causes-mobile .swiper-slide.reset{
+    margin-right: 0 !important;
+}
 
 .swiper-container-horizontal>.swiper-scrollbar{
       bottom: -50px !important;
