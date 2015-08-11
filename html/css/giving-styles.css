@@ -1218,7 +1218,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 /* Refine search */
 .inline-search{ position:absolute; right:30px; top:8px; font-size: 1.2em; color:#333; cursor:pointer; }
 .refine-search .text { font-size:1.5em; padding-right:5px; }
-.refine-inputs{ margin-top:6px; margin-bottom:12px; }
 .refine-inputs input[type=checkbox] { display: none; }
 
 .refine-inputs input[type=checkbox] + label,
@@ -1226,41 +1225,17 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
  .refine-inputs .checkbox-clone {
     display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
     border:1px solid #CCC; padding:0 25px 5px 8px; margin-right:6px; position:relative;
-    cursor: pointer; font:1.25em/1.4 "Lato", Arial, sans-serif;
+    cursor: pointer; font:1.15em/1.4 "Lato", Arial, sans-serif; 
 } 
 
-.refine-inputs .checkbox-clone{
-    margin-top: 10px;
-}
-.refine-inputs .checkbox-clone.hidden{
-    display: none;
-}
-
-.refine-inputs .checkbox-add:before{
-    content: "\f067";
-    right: 12px;
-    top: 7px;
-    color: #ffffff;
-}
-
-.refine-inputs .checkbox-clone:before{
-    content: "\f00d";
-}
-
+.style-tag input[type=checkbox] + label:before, .style-tag .checkbox-clone:before,
 #select-more-camp input[type=checkbox] + label:before,
-.refine-inputs input[type=checkbox] + label:before,
-#select-more-causes input[type=checkbox] + label:before,
-.refine-inputs .checkbox-clone:before, .refine-inputs .checkbox-add:before{
+#select-more-causes input[type=checkbox] + label:before {
     content: "\f058"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
-    position: absolute; width:16px; height:16px; top:5px; right:5px; font-size:.9em;
+    position: absolute; width:16px; height:16px; top:5px; right:5px; font-size:.8em;
 }
-.refine-inputs .checkbox-add{
-     display: inline-block; height:auto; background-color:#62c462; border-radius: 6px;
-    border:1px solid #3DC83D; width:auto; padding: 3px 6px 6px 6px; margin-right: 6px; 
-    position: relative; cursor: pointer; font-size:1.25em;width: 30px;
-}
-.refine-inputs .checkbox-clone.hidden { display: none; }
-.refine-inputs .checkbox-add:before { content:"\f067"; right:12px; top:7px; color:#FFF; }
+    .style-tag .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
+    .refine-inputs .checkbox-clone.hidden { display: none; }
 
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
@@ -1283,17 +1258,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #select-more-causes input[type=checkbox]{
     display: none;
 }
-
-#select-more-camp,
-#select-more-causes{
-    width: auto;
-    max-width: 400px;
-}
-
-#select-more-camp .popover-content,
-#select-more-causes .popover-content{
-    width: 330px;
-    max-width: 400px;
+#select-more-camp, #select-more-causes, #select-more-camp .popover-content, #select-more-causes .popover-content{
+    width:90%; max-width:280px;
 }
 
 
@@ -2184,7 +2150,6 @@ form.text-left input:not([type="checkbox"]){
     .search-controls form .control-group{margin-top: 1em;}
     .search-results-wrapper .cpn-sgtn-item { width:auto; float:none; }
     .refine-search .text { font-size:1.1em; display:block; }
-    .refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone { font-size:.875em; }
     .refine-search .btn-large-custom { display:block; margin:15px auto 0px; width:100%; }
 
     /* Search results page*/
