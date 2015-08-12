@@ -123,61 +123,68 @@
 		</div>
 		<hr class="hidden-phone m-bot50">
 		<div class="p-section">
-			<div class="row-fluid">
-				<h4 class="black m-0">Donation Preferences</h4>
-				<div id="vw-gift-bkt-donate">
-					<form>
-						<div class="box border-round hidden-desktop">
-							<span class="m-right20 small">I would like to donate using</span>
-							<select class="select-giving">
-								<option>Credit Card</option>
-								<option>Internet Banking</option>
-							</select>
-						</div>
-					</form>
-					<table class="table gf-bkt" id="vw-gft-dtn-prefs">
-						<tbody>
-							<tr class="tr-show-desktop-only">
-								<td>I would like to donate using</td>
-								<td>
-									<select class="select-giving">
-										<option>Credit Card</option>
-										<option>Internet Banking</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="long tr-show-desktop-only" rowspan="3">For this transaction</td>
-								<td>
-									<label class="radio"  for="claim-tax">
-									  	<input type="radio" name="optionsRadios" id="claim-tax" value="option1" >
-									  	I want to claim tax deduction
-									</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label class="radio"  for="b-anon">
-									  	<input type="radio" name="optionsRadios" name="" id="b-anon" value="option2">
-									  	Be anonymous
-									</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label class="radio"  for="non-above">
-									  	<input type="radio" name="optionsRadios" name="" id="non-above" value="option3">
-									  	None of the above
-									</label>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<button class="btn btn-large-custom btn-success m-top30">DONATE NOW</button>
-					<a href="javascript:;" class="small block m-top10 underlined">I want to add more donations first</a>
+			<div class="boxed-wrapper gf">
+				<div class="row-fluid">
+					<h4 class="black m-0">Donation Preferences</h4>
+					<div id="vw-gift-bkt-donate">
+						<form>
+							<div class="box border-round hidden-desktop">
+								<span class="m-right20 small">I would like to donate using</span>
+								<select class="select-giving">
+									<option>Credit Card</option>
+									<option>Internet Banking</option>
+								</select>
+							</div>
+						</form>
+						<table class="table gf-bkt" id="vw-gft-dtn-prefs">
+							<tbody>
+								<tr class="tr-show-desktop-only">
+									<td>I would like to donate using</td>
+									<td>
+										<select class="select-giving">
+											<option>Credit Card</option>
+											<option>Internet Banking</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="hidden-desktop">
+									<td  colspan="3">
+										<span class="">For this transaction</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="long tr-show-desktop-only" rowspan="3">For this transaction</td>
+									<td>
+										<label class="radio"  for="claim-tax">
+										  	<input type="radio" name="optionsRadios" id="claim-tax" value="option1" >
+										  	I want to claim tax deduction
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="radio"  for="b-anon">
+										  	<input type="radio" name="optionsRadios" name="" id="b-anon" value="option2">
+										  	Be anonymous
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="radio"  for="non-above">
+										  	<input type="radio" name="optionsRadios" name="" id="non-above" value="option3">
+										  	None of the above
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button class="btn btn-large-custom btn-success m-top30">DONATE NOW</button>
+						<a href="javascript:;" class="small block m-top10 underlined">I want to add more donations first</a>
+					</div>
+					
 				</div>
-				
-			</div>
+			</div><!-- end of wrapper-gf-->
 		</div>
 	</div>
 	<script type="text/javascript" src="js/aui-min.js"></script>

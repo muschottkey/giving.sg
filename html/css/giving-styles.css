@@ -131,6 +131,7 @@ hr.m5{margin: 5px 0;}
 .modal.fade.in { display:block; }
 
 .modal-header { border-bottom: none; }
+.modal-header .close{  position: absolute;right: 20px;}
 .modal-body { max-width:800px; }
 .modal-footer { background:#d8d8d8; text-align:center; padding: 10px 5px; }
 
@@ -222,13 +223,13 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
-    text-align: center; width:24px; height:24px; border-radius: 50%;
-    background:#bbb; color:#fff; font-size:0.75em;line-height: 2em;
+    text-align: center; width:30px; height:30px; border-radius: 50%;
+    background:#bbb; color:#fff; font-size:0.75em;line-height: 2.5em;
 }
     .progress-dots ul li .step-dot.active { background-color: #54a954; }
 .progress-dots ul li .step-label{
     margin-right: 0; margin-left:6px; width: 60%;
-    line-height: 1em; font-size: 0.7em; text-align: left;
+    line-height: 1.2em; font-size: 0.8em; text-align: left;
 }
 
 #setup-donation-content .progress-dots{margin-bottom: 0; }
@@ -1728,7 +1729,16 @@ form.text-left input:not([type="checkbox"]){
     h5 {margin:10px; font-size:15px; }
     .contact-us p {margin-left:10px;}
     #dtn-add-logo>h4{text-align:center !important;}
-   
+    .modal .progress-dots{
+        text-align: center;
+    }
+   .modal .progress-dots ul li{
+    width: auto;
+   }
+   .modal .progress-dots ul li .step-dot{
+    margin-right: 10px;
+    margin-left: 10px;
+   }
    .tab-nav-area{display:none;}
    .tab-section .tab{
     top:0;
@@ -1958,6 +1968,11 @@ form.text-left input:not([type="checkbox"]){
         padding:0 5px;
         margin:30px auto 50px;
     }
+    .summary-wrapper.share-box {padding: 15px 0 15px 0;}
+    .summary-wrapper.share-box a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
     .btn-full-mobile{width: 100% !important;}
     .accordion-title{font-size:16px;}
     .wrapper-925 .title-search .span6 { width:100%; }
@@ -1976,6 +1991,7 @@ form.text-left input:not([type="checkbox"]){
     .donation-wrapper{background-color: #ffffff;}
     #donation-userDetails{border: none;}
     #donation-userDetails  .control-label.small {font-size: 1.1em;}
+    .signup-section.step1{margin-top:60px;}
    
     /*#setup-donation-wrapper{margin-top: 0;}*/
 
@@ -2074,7 +2090,7 @@ form.text-left input:not([type="checkbox"]){
     #dtn-org-name{width: 70%;margin-right: auto !important;margin-left: auto !important;}
     #save-status{width: 100%;margin-left: 0;margin-top: 20px;margin-bottom: 20px;}
     h4.td-large-sm{margin:auto 15px;}
-    #vw-gift-bkt-donate{max-width: 85%;margin-top: 40px;}
+    #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gift-bkt-donate div.box{padding-left: 0;padding-right: 0;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
