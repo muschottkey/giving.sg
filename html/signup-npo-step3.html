@@ -39,7 +39,7 @@
 		        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
 		        	<i class="fa fa-times-circle-o"></i>
 		        </button>
-		        <div class="signup-section">
+		        <div class="signup-section step3">
 			        <h2 id="signupLabel">Verify Identity</h2>
 			        <h3>Not-For-Profit Account</h3>
 		        </div>
@@ -48,7 +48,7 @@
 		    	<div class="modalwrapper">
 					<div class="row-fluid">
 						<div class="span12 text-center ">
-							<div class="progress-dots">
+							<div class="progress-dots step3">
 								<ul class="ul">
 									<li>
 										<span class="step-dot active">1</span>
@@ -107,14 +107,14 @@
 											<div class="control-group">
 												<div class="controls">
 													<input name="agree" value="Agree" id="agree" class="form-control" type="checkbox"> 
-													<span class="small">YES, please email me this list and the address to mail to</span>
+													<label class="small inline" for="agree">YES, please email me this list and the address to mail to</label>
 												</div> 
 											</div>
 										</div>
 									</div>
 								</div>
 
-								<div class="span12 start-cta">
+								<div class="span12 start-cta m-bot30">
 									<div class="cta-wrapper">
 										<div id="npoCarousel" class="carousel slide">
 											<ol class="carousel-indicators">
@@ -124,8 +124,10 @@
 										  	<!-- Carousel items -->
 											<div class="carousel-inner">
 											  	<div class="active item">
-													<h5>Start Using Giving.SG</h5>
-													<p class="small">In the meantime, would you like to start raising funds,recruiting for volunteers or start a campaign?</p>
+											  		<div class="span8 centered">
+														<h5>Start Using Giving.SG</h5>
+														<p class="small">In the meantime, would you like to start raising funds,recruiting for volunteers or start a campaign?</p>
+													</div>
 
 													<div class="modal-tiles">
 														<div class="tile"><div class="tile-inner"><p>Raise<br> Funds</p></div></div>
@@ -134,7 +136,7 @@
 													</div>
 
 													<button class="btn btn-success btn-large-custom" id="btnStartYes">YES</button>
-													<p class="small"><a class="underlined" href="#">Nah, I'd like to stop here</a></p>
+													<p class="small m-top5"><a class="underlined" href="#">Nah, I'd like to stop here</a></p>
 												</div>
 												<div class="item" id="npoItem2">
 													<h5>Quick Question!</h5>
