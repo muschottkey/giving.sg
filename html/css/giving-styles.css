@@ -111,8 +111,8 @@ hr.m5{margin: 5px 0;}
 .bootstrap-switch{box-shadow: none !important;border-color: #ccc !important;}
 
 /*UI Tax*/
-#vw-gft-dtn-prefs .radio input[type="radio"] {width:10%;}
-#vw-gft-dtn-prefs .radio span {margin:3px 0 0 15px;}
+#vw-gft-dtn-prefs .radio input[type="radio"] {width:9%;}
+#vw-gft-dtn-prefs .radio span {margin:3px 0 ;}
 #vw-gft-dtn-prefs input[type="text"] {text-align:left; background:#f8f8f8;}
 #vw-gft-dtn-prefs  .controls {float:right; width:65%; margin-left:0;}
 #vw-gft-dtn-prefs  .controls .validation-feedback {margin: 0 3px -30px 0;}
@@ -678,6 +678,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     margin-right: auto;
 }
 
+
 #vw-gift-bkt-donate .box{ padding:15px; }
 #vw-gift-bkt-donate ul {margin: 0;}
 #vw-gift-bkt-donate ul li{list-style: none;text-align: left;padding: 10px 8px 10px 30px;border-bottom: 1px solid #e3e3e3;}
@@ -698,7 +699,10 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 #vw-gft-dtn-prefs tr:first-child td{border-top: 0;}
 #vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
-#vw-gft-dtn-prefs tr td label{display: inline-block;  width:200px; }
+#vw-gft-dtn-prefs tr td label{text-align: left;}
+#vw-gft-dtn-prefs tr td:first-child{width: 30%}
+#vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 40px;padding-top: 6px;}
+
 
 .box-r-footer { 
     display: block; padding:5px 10px; margin-top:20px; background-color: #F5EAB1; 
@@ -1911,6 +1915,7 @@ form.text-left input:not([type="checkbox"]){
 }
 
 @media (max-width: 767px) {
+    #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 0;padding-top: 6px;}
     #donate-buttons button{font-size:0.8em;line-height:1.2;}
     .steps-list{padding:0 15px 0 0;}
     .btn-row h3{display:block;}
@@ -2220,6 +2225,7 @@ form.text-left input:not([type="checkbox"]){
     .fr-widget-wrapper.closed {  max-height: 500px; }
     .donors-area .dr-img { margin-left:1.2%; margin-right:1.2%;  }
     .gift-box span.badge{right: -10%;}
+
 }    
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;}
