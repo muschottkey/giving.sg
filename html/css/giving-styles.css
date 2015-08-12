@@ -36,6 +36,7 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .inline-block { display:inline-block; }
 .block{display: block;}
 .relative{position: relative;}
+.absolute{position: absolute;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-0 { margin: 0 !important; line-height:1; }
 .m-bot0{margin-bottom: 0px !important;}
@@ -91,6 +92,7 @@ hr.m5{margin: 5px 0;}
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
+.bg-white{background-color: #ffffff;}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round {border-radius: 6px;}
@@ -153,7 +155,7 @@ hr.m5{margin: 5px 0;}
 /* UI Controls - BUTTONS */
 .btn { font-family: "Lato", Arial, sans-serif;   }
     .btn-large { font-weight:900; }
-    .btn-large-custom { width:180px;height: 40px; }
+    .btn-large-custom { width:182px;height: 40px; }
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
 
 .error-feedback { display:none; }
@@ -513,17 +515,24 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 .mobile-title{width: 181px;}
 
 #cpn-donate-now .box { padding-left:1.5em; padding-right:1.5em; }
+#donate-buttons{
+    font-size: inherit;
+    white-space: normal;
+}
 #donate-buttons button{
-    width: 48%; float: left; height: 50px; font-weight:900; margin:10px 1%; font-size: 1.25em;
+    width: 48%; float: left; height: 50px; font-weight:900; margin:10px 1%; font-size: 1.25em;border-radius:6px;
 }
 #donate-buttons.npo-deet button{
     margin-top: 1px;
 }
-#donate-buttons button.active {
+#donate-buttons button.active, #donate-buttons button.active:focus {
     background-color: #54a954;border-color: #54a954;color: #ffffff;
 }
 
-#donate-buttons button:focus{outline: none;}
+#donate-buttons .btn:focus, .btn:active{
+    background-color: inherit;
+    outline: none;
+}
 
 #donate-buttons span.small{
     display: block;
@@ -1675,7 +1684,7 @@ form.text-left input:not([type="checkbox"]){
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
     #dtn-about-us-container {margin-left:0;}
-    .collapse.visible-desktops{height: auto;}
+    .collapse.visible-desktops{height: auto !important;}
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -1962,7 +1971,7 @@ form.text-left input:not([type="checkbox"]){
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
     .navbar-fixed-top {  margin: 0px; }
-    #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 0;}
+    #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 10px;}
     #fundr-content{padding: 10px 0;}
     .donation-wrapper{background-color: #ffffff;}
     #donation-userDetails{border: none;}
@@ -1984,13 +1993,14 @@ form.text-left input:not([type="checkbox"]){
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper { margin-top:10px; margin-left:15px;  }
+    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  }
     #causes-mobile .swiper-wrapper{
         display: -webkit-box; display: -moz-box; display: -ms-flexbox;
         display: -webkit-flex; display: flex;
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
-    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
+    #causes-wrapper.has-checkboxes{margin-left: 0px;}
+    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;width: 100% !important;margin-bottom: 15px !important;}
     .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
         border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}
     .cause-box.inline-mobile input[type=checkbox]:checked + label:after {top: 13px;}
