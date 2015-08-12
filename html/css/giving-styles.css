@@ -410,7 +410,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
 #causes-wrapper .cause-box { 
-    width:22%; float:left; margin:0 1.2% 20px; border: solid 1px #d3d3d3; 
+    width:22%; float:left; margin:0 1.35% 20px; border: solid 1px #d3d3d3; 
     border-radius: 8px;
 }   
     #causes-wrapper .cause-box.span4 { width:30.5%; margin-bottom: 50px; }
@@ -1204,7 +1204,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     transform: translate3d(0px, 0px, 0px) !important;
 }
 #causes-mobile .swiper-slide.reset{
-    margin-right: 0 !important;
+    margin-right: 1.35% !important;
 }
 
 .swiper-container-horizontal>.swiper-scrollbar{
@@ -1678,7 +1678,7 @@ form.text-left input:not([type="checkbox"]){
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     #causes-wrapper { max-width:600px; }
-    #causes-wrapper .cause-box { width:28%; margin-right:2.5%; margin-left: 2.5%; }
+    #causes-wrapper .cause-box { width:28%; margin-left: 3%; }
     #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
