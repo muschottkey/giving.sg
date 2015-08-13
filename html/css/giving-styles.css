@@ -169,6 +169,8 @@ hr.m5{margin: 5px 0;}
     .btn-large { font-weight:900; }
     .btn-large-custom { width:182px;height: 40px; }
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
+.primary-btn{background-color: #91C2AF; border: none; font-family: "Century", Arial, sans-serif; color: #FFFFFF;}
+.primary-btn:hover {background-color:#50967B; color: #FFFFFF;}
 
 .error-feedback { display:none; }
 .validation-feedback i { font-size: 1.2em; top:-18px; }
