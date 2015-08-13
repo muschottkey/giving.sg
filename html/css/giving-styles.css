@@ -698,10 +698,11 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
 #vw-gft-dtn-prefs{}
 #vw-gft-dtn-prefs tr td{text-align: left;padding: 10px 15px;height: 40px;}
-#vw-gft-dtn-prefs tr:first-child td{border-top: 0;}
+#vw-gft-dtn-prefs tr:first-child td{border-top: 0; width: 25%;}
 #vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
 #vw-gft-dtn-prefs tr td label{text-align: left;}
+#vw-gft-dtn-prefs tr td:first-child{width: 30%}
 #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 40px;padding-top: 6px;}
 .box-r-footer { 
     display: block; padding:5px 10px; margin-top:20px; background-color: #F5EAB1; 
@@ -1676,7 +1677,6 @@ form.text-left input:not([type="checkbox"]){
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
     #dtn-about-us-container {margin-left:0;}
     .collapse.visible-desktops{height: auto;}
-    #vw-gft-dtn-prefs tr td:first-child{width: 30%}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     #causes-wrapper { max-width:600px; }
@@ -1911,7 +1911,7 @@ form.text-left input:not([type="checkbox"]){
     .panel-title{margin-top: 20px !important;}
 
     #donateLoggedModal .modal-body .modalwrapper .span6 div.box {padding-bottom:10px !important;}
-    #vw-gft-dtn-prefs .radio input[type="radio"] {width: 5%;}
+
 }
 
 @media (max-width: 767px) {
