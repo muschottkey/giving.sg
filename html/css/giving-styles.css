@@ -20,6 +20,9 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 
 h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 
+/* Corporate Identity chnages */
+
+
 button, .btn {background-image: none !important;box-shadow: none;font-weight: 800;}
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
