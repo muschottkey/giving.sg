@@ -20,7 +20,7 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 
 h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 
-button, .btn {background-image: none !important;box-shadow: none;font-weight: 800;}
+button, .btn {background-image: none !important;box-shadow: none;}
 textarea, input { font-size:1em !important; height:1.3em; }
     input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
@@ -174,11 +174,29 @@ hr.m5{margin: 5px 0;}
 
 /* UI Controls - BUTTONS */
 .btn { font-family: "Lato", Arial, sans-serif;   }
-    .btn-large { font-weight:900; }
+    /*.btn-large { font-weight:900; }*/
     .btn-large-custom { width:182px;height: 40px; }
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
-.primary-btn{background-color: #91C2AF; border: none; font-family: "Century", Arial, sans-serif; color: #FFFFFF;}
-.primary-btn:hover {background-color:#50967B; color: #FFFFFF;}
+
+.open-more,.btn-more-img,.btn,.btn-ghost{
+    background-color: #F9F6EC;
+    border: none;
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    color: #333333;
+    -webkit-transition:none;
+    transition: none;
+}
+.open-more:hover,.btn-more-img:hover,.btn:hover,.btn-ghost:hover,.btn-ghost:active,.btn-ghost:focus{
+    background-color:#E6E4DD; color: #333333;-webkit-transition:none;transition: none;}
+
+.btn-success{
+    background-color: #91C2AF; 
+    border: none; 
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    color: #FFFFFF; 
+}
+.btn-success:hover,.btn-success:active,.btn-success:focus{background-color:#50967B; color: #FFFFFF;}
+
 
 .error-feedback { display:none; }
 .validation-feedback i { font-size: 1.2em; top:-18px; }
@@ -383,7 +401,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
 .choice-buttons button.yes.active{background-color: #51a351;}
 .choice-buttons button.no.active{background-color: #bd362f;}
-.btn-ghost{ background: #FFF;color: #000;font-weight:700;box-shadow: none;border-width:2px;border-radius:6px;border-color: #e3e3e3;}
+.btn-ghost{ box-shadow: none;border-radius:6px;}
 .amount-pledged{width: 40px;margin-top: 4px;}
 .amount-pledged span{float: left;}
 .amt-value{font-size: 24px;}
@@ -556,7 +574,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 }
 
 #donate-buttons .btn:focus, .btn:active{
-    background-color: inherit;
+    /*background-color: inherit;*/
     outline: none;
 }
 
@@ -869,7 +887,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .open-more{
     font-size: 0.9em;
-    font-weight: 900;
+    /*font-weight: 900;*/
 }
 
 /* Fundraiser Widgets */
@@ -937,11 +955,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     padding-right: 57px;
     float: none;
 }
-.cpn-url-box input, .cpn-url-box button{
+.cpn-url-box input{
     height: 40px;
     background-color: #ffffff;
 }
-.cpn-url-box button{background:#efefef; position: absolute;right: 0;top:0;}
+.cpn-url-box button{/*background:#efefef*/; position: absolute;right: 0;top:0; height: 40px;}
 
 
 /* Suggestions widget */
@@ -1589,27 +1607,37 @@ form.text-left input:not([type="checkbox"]){
     display:block;
     text-align:center;
     text-decoration:none;
-    color:#aaa;
+    color:#333333;
+    background-color: #F9F6EC;
     border-radius:12px;
     -webkit-border-radius:12px;
-    border:1px solid #ccc;
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     font-size:16px;
     line-height:28px;
 }
+.add-btn-lst a:hover{background-color: #E6E4DD;color: #333333;}
 .steps-content .default-image{padding:0 0 20px;}
 .steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
 .add-bottom-lst input,
 .steps-content .btn-area input,
 .steps-content .btn-save input{
     float:right;
-    background:#ccc;
+    background: #91C2AF;
     width:150px;
     height:34px;
-    color:#000;
+    color:#ffffff;
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     border:0;
     border-radius:6px;
     -webkit-border-radius:6px;
 }
+.add-bottom-lst input:hover,
+.add-bottom-lst input:focus, 
+.steps-content .btn-area input:hover,
+.steps-content .btn-area input:focus,
+.steps-content .btn-save input:hover,
+.steps-content .btn-save input:focus {background-color: #50967B;color: #FFFFFF;}
+
 .steps-content .btn-area input{width:100%;}
 .add-bottom-lst{
     margin:0;
