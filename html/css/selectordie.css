@@ -189,6 +189,11 @@
         border:1px solid #efefef !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);
     }
+    .large-select .sod_select{
+        height: 40px;
+        line-height: 1.3;
+        width: 200px;
+    }
     #selAmount{border:none;border-bottom: 2px solid #cccccc;font-size: 1em;width: 160px;}
     #selAmount.focus,  #sortSearchResults.focus{box-shadow: none;}
     #selAmount .sod_option,  #sortSearchResults .sod-option{text-align: center;}

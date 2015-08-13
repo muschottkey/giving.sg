@@ -122,75 +122,82 @@
 			</div>
 		</div>
 		<div class="p-section">
-			<div class="row-fluid">
-				<h4 class="black m-0">Donation Preferences</h4>
-				<div id="vw-gift-bkt-donate">
-					<form class="form-horizontal">
-						<div class="box border-round hidden-desktop">
-							<span class="m-right20 small">I would like to donate using</span>
-							<select class="select-giving">
-								<option>Credit Card</option>
-								<option>Internet Banking</option>
-							</select>
-						</div>
+			<div class="boxed-wrapper gf">
+				<div class="row-fluid">
+					<h4 class="black m-0">Donation Preferences</h4>
+					<div id="vw-gift-bkt-donate">
+						<form class="form-horizontal">
+							<div class="box border-round hidden-desktop">
+								<span class="m-right20 small">I would like to donate using</span>
+								<select class="select-giving">
+									<option>Credit Card</option>
+									<option>Internet Banking</option>
+								</select>
+							</div>
+						
+						<table class="table gf-bkt" id="vw-gft-dtn-prefs">
+							<tbody>
+								<tr class="tr-show-desktop-only">
+									<td>I would like to donate using</td>
+									<td>
+										<select class="select-giving">
+											<option>Credit Card</option>
+											<option>Internet Banking</option>
+										</select>
+									</td>
+								</tr>
+								<tr class="hidden-desktop">
+									<td  colspan="3">
+										<span class="">For this transaction</span>
+									</td>
+								</tr>
+								<tr>
+									<td class="long tr-show-desktop-only" rowspan="3">For this transaction</td>
+									<td id="claim-tax">
+										<label class="radio">
+										  	<input type="radio" name="optionsRadios" value="option1" checked >
+										  	<span>I want to claim tax deduction</span>
+										</label>
+										<div class="control-group default">
+											<label class="control-label" for="email">Name as in NRIC</label>
+											<div class="controls">
+												<span class="validation-feedback pull-right"><i class="fa fa-pencil"></i></span>
+												<input name="namenric" id="" placeholder="Francis Tan Wei Liang" class="form-control field-required text-center" type="text">
+											</div>
+										</div>
+	                                    <div class="control-group default">
+											<label class="control-label" for="email">NRIC</label>
+											<div class="controls">
+												<span class="validation-feedback pull-right"><i class="fa fa-pencil"></i></span>
+												<input name="nric" id="" placeholder="S8023456W" class="form-control field-required text-center" type="text">
+											</div>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="radio"  for="b-anon">
+										  	<input type="radio" name="optionsRadios" id="b-anon" value="option2">
+										  	<span>Be anonymous</span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label class="radio"  for="non-above">
+										  	<input type="radio" name="optionsRadios" id="non-above" value="option3">
+										  	<span>None of the above</span>
+										</label>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<button class="btn btn-large-custom btn-success m-top30">DONATE NOW</button>
+						<a href="javascript:;" class="small block m-top10 underlined">I want to add more donations first</a>
+	                    </form>
+					</div>
 					
-					<table class="table gf-bkt" id="vw-gft-dtn-prefs">
-						<tbody>
-							<tr class="tr-show-desktop-only">
-								<td>I would like to donate using</td>
-								<td>
-									<select class="select-giving">
-										<option>Credit Card</option>
-										<option>Internet Banking</option>
-									</select>
-								</td>
-							</tr>
-							<tr>
-								<td class="long tr-show-desktop-only" rowspan="3">For this transaction</td>
-								<td id="claim-tax">
-									<label class="radio">
-									  	<input type="radio" name="optionsRadios" value="option1" checked >
-									  	<span>I want to claim tax deduction</span>
-									</label>
-									<div class="control-group default">
-										<label class="control-label" for="email">Name as in NRIC</label>
-										<div class="controls">
-											<span class="validation-feedback pull-right"><i class="fa fa-pencil"></i></span>
-											<input name="namenric" id="" placeholder="Francis Tan Wei Liang" class="form-control field-required text-center" type="text">
-										</div>
-									</div>
-                                    <div class="control-group default">
-										<label class="control-label" for="email">NRIC</label>
-										<div class="controls">
-											<span class="validation-feedback pull-right"><i class="fa fa-pencil"></i></span>
-											<input name="nric" id="" placeholder="S8023456W" class="form-control field-required text-center" type="text">
-										</div>
-									</div>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label class="radio"  for="b-anon">
-									  	<input type="radio" name="optionsRadios" id="b-anon" value="option2">
-									  	<span>Be anonymous</span>
-									</label>
-								</td>
-							</tr>
-							<tr>
-								<td>
-									<label class="radio"  for="non-above">
-									  	<input type="radio" name="optionsRadios" id="non-above" value="option3">
-									  	<span>None of the above</span>
-									</label>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-					<button class="btn btn-large-custom btn-success m-top30">DONATE NOW</button>
-					<a href="javascript:;" class="small block m-top10 underlined">I want to add more donations first</a>
-                    </form>
 				</div>
-				
 			</div>
 		</div>
 	</div>

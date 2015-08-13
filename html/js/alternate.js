@@ -321,8 +321,9 @@ $(function(){
     $('#setup-dtn-carousel').carousel();
 
     $('#setup-dtn-conf-submission').click(function(){
+        $(this).closest('.boxed.span12').next('.boxed.span12').removeClass('hide').addClass('animated fadeIn');
         $(this).closest('.boxed.span12').addClass('animated fadeOutLeft').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-           $(this).removeClass('animated fadeOutLeft').addClass('hide').next('.boxed.span12').removeClass('hide').addClass('animated fadeInRight');
+           $(this).removeClass('animated fadeOutLeft').addClass('hide').css('opacity','0');
         });
     })
 
@@ -547,6 +548,15 @@ $(function(){
 
         $('#select-more-camp').modalPopover('show')
     })
+
+    /* DONATE BUTTONS LOGIC*/
+
+    $('#donate-buttons').on('change','.button-input', function(){
+        console.log("Entered");
+        $('#donate-buttons').find('.btn.active').removeClass('active');
+    });
+        
+    
     
 
 

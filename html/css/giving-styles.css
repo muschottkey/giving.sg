@@ -34,8 +34,10 @@ label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:
 .border-all{border: 1px solid #cccccc;}
 .no-border{border:none !important;}
 .inline-block { display:inline-block; }
+.inline { display:inline; }
 .block{display: block;}
 .relative{position: relative;}
+.absolute{position: absolute;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-0 { margin: 0 !important; line-height:1; }
 .m-bot0{margin-bottom: 0px !important;}
@@ -91,6 +93,7 @@ hr.m5{margin: 5px 0;}
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
+.bg-white{background-color: #ffffff;}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .border-round {border-radius: 6px;}
@@ -129,6 +132,7 @@ hr.m5{margin: 5px 0;}
 .modal.fade.in { display:block; }
 
 .modal-header { border-bottom: none; }
+.modal-header .close{  position: absolute;right: 20px;}
 .modal-body { max-width:800px; }
 .modal-footer { background:#d8d8d8; text-align:center; padding: 10px 5px; }
 
@@ -153,7 +157,7 @@ hr.m5{margin: 5px 0;}
 /* UI Controls - BUTTONS */
 .btn { font-family: "Lato", Arial, sans-serif;   }
     .btn-large { font-weight:900; }
-    .btn-large-custom { width:180px;height: 40px; }
+    .btn-large-custom { width:182px;height: 40px; }
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
 
 .error-feedback { display:none; }
@@ -208,7 +212,7 @@ hr.m5{margin: 5px 0;}
     .modal-header .signup-section { margin-bottom:0; }
 .sign-up-form { border-left:1px solid #e3e3e3; } 
 
-i.signup-envelope { font-size:5.625em; }
+i.signup-envelope { font-size:5.625em;color: #333; }
 a.resendmail { text-decoration:underline; font-size:.875em; }
 .signup-section .alert { padding:1em 1.5em; }
 .signupnpo .alert { min-height:320px; }
@@ -217,16 +221,21 @@ a.resendmail { text-decoration:underline; font-size:.875em; }
 .progress-dots { margin: 30px 0; }
 .progress-dots ul { margin: 0 auto; width:100%; padding-left:0;}
 .progress-dots ul li { width:27%; display: inline-block; margin-right:5px; }
-
+.progress-dots.step3 ul li {
+  width: 15%;
+  display: inline-block;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
-    text-align: center; width:24px; height:24px; border-radius: 50%;
-    background:#bbb; color:#fff; font-size:0.75em;line-height: 2em;
+    text-align: center; width:30px; height:30px; border-radius: 50%;
+    background:#bbb; color:#fff; font-size:0.75em;line-height: 2.5em;
 }
     .progress-dots ul li .step-dot.active { background-color: #54a954; }
 .progress-dots ul li .step-label{
     margin-right: 0; margin-left:6px; width: 60%;
-    line-height: 1em; font-size: 0.7em; text-align: left;
+    line-height: 1.2em; font-size: 0.8em; text-align: left;
 }
 
 #setup-donation-content .progress-dots{margin-bottom: 0; }
@@ -347,6 +356,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .box .small.grey{color: #a5a5a5;}
 .box > h4{margin-bottom: 0px;}
 .box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
+.box-footer.border-top{border-top:1px solid #e3e3e3 !important;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .box-footer p{font-size: 0.8em;}
 .choice-buttons{margin-top: 30px;}
@@ -513,17 +523,24 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 .mobile-title{width: 181px;}
 
 #cpn-donate-now .box { padding-left:1.5em; padding-right:1.5em; }
+#donate-buttons{
+    font-size: inherit;
+    white-space: normal;
+}
 #donate-buttons button{
-    width: 48%; float: left; height: 50px; font-weight:900; margin:10px 1%; font-size: 1.25em;
+    width: 48%; float: left; height: 50px; font-weight:900; margin:10px 1%; font-size: 1.25em;border-radius:6px;
 }
 #donate-buttons.npo-deet button{
     margin-top: 1px;
 }
-#donate-buttons button.active {
+#donate-buttons button.active, #donate-buttons button.active:focus {
     background-color: #54a954;border-color: #54a954;color: #ffffff;
 }
 
-#donate-buttons button:focus{outline: none;}
+#donate-buttons .btn:focus, .btn:active{
+    background-color: inherit;
+    outline: none;
+}
 
 #donate-buttons span.small{
     display: block;
@@ -1676,7 +1693,8 @@ form.text-left input:not([type="checkbox"]){
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
     #dtn-about-us-container {margin-left:0;}
-    .collapse.visible-desktops{height: auto;}
+    .collapse.visible-desktops{height: auto !important;}
+    #vw-gft-dtn-prefs tr td:first-child{width: 30%}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     #causes-wrapper { max-width:600px; }
@@ -1719,7 +1737,16 @@ form.text-left input:not([type="checkbox"]){
     h5 {margin:10px; font-size:15px; }
     .contact-us p {margin-left:10px;}
     #dtn-add-logo>h4{text-align:center !important;}
-   
+    .modal .progress-dots{
+        text-align: center;
+    }
+   .modal .progress-dots ul li{
+    width: auto;
+   }
+   .modal .progress-dots ul li .step-dot{
+    margin-right: 10px;
+    margin-left: 10px;
+   }
    .tab-nav-area{display:none;}
    .tab-section .tab{
     top:0;
@@ -1793,7 +1820,7 @@ form.text-left input:not([type="checkbox"]){
     .step-label{display: none;}
     .start-cta, .span12.start-cta{padding: 20px 20px;}
     .modal-tiles{width: 100%;padding: 5px 0px 5px;}
-    .tile{width:60px;height: 60px;margin-right: 5px;}
+    .tile{width:60px;height: 60px;margin-right: 4px;margin-left: 4px;}
     .tile-inner{padding: 16px 0;}
     .tile-inner p{width: auto;font-size: 0.6em;}
     .npo-header p{width: auto;}
@@ -1916,6 +1943,10 @@ form.text-left input:not([type="checkbox"]){
 
 @media (max-width: 767px) {
     #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 0;padding-top: 6px;}
+    #signupModal .modal-body{padding:10px;}
+    #signupModal .signup-section{margin-top: 20px;}
+    #signupModal .signup-section.step3 h2{font-size: 1.5em;}
+    #signupModal .signup-section.step3 h3{font-size: 1.2em;}
     #donate-buttons button{font-size:0.8em;line-height:1.2;}
     .steps-list{padding:0 15px 0 0;}
     .btn-row h3{display:block;}
@@ -1949,6 +1980,11 @@ form.text-left input:not([type="checkbox"]){
         padding:0 5px;
         margin:30px auto 50px;
     }
+    .summary-wrapper.share-box {padding: 15px 0 15px 0;}
+    .summary-wrapper.share-box a {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
     .btn-full-mobile{width: 100% !important;}
     .accordion-title{font-size:16px;}
     .wrapper-925 .title-search .span6 { width:100%; }
@@ -1962,11 +1998,12 @@ form.text-left input:not([type="checkbox"]){
     .start-cta, .span12.start-cta{height: 335px;}
     .signupnpo .alert { min-height:100%; }
     .navbar-fixed-top {  margin: 0px; }
-    #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 0;}
+    #fundr-prefs  h5{width: auto; max-width: 180px;margin-right: auto;margin-left: auto;margin-top: 10px;}
     #fundr-content{padding: 10px 0;}
     .donation-wrapper{background-color: #ffffff;}
     #donation-userDetails{border: none;}
     #donation-userDetails  .control-label.small {font-size: 1.1em;}
+    .signup-section.step1{margin-top:60px;}
    
     /*#setup-donation-wrapper{margin-top: 0;}*/
 
@@ -1984,13 +2021,14 @@ form.text-left input:not([type="checkbox"]){
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper { margin-top:10px; margin-left:15px;  }
+    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  }
     #causes-mobile .swiper-wrapper{
         display: -webkit-box; display: -moz-box; display: -ms-flexbox;
         display: -webkit-flex; display: flex;
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
-    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;}
+    #causes-wrapper.has-checkboxes{margin-left: 0px;}
+    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;width: 100% !important;margin-bottom: 15px !important;}
     .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
         border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}
     .cause-box.inline-mobile input[type=checkbox]:checked + label:after {top: 13px;}
@@ -2064,7 +2102,7 @@ form.text-left input:not([type="checkbox"]){
     #dtn-org-name{width: 70%;margin-right: auto !important;margin-left: auto !important;}
     #save-status{width: 100%;margin-left: 0;margin-top: 20px;margin-bottom: 20px;}
     h4.td-large-sm{margin:auto 15px;}
-    #vw-gift-bkt-donate{max-width: 85%;margin-top: 40px;}
+    #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gift-bkt-donate div.box{padding-left: 0;padding-right: 0;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #E3E3E3;margin-bottom: 15px;}
     #vw-gift-bkt-donate span.sod-select{margin: 10px 0;}
