@@ -3,15 +3,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
 
 /* Typography */
-h1, h2, h3, h4, h5 { 
+h1, h2, h3, h4, h5,
+.section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
+.p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5{ 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
     color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
 }
+
 h1 { font-size:2.5em; } /* 40px */
 h2 { font-size:2.25em; } /* 36px */
 h3 { font-size: 1.75em; } /* 28px */
 h4 { font-size: 1.5em; } /* 24px */
-h5 { font-size: 1.125em; color:#999; } /* 18px */
+h5, h6, 
+.section-header h5, .section-header h6, .p-section h5 { font-size: 1.125em; color:#999; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 a, a:link {color:#9DC9EE; text-decoration: none; }
@@ -20,10 +24,17 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 
 h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 
-
 /* Corporate Identity chnages */
+.modalwrapper > .row-fluid > .text-center h2.black,
+.modalwrapper > .row-fluid > .text-center h4.black,
+.modalwrapper > .row-fluid > .span6 .text-center h4.black
+ { color:#C66; }
 
+.modalwrapper > .row-fluid > .text-center .form-group h5.black
+ { color:#999; }
 
+.signup-section h2, .signup-section h3 { margin:0; }
+/*  +++++++++++++++++++++++++++++++++++++++++++ */
 button, .btn {background-image: none !important;box-shadow: none;}
 
 textarea, input { font-size:1em !important; height:1.3em; }
@@ -100,9 +111,9 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 hr.m5{margin: 5px 0;}
 
 .btn a, .btn-group a{text-decoration: none;}
-.grey{color: #A0A0A0;}
-.red{color: #ff0000;}
-.white{color: #ffffff;}
+.grey{color: #999;}
+.red{color: #F00;}
+.white{color: #FFF;}
 .bg-green{ background-color: #5cb85c; color: #FFF; }
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
