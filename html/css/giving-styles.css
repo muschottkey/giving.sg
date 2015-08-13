@@ -1160,7 +1160,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* CAMPAIGN LANDING */
 .landing-cpn-slider-wrapper{
-    margin-top: 80px; overflow: hidden; position: relative; width: 100%;
+    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
 }
 .landing-cpn-slider-wrapper .swiper-slide { border:1px solid #d7d7d7; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
