@@ -113,12 +113,19 @@ hr.m5{margin: 5px 0;}
 .wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
 .navbar { background: #efefef; }
     .navbar-fixed-top { position:fixed; }
+.navbar-inverse .navbar-inner{
+    background:#F9F6EC;
+    border: none;
+    -webkit-box-shadow:none;
+    -moz-box-shadow: none;
+    box-shadow:none;
+}
 .navbar-inverse .brand:link, .navbar-inverse .nav > li > a:link {color: #9DC9EE;text-decoration: none;}
 .navbar-inverse .brand:visited, .navbar-inverse .nav > li > a:visited {color: #999999;}
 .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover{color: #CC6666;text-decoration: underline;}
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
-.footer {background: #DFDFDF;}
+.footer {background:  #F6F09A;}
 .footer p {text-align:center;margin:0; padding:10px 0;}
 
 /* UI Controls - BUTTONS */
