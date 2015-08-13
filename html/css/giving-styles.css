@@ -1154,7 +1154,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-
 }
 .btn-block + .btn-block {margin-top:0 !important;}
 
