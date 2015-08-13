@@ -205,12 +205,19 @@ hr.m5{margin: 5px 0;}
 .open-more:hover,.btn-more-img:hover,.btn:hover,.btn-ghost:hover,.btn-ghost:active,.btn-ghost:focus{
     background-color:#E6E4DD; color: #333333;-webkit-transition:none;transition: none;}
 
+#LoginForm .btn,
+#btnDonate,
+.btn-primary,
 .btn-success{
     background-color: #91C2AF; 
     border: none; 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     color: #FFFFFF; 
 }
+
+#btnDonate:hover,#btnDonate:active,#btnDonate:focus,
+#LoginForm .btn:hover,#LoginForm .btn:active,#LoginForm .btn:focus,
+.btn-primary:hover,.btn-primary:active,.btn-primary:focus,
 .btn-success:hover,.btn-success:active,.btn-success:focus{background-color:#50967B; color: #FFFFFF;}
 
 
