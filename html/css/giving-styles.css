@@ -1,18 +1,19 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-html, body { }
 body { font:16px/1.25 "Open Sans",Arial, Helvetica, sans-serif; margin:0 auto;  }
 
 /* Typography */
-h1, h2, h3, h4, h5 { font-family: "Lato", Arial, sans-serif; color:#000; font-weight:900;  }
-h2 { font-size:2.25em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.2em; }
+h1, h2, h3, h4, h5 { font-family: "Century Gothic", Arial, sans-serif; color:#000; font-weight:900; }
+h1 { font-size:2.5em; } /* 40px */
+h2 { font-size:2.25em; } /* 36px */
+h3 { font-size: 1.75em; } /* 28px */
+h4 { font-size: 1.5em; } /* 24px */
+h5 { font-size: 1.125em; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
-a:link {color:#9DC9EE; text-decoration: none; }
-a:visited {color:#999999;}
-a:hover {color:#CC6666;text-decoration: underline;}
+a, a:link {color:#9DC9EE; text-decoration: none; }
+    a:visited {color:#999;}
+    a:hover {color:#C66;text-decoration: underline;}
 
 button, .btn {background-image: none !important;box-shadow: none;font-weight: 800;}
 textarea, input { font-size:1em !important; height:1.3em; }
@@ -1696,6 +1697,10 @@ form.text-left input:not([type="checkbox"]){
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
+    h2 { font-size:2em; } /* 32px */
+    h3 { font-size: 1.75em; } /* 28px */
+    h4 { font-size: 1.5em; } /* 24px */
+    h5 { font-size: 1.125em; } /* 18px */
     #causes-wrapper { max-width:600px; }
     #causes-wrapper .cause-box { width:28%; margin-left: 3%; }
     #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
@@ -1941,6 +1946,10 @@ form.text-left input:not([type="checkbox"]){
 }
 
 @media (max-width: 767px) {
+    h1 { font-size:2em; } /* 32px */
+    h2 { font-size:1.625em; } /* 26px */
+    h3 { font-size: 1.375em; } /* 22px */
+    h4 { font-size: 1.25em; } /* 20px */
     #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 0;padding-top: 6px;}
     #signupModal .modal-body{padding:10px;}
     #signupModal .signup-section{margin-top: 20px;}
