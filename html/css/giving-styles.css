@@ -284,8 +284,11 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 #btnDonate:hover,#btnDonate:active,#btnDonate:focus,
 #LoginForm .btn:hover,#LoginForm .btn:active,#LoginForm .btn:focus,
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus,
-.btn-success:hover,.btn-success:active,.btn-success:focus{background-color:#50967B; color: #FFFFFF;}
+.btn-success:hover,.btn-success:active,.btn-success:focus,
+.add-bottom-lst input:hover,.add-bottom-lst input:active,.add-bottom-lst input:focus{background-color:#50967B; color: #FFFFFF;}
 
+#donate-buttons .btn{background-color: #f5f5f5;}
+#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus{background-color: #e6e6e6;}
 
 .error-feedback { display:none; }
 .validation-feedback i { font-size: 1.2em; top:-18px; }
@@ -1715,31 +1718,31 @@ form.text-left input:not([type="checkbox"]){
     border-radius:12px;
     -webkit-border-radius:12px;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    font-size:16px;
+    font-size: 1.125em !important;
     line-height:28px;
 }
 .add-btn-lst a:hover{background-color: #E6E4DD;color: #333333;}
 .steps-content .default-image{padding:0 0 20px;}
 .steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
-.add-bottom-lst input,
+
 .steps-content .btn-area input,
 .steps-content .btn-save input{
     float:right;
-    background: #91C2AF;
+    background-color: #F9F6EC;
     width:150px;
     height:34px;
-    color:#ffffff;
+    color:#333333;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    font-size: 1.125em !important;
     border:0;
     border-radius:6px;
     -webkit-border-radius:6px;
 }
-.add-bottom-lst input:hover,
-.add-bottom-lst input:focus, 
+
 .steps-content .btn-area input:hover,
 .steps-content .btn-area input:focus,
 .steps-content .btn-save input:hover,
-.steps-content .btn-save input:focus {background-color: #50967B;color: #FFFFFF;}
+.steps-content .btn-save input:focus {background-color: #E6E4DD;color:#333333;}
 
 .steps-content .btn-area input{width:100%;}
 .add-bottom-lst{
@@ -1751,7 +1754,18 @@ form.text-left input:not([type="checkbox"]){
     overflow:hidden;
     padding:0 0 10px;
 }
-.add-bottom-lst input{width:100%;}
+.add-bottom-lst input{
+    width:100%;
+    float:right;
+    background-color: #91C2AF;
+    height:34px;
+    color:#ffffff;
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    font-size: 1.125em !important;
+    border:0;
+    border-radius:6px;
+    -webkit-border-radius:6px;
+}
 .steps-content .input-prepend{
     display:block;
     font-size:15px;
