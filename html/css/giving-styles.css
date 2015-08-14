@@ -68,11 +68,9 @@ textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color:
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
 
-
-label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
+label { font:400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif; color:#c66; }
 
 /* GLOBAL STYLES & HELPER CLASSES */
-
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .small { font-size:.875em; }
 .smaller { font-size:.775em; margin-top:5px; }
@@ -155,11 +153,7 @@ hr.m5{margin: 5px 0;}
 /* CUSTOM FORM STATES */
 
 /* error state*/
-label{
-    font-family: "Open Sans", sans-serif;
-    color: #cc6666;
-    font-weight: 400;
-}
+
 .control-group.error input, .control-group.error select, .control-group.error textarea {
   border-color: #cc6666;
   font-family: "Open Sans", sans-serif;
@@ -320,7 +314,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 #donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus{background-color: #e6e6e6;}
 
 .error-feedback { display:none; }
-.validation-feedback i { font-size: 1.2em; top:-18px; }
+.validation-feedback i { top:-18px; }
 .close i, .close{color: #333; opacity: 1;}
 
 .control-group.error .validation-feedback i { color: #cc6666; }
