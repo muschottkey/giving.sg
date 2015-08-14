@@ -3,9 +3,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
 
 /* Typography */
-h1, h2, h3, h4, h5,
-.section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
-.p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5{ 
+h1, h2, h3, h4, h5{ 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
     color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
 }
@@ -14,10 +12,10 @@ h1 { font-size:2.5em; } /* 40px */
 h2 { font-size:2.25em; } /* 36px */
 h3 { font-size: 1.75em; } /* 28px */
 h4 { font-size: 1.5em; } /* 24px */
-h5, h6, 
-.section-header h5, .section-header h6, .p-section h5 { font-size: 1.125em; color:#999; } /* 18px */
+h5, h6 { font-size: 1.125em; color:#999; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
+
 a, a:link {color:#9DC9EE; text-decoration: none; }
     a:visited {color:#999;}
     a:hover {color:#C66;text-decoration: underline;}
@@ -25,15 +23,43 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 
 /* Corporate Identity chnages */
+.section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
+.p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5 { 
+    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
+    color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
+}
+.section-header h5, .section-header h6, .p-section h5, .conf-states-wrapper .box h5
+    { font-size: 1.125em; color:#999; font-weight:700; }
+
+.conf-states-wrapper p, .dtn-desc .small, .cpn-story .body p, .cpn-holder .sgtn-body p,
+.refine-search p, .boxed-wrapper .gf-bkt tr td, .box .summary-wrapper p.small.grey,
+.control-group p.small, .npo-header p, .signupnpo p, .controls label.small
+    { color:#333; font-size:1em; }
+    #gf-bkt-wrapper .gf-bkt tr td.warning { color:#faa732;}
+    #gf-bkt-wrapper .gf-bkt tr td.info  { color:#49afcd;}
+
+.acc-section .small, .acc-section .smaller, #cpn-donate-now .small, .box .small,
+#cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, .mod-tell-friends .small,
+.cpn-sgtn-item .txt-npo, .signup-section p.small, .modalwrapper .summary-wrapper .headings span,
+
+    { font-size:0.889em; color:#333; }
+
+    #donateModal .form-group .small a, #donateModal .control-group .small a, #vw-gift-bkt-donate .small 
+        { font-size:1em; }
+
+
 .modalwrapper > .row-fluid > .text-center h2.black,
 .modalwrapper > .row-fluid > .text-center h4.black,
 .modalwrapper > .row-fluid > .span6 .text-center h4.black
- { color:#C66; }
+    { color:#C66; }
 
 .modalwrapper > .row-fluid > .text-center .form-group h5.black
- { color:#999; }
+    { color:#999; }
 
 .signup-section h2, .signup-section h3 { margin:0; }
+
+
+
 /*  +++++++++++++++++++++++++++++++++++++++++++ */
 button, .btn {background-image: none !important;box-shadow: none;}
 
@@ -344,7 +370,6 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .sign-up-form { border-left:1px solid #e3e3e3; } 
 
 i.signup-envelope { font-size:5.625em;color: #333; }
-a.resendmail {font-size:.875em; }
 .signup-section .alert { padding:1em 1.5em; }
 .signupnpo .alert { min-height:320px; }
 
@@ -477,7 +502,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 .minimal i{margin-right: 10px;font-size: 2em;position: absolute;margin-left:-34px;margin-top: -5px;}
 .org-name{width: 80%;}
-.co-desc{ margin-top: 0;margin-bottom:20px;font-weight: 600;}
+.co-desc{ margin-top: 0;margin-bottom:20px; }
 .tax-status { color: #59B259; font-size:.775em; display:block; margin-bottom:10px; border:1px solid #cccccc; padding:5px 0; }
 .tax-status.large{font-size: 0.9em;}
 .tax-status i {margin-right:3px;}
