@@ -37,10 +37,11 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 /*  +++++++++++++++++++++++++++++++++++++++++++ */
 button, .btn {background-image: none !important;box-shadow: none;}
 
-textarea, input { font-size:1em !important; height:1.3em; }
-    input:not([type=checkbox]) { font-family: "Open Sans", Arial, sans-serif; height:1.3em; }
+textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color: #999;}
+    input:not([type=checkbox]) { font-family: "Open Sans", Arial, sans-serif; height:1.3em;font-weight:400;color: #999; }
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
+
 
 label { font-family: "Lato", Arial, sans-serif; font-size: 1.125em; line-height:1.4; }
 
@@ -594,9 +595,9 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .preset-amts button{width: 70px;height: 40px;margin: 10px 4px;font-weight: 900;}
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px;margin-top: 40px;border: 2px solid #e3e3e3;}
-input::-webkit-input-placeholder {color: #c0c0c0 !important;} 
-input:-moz-placeholder{color: #c0c0c0 !important;} 
-input:-ms-input-placeholder{color: #c0c0c0 !important;} 
+input::-webkit-input-placeholder {color: #999 !important;} 
+input:-moz-placeholder{color: #999 !important;} 
+input:-ms-input-placeholder{color: #999 !important;} 
 #donation-userDetails .control-group{margin-top: 1em;margin-bottom: 20px;}
 #donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
 #donation-userDetails input{margin-bottom: 3px;height: 1em;font-size: 1em !important;color: #989898 !important;}
@@ -689,7 +690,6 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
 }
 
 #custom-amt-input span { font-weight: 900; }
-    #donate-buttons #custom-amt-input input {  font-family: "Lato", Arial, sans-serif;  font-weight: 900;  }
 
 .button-input{
     width: 70% !important;  border: none;  border-bottom: 2px solid #333;
@@ -703,7 +703,7 @@ input:-ms-input-placeholder{color: #c0c0c0 !important;}
     border-radius: 0;
 }
 
-.button-input:focus{border-bottom: 2px solid #efefef;outline: none;}
+.button-input:focus{border-bottom: 2px solid #333;outline: none;}
 #dtn-user-about{border: none;margin-top: 0 !important;}
 .contact-us{width:inherit !important;}
 #dtn-about-us-wrapper{padding: 30px;border: 1px solid #E3E3E3;padding-bottom: 0;}
