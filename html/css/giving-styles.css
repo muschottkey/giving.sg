@@ -261,7 +261,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .modal-header { border-bottom: none; }
 .modal-header .close{  position: absolute;right: 20px;}
 .modal-body { max-width:800px; }
-.modal-footer { background:#d8d8d8; text-align:center; padding: 10px 5px; }
+.modal-footer { background:#F6F09A; text-align:center; padding: 10px 5px; border: none;}
 
 /* MODAL - Typography */
 .modal h2, .main-content h2, .main-content h3 { }
@@ -882,7 +882,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #vw-gft-dtn-prefs tr td:first-child{width: 30%}
 #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 40px;padding-top: 6px;}
 .box-r-footer { 
-    display: block; padding:5px 10px; margin-top:20px; background-color: #F5EAB1; 
+    display: block; padding:5px 10px; margin-top:20px; background-color: #F6F09A; 
     border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
 }
     .fr-person img { padding-right:5px; }
@@ -1034,6 +1034,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     background:#FFF; border-top:1px solid #CCC; padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+.box-r-footer{background-color: #F6F09A;}
 .fr-widget .fr-person{ font-weight: 600; }
 .fr-widget .fr-person img{
     width: 40px;
