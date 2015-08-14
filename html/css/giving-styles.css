@@ -271,8 +271,10 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
 #setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
 #claim-tax input:not([type="checkbox"]) { 
-    width:98%; padding:8px 0px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
+    width:98%; padding:7px 0 2px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
 }
+#setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
+
 .modal .validation-feedback , #respwdForm .validation-feedback,#gf-bkt-login .validation-feedback,
 #donation-userDetails .validation-feedback{
     position: absolute; display: none; background: transparent; 
@@ -744,7 +746,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 
 /* Search Results */
 .main-content  .search-controls input { 
-    padding-left:1em; font-family:"Open Sans"; font-size:1.1em !important; color: #333; text-align:left;
+    padding-left:1em; font-family:"Open Sans"; font-size:1em !important; color: #999; text-align:left;
 }
 .search-controls .control-label { line-height:2em; }
     .search-controls .link-refine { line-height:3em; }
@@ -764,6 +766,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .gf-bkt thead tr td{font-size: 0.875em;}
 .gf-bkt tr{border-top:0px solid #333;border-left:1px solid #333;border-rigt:1px solid #333;}
 .gf-bkt tr td{border-right:1px solid #DDD;text-align: center;font-size: 0.875em;vertical-align: middle;}
+.gf-bkt input{ font-size: 1.143em !important;}
 .gf-bkt .check-col{width:40px !important;}
 .gf-bkt .add-txt{
     display:inline-block;
@@ -1070,7 +1073,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* Copy Url Box */
 .cpn-url-box {
-    font-size: 12px;
+    font-size: 16px;
     position: relative;
     padding-right: 57px;
     float: none;
