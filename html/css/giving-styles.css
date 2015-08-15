@@ -68,7 +68,7 @@ textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color:
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
 
-label { font:400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif; color:#c66; }
+label { font:400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif; color:#cc6666 !important; }
 
 /* GLOBAL STYLES & HELPER CLASSES */
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
@@ -144,6 +144,7 @@ hr.m5{margin: 5px 0;}
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
+.bg-giving-blue{background-color: #9DC9EE;}
 .bg-white{background-color: #ffffff;}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
@@ -175,6 +176,26 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
+.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on{
+    border-color: #cc6666;
+    color: #cc6666;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.alert-danger, .alert-error{
+    color: #cc6666;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.alert-danger, .alert-error h6{
+    color: #cc6666;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.alert-danger, .alert-error i{
+    color: #c66;
+}
+
 /*Success state*/
 .control-group.success input, .control-group.success select, .control-group.success textarea{
     border-color: #91C2AF;
@@ -195,6 +216,17 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     color: #91C2AF;
     font-weight: 400;
 }
+
+.control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
+    border-color: #91C2AF;
+    color: #91C2AF;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.control-group .input-prepend .add-on.fa, .control-group .input-append .add-on.fa{
+    font-family: "FontAwesome";
+}
+
 /*Info state*/
 .control-group.info .control-label, .control-group.info .help-block, .control-group.info .help-inline{
     color: #9DC9EE;
@@ -209,7 +241,11 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
-
+.alert-info{
+    color:  #9DC9EE;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
 
 /* CONTENT LAYOUT */
 .wrapper { width:100%; overflow:hidden; position:relative;}
@@ -265,7 +301,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
 #setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
 #claim-tax input:not([type="checkbox"]) { 
-    width:98%; padding:7px 0 2px; line-height:1.4; border-width: 0 0 2px; box-shadow:none; border-radius: 0;
+    width:98%; padding:7px 0 2px; line-height:1.4; border-width: 0 0 1px; box-shadow:none; border-radius: 0;
 }
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
@@ -421,8 +457,8 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;text-align: center;border:1px solid #fae0a8;}
 .carousel-indicators{top:inherit;right: auto;left:auto;bottom: 20px;text-align: center;width: 100%;}
 #npoCarousel .carousel-indicators{bottom: -30px;}
-.carousel-indicators li{background-color: transparent;border: 1px solid #5bb75b;float: none;display: inline-block;cursor: pointer;}
-.carousel-indicators li.active{background-color: #5bb75b;}
+.carousel-indicators li{background-color: transparent;border: 1px solid #cccccc;float: none;display: inline-block;cursor: pointer;}
+.carousel-indicators li.active{background-color: #cc6666;border-color: #cc6666;}
 .carousel .item button{margin-top: 20px;}
 
 /*NPO Detail*/
@@ -465,7 +501,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #selAmount.sod_select:before{display: none;}
 #sortSearchResults{
     border:none;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 
 /* Donation Logged In Page */
@@ -477,7 +513,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     border-radius: 50%;
     background-color: #e3e3e3;
     margin: 0 auto;
-    border:1px solid #a9a9a9;
+    border:1px solid #cccccc;
     overflow: hidden;
     -webkit-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.3);
@@ -499,7 +535,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .minimal i{margin-right: 10px;font-size: 2em;position: absolute;margin-left:-34px;margin-top: -5px;}
 .org-name{width: 80%;}
 .co-desc{ margin-top: 0;margin-bottom:20px; }
-.tax-status { color: #59B259; font-size:.775em; display:block; margin-bottom:10px; border:1px solid #cccccc; padding:5px 0; }
+.tax-status { color: #91C2AF; font-size:.775em; display:block; margin-bottom:10px; border:1px solid #cccccc; padding:5px 0; }
 .tax-status.large{font-size: 0.9em;}
 .tax-status i {margin-right:3px;}
 .tax-status.large i{margin-left: -26px;margin-top:-3px;position:absolute;font-size: 1.5em;}
@@ -513,8 +549,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .choice-buttons{margin-top: 30px;}
 .choice-buttons button{width: 35%;padding: 7px;}
 .choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
-.choice-buttons button.yes.active{background-color: #51a351;}
-.choice-buttons button.no.active{background-color: #bd362f;}
+.choice-buttons button.yes.active{background-color: #91C2AF;}
+.choice-buttons button.no.active{background-color: #cc6666;}
 
 /*.btn-ghost{ background: #FFF;color: #000;font-weight:700;box-shadow: none;border-width:2px;border-radius:6px;border-color: #cccccc;}*/
 .btn-ghost{ box-shadow: none;border-radius:6px;}
@@ -574,7 +610,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
 #causes-wrapper .cause-box { 
-    width:22%; float:left; margin:0 1.35% 20px; border: solid 1px #d3d3d3; 
+    width:22%; float:left; margin:0 1.35% 20px; border: solid 1px #cccccc; 
     border-radius: 8px;
 }   
     #causes-wrapper .cause-box.span4 { width:30.5%; margin-bottom: 50px; }
@@ -590,20 +626,20 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .cause-box a { text-decoration: none; }
 .cause-box h4 {
     display:block; background:#ffffff; height:40px; line-height:40px; font-size: 0.8em; 
-    border: solid 1px #d3d3d3; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
+    border: solid 1px #cccccc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
     margin: 0;
 }
 .cause-box input[type=checkbox] + label:before {
     content: "Adults"; display: block; background: #FFF; position: absolute;
     width: 100%;height: 40px; font-size: 0.8em; line-height: 2.8em;
-    bottom: -41px; left: -1px; border: solid 1px #d3d3d3; border-bottom-left-radius: 8px;
+    bottom: -41px; left: -1px; border: solid 1px #cccccc; border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
 .cause-box input[type=checkbox]:checked + label:after{
     content: "\f058";
     font-family: "FontAwesome";
     display: block;
-    color: #0DB00D;
+    color: #91C2AF;
     background: transparent;
     position: absolute;
     width: 20px;
@@ -615,7 +651,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 .preset-amts button{width: 70px;height: 40px;margin: 10px 4px;font-weight: 900;}
 #save-actions{border:none;}
-#donation-userDetails{padding: 20px;margin-top: 40px;border: 2px solid #e3e3e3;}
+#donation-userDetails{padding: 20px;margin-top: 40px;border: 1px solid #cccccc;}
 input::-webkit-input-placeholder {color: #999 !important;} 
 input:-moz-placeholder{color: #999 !important;} 
 input:-ms-input-placeholder{color: #999 !important;} 
@@ -633,7 +669,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 #user-about-links .input-append.input-prepend .add-on{height: 30px;font-size: 12px;line-height: 2.5em;}
 #user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686;}
 #user-about-links .input-append.input-prepend .add-on:first-child{width: 60px;}
-#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #54a954;content: "\f058";}
+#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #91C2AF;content: "\f058";}
 
 /* Set-up donation step 2*/
 .action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
@@ -705,7 +741,7 @@ input:-ms-input-placeholder{color: #999 !important;}
     background-color: #ffffff;
     width: 96%;
     margin-top: 20px;
-    border: 2px solid #e3e3e3;
+    border: 1px solid #cccccc;
     border-radius:6px;
     padding: 4px 0 0 0;
 }
@@ -713,7 +749,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 #custom-amt-input span { font-weight: 900; }
 
 .button-input{
-    width: 70% !important;  border: none;  border-bottom: 2px solid #333;
+    width: 70% !important;  border: none;  border-bottom: 1px solid #333;
     padding: 0 !important;
     margin: 10px 5px;
     text-align: center;
@@ -724,10 +760,10 @@ input:-ms-input-placeholder{color: #999 !important;}
     border-radius: 0;
 }
 
-.button-input:focus{border-bottom: 2px solid #333;outline: none;}
+.button-input:focus{border-bottom: 1px solid #333;outline: none;}
 #dtn-user-about{border: none;margin-top: 0 !important;}
 .contact-us{width:inherit !important;}
-#dtn-about-us-wrapper{padding: 30px;border: 1px solid #E3E3E3;padding-bottom: 0;}
+#dtn-about-us-wrapper{padding: 30px;border: 1px solid #cccccc;padding-bottom: 0;}
 #dtn-about-us-wrapper .box.reset{margin-top: 20px;padding-bottom: 30px !important; }
 #dtn-impact-s .box{padding:492px 0 !important;}
 #dtn-user-large-cta .span6.box.reset:first-child{margin-left: 0;}
@@ -756,10 +792,10 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 /*       GIFT BASKET       */
 #gf-bkt-wrapper{margin-bottom: 0px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
-.gf-bkt{border: 1px solid #DDD;border-radius: 8px;border-collapse: separate;margin-top: 40px; width:100%;}
+.gf-bkt{border: 1px solid #cccccc;border-radius: 8px;border-collapse: separate;margin-top: 40px; width:100%;}
 .gf-bkt thead tr td{font-size: 0.875em;}
-.gf-bkt tr{border-top:0px solid #333;border-left:1px solid #333;border-rigt:1px solid #333;}
-.gf-bkt tr td{border-right:1px solid #DDD;text-align: center;font-size: 0.875em;vertical-align: middle;}
+.gf-bkt tr{border-top:0px solid #333;border-left:1px solid #cccccc;border-right:1px solid #cccccc;}
+.gf-bkt tr td{border-right:1px solid #cccccc;text-align: center;font-size: 0.875em;vertical-align: middle;}
 .gf-bkt input{ font-size: 1.143em !important;}
 .gf-bkt .check-col{width:40px !important;}
 .gf-bkt .add-txt{
@@ -789,9 +825,9 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .gf-bkt .check-col .check.active{background-position:0 -20px;}
 .gf-bkt tr td i{display: block;margin-bottom:4px;}
 .gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;right:70px;}
-.gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#5bb75b;}
+.gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#91C2AF;}
 .gf-bkt tr td.warning,.gf-bkt tr td .tax-statement.warning,.gf-bkt tr td.warning i {color:#faa732;}
-.gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#49afcd;}
+.gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#9DC9EE;}
 .gf-bkt tr td:last-child{border-right:none;}
 .gf-bkt tbody tr td:nth-child(2) {width: 49%;height:100px;text-align: left;padding:10px 15px;}
 .gf-bkt tbody tr td:nth-child(3) {width: 20%;font-size: 0.80em;line-height: 1.3em;}
@@ -823,7 +859,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
 #qk-bkt-toggle{background-color: #ffffff;color: #000;font-weight: 900;border-radius: 0;margin: 0;padding: 15px 15px 15px;}
 #qk-bkt-toggle img{margin-top: -5px;margin-right: 2px;}
-.qk-bkt-li ul{display: none;width: 370px;background-color: #ffffff;position: absolute;right: 0;border: 1px solid #E3E3E3;}
+.qk-bkt-li ul{display: none;width: 370px;background-color: #ffffff;position: absolute;right: 0;border: 1px solid #cccccc;}
 .qk-bkt-li ul li{list-style: none;border-bottom: 1px solid #E3E3E3;text-align: center;}
 .qk-bkt-li ul li a{padding: 15px 10px;display: block;min-height: 60px;}
 .qk-bkt-li ul li.more-items a{line-height: 55px;}
@@ -842,7 +878,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
     width: 30px;
     font-size: 15px;
 }
-#setup-dtn-carousel .carousel-indicators li{border:1px solid #b3b3b3;background-color: #ffffff;}
+#setup-dtn-carousel .carousel-indicators li{border:1px solid #cccccc;background-color: #ffffff;}
 #setup-dtn-carousel .carousel-indicators li.active{background-color:  #cc6666;border-color: #cc6666;}
 
 #vw-gift-bkt-donate{
@@ -862,7 +898,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #payment-type .input-wrapper .control-group{margin-top: 20px;}
 #payment-type .input-wrapper .control-group label{display: inline-block;}
 #payment-type .input-wrapper .control-group .controls{float: right;}
-#payment-type .input-wrapper .control-group .controls input:not([type=checkbox]){line-height: 1.4;border-width: 0 0 2px;
+#payment-type .input-wrapper .control-group .controls input:not([type=checkbox]){line-height: 1.4;border-width: 0 0 1px;
   box-shadow: none;
   border-radius: 0;
 }
@@ -1169,7 +1205,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .modal-dtn-amts .dtn-amt-item:hover .dtn-desc{border-left: 1px solid #4cae4c;}
 .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #cccccc;background-color: #ffffff;color: #333;}
-.modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 2px solid #333;outline: none; }
+.modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 1px solid #333;outline: none; }
 
 .carousel > .ico{
     position:absolute; right:17px; top:17px; font-size:1em; z-index:10; 
@@ -1239,6 +1275,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     -webkit-border-radius:22px;
     max-width:834px;
     cursor:pointer;
+    line-height: 1;
 }
 .accordion-title .fa{
     position:absolute;
@@ -1246,7 +1283,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     top:11px;
     color:#ccc;
     font-size:18px;
-    line-height:22px;
+    line-height:28px;
 }
 .f-holder{overflow:hidden;}
 .f-box{
@@ -1310,11 +1347,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px; }
 .landing-cpn-slider-wrapper .cn-ln-details .causes{
-    border:none; border-right:1px solid #d7d7d7;
+    border:none; border-right:1px solid #cccccc;
 }
 
 .landing-cpn-slider-wrapper .cpn-slide-right{ 
-    margin-left:0; border-left: none; position: relative;border-left:1px solid #d7d7d7;
+    margin-left:0; border-left: none; position: relative;border-left:1px solid #cccccc;
 }
 .cpn-slide-right .c-inner { width:93%; padding: 15px 8%; }
 .cpn-slide-right h3 { margin:0; }
@@ -2033,7 +2070,7 @@ form.text-left input:not([type="checkbox"]){
     #dtn-user-actions .btn.fullwidth{width: 100%;}
     #dtn-impact-s .box {padding: 30px 30px !important;}
     #dtn-user-actions > .box{background-color: #efefef;margin-top: 20px;}
-    #dtn-user-actions #dtn-impact-s{background-color: #fff;border: 1px solid #dddddd;}
+    #dtn-user-actions #dtn-impact-s{background-color: #fff;border: 1px solid #cccccc;}
     #dtn-add-logo .box.reset{background-color: #efefef;}
     #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:10px 1% 10px 2% !important; }
     .npo-deet #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:2px 1% 10px 2%; }
@@ -2196,7 +2233,7 @@ form.text-left input:not([type="checkbox"]){
     #setup-donation-content .progress-dots ul { width:auto; max-width:150px; }
     #setup-donation-content .progress-dots ul li .step-dot {
         -webkit-text-stroke:0.5px;color:#000; font-size:0.8em;line-height: 1.8em;
-        text-align: center; width:24px; height:24px;background:#fff;  border: 1px solid #bbb;
+        text-align: center; width:24px; height:24px;background:#fff;  border: 1px solid #cccccc;
     }
 
     .section-header{background-color: #e3e3e3;padding: 15px 0;}
@@ -2211,7 +2248,7 @@ form.text-left input:not([type="checkbox"]){
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
     #causes-wrapper.has-checkboxes{margin-left: 0px;}
-    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border:2px solid #efefef;overflow: hidden;width: 100% !important;margin-bottom: 15px !important;}
+    .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border: 1px solid #cccccc;overflow: hidden;width: 100% !important;margin-bottom: 15px !important;}
     .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
         border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}
     .cause-box.inline-mobile input[type=checkbox]:checked + label:after {top: 13px;}
@@ -2264,7 +2301,7 @@ form.text-left input:not([type="checkbox"]){
         padding: 10px !important;
         right: 0;
         bottom: 0;
-        border: 1px solid #ddd;
+        border: 1px solid #cccccc;
         border-bottom-width: 0;
         border-right-width: 0;
         position:absolute;

@@ -5682,32 +5682,32 @@ a.badge:focus {
 
 .label-warning,
 .badge-warning {
-  background-color: #f89406;
+  background-color: #cc6666;
 }
 
 .label-warning[href],
 .badge-warning[href] {
-  background-color: #c67605;
+  background-color: #cc6666;
 }
 
 .label-success,
 .badge-success {
-  background-color: #468847;
+  background-color: #91C2AF;
 }
 
 .label-success[href],
 .badge-success[href] {
-  background-color: #356635;
+  background-color: #91C2AF;
 }
 
 .label-info,
 .badge-info {
-  background-color: #3a87ad;
+  background-color: #9DC9EE;
 }
 
 .label-info[href],
 .badge-info[href] {
-  background-color: #2d6987;
+  background-color: #9DC9EE;
 }
 
 .label-inverse,

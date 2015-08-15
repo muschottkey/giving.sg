@@ -71,7 +71,7 @@
     /* Options list wrapper */
     .sod_select .sod_list_wrapper  {
         position: absolute; top: 100%; left:0; display: none; height: auto; width:100%;
-        margin: 0 0 0 -3px; background: #FFF; color:#444; border:1px solid #efefef;
+        margin: 0 0 0 -3px; background: #FFF; color:#444; border:1px solid #cccccc;
         box-shadow: 0 0 5px rgba(0,0,0,.2); border-top: none; font-weight: 300; z-index: 1;
     }
 
@@ -133,7 +133,7 @@
             .sod_select .sod_option.active
                 {
                     background: #f7f7f7;
-                    color: #333333;
+                    color: #cc6666;
                 }
 
             /*Make room for the check mark */
@@ -186,7 +186,7 @@
 
     .sod_select.autofit{width: 80px;}
     .sod_select .sod_list_wrapper{
-        border:1px solid #efefef !important;
+        border:1px solid #cccccc !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);
     }
     .large-select .sod_select{
@@ -194,14 +194,14 @@
         line-height: 1.3;
         width: 200px;
     }
-    #selAmount{border:none;border-bottom: 2px solid #cccccc;font-size: 1em;width: 160px;}
+    #selAmount{border:none;border-bottom: 1px solid #cccccc;font-size: 1em;width: 160px;}
     #selAmount.focus,  #sortSearchResults.focus{box-shadow: none;}
     #selAmount .sod_option,  #sortSearchResults .sod-option{text-align: center;}
     #selAmount .sod_label{ font-size: 1.8em; }
     #selAmount.long_input{width: 220px;}
     #selAmount.long_input .sod_prefix{margin-right: 5px;}
 
-    #sortSearchResults{border:none;border-bottom: 1px solid #979797;font-size: 1em;border-radius: 0;}
+    #sortSearchResults{border:none;border-bottom: 1px solid #cccccc;font-size: 1em;border-radius: 0;}
     #sortSearchResults .sod_label{font-size: 1em;}
     #sortSearchResults{padding:5px; width:180px; }
         #sortSearchResults:before {display: none;}
