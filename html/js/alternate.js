@@ -266,14 +266,8 @@ $(function(){
     $('.select-giving-autofit-text').selectOrDie({
          onChange: function(){
             var amtvalue = $(this).val();
-            var length = amtvalue.length - 2;
-            if(length >= 8){
-                var dynamic_width = 13*length;
-            }
-            else{
-                length = length + 2;
-                var dynamic_width = 30 + 15*length;
-            }
+            var length = amtvalue.length ;
+            var dynamic_width = 50 + 10*length*1.05;
             $(this).closest('.sod_select').css('width', dynamic_width);
         }
     });
