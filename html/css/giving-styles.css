@@ -47,7 +47,6 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
     #donateModal .form-group .small a, #donateModal .control-group .small a, #vw-gift-bkt-donate .small 
         { font-size:1em; }
 
-
 .modalwrapper > .row-fluid > .text-center h2.black,
 .modalwrapper > .row-fluid > .text-center h4.black,
 .modalwrapper > .row-fluid > .span6 .text-center h4.black
@@ -57,8 +56,10 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
     { color:#999; }
 
 .signup-section h2, .signup-section h3 { margin:0; }
+.bg-giving-blue, .indicate-tdr {background-color: #9DC9EE !important;}
 
-
+#donateForm .form-group .sod_select{ height: 40px; line-height: 1.3; width: 200px; }
+#view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
 
 /*  +++++++++++++++++++++++++++++++++++++++++++ */
 button, .btn {background-image: none !important;box-shadow: none;}
@@ -144,7 +145,6 @@ hr.m5{margin: 5px 0;}
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
-.bg-giving-blue{background-color: #9DC9EE;}
 .bg-white{background-color: #ffffff;}
 .clickable{cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
 .clickable:hover{background-color: #F0EDED;-webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
@@ -154,7 +154,6 @@ hr.m5{margin: 5px 0;}
 /* CUSTOM FORM STATES */
 
 /* error state*/
-
 .control-group.error input, .control-group.error select, .control-group.error textarea {
   border-color: #cc6666;
   font-family: "Open Sans", sans-serif;
@@ -188,9 +187,8 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     font-weight: 400;
 }
 .alert-danger, .alert-error h6{
-    color: #cc6666;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    color: #cc6666; font-family: "Open Sans", sans-serif;
+    font-weight: 400; text-align:center;
 }
 .alert-danger, .alert-error i{
     color: #c66;
@@ -316,7 +314,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 /* UI Controls - BUTTONS */
 .btn { font-family: "Lato", Arial, sans-serif;   }
     /*.btn-large { font-weight:900; }*/
-    .btn-large-custom { width:182px;height: 40px; }
+    .btn-large-custom, #signupForm .btn-large { width:200px;height: 40px; text-transform:uppercase; }
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
 
 .open-more,.btn-more-img,.btn,.btn-ghost{
@@ -473,7 +471,10 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #btnDonate{
     position: absolute;top: 50%;
 }
-#spca { font:900 2em/1em "Lato", Arial, sans-serif; font-size:3em !important; color:#000; text-align:center; background:#FFF; }
+#donateLoggedModal #spca { 
+    font:900 2em/1em "Open Sans", Arial, sans-serif; margin-bottom: 10px; 
+    font-size:3em !important; color:#333; text-align:center; background:#FFF; 
+}
 #donateForm .form-group{
     margin-bottom: 30px;
 }
@@ -542,8 +543,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
 .box .small.grey{color: #a5a5a5;}
 .box > h4{margin-bottom: 0px;}
-.box-footer{border-top:1px solid #e3e3e3;margin-top:30px;}
-.box-footer.border-top{border-top:1px solid #e3e3e3 !important;}
+.box-footer{border-top:1px solid #CCC;margin-top:30px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .box-footer p{font-size: 0.8em;}
 .choice-buttons{margin-top: 30px;}
@@ -567,10 +567,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .widget form input{  margin-bottom: 0;height: 1em;font-size: 1em !important;}
 .widget form .control-group{margin-top:15px;}
 .widget form label{margin-bottom:8px;}
-.widget .box-footer{border-top: none;}
 
 /* Logged In Modal user form */
-#userDetails{}
 #userDetails .validation-feedback {margin-top: 0;}
 #userDetails .validation-feedback i, #payment-type .validation-feedback i{font-size: 1em;color: #999999;}
 
@@ -916,9 +914,10 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
     border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;
 }
     .fr-person img { padding-right:5px; }
-.conf-states-wrapper{max-width: 400px; }
-.conf-states-wrapper .box.reset.span12{margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
-.with-padding { }
+.conf-states-wrapper{max-width: 400px; position:relative; }
+    .conf-states-wrapper > .boxed.no-border.centered { position:absolute; background:#FFF;  }
+.conf-states-wrapper .box.reset.span12 { margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
+
 h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
@@ -2053,8 +2052,6 @@ form.text-left input:not([type="checkbox"]){
     .amt-value{float: right !important;width: auto !important;}
     
     #tax-deduc, .box.reset{padding-left: 9px !important;padding-right: 9px !important;}
-    #save-actions.step1{background-color: #e3e3e3;min-height: 120px;}
-    #save-actions.step1 .btn{width: 120px;font-size: 0.75em;}
     #save-status.step1{width: 100%;margin-left: 0;margin-bottom: 20px;margin-top: 15px;}
     #tax-deduc .span6 h6{margin-bottom: 0;margin-top: 20px;font-size: 0.95em;}
     #cause-image-preview{padding: 0 !important;}
@@ -2247,7 +2244,7 @@ form.text-left input:not([type="checkbox"]){
         display: -webkit-flex; display: flex;
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
-    #causes-wrapper.has-checkboxes{margin-left: 0px;}
+    .donation-wrapper #causes-wrapper{margin-left: 0px;}
     .cause-box.inline-mobile.span4{margin-top: 15px;border-radius: 6px;border: 1px solid #cccccc;overflow: hidden;width: 100% !important;margin-bottom: 15px !important;}
     .cause-box.inline-mobile input[type=checkbox] + label:before {width: 200px;height: 50px;line-height: 3.8em;font-size:0.75em;bottom: -41px;left: 42px;top: 0px;border:none;border-left:1px solid #efefef;
         border-radius: 0;background-color:#f9f9f9;padding-left: 10px;text-align: left;}

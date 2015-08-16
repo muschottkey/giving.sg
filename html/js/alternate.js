@@ -611,12 +611,6 @@ $(function(){
     $('.match-height-abt-impact').matchHeight();
 
     $('.landing-cpn-slider-wrapper .swiper-slide').matchHeight();
-
-
-    $('#donateLoggedModal').on("shown",function(){
-    // $('.mk-dtn-match').matchHeight();
-        
-    })
     
 
 })
