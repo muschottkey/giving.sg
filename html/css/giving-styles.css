@@ -1663,15 +1663,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(4) a.mobile-block{
-    background-image: url('../images/Children.png');
+    background-image: url('../images/Carousel.png');
 }
 
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(5) a.mobile-block{
-    background-image: url('../images/Wheelchair.png');
+    background-image: url('../images/Disabilities.png');
 }
 
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(6) a.mobile-block{
-    background-image: url('../images/Student.png');
+    background-image: url('../images/Stationery.png');
 }
 
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(7) a.mobile-block{
@@ -1687,11 +1687,11 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(10) a.mobile-block{
-    background-image: url('../images/UNICEF.png');
+    background-image: url('../images/Volunteering.png');
 }
 
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(11) a.mobile-block{
-    background-image: url('../images/Girl.png');
+    background-image: url('../images/Hairband.png');
 }
 
 /***************************************************************************
