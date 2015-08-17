@@ -1633,7 +1633,19 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     background-repeat: no-repeat;
 }
 
-.cause-box a.mobile-block{display: block;background-color: #fff;background-position: center 25%;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+.cause-box.inline-mobile input[type=checkbox] + label:before, .cause-box a h4{
+    color: #9DC9EE;
+}
+
+.cause-box.inline-mobile input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
+    text-decoration: underline;
+}
+
+.cause-box.inline-mobile input[type=checkbox] + label:visited:before{
+    color: #999;
+}
+
+.cause-box a.mobile-block{display: block;background-color: #fff;background-position: center 25%;border-radius: 6px;}
 
 .cause-box img{opacity: 0;}
 
