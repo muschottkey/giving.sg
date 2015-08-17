@@ -639,8 +639,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 .cause-box a { text-decoration: none; }
 .cause-box h4 {
-    display:block; background:#ffffff; height:40px; line-height:40px; font-size: 0.8em; 
-    border: solid 1px #cccccc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
+    display:block; background:#ffffff; height:40px; line-height:40px; font-size: 0.8em;border:none; 
+    border-top: solid 1px #cccccc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
     margin: 0;
 }
 .cause-box input[type=checkbox] + label:before {
@@ -1624,6 +1624,63 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     top:15px;
 }
 
+/***************************************************************************
+                            CAUSE ICONS
+***************************************************************************/
+.cause-box.inline-mobile input[type=checkbox] + label, .cause-box a.mobile-block{
+    background-size: 64px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.cause-box a.mobile-block{display: block;background-color: #fff;background-position: center 25%;border-bottom-left-radius: 6px;border-bottom-right-radius: 6px;}
+
+.cause-box img{opacity: 0;}
+
+
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(1) a.mobile-block{
+    background-image: url('../images/cause_usergroups.png');
+}
+
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(2) a.mobile-block{
+    background-image: url('../images/Dog.png');
+}
+
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(3) a.mobile-block{
+    background-image: url('../images/Gallery.png');
+}
+
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(4) a.mobile-block{
+    background-image: url('../images/Children.png');
+}
+
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(5) a.mobile-block{
+    background-image: url('../images/Wheelchair.png');
+}
+
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(6) a.mobile-block{
+    background-image: url('../images/Student.png');
+}
+
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(7) a.mobile-block{
+    background-image: url('../images/Walker.png');
+}
+
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(8) a.mobile-block{
+    background-image: url('../images/Handplanting.png');
+}
+
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(9) a.mobile-block{
+    background-image: url('../images/Heartmonitor.png');
+}
+
+#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(10) a.mobile-block{
+    background-image: url('../images/UNICEF.png');
+}
+
+#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(11) a.mobile-block{
+    background-image: url('../images/Girl.png');
+}
 
 /***************************************************************************
                             DASHBOARD
@@ -2487,6 +2544,15 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     
     .boxed-wrapper.gf{max-width: 80%;padding: 0 30px;}
     #vw-gft-dtn-prefs  .controls {float:right; width:100%; margin-left:0;}
+
+    /***********************************************************************
+                                CAUSE ICONS
+    ***********************************************************************/
+    .cause-box.inline-mobile input[type=checkbox] + label {
+      background-size: 26px;
+      background-position: 4% center;
+      background-repeat: no-repeat;
+    }
 }
 
 @media (min-width:360px) and (max-width:767px) {
