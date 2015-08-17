@@ -40,12 +40,11 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 
 .acc-section .small, .acc-section .smaller, #cpn-donate-now .small, .box .small,
 #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, .mod-tell-friends .small,
-.cpn-sgtn-item .txt-npo, .signup-section p.small, .modalwrapper .summary-wrapper .headings span,
-
+.cpn-sgtn-item .txt-npo, .signup-section p.small, .modalwrapper .summary-wrapper .headings span
     { font-size:0.889em; color:#333; }
 
-    #donateModal .form-group .small a, #donateModal .control-group .small a, #vw-gift-bkt-donate .small 
-        { font-size:1em; }
+#donateModal .form-group .small a, #donateModal .control-group .small a, #vw-gift-bkt-donate .small 
+    { font-size:1em; }
 
 .modalwrapper > .row-fluid > .text-center h2.black,
 .modalwrapper > .row-fluid > .text-center h4.black,
@@ -344,8 +343,10 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .btn-success:hover,.btn-success:active,.btn-success:focus,
 .add-bottom-lst input:hover,.add-bottom-lst input:active,.add-bottom-lst input:focus{background-color:#50967B; color: #FFFFFF;}
 
-#donate-buttons .btn{background-color: #f5f5f5;}
-#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus{background-color: #e6e6e6;}
+#donate-buttons .btn, .btn.yes, .btn.no{background-color: #f5f5f5;}
+#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus
+.btn.yes:hover, .btn.yes:active, .btn.yes:focus,
+.btn.no:hover,.btn.no:active,.btn.no:focus{background-color: #e6e6e6;}
 
 .error-feedback { display:none; }
 .validation-feedback i { top:-18px; }
@@ -364,6 +365,9 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
         display: inline-block; white-space: normal; text-transform: capitalize;
         margin-right:0; width:100px; text-align: left;
     }
+
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #91C2AF!important;}
+.bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{background-color:#cc6666!important;}
 
 /* MODAL - ONE COLUMN */
 .modal-one-column, .modal-one-column input:not([type=checkbox]) { text-align:center; }
@@ -744,10 +748,10 @@ input:-ms-input-placeholder{color: #999 !important;}
     padding: 4px 0 0 0;
 }
 
-#custom-amt-input span { font-weight: 900; }
+#custom-amt-input span { font-weight: 900; color: #999;}
 
 .button-input{
-    width: 70% !important;  border: none;  border-bottom: 1px solid #333;
+    width: 70% !important;  border: none;  border-bottom: 1px solid #999;
     padding: 0 !important;
     margin: 10px 5px;
     text-align: center;
@@ -758,7 +762,7 @@ input:-ms-input-placeholder{color: #999 !important;}
     border-radius: 0;
 }
 
-.button-input:focus{border-bottom: 1px solid #333;outline: none;}
+.button-input:focus{border-bottom: 1px solid #999;outline: none;}
 #dtn-user-about{border: none;margin-top: 0 !important;}
 .contact-us{width:inherit !important;}
 #dtn-about-us-wrapper{padding: 30px;border: 1px solid #cccccc;padding-bottom: 0;}
@@ -1035,6 +1039,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .cpn-end-date.smaller{
     margin-top: 15px;
+    color: #91C2AF;
+    font-weight: 400;
 }
 
 .open-more{
@@ -1775,8 +1781,8 @@ form.text-left input:not([type="checkbox"]){
     text-decoration:none;
     color:#333333;
     background-color: #F9F6EC;
-    border-radius:12px;
-    -webkit-border-radius:12px;
+    border-radius:6px;
+    -webkit-border-radius:6px;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     font-size: 1.125em !important;
     line-height:28px;
