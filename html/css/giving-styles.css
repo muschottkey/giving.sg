@@ -34,7 +34,7 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 .conf-states-wrapper p, .dtn-desc .small, .cpn-story .body p, .cpn-holder .sgtn-body p,
 .refine-search p, .boxed-wrapper .gf-bkt tr td, .box .summary-wrapper p.small.grey,
 .control-group p.small, .npo-header p, .signupnpo p, .controls label.small
-    { color:#333; font-size:1em; }
+    { color:#333;}
     #gf-bkt-wrapper .gf-bkt tr td.warning { color:#faa732;}
     #gf-bkt-wrapper .gf-bkt tr td.info  { color:#49afcd;}
 
@@ -68,11 +68,15 @@ textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color:
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
 
+.control-group .controls > span,
 label { font:400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif; color:#cc6666 !important; }
+
+.control-group .controls span small {font-size: 100% !important;}
+.control-group .controls .checkbox > .small {font-size: 100% !important;}
 
 /* GLOBAL STYLES & HELPER CLASSES */
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
-.small { font-size:.875em; }
+.small { font-size:.85em; }
 .smaller { font-size:.775em; margin-top:5px; }
 .em { font-weight:500;color: #454545;}
 .big { font-size: 1.5em; }
@@ -174,6 +178,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
+.control-group.error .help-block.smaller{font-size: 0.775em;}
 .control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on{
     border-color: #cc6666;
     color: #cc6666;
@@ -401,7 +406,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 /* Sign Up As Individual Page */
 .signup-section { margin-bottom:30px; }
     .modal-header .signup-section { margin-bottom:0; }
-.sign-up-form { border-left:1px solid #e3e3e3; } 
+.sign-up-form { border-left:1px solid #cccccc; } 
 
 i.signup-envelope { font-size:5.625em;color: #333; }
 .signup-section .alert { padding:1em 1.5em; }
@@ -475,7 +480,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #btnDonate{
     position: absolute;top: 50%;
 }
-#donateLoggedModal #spca { 
+#donateLoggedModal #spca,
+#spca { 
     font:900 2em/1em "Open Sans", Arial, sans-serif; margin-bottom: 10px; 
     font-size:3em !important; color:#333; text-align:center; background:#FFF; 
 }
@@ -540,7 +546,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .minimal i{margin-right: 10px;font-size: 2em;position: absolute;margin-left:-34px;margin-top: -5px;}
 .org-name{width: 80%;}
 .co-desc{ margin-top: 0;margin-bottom:20px; }
-.tax-status { color: #91C2AF; font-size:.775em; display:block; margin-bottom:10px; border:1px solid #cccccc; padding:5px 0; }
+.tax-status { color: #9DC9EE; font-size:.775em; display:block; margin-bottom:10px; border:1px solid #cccccc; padding:5px 0; }
 .tax-status.large{font-size: 0.9em;}
 .tax-status i {margin-right:3px;}
 .tax-status.large i{margin-left: -26px;margin-top:-3px;position:absolute;font-size: 1.5em;}
@@ -797,6 +803,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .gf-bkt{border: 1px solid #cccccc;border-radius: 8px;border-collapse: separate;margin-top: 40px; width:100%;}
 .gf-bkt thead tr td{font-size: 0.875em;}
 .gf-bkt tr{border-top:0px solid #333;border-left:1px solid #cccccc;border-right:1px solid #cccccc;}
+.gf-bkt thead > tr:first-child {font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;font-color:#CC6666;font-weight: bold;}
 .gf-bkt tr td{border-right:1px solid #cccccc;text-align: center;font-size: 0.875em;vertical-align: middle;}
 .gf-bkt input{ font-size: 1.143em !important;}
 .gf-bkt .check-col{width:40px !important;}
@@ -893,6 +900,16 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #vw-gift-bkt-donate .box{ padding:15px; }
 #vw-gift-bkt-donate ul {margin: 0;}
 #vw-gift-bkt-donate ul li{list-style: none;text-align: left;padding: 10px 8px 10px 30px;border-bottom: 1px solid #e3e3e3;}
+
+.gf-bkt thead tr:first-child td, 
+#vw-gift-bkt-donate .gf-bkt tbody tr:first-child td:first-child,
+#vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(2) td,
+#vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(3) td:first-child{
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    color:#CC6666;
+    font-weight: bold;
+    background-color: #F9F6EC;
+}
 
 #payment-type.box{padding: 0;}
 #payment-type ul li > label{display: inline-block;}
@@ -1347,7 +1364,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .landing-cpn-slider-wrapper{
     margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
 }
-.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #d7d7d7; }
+.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
     border:1px solid #d7d7d7; border-bottom: none; overflow: hidden;
 }
@@ -1799,7 +1816,7 @@ form.text-left input:not([type="checkbox"]){
     height:34px;
     color:#333333;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    font-size: 1.125em !important;
+    font-size: 1em !important;
     border:0;
     border-radius:6px;
     -webkit-border-radius:6px;
