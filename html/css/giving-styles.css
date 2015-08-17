@@ -703,7 +703,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 .causes li a, .txt-npo { color:#666; }
     .causes li a:hover { color:#000; }
         .ico-tdr a i { color:#FFF; }
-.txt-npo { font-size:.75em; color:#666; min-height:2.75em; }
+.txt-npo { font-size:.75em; color:#999; min-height:2.75em; }
 
 #setup-donation-cta{border:none;padding-left: 0;padding-right: 0;}
 #setup-donation-cta .btn-group button{width: 50%;height: 40px;font-weight: 800;background: #f5f5f5;}
@@ -1155,7 +1155,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body {
-    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:10px; background:#ffffff; text-align:center;
+    border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:24px 16px 10px 16px; background:#ffffff; text-align:center;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body h5 { min-height:3.78em; width:90%; margin:8px auto 0; }
@@ -1163,14 +1163,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-sgtn-item .box-r-footer{
     background-color: #ffffff;
     margin-top: 0;
+    padding: 0;
 }
-.cpn-sgtn-item .box-r-footer .more-days{ padding:15px 8px; }
+.cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
     position: absolute;
     margin-left: 65px;
     width: 30px;
     height: 30px;
-    margin-top: -27px;
+    margin-top: -40px;
     border: 1px solid #cccccc;
 }
 
