@@ -1641,8 +1641,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     text-decoration: underline;
 }
 
-.cause-box.inline-mobile input[type=checkbox] + label:visited:before{
-    color: #999;
+.cause-box.inline-mobile input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
+    color: #cc6666;
 }
 
 .cause-box a.mobile-block{display: block;background-color: #fff;background-position: center 25%;border-radius: 6px;}
