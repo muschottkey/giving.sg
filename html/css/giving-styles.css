@@ -308,6 +308,8 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 #claim-tax input:not([type="checkbox"]) { 
     width:98%; padding:7px 0 2px; line-height:1.4; border-width: 0 0 1px; box-shadow:none; border-radius: 0;
 }
+
+
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
 .modal .validation-feedback , #respwdForm .validation-feedback,#gf-bkt-login .validation-feedback,
@@ -315,6 +317,9 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     position: absolute; display: none; background: transparent; 
     height: 15px; margin-top:7px; right:15px;
 }
+ #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
+
+
 .modal .forgot-pwd { display: block; }
     .forgot-pwd a.txt-forgot { position: absolute; right:0; font-size:.9em; }
 
@@ -448,7 +453,7 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 .upload-section .control-group{margin-top: 0.5em;}
 .upload-section .input-append{
     margin-left:0px;width: 240px;background-color: #FFF;color: #333; border:1px solid #d9edf7;
-    font-size: 0.8em;line-height:2.3em;text-align: left;padding-left:8px;}
+    font-size: 0.8em;line-height:2em;text-align: left;padding-left:8px;}
 
 
 .npo-header p{width: 300px;margin:0 auto 20px;}
