@@ -491,6 +491,7 @@ $(function(){
             $('#causes-toggle').removeClass('checked');
         }
     })
+    
 
     $('#select-more-causes').on('change','input', function(){
         var checked = $(this).prop('checked');

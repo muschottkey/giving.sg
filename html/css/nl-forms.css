@@ -4,7 +4,7 @@
 .nl-form ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 5px 0;
 }
 
 /* normalize the input elements, make them look like everything else */
@@ -74,7 +74,7 @@
 }
 /* drop-down list / text element */
 .nl-field ul {
-	position: absolute; visibility: hidden; background: #76C3BD;
+	position: absolute; visibility: hidden; background: #fff;
 	left: -0.5em; top: 50%; opacity: 0;
 	-webkit-transform: translateY(-40%) scale(0.9);
 	-moz-transform: translateY(-40%) scale(0.9);
@@ -85,7 +85,7 @@
 }
 
 .nl-field.nl-field-open ul {
-	visibility: visible; opacity: 1; font-size:.875em; padding:.5em; 
+	visibility: visible; opacity: 1; font-size:.875em;; 
 	-webkit-transform: translateY(-20%) scale(1);
 	-moz-transform: translateY(-20%) scale(1);
 	transform: translateY(-20%) scale(1);
@@ -95,15 +95,12 @@
 }
 
 .nl-field ul li {
-	color: #fff;
+	color: #999;
 	position: relative;
 }
 
-.nl-dd ul li { padding:.3em; padding-right:1em; cursor: pointer; white-space: nowrap; }
-
-.nl-dd ul li.nl-dd-checked {
-	color: #478982;
-}
+.nl-dd ul li { padding:0.5em 2.2em 0.5em 0.8em; cursor: pointer; white-space: nowrap; }
+.nl-dd ul li:hover{color:#cc6666; background: #f7f7f7;}
 
 .no-touch .nl-dd ul li:hover {
 	background: rgba(0,0,0,0.05);
@@ -122,7 +119,7 @@
 	text-transform: none; -webkit-font-smoothing: antialiased;
 }
 
-.nl-dd ul li.nl-dd-checked:before { content: "\f00c"; position:absolute; right:.5em;  font-size: .675em;  }
+.nl-dd ul li.nl-dd-checked:before { content: "\f00c"; position:absolute; right:1em;  font-size: .675em; color: #cc6666; }
 
 .nl-ti-text ul {
 	min-width: 8em;

@@ -73,7 +73,6 @@
         position: absolute; top: 100%; left:0; display: none; height: auto; width:100%;
         margin: 0 0 0 -3px; background: #FFF; color:#999; border:1px solid #cccccc;
         box-shadow: 0 0 5px rgba(0,0,0,.2); border-top: none; font-weight: 300; z-index: 1;
-        font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
     }
 
         /* Shows the option list (don't edit) */
@@ -140,7 +139,7 @@
             /*Make room for the check mark */
             .sod_select .sod_option.selected
                 {
-                    font-weight: 700;
+                   
                     padding-right: 10px;
                 }
 
