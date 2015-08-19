@@ -19,8 +19,6 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
     a:visited {color:#999;}
     a:hover {color:#C66;text-decoration: underline;}
 
-h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
-
 /* Corporate Identity chnages */
 .section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
 .p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5 { 
@@ -57,9 +55,10 @@ h5 a, h5 a:link { color:#999; font-weight:bold; } /* 18px */
 #collapse-taxdeduc { overflow:visible; }
 .signup-section h2, .signup-section h3 { margin:0; }
 .bg-giving-blue, .indicate-tdr, .causes li.ico-tdr { 
-    border: 1px solid #CCC; background:none !important; color:#999 !important;}
-        .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
-        .tax-status .fa-check-circle-o { color:#9DC9EE; }
+    border: 1px solid #CCC; background:none !important; color:#999 !important;
+}
+    .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
+    .tax-status .fa-check-circle-o { color:#9DC9EE; }
 
 #donateForm .form-group .sod_select{ height: 40px; line-height: 1.3; width: 200px; }
 #view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
@@ -446,7 +445,7 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 #setup-donation-content .progress-dots ul li .step-dot {
    text-align: center; width:36px; height:36px;background:#fff; -webkit-text-stroke:1px;color:#000; border: 1px solid #cccccc;font-size:1em;line-height: 2.2em;
 }
-#setup-donation-content .progress-dots ul li .step-dot.active{background-color: #54a954;border-color:#54a954;color: #ffffff; }
+#setup-donation-content .progress-dots ul li .step-dot.active{ background:#9DC9EE; border-color:#9DC9EE; color:#FFF; }
 
 .signupnpo .title { text-transform: uppercase; }
 .upload-section { padding: 10px 0; }
@@ -616,42 +615,129 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     border-top: 1px solid #e3e3e3;
 }
 
-/* Causes selection */
+/***************************************************************************
+                            CAUSE ICONS
+***************************************************************************/
 #causes-wrapper { max-width:750px; margin: 40px auto; }
     .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { 
-    width:22%; float:left; margin:0 1.35% 20px; border: solid 1px #cccccc; 
-    border-radius: 8px;
-}   
-    #causes-wrapper .cause-box.span4 { width:30.5%; margin-bottom: 50px; }
+#causes-wrapper .cause-box { width:22%; float:left; margin:0 1.35% 20px; border:solid 1px #CCC; border-radius:6px; }   
+
+.causes ul { margin:0 -15px; }
+.causes li { 
+    display:inline-block; margin:.5em 3.3% 0; width:24px; height:24px; border:1px solid #CCC; border-radius:5px; 
+}
+    .causes.multiple li { width:11%; max-width:24px; height:auto; max-height:24px; margin:0 1%; padding:2.5% 2%; }
+    
+.causes li a { background-size:20px; }
+.causes li a, .txt-npo { color:#666; text-decoration: none; }
+    .causes li a:hover { color:#000; }
+    #causes-wrapper .cause-box.span4 { width:30.5%; margin-bottom:50px; }
+
 .cause-box input[type=checkbox] { display: none; }
-.cause-box input[type=checkbox] + label, .cause-box img {
-  background: #f9f9f9; height: 100px; width: auto; display: block;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  position: relative;
-  transition: all 0.4s;
-  box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
+.cause-box input[type=checkbox] + label, .cause-box img, .cause-box h4 {
+    height: 100px; width: auto; display: block; position: relative; transition: all 0.4s;
+    border-top-left-radius:6px; border-top-right-radius: 6px;
+    box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
+    background-repeat: no-repeat; background-size: 64px; 
 }
-.cause-box a { text-decoration: none; }
+.cause-box input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
+    text-decoration:underline; color: #c66;
+}
 .cause-box h4 {
-    display:block; background:#ffffff; height:40px; line-height:40px; font-size: 0.8em;border:none; 
-    border-top: solid 1px #cccccc; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
-    margin: 0;
+    background:#FFF; height:40px; line-height:40px; font-size:1em; border:none; 
+    border-top: solid 1px #CCC; margin: 0;
 }
+.cause-box a.mobile-block, .causes li a { 
+    display:block; background-color:#FFF; background-position:center 25%; border-radius:6px; 
+    background-repeat: no-repeat; text-indent:-9999em;
+}
+    .campaign-stats .ico-tdr a, .cause-box h4 { text-indent: 0; }
+
 .cause-box input[type=checkbox] + label:before {
-    content: "Adults"; display: block; background: #FFF; position: absolute;
-    width: 100%;height: 40px; font-size: 0.8em; line-height: 2.8em;
-    bottom: -41px; left: -1px; border: solid 1px #cccccc; border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    content:""; display: block; background: #FFF; position: absolute; bottom:-36px; left:-1px;
+    width: 100%; font-size:1em; line-height: 2em; border:solid 1px #CCC;
+    border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;
 }
+    .cause-box input[type=checkbox]:checked + label:before { color: #C66; }
 .cause-box input[type=checkbox]:checked + label:after{
-    content: "\f058"; font-family: "FontAwesome"; display: block;
-    color: #91C2AF; background: transparent; position: absolute;
-    width: 20px; height: 20px; top:10px; right:10px;
+    content: "\f058"; font-family:"FontAwesome"; display:block; background:transparent;
+    color:#C66; position:absolute; width: 20px; height: 20px; top:10px; right:10px;
 }
+.cause-box.inline-mobile input[type=checkbox] + label { background-position: center center; }
+.cause-box input[type=checkbox] + label:before, .cause-box a h4{ color: #9DC9EE; }
+    .cause-box img { opacity:0; }
+
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .animal a.mobile-block {
+        background-image: url('../images/ico-causes-animalx64.png');
+    }
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .arts a.mobile-block{
+        background-image: url('../images/ico-causes-artx64.png');
+    }
+#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
+    .children a.mobile-block{
+        background-image: url('../images/ico-causes-childrenx64.png');
+    }
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .community a.mobile-block{
+        background-image: url('../images/ico-causes-communityx64.png');
+    }
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .disabilities a.mobile-block{
+        background-image: url('../images/ico-causes-disabilitiesx64.png');
+    }
+#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
+    .education a.mobile-block{
+        background-image: url('../images/ico-causes-educationx64.png');
+    }
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .elderly a.mobile-block{
+        background-image: url('../images/ico-causes-elderlyx64.png');
+    }
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .families a.mobile-block{
+        background-image: url('../images/ico-causes-familiesx64.png');
+    }
+#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
+    .health a.mobile-block{
+        background-image: url('../images/ico-causes-heartx64.png');
+    }
+#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .humanitarian a.mobile-block{
+        background-image: url('../images/ico-causes-humanitarianx64.png');
+    }
+#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .nature a.mobile-block{
+        background-image: url('../images/ico-causes-naturex64.png');
+    }
+#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
+    .public a.mobile-block{
+        background-image: url('../images/ico-causes-publicx64.png');
+    }
+#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .religion a.mobile-block{
+        background-image: url('../images/ico-causes-religionx64.png');
+    }
+#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .social a.mobile-block{
+        background-image: url('../images/ico-causes-socialx64.png');
+    }
+#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
+    .sports a.mobile-block{
+        background-image: url('../images/ico-causes-sportsx64.png');
+    }
+#causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
+    .tech a.mobile-block{
+        background-image: url('../images/ico-causes-technologyx64.png');
+    }
+#causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
+    .women a.mobile-block{
+        background-image: url('../images/ico-causes-womenx64.png');
+    }
+
 .preset-amts button, #donate-buttons button { 
     width:70px; height:40px; margin: 10px 4px; color:#999; background:#FFF; 
     border:1px solid #CCC; font-weight:900; border-radius:6px;
@@ -704,16 +790,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 .img-box span.small{margin-top: 15px;display: block;font-size: 1em;line-height: 1.2em;}
 .img-box a { color:#333; text-decoration:none; }
 .sgtn-body .causes { padding:.5em 0; }
-.causes ul { margin:0 auto;  }
-.causes li { 
-    display:inline-block; margin:.5em 3.3% 0; width:24px; height:24px; 
-    background-color:#EEE; border-radius:5px; padding: .25em; line-height: 1.5;
-}
-    .causes.multiple li { text-align:center; width:11%; max-width:24px; margin:.5em 1% 0; padding:2%; }
-    
 
-.causes li a, .txt-npo { color:#666; }
-    .causes li a:hover { color:#000; }
 .txt-npo { font-size:.75em; color:#999; min-height:2.75em; }
 
 #setup-donation-cta{border:none;padding-left: 0;padding-right: 0;}
@@ -963,12 +1040,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     background: #ffffff;
     box-shadow: none;
 }
-.campaign-stats .progress .bar{
-    border-radius:0px;
-    background: #999999;
-    text-shadow:none;
-    box-shadow: none;
-}
+.campaign-stats .progress .bar{ border-radius:0px; background:#91C2AF; text-shadow:none; box-shadow:none; }
 
 .load-all-box {height:509px; background:#f9f9f9;}
 .load-all-results {height:16px; margin:100% 0;}
@@ -1158,13 +1230,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body .span10 { width:90% }
 
-.sgtn-body h5 { min-height:3.78em; width:90%; margin:8px auto 0; }
-.sgtn-body p { font-size:.875em; color:#4A4A4A; margin:5px 0; min-height:6.7em; }
-.cpn-sgtn-item .box-r-footer{
-    background-color: #ffffff;
-    margin-top: 0;
-    padding: 0;
-}
+.sgtn-body h5 { min-height:3.78em; margin:0 auto; }
+.sgtn-body p { font-size:.875em; margin:0 auto 5px; min-height:6.7em; }
+    .sgtn-body .campaign-stats button { width:100%;}
+.cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0; }
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
     position: absolute;
@@ -1252,12 +1321,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     font-size:15px;
     line-height:19px;
 }
-.accordion-content{
-    max-width:860px;
-    padding:0 40px;
-    margin:30px auto 50px;
-}
-/* .accordion-content{display:none;} */
+.accordion-content { max-width:860px; padding:0 30px; margin:30px auto 50px; }
 .accordion-content.content-inner{max-width:760px;}
 .accordion-content .cpn-suggestions.swiper-wrapper{padding: 0;}
 
@@ -1583,100 +1647,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     font-size:18px;
     line-height:22px;
     top:15px;
-}
-
-/***************************************************************************
-                            CAUSE ICONS
-***************************************************************************/
-.cause-box.inline-mobile input[type=checkbox] + label, .cause-box a.mobile-block{
-    background-size: 64px;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.cause-box.inline-mobile input[type=checkbox] + label:before, .cause-box a h4{
-    color: #9DC9EE;
-}
-
-.cause-box.inline-mobile input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
-    text-decoration: underline;
-}
-
-.cause-box.inline-mobile input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
-    color: #cc6666;
-}
-
-.cause-box a.mobile-block{display: block;background-color: #fff;background-position: center 25%;border-radius: 6px;}
-
-.cause-box img{opacity: 0;}
-
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(1) a.mobile-block{
-    background-image: url('../images/Dog.png');
-}
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(2) a.mobile-block{
-    background-image: url('../images/Gallery.png');
-}
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(3) a.mobile-block{
-    background-image: url('../images/Carousel.png');
-}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(4) a.mobile-block{
-    background-image: url('../images/Building.png');
-}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(5) a.mobile-block{
-    background-image: url('../images/Disabilities.png');
-}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(6) a.mobile-block{
-    background-image: url('../images/Stationery.png');
-}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(7) a.mobile-block{
-    background-image: url('../images/Walker.png');
-}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(8) a.mobile-block{
-    background-image: url('../images/Family.png');
-}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(9) a.mobile-block{
-    background-image: url('../images/Heartmonitor.png');
-}
-
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(10) a.mobile-block{
-    background-image: url('../images/UNICEF.png');
-}
-
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(11) a.mobile-block{
-    background-image: url('../images/Handplanting.png');
-}
-
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(12) a.mobile-block{
-    background-image: url('../images/Parliament.png');
-}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(13) a.mobile-block{
-    background-image: url('../images/Chapel.png');
-}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(14) a.mobile-block{
-    background-image: url('../images/Volunteering.png');
-}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, .cause-box:nth-child(15) a.mobile-block{
-    background-image: url('../images/Football.png');
-}
-
-#causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, .cause-box:nth-child(16) a.mobile-block{
-    background-image: url('../images/Laptop.png');
-}
-
-#causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, .cause-box:nth-child(17) a.mobile-block{
-    background-image: url('../images/Hairband.png');
 }
 
 /***************************************************************************
@@ -2542,15 +2512,13 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .indicate-tdr {font-size:13px !important;}
     
     .boxed-wrapper.gf{max-width: 80%;padding: 0 30px;}
-    #vw-gft-dtn-prefs  .controls {float:right; width:100%; margin-left:0;}
+    #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
 
     /***********************************************************************
                                 CAUSE ICONS
     ***********************************************************************/
     .cause-box.inline-mobile input[type=checkbox] + label {
-      background-size: 26px;
-      background-position: 4% center;
-      background-repeat: no-repeat;
+        background-size: 26px;  background-position: 4% center; background-repeat: no-repeat;
     }
 }
 
