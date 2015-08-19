@@ -658,7 +658,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 #donate-buttons button { width:46%; float: left; margin:8px 2%; font-size: 1.25em; }
 
-
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px;margin-top: 40px;border: 1px solid #cccccc;}
 input::-webkit-input-placeholder {color: #999 !important;} 
