@@ -40,6 +40,12 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 .cpn-sgtn-item .txt-npo, .signup-section p.small, .modalwrapper .summary-wrapper .headings span
     { font-size:0.889em; color:#333; }
 
+.box #setup-dtn-carousel a .small{color:#9DC9EE; text-decoration: none; }
+.box #setup-dtn-carousel a:visited .small{color:#999;}
+.box #setup-dtn-carousel a:hover .small{color:#C66;text-decoration: underline;}
+
+
+
 #donateModal .form-group .small a, #donateModal .control-group .small a, #vw-gift-bkt-donate .small,
 #donation-userDetails .control-label.small, #donation-userDetails .smaller, p#emailFeedback, .signupnpo > .alert-info p
     { font-size:1em; }
