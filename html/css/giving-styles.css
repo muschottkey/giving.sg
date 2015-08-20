@@ -1676,41 +1676,24 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
                             DASHBOARD
 ***************************************************************************/
 #sidebar{
-    width: 315px;
-    position: absolute;
-    left:0;
-    background-color: #999999;
-    border-right: 1px solid #cccccc;
-    height: 100%;
-    z-index:99;
+    width: 315px; position: absolute; left:0; background: #CCC;
+    border-right: 1px solid #CCC; height: 100%; z-index:99;
 }
+#sidebar.show {display: block;}
+#sidebar.hide {display: block;}
 
-#sidebar.show{display: block;}
-#sidebar.hide{display: block;}
-
-#sidebar ul{
-    margin: 0;
-    margin-top: 42px;
-}
+#sidebar ul{ margin: 0; margin-top: 42px; }
 #sidebar ul li{
     list-style: none;
     background-color: #ffffff;
 }
 #sidebar ul li.dark{
-    background-color: #999999;
 }
-#sidebar .b-top{
-   border-top: 1px solid #cccccc;
-}
-#sidebar ul li.dark h5 , #sidebar ul li > a{
-    padding:10px 12px 10px 55px;
-    display: block;
-    font-weight: 600;
-    /*font-size: 0.9em;*/
+#sidebar .b-top{ border-top: 1px solid #CCC; border-bottom:2px solid #CCC; }
+ #sidebar ul li.dark h5, #sidebar ul li > a {
+    padding:10px 12px 13px 40px; display: block; font-weight: 600;
 } 
- #sidebar ul li.dark h5{
-    color: #ffffff;
-} 
+ #sidebar ul li.dark h5 { color: #333; padding:0; padding-left:60px; } 
 
 #sidebar ul li > a .li-icon{
     display: inline-block;
@@ -1720,15 +1703,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     background-color: #ffffff;
     border-radius: 100px;
 }
-
 #sidebar ul li > a .li-icon.pull-left{
     margin-right: 6px;
 }
-#sidebar .profile-nav{
-    padding:30px;
-    background-color: #f8f8f8;
-    border-bottom:1px solid #cccccc;
-}
+#sidebar .profile-nav{ padding:30px; border-bottom:1px solid #CCC; }
 
 aside.profile-nav.mobile-fallback{
     width: 190px;
