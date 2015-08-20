@@ -60,6 +60,7 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
     .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
     .tax-status .fa-check-circle-o { color:#9DC9EE; }
 
+#vw-gft-dtn-prefs .sod_select,
 #donateForm .form-group .sod_select{ height: 40px; line-height: 1.3; width: 200px; }
 #view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
 hr { border-top: 1px solid #CCC; }
@@ -156,10 +157,11 @@ hr.m5{margin: 5px 0;}
 .bg-white{background-color: #ffffff;}
 .clickable { cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
     .carousel .clickable { width:90%; left:5%; }
-.border-round {border-radius: 6px;}
+.border-round {border-radius: 5px;}
 .show-desktop-only{display: inherit;}
 
 /* CUSTOM FORM STATES */
+#preview-label{background-color: #999;}
 
 /* error state*/
 .control-group.error input, .control-group.error select, .control-group.error textarea {
@@ -328,19 +330,23 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
 .open-more,.btn-more-img, .btn, .btn-ghost{
     font:1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    background: #F9F6EC; border: none; color: #3333; 
+    background: #F9F6EC; border: none; color: #333333; 
     -webkit-transition:none;  transition: none;
 }
-.open-more:hover,.btn-more-img:hover,.btn:hover,.btn-ghost:hover,.btn-ghost:active,.btn-ghost:focus{
+
+#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus,
+.open-more:hover,.btn-more-img:hover,.btn:hover,.btn-ghost:hover,.btn-ghost:active{
     background:#E6E4DD; color: #333333;-webkit-transition:none;transition: none;
 }
 
-#LoginForm .btn, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn:hover, #donate-buttons .btn.active, 
-.preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active {
+#LoginForm .btn, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, 
+.preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active,.btn-toggle .btn.active{
     background-color: #91C2AF; border: none; color: #FFF; 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
 }
 
+.btn-toggle .btn.active:hover,
+#donate-buttons .btn.active:hover,
 #btnDonate:hover,#btnDonate:active,#btnDonate:focus,
 #LoginForm .btn:hover,#LoginForm .btn:active,#LoginForm .btn:focus,
 .btn-primary:hover,.btn-primary:active,.btn-primary:focus,
@@ -349,8 +355,6 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     background-color:#50967B; color: #FFFFFF;
 }
 
-
-#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus
 .btn.yes:hover, .btn.yes:active, .btn.yes:focus,
 .btn.no:hover,.btn.no:active,.btn.no:focus{background-color: #e6e6e6;}
 
@@ -363,10 +367,10 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
 .btn-toggle { margin-bottom:40px; width:100%; }
-.btn-toggle .btn { padding:5px; width:33%; height:5em; background:#EEE; line-height:1.3; }
-    .btn-toggle .btn.active{ background:#fff; border-bottom-color:#DDD; box-shadow: none; }
-
-    .btn-toggle .btn i { margin-right:10px; font-size:36px; color:#DDD; }
+.btn-toggle .btn { padding:5px; width:33%; height:5em; line-height:1.3; }
+    
+    .btn-toggle .btn i { margin-right:10px; font-size:36px; color:#333333; }
+    .btn-toggle .btn.active  i {color: #fff;}
     .btn-toggle .btn span{
         display: inline-block; white-space: normal; text-transform: capitalize;
         margin-right:0; width:100px; text-align: left;
@@ -416,7 +420,8 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 /* signup Progress Indicators */
 .progress-dots { margin: 30px 0; }
 .progress-dots ul { margin: 0 auto; width:100%; padding-left:0;}
-.progress-dots ul li { width:27%; display: inline-block; margin-right:5px; }
+.progress-dots ul li { width:30%; display: inline-block; margin-right:5px; }
+.progress-dots ul li:first-child{margin-left: 10px;}
 .progress-dots.step3 ul li {
   width: 15%;
   display: inline-block;
@@ -425,10 +430,10 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 }
 .progress-dots ul li span { float:left; }
 .progress-dots ul li .step-dot{
-    text-align: center; width:30px; height:30px; border-radius: 50%;
-    background:#bbb; color:#fff; font-size:0.75em;line-height: 2.5em;
+    text-align: center; width:30px; height:30px; border: solid 1px #999;border-radius: 50%;
+    background:#fff; color:#000; font-size:0.75em;line-height: 2.5em;
 }
-    .progress-dots ul li .step-dot.active { background-color: #54a954; }
+    .progress-dots ul li .step-dot.active { background-color: #CCC;border: solid 1px #ccc;color: #fff;}
 .progress-dots ul li .step-label{
     margin-right: 0; margin-left:6px; width: 60%;
     line-height: 1.2em; font-size: 0.8em; text-align: left;
@@ -443,9 +448,8 @@ i.signup-envelope { font-size:5.625em;color: #333; }
     margin-top: 4px; line-height: 1.4em; font-size: 0.8em;font-weight: 800;
 }
 #setup-donation-content .progress-dots ul li .step-dot {
-   text-align: center; width:36px; height:36px;background:#fff; -webkit-text-stroke:1px;color:#000; border: 1px solid #cccccc;font-size:1em;line-height: 2.2em;
+   text-align: center; width:36px; height:36px; -webkit-text-stroke:1px;font-size:1em;line-height: 2.2em;
 }
-#setup-donation-content .progress-dots ul li .step-dot.active{ background:#9DC9EE; border-color:#9DC9EE; color:#FFF; }
 
 .signupnpo .title { text-transform: uppercase; }
 .upload-section { padding: 10px 0; }
@@ -738,10 +742,12 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
         background-image: url('../images/ico-causes-womenx64.png');
     }
 
+
 .preset-amts button, #donate-buttons button { 
     width:70px; height:40px; margin: 10px 4px; color:#999; background:#FFF; 
-    border:1px solid #CCC; font-weight:900; border-radius:6px;
+    border:1px solid #CCC; font-weight:900; border-radius:6px;outline: none;
 }
+
 #donate-buttons button { width:46%; float: left; margin:8px 2%; font-size: 1.25em; }
 
 #save-actions{border:none;}
@@ -1225,7 +1231,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
 .cpn-sgtn-item .sgtn-body {
     border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:24px 16px 10px 16px; 
-    background:#FFF; text-align:center;
+    background:#FFF; text-align:center;min-height: 253px;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body .span10 { width:90% }
@@ -1772,11 +1778,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     -webkit-border-radius:36px;
     height:36px;
     margin:0 0 20px;
-    background:#ccc;
+    background:#fff;
     z-index:10;
     position:relative;
 }
-.steps-list li.active span{background:#fff;}
+.steps-list li.active span{background:#ccc; color: #fff;}
 .steps-list li:after{
     content:"";
     position:absolute;
@@ -2294,7 +2300,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         text-align: center; width:24px; height:24px;background:#fff;  border: 1px solid #cccccc;
     }
 
-    .section-header{background-color: #e3e3e3;padding: 15px 0;}
+    .section-header{padding: 15px 0;}
     .p-section{margin-bottom:0 ;}
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
