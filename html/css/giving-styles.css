@@ -679,72 +679,74 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .cause-box input[type=checkbox] + label:before, .cause-box a h4{ color: #9DC9EE; }
     .cause-box img { opacity:0; }
 
+.causes .img-box.icons{ background-size: 40px; background-repeat: no-repeat;background-position:center;}
+
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .animal a.mobile-block {
+    .animal a.mobile-block, .img-box.animal{
         background-image: url('../images/ico-causes-animalx64.png');
     }
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .arts a.mobile-block{
+    .arts a.mobile-block, .img-box.arts{
         background-image: url('../images/ico-causes-artx64.png');
     }
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .children a.mobile-block{
+    .children a.mobile-block, .img-box.children{
         background-image: url('../images/ico-causes-childrenx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .community a.mobile-block{
+    .community a.mobile-block, .img-box.community{
         background-image: url('../images/ico-causes-communityx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .disabilities a.mobile-block{
+    .disabilities a.mobile-block, .img-box.disabilities{
         background-image: url('../images/ico-causes-disabilitiesx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .education a.mobile-block{
+    .education a.mobile-block, .img-box.education{
         background-image: url('../images/ico-causes-educationx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .elderly a.mobile-block{
+    .elderly a.mobile-block, .img-box.elderly{
         background-image: url('../images/ico-causes-elderlyx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .families a.mobile-block{
+    .families a.mobile-block, .img-box.families{
         background-image: url('../images/ico-causes-familiesx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .health a.mobile-block{
+    .health a.mobile-block, .img-box.health{
         background-image: url('../images/ico-causes-heartx64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .humanitarian a.mobile-block{
+    .humanitarian a.mobile-block, .img-box.humanitarian{
         background-image: url('../images/ico-causes-humanitarianx64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .nature a.mobile-block{
+    .nature a.mobile-block, .img-box.nature{
         background-image: url('../images/ico-causes-naturex64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .public a.mobile-block{
+    .public a.mobile-block, .img-box.public{
         background-image: url('../images/ico-causes-publicx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .religion a.mobile-block{
+    .religion a.mobile-block, .img-box.riligion{
         background-image: url('../images/ico-causes-religionx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .social a.mobile-block{
+    .social a.mobile-block, .img-box.social{
         background-image: url('../images/ico-causes-socialx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .sports a.mobile-block{
+    .sports a.mobile-block, .img-box.sports{
         background-image: url('../images/ico-causes-sportsx64.png');
     }
 #causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .tech a.mobile-block{
+    .tech a.mobile-block, .img-box.tech{
         background-image: url('../images/ico-causes-technologyx64.png');
     }
 #causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .women a.mobile-block{
+    .women a.mobile-block, .img-box.women{
         background-image: url('../images/ico-causes-womenx64.png');
     }
 
@@ -794,7 +796,7 @@ input:-ms-input-placeholder{color: #999 !important;}
 .edit-cause:before{
     content: "\f040"; font-family: 'FontAwesome'; height:60px; width:50px; max-width:50px;
     position: absolute; display: none; line-height: 4.5em; opacity: 0;  padding:0 5px;
-    background-color: #F5EFEF; cursor: pointer; border-radius: 8px; left: 0;
+    background-color: #F5EFEF;color:#333; cursor: pointer; border-radius: 8px; left: 0;
     -webkit-transition:all 1s ease; transition:all 1s ease;
 }
     .edit-cause:hover:before { display: block; opacity:1; -webkit-transition:opacity 0.4s ease;transition:opacity 0.4s ease;}
