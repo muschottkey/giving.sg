@@ -620,9 +620,16 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .box.m-top0{margin-top: 0 !important;}
 .box .box{padding-right: 20px !important;padding-left: 20px !important;}
 #tax-deduc .span6{padding-bottom: 30px;}
-#tax-deduc .span6:last-child{border-left: 1px solid #e3e3e3;margin-left: 0;}
+#tax-deduc .span6:last-child{border-left: 1px solid #cccccc;margin-left: 0;}
+/*#tax-deduc .span6:last-child{margin-left: 0;position: relative;}
+#tax-deduc .span6:last-child .clearfix{
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 20px auto;
+}*/
 .bordered-t{
-    border-top: 1px solid #e3e3e3;
+    border-top: 1px solid #cccccc;
 }
 
 /***************************************************************************
@@ -2101,7 +2108,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .amt-value{float: right !important;width: auto !important;}
     
     #tax-deduc, .box.reset{padding-left: 9px !important;padding-right: 9px !important;}
-    #collapse-taxdeduc {overflow: hidden;}
+    #collapse-taxdeduc {overflow: hidden;position: relative;}
+    #collapse-taxdeduc.collapse.in {overflow: visible;position: relative;}
     #save-status.step1{width: 100%;margin-left: 0;margin-bottom: 20px;margin-top: 15px;}
     #tax-deduc .span6 h6{margin-bottom: 0;margin-top: 20px;font-size: 0.95em;}
     #cause-image-preview{padding: 0 !important;}
