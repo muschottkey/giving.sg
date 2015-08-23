@@ -1265,13 +1265,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status{
-    position: absolute;
-    width: 130px;
-    padding: 5px;
-    top: 11px;
-    left: -48px;
-    font-size: 10px;
-    line-height: 9px;
+    position: absolute; width: 130px; padding: 5px; top: 11px; left: -48px;
+    font-size: 10px; line-height: 9px;
     background-color:#ffffff; 
     -moz-transform: scale(1) rotate(-45deg) translate(0px);
     -webkit-transform: scale(1) rotate(-45deg) translate(0px);
