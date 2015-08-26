@@ -1290,12 +1290,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0; }
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
-    position: absolute;
-    margin-left: 65px;
-    width: 30px;
-    height: 30px;
-    margin-top: -40px;
-    border: 1px solid #cccccc;
+    position: absolute; margin-left: 65px; width:30px; height:30px;
+    margin-top: -40px; border: 1px solid #CCC;
 }
 
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status{
