@@ -1551,6 +1551,21 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #jira-353-content .control-group{
     margin-top: 1em;
 }
+#jira-353-content .input-prepend {
+    display: block;
+}
+#jira-353-content .input-prepend .box{
+    overflow: hidden;
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+#jira-353-content .input-prepend .box input{
+    border: 0;
+    height: 36px;
+    width: 100%;
+    font-size: 14px !important;
+}
 
 
 
@@ -2570,6 +2585,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     }
     #jira-353-content .pretty-text .box-footer{
         width: 95%;
+    }
+    #jira-353-content .input-prepend .box{
+        width:70%;
+        float: left;
+    }
+    #jira-353-content .input-prepend .add-on{
+        width: 29%;
+        float: left;
     }
 
 
