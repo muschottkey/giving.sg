@@ -603,6 +603,26 @@ $(function(){
         }
     })
 
+    /* Date Pickers*/
+    $(function(){
+        $('.date-picker').datepicker();
+    });
+
+    /* Character count*/
+
+    $('.hasCounter').on("keypress keydown", function(){
+        console.log("pressed");
+        maxLen = 500; // max number of characters allowed
+
+        if ($(this).val().length >= maxLen) {
+            $(this).parent().find('.char-count').text(0);
+            $(this).val($(this).val().substring(0, maxLen));
+         }
+        else{ // Maximum length not reached so update the value of my_text counter
+            $(this).parent().find('.char-count').text(maxLen - $(this).val().length);
+        }
+    })
+
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
      ----------------------------------------------------*/

@@ -86,6 +86,11 @@ textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color:
 .control-group .controls span small {font-size: 100% !important;}
 .control-group .controls .checkbox > .small {font-size: 100% !important;}
 
+/* Inline form elements styling in horizontal forms */
+.inline-elements  input:not([type=checkbox]){
+    width: auto ;
+}
+
 /* GLOBAL STYLES & HELPER CLASSES */
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .small { font-size:.85em; }
@@ -445,15 +450,15 @@ i.signup-envelope { font-size:5.625em;color: #333; }
     line-height: 1.2em; font-size: 0.8em; text-align: left;
 }
 
-#setup-donation-content .progress-dots{margin-bottom: 0; }
-#setup-donation-content .progress-dots ul li { width:20%; display: inline-block; margin-right:5px; }
-#setup-donation-content .progress-dots ul li:first-child {float: left;}
-#setup-donation-content .progress-dots ul li:nth-child(2) {margin: 0 auto;}
-#setup-donation-content .progress-dots ul li:last-child {float:right; margin-right:0;}
-#setup-donation-content .progress-dots ul li .step-label {
+#setup-donation-content .progress-dots, #jira-353-content .progress-dots{margin-bottom: 0; }
+#setup-donation-content .progress-dots ul li, #jira-353-content .progress-dots ul li { width:20%; display: inline-block; margin-right:5px; }
+#setup-donation-content .progress-dots ul li:first-child, #jira-353-content .progress-dots ul li:first-child {float: left;}
+#setup-donation-content .progress-dots ul li:nth-child(2), #jira-353-content .progress-dots ul li:nth-child(2) {margin: 0 auto;}
+#setup-donation-content .progress-dots ul li:last-child, #jira-353-content .progress-dots ul li:last-child {float:right; margin-right:0;}
+#setup-donation-content .progress-dots ul li .step-label , #jira-353-content .progress-dots ul li .step-label{
     margin-top: 4px; line-height: 1.4em; font-size: 0.8em;font-weight: 800;
 }
-#setup-donation-content .progress-dots ul li .step-dot {
+#setup-donation-content .progress-dots ul li .step-dot, #jira-353-content .progress-dots ul li .step-dot {
    text-align: center; width:36px; height:36px; -webkit-text-stroke:1px;font-size:1em;line-height: 2.2em;
 }
 
@@ -756,6 +761,35 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .women a.mobile-block, .img-box.women{
         background-image: url('../images/ico-causes-womenx64.png');
     }
+
+/***************************************************************************
+                            LABEL CHECKBOXES
+***************************************************************************/
+
+.lbl-chkbox{
+    margin-left: 0 !important;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.lbl-chkbox input[type=checkbox]{
+    display: none;
+}
+.lbl-chkbox label{
+    display: block;
+    border:1px solid #cccccc;
+    padding:10px 15px;
+    /*width: 90%;*/
+    border-radius: 5px;
+    text-align: left;
+    font-size: 1em;
+    position: relative;
+}
+
+.lbl-chkbox input[type=checkbox]:checked + label:before{
+    content: "\f058"; font-family:"FontAwesome"; display:block; background:transparent;
+    color:#C66; position:absolute; width: 20px; height: 20px; top:10px; right:10px;
+}
 
 
 .preset-amts button, #donate-buttons button { 
@@ -1481,7 +1515,53 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
       bottom: -50px !important;
 }
 
-/*************  Search Results      **************************************/
+/*******************************353***************************************/
+
+.pretty-text{
+    position: relative;
+}
+.pretty-text textarea{
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    width:98%;
+    height:100px;
+    max-width: 98%;
+}
+.pretty-text .box-footer{
+    border: 1px solid #cccccc;
+    border-top:none;
+    margin-top:0;
+    width: 98%;
+    padding: 8px 6px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.pretty-text .box-footer p{
+    padding: 0;
+    margin:0;
+}
+.pretty-text .box-footer p span.char-count{
+    margin: 0 10px;
+    color: #EC7904;
+}
+
+#jira-353-content input[type=text], #jira-353-content select,#jira-353-content input[type=number]{
+    height: 38px;
+}
+#jira-353-content .input-prepend .add-on{
+    height: 38px;
+    line-height: 28px;
+}
+#jira-353-content .control-group{
+    margin-top: 1em;
+}
+
+
+
+/***************************************************************************
+                            SEARCH RESULTS
+***************************************************************************/
+
 .listings-wrapper .cpn-sgtn-item { width:30%; margin:1em 1.65% 1.5em; min-height:480px; position: relative;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
@@ -1930,7 +2010,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .donation-wrapper{max-width: 700px;float: right;}
     .dashboard-wrapper{max-width: 1175px;margin-left: auto;margin-right: auto;position: relative;
         border-right: 1px solid #cccccc;border-left: 1px solid #cccccc;}
-    #setup-donation-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
+    #setup-donation-content .acc-toggle.text-left, #jira-353-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px; /**padding-top: 0 !important; hided by yen**/}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
@@ -2486,6 +2566,16 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         left: 50%;
         margin-left: -100px;
     }
+
+    /* Jira 353*/
+    #jira-353-content .pretty-text textarea{
+        width: 95%;
+        max-width: 95%;
+    }
+    #jira-353-content .pretty-text .box-footer{
+        width: 95%;
+    }
+
 
     /* DASHBOARD*/
     .section-bordered-bottom{border-bottom: none;}
