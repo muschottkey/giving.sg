@@ -136,7 +136,7 @@
 												<label class="control-label" for="activityDesc">Description of Activity *</label>
 												<div class="controls">
 													<div class="pretty-text">
-														<textarea rows="10" class="hasCounter" cols="10" id="activityDesc" name="activityDesc" placeholder="Type the address details here"></textarea>
+														<textarea rows="10" max-length="500" class="hasCounter" cols="10" id="activityDesc" name="activityDesc" placeholder="Type the address details here"></textarea>
 														<div class="box-footer clearfix">
 															<p class="pull-right">You can type  <span class="char-count">500</span> characters more </p>
 														</div>
@@ -148,12 +148,15 @@
 											<div class="control-group span10">
 												<label class="control-label">Date and Time of Activity *</label>
 												<div class="controls">
-													<div class="row-fluid can-clone">
-														<input type="text" class="span3 date-picker">
-														<input type="text" class="span6" placeholder="e.g. 10am -4pm">
-														<input type="text" class="span3" placeholder="placeholder text">
+													<div class="time-fields-wrapper">
+														<div class="row-fluid can-clone">
+															<input type="text" class="span3 date-picker">
+															<input type="text" class="span6" placeholder="e.g. 10am -4pm">
+															<input type="text" class="span3" placeholder="placeholder text">
+															<a href="#" class="btn btn-ghost btn-minimal delete-row"><i class="fa fa-trash-o"></i></a>
+														</div>
 													</div>
-													<button class="btn btn-ghost btn-minimal">+ ADD ROW</button>
+													<a href="#" class="btn btn-ghost btn-minimal add-row">+ ADD ROW</a>
 												</div>
 											</div>
 										</div>
@@ -181,7 +184,7 @@
 															<div class="controls">
 																<label class="control-label small" for="addressDesc">ADDRESS</label>
 																<div class="pretty-text">
-																	<textarea rows="10" class="hasCounter" cols="10" id="addressDesc" name="addressDesc" placeholder="Describe the role in 500 characters (about 50 - 80 words)"></textarea>
+																	<textarea rows="10" max-length="500" class="hasCounter" cols="10" id="addressDesc" name="addressDesc" placeholder="Describe the role in 500 characters (about 50 - 80 words)"></textarea>
 																	<div class="box-footer clearfix">
 																		<p class="pull-right">You can type  <span class="char-count">500</span> characters more </p>
 																	</div>
@@ -216,7 +219,7 @@
 											<div class="control-group span10">
 												<label class="control-label small" for="pos_type">Position Type *</label>
 												<div class="controls">
-													<input class="" type="text" id="pos_type">
+													<input class="span12" type="text" id="pos_type">
 												</div>
 											</div>
 										</div>
@@ -225,7 +228,7 @@
 												<label class="control-label small" for="roleDesc">Description of Roles *</label>
 												<div class="controls">
 													<div class="pretty-text">
-														<textarea rows="10" class="hasCounter" cols="10" id="roleDesc" name="roleDesc" placeholder="Describe your activity in 500 characters (about 50 - 80 words)"></textarea>
+														<textarea rows="10" max-length="500" class="hasCounter" cols="10" id="roleDesc" name="roleDesc" placeholder="Describe your activity in 500 characters (about 50 - 80 words)"></textarea>
 														<div class="box-footer clearfix">
 															<p class="pull-right">You can type  <span class="char-count">500</span> characters more </p>
 														</div>
@@ -238,7 +241,7 @@
 												<label class="control-label" for="contributionDesc">How do you contribute towards the organization's mission? *</label>
 												<div class="controls">
 													<div class="pretty-text">
-														<textarea rows="10" class="hasCounter" cols="10" id="contributionDesc" name="contributionDesc" placeholder="Describe the contribution in 500 characters (about 50 - 80 words)"></textarea>
+														<textarea rows="10" max-length="500" class="hasCounter" cols="10" id="contributionDesc" name="contributionDesc" placeholder="Describe the contribution in 500 characters (about 50 - 80 words)"></textarea>
 														<div class="box-footer clearfix">
 															<p class="pull-right">You can type  <span class="char-count">500</span> characters more </p>
 														</div>
@@ -292,14 +295,13 @@
 															<label for="skill10">label</label>
 														</div>
 													</div>
-													
-													<div class="input-prepend span10 clearfix  m-0">
-														<span class="add-on span2">Others</span>
-														<div class="box">
-													  	<input class="span12" id="InputAddActivitySkills" type="text" placeholder="Specify your own">
-													  	</div>
-													</div>
 												</div>
+											</div>
+											<div class="input-prepend span10 clearfix  m-0">
+												<span class="add-on span2">Others</span>
+												<div class="box">
+											  		<input class="span12" id="InputAddActivitySkills" type="text" placeholder="Specify your own">
+											  	</div>
 											</div>
 										</div>
 										<div class="row-fluid">
@@ -307,7 +309,7 @@
 												<label class="control-label" for="pointersDesc">Pointers to Note *</label>
 												<div class="controls">
 													<div class="pretty-text">
-														<textarea rows="10" class="hasCounter" cols="10" id="pointersDesc" name="pointersDesc" placeholder="Notes to the user here"></textarea>
+														<textarea rows="10" max-length="500" class="hasCounter" cols="10" id="pointersDesc" name="pointersDesc" placeholder="Notes to the user here"></textarea>
 														<div class="box-footer clearfix">
 															<p class="pull-right">You can type  <span class="char-count">500</span> characters more </p>
 														</div>

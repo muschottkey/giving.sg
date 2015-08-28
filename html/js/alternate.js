@@ -604,14 +604,20 @@ $(function(){
     })
 
     /* Date Pickers*/
-    $(function(){
+   
+    $(document).on("focus", ".date-picker", function(){
         $('.date-picker').datepicker();
-    });
+    })
+
+    $('.time-fields-wrapper').on("click",".delete-row", function(e){
+        e.preventDefault();
+        $(this).closest('.can-clone').detach();
+        console.log("detached");
+    })
 
     /* Character count*/
 
-    $('.hasCounter').on("keypress keydown", function(){
-        console.log("pressed");
+    $('.hasCounter').on("keypress keydown keyup", function(){
         maxLen = 500; // max number of characters allowed
 
         if ($(this).val().length >= maxLen) {
@@ -621,6 +627,16 @@ $(function(){
         else{ // Maximum length not reached so update the value of my_text counter
             $(this).parent().find('.char-count').text(maxLen - $(this).val().length);
         }
+    })
+
+    /* 353 time inputs adding and deletion */
+
+    $('.add-row').on("click", function(e){
+        e.preventDefault();
+        var cloneHTML = $('.can-clone').html();
+        var insertHTML = '<div class="row-fluid can-clone">'+cloneHTML+"</div>";
+        $(this).parent().find('.time-fields-wrapper').append(insertHTML);
+        $('.date-picker').datepicker();
     })
 
     /* ----------------------------------------------------

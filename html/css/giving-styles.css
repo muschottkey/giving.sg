@@ -1551,6 +1551,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #jira-353-content .control-group{
     margin-top: 1em;
 }
+#jira-353-content label.control-label{
+    font-weight: 800;
+}
 #jira-353-content .input-prepend {
     display: block;
 }
@@ -1566,6 +1569,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     width: 100%;
     font-size: 14px !important;
 }
+
+.can-clone{
+    position: relative;
+}
+.can-clone .delete-row{
+    position: absolute;
+    right: -30px;
+    top: 10%;
+}
+
 
 
 
@@ -2594,6 +2607,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         width: 29%;
         float: left;
     }
+   /* #jira-353-content .can-clone input{
+        width: 45%;
+        float: left;
+    }*/
+
 
 
     /* DASHBOARD*/
