@@ -615,6 +615,8 @@ $(function(){
         console.log("detached");
     })
 
+    // $(document).delegate(".date-picker","focus")
+
     /* Character count*/
 
     $('.hasCounter').on("keypress keydown keyup", function(){
@@ -633,10 +635,17 @@ $(function(){
 
     $('.add-row').on("click", function(e){
         e.preventDefault();
-        var cloneHTML = $('.can-clone').html();
-        var insertHTML = '<div class="row-fluid can-clone">'+cloneHTML+"</div>";
+        var cloneHTML = '<div class="span3">'+
+                            '<label class="control-label small span12 hidden-desktop">DATE</label><input type="text" class="span12 m-right5 date-picker"></div>'+
+                        '<div class="span6">'+
+                            '<label class="control-label small span12 hidden-desktop">TIME</label><input type="text" class="span12 m-right5" placeholder="e.g. 10am -4pm"></div>'+
+                        '<div class="span3 relative">'+
+                            '<label class="control-label small span12 hidden-desktop">Activity Hours</label><input type="text" class="span12 m-right5" placeholder="placeholder text">'+
+                            '<a href="#" class="btn btn-ghost btn-minimal delete-row"><i class="fa fa-trash-o"></i></a></div>';
+
+        var insertHTML = '<div class="row-fluid can-clone cloned">'+cloneHTML+"</div>";
         $(this).parent().find('.time-fields-wrapper').append(insertHTML);
-        $('.date-picker').datepicker();
+        // $('.date-picker').datepicker();
     })
 
     /* ----------------------------------------------------

@@ -1573,10 +1573,16 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .can-clone{
     position: relative;
 }
+.can-clone label.control-label {
+    min-height:10px;
+}
+.can-clone.cloned input{
+    margin-right:5px;
+}
 .can-clone .delete-row{
     position: absolute;
-    right: -30px;
-    top: 10%;
+    right: -50px;
+    bottom: 14px;
 }
 
 
@@ -2607,11 +2613,17 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         width: 29%;
         float: left;
     }
-   /* #jira-353-content .can-clone input{
-        width: 45%;
-        float: left;
-    }*/
+    #jira-353-content .can-clone input{
+        max-width: 100%;
+    }
 
+    #jira-353-content .can-clone div{
+        width: 48%;
+        margin-bottom:10px;
+        margin-right:5px;
+        float: left;
+    }
+    
 
 
     /* DASHBOARD*/
