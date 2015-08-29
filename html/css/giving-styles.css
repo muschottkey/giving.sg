@@ -58,7 +58,7 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 
 .modalwrapper > .row-fluid > .text-center .form-group h5.black
     { color:#999; }
-#collapse-taxdeduc { overflow:visible; }
+#collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
 .signup-section h2, .signup-section h3 { margin:0; }
 .bg-giving-blue, .indicate-tdr, .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
@@ -1540,7 +1540,12 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     margin: 0 10px;
     color: #EC7904;
 }
-
+#jira-353-content .box{
+    border:none;
+}
+#jira-353-content .box.focused{
+    border:1px solid #cccccc;
+}
 #jira-353-content input[type=text], #jira-353-content select,#jira-353-content input[type=number]{
     height: 38px;
 }
@@ -1561,7 +1566,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     overflow: hidden;
     background: none;
     margin: 0;
-    padding: 0;
+    border:1px solid #cccccc;
+    padding: 0 !important;
 }
 #jira-353-content .input-prepend .box input{
     border: 0;

@@ -281,8 +281,8 @@ $(function(){
       if (direction === 'down') {
         if(winWidth > 979 ){
             $('.donation-wrapper').find('.focused').removeClass('focused');
-            $(this.element).addClass('focused');
-            console.log("stuff just got focused");
+            $('donation-wrapper').find('.has-focused').removeClass('has-focused');
+            $(this.element).addClass('focused').closest('.collapse').addClass('has-focused');
         }
       }
     }, {
@@ -293,7 +293,10 @@ $(function(){
       if (direction === 'up') {
         if(winWidth > 979 ){
             $('.donation-wrapper').find('.focused').removeClass('focused');
+            $('donation-wrapper').find('.has-focused').removeClass('has-focused');
             $(this.element).addClass('focused');
+            $(this.element).addClass('focused').closest('.collapse').addClass('has-focused');
+            
         }
       }
     }, {
@@ -614,8 +617,6 @@ $(function(){
         $(this).closest('.can-clone').detach();
         console.log("detached");
     })
-
-    // $(document).delegate(".date-picker","focus")
 
     /* Character count*/
 
