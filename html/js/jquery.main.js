@@ -13,6 +13,12 @@ function MainTabs(){
 	});
 }
 
+$('.m-nav-link').click(function(){
+	$('#nav').stop().slideToggle(450);
+	return false;
+})
+
+
 $(function(){
 	$(document).click(function(e){
 		if($(e.target).closest('.table.gf-bkt').get(0) == null){
