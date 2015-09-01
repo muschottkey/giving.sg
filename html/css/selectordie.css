@@ -187,6 +187,8 @@
             }
 
     .sod_select.autofit{width: 80px;}
+    .sod_select.medium{width: 120px;}
+    .sod_select.tall:after{bottom:15px;}
     .sod_select .sod_list_wrapper{
         border:1px solid #cccccc !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);

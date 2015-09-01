@@ -609,7 +609,9 @@ $(function(){
     /* Date Pickers*/
    
     $(document).on("focus", ".date-picker", function(){
-        $('.date-picker').datepicker();
+        $('.date-picker').datepicker({
+            dateFormat: "dd-mm-yy"
+        });
     })
 
     $('.time-fields-wrapper').on("click",".delete-row", function(e){
@@ -646,7 +648,6 @@ $(function(){
 
         var insertHTML = '<div class="row-fluid can-clone cloned">'+cloneHTML+"</div>";
         $(this).parent().find('.time-fields-wrapper').append(insertHTML);
-        // $('.date-picker').datepicker();
     })
 
     /* ----------------------------------------------------
