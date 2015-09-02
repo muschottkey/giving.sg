@@ -199,6 +199,7 @@
     #selAmount .sod_label{ font-size: 1.8em; }
     #selAmount.long_input{width: 220px;}
     #selAmount.long_input .sod_prefix{margin-right: 5px;}
+    #selArea, #selSalutation{padding-top: 5.5px;padding-bottom: 5.5px;}
 
     #sortSearchResults{border:none;border-bottom: 1px solid #cccccc;font-size: 1em;border-radius: 0;}
     #sortSearchResults .sod_label{font-size: 1em;}

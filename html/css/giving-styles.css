@@ -2285,7 +2285,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .dr-img-wrapper { width:620px;} 
     .donors-area .dr-img { width:55px; height:55px; }
     #title-activity{margin-top: 15px!important;} 
-    #title-volunteers{margin-top: 46px !important;}
+    #title-volunteers{margin-top: 55px !important;}
     #title-cperson{margin-top: 28px !important;}
 }
 
@@ -2552,6 +2552,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .panel-title{margin-top: 20px !important;}
 
     #donateLoggedModal .modal-body .modalwrapper .span6 div.box {padding-bottom:10px !important;}
+
+    /* 353 responsivity hacks */
+    .small-mbot0{margin-bottom: 0 !important;}
+    #selSalutation{margin-bottom:10px;}
+
 
 }
 
@@ -2904,6 +2909,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         margin-right:5px;
         float: left;
     }
+
 
 
 
