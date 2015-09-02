@@ -417,6 +417,18 @@ $(function(){
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         loop:true
+    })  
+
+     var homeSwiper = new Swiper ('.home-slider', {
+        pagination: '.swiper-pagination',
+        sliderPerView: 1,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        loop:true,
+        autoplay: 3000,
+        speed: 800,
+        autoplayDisableOnInteraction: false
     })        
     
 
@@ -663,6 +675,8 @@ $(function(){
          $(this).val(valid_Val);
         console.log("Inoutt");
     })
+
+    /* Home Slider */
 
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
