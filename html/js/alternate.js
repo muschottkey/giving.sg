@@ -419,17 +419,23 @@ $(function(){
         loop:true
     })  
 
-     var homeSwiper = new Swiper ('.home-slider', {
-        pagination: '.swiper-pagination',
-        sliderPerView: 1,
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-        loop:true,
-        autoplay: 3000,
-        speed: 800,
-        autoplayDisableOnInteraction: false
-    })        
+    if($('.home-slider').length){
+
+        campaignLandingSwiper.destroy(false,false);
+
+        var homeSwiper = new Swiper ('.home-slider', {
+            pagination: '.swiper-pagination',
+            sliderPerView: 1,
+            paginationClickable: true,
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev',
+            loop:true,
+            autoplay: 3000,
+            speed: 800,
+            autoplayDisableOnInteraction: false
+        })  
+    }
+          
     
 
     $(window).on("resize",function(){

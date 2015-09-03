@@ -1297,6 +1297,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-wrapper { 
     position: relative;
     display: block;
+    overflow-x:hidden;
     margin: 0;
     padding: 0;
 }
