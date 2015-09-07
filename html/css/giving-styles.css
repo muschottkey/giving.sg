@@ -1620,6 +1620,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #jira-353-content label.control-label{
     font-weight: 800;
 }
+#jira-353-content #postcode  {
+    margin-top: 60px;
+}
 #jira-353-content .input-prepend {
     display: block;
 }
@@ -2667,6 +2670,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #nav li br{display:none;}
     .footer {background:  #F6F09A;padding: 10px 10px ;}
 
+    .footer-links li{ margin: 14px 0 ;}
+
     .add-h-area .add-row{display:block;}
     .navbar .brand.home{
         float:none;
@@ -2982,6 +2987,10 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         margin-bottom:10px;
         margin-right:5px;
         float: left;
+    }
+
+    #jira-353-content #postcode  {
+    margin-top: 10px;
     }
 
 
