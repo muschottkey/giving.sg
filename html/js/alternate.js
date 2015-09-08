@@ -690,6 +690,20 @@ $(function(){
     $('.cpn-slide-right').matchHeight({
          target: $('.cpn-slide-left')
     });
+
+     $('.dtn-vacs').matchHeight({
+         target: $('.dtn-desc')
+    });
+
+     $('#evn-volunteer-now .box').matchHeight({
+         target: $('#setup-dtn-carousel')
+    });
+
+      $('#dateNAdd').matchHeight({
+         target: $('#actDescWrapper')
+    });
+
+
     $('.match-height-abt-impact').matchHeight();
 
     $('.landing-cpn-slider-wrapper .swiper-slide').matchHeight();

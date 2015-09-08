@@ -163,6 +163,7 @@ hr.m5{margin: 5px 0;}
 .white{color: #FFF;}
 .bg-green{ background-color: #5cb85c; color: #FFF; }
 .bg-lightgrey{ background-color: #f8f8f8; }
+.bg-pumpkin{background-color: #f0ad4e;color: #fff;}
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
 .bg-white{background-color: #ffffff;}
@@ -1142,7 +1143,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .more-days.inline h4{ display: inline-block; color:#999; }
 .more-days span.em{color: #adadad;}
 .dtn-amt-item{position: relative;}
-.dtn-amt-item .dtn-amt { display:table; }
+.dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-vacs { display:table; }
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell;  }
 .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {min-height:100px; }
 #custom-amt-input-modal { min-height:30px; padding: 1em;  }
@@ -1319,6 +1320,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-sgtn-item .sgtn-body {
     border-top:1px solid #ccc; border-bottom:1px solid #ccc; padding:24px 16px 10px 16px; 
     background:#FFF; text-align:center;min-height: 253px;
+}   
+
+.cpn-sgtn-item.evn .sgtn-body {
+    min-height: 150px;
 }   
     .tab-section .cpn-sgtn-item .sgtn-body { border-bottom:none; }
 .sgtn-body .span10 { width:90% }
@@ -1680,6 +1685,94 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .footer-links li a, .footer a{
     color: #9DC9EE;
 }
+
+
+/***************************************************************************
+                            408 page
+***************************************************************************/
+
+#dateNAdd{
+    padding:20px 40px;
+}
+
+#dateNAdd ul{
+    margin: 30px 0;
+}
+
+#dateNAdd ul li{
+    list-style: none;
+    text-align: left;
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+#dateNAdd ul li i{
+    position: absolute;
+    left:5px;
+    top: 5px;
+    font-size: 1.2em;
+    color: #999;
+}
+#dateNAdd ul li h6{
+    color: #000;
+    margin:0;
+}
+#actDescWrapper{
+    padding:20px 30px;
+}
+#actDescription ul{margin-left: 0}
+#actDescription ul li{
+    list-style: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+#actDescription ul li .span8{width: 65.81196581196582% !important;float: left;}
+#actDescription ul li .span4{width: 31.623931623931625% !important;float: left;}
+
+#actDescription ul li span{
+    display: block;
+}
+#actDescription ul li h6{
+    color: #000;
+    margin:0;
+}
+
+.vpos-wrapper{
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+.vpos-details{
+    padding: 20px 2%;
+    float: left;
+}
+.vpos-meta{
+    padding: 40px 2% 20px;
+    border-left:1px solid #cccccc;
+    text-align: center;
+}
+
+.evn-details{}
+.evn-details .box{padding: 1em 1em;border:none;border-right:1px solid #cccccc;}
+
+#evn-volunteer-now{}
+#evn-volunteer-now .box{padding: 2em 3em;margin-top: 0;}
+#vol-buttons button{margin-bottom: 20px;}
+
+.dtn-amt-inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dtn-vacs{
+    width: 20% !important;
+}
+
+
+
+
+
+
 
 
 
@@ -2320,6 +2413,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin:13px 0 0;
 }
 
+
+
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -2862,7 +2957,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
     .cpn-contact-info{border:1px solid #cccccc;border-radius: 6px; padding:30px 6% ; }
 
-    .left-mobile{text-align: left;}
+    .left-mobile{text-align: left !important;}
     .center-mobile{text-align: center !important;}
     .float-reset-mobile{float: none !important;}
     .no-border-mobile{border:none !important;}
@@ -2993,6 +3088,36 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin-top: 10px;
     }
 
+    /* 408 */
+    .vpos-details{}
+    .vpos-meta{padding: 10px !important;border-top: 1px solid #cccccc;border-left:none;}
+    .vpos-meta h4,.vpos-meta span{display: inline-block;}
+    .vpos-meta button{
+        display: inline-block;
+        max-width: 200px;
+        margin-top: 0;
+        margin-left: 20px;
+    }
+    .evn-details .cn-days-wrapper{
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        position:relative;
+        border-top:1px solid #cccccc;
+        padding: 1em 0;
+        display: block;
+        right: 0;
+    }
+    .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span{
+        display: inline-block;
+    }
+    .dtn-vacs{
+        width: 20% !important;
+        padding: 0 5px;
+        float: left !important;
+    }
+    .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
+
 
 
 
@@ -3050,6 +3175,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .fr-widget-wrapper.closed {  max-height: 500px; }
     .donors-area .dr-img { margin-left:1.2%; margin-right:1.2%;  }
     .gift-box span.badge{right: -10%;}
+    .vpos-meta button {
+      max-width: 140px;
+    }
     
 @media (max-width:310px) {
     body {max-width:300px; overflow: visible;}
