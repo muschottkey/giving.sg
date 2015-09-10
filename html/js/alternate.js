@@ -456,7 +456,7 @@ $(function(){
         if($(this).closest('#donationAmt').hasClass('408Modal')){
             console.log("HASSSSS");
             position = $(this).find('.dtn-desc h6').text();
-            $('#user-input-holder').text("VOLUNTEER as "+position);
+            $('.user-input-holder').text("VOLUNTEER as "+position);
             $('#donationAmt').modal('hide');
         }
         else{

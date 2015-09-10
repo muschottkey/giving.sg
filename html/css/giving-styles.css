@@ -377,12 +377,12 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     -webkit-transition:none;  transition: none;
 }
 
-#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus,
+#donate-buttons .btn:hover,#donate-buttons .btn:active,#donate-buttons .btn:focus,#vol-buttons .btn:hover,
 .open-more:hover,.btn-more-img:hover,.btn:hover,.btn-ghost:hover,.btn-ghost:active{
     background:#E6E4DD; color: #333333;-webkit-transition:none;transition: none;
 }
 
-#LoginForm .btn, #btnDonate,#vol-buttons .btn.active, .btn-primary, .btn-success, #donate-buttons .btn.active, 
+#LoginForm .btn, #btnDonate,#vol-buttons .btn.active,#vol-buttons .btn.btn-success, .btn-primary, .btn-success, #donate-buttons .btn.active, 
 .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active,.btn-toggle .btn.active{
     background-color: #91C2AF; border: none; color: #FFF; 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
@@ -1738,6 +1738,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     color: #000;
     margin:0;
 }
+#act-meta .span12{
+    margin-left: 0;
+}
 #act-meta ol{
     margin-left: 20px;
 }
@@ -2740,6 +2743,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         float: left;
         margin: 0 20px;
     }
+     #vol-buttons button:nth-child(2){float:right;}
+    #vol-buttons button#user-input-holder{width: 92%;margin-top:30px !important;}
     .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
     .dtn-vacs{
         width: 20% !important;
