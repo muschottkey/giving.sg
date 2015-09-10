@@ -1492,7 +1492,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* CAMPAIGN LANDING */
 .landing-cpn-slider-wrapper{
-    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
+    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;border:1px solid #ccc;
 }
 .landing-cpn-slider-wrapper.slider-small, .landing-cpn-slider-wrapper.slider-small .swiper-slide{
     margin-bottom: 0px;border-bottom:none;
@@ -1515,7 +1515,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     margin:0;
 }
 .landing-cpn-slider-wrapper .swiper-slide {
-  border: 1px solid rgb(204, 204, 204);
+  border: none;
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -1552,7 +1552,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .swiper-button-prev.original, .swiper-button-next.original{height: 44px;}
 
-.landing-cpn-slider-wrapper.add-inner-gallery{margin-top:0;}
+.landing-cpn-slider-wrapper.add-inner-gallery{margin-top:0;border:1px s;}
 
 
 /* home slider */
