@@ -382,7 +382,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     background:#E6E4DD; color: #333333;-webkit-transition:none;transition: none;
 }
 
-#LoginForm .btn, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, 
+#LoginForm .btn, #btnDonate,#vol-buttons .btn.active, .btn-primary, .btn-success, #donate-buttons .btn.active, 
 .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active,.btn-toggle .btn.active{
     background-color: #91C2AF; border: none; color: #FFF; 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
@@ -831,7 +831,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 
-.preset-amts button, #donate-buttons button { 
+.preset-amts button, #donate-buttons button , #vol-buttons button{ 
     width:70px; height:40px; margin: 10px 4px; color:#999; background:#FFF; 
     border:1px solid #CCC; font-weight:900; border-radius:6px;outline: none;
 }
@@ -1674,6 +1674,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 }
 
+
 .pre-footer-social form .control-group{
     margin-top: 0;
 }
@@ -1709,7 +1710,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #dateNAdd ul li i{
     position: absolute;
     left:5px;
-    top: 5px;
+    top: 3px;
     font-size: 1.2em;
     color: #999;
 }
@@ -1717,7 +1718,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     color: #000;
     margin:0;
 }
-#actDescWrapper{
+#actDescWrapper, #act-meta{
     padding:20px 30px;
 }
 #actDescription ul{margin-left: 0}
@@ -1737,6 +1738,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     color: #000;
     margin:0;
 }
+#act-meta ol{
+    margin-left: 20px;
+}
 
 .vpos-wrapper{
     border-radius: 5px;
@@ -1754,6 +1758,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 .evn-details{}
 .evn-details .box{padding: 1em 1em;border:none;border-right:1px solid #cccccc;}
+.evn-details .img-box{margin-right:10px;}
 
 #evn-volunteer-now{}
 #evn-volunteer-now .box{padding: 2em 3em;margin-top: 0;}
@@ -1767,7 +1772,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .dtn-vacs{
     width: 20% !important;
 }
-
+#vol-buttons button{
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -2443,6 +2451,10 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #title-volunteers{margin-top: 55px !important;}
     #title-cperson{margin-top: 28px !important;}
 }
+@media (min-width: 980px) and (max-width: 1199px) { 
+    #evn-volunteer-now .box{padding:2em;}
+    #vol-buttons{margin-top:20px;}
+}
 
 @media (max-width: 1199px){
     #donate-buttons{margin: 0;}
@@ -2455,14 +2467,15 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.1%; margin-left:1.1%; }
     #dtn-about-us-container {margin-left:0;}
-    .collapse.visible-desktops{height: auto !important;}
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
+    .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     h2 { font-size:2em; } /* 32px */
     h3 { font-size: 1.75em; } /* 28px */
     h4 { font-size: 1.5em; } /* 24px */
     h5 { font-size: 1.125em; } /* 18px */
+    .left-tablet{text-align: left;}
     #causes-wrapper { max-width:600px; }
     #causes-wrapper .cause-box { width:28%; margin-left: 3%; }
     #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
@@ -2570,10 +2583,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .modal-body { max-width:280px; }
     .boxed-wrapper { max-width:280px; }
     .boxed-wrapper.wide{max-width: 610px; }
-    .boxed-wrapper.md{max-width: 610px; padding-top: 0;}
+    .boxed-wrapper.md{max-width: 610px;}
     .boxed-wrapper.gf{max-width: 800px;}
     .sign-up-form { margin-top:50px; border-left:none; }
     .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{padding:0;border:none;}
+
 
     /* UI Controls - FORM ELEMENTS  */
     form { text-align: center; }
@@ -2717,19 +2731,39 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .pre-footer-social .social-share{border:none;}
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .cpn-url-box{
-        width: 
+        /*width: */
     }
+
+    #vol-buttons button{
+        width: 40%;
+        height: auto;
+        float: left;
+        margin: 0 20px;
+    }
+    .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
+    .dtn-vacs{
+        width: 20% !important;
+        padding: 0 5px;
+        float: left !important;
+    }
+
+
+
 
 
 }
 
 @media (min-width: 768px) {
     #nav{display:table !important;}
+    .collapse.visible-desktops{height: auto !important;}
     .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{
         display: block;
     }
     .footer-links{
-    margin-left: 0;
+        margin-left: 0;
+    }
+    .pre-footer .acc-toggle{
+        min-height: 56px;
     }
 
 }
@@ -3111,15 +3145,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span{
         display: inline-block;
     }
-    .dtn-vacs{
-        width: 20% !important;
-        padding: 0 5px;
-        float: left !important;
-    }
-    .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
 
-
-
+    #view-campaign .p-title{margin-top: 20px !important;}
+    
 
     /* DASHBOARD*/
     .section-bordered-bottom{border-bottom: none;}
