@@ -703,9 +703,17 @@ $(function(){
          target: $('.dtn-desc')
     });
 
-     $('#evn-volunteer-now .box').matchHeight({
-         target: $('#setup-dtn-carousel')
-    });
+    if($(window).innerWidth() > 767){
+        $('#vol-trigger').matchHeight({
+            target: $('.cn-statswrapper')
+        });
+
+         $('#evn-volunteer-now .box').matchHeight({
+         target: $('.landing-cpn-slider-wrapper.slider-small')
+        });
+    }
+
+    
 
       $('#dateNAdd').matchHeight({
          target: $('#actDescWrapper')

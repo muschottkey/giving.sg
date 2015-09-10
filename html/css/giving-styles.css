@@ -1494,6 +1494,9 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .landing-cpn-slider-wrapper{
     margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
 }
+.landing-cpn-slider-wrapper.slider-small, .landing-cpn-slider-wrapper.slider-small .swiper-slide{
+    margin-bottom: 0px;border-bottom:none;
+}
 .landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
     border:1px solid #CCCCCC; border-bottom: none; overflow: hidden;
