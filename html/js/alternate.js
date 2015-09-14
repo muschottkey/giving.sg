@@ -703,8 +703,8 @@ $(function(){
          target: $('.dtn-desc')
     });
 
-    if($(window).innerWidth() > 767){
-        $('#vol-trigger').matchHeight({
+    if($(window).innerWidth() > 979){
+        $('#evn-volunteer-now .donate-btns').matchHeight({
             target: $('.cn-statswrapper')
         });
 

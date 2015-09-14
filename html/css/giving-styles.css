@@ -1773,6 +1773,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 #evn-volunteer-now{}
 #evn-volunteer-now .box{padding: 2em 3em;margin-top: 0;}
+#evn-volunteer-now .donate-btns #vol-trigger{bottom: 0;position: absolute;}
+
 #vol-buttons button{margin-bottom: 20px;}
 
 .dtn-amt-inner{
@@ -2541,7 +2543,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
         padding: 100px 0 100px;
     }
-    .date-body span.block{display: inline-block;}
 }
 
 @media (max-width: 979px) {
@@ -2776,6 +2777,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         padding: 0 5px;
         float: left !important;
     }
+    .date-body span.block{display: inline-block;}
+
 
 
 
@@ -3161,10 +3164,17 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .vpos-meta h4,.vpos-meta span{display: inline-block;}
     .vpos-meta button{
         display: inline-block;
-        max-width: 200px;
+        max-width: 150px;
         margin-top: 0;
         margin-left: 20px;
+        padding:8px;
     }
+    .vpos-meta .openings{
+        display: inline-block;
+        float: left;
+        margin-top: 8px;
+    }
+    .vpos-meta button{float: right;}
     .evn-details .cn-days-wrapper{
         float: none;
         width: 100%;
@@ -3180,6 +3190,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     }
 
     #view-campaign .p-title{margin-top: 20px !important;}
+    #dateNAdd ul li h6{font-size: 1em;}
     
 
     /* DASHBOARD*/
@@ -3217,6 +3228,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .boxed-wrapper.gf{max-width: 80%;padding: 0 30px;}
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
 
+
     /***********************************************************************
                                 CAUSE ICONS
     ***********************************************************************/
@@ -3238,6 +3250,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .gift-box span.badge{right: -10%;}
     .vpos-meta button {
       max-width: 140px;
+    }
+    .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
+        padding: 20px 0 30px;
     }
     
 @media (max-width:310px) {
