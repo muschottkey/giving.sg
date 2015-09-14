@@ -474,7 +474,7 @@ $(function(){
         content = $('#cpn-body');
         if(content.hasClass('closed')){
             content.removeClass('closed').addClass('open');
-            $(this).text('+ HIDE DETAILS');
+            $(this).text('- HIDE DETAILS');
         }
         else{
             content.removeClass('open').addClass('closed');
