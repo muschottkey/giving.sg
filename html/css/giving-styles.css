@@ -296,6 +296,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .main-content, .modal-content { margin-top:40px; padding:0.5em 0 0; }
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
 .footer {background:  #F6F09A;padding: 10px 0 ;}
+footer.footer a{font-size: 14px;text-decoration: underline;}
 .footer p {text-align:center;margin:0; padding:10px 0;}
 .main-content-inner{margin-top:0;padding-top:0;min-height: 300px;}
 .navbar.navbar-inner{margin-bottom:0;background:#f9f6ec;}
@@ -323,7 +324,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .modal.fade { display:none; }
 .modal.fade.in { display:block; }
 .modal-header { border-bottom: none; }
-.modal-header .close{  position: absolute;right: 20px;}
+.modal-header .close{  position: absolute;right: 0px;top: -5px;padding: 20px;}
 .modal-body { max-width:800px; }
 .modal-footer { background:#F6F09A; text-align:center; padding: 10px 5px; border: none;}
 
@@ -1692,8 +1693,13 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     margin: 3px 0;
 }
 .footer-links li a, .footer a{
-    color: #9DC9EE;
+    color: #666;
 }
+/***************************************************************************
+                                FOOTER
+***************************************************************************/
+.footer-ul{margin-left: 0;}
+.footer-ul li{list-style: none;float: left;margin-right:30px;}
 
 
 /***************************************************************************
@@ -1773,7 +1779,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 #evn-volunteer-now{}
 #evn-volunteer-now .box{padding: 2em 3em;margin-top: 0;}
-#evn-volunteer-now .donate-btns #vol-trigger{bottom: 0;position: absolute;}
 
 #vol-buttons button{margin-bottom: 20px;}
 
@@ -2503,6 +2508,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #dtn-about-us-container {margin-left:0;}
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
     .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
+    .pre-footer .acc-toggle{min-height: 40px;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     h2 { font-size:2em; } /* 32px */
@@ -2542,6 +2548,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .gift-box span.badge{right: 28%;}
     .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
         padding: 100px 0 100px;
+    }
+    .pre-footer .acc-toggle{
+        min-height: 56px;
     }
 }
 
@@ -2723,7 +2732,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .cpn-url-box{
         position: relative;
         max-width: 400px;
-        margin-left: auto;
+        margin-left: auto !important;
         margin-right: auto;
     }
     .cpn-url-box input{
@@ -2768,7 +2777,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .pre-footer-social .social-share{border:none;}
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .cpn-url-box{
-        /*width: */
+        width: 100%;
     }
 
     .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
@@ -2778,12 +2787,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         float: left !important;
     }
     .date-body span.block{display: inline-block;}
-
-
-
-
-
-
 }
 
 @media (min-width: 768px) {
@@ -2795,9 +2798,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .footer-links{
         margin-left: 0;
     }
-    .pre-footer .acc-toggle{
-        min-height: 56px;
-    }
+   
 
 }
 
@@ -3251,11 +3252,15 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .vpos-meta button {
       max-width: 140px;
     }
+    .modal .vpos-meta button {
+      max-width: 130px;
+    }
     .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
         padding: 20px 0 30px;
     }
+    .footer-ul li{margin-right:5px;}
     
-@media (max-width:310px) {
+@media (max-width:320px) {
     body {max-width:300px; overflow: visible;}
     .mobile-separator {margin: 4em -15px 1em;}
     .cpn-story .body.closed:before{max-width: 300px;}
@@ -3263,4 +3268,5 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .qk-bkt-li ul{width:300px;}
     .dr-img { margin-right: 8px;  }
     input#search_term{width: 90%;}
+    .pre-footer .acc-toggle{color:#cc6666!important;}
 }   

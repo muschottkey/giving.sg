@@ -446,28 +446,23 @@ $(function(){
 
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
-        console.log('cnahbed to '+amt);
         $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     })
 
     $('#donationAmt .dtn-amt-item').click(function(){
-        if($(this).closest('#donationAmt').hasClass('408Modal')){
-            console.log("HASSSSS");
-            position = $(this).find('.dtn-desc h6').text();
-            $('.user-input-holder').text("VOLUNTEER as "+position);
-            $('#donationAmt').modal('hide');
-        }
-        else{
-            amt = parseInt($(this).find('.dtn-amt h3').text());
-            //console.log('Clicked amount '+amt);
-            $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
-            $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
-            $('#donationAmt').modal('hide');
-
-        }
+        amt = parseInt($(this).find('.dtn-amt h3').text());
+        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
+        $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
+        $('#donationAmt').modal('hide');
        
+    });
+
+    $('#donationAmt .modal-volunteer').click(function(){
+        position = $(this).closest('.vpos-wrapper').find('.vpos-details h6').text();
+        $('.user-input-holder').text("VOLUNTEER as "+position);
+        $('#donationAmt').modal('hide');
     });
      
     $('#toggleReadmore').click(function(){
