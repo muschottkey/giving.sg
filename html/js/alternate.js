@@ -465,18 +465,6 @@ $(function(){
         $('#donationAmt').modal('hide');
     });
      
-    $('#toggleReadmore').click(function(){
-        content = $('#cpn-body');
-        if(content.hasClass('closed')){
-            content.removeClass('closed').addClass('open');
-            $(this).text('- HIDE DETAILS');
-        }
-        else{
-            content.removeClass('open').addClass('closed');
-            $(this).text('+ MORE DETAILS');
-        }
-    });
-
     $('.open-more').each(function(){
         $(this).click(function(){
             target = $(this).attr('data-target');
@@ -721,16 +709,17 @@ $(function(){
             target: $('.cn-statswrapper')
         });
 
-         $('#evn-volunteer-now .box').matchHeight({
-         target: $('.landing-cpn-slider-wrapper.slider-small')
+        $('#evn-volunteer-now .box').matchHeight({
+            target: $('.landing-cpn-slider-wrapper.slider-small')
+        });
+        $('#dateNAdd').matchHeight({
+            target: $('#actDescWrapper')
         });
     }
 
     
 
-      $('#dateNAdd').matchHeight({
-         target: $('#actDescWrapper')
-    });
+   
 
 
     $('.match-height-abt-impact').matchHeight();

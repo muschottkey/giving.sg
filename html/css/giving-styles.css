@@ -324,7 +324,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .modal.fade { display:none; }
 .modal.fade.in { display:block; }
 .modal-header { border-bottom: none; }
-.modal-header .close{  position: absolute;right: 0px;top: -5px;padding: 20px;}
+.modal-header .close{  position: absolute;right: 10px;top: 5px;padding: 20px;}
 .modal-body { max-width:800px; }
 .modal-footer { background:#F6F09A; text-align:center; padding: 10px 5px; border: none;}
 
@@ -1184,7 +1184,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .cpn-story .body.open:before{display: none;}
 span.span12.read-more.text-left.m-0{display: none;}
-
+.cpn-story .toggle-readmore{padding:10px;padding-left:0;}
 .cpn-end-date.smaller{
     margin-top: 15px;
     color: #91C2AF;
@@ -1346,10 +1346,10 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
 .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #E6E4DD;color: #333333;}
-.modal-dtn-amts .dtn-amt-item .dtn-amt{float:left; }
+.modal-dtn-amts .dtn-amt-item .dtn-amt{float:left;width: 20%; }
     .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
 
-.modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 80%;float: right;}
+.modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 80% !important;float: right;}
 .modal-dtn-amts .dtn-amt-item .dtn-desc .small{font-size: 1em;}
 .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #cccccc;background-color: #ffffff;color: #333;}
@@ -1681,7 +1681,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 .footer-links li{
     list-style: none;
-    margin: 3px 0;
+    margin: 5px 0;
 }
 .footer-links li a, .footer a{
     color: #666;
@@ -1771,7 +1771,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 #evn-volunteer-now{}
 #evn-volunteer-now .box{padding: 2em 3em;margin-top: 0;}
 
-#vol-buttons button{margin-bottom: 20px;}
+#vol-buttons button{margin-bottom: 20px;font-size: 16px;}
 
 .dtn-amt-inner{
     display: table-cell;
@@ -2499,7 +2499,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #dtn-about-us-container {margin-left:0;}
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
     .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
-    .pre-footer .acc-toggle{min-height: 40px;}
+    .pre-footer .acc-toggle{margin-bottom: 20px;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     h2 { font-size:2em; } /* 32px */
@@ -2541,7 +2541,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         padding: 100px 0 100px;
     }
     .pre-footer .acc-toggle{
-        min-height: 56px;
+        height: 56px;
+        display: table-cell;
+        vertical-align: bottom;
     }
 }
 
@@ -2621,7 +2623,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .boxed-wrapper { max-width:280px; }
     .boxed-wrapper.wide{max-width: 610px; }
     .boxed-wrapper.md{max-width: 610px;}
-    .boxed-wrapper.gf{max-width: 800px;}
+    .boxed-wrapper.gf{max-width: 610px;}
     .sign-up-form { margin-top:50px; border-left:none; }
     .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{padding:0;border:none;}
 
@@ -3161,6 +3163,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         margin-top: 0;
         margin-left: 20px;
         padding:8px;
+        font-size: 12px;
     }
     .vpos-meta .openings{
         display: inline-block;
@@ -3184,6 +3187,10 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
     #view-campaign .p-title{margin-top: 20px !important;}
     #dateNAdd ul li h6{font-size: 1em;}
+
+    /*          Footer         */
+
+    .footer-ul li:first-child{width: 100%;margin-bottom: 5px;}
     
 
     /* DASHBOARD*/
@@ -3235,14 +3242,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     
 }
 @media (max-width:360px) {
-    .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; }
+    .img-box { width:19%; max-width:48px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
     .qk-bkt-li ul{width:300px;}
     .fr-widget-wrapper.closed {  max-height: 500px; }
     .donors-area .dr-img { margin-left:1.2%; margin-right:1.2%;  }
     .gift-box span.badge{right: -10%;}
     .vpos-meta button {
-      max-width: 140px;
+      max-width: 130px;margin-left: 0;
     }
     .modal .vpos-meta button {
       max-width: 130px;
