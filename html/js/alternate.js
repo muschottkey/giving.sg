@@ -576,6 +576,24 @@ $(function(){
         $('#donate-buttons').find('.btn.active').removeClass('active');
     });
         
+    /* READ MORE */
+    $('#cpn-body').readmore({
+        speed:400,
+        collapsedHeight: 250,
+        lessLink: '<a class="small text-left toggle-readmore" href="javascript:;"> - LESS DETAILS</a>',
+        moreLink: '<a class="small text-left toggle-readmore" href="javascript:;"> + MORE DETAILS</a>',
+        beforeToggle: function(trigger, element, expanded){
+           if(expanded) { // The "Close" link was clicked
+              $('#cpn-body').removeClass('open').addClass('closed');
+            }
+            else{
+              $('#cpn-body').removeClass('closed').addClass('open');
+            }
+        },
+        afterToggle: function(trigger, element, expanded) {
+            
+          }
+    });
     
     
 
