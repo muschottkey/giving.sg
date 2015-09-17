@@ -1659,7 +1659,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     bottom: 14px;
 }
 
-
 /***************************************************************************
                                 PRE FOOTER
 ***************************************************************************/
@@ -2580,7 +2579,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .sign-up-form { margin-top:50px; border-left:none; }
     .navbar-fixed-top .navbar-inner, .navbar-fixed-bottom .navbar-inner{padding:0;border:none;}
 
-
     /* UI Controls - FORM ELEMENTS  */
     form { text-align: center; }
     input:not([type=checkbox]) { text-align:center; }
@@ -2720,11 +2718,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
     /* pre-footer, footer*/
     .pre-footer-social{padding-left: 0;padding-right: 0;}
-    .pre-footer-social .social-share{border:none;}
-    .pre-footer-social .control-label{text-align:center;}
-    .pre-footer-social .cpn-url-box{
-        width: 100%;
-    }
+    .pre-footer-social .social-share{ border:none; padding:0; text-align:left; }
+    .pre-footer-social .cpn-url-box{ width: 100%;  }
 
     .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
     .dtn-vacs{
@@ -2739,6 +2734,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{ display: block; }
     .footer-links{ margin-left: 0; }
     .pre-footer .acc-toggle{ height:2.5em; display: table-cell; vertical-align:bottom; padding-bottom:.5em; }
+    #signUpNewsletterForm label { text-align: left; }
 }
 
 
@@ -2748,22 +2744,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     h3 { font-size: 1.375em; } /* 22px */
     h4 { font-size: 1.25em; } /* 20px */
 
-    .btns-lst li{
-        display:block;
-        max-width:240px;
-        margin:0 auto 15px;
-    }
+    .btns-lst li{ display:block; max-width:240px; margin:0 auto 15px; }
     .btns-lst li a{display:block;}
     .top-header-area{display:none;}
-    #nav{
-        display:none;
-        text-align:left;
-        border-top:1px solid #ccc;
-    }
-    #nav li{
-        display:block;
-        padding:0;
-    }
+    #nav { display:none; text-align:left; border-top:1px solid #ccc;  }
+    #nav li{ display:block; padding:0; }
     #nav a{
         display:block;
         padding:5px 4px;
@@ -2852,8 +2837,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #donation-userDetails{border: none;}
     #donation-userDetails  .control-label.small {font-size: 1.1em;}
     .signup-section.step1{margin-top:60px;}
-   
-    /*#setup-donation-wrapper{margin-top: 0;}*/
 
     .progress-dots ul { text-align: center; }
     .progress-dots ul li, #setup-donation-content .progress-dots ul li { width:auto; margin-right:0; }
@@ -2976,7 +2959,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .donate-btns{margin-top: 0;}
 
     /* Campaign landing */
-
     .wrapper-925 { max-width:300px; }
     .landing-cpn-slider-wrapper { margin-top: 30px; margin-bottom:20px;}
    
@@ -3048,7 +3030,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .refine-search .btn-large-custom { display:block; margin:15px auto 0px; width:100%; }
 
     /* Search results page*/
-
     /*refine search */
     .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label{
         font-size: 0.875em;
@@ -3135,9 +3116,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #dateNAdd ul li h6{font-size: 1em;}
 
     /*          Footer         */
-
-    .footer-ul li:first-child{width: 100%;margin-bottom: 5px;}
-    
+    .pre-footer-social .control-label{text-align:center;}
+    .pre-footer-social .social-share { text-align: center; padding:21px 0; }
 
     /* DASHBOARD*/
     .section-bordered-bottom{border-bottom: none;}
