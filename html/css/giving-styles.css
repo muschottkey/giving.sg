@@ -3086,7 +3086,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .vpos-meta h4,.vpos-meta span{display: inline-block;}
     .vpos-meta button{
         display: inline-block;
-        max-width: 150px;
+        max-width: 130px;
         margin-top: 0;
         margin-left: 20px;
         padding:8px;
