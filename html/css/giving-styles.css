@@ -1668,10 +1668,12 @@ span.span12.read-more.text-left.m-0{display: none;}
     padding: 30px 10px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;
     background-color: #f5f5f5;
 }
-
+.pre-footer h4 a, .pre-footer h4 a:hover { color:#c66; }
+    .pre-footer h4 a:visited { color:#999; }
 .pre-footer-social form .control-group{ margin-top: 0; }
 .footer-links li{ list-style: none;  margin:10px 0; }
 .footer-links li a, .footer a{ color: #666; }
+
 
 /***************************************************************************
                                 FOOTER
@@ -1761,14 +1763,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     left: -13px;
     font-size: 1.3em;
 }*/
-
-
-
-
-
-
-
-
 
 /***************************************************************************
                             SEARCH RESULTS
@@ -2418,7 +2412,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 
 
-
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -2465,7 +2458,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #dtn-about-us-container {margin-left:0;}
     #vw-gft-dtn-prefs tr td:first-child{width: 30%}
     .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
-    .pre-footer .acc-toggle{margin-bottom: 20px;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
     h2 { font-size:2em; } /* 32px */
@@ -2505,8 +2497,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .gift-box span.badge{right: 28%;}
     .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
         padding: 100px 0 100px;
-    }
-    .pre-footer .acc-toggle{ height: 56px; display: table-cell; vertical-align: bottom; padding-bottom:1em;  
     }
 }
 
@@ -2738,9 +2728,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
     .modal-dtn-amts.volunteer-modal .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 72% !important;float: right;}
     .dtn-vacs{
-        width: 20% !important;
-        padding: 0 5px;
-        float: left !important;
+        width: 20% !important; padding: 0 5px; float: left !important;
     }
     .date-body span.block{display: inline-block;}
 }
@@ -2748,14 +2736,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 @media (min-width: 768px) {
     #nav{display:table !important;}
     .collapse.visible-desktops{height: auto !important;}
-    .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{
-        display: block;
-    }
-    .footer-links{
-        margin-left: 0;
-    }
-   
-
+    .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{ display: block; }
+    .footer-links{ margin-left: 0; }
+    .pre-footer .acc-toggle{ height:2.5em; display: table-cell; vertical-align:bottom; padding-bottom:.5em; }
 }
 
 
