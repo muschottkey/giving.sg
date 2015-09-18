@@ -705,13 +705,6 @@ $(function(){
     });
 
     if($(window).innerWidth() > 979){
-        $('#evn-volunteer-now .donate-btns').matchHeight({
-            target: $('.cn-statswrapper')
-        });
-
-        $('#evn-volunteer-now .box').matchHeight({
-            target: $('.landing-cpn-slider-wrapper.slider-small')
-        });
         $('#dateNAdd').matchHeight({
             target: $('#actDescWrapper')
         });

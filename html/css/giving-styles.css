@@ -1658,6 +1658,10 @@ span.span12.read-more.text-left.m-0{display: none;}
     right: -50px;
     bottom: 14px;
 }
+#drDetails label.control-label.small{color: #cc6666;}
+.time-fields-wrapper input:not([type=checkbox]){
+    color: #666;
+}
 
 /***************************************************************************
                                 PRE FOOTER
@@ -1752,16 +1756,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 100%;
     height: auto;
 }
-/*#toggleReadmore{
-    margin-left: 15px;
-    position: relative;
-}
-#toggleReadmore:before{
-    content: "+";
-    position: absolute;
-    left: -13px;
-    font-size: 1.3em;
-}*/
+
 
 /***************************************************************************
                             SEARCH RESULTS
