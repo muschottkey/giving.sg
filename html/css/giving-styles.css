@@ -1615,6 +1615,9 @@ span.span12.read-more.text-left.m-0{display: none;}
 #jira-353-content input[type=text], #jira-353-content select,#jira-353-content input[type=number]{
     height: 38px;
 }
+#jira-353-content input:not([type=checkbox]), #jira-353-content textarea{
+    color: #666;
+}
 #jira-353-content .input-prepend .add-on{
     height: 38px;
     line-height: 28px;
@@ -1659,9 +1662,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     bottom: 14px;
 }
 #drDetails label.control-label.small{color: #cc6666;}
-.time-fields-wrapper input:not([type=checkbox]){
-    color: #666;
-}
+
 
 /***************************************************************************
                                 PRE FOOTER
