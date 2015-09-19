@@ -2114,10 +2114,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list li a.smaller ,.data-list li a.show-more {text-decoration: underline;color: #9DC9EE;}
 
 .data-list li .person img{ width: 30px;height: 30px;margin-right:10px;}
-.data-list li .person .name{ font-weight: 800;color: #000;}
+.data-list li .person .name{ font-weight: 800;color: #000;font-size: 1.125em;}
 .data-list li .person .icon i{ font-size: 0.9em;}
 .data-list li .person .icon i.fa-star{ color: #f89406;}
 .data-list li .person-actions{ font-size: 0.9em;position: relative;}
+.data-list li .person-actions h6{ font-size: 18px;font-weight: 800;color: #000;}
 .data-list li .person-actions:before{
     position: absolute;
     content: "";
