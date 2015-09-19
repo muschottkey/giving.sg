@@ -871,27 +871,43 @@ $.fn.pageMe = function(opts){
     }
     
     pager.find('.page_link:first').addClass('active');
-    pager.find('.prev_link').hide();
+    pager.find('.prev_link').parent().addClass("disabled");
     if (numPages<=1) {
-        pager.find('.next_link').hide();
+        pager.find('.next_link').parent().addClass("disabled");
     }
     pager.children().eq(1).addClass("active");
     
     children.hide();
     children.slice(0, perPage).show();
     
-    pager.find('li .page_link').click(function(){
-        var clickedPage = $(this).html().valueOf()-1;
+    pager.find('li .page_link').click(function(e){
+        e.preventDefault();
+        if($(this).parent().hasClass("disabled")){
+           return false; 
+        }
+        else{
+             var clickedPage = $(this).html().valueOf()-1;
         goTo(clickedPage,perPage);
         return false;
+        }
     });
     pager.find('li .prev_link').click(function(){
-        previous();
-        return false;
+        if($(this).parent().hasClass("disabled")){
+           return false; 
+        }
+        else{
+            previous();
+            return false;
+        }
     });
     pager.find('li .next_link').click(function(){
-        next();
-        return false;
+        if($(this).parent().hasClass("disabled")){
+           return false; 
+        }
+        else{
+            next();
+            return false;
+        }
     });
     
     function previous(){
@@ -911,17 +927,17 @@ $.fn.pageMe = function(opts){
         children.css('display','none').slice(startAt, endOn).show();
         
         if (page>=1) {
-            pager.find('.prev_link').show();
+            pager.find('.prev_link').parent().removeClass('disabled');
         }
         else {
-            pager.find('.prev_link').hide();
+            pager.find('.prev_link').parent().addClass("disabled");
         }
         
         if (page<(numPages-1)) {
-            pager.find('.next_link').show();
+            pager.find('.next_link').parent().removeClass('disabled');
         }
         else {
-            pager.find('.next_link').hide();
+            pager.find('.next_link').parent().addClass("disabled");
         }
         
         pager.data("curr",page);
