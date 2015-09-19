@@ -17,6 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/nl-forms.css">
 	<link rel="stylesheet" type="text/css" href="css/checkbox.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/jplist.core.min.css"> -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Margarine|Shadows Into Light Two' rel='stylesheet' type='text/css'>
 </head>
@@ -180,7 +181,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="table-section m-top20">
+									<div class="table-section m-top20 jplist" id="sortable">
 										<div class="table-container border-all checkbox-parent">
 											<div class="t-header p-10 text-left clearfix">
 												<div class="span1 pull-left">
@@ -190,58 +191,70 @@
 											    </div>
 											    <div class="span11">
 											    	<div class="btn-group">
-													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    LEADER <span class="caret"></span>
-												  	</button>
-													<ul class="dropdown-menu">
-													    <li><a href="#">Action</a></li>
-													    <li><a href="#">Another action</a></li>
-													    <li><a href="#">Something else here</a></li>
-													    <li role="separator" class="divider"></li>
-													    <li><a href="#">Separated link</a></li>
-												  	</ul>
-												</div><!--end of button-->
-												<div class="btn-group">
-													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    FILTERS <span class="caret"></span>
-												  	</button>
-													<ul class="dropdown-menu">
-													    <li><a href="#">Action</a></li>
-													    <li><a href="#">Another action</a></li>
-													    <li><a href="#">Something else here</a></li>
-													    <li role="separator" class="divider"></li>
-													    <li><a href="#">Separated link</a></li>
-												  	</ul>
-												</div><!--end of button-->
-												<div class="btn-group">
-													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    ACTIONS <span class="caret"></span>
-												  	</button>
-													<ul class="dropdown-menu">
-													    <li><a href="#">Action</a></li>
-													    <li><a href="#">Another action</a></li>
-													    <li><a href="#">Something else here</a></li>
-													    <li role="separator" class="divider"></li>
-													    <li><a href="#">Separated link</a></li>
-												  	</ul>
-												</div><!--end of button-->
-												<div class="btn-group pull-right">
-													<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												    SORT <span class="caret"></span>
-												  	</button>
-													<ul class="dropdown-menu">
-													    <li><a href="#">Action</a></li>
-													    <li><a href="#">Another action</a></li>
-													    <li><a href="#">Something else here</a></li>
-													    <li role="separator" class="divider"></li>
-													    <li><a href="#">Separated link</a></li>
-												  	</ul>
-												</div><!--end of button-->
-											    </div>
-												
+														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													    LEADER <span class="caret"></span>
+													  	</button>
+														<ul class="dropdown-menu">
+														    <li><a href="#">Action</a></li>
+														    <li><a href="#">Another action</a></li>
+														    <li><a href="#">Something else here</a></li>
+														    <li role="separator" class="divider"></li>
+														    <li><a href="#">Separated link</a></li>
+													  	</ul>
+													</div><!--end of button-->
+													<div class="btn-group">
+														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													    FILTERS <span class="caret"></span>
+													  	</button>
+														<ul class="dropdown-menu">
+														    <li><a href="#">Action</a></li>
+														    <li><a href="#">Another action</a></li>
+														    <li><a href="#">Something else here</a></li>
+														    <li role="separator" class="divider"></li>
+														    <li><a href="#">Separated link</a></li>
+													  	</ul>
+													</div><!--end of button-->
+													<div class="btn-group">
+														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													    ACTIONS <span class="caret"></span>
+													  	</button>
+														<ul class="dropdown-menu">
+														    <li><a href="#">Action</a></li>
+														    <li><a href="#">Another action</a></li>
+														    <li><a href="#">Something else here</a></li>
+														    <li role="separator" class="divider"></li>
+														    <li><a href="#">Separated link</a></li>
+													  	</ul>
+													</div><!--end of button-->
+													<div class=" pull-right">
+														<div class="jplist-panel">						
+	      
+													      <!-- jplist bootstrap sort dropdown control -->
+													    	<div class="dropdown" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" 
+													      		data-control-action="sort">
+														        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" 
+														        	aria-expanded="true">	<span data-type="selected-text">Sort by</span>
+														         	<span class="caret"></span>						
+														        </button>
+														        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+														        	<li role="presentation">
+														            	<a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Default</a>
+														         	</li>
+														        	<li role="presentation">
+														            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Name A-Z</a>
+														         	</li>
+														         
+														        	<li role="presentation">
+														            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="desc" data-type="text" data-default="true">Name Z-A</a>
+														        	</li>
+														        </ul>
+													    	</div>	
+													   </div>				 
+													</div>
+												</div>
 											</div>
 											<div class="t-body">
-												<ul class="data-list checkbox-children">
+												<ul class="data-list checkbox-children paginate-me">
 													<li class="data-list-item">
 														<div class="row-fluid breakpoint-override">
 															<div class="span1 m-top15">
@@ -251,7 +264,7 @@
 															</div>
 															<div class="span3 person">
 																<div>
-																	<img src="images/cat.jpg" class="img-circle">
+																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
 																	<span class="smaller name">Joey Wong</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
@@ -276,11 +289,9 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
 																			</ul>
 																		</div>
 																	</div>
@@ -300,10 +311,430 @@
 															</div>
 															<div class="span3 person">
 																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
+																	<img src="images/img-avatar-02.png" class="img-circle">
+																	<span class="smaller name">Judy Tan</span>
 																	<span class="icon"><i class="fa fa-bomb"></i></span>
 																</div>
+																<span class="smaller">+65 9768 1123</span>
+																<a class="smaller" href="mailto:judytan11@yahoo.com.sg">judytan11@yahoo.com.sg</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Judy Felicia Tan</span>
+																		<span class="smaller block">S9134123F</span>
+																		<span class="smaller">Female</span>
+																		<span class="smaller">26 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-03.png" class="img-circle">
+																	<span class="smaller name">Dan Hee</span>
+																	<span class="icon"><i class="fa fa-star"></i></span>
+																</div>
+																<span class="smaller">+65 9665 4678</span>
+																<a class="smaller" href="mailto:dannyheecs@hotmail.com">dannyheecs@hotmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Danny Hee C S</span>
+																		<span class="smaller block">S0084100J</span>
+																		<span class="smaller">Male</span>
+																		<span class="smaller">49 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-04.png" class="img-circle">
+																	<span class="smaller name">Raymond</span>
+																	<span class="icon"><i class="fa fa-bomb"></i></span>
+																</div>
+																<span class="smaller">+65 9335 7780</span>
+																<a class="smaller" href="mailto:raymondtang@live.com">raymondtang@live.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Tang Sheng Ching Raymond</span>
+																		<span class="smaller block">S9234123F</span>
+																		<span class="smaller">Male</span>
+																		<span class="smaller">25 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-08.png" class="img-circle">
+																	<span class="smaller name">Wendy Sonia</span>
+																</div>
+																<span class="smaller">+65 8123 5564</span>
+																<a class="smaller" href="mailto:wendysocd@hotmail.com">wendysocd@hotmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Wendy Margarita Sonia</span>
+																		<span class="smaller block">S85844100J</span>
+																		<span class="smaller">Female</span>
+																		<span class="smaller">30 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-11.png" class="img-circle">
+																	<span class="smaller name">Justin Siow</span>
+																</div>
+																<span class="smaller">+65 9508 0779</span>
+																<a class="smaller" href="mailto:justinsiowtt@hotmail.com">justinsiowtt@hotmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>General Volunteer</h6>
+																		<span class="smaller block">Siow Tng Tng Justin</span>
+																		<span class="smaller block">S8834123J</span>
+																		<span class="smaller">Male</span>
+																		<span class="smaller">29 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-01.png" class="img-circle">
+																	<span class="smaller name">Alvin Heng</span>
+																	<span class="icon"><i class="fa fa-star"></i></span>
+																	<span class="label label-success m-left45">LEADER</span>
+																</div>
+																<span class="smaller">+65 8180 4563</span>
+																<a class="smaller" href="mailto:alvinheng@yahoo.com.sg">alvinheng@yahoo.com.sg</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Heng Heng Ah Alvin</span>
+																		<span class="smaller block">S1234123J</span>
+																		<span class="smaller">Male</span>
+																		<span class="smaller">49 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-10.png" class="img-circle">
+																	<span class="smaller name">Aster Ng</span>
+																</div>
+																<span class="smaller">+65 9768 4678</span>
+																<a class="smaller" href="mailto:asterng@gmail.com">asterng@gmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>General Volunteer</h6>
+																		<span class="smaller block">Ng Peck Har Aster</span>
+																		<span class="smaller block">S7884124A</span>
+																		<span class="smaller">Female</span>
+																		<span class="smaller">37 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-35x35-01.png" class="img-circle">
+																	<span class="smaller name">Louis Eskay</span>
+																</div>
+																<span class="smaller">+65 8223 6540</span>
+																<a class="smaller" href="mailto:louis9987@hotmail.com">louis9987@hotmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>General Volunteer</h6>
+																		<span class="smaller block">Louis Jose Antonio Eskay</span>
+																		<span class="smaller block">S82236540</span>
+																		<span class="smaller">Male</span>
+																		<span class="smaller">32 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
+																	<span class="smaller name">Jacelyn Chow</span>
+																	<span class="label label-success m-left45">LEADER</span>
+																</div>
+																<span class="smaller">+65 9776 4352</span>
+																<a class="smaller" href="mailto:jacelyntree3@gmail.com">jacelyntree3@gmail.com</a>
+															</div>
+															<div class="span8 person-actions">
+																<div class="row-fluid">
+																	<div class="span6 text-left">
+																		<h6>Befriender</h6>
+																		<span class="smaller block">Chow Mei Lin Jacelyn</span>
+																		<span class="smaller block">S7634123J</span>
+																		<span class="smaller">Female</span>
+																		<span class="smaller">39 Years</span>
+																		<a href="#" class="show-more">+ MORE DETAILS</a>
+
+																	</div>
+																	<div class="span6 relative">
+																		<div class="btn-group action-btn">
+																			<button type="button" class="btn btn-danger">Action</button>
+																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+																				<span class="caret"></span>
+																			</button>
+																			<ul class="dropdown-menu text-left">
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
+																			</ul>
+																		</div>
+																	</div>
+																	<div class="span10 m-top10 m-left0 more-details collapse">
+																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</li>
+													<li class="data-list-item">
+														<div class="row-fluid breakpoint-override">
+															<div class="span1 m-top15">
+																<div class="ui child checkbox">
+														        	<input type="checkbox" name="">
+														        </div>
+															</div>
+															<div class="span3 person">
+																<div>
+																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
+																	<span class="smaller name">Zack Snyder</span>
+																	<span class="icon"><i class="fa fa-star"></i></span>
+																</div>
 																<span class="smaller">+65 9508 0779</span>
 																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
 															</div>
@@ -325,11 +756,9 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
 																			</ul>
 																		</div>
 																	</div>
@@ -349,7 +778,7 @@
 															</div>
 															<div class="span3 person">
 																<div>
-																	<img src="images/cat.jpg" class="img-circle">
+																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
 																	<span class="smaller name">Joey Wong</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
@@ -374,354 +803,9 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
-																			</ul>
-																		</div>
-																	</div>
-																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</li>
-													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
-															<div class="span1 m-top15">
-																<div class="ui child checkbox">
-														        	<input type="checkbox" name="">
-														        </div>
-															</div>
-															<div class="span3 person">
-																<div>
-																	<img src="images/cat.jpg" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
-																	<span class="icon"><i class="fa fa-star"></i></span>
-																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
-															</div>
-															<div class="span8 person-actions">
-																<div class="row-fluid">
-																	<div class="span6 text-left">
-																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller">Male</span>
-																		<span class="smaller">32 Years</span>
-																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
-																	</div>
-																	<div class="span6 relative">
-																		<div class="btn-group action-btn">
-																			<button type="button" class="btn btn-danger">Action</button>
-																			<button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-																				<span class="caret"></span>
-																			</button>
-																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Action</a></li>
-																				<li><a href="#">Another action</a></li>
-																				<li><a href="#">Something else here</a></li>
-																				<li role="separator" class="divider"></li>
-																				<li><a href="#">Separated link</a></li>
+																				<li><a href="#">Accept</a></li>
+																				<li><a href="#">Reject</a></li>
+																				<li><a href="#">Make Leader</a></li>
 																			</ul>
 																		</div>
 																	</div>
@@ -733,6 +817,17 @@
 														</div>
 													</li>
 												</ul>
+												<div class="data-list-footer meta-footer border-all p-10 clearfix">
+													<div class="meta_info pull-left">
+														<span class="count">1-10</span>
+														<span>OF</span>
+														<span class="total">50</span>
+														<span>SIGN UPS</span>
+													</div>
+													<div class="pagination pull-right">
+														<ul class="mpager" id="myPager"></ul>
+													</div>
+												</div>
 											</div>
 										</div>
 										
@@ -763,6 +858,8 @@
 	<script type="text/javascript" src="js/bootstrap-modal-popover.js"></script>
 	<script type="text/javascript" src="js/nlform.js"></script>
 	<script type="text/javascript" src="js/checkbox.min.js"></script>
+	<script type="text/javascript" src="js/jplist.core.min.js"></script>
+	<script type="text/javascript" src="js/jplist.bootstrap-sort-dropdown.min.js"></script>
 	<script type="text/javascript" src="js/alternate.js"></script>
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 </body>

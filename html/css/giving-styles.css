@@ -135,6 +135,8 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-left10{margin-left: 10px;}
 .m-left20{margin-left: 20px;}
 .m-left30{margin-left: 30px;}
+.m-left40{margin-left: 40px;}
+.m-left45{margin-left: 45px;}
 .m-left70{margin-left: 70px;}
 .m-right0{margin-right: 0px !important;}
 .m-right10{margin-right: 10px;}
@@ -2083,7 +2085,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin-top: 2px;
 }
 
-.data-list{margin-bottom:40px;margin-left: 0;}
+.data-list{margin-left: 0;}
 .data-list li{
     list-style: none;
     border-bottom: 1px solid #cccccc;
@@ -2099,6 +2101,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list li .person img{ width: 30px;height: 30px;margin-right:10px;}
 .data-list li .person .name{ font-weight: 800;color: #000;}
 .data-list li .person .icon i{ font-size: 0.9em;}
+.data-list li .person .icon i.fa-star{ color: #f89406;}
 .data-list li .person-actions{ font-size: 0.9em;position: relative;}
 .data-list li .person-actions:before{
     position: absolute;
@@ -2112,12 +2115,13 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 .data-list li .person-actions .more-details{ min-height: 0px;}
 .data-list li .person-actions .show-more{ font-size: 0.9em;display: block;}
-.data-list li .person-actions .dropdown-menu{ margin-left: -94%;}
+.data-list li .person-actions .dropdown-menu{ right: 0;left: auto;}
 
 .data-list li .action-btn{ position: absolute;top: 50%;height: 30px;margin-top: -15px;right: 10px;}
 
 .t-header{border-bottom:1px solid #cccccc;}
 
+.pager li > a, .pager li > span
 
 
 
