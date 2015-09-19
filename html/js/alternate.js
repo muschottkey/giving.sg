@@ -691,7 +691,74 @@ $(function(){
          $(this).val(valid_Val);
     })
 
-    /* Home Slider */
+    /* Dashboard */
+
+    $('.show-more').on("click", function(e){
+        e.preventDefault();
+        $(this).closest('.person-actions').find('.more-details').collapse('toggle');
+    })
+    $('.more-details').on('hide', function () {
+      $(this).closest('.person-actions').find('.show-more').text("+ MORE DETAILS")
+    })
+     $('.more-details').on('show', function () {
+      $(this).closest('.person-actions').find('.show-more').text("- LESS DETAILS")
+    })
+
+     /* MULTI STATE CHECKBOXES */
+
+    /* Master checkbox */
+    $('.master.checkbox')
+      .checkbox({
+        // check all children
+        onChecked: function() {
+            var $childCheckbox  = $(this).closest('.checkbox-parent').find('.checkbox-children').children('.data-list-item').find('.checkbox');
+                $childCheckbox.checkbox('check');
+                console.log($childCheckbox);
+            },
+        // uncheck all children
+        onUnchecked: function() {
+            var $childCheckbox  = $(this).closest('.checkbox-parent').find('.checkbox-children').children('.data-list-item').find('.checkbox');
+                $childCheckbox.checkbox('uncheck');
+        }
+      })
+    ;
+
+    /* Child Checkboxes */
+    $('.data-list-item .child.checkbox')
+      .checkbox({
+        // Fire on load to set parent value
+        fireOnInit : true,
+        // Change parent state on each child checkbox change
+        onChange   : function() {
+          var
+            $listGroup      = $(this).closest('.data-list'),
+            $parentCheckbox = $(this).closest('.checkbox-parent').find('.checkbox.master'),
+            $checkbox       = $listGroup.find('.checkbox'),
+            allChecked      = true,
+            allUnchecked    = true
+          ;
+          // check to see if all other siblings are checked or unchecked
+          $checkbox.each(function() {
+            if( $(this).checkbox('is checked') ) {
+              allUnchecked = false;
+            }
+            else {
+              allChecked = false;
+            }
+          });
+          // set parent checkbox state, but dont trigger its onChange callback
+          if(allChecked) {
+            $parentCheckbox.checkbox('set checked');
+          }
+          else if(allUnchecked) {
+            $parentCheckbox.checkbox('set unchecked');
+          }
+          else {
+            $parentCheckbox.checkbox('set indeterminate');
+          }
+        }
+      })
+    ;
 
     /* ----------------------------------------------------
                 MATCHING HEIGHTS OF ELEMENTS
@@ -708,6 +775,7 @@ $(function(){
         $('#dateNAdd').matchHeight({
             target: $('#actDescWrapper')
         });
+        $('.person-actions .span6').matchHeight();
     }
 
     
