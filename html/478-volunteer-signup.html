@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Giving.sg | Make a donation</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1024">
 	<meta name="description" content="">
 	<meta name="author" content=""> 
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"> -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/giving-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
@@ -17,11 +17,10 @@
 	<link rel="stylesheet" type="text/css" href="css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="css/nl-forms.css">
 	<link rel="stylesheet" type="text/css" href="css/checkbox.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/jplist.core.min.css"> -->
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Margarine|Shadows Into Light Two' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="non-respv">
 	<div class="wrapper dashboard-wrapper">
 		<div class="navbar navbar-inverse navbar-fixed-top">
 	      	<div class="navbar-inner">
@@ -37,7 +36,7 @@
 	      	</div>
 	    </div>
 
-		<div id="sidebar">
+		<div id="sidebar" class="non-respv">
 			<ul>
 				<li class="p-bot20">
 					<aside class="profile-nav text-center">
@@ -61,7 +60,7 @@
 					<a href="#">Campaigns<span class="li-icon pull-right"></span>
 					</a>
 				</li>
-				<li class="active">
+				<li class="active p-bot5">
 					<a href="#">Volunteering<span class="li-icon pull-right"></span>
 					</a>
 				</li>
@@ -69,10 +68,10 @@
 					<a href="#">Logout<span class="li-icon pull-right"></span>
 					</a>
 				</li>
-				<li class="dark">
+				<li class="">
 					<a href="">
 						<aside class="m-top20">
-							<h5 class="m-0">SWITCH TO</h5>
+							<h5 class="m-0 text-left">SWITCH TO</h5>
 						</aside>
 					</a>
 				</li>
@@ -91,22 +90,18 @@
 			</ul>
 		</div>
 
-		<div class="section-page dashboard">
+		<div class="section-page dashboard non-respv">
 			<div class="wrapper main-content">
 				<div class="row-fluid section-bordered-bottom bg-lightgrey">
-					<div class="wrapper-925">
+					<div class="wrapper-925 no-break">
 						<div class="span12 bg-lightgrey p-20 clearfix p-left0">
-							<aside class="profile-nav mobile-fallback pull-left text-center hidden-desktop clearfix">
-								<img class="img-circle m-bot10" src="images/img-avatar-01.png">
-								<h4 class="m-0">Francis Wong</h4>
-							</aside>
 							<h4 class="m-0 pull-right panel-title">MANAGE ACTIVITY GROUPS</h4>
 						</div>
 					</div>
 				</div>
 				<div class="side-padding-wrapper">
-					<div class="row-fluid m-top30 breakpoint-override">
-						<div class="wrapper-925 clearfix centered">
+					<div class="wrapper-925 no-break clearfix centered">
+						<div class="row-fluid m-top30 non-respv">
 							<div class="span8">
 								<h3 class="text-left">Corporate Community Games Family Fiesta Volunteer Open House</h3>
 								<h6 class="text-left">By YMCA Singapore</h6>
@@ -136,8 +131,8 @@
 							</div>
 						</div>
 					</div>
-					<div class="row-fluid breakpoint-override">
-						<div class="wrapper-925 clearfix">
+					<div class="row-fluid non-respv">
+						<div class="wrapper-925 no-break clearfix">
 							<div class="tab-nav-area">
 								<ul>
 									<li class="active"><a href="#tab00">SIGN UPS</a></li>
@@ -147,7 +142,7 @@
 							<div class="tab-section">
 								<div id="tab00">
 									<div class="highlights border-all p10">
-										<div class="row-fluid">
+										<div class="row-fluid non-respv">
 											<div class="span3 highlight-item">
 												<div class="large-type">
 													<span>15</span>
@@ -184,79 +179,81 @@
 									<div class="table-section m-top20 m-bot40 jplist" id="sortable">
 										<div class="table-container border-all checkbox-parent">
 											<div class="t-header p-10 text-left clearfix">
-												<div class="span1 pull-left">
-													<div class="ui master checkbox">
-											        	<input type="checkbox" name="">
-											        </div>
-											    </div>
-											    <div class="span11">
-											    	<div class="btn-group">
-														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													    LEADER <span class="caret"></span>
-													  	</button>
-														<ul class="dropdown-menu">
-														    <li><a href="#">Action</a></li>
-														    <li><a href="#">Another action</a></li>
-														    <li><a href="#">Something else here</a></li>
-														    <li role="separator" class="divider"></li>
-														    <li><a href="#">Separated link</a></li>
-													  	</ul>
-													</div><!--end of button-->
-													<div class="btn-group">
-														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													    FILTERS <span class="caret"></span>
-													  	</button>
-														<ul class="dropdown-menu">
-														    <li><a href="#">Action</a></li>
-														    <li><a href="#">Another action</a></li>
-														    <li><a href="#">Something else here</a></li>
-														    <li role="separator" class="divider"></li>
-														    <li><a href="#">Separated link</a></li>
-													  	</ul>
-													</div><!--end of button-->
-													<div class="btn-group">
-														<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													    ACTIONS <span class="caret"></span>
-													  	</button>
-														<ul class="dropdown-menu">
-														    <li><a href="#">Action</a></li>
-														    <li><a href="#">Another action</a></li>
-														    <li><a href="#">Something else here</a></li>
-														    <li role="separator" class="divider"></li>
-														    <li><a href="#">Separated link</a></li>
-													  	</ul>
-													</div><!--end of button-->
-													<div class=" pull-right">
-														<div class="jplist-panel">						
-	      
-													      <!-- jplist bootstrap sort dropdown control -->
-													    	<div class="dropdown" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" 
-													      		data-control-action="sort">
-														        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" 
-														        	aria-expanded="true">	<span data-type="selected-text">Sort by</span>
-														         	<span class="caret"></span>						
-														        </button>
-														        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-														        	<li role="presentation">
-														            	<a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Default</a>
-														         	</li>
-														        	<li role="presentation">
-														            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Name A-Z</a>
-														         	</li>
-														         
-														        	<li role="presentation">
-														            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="desc" data-type="text" data-default="true">Name Z-A</a>
-														        	</li>
-														        </ul>
-													    	</div>	
-													   </div>				 
+													<div class="row-fluid non-respv">
+													<div class="span1 pull-left">
+														<div class="ui master checkbox">
+												        	<input type="checkbox" name="">
+												        </div>
+												    </div>
+												    <div class="span11">
+												    	<div class="btn-group">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														    LEADER <span class="caret"></span>
+														  	</button>
+															<ul class="dropdown-menu">
+															    <li><a href="#">Action</a></li>
+															    <li><a href="#">Another action</a></li>
+															    <li><a href="#">Something else here</a></li>
+															    <li role="separator" class="divider"></li>
+															    <li><a href="#">Separated link</a></li>
+														  	</ul>
+														</div><!--end of button-->
+														<div class="btn-group">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														    FILTERS <span class="caret"></span>
+														  	</button>
+															<ul class="dropdown-menu">
+															    <li><a href="#">Action</a></li>
+															    <li><a href="#">Another action</a></li>
+															    <li><a href="#">Something else here</a></li>
+															    <li role="separator" class="divider"></li>
+															    <li><a href="#">Separated link</a></li>
+														  	</ul>
+														</div><!--end of button-->
+														<div class="btn-group">
+															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														    ACTIONS <span class="caret"></span>
+														  	</button>
+															<ul class="dropdown-menu">
+															    <li><a href="#">Action</a></li>
+															    <li><a href="#">Another action</a></li>
+															    <li><a href="#">Something else here</a></li>
+															    <li role="separator" class="divider"></li>
+															    <li><a href="#">Separated link</a></li>
+														  	</ul>
+														</div><!--end of button-->
+														<div class=" pull-right">
+															<div class="jplist-panel">						
+		      
+														      <!-- jplist bootstrap sort dropdown control -->
+														    	<div class="dropdown" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" 
+														      		data-control-action="sort">
+															        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" 
+															        	aria-expanded="true">	<span data-type="selected-text">Sort by</span>
+															         	<span class="caret"></span>						
+															        </button>
+															        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+															        	<li role="presentation">
+															            	<a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Default</a>
+															         	</li>
+															        	<li role="presentation">
+															            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Name A-Z</a>
+															         	</li>
+															         
+															        	<li role="presentation">
+															            	<a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="desc" data-type="text" data-default="true">Name Z-A</a>
+															        	</li>
+															        </ul>
+														    	</div>	
+														   </div>				 
+														</div>
 													</div>
 												</div>
 											</div>
 											<div class="t-body">
 												<ul class="data-list checkbox-children paginate-me">
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -289,7 +286,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -303,7 +300,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -336,7 +333,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -350,7 +347,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -383,7 +380,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -397,7 +394,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -430,7 +427,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -444,7 +441,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -476,7 +473,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -490,7 +487,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -522,7 +519,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -536,7 +533,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -547,7 +544,7 @@
 																	<img src="images/img-avatar-01.png" class="img-circle">
 																	<span class="smaller name">Alvin Heng</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
-																	<span class="label label-success m-left45">LEADER</span>
+																	<span class="label label-success m-left45 smaller">LEADER</span>
 																</div>
 																<span class="smaller">+65 8180 4563</span>
 																<a class="smaller" href="mailto:alvinheng@yahoo.com.sg">alvinheng@yahoo.com.sg</a>
@@ -570,7 +567,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -584,7 +581,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -616,7 +613,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -630,7 +627,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -662,7 +659,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -676,7 +673,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -709,7 +706,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -723,7 +720,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -756,7 +753,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
@@ -770,7 +767,7 @@
 														</div>
 													</li>
 													<li class="data-list-item">
-														<div class="row-fluid breakpoint-override">
+														<div class="row-fluid non-respv">
 															<div class="span1 m-top15">
 																<div class="ui child checkbox">
 														        	<input type="checkbox" name="">
@@ -803,7 +800,7 @@
 																				<span class="caret"></span>
 																			</button>
 																			<ul class="dropdown-menu text-left">
-																				<li><a href="#">Accept</a></li>
+																				<li class="active"><a href="#">Accept</a></li>
 																				<li><a href="#">Reject</a></li>
 																				<li><a href="#">Make Leader</a></li>
 																			</ul>
