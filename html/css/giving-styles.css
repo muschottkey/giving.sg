@@ -1683,7 +1683,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .pre-footer h4 a, .pre-footer h4 a:hover { color:#c66; }
     .pre-footer h4 a:visited { color:#999; }
 .pre-footer-social form .control-group{ margin-top: 0; }
-.footer-links li{ list-style: none;  margin:10px 0; }
+.footer-links li{ list-style: none; margin:5px 0; }
 .footer-links li a, .footer a{ color: #666; }
 
 
@@ -2869,8 +2869,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     #nav{display:table !important;}
     .collapse.visible-desktops{height: auto !important;}
     .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{ display: block; }
-    .footer-links{ margin-left: 0; }
-    .pre-footer .acc-toggle{ height:2.5em; display: table-cell; vertical-align:bottom; padding-bottom:.5em; }
+    .footer-links{ margin-left:0; font-size:.875em; }
+    .pre-footer .acc-toggle{ font-size:1.25em; height:2.5em; display:table-cell; vertical-align:bottom; padding-bottom:.5em; }
     #signUpNewsletterForm label { text-align: left; }
 }
 
