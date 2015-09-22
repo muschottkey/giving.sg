@@ -770,7 +770,6 @@ $(function(){
     });
 
     /* Sorting */
-
     $('#sortable').jplist({             
         itemsBox: '.data-list',
         itemPath: '.data-list-item',
@@ -780,20 +779,20 @@ $(function(){
     /* Typeahead for 479 */
     var s = [
             {
-                name: "Jacelyn Chow",
-                email: "jacelyntree3@gmail.com",
+                name: "Andrea Schlieker",
+                email: "andreaschliker@hotmail.com",
                 img: "images/img-avatar-05.png",
                 icon:"fa-star"
             },
             {
-                name: "Jacelyn Chow",
-                email: "jacelyntree3@gmail.com",
+                name: "Alvin Heng",
+                email: "alvinheng@yahoo.com",
                 img: "images/img-avatar-05.png",
                 icon:"fa-star"
             },
             {
-                name: "Jacelyn Chow",
-                email: "jacelyntree3@gmail.com",
+                name: "Joey Wong",
+                email: "wongjoey@gmail.com",
                 img: "images/img-avatar-05.png",
                 icon: "fa-star"
             },
@@ -822,7 +821,7 @@ $(function(){
                 icon:""
             }
             ,{
-                name: "Dan Hee",
+                name: "Danny Hee",
                 email: "danheecs@hotmail.com",
                 img: "images/img-avatar-14.png",
                 icon:"fa-star"
@@ -840,9 +839,6 @@ $(function(){
                 icon:"fa-bomb"
             }
         ];
-
-
-
 
         var states = new Bloodhound({
             datumTokenizer: function (data) {
