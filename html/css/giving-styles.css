@@ -2253,6 +2253,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 #addLeadersModal .input-search .twitter-typeahead .typeahead-hint, #addLeadersModal .input-search input{
     width: 95%;
+    text-align: left;
 }
 #addLeadersModal .input-search .tt-menu{
     width: 99.6%;
