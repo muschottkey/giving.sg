@@ -1167,22 +1167,15 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #custom-amt-input-modal { min-height:30px; padding: 1em;  }
 #custom-amt-input-modal .em { font-size:1.5em;  }
     #custom-amt-input-modal .button-input { width: 60% !important; margin: 10px 1em;font-size: 1.4em !important;}
-/*
 
-
-.dtn-amt-item > .span10{
-    padding-left: 120px;
-}*/
 .dtn-amt-item .dtn-desc .small{font-size: 0.875em;}
 .dtn-amt-item .dtn-desc { border-left: 1px solid #CCC; padding:1.3em 1em; }
 .dtn-amt-item .dtn-btns { padding: 1em 0; }
 .dtn-amt-item .dtn-btns .btn{
-    float: left;
-    padding: 10px 12px;
-    margin-top: 10px;
-    font-size: 0.75em;
-    width: 70%;
+    float: left; padding:10px; margin-top: 10px; font-size: 0.75em; width: 70%;
 }
+.vpos-wrapper .btn { font-size: 0.875em; padding:8px;} 
+
 /* Campaign Story */
 .cpn-story { position:relative; } 
 .cpn-story .body {  height: inherit;position: relative; }
