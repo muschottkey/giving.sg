@@ -1,6 +1,7 @@
 $(function(){
     $('#btn-login').click(function(){ $('#loginModal').modal(); })
     $('#btn-signup').click(function(){ $('#signupModal').modal(); })
+    $('#btn-addLeaders').click(function(){ $('#addLeadersModal').modal(); })
     $('#toSignin').click(function(){
         $('#loginModal').modal('hide');
         setTimeout(function(){
@@ -775,6 +776,133 @@ $(function(){
         itemPath: '.data-list-item',
         panelPath: '.jplist-panel' 
     });
+
+    /* Typeahead for 479 */
+    var s = [
+            {
+                name: "Jacelyn Chow",
+                email: "jacelyntree3@gmail.com",
+                img: "images/img-avatar-05.png",
+                icon:"fa-star"
+            },
+            {
+                name: "Jacelyn Chow",
+                email: "jacelyntree3@gmail.com",
+                img: "images/img-avatar-05.png",
+                icon:"fa-star"
+            },
+            {
+                name: "Jacelyn Chow",
+                email: "jacelyntree3@gmail.com",
+                img: "images/img-avatar-05.png",
+                icon: "fa-star"
+            },
+            {
+                name: "Jacelyn Chow",
+                email: "jacelyntree3@gmail.com",
+                img: "images/img-avatar-05.png",
+                icon:"fa-star"
+            },
+            {
+                name: "Louis Eskay",
+                email: "louis9987@hotmail.com",
+                img: "images/img-avatar-04.png",
+                icon:"fa-bomb"
+            }
+            ,{
+                name: "Aster Ng",
+                email: "asterng@gmail.com",
+                img: "images/img-avatar-12.png",
+                icon:"fa-bomb"
+            }
+            ,{
+                name: "Justin Siow",
+                email: "justinsiowtt@hotmail.com",
+                img: "images/img-avatar-11.png",
+                icon:""
+            }
+            ,{
+                name: "Dan Hee",
+                email: "danheecs@hotmail.com",
+                img: "images/img-avatar-14.png",
+                icon:"fa-star"
+            }
+            ,{
+                name: "Wendy Sonia",
+                email: "wendysocd@hotmail.com",
+                img: "images/img-avatar-08.png",
+                icon:"fa-bomb"
+            }
+            ,{
+                name: "Judy Tan",
+                email: "judytan11@yahoo.com.sg",
+                img: "images/img-avatar-07.png",
+                icon:"fa-bomb"
+            }
+        ];
+
+
+
+
+        var states = new Bloodhound({
+            datumTokenizer: function (data) {
+                return Bloodhound.tokenizers.whitespace(data.name);
+            },
+            queryTokenizer: Bloodhound.tokenizers.whitespace,
+            limit: 10,
+            local: s
+        });
+
+        states.initialize();
+
+        $('#searchLeaders').typeahead({
+            minLength: 2,
+            highlight: true,
+            classNames:{
+                input: 'typeahead-input',
+                hint: 'typeahead-hint',
+                selectable: 'typeahead-result-li'
+            }
+        },
+        {
+            name: 'hobokin',
+            displayKey: 'name',
+            source: states.ttAdapter(),
+            templates: {
+                suggestion: function(data){
+                return '<div class="result-li clearfix"><div class="pull-left">'+
+                    '<img src='+data.img+' class="img-circle alt="'+data.name+'"></img></div>'+
+                    '<div class="pull-left"><span class="volunteer-name">'+data.name+'<i class="fa '+data.icon+'"></i></span><span class="volunteer-email">'+data.email+'</span></div></div>';
+                }
+            }
+        });
+
+        $('#searchLeaders').bind('typeahead:select', function(ev, suggestion) {
+            var insertHTML =    '<li class="animated fadeIn">'+
+                                    '<img class="img-circle" src="'+suggestion.img+'" alt="'+suggestion.name+'">'+
+                                    '<span class="volunteer-name">'+suggestion.name+'</span>'+
+                                    '<i class="fa '+suggestion.icon+' volunteer-icon"></i>'+
+                                    '<a href="javascript:;" class="pull-right remove-volunteer">'+
+                                        '<i class="fa fa-trash-o"></i>'+
+                                    '</a>'+
+                                '</li>';
+            $('.search-results ul').append(insertHTML);
+            $('.typeahead-hint').val(" ");
+            $('#searchLeaders').val(" ");
+        });
+
+        $('.search-results').on("click", '.remove-volunteer', function(e){
+            e.preventDefault();
+            $(this).closest('li').addClass("animated fadeOut");
+        })
+
+        $('.search-results').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend','li',function(){
+            $(this).removeClass('animated fadeIn');
+           
+            if($(this).hasClass('fadeOut')){
+                $(this).remove();
+            }
+        })
 
 
     /* ----------------------------------------------------
