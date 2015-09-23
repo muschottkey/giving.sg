@@ -249,6 +249,12 @@ $(function(){
         }
     })
 
+    $('#saveAttendance').selectOrDie({
+        onChange: function(){
+            
+        }
+    })
+
     $('.select-giving-autofit').selectOrDie({
         onChange: function(){
             var amtvalue = $(this).val();
@@ -898,7 +904,36 @@ $(function(){
             if($(this).hasClass('fadeOut')){
                 $(this).remove();
             }
-        })
+        });
+
+        /*      480      */
+
+        $('#searchList').keyup(function () {
+            var valThis = this.value.toLowerCase(),
+                lenght  = this.value.length;
+
+            $('.volunteers-list > li').each(function () {
+                var text  = $(this).find('.volunteer-name').text(),
+                    textL = text.toLowerCase();
+                (textL.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();
+            });
+
+        });
+
+        $('.volunteer-check').on("change", function(){
+            var checked = $(this).prop("checked");
+
+            if(checked == true){
+                $(this).closest('li').addClass('active');
+            }
+            if(checked == false){
+                $(this).closest('li').removeClass('active');
+            }
+        });
+
+        $('#saveAttendees').click(function(){
+            $('.volunteers-list').find('.volunteer-check:checked').addClass('selected');
+        });
 
 
     /* ----------------------------------------------------
@@ -916,8 +951,12 @@ $(function(){
         $('#dateNAdd').matchHeight({
             target: $('#actDescWrapper')
         });
-        $('.person-actions .span6').matchHeight();
     }
+    $('.person-actions .span6').matchHeight();
+
+    $('.prn-chk-bx').matchHeight({
+        target: $('.person')
+    })
 
     
 
@@ -1082,8 +1121,3 @@ $.fn.pageMe = function(opts){
         meta.find('.total').text(numItems)
     }
 };
-
-$(document).ready(function(){
-    
-    
-});

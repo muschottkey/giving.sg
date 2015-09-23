@@ -147,6 +147,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .m-right0{margin-right: 0px !important;}
 .m-right10{margin-right: 10px;}
 .m-right20{margin-right: 20px;}
+.m-right30{margin-right: 30px;}
 .p-10{padding: 10px;}
 .p-20{padding: 20px;}
 .p-30{padding: 30px;}
@@ -2122,6 +2123,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     padding:10px 10px 15px;
 }
 .data-list li:last-child{border-bottom: none;}
+.data-list li .prn-chk-bx{ position: relative;}
+.data-list li .prn-chk-bx .checkbox{
+    position: absolute;
+    top: 50%;
+    height: 20px;
+    margin-top: -10px;
+    right: 0;
+}
 .data-list li .person{
     text-align: left;
     padding: 10px 0px;
@@ -2316,6 +2325,101 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 #addLeadersModal .input-search .tt-menu .tt-suggestion .volunteer-email{
     font-size: 12px;
 }
+
+
+/*  480 */
+
+.highlights.resp .highlight-item{}
+.highlights.resp .highlight-item:before{display: none;}
+.highlights.resp .highlight-item.span3{width: auto;}
+.data-list.volunteers-list{}
+.data-list.volunteers-list .data-list-item{padding: 15px 30px;}
+.data-list.volunteers-list .data-list-item.active{background-color: #f5f5f5;}
+.data-list.volunteers-list .data-list-item img{width: 40px;}
+.data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
+.data-list.volunteers-list .data-list-item .span8{text-align: left;}
+
+.data-list.volunteers-list .data-list-item .span1{}
+.data-list.volunteers-list .data-list-item .span1 input{
+    border:1px solid #cccccc;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.data-list.volunteers-list .data-list-item .span1{
+
+}
+.table-actions .show-select{text-align: left;}
+.table-actions .show-select label{display: inline-block;}
+.table-actions .input-search {margin-top:-6px;}
+.table-actions .input-search input {
+    border: 1px solid #cccccc !important;
+    height: 30px;
+    border-radius: 6px;
+    padding: 5px 10px !important;
+    margin: 0;
+    width: auto !important;
+    text-align: left;
+}
+
+.volunteer-check{display: none;}
+.volunteer-check+label{
+    display: inline-block;
+    width: 20px;
+    height: 32px;
+    position: relative;
+    background-color: transparent;
+    right: 0;
+    left: 0;
+    margin:auto;
+    vertical-align: middle;
+    line-height: 1.5;
+}
+.volunteer-check+label:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    color:#333;
+    display: block;
+    position: absolute;
+    top:50%;
+    font-size: 20px;
+    margin-top:-10px;
+    line-height: 1;
+    margin-right:auto;
+    margin-left:auto;
+}
+.volunteer-check.selected+label:before{
+    font-family: "FontAwesome";
+    content: "\f05d" !important;
+    color: #91C2AF;
+    border-color:transparent;
+}
+.volunteer-check+label{
+
+}
+
+.volunteer-check+label:before{
+    content: "";
+    background-color: #ffffff;
+    border:1px solid #cccccc;
+    border-radius: 500px;
+}
+
+.volunteer-check:checked+label:before{
+    font-family: "FontAwesome";
+    content: "\f192";
+    border-color: transparent;
+    
+}
+
+
+
+
+
+
 
 
 
@@ -2825,6 +2929,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         float: none !important;
       }
       .wrapper-925.no-break{max-width: none !important}
+     #collapse-tab01.collapse.in{overflow: visible;}
+
 
 }
 
@@ -2873,6 +2979,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .landing-cpn-slider-wrapper.slider-small .gallery-txt-box {
         padding: 100px 0 100px;
     }
+    .event-header-titles.row-fluid > .span8{width: 65.74585635359117% !important;}
+    .event-header-titles.row-fluid > .span4{width: 31.491712707182323%;}
 }
 
 @media (max-width: 979px) {
@@ -3107,6 +3215,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         width: 20% !important; padding: 0 5px; float: left !important;
     }
     .date-body span.block{display: inline-block;}
+
+    /*          480         */
+    .highlights.resp .highlight-item{}
+    .highlights.resp .highlight-item.span3{width: auto;}
+    .highlights.resp .highlight-item.span6{width: 48.61878453038674%;}
+    .event-header-titles{}
+
+    
 }
 
 @media (min-width: 768px) {
@@ -3523,6 +3639,54 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .delete-all-area a{float:right;}
     .delete-all-area .check.main-mobile{display:block;}
     .table.gf-bkt .hold-col{display:none;}
+
+    /*      480     */
+    #dateNAdd.dashboard.resp ul li{
+        display: block;
+        float: none;
+        margin-bottom: 10px;
+    }
+    #dateNAdd.dashboard.resp ul li i{left: 0;}
+    #dateNAdd.dashboard.resp ul li .datebody{margin-bottom:10px;}
+    #dateNAdd.dashboard.resp ul li .date-body h6{
+        display: inline-block;
+    }
+    .highlights.resp .highlight-item{
+        width: auto;
+        float: left;
+    }
+
+    .highlights.resp .highlight-item:before{display: none;}
+
+    .highlights.resp .highlight-item:first-child{
+    }
+    .highlights.resp .highlight-item:nth-child(2){float: right;}
+
+    .highlights.resp .highlight-item:last-child{margin-top: 10px;width: 100%;}
+
+    .data-list.volunteers-list{}
+    .data-list.volunteers-list .data-list-item{padding:10px 15px 5px 15px;}
+
+    .data-list.volunteers-list .data-list-item .span8{position: relative;margin-bottom:20px;}
+    .data-list.volunteers-list .data-list-item .span3{width: 48.93617021276595%;float: right;text-align: right;margin-top:0px;}
+    .data-list.volunteers-list .data-list-item .span1{width: 48.93617021276595%;float: left;text-align: left;}
+
+    .data-list.volunteers-list .data-list-item [class*="span"] input{max-width: 30px;}
+
+    .data-list.volunteers-list .data-list-item img{width: 40px;}
+    .data-list.volunteers-list .data-list-item .label{font-size: 9px;position: absolute;top:50%;margin-top: -9px;}
+    .data-list.volunteers-list .data-list-item .volunteer-name{font-size: 16px;font-weight: 800;}
+    .data-list.volunteers-list .data-list-item label.visible-phone{display: inline-block !important;}
+
+    .table-actions [class*="span"] {margin-bottom:30px;text-align: center;float: none !important;}
+     button.block-mobile, .block-mobile{width: auto !important;display: block;margin-left: auto;margin-right: auto;float: none;}
+     .side-padding-wrapper.resp{max-width: none;}
+     .no-float-mobile{float: none !important;}
+     #save-status.for-attendees{margin-top: 5px;}
+
+
+
+
 
     
     /*from @320 RICH*/

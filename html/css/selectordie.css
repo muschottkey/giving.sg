@@ -213,3 +213,8 @@
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
     .sod_option.custom small{width: 100%;display:block;}
     .sod_option.custom input{clear: both;height: 40px;text-align: center;}
+
+    .select_minimal, .select_auto_width{width: auto;}
+    .select_minimal:before{display: none !important;}
+    .select_minimal .sod_label{padding-right: 25px;}
+    .select_auto_width .sod_label{padding-right: 30px;}
