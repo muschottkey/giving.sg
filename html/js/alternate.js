@@ -251,7 +251,10 @@ $(function(){
 
     $('#saveAttendance').selectOrDie({
         onChange: function(){
-            
+            var val = $(this).val();
+            if(val="subAll"){
+                $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
+            }
         }
     })
 
