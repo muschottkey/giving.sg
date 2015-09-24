@@ -112,7 +112,7 @@ label.small.grey{color: #999;}
 
 .square-border{border-radius: 0;}
 .text-uppercase { text-transform:uppercase; }
-.underlined { text-decoration: underline;margin-top: 10px; }
+.underlined { text-decoration: underline !important;margin-top: 10px; }
 .border-left{border-left: 1px solid #cccccc;}
 .border-top{border-top: 1px solid #cccccc;}
 .border-all{border: 1px solid #cccccc;}
@@ -158,6 +158,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .p-10{padding: 10px;}
 .p-20{padding: 20px;}
 .p-30{padding: 30px;}
+.p-40{padding: 40px;}
 .p-top5 { padding-top: 5px;}
 .p-top10 { padding-top: 10px;}
 .p-top12 { padding-top: 12px;}
