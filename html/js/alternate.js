@@ -252,9 +252,12 @@ $(function(){
     $('#saveAttendance').selectOrDie({
         onChange: function(){
             var val = $(this).val();
+            $('.volunteers-list li').find('input[type=text]').attr("disabled","disabled");
+
             if(val="subAll"){
                 $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
             }
+            
         }
     })
 
@@ -742,6 +745,7 @@ $(function(){
         onChange   : function() {
           var
             $listGroup      = $(this).closest('.data-list'),
+            $listParent     = $(this).closest('.data-list-item'),
             $parentCheckbox = $(this).closest('.checkbox-parent').find('.checkbox.master'),
             $checkbox       = $listGroup.find('.checkbox'),
             allChecked      = true,
@@ -766,7 +770,7 @@ $(function(){
           else {
             $parentCheckbox.checkbox('set indeterminate');
           }
-        }
+        },
       })
     ;
 
@@ -784,6 +788,16 @@ $(function(){
         itemPath: '.data-list-item',
         panelPath: '.jplist-panel' 
     });
+
+    $('.data-list-item').find('input[type=checkbox]').change(function(){
+        var box = $(this),
+            checked = box.prop("checked");
+        if(checked == true){
+            box.closest('.data-list-item').addClass('active');
+        }else{
+            box.closest('.data-list-item').removeClass('active');
+        }
+    })
 
     /* Typeahead for 479 */
     var s = [
@@ -937,6 +951,28 @@ $(function(){
         $('#saveAttendees').click(function(){
             $('.volunteers-list').find('.volunteer-check:checked').addClass('selected');
         });
+
+        $('.action-btn .dropdown-menu li a').click(function(e){
+            e.preventDefault();
+            var actn = $(this).text();
+            $(this).closest('.dropdown-menu').find('li.active').removeClass('active');
+            $(this).parent().addClass('active');
+            $(this).closest('.action-btn').find('button:first-child').text(actn);
+            $(this).closest('.action-btn').find('button:first-child').attr("value",actn);
+        })
+
+        $('.action-btn button:first-child').click(function(){
+            var action = $(this).attr("value").toLowerCase();
+            console.log(action);
+            $(this).attr("disabled","disabled").next('button').attr("disabled","disabled");
+            $(this).parent().addClass("deactivated");
+            if( action == "reject"){
+                $(this).text("Rejected");
+            }
+            if(action == "accept"){
+                $(this).text("Accepted");
+            }
+        })
 
 
     /* ----------------------------------------------------

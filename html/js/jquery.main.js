@@ -3,7 +3,7 @@ function MainTabs(){
 	item_click.click(function(){
 		var id_ = $(this).attr('href');
 		
-		if(!$(this).parent().hasClass('active')){
+		if(!$(this).parent().hasClass('active') && !$(this).parent().hasClass("inactive")){
 			$(this).parent().siblings().removeClass('active');
 			$(this).parent().addClass('active');
 			$(id_).siblings().hide().removeClass('active');
