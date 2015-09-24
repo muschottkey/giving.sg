@@ -89,20 +89,22 @@
                 vertical-align: middle;
                 border-radius: 4px 0 0 4px;
             }
-            #searchButton{width:156px}
+            #searchButton{width:156px !important; margin-bottom:0px;}
+            #searchButton, #searchButtonC{height:30px;}
             .row-fluid [class*="span"]{min-height:0px}
             .volunteer-contact .name{font-size:20px; display:inline-box; font-weight:bold;}
+            .volunteer-contact .name a{color:#000;}
             .volunteer-contact .email{margin-top:0px}
-            .volunteer-contact .volunteer-header div{padding:10px;}
-            .volunteer-contact .volunteer-header div:first-child{padding:10px 10px 10px 20px;}
-            .volunteer-contact .volunteer-header div:last-child{padding:10px 10px 10px 5px;}
+            .volunteer-contact .volunteer-header div{padding:20px 10px;}
+            .volunteer-contact .volunteer-header div:first-child{padding:20px 10px 20px 20px;}
+            .volunteer-contact .volunteer-header div:last-child{padding:20px 10px 20px 5px;}
             .footer {background: #d8d8d8;}
             .modal {
+                color:#4a4a4a;
                 position: fixed;
                 top: 10%;
                 left: 50%;
                 z-index: 1050;
-                width: 560px;
                 margin-left: -280px;
                 background-color: #ffffff;
                 border: 1px solid #999;
@@ -121,18 +123,33 @@
             a.btn{color:#333;}
             #myModal{background-color:#e9e9e9}
             .modal-header .close{padding:7px}
-            .modal-body .modal-body-container{margin: 0 50px 20px 50px; background-color:#fff;}
+            .modal-body .modal-body-container{margin: 0 150px 20px 150px; background-color:#fff;}
             .modal {
                 position: absolute;
                 margin-bottom: 2em;
                 right: 0;
                 left: 0;
-                max-width: 858px;
+                max-width:858px !important;
                 width: 100%;
                 margin: 0 auto;
                 overflow-y: initial;
             }
+            .modal.non-respv{min-width:auto !important;}
+            .modal.non-respv .modal-body {
+                min-width: 800px !important;
+                width: auto !important;
+            }
             .input-append, .input-prepend{margin-bottom:0px;}
+            .clr-orange{color:#f5a623;}
+            .label-success, .badge-success, #sidebar ul li.active a, #sidebar ul li.active > a .li-icon {
+                background-color: #5cb85c;
+            }
+
+            a, a:link, a:visited {
+                color: #9DC9EE;
+                text-decoration: underline;
+            }
+            .col-activities{padding-left:12px;}
         </style>
     </head>
     <body class="non-respv volunteer-contact">
@@ -195,7 +212,7 @@
                     <li class="dark">
                         <a href="#">
                             <span class="li-icon pull-left"></span>
-                            SPCA
+                            My Personal Profile
                         </a>
                     </li>
                     <li class="dark">
@@ -212,7 +229,7 @@
                     <div class="row-fluid section-bordered-bottom bg-lightgrey">
                         <div class="wrapper-925 no-break">
                             <div class="span12 bg-lightgrey p-20 clearfix p-left0">
-                                <h4 class="m-0 pull-right panel-title">CONTACTS</h4>
+                                <h5 class="m-0 pull-right panel-title">CONTACTS</h5>
                             </div>
                         </div>
                     </div>
@@ -231,16 +248,16 @@
                         <div class="row-fluid non-respv">
                             <div class="wrapper-925 no-break clearfix">
                                 <div class="row-fluid non-respv">
-                                    <div class="span6 highlights border-all p10">
+                                    <div class="span5 highlights border-all p10">
                                         <div class="row-fluid non-respv">
-                                            <div class="span6 highlight-item">
+                                            <div class="span7 non-respv highlight-item">
                                                 <div class="large-type">
                                                     <span>2,679</span>
                                                 </div>
                                                 <span class="small">volunteers total</span>
                                             </div>
-                                            <div class="span6 highlight-item">
-                                                <div class="pull-left w50 leaders">
+                                            <div class="span5 non-respv highlight-item">
+                                                <div class="leaders">
                                                     <div class="large-type">
                                                         <span>12</span>
                                                     </div>
@@ -249,9 +266,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="span6">
+                                    <div class="span7">
                                         <br>
-                                        <button class="btn btn-large">Export</button>
+                                        <button class="pull-right btn btn-large">Export</button>
                                     </div>
                                 </div>
                                 <div class="table-section m-top20 m-bot40 jplist" id="sortable">
@@ -260,8 +277,8 @@
                                             <div class="row-fluid non-respv">
                                                 <div class="span5">
                                                     <div class="input-append p-10">
-                                                        <input class="span12" id="searchButton" type="text">
-                                                        <button class="btn" type="button"><i class="icon-search"></i></button>
+                                                        <input class="span12 non-respv" id="searchButton" type="text">
+                                                        <button class="btn" type="button" id="searchButtonC"><i class="icon-search"></i></button>
                                                     </div>
                                                 </div>
                                                 <div class="span7">
@@ -306,8 +323,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -321,9 +338,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -332,8 +349,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -347,9 +364,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -358,8 +375,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -373,9 +390,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -384,8 +401,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -399,9 +416,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -410,8 +427,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -425,9 +442,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -436,8 +453,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -451,9 +468,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -462,8 +479,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -477,9 +494,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -488,8 +505,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -503,9 +520,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block">not active</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -514,8 +531,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -529,9 +546,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -540,8 +557,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -555,9 +572,9 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -566,8 +583,8 @@
                                                     <div class="row-fluid non-respv p-10">
                                                         <div class="span5 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="name"><a href="#myModal" role="button" data-toggle="modal">Alvin Heng</a></span>
-                                                                <span class="icon"><i class="fa fa-star text-warning"></i></span>
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
                                                                 <span class="label label-success">LEADER</span>
                                                             </div>
                                                             <span class="smaller">Heng Huan An</span>
@@ -581,13 +598,14 @@
 
                                                             </div>
                                                         </div>
-                                                        <div class="span3 text-left">
+                                                        <div class="span3 text-left col-activities">
                                                             <div class="row-fluid">
-                                                                <span class="smaller block"><a href="#">6 activities</a></span>
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </li>
+
                                             </ul>
                                             <div class="data-list-footer meta-footer p-10 clearfix">
                                                 <div class="meta_info pull-left">
@@ -624,43 +642,43 @@
             <div class="modal-body">
                 <div class="modal-body-container">
                     <div class="row-fluid non-respv">
-                        <div class="span10 offset2">
+                        <div class="span12">
                             <div class="span4 text-center p-20">
                                 <img src="images/img-avatar-35x35-02.png" class="img-circle">
                             </div>
                             <div class="span8 p-20">
-                                <span class="name">Alvin Heng</span> <i class="fa fa-star text-warning"></i><br>
+                                <span class="name">Alvin Heng</span> <i class="fa fa-star clr-orange"></i><br>
                                 <span class="smaller">Heng Huan An</span><br>
                                 <span>Volunteered for 8 Activities</span>
                             </div>
                         </div>
                     </div>
                     <div class="row-fluid non-respv border-top">
-                        <div class="span10 offset2 p-10">
-                            <div class="span5 p-10">Date</div>
-                            <div class="span7 p-10">Activity</div>
+                        <div class="span12 p-10">
+                            <div class="span5 p-10"><h5>Date</h5></div>
+                            <div class="span7 p-10"><h5>Activity</h5></div>
                         </div>
                     </div>
                     <div class="row-fluid non-respv border-top">
-                        <div class="span10 offset2 p-10">
+                        <div class="span12 p-10">
                             <div class="span5 p-10">23 August 2015</div>
                             <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
                         </div>
                     </div>
                     <div class="row-fluid non-respv border-top">
-                        <div class="span10 offset2 p-10">
+                        <div class="span12 p-10">
                             <div class="span5 p-10">23 August 2015</div>
                             <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
                         </div>
                     </div>
                     <div class="row-fluid non-respv border-top">
-                        <div class="span10 offset2 p-10">
+                        <div class="span12 p-10">
                             <div class="span5 p-10">23 August 2015</div>
                             <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
                         </div>
                     </div>
                     <div class="row-fluid non-respv border-top">
-                        <div class="span10 offset2 p-10">
+                        <div class="span12 p-10">
                             <div class="span5 p-10">23 August 2015</div>
                             <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
                         </div>
@@ -668,34 +686,34 @@
                     <div class="row-fluid non-respv border-top">
                         <div class="span12 p-30 text-center">
                             <button class="btn btn-large">SEE MORE</div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 
 
 
-    <script type="text/javascript" src="js/aui-min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.validate.js"></script>
-    <script type="text/javascript" src="js/jquery-mobile-1.3.2.js"></script>
-    <script type="text/javascript" src="js/jquery.matchHeight.min.js"></script>
-    <script type="text/javascript" src="js/additional-methods.js"></script>
-    <script type="text/javascript" src="js/selectordie.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
-    <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
-    <script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
-    <script type="text/javascript" src="js/swiper.jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-modal-popover.js"></script>
-    <script type="text/javascript" src="js/nlform.js"></script>
-    <script type="text/javascript" src="js/checkbox.min.js"></script>
-    <script type="text/javascript" src="js/jplist.core.min.js"></script>
-    <script type="text/javascript" src="js/jplist.bootstrap-sort-dropdown.min.js"></script>
-    <script type="text/javascript" src="js/alternate.js"></script>
-    <script type="text/javascript" src="js/jquery.main.js"></script>
+<script type="text/javascript" src="js/aui-min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery-mobile-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="js/selectordie.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal-popover.js"></script>
+<script type="text/javascript" src="js/nlform.js"></script>
+<script type="text/javascript" src="js/checkbox.min.js"></script>
+<script type="text/javascript" src="js/jplist.core.min.js"></script>
+<script type="text/javascript" src="js/jplist.bootstrap-sort-dropdown.min.js"></script>
+<script type="text/javascript" src="js/alternate.js"></script>
+<script type="text/javascript" src="js/jquery.main.js"></script>
 </body>
 </html>
