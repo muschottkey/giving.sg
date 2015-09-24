@@ -2059,6 +2059,10 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .dashboard .tab-nav-area {
     padding: 20px 0 40px;
 }
+.dashboard .tab-nav-area.pg480 {
+    padding: 20px 0 10px;
+}
+
 
 .dashboard .tab-nav-area ul{
     text-align: left;
@@ -2085,7 +2089,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights{}
 
 .highlights .highlight-item {
-    padding: 15px 30px;
+    padding:10px 30px 20px 30px;
     position: relative;
 }
 .highlights .highlight-item:before{
@@ -2117,7 +2121,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin-top: 2px;
 }
 
-.t-header{padding-right: 20px;}
+.t-header{padding:padding-right: 20px;}
+.t-header.pg480{padding:15px 30px;}
 .jplist-panel .dropdown-menu{
     right: 0;
     left:auto;
@@ -2230,8 +2235,12 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     width: 20px;
     height: 20px;
     top:50%;
-    margin-top: -10px;
+    margin-top: -8px;
     z-index:99;
+}
+.input-search label i{
+    line-height: 1;
+    vertical-align: top;
 }
 .search-results{
     min-height: 170px;
@@ -2348,7 +2357,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list.volunteers-list .data-list-item.active{background-color: #f5f5f5;}
 .data-list.volunteers-list .data-list-item img{width: 40px;}
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
-.data-list.volunteers-list .data-list-item .span8{text-align: left;}
+.data-list.volunteers-list .data-list-item .span9{text-align: left;}
 
 .data-list.volunteers-list .data-list-item .span1{}
 .data-list.volunteers-list .data-list-item .span1 input{
@@ -3679,8 +3688,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .data-list.volunteers-list{margin-bottom: 0;}
     .data-list.volunteers-list .data-list-item{padding:10px 15px 5px 15px;}
 
-    .data-list.volunteers-list .data-list-item .span8{position: relative;margin-bottom:20px;}
-    .data-list.volunteers-list .data-list-item .span3{width: 48.93617021276595%;float: right;text-align: right;margin-top:0px;}
+    .data-list.volunteers-list .data-list-item .span9{position: relative;margin-bottom:20px;}
+    .data-list.volunteers-list .data-list-item .span2{width: 48.93617021276595%;float: right;text-align: right;margin-top:0px;}
     .data-list.volunteers-list .data-list-item .span1{width: 48.93617021276595%;float: left;text-align: left;}
 
     .data-list.volunteers-list .data-list-item [class*="span"] input{max-width: 30px;}
@@ -3690,12 +3699,18 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .data-list.volunteers-list .data-list-item .volunteer-name{font-size: 16px;font-weight: 800;}
     .data-list.volunteers-list .data-list-item label.visible-phone{display: inline-block !important;}
 
-    .table-actions [class*="span"] {margin-bottom:30px;text-align: center;float: none !important;}
+    .meta-footer{text-align: center;}
+    .meta-footer [class*="pull-"]{
+        float: none;
+    }
+
+    .table-actions [class*="span"] {margin-bottom:20px;text-align: center;float: none !important;}
     .table-actions .input-search input{width: 100% !important;padding: 5px 0px 5px 4px !important}
      button.block-mobile, .block-mobile{width: auto !important;display: block;margin-left: auto;margin-right: auto;float: none;}
      .side-padding-wrapper.resp{max-width: none;}
      .no-float-mobile{float: none !important;}
      #save-status.for-attendees{margin-top: 5px;}
+     div#sortable{margin-top:10px !important;}
 
 
 
