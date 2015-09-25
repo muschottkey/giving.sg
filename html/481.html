@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Giving.sg | Make a donation</title>
+        <meta name="viewport" content="width=1024">
+        <meta name="description" content="">
+        <meta name="author" content=""> 
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+        <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css"> -->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/giving-styles.css">
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="css/selectordie.css">
+        <link rel="stylesheet" type="text/css" href="css/animate.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <link rel="stylesheet" type="text/css" href="css/nl-forms.css">
+        <link rel="stylesheet" type="text/css" href="css/checkbox.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Margarine|Shadows Into Light Two' rel='stylesheet' type='text/css'>
+        <style>
+            .navbar-inverse .navbar-inner {background:#222;}
+            #sidebar { background: #9b9b9b; }
+            #sidebar ul li.dark {background-color:#9b9b9b; }
+            #sidebar ul li a{color:#4a4a4a; text-decoration:none;}
+            #sidebar ul li h6 a{color:#9DC9EE; text-decoration:underline;}
+            #sidebar ul li.dark a{color:#fff;}
+            #sidebar ul li.dark h5{padding-left:0px; color:#fff;}
+            .profile-nav-container{background-color:#f8f8f8 !important; padding-bottom:0px;}
+            .profile-nav-container h4{color:#000;}
+            .profile-nav-container h5{color:#4a4a4a !important; font-size:15px; margin:5px 0 !important; font-weight:normal;}
+            .profile-nav-container h6{color:#4a4a4a !important; font-size:13px; font-weight:normal;}
+            h1,h2,h3,h4,h5 {color:#000;}
+            .highlights .highlight-item > span.small, .highlights .highlight-item .leaders span.small { font-size: 11px; color:#4a4a4a; line-height:1; }
+            .btn{display: inline-block;
+                 padding: 4px 12px;
+                 margin-bottom: 0;
+                 font-size: 14px;
+                 line-height: 20px;
+                 color: #333333;
+                 text-align: center;
+                 text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+                 vertical-align: middle;
+                 cursor: pointer;
+                 background-color: #f5f5f5;
+                 background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6);
+                 background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6));
+                 background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6);
+                 background-image: -o-linear-gradient(top, #ffffff, #e6e6e6);
+                 background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+                 background-repeat: repeat-x;
+                 border: 1px solid #cccccc;
+                 border-color: #e6e6e6 #e6e6e6 #bfbfbf;
+                 border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+                 border-bottom-color: #b3b3b3;
+                 -webkit-border-radius: 4px;
+                 -moz-border-radius: 4px;
+                 border-radius: 4px;
+                 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe6e6e6', GradientType=0);
+                 filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+                 -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+                 -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+                 box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+            }
+            .btn-large {
+                padding: 11px 19px;
+                font-size: 17.5px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+            }
+            .main-content input:not([type="checkbox"]){
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+                -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+                -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+                -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+                transition: border linear 0.2s, box-shadow linear 0.2s;
+                display: inline-block;
+                height: auto;
+                padding: 4px 6px;
+                margin-bottom: 10px;
+                font-size: 14px;
+                line-height: 20px;
+                color: #555555;
+                vertical-align: middle;
+                border-radius: 4px 0 0 4px;
+            }
+            #searchButton{width:156px !important; margin-bottom:0px;}
+            #searchButton, #searchButtonC{height:30px;}
+            .row-fluid [class*="span"]{min-height:0px}
+            .volunteer-contact .name{font-size:20px; display:inline-box; font-weight:bold;}
+            .volunteer-contact .name a{color:#000;}
+            .volunteer-contact .email{margin-top:0px}
+            .volunteer-contact .volunteer-header div{padding:20px 10px;}
+            .volunteer-contact .volunteer-header div:first-child{padding:20px 10px 20px 20px;}
+            .volunteer-contact .volunteer-header div:last-child{padding:20px 10px 20px 5px;}
+            .footer {background: #d8d8d8;}
+            .modal {
+                color:#4a4a4a;
+                position: fixed;
+                top: 10%;
+                left: 50%;
+                z-index: 1050;
+                margin-left: -280px;
+                background-color: #ffffff;
+                border: 1px solid #999;
+                border: 1px solid rgba(0, 0, 0, 0.3);
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                border-radius: 6px;
+                outline: none;
+                -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+                -moz-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+                box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+                -webkit-background-clip: padding-box;
+                -moz-background-clip: padding-box;
+                background-clip: padding-box;
+            }
+            a.btn{color:#333;}
+            #myModal{background-color:#e9e9e9}
+            .modal-header .close{padding:7px}
+            .modal-body .modal-body-container{margin: 0 150px 20px 150px; background-color:#fff;}
+            .modal {
+                position: absolute;
+                margin-bottom: 2em;
+                right: 0;
+                left: 0;
+                max-width:858px !important;
+                width: 100%;
+                margin: 0 auto;
+                overflow-y: initial;
+            }
+            .modal.non-respv{min-width:auto !important;}
+            .modal.non-respv .modal-body {
+                min-width: 800px !important;
+                width: auto !important;
+            }
+            .input-append, .input-prepend{margin-bottom:0px;}
+            .clr-orange{color:#f5a623;}
+            .label-success, .badge-success, #sidebar ul li.active a, #sidebar ul li.active > a .li-icon {
+                background-color: #5cb85c;
+            }
+
+            a, a:link, a:visited {
+                color: #9DC9EE;
+                text-decoration: underline;
+            }
+            .col-activities{padding-left:12px;}
+        </style>
+    </head>
+    <body class="non-respv volunteer-contact">
+        <div class="wrapper dashboard-wrapper">
+            <div class="navbar navbar-inverse navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container">
+                        <a class="nav-menu-toggle pull-left" href="#"><i class="fa fa-bars"></i></a>
+                        <a class="brand" href="./index.html">Giving.SG</a>
+                        <div class="pull-right">
+                            <ul class="nav nav-pills">
+                                <li><a id="btn-signup" href="#">Sign Up</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sidebar" class="non-respv">
+                <ul>
+                    <li class="p-bot20 profile-nav-container">
+                        <aside class="profile-nav text-center">
+                            <img class="img-circle m-bot10" src="images/img-avatar-01.png">
+                            <h4 class="m-0">Francis Wong</h4>
+                            <h5 class="m-0">Volunteer Manager</h5>
+                            <h6 class="m-0"><a href="#">YMCA Singapore</a></h6>
+                        </aside>
+                    </li>
+                    <li>
+                        <a href="#">Dashboard<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Favourites<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Donations<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Campaigns<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="active p-bot5">
+                        <a href="#">Volunteering<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="b-top">
+                        <a href="#">Logout<span class="li-icon pull-right"></span>
+                        </a>
+                    </li>
+                    <li class="dark">
+                        <a href="">
+                            <aside class="m-top20">
+                                <h5 class="m-0 text-left">SWITCH TO</h5>
+                            </aside>
+                        </a>
+                    </li>
+                    <li class="dark">
+                        <a href="#">
+                            <span class="li-icon pull-left"></span>
+                            My Personal Profile
+                        </a>
+                    </li>
+                    <li class="dark">
+                        <a href="#">
+                            <span class="li-icon pull-left"></span>
+                            Breadtalk
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="section-page dashboard non-respv">
+                <div class="wrapper main-content">
+                    <div class="row-fluid section-bordered-bottom bg-lightgrey">
+                        <div class="wrapper-925 no-break">
+                            <div class="span12 bg-lightgrey p-20 clearfix p-left0">
+                                <h5 class="m-0 pull-right panel-title">CONTACTS</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-padding-wrapper">
+                        <div class="wrapper-925 no-break clearfix centered">
+                            <div class="row-fluid m-top30 non-respv">
+                                <div class="span8">
+                                    <h3 class="text-left">Manage Volunteers' Contact</h3>
+                                    <h6 class="text-left">&nbsp;</h6>
+                                </div>
+                                <div class="span4">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid non-respv">
+                            <div class="wrapper-925 no-break clearfix">
+                                <div class="row-fluid non-respv">
+                                    <div class="span5 highlights border-all p10">
+                                        <div class="row-fluid non-respv">
+                                            <div class="span7 non-respv highlight-item">
+                                                <div class="large-type">
+                                                    <span>2,679</span>
+                                                </div>
+                                                <span class="small">volunteers total</span>
+                                            </div>
+                                            <div class="span5 non-respv highlight-item">
+                                                <div class="leaders">
+                                                    <div class="large-type">
+                                                        <span>12</span>
+                                                    </div>
+                                                    <span class="small">leaders</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="span7">
+                                        <br>
+                                        <button class="pull-right btn btn-large">Export</button>
+                                    </div>
+                                </div>
+                                <div class="table-section m-top20 m-bot40 jplist" id="sortable">
+                                    <div class="table-container border-all checkbox-parent">
+                                        <div class="t-header text-left clearfix">
+                                            <div class="row-fluid non-respv">
+                                                <div class="span5">
+                                                    <div class="input-append p-10">
+                                                        <input class="span12 non-respv" id="searchButton" type="text">
+                                                        <button class="btn" type="button" id="searchButtonC"><i class="icon-search"></i></button>
+                                                    </div>
+                                                </div>
+                                                <div class="span7">
+                                                    <div class=" pull-right p-10">
+                                                        <div class="jplist-panel">						
+
+                                                            <!-- jplist bootstrap sort dropdown control -->
+                                                            <div class="dropdown" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" 
+                                                                 data-control-action="sort">
+                                                                <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" aria-expanded="true">	
+                                                                    <span data-type="selected-text">Sort</span>
+                                                                    <span class="caret"></span>						
+                                                                </button>
+                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                    <li role="presentation">
+                                                                        <a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Sort</a>
+                                                                    </li>
+                                                                    <li role="presentation">
+                                                                        <a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Name A-Z</a>
+                                                                    </li>
+
+                                                                    <li role="presentation">
+                                                                        <a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="desc" data-type="text" data-default="true">Name Z-A</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>	
+                                                        </div>				 
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row-fluid non-respv border-top">
+                                                <div class="row-fluid non-respv volunteer-header">
+                                                    <div class="span5">Name</div>
+                                                    <div class="span4">Contact</div>
+                                                    <div class="span3">Number of Activities</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="t-body">
+                                            <ul class="data-list checkbox-children paginate-me">
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block">not active</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="data-list-item">
+                                                    <div class="row-fluid non-respv p-10">
+                                                        <div class="span5 text-left">
+                                                            <div class="row-fluid">
+                                                                <span class="name">Alvin Heng</span>
+                                                                <span class="icon"><i class="fa fa-star clr-orange"></i></span>
+                                                                <span class="label label-success">LEADER</span>
+                                                            </div>
+                                                            <span class="smaller">Heng Huan An</span>
+                                                        </div>
+                                                        <div class="span4 text-left">
+                                                            <div class="row-fluid">
+                                                                <div class="span6 text-left">
+                                                                    <span class="smaller block">+65 9223 9445</span>
+                                                                    <span class="smaller block email"><a href="#">ationg123456@yahoo.com.sg</a></span>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="span3 text-left col-activities">
+                                                            <div class="row-fluid">
+                                                                <span class="smaller block"><a href="#myModal" role="button" data-toggle="modal">6 activities</a></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+                                            </ul>
+                                            <div class="data-list-footer meta-footer p-10 clearfix">
+                                                <div class="meta_info pull-left">
+                                                    <span class="count">1-10</span>
+                                                    <span>OF</span>
+                                                    <span class="total">11</span>
+                                                    <span>VOLUNTEERS</span>
+                                                </div>
+                                                <div class="pagination pull-right">
+                                                    <ul class="mpager" id="myPager"></ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div><!--end of side padding wrapper -->
+                </div><!--end of main content-->
+            </div><!--end of section page-->
+
+        </div><!--end of page wrapper-->
+        <footer class="footer"><p>FOOTER</p></footer>
+
+
+        <!-- Modal -->
+        <div id="myModal" class="modal non-respv hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times-circle-o"></i></button>
+                <h3 id="myModalLabel">&nbsp;</h3>
+            </div>
+            <div class="modal-body">
+                <div class="modal-body-container">
+                    <div class="row-fluid non-respv">
+                        <div class="span12">
+                            <div class="span4 text-center p-20">
+                                <img src="images/img-avatar-35x35-02.png" class="img-circle">
+                            </div>
+                            <div class="span8 p-20">
+                                <span class="name">Alvin Heng</span> <i class="fa fa-star clr-orange"></i><br>
+                                <span class="smaller">Heng Huan An</span><br>
+                                <span>Volunteered for 8 Activities</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-10">
+                            <div class="span5 p-10"><h5>Date</h5></div>
+                            <div class="span7 p-10"><h5>Activity</h5></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-10">
+                            <div class="span5 p-10">23 August 2015</div>
+                            <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-10">
+                            <div class="span5 p-10">23 August 2015</div>
+                            <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-10">
+                            <div class="span5 p-10">23 August 2015</div>
+                            <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-10">
+                            <div class="span5 p-10">23 August 2015</div>
+                            <div class="span7 p-10"><a href="#">Fiesta Volunteer Open House</a></div>
+                        </div>
+                    </div>
+                    <div class="row-fluid non-respv border-top">
+                        <div class="span12 p-30 text-center">
+                            <button class="btn btn-large">SEE MORE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<script type="text/javascript" src="js/aui-min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.js"></script>
+<script type="text/javascript" src="js/jquery-mobile-1.3.2.js"></script>
+<script type="text/javascript" src="js/jquery.matchHeight.min.js"></script>
+<script type="text/javascript" src="js/additional-methods.js"></script>
+<script type="text/javascript" src="js/selectordie.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="js/ZeroClipboard.min.js"></script>
+<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-modal-popover.js"></script>
+<script type="text/javascript" src="js/nlform.js"></script>
+<script type="text/javascript" src="js/checkbox.min.js"></script>
+<script type="text/javascript" src="js/jplist.core.min.js"></script>
+<script type="text/javascript" src="js/jplist.bootstrap-sort-dropdown.min.js"></script>
+<script type="text/javascript" src="js/alternate.js"></script>
+<script type="text/javascript" src="js/jquery.main.js"></script>
+</body>
+</html>
