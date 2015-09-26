@@ -391,6 +391,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 
 /* UI Controls - BUTTONS */
     .btn-large-custom, #signupForm .btn-large { width:200px;height: 40px; text-transform:uppercase; }
+    .btn-normalize-height{height:40px !important;}
     .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
 
 .open-more,.btn-more-img, .btn, .btn-ghost{
@@ -2093,6 +2094,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     padding:10px 30px 20px 30px;
     position: relative;
 }
+
 .highlights .highlight-item:before{
     position: absolute;
     content: "";
@@ -2123,7 +2125,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 
 .t-header{padding:padding-right: 20px;}
-.t-header.pg480{padding:15px 30px;}
+.t-header.pg480{padding:15px 10px 15px 30px;}
 .jplist-panel .dropdown-menu{
     right: 0;
     left:auto;
@@ -2138,13 +2140,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list li.active{background-color: #f5f5f5;}
 .data-list li:last-child{border-bottom: none;}
 .data-list li .prn-chk-bx{ position: relative;}
-.data-list li .prn-chk-bx .checkbox{
-    position: absolute;
-    top: 50%;
-    height: 20px;
-    margin-top: -10px;
-    right: 0;
-}
 .data-list li .person{
     text-align: left;
     padding: 10px 0px;
@@ -2184,9 +2179,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list li .person-actions .more-details{ min-height: 0px;}
 .data-list li .person-actions .show-more{ font-size: 0.9em;display: block;}
 .data-list li .person-actions .dropdown-menu{ right: 0;left: auto;min-width:140px;}
-.data-list li .person-actions .dropdown-menu > li > a{padding:7px 20px; }
-.data-list li .person-actions .dropdown-menu li.active{font-weight: 800;position: relative; }
-.data-list li .person-actions .dropdown-menu li.active:before{
+.data-list li .person-actions .dropdown-menu > li > a, .dropdown-select .dropdown-menu > li > a {padding:7px 20px; }
+.data-list li .person-actions .dropdown-menu li.active , .dropdown-select .dropdown-menu li.active{font-weight: 800;position: relative; }
+.data-list li .person-actions .dropdown-menu li.active:before , .dropdown-select .dropdown-menu li.active:before{
     content: "\f00c";
     width: 20px;
     height: 20px;
@@ -2198,15 +2193,15 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin-top: -10px; }
 
 .data-list li .action-btn{ position: absolute;top: 50%;height: 30px;margin-top: -15px;right: 10px;}
-.data-list li .action-btn button{ 
+.data-list li .action-btn button, .dropdown-select button{ 
     background-color: #fff;
     border:1px solid #cccccc;
 }
-.data-list li .action-btn button:hover{background-color: #F9F6EC;} 
-.data-list li .action-btn.deactivated {background-color: #F9F6EC;} 
-.data-list li .action-btn.deactivated button { color: #333;} 
+.data-list li .action-btn button:hover, .dropdown-select button:hover{background-color: #F9F6EC;} 
+.data-list li .action-btn.deactivated, .dropdown-select.deactivated {background-color: #F9F6EC;} 
+.data-list li .action-btn.deactivated button , .dropdown-select.deactivated button{ color: #333;} 
 
-.data-list li .action-btn .caret{ border-top-color:#333;border-bottom-color: #333;}
+.data-list li .action-btn .caret, .dropdown-select .caret{ border-top-color:#333;border-bottom-color: #333;}
 .data-list-footer{
     border-top:1px solid #cccccc;
 }
@@ -2244,7 +2239,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     vertical-align: top;
 }
 .search-results{
-    min-height: 170px;
+    min-height: 100px;
+    padding-bottom:80px;
     border-left:1px solid #cccccc;
     border-right:1px solid #cccccc;
     border-bottom:1px solid #cccccc;
@@ -2355,6 +2351,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights.resp .highlight-item.span3{width: auto;}
 .data-list.volunteers-list{}
 .data-list.volunteers-list .data-list-item{padding: 15px 30px;}
+.data-list.volunteers-list.pg480 .data-list-item{padding: 15px 10px 15px 30px;}
 .data-list.volunteers-list .data-list-item.active{background-color: #f5f5f5;}
 .data-list.volunteers-list .data-list-item img{width: 40px;}
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
@@ -2433,6 +2430,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     content: "\f192";
     border-color: transparent;
     
+}
+#subAttendees .dropdown-menu li > a{
+    padding: 7px 40px 7px 10px !important;
 }
 
 
@@ -3254,6 +3254,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .footer-links{ margin-left:0; font-size:.875em; }
     .pre-footer .acc-toggle{ font-size:1.25em; height:2.5em; display:table-cell; vertical-align:bottom; padding-bottom:.5em; }
     #signUpNewsletterForm label { text-align: left; }
+    .offset-left-10px {margin-left:10px !important;}
 }
 
 
@@ -3712,6 +3713,10 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
      .no-float-mobile{float: none !important;}
      #save-status.for-attendees{margin-top: 5px;}
      div#sortable{margin-top:10px !important;}
+
+     /* 480 */
+     #subAttendees button:first-child{width: auto !important;}
+     #subAttendees button.dropdown-toggle{width: 50px;}
 
 
 

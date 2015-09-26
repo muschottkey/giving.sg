@@ -249,20 +249,6 @@ $(function(){
         }
     })
 
-    $('#saveAttendance').selectOrDie({
-        onChange: function(){
-            var val = $(this).val();
-            $('.volunteers-list li').find('input[type=text]').attr("disabled","disabled");
-
-            if(val="subAll"){
-                $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
-            }
-
-            $('#confirmModal').modal("show");
-            
-        }
-    })
-
     $('.select-giving-autofit').selectOrDie({
         onChange: function(){
             var amtvalue = $(this).val();
@@ -947,6 +933,7 @@ $(function(){
             }
             if(checked == false){
                 $(this).closest('li').removeClass('active');
+                $(this).removeClass('selected');
             }
         });
 
@@ -954,13 +941,34 @@ $(function(){
             $('.volunteers-list').find('.volunteer-check:checked').addClass('selected');
         });
 
+        $('#btn-subAttendance').click(function(e){
+            e.preventDefault();
+            $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
+            $('#confirmModal').modal("show");
+        })
+
+        $('#li-subAll').click(function(e){
+            e.preventDefault();
+            $('#confirmModal').modal("show");
+        })
+
         $('.action-btn .dropdown-menu li a').click(function(e){
             e.preventDefault();
             var actn = $(this).text();
+            var action = $(this).text().toLowerCase();
             $(this).closest('.dropdown-menu').find('li.active').removeClass('active');
             $(this).parent().addClass('active');
-            $(this).closest('.action-btn').find('button:first-child').text(actn);
+
             $(this).closest('.action-btn').find('button:first-child').attr("value",actn);
+
+            if( action == "reject"){
+                $(this).closest('.action-btn').find('button:first-child').text("Rejected");
+            }
+            if(action == "accept"){
+                $(this).closest('.action-btn').find('button:first-child').text("Accepted");
+            }
+            
+            $(this).closest('.action-btn').find('button').attr("disabled","disabled");
         })
 
         $('.action-btn button:first-child').click(function(){
@@ -973,6 +981,20 @@ $(function(){
             }
             if(action == "accept"){
                 $(this).text("Accepted");
+            }
+        })
+
+         $('#saveAttendance').selectOrDie({
+            onChange: function(){
+                var val = $(this).val();
+                $('.volunteers-list li').find('input[type=text]').attr("disabled","disabled");
+
+                if(val="subAll"){
+                    $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
+                }
+
+                $('#confirmModal').modal("show");
+                
             }
         })
 
@@ -994,15 +1016,6 @@ $(function(){
         });
     }
     $('.person-actions .span6').matchHeight();
-
-    $('.prn-chk-bx').matchHeight({
-        target: $('.person')
-    })
-
-    
-
-   
-
 
     $('.match-height-abt-impact').matchHeight();
 

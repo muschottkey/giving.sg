@@ -152,9 +152,9 @@
 								<div id="tab01">
 									<h4 class="text-left acc-toggle visible-phone" data-toggle="collapse" data-target="#collapse-tab01">Attendance</h4>
 									<div class="cpn-holder collapse in collapse-visible-desktops" id="collapse-tab01">
-									<div class="highlights resp p10">
+									<div class="highlights resp p10 p-480">
 										<div class="row-fluid">
-											<div class="span3 highlight-item border-all">
+											<div class="span3 highlight-item border-all offset-left-10px">
 												<div class="large-type">
 													<span>9</span>
 													<span class="small">/</span>
@@ -178,10 +178,10 @@
 									<div class="table-section m-top50 m-bot40 jplist 480" id="sortable">
 										<div class="table-actions p-bot10 clearfix">
 											<div class="row-fluid breakpoint-override">
-												<div class="show-select pull-left span6">
+												<div class="show-select pull-left offset-left-10px span6">
 													<label class="small m-right30">SHOW</label>
 													<select class="select-giving" data-custom-class="select_minimal">
-														<option>All check-in</option>
+														<option>All check-ins</option>
 														<option>Option 2</option>
 														<option>Option 3</option>
 													</select>
@@ -209,7 +209,7 @@
 												</div>	
 											</div>
 											<div class="t-body">
-												<ul class="data-list volunteers-list paginate-me">
+												<ul class="data-list volunteers-list pg480 paginate-me">
 													<li class="data-list-item">
 														<div class="row-fluid breakpoint-override">
 															<div class="span9">
@@ -441,12 +441,16 @@
 											<div class="span12 m-top40" id="save-actions">
 												<button class="pull-left btn btn-large-custom btn-ghost block-mobile" id="saveAttendees">SAVE ATTENDEES</button>
 												<span class="small pull-left for-attendees" id="save-status">Autosaved 1 minute ago</span>
-
-												<div class="pull-right no-float-mobile">
-													<select class="" id="saveAttendance" data-custom-class="select_auto_width block-mobile">
-														<option value="subAttendance">Submit Attendance</option>
-														<option value="subAll">Submit All Present</option>
-													</select>
+												
+												<div class="btn-group dropdown-select pull-right no-float-mobile" id="subAttendees">
+													<button type="button" class="btn btn-normalize-height" value="subAttendance" id="btn-subAttendance">Submit Attendance</button>
+													<button type="button" class="btn dropdown-toggle btn-normalize-height" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+														<span class="caret"></span>
+													</button>
+													<ul class="dropdown-menu text-left">
+														<li class="active"><a href="#" id="li-subAttendance">Submit Attendance</a></li>
+														<li><a href="#" id="li-subAll">Submit All Present</a></li>
+													</ul>
 												</div>
 											</div>
 										</div>
@@ -484,7 +488,7 @@
 								<p>We are asking you to confirm because once it's submitted, you will not be able to further edit the hours and attendance on the page</p>
 								<div class="border-all border-round">
 									<div class="p-40">
-										<p><strong>Yes, I'd like to submit the attendance</strong></p>
+										<p><strong>Yes, I'd like to submit <br class="hidden-phone"> the attendance</strong></p>
 										<button class="btn btn-primary btn-large m-top30">CONFIRM SUBMISSION</button><br>
 									</div>
 									<div class="modal-footer">
