@@ -172,8 +172,10 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .p-bot30{padding-bottom: 30px;}
 .p-bot40{padding-bottom:40px;}
 .p-left0{padding-left:0px !important;}
+.p-left5{padding-left:5px;}
 .p-left70{padding-left:70px;}
-.w50{width: 50%;}
+
+.w50{width: 48%;}
 hr.m5{margin: 5px 0;}
 
 .btn a, .btn-group a{text-decoration: none;}
@@ -189,6 +191,8 @@ hr.m5{margin: 5px 0;}
 .clickable { cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
     .carousel .clickable { width:90%; left:5%; }
 .border-round {border-radius: 5px;}
+.border-round-top {border-top-left-radius: 5px;border-top-right-radius:5px;}
+.border-round-bottom {border--bottom-right-radius: 5px;border-bottom-left-radius:5px;}
 .show-desktop-only{display: inherit;}
 
 /* CUSTOM FORM STATES */
@@ -2093,6 +2097,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights .highlight-item {
     padding:10px 30px 20px 30px;
     position: relative;
+    margin-left: 0;
 }
 
 .highlights .highlight-item:before{
@@ -2894,7 +2899,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .dtn-amt-item .dtn-btns .btn{margin-top: 5px;}
 
     /* Responsivity Override */
-    .wrapper-925.no-break{min-width: 700px;}
+    /*.wrapper-925.no-break{min-width: 700px;}*/
      .row-fluid.non-respv .span12 {
         width: 100% !important;
         *width: 99.94680851063829%  !important;
