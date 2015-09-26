@@ -84,7 +84,7 @@ textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color:
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
 
-input[type=text]::ms-clear{
+input[type=text]::-ms-clear{
     display: none !important;
     opacity: 0 !important;
     visibility: hidden !important;
