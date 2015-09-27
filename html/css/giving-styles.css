@@ -739,6 +739,10 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .cause-box h4 {
     background:#FFF; height:40px; line-height:40px; font-size:1em; border:none; 
     border-top: solid 1px #CCC; margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
 }
 
 .nature .mobile-block > h4{ line-height: 20px;}
