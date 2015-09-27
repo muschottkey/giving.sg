@@ -917,8 +917,21 @@ $(function(){
             var valThis = this.value.toLowerCase(),
                 lenght  = this.value.length;
 
-            $('.volunteers-list > li').each(function () {
+            $('.data-list > li').each(function () {
                 var text  = $(this).find('.volunteer-name').text(),
+                    textL = text.toLowerCase();
+                (textL.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();
+            });
+
+        });
+
+
+        $('#searchList481').keyup(function () {
+            var valThis = this.value.toLowerCase(),
+                lenght  = this.value.length;
+
+            $('.data-list > li').each(function () {
+                var text  = $(this).find('.name').text(),
                     textL = text.toLowerCase();
                 (textL.indexOf(valThis) == 0) ? $(this).show() : $(this).hide();
             });
@@ -1020,6 +1033,8 @@ $(function(){
     $('.match-height-abt-impact').matchHeight();
 
     $('.landing-cpn-slider-wrapper .swiper-slide').matchHeight();
+
+    $('.volunteer-header.p481 div[class*="span"]').matchHeight();
     
 
 })
