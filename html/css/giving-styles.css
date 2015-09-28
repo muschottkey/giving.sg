@@ -566,8 +566,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .section-page{
     text-align: center;
 }
-#btnDonate{
-    position: absolute;top: 50%;
+#btnDonate, #btn-addLeaders{
+    position: absolute;top: 50%;margin-top: -15px;
 }
 #donateLoggedModal #spca,
 #spca { 
