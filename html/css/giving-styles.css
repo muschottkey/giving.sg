@@ -882,9 +882,11 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px;margin-top: 40px;border: 1px solid #cccccc;}
-input::-webkit-input-placeholder {color: #999 !important;} 
-input:-moz-placeholder{color: #999 !important;} 
-input:-ms-input-placeholder{color: #999 !important;} 
+/* Separate styles for each browser pack or they will all be ignored*/
+input::-webkit-input-placeholder {color: #999 !important;} /* WebKit, Blink, Edge */
+input:-moz-placeholder{color: #999 !important;} /* Mozilla Firefox 4 to 18 */
+input::-mox-placeholder{color: #999 !important;} /* Mozilla Firefox 19+ */
+input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 */
 #donation-userDetails .control-group{margin-top: 1em;margin-bottom: 20px;}
 #donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
 #donation-userDetails input{margin-bottom: 3px;height: 1em;  }
@@ -2104,6 +2106,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights .highlight-item {
     padding:10px 30px 20px 30px !important;
     position: relative;
+}
+.highlights.pg478 .highlight-item {
     margin-left: 0;
 }
 
@@ -2478,6 +2482,13 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 #modal481{background-color:#e9e9e9}
 #modal481 .modal-body .modal-body-container{margin: 0 150px 20px 150px; background-color:#fff;}
+.data-list-item a[role=button]:focus{
+    outline: 0;
+}
+
+
+
+
 
 /* Other code. probably end of dashboard */
 .phone-box{display:none;}
@@ -3047,6 +3058,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin-left: 10px;
    }
    .tab-nav-area{display:none;}
+   .tab-nav-area.pg480{display:block;}
    .tab-section .tab{
     top:0;
     position:relative;
@@ -3737,6 +3749,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
      /* 480 */
      #subAttendees button:first-child{width: auto !important;}
      #subAttendees button.dropdown-toggle{width: 50px;}
+     .tab-nav-area.pg480{display:none;}
 
 
 
