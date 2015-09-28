@@ -308,6 +308,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
 /* CONTENT LAYOUT */
 .wrapper { width:100%; overflow:hidden; position:relative;}
+.wrapper.no-hide{overflow-x: visible;}
 .wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
 .navbar { background: #efefef; }
     .navbar-fixed-top { position:fixed; }
@@ -2051,6 +2052,7 @@ aside.profile-nav.mobile-fallback h4{
 }
 
 .dashboard .control-group{margin-top:1em;}
+.dashboard.non-respv{min-width:800px;}
 .dashboard .section-title{
     font-weight: 800;
     font-size: 1.3em;
@@ -2100,7 +2102,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights{}
 
 .highlights .highlight-item {
-    padding:10px 30px 20px 30px;
+    padding:10px 30px 20px 30px !important;
     position: relative;
     margin-left: 0;
 }
@@ -3260,6 +3262,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .highlights.resp .highlight-item.span3{width: auto;}
     .highlights.resp .highlight-item.span6{width: 48.61878453038674%;}
     .event-header-titles{}
+    .non-respv .ui.checkbox{padding-left: 0;}
 
     
 }
