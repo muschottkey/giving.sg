@@ -969,6 +969,7 @@ $(function(){
             e.preventDefault();
             var actn = $(this).text();
             var action = $(this).text().toLowerCase();
+            console.log(action);
             $(this).closest('.dropdown-menu').find('li.active').removeClass('active');
             $(this).parent().addClass('active');
 
@@ -977,11 +978,14 @@ $(function(){
             if( action == "reject"){
                 $(this).closest('.action-btn').find('button:first-child').text("Rejected");
             }
-            if(action == "accept"){
-                $(this).closest('.action-btn').find('button:first-child').text("Accepted");
+            if(action == "make leader"){
+                $(this).closest('.action-btn').find('button:first-child').text("Leader");
+                $targetDiv = $(this).closest('.data-list-item').find('.person > div');
+                $leaderTag = '<span class="label label-success m-left45">LEADER</span>';
+                $targetDiv.append($leaderTag);
             }
             
-            $(this).closest('.action-btn').find('button').attr("disabled","disabled");
+            $(this).closest('.action-btn').addClass("deactivated").find('button').attr("disabled","disabled");
         })
 
         $('.action-btn button:first-child').click(function(){
