@@ -3713,7 +3713,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     }
 
     .table-actions [class*="span"] {margin-bottom:20px; float: none !important;}
-    .table-actions .input-search input{width: 100% !important; }
      button.block-mobile, .block-mobile{width: auto !important;display: block;margin-left: auto;margin-right: auto;float: none;}
      .side-padding-wrapper.resp{max-width: none;}
      .no-float-mobile{float: none !important;}
@@ -3724,10 +3723,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
      #subAttendees button:first-child{width: auto !important;}
      #subAttendees button.dropdown-toggle{width: 50px;}
      .tab-nav-area.pg480{display:none;}
-
-
-
-
 
     
     /*from @320 RICH*/
