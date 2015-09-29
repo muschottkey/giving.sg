@@ -79,8 +79,8 @@ hr { border-top: 1px solid #CCC; }
 /*  +++++++++++++++++++++++++++++++++++++++++++ */
 button, .btn {background-image: none !important;box-shadow: none;}
 
-textarea, input { font-size:1em !important; height:1.3em; font-weight:400;color: #999;}
-    input:not([type=checkbox]) { font-family: "Open Sans", Arial, sans-serif; height:1.3em;font-weight:400;color: #999; }
+textarea, input { font-size:1em !important; height:1.3em; font-weight:400; color: #666;}
+    input:not([type=checkbox]) { font-family: "Open Sans", Arial, sans-serif; color: #666; }
     /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
     /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
 
@@ -1647,9 +1647,6 @@ span.span12.read-more.text-left.m-0{display: none;}
 #jira-353-content input[type=text], #jira-353-content select,#jira-353-content input[type=number]{
     height: 38px;
 }
-#jira-353-content input:not([type=checkbox]), #jira-353-content textarea{
-    color: #666;
-}
 #jira-353-content .input-prepend .add-on{
     height: 38px;
     line-height: 28px;
@@ -2387,12 +2384,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .table-actions .show-select label{display: inline-block;}
 .table-actions .input-search.reset {margin-top:-6px;}
 .table-actions .input-search input {
-    border: 1px solid #cccccc !important;
-    height: 30px;
-    border-radius: 6px;
-    padding: 5px 0 5px 4px !important;
-    margin: 0;
-    text-align: left;
+    border: 1px solid #CCC !important;
+    height: 30px; border-radius: 6px; padding: .5em !important;
+    margin: 0; text-align: left;
 }
 
 .volunteer-check{display: none;}
