@@ -708,8 +708,7 @@ $(function(){
      /* MULTI STATE CHECKBOXES */
 
     /* Master checkbox */
-    $('.master.checkbox')
-      .checkbox({
+    $('.master.checkbox').checkbox({
         // check all children
         onChecked: function() {
             var $childCheckbox  = $(this).closest('.checkbox-parent').find('.checkbox-children').children('.data-list-item').find('.checkbox');
@@ -1028,7 +1027,7 @@ $(function(){
     });
 
     if($(window).innerWidth() > 979){
-        $('#dateNAdd').matchHeight({
+        $('.volunteer-activity #dateNAdd').matchHeight({
             target: $('#actDescWrapper')
         });
     }

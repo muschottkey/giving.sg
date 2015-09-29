@@ -125,6 +125,7 @@ label.small.grey{color: #999;}
 .absolute{position: absolute;}
 div.centered,.centered{margin-left: auto !important;margin-right: auto !important;float: none !important;}
 .m-0 { margin: 0 !important; line-height:1; }
+.m-10 { margin: 10px !important; }
 .m-bot0{margin-bottom: 0px !important;}
 .m-bot5{margin-bottom: 5px;}
 .m-bot10{margin-bottom: 10px !important;}
@@ -2236,13 +2237,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .input-search{position: relative;}
 .input-search input{padding-right:30px;position: relative;}
 .input-search label{
-    position: absolute;
-    right: 0;
-    width: 20px;
-    height: 20px;
-    top:50%;
-    margin-top: -8px;
-    z-index:99;
+    position: absolute; right: 10px; width: 20px; height: 20px;
+    top:50%; margin-top: -8px;  z-index:99;
 }
 .input-search label i{
     line-height: 1;
@@ -2384,7 +2380,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .table-actions .input-search input {
     border: 1px solid #CCC !important;
     height: 30px; border-radius: 6px; padding: .5em !important;
-    margin: 0; text-align: left;
+    margin: 0; text-align: left; width: 92%;
 }
 
 .volunteer-check{display: none;}
