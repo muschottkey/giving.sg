@@ -2351,28 +2351,18 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 
 /*  480 */
-.highlights.resp .highlight-item{}
 .highlights.resp .highlight-item:before{display: none;}
 .highlights.resp .highlight-item.span3{width: auto;}
-.data-list.volunteers-list{}
 .data-list.volunteers-list .data-list-item{padding: 15px 30px;}
-.data-list.volunteers-list.pg480 .data-list-item{padding: 15px 10px 15px 30px;}
+.data-list.volunteers-list.pg480 .data-list-item{padding: 15px 20px;}
 .data-list.volunteers-list .data-list-item.active{background-color: #f5f5f5;}
 .data-list.volunteers-list .data-list-item img{width: 40px;}
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
 .data-list.volunteers-list .data-list-item .span9{text-align: left;}
-
-.data-list.volunteers-list .data-list-item .span1{}
 .data-list.volunteers-list .data-list-item .span1 input{
-    border:1px solid #cccccc;
-    padding: 5px 5px;
-    border-radius: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
-.data-list.volunteers-list .data-list-item .span1{
-
+    border:1px solid #CCC;
+    padding: 5px ;  border-radius: 5px;
+    margin-top: 0px; margin-bottom: 0px;
 }
 .table-actions .show-select{text-align: left;}
 .table-actions .show-select label{display: inline-block;}
