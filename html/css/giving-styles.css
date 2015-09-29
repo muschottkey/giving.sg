@@ -1,7 +1,8 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
-body.non-respv{min-width: 1024px;overflow: scroll;}
+body.non-respv { min-width: 1002px; overflow-x: visible; }
+
 /* Typography */
 h1, h2, h3, h4, h5{ 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
@@ -308,7 +309,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
 /* CONTENT LAYOUT */
 .wrapper { width:100%; overflow:hidden; position:relative;}
-.wrapper.no-hide{overflow-x: visible;}
+.wrapper.no-hide { overflow-x: visible;}
 .wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
 .navbar { background: #efefef; }
     .navbar-fixed-top { position:fixed; }
@@ -2046,12 +2047,9 @@ aside.profile-nav.mobile-fallback h4{
     margin:0 auto;
 }
 
-.dashboard{
-    margin-left: 315px;
-}
-
+.dashboard{  margin-left: 315px; }
 .dashboard .control-group{margin-top:1em;}
-.dashboard.non-respv{min-width:800px;}
+.dashboard.non-respv{min-width:680px;}
 .dashboard .section-title{
     font-weight: 800;
     font-size: 1.3em;
@@ -2239,7 +2237,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .input-search input{padding-right:30px;position: relative;}
 .input-search label{
     position: absolute;
-    right: 20px;
+    right: 0;
     width: 20px;
     height: 20px;
     top:50%;
@@ -2452,22 +2450,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .volunteer-contact .name{font-size:20px; display:inline-box; font-weight:bold;}
 .volunteer-contact .name a{color:#000;}
 .volunteer-contact .email{margin-top:0px}
-.header-wrapper-481 {padding:15px 20px;}
+.header-wrapper-481 {padding:15px 1.5%;}
 
-.volunteer-header.p481 > div{
-    position: relative;
-    min-height: 40px;
-}
-.volunteer-header.p481 > div > span{
-    position: absolute;
-    top: 50%;
-    margin-top:-10px;
-}
-.volunteer-header.p481 > div:last-child > span{
-    top:0;
-    margin-top: 0;
-}
-
+.volunteer-header.p481 > div{ position: relative; min-height: 40px; }
+.volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; }
+.volunteer-header.p481 > div:last-child > span{ top:0; margin-top: 0; }
 .data-list-item .label.label-success{font-size: 9px;}
 .data-list-item .span2 
 
@@ -2479,9 +2466,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list-item a[role=button]:focus{
     outline: 0;
 }
-
-
-
 
 
 /* Other code. probably end of dashboard */
@@ -2871,7 +2855,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin:13px 0 0;
 }
 
-
+.non-respv .side-padding-wrapper { max-width:94%; }
 
 
 /***************************************************************************
@@ -2960,8 +2944,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         *width: 23.023731587561375% !important;
       }
       .row-fluid.non-respv .span2 {
-        width: 14.52991452991453% !important;
-        *width: 14.476723040552828% !important;
+        width: 14% !important;
+        *width: 13.4% !important;
       }
       .row-fluid.non-respv .span1 {
         width: 5.982905982905983% !important;
@@ -3732,8 +3716,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         float: none;
     }
 
-    .table-actions [class*="span"] {margin-bottom:20px;text-align: center;float: none !important;}
-    .table-actions .input-search input{width: 100% !important;padding: 5px 0px 5px 4px !important}
+    .table-actions [class*="span"] {margin-bottom:20px; float: none !important;}
+    .table-actions .input-search input{width: 100% !important; }
      button.block-mobile, .block-mobile{width: auto !important;display: block;margin-left: auto;margin-right: auto;float: none;}
      .side-padding-wrapper.resp{max-width: none;}
      .no-float-mobile{float: none !important;}
