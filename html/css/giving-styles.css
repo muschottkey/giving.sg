@@ -1100,6 +1100,7 @@ a.carousel-control { color:#FFF;}
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     color:#C66; font-weight: bold; background-color: #F9F6EC;
 }
+.t-header-wrapper { padding: 15px 3%; }
 #gf-bkt-wrapper .gf-bkt thead tr td { font-size:1em;}
 .gf-bkt thead tr td:first-child{ border-top-left-radius: 6px;}
 .gf-bkt thead tr td:last-child{ border-top-right-radius: 6px;}
@@ -2109,6 +2110,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 
 .highlights .highlight-item { padding:12px 30px 15px !important; position: relative; }
+    .highlight-message { font-size:1.25em; text-align:left; margin-top:13px; }
 .highlights.pg478 .highlight-item {
     margin-left: 0;
 }
@@ -2128,9 +2130,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlight-item .large-type span { font-weight:900; color: #333; font-size:1.5em; }
 .highlight-item .large-type span.small{ font-size: 1em; }
 .highlights .highlight-item .leaders button{  border:1px solid #CCC !important; padding:7px;  margin-top: 2px; }
-
-
-.t-header.pg480{padding:15px 10px 15px 30px;}
 .t-header .ui.checkbox{margin-top: 4px;}
 .jplist-panel .dropdown-menu{
     right: 0;
@@ -2305,8 +2304,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     position: relative;
 }
 .search-results ul li .volunteer-name{
-    font-weight: 800;
-    margin-left:5px;
+    font-weight: 800; margin-left:5px; 
 }
 .search-results ul li .volunteer-icon{
     margin-left: 5px;
@@ -2398,7 +2396,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list.volunteers-list .data-list-item{padding: 15px 30px;}
 .data-list.volunteers-list.pg480 .data-list-item{padding: 15px 20px;}
 .data-list.volunteers-list .data-list-item.active{background-color: #f5f5f5;}
-.data-list.volunteers-list .data-list-item img{width: 40px;}
+.data-list.volunteers-list .data-list-item img { width:36px; margin-right:5px; }
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
 .data-list.volunteers-list .data-list-item .span9{text-align: left;}
 .data-list.volunteers-list .data-list-item .span1 input{
@@ -2477,11 +2475,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
            
 .row-fluid [class*="span"]{min-height:0px}
-.volunteer-contact .name{font-size:1.25em; display:inline-box; font-weight:bold;}
+.volunteer-contact .name, .volunteer-name {font-size:1.25em; display:inline-box; font-weight:bold;}
 .volunteer-contact .name a{color:#000;}
 .volunteer-contact .email{margin-top:0px}
-
-.header-wrapper-481 {padding:15px 1.8%;}
 
 .volunteer-header.p481 > div{ position: relative; min-height: 40px; }
 .volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; color: #cc6666;}
