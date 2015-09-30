@@ -134,6 +134,12 @@
 					</div>
 					<div class="row-fluid non-respv">
 						<div class="wrapper-925 no-break clearfix">
+							<div class="row-fluid">
+								<div class="span12 text-center p-10 m-bot30">
+									<span class="fa fa-info-circle blue"></span>
+									<span class="small blue">4 volunteers have been accepted</span>
+								</div>
+							</div>
 							<div class="tab-nav-area">
 								<ul>
 									<li class="active"><a href="#tab00">SIGN UPS</a></li>
@@ -186,19 +192,8 @@
 												        </div>
 												    </div>
 												    <div class="span11 m-left0 pull-right">
-														<div class="btn-group">
-															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														    FILTERS <span class="caret"></span>
-														  	</button>
-															<ul class="dropdown-menu">
-															    <li><a href="#">Action</a></li>
-															    <li><a href="#">Another action</a></li>
-															    <li><a href="#">Something else here</a></li>
-															    <li role="separator" class="divider"></li>
-															    <li><a href="#">Separated link</a></li>
-														  	</ul>
-														</div><!--end of button-->
-														<div class="btn-group m-left25">
+
+												    	<div class="btn-group m-left25 hidden actions-group">
 															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 														    ACCEPT <span class="caret"></span>
 														  	</button>
@@ -208,15 +203,22 @@
 																<li><a href="#">Make Leader</a></li>
 															</ul>
 														</div><!--end of button-->
+
+														<div class="btn-group">
+															<button type="button" class="btn btn-default data-list-filter-toggle" aria-haspopup="true" aria-expanded="false">
+														    FILTERS <span class="caret"></span>
+														  	</button>
+														</div><!--end of button-->
+														
 														<div class=" pull-right">
 															<div class="jplist-panel">
 														      <!-- jplist bootstrap sort dropdown control -->
-														    	<div class="dropdown" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" data-control-action="sort">
+														    	<div class="dropdown select-like" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" data-control-action="sort">
                                                                 	<span class="text small">sorted by</span>
 															        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" 
 															        	aria-expanded="true">	
 															        	<span data-type="selected-text">Sort by</span>
-															         	<span class="caret"></span>						
+															         	<span class="caret fa fa-angle-down"></span>						
 															        </button>
 															        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
 															        	<li role="presentation">
@@ -236,6 +238,7 @@
 													</div>
 												</div>
 											</div>
+											<div class="p-10 text-left clearfix filter-holder"></div>
 											<div class="t-body">
 												<ul class="data-list checkbox-children paginate-me">
 													<li class="data-list-item">
@@ -813,6 +816,51 @@
 		
 	</div><!--end of page wrapper-->
 	<footer class="footer"><p>FOOTER</p></footer>
+
+	<div class="popover wide" id="data-list-filters">
+	    <div class="arrow"></div>
+	    <div class="popover-content">
+	    	<button class="btn btn-small btn-success pull-right" id="close-filters">done</button>
+	    	<div class="row-fluid m-top40">
+				<div class="span6">
+					<ul id="first-filters">
+						<li>
+							<input type="checkbox" checked id="ref_allsignups">
+							<label for="ref_allsignups">all signups</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_pending">
+							<label for="ref_pending">pending</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_accepted">
+							<label for="ref_accepted">accepted</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_rejected">
+							<label for="ref_rejected">rejected</label>
+						</li>
+					</ul>
+				</div>
+				<div class="span6">
+					<ul class="radio-checkboxes" id="filter-radios">
+						<li>
+							<input type="checkbox" checked id="ref_favourites">
+							<label for="ref_favourites">favourite</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_blacklisted">
+							<label for="ref_blacklisted">blacklisted</label>
+						</li>
+						<li>
+							<input type="checkbox" id="ref_leader">
+							<label for="ref_leader">leader</label>
+						</li>
+					</ul>
+				</div>
+			</div>
+	    </div>
+	</div>
 
 
 	<script type="text/javascript" src="js/aui-min.js"></script>

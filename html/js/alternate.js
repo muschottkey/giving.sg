@@ -481,6 +481,7 @@ $(function(){
         })
     })
 
+    
     /* refine search inputs */
     $('#close-more-causes').click(function(){
         $('#select-more-causes').modalPopover('hide');
@@ -558,6 +559,86 @@ $(function(){
 
         $('#select-more-camp').modalPopover('show')
     })
+
+
+    /*      773 filters    */
+    $('.data-list-filter-toggle').click(function(e){
+        $('#data-list-filters').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+         $('#data-list-filters').modalPopover('show');
+    
+    })
+
+    $('#data-list-filters').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        if(checked == true){
+            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="'+parent+'" >'+content+'</span>');
+            if(parent != "ref_allsignups"){
+                $("#ref_allsignups").prop('checked',false);
+                $('#camp-holder').find('span[data-parent=ref_allcamp]').addClass('to-hide');
+            }
+        }
+        else{
+            $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+        }
+    })
+
+
+    $('#first-filters').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        var count = $('#first-filters').find('input[type=checkbox]:checked').length;
+        var allsignupsckd = $('#ref_allsignups').prop("checked");
+        if(allsignupsckd == false && count > 2){
+            $('#first-filters').find('input[type=checkbox]:checked').each(function(){
+               var nparent = $(this).attr('id');
+               $('.filter-holder').find('span[data-parent='+nparent+']').remove();
+                
+            })
+            $('#first-filters').find('input[type=checkbox]:checked').prop("checked",false); 
+            $("#ref_allsignups").prop('checked',true);
+            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+        }
+        else{
+            $('.filter-holder').find('span[data-parent=ref_allsignups]').remove();
+        }
+    })
+
+     $('#close-filters').click(function(){
+        $('#data-list-filters').modalPopover('hide');
+        $('.filter-holder').slideDown(400);
+        $('.filter-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
+        $('.filter-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
+    });
+
+     $('#ref_allsignups').change(function(){
+        var checked = $(this).prop('checked');
+        if(checked == true){
+            $(this).closest('.span6').find('input[type=checkbox]:checked').prop("checked",false);
+            $('.filter-holder').find('.checkbox-clone').addClass('to-hide');
+            $(this).prop('checked',true);
+        }
+        else{
+            $('#causes-toggle').removeClass('checked');
+        }
+    })
+
+     $('#filter-radios').on("change",'input[type=checkbox]', function(){
+        $('#filter-radios').find('input[type=checkbox]:checked').each(function(){
+            var nparent = $(this).attr('id');
+            $('.filter-holder').find('span[data-parent='+nparent+']').remove();
+        })
+        $('#filter-radios').find('input[type=checkbox]:checked').prop("checked",false);
+        $(this).prop("checked", true);
+    })
+    
+    
+
 
     /* DONATE BUTTONS LOGIC*/
 
@@ -745,6 +826,7 @@ $(function(){
             }
             else {
               allChecked = false;
+              
             }
           });
           // set parent checkbox state, but dont trigger its onChange callback
@@ -753,9 +835,11 @@ $(function(){
           }
           else if(allUnchecked) {
             $parentCheckbox.checkbox('set unchecked');
+            $('.actions-group').addClass('hidden');
           }
           else {
             $parentCheckbox.checkbox('set indeterminate');
+            $('.actions-group').removeClass('hidden');
           }
         },
       })

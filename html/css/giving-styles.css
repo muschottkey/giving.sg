@@ -189,6 +189,7 @@ hr.m5{margin: 5px 0;}
 .grey{color: #999;}
 .red{color: #F00;}
 .white{color: #FFF;}
+.blue{color: #9DC9EE;}
 .bg-green{ background-color: #5cb85c; color: #FFF; }
 .bg-lightgrey{ background-color: #f8f8f8; }
 .bg-pumpkin{background-color: #f0ad4e;color: #fff;}
@@ -1805,45 +1806,52 @@ span.span12.read-more.text-left.m-0{display: none;}
 /* Refine search */
 .inline-search{ position:absolute; right:30px; top:8px; font-size: 1.2em; color:#333; cursor:pointer; }
 .refine-search .text { font-size:1.2em; padding-right:5px; }
-.refine-inputs input[type=checkbox] { display: none; }
+.refine-inputs input[type=checkbox], #data-list-filters input[type=checkbox] { display: none; }
 
 .refine-inputs input[type=checkbox] + label,
 #select-more-causes input[type=checkbox] + label, 
 #select-more-camp input[type=checkbox] + label,
-.refine-inputs .checkbox-clone {
+#data-list-filters input[type=checkbox] + label,
+.refine-inputs .checkbox-clone, .checkbox-clone {
     display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
     border:1px solid #CCC; padding:5px 25px 5px 8px; margin-right:6px; position:relative;
     cursor: pointer; font:1em/1.4 "Open Sans", Arial, sans-serif; color: #999;
 } 
 #select-more-causes input[type=checkbox] + label:hover,
-#select-more-camp input[type=checkbox] + label:hover{
+#select-more-camp input[type=checkbox] + label:hover,
+#data-list-filters input[type=checkbox] + label:hover{
     background: #f7f7f7;
     color: #cc6666;
     border-color: #ccc;
 }
 
-.style-tag input[type=checkbox] + label:before,.style-tag .checkbox-clone:before,
+.style-tag input[type=checkbox] + label:before,.style-tag .checkbox-clone:before,.checkbox-clone:before,
 #select-more-camp input[type=checkbox] + label:before,
-#select-more-causes input[type=checkbox] + label:before {
+#select-more-causes input[type=checkbox] + label:before,
+#data-list-filters input[type=checkbox] + label:before {
     content: "\f058"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
     position: absolute; width:16px; height:16px; top:8px; right:5px; font-size:.8em;
 }
-    .style-tag .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
+    .style-tag .checkbox-clone:before, .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
-#select-more-causes input[type=checkbox]:checked + label:before, 
-.refine-inputs .checkbox-clone.checked:before{
+#select-more-causes input[type=checkbox]:checked + label:before,
+#data-list-filters input[type=checkbox]:checked + label:before, 
+.refine-inputs .checkbox-clone.checked:before,
+.checkbox-clone.checked:before{
     color: #cc6666;
 }
 
 #select-more-camp input[type=checkbox]:hover + label:hover:before,
-#select-more-causes input[type=checkbox]:hover + label:hover:before{
+#select-more-causes input[type=checkbox]:hover + label:hover:before,
+#data-list-filters input[type=checkbox]:hover + label:before{
     color: #cc6666;
 }
 
 #select-more-camp .popover-content ul li,
+#data-list-filters ul li,
 #select-more-causes .popover-content ul li{
     list-style: none;
     display: inline-block;
@@ -1853,14 +1861,25 @@ span.span12.read-more.text-left.m-0{display: none;}
 #select-more-causes .popover-content ul {
     margin: 0 30px 10px 15px;
 }
-#select-more-causes .popover-content ul{margin-top: 10px;}
+#data-list-filters ul{
+    margin: 0 10px 10px 15px;
+}
+#select-more-causes .popover-content ul,
+#data-list-filters .popover-filter ul {margin-top: 10px;}
 
 #select-more-camp input[type=checkbox],
+#data-list-filters input[type=checkbox],
 #select-more-causes input[type=checkbox]{
     display: none;
 }
 #select-more-camp, #select-more-causes, #select-more-camp .popover-content, #select-more-causes .popover-content{
     width:90%; max-width:280px;
+}
+.popover.wide{
+   max-width: 350px; 
+}
+.popover.wide .popover-content{
+    max-width: 320px;
 }
 
 
@@ -2138,9 +2157,15 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 .t-header{padding:padding-right: 20px;}
 .t-header.pg480{padding:15px 10px 15px 30px;}
+.t-header .ui.checkbox{margin-top: 4px;}
 .jplist-panel .dropdown-menu{
     right: 0;
     left:auto;
+}
+.filter-holder{
+    border-bottom: 1px solid #ccc;
+    padding-left: 77px;
+    display: none;
 }
 
 .data-list{margin-left: 0;margin-bottom: 0;}
@@ -2226,6 +2251,48 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .meta_info .count, .meta_info .total{font-weight: 800;}
 .t-header{border-bottom:1px solid #cccccc;}
 .action-btn button{text-transform: uppercase;font-weight: 800;font-size: 12px !important;padding: 6px 14px;}
+.radio-checkboxes{}
+.radio-checkboxes li{}
+.radio-checkboxes li input[type=checkbox] + label{
+    background-color: #ffffff;
+    border:none !important;
+   padding: 5px 8px 5px 25px !important;
+}
+.radio-checkboxes li input[type=checkbox] + label:before{
+    left: 0;
+    font-size: 16px !important;
+    top:5px !important;
+}
+.radio-checkboxes li input[type=checkbox]:hover + label{
+    background-color: #ffffff !important;
+}
+.radio-checkboxes li input[type=checkbox]:checked + label{
+    color: #cc6666 !important;
+}
+
+.radio-checkboxes li:first-child input[type=checkbox] + label:before{
+    content: "\f005" !important;
+}
+.radio-checkboxes li:nth-child(2) input[type=checkbox] + label:before{
+    content: "\f1e2" !important;
+}
+.radio-checkboxes li:nth-child(3) input[type=checkbox] + label:before{
+    content: "leader" !important;
+    font-size: 6px !important;
+    background-color: #ccc !important;
+    border-radius: 10px !important;
+    color: #ffffff !important;
+    height:15px !important;
+    width:25px !important;
+    left:-5px;
+    line-height: 15px;
+    text-align: center;
+
+}
+.radio-checkboxes li:nth-child(3) input[type=checkbox]:hover + label:before,
+.radio-checkboxes li:nth-child(3) input[type=checkbox]:checked + label:before{
+    background-color: #c66 !important;
+}
 
 /* 479 */
 .modal-search{
@@ -2243,7 +2310,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .input-search label i{
     line-height: 1;
     vertical-align: top;
+    color: #000;
 }
+.input-search label i:hover{color: #cc6666;}
 .search-results{
     min-height: 100px;
     padding-bottom:80px;
@@ -2439,7 +2508,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .header-wrapper-481 {padding:15px 1.5%;}
 
 .volunteer-header.p481 > div{ position: relative; min-height: 40px; }
-.volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; }
+.volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; color: #cc6666;}
 .volunteer-header.p481 > div:last-child > span{ top:0; margin-top: 0; }
 .data-list-item .label.label-success{font-size: 9px;}
 .data-list-item .span2 
@@ -2452,6 +2521,58 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list-item a[role=button]:focus{
     outline: 0;
 }
+.select-like{}
+.select-like .text{
+    color: #c66;
+    text-transform: uppercase;
+    vertical-align: bottom;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+.select-like button{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    padding:5px 10px 0px 5px;
+    text-align: left;
+    border-radius: 0;
+     }
+.select-like button:focus, .select-like button:hover{
+    outline: 0;
+    color: #c66;
+    background-color: #ffffff;
+}
+
+.select-like button .caret{
+    margin-top:2px;
+    border: none;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+.select-like button span[data-type=selected-text]{
+    text-transform: uppercase;
+    font-size: 1em;
+    color: #666;
+    font-weight: 700;
+    transition:all 0.3s ease;
+}
+
+.select-like .dropdown-menu{
+    padding:0;
+    border-radius: 0;
+    box-shadow: 0 0 5px rgba(0,0,0,.2);
+    margin-top: 0;
+}
+.select-like .dropdown-menu li{}
+.select-like .dropdown-menu li a{
+    padding:10px;
+    color: #666;
+}
+.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus{
+    background: #f7f7f7;
+    color: #cc6666;
+    outline: 0;
+}
+
 
 
 /* Other code. probably end of dashboard */
@@ -2940,6 +3061,12 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
       .row-fluid.non-respv [class*="span"]{
         float: left !important;
       }
+      .row-fluid.non-respv .pull-right[class*="span"]{
+        float: right !important;
+      }
+      .row-fluid.non-respv .pull-left[class*="span"]{
+        float: left !important;
+      }
       .row-fluid.non-respv .centered{
         float: none !important;
       }
@@ -3232,6 +3359,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
         width: 20% !important; padding: 0 5px; float: left !important;
     }
     .date-body span.block{display: inline-block;}
+    .non-respv .date-body span.block{display: block;}
 
     /*          480         */
     .highlights.resp .highlight-item{}
