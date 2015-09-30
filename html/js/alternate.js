@@ -273,6 +273,13 @@ $(function(){
         }
     });
 
+    // Customized Bootstrap dropdowns that behave like SelectOrDie 
+
+    $('.select-like').on("click", ".dropdown-menu li a", function(){
+        $(this).closest('.dropdown-menu').find('.active').removeClass('active');
+        $(this).closest('li').addClass('active');
+    })
+
     // $('.sod_select')
 
     var winWidth = $(window).innerWidth();
@@ -571,19 +578,19 @@ $(function(){
     
     })
 
-    $('#data-list-filters').on('change','input', function(){
+    $('#first-filters').on('change','input', function(){
         var checked = $(this).prop('checked');
         var parent = $(this).attr('id');
         var content = $(this).next('label').text(); 
         if(checked == true){
-            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="'+parent+'" >'+content+'</span>');
-            if(parent != "ref_allsignups"){
-                $("#ref_allsignups").prop('checked',false);
-                $('#camp-holder').find('span[data-parent=ref_allcamp]').addClass('to-hide');
-            }
+            $('.filter-holder').append('<span class="checkbox-clone hidden ff checked" data-parent="'+parent+'" >'+content+'</span>');
+        }
+        else if(checked==false && parent!='ref_allsignups'){
+            $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
         }
         else{
-            $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+            $('#ref_allsignups').prop("checked", true);
+            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
         }
     })
 
@@ -594,22 +601,51 @@ $(function(){
         var content = $(this).next('label').text(); 
         var count = $('#first-filters').find('input[type=checkbox]:checked').length;
         var allsignupsckd = $('#ref_allsignups').prop("checked");
-        if(allsignupsckd == false && count > 2){
-            $('#first-filters').find('input[type=checkbox]:checked').each(function(){
-               var nparent = $(this).attr('id');
-               $('.filter-holder').find('span[data-parent='+nparent+']').remove();
-                
-            })
-            $('#first-filters').find('input[type=checkbox]:checked').prop("checked",false); 
-            $("#ref_allsignups").prop('checked',true);
-            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+        //if just checked it
+        if(checked == true){
+            //if allsignup is checked, uncheck all others and hide them in the filter display box
+            if(parent == 'ref_allsignups'){
+                $(this).closest('.span6').find('input[type=checkbox]:checked').prop("checked",false);
+                $('.filter-holder').find('.checkbox-clone.ff').addClass('to-hide');
+                $(this).prop('checked',true);
+            }
+            else{
+                //if not, deselect it, check if 3 (all other) boxes are checked, deselect them and select all signups instead
+                $('#ref_allsignups').prop("checked",false);
+                if(count > 2){//uncheck and hide the others
+                    $('#first-filters').find('input[type=checkbox]:checked').each(function(){
+                       var nparent = $(this).attr('id');
+                       $('.filter-holder').find('span[data-parent='+nparent+']').addClass('to-hide');
+                       $(this).prop("checked", false);
+                    })
+                    //check allsignups and insert it in filter display 
+                    $("#ref_allsignups").prop('checked',true);
+                    $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+                }
+                else{
+                    $('.filter-holder').find('span[data-parent=ref_allsignups]').addClass('to-hide');
+                }
+            }
+            
         }
+        //if unchecked
         else{
-            $('.filter-holder').find('span[data-parent=ref_allsignups]').remove();
+            if(count==0){
+                    $("#ref_allsignups").prop('checked',true);
+                    $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+                }
+
+            if(parent!= 'ref_allsignups'){
+                $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+            }else{
+                return false;
+            }
+            
         }
+        
     })
 
-     $('#close-filters').click(function(){
+    $('#close-filters').click(function(){
         $('#data-list-filters').modalPopover('hide');
         $('.filter-holder').slideDown(400);
         $('.filter-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
@@ -620,7 +656,7 @@ $(function(){
         var checked = $(this).prop('checked');
         if(checked == true){
             $(this).closest('.span6').find('input[type=checkbox]:checked').prop("checked",false);
-            $('.filter-holder').find('.checkbox-clone').addClass('to-hide');
+            $('.filter-holder').find('.checkbox-clone.ff').addClass('to-hide');
             $(this).prop('checked',true);
         }
         else{
@@ -628,16 +664,33 @@ $(function(){
         }
     })
 
-     $('#filter-radios').on("change",'input[type=checkbox]', function(){
-        $('#filter-radios').find('input[type=checkbox]:checked').each(function(){
-            var nparent = $(this).attr('id');
-            $('.filter-holder').find('span[data-parent='+nparent+']').remove();
-        })
-        $('#filter-radios').find('input[type=checkbox]:checked').prop("checked",false);
-        $(this).prop("checked", true);
+    $('#filter-radios').on('change','input', function(){
+        var checked = $(this).prop('checked');
+        var parent = $(this).attr('id');
+        var content = $(this).next('label').text(); 
+        if(checked == true){
+            $('#filter-radios').find('input[type=checkbox]:checked').each(function(){
+                var nparent = $(this).attr('id');
+                $(this).prop('checked',false);
+                $('.filter-holder').find('span[data-parent='+nparent+']').addClass('to-hide');
+            })
+            $(this).prop("checked", true);
+            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="'+parent+'" >'+content+'</span>');
+        }
+        else{
+            $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
+        }
     })
-    
-    
+
+    $('.filter-holder').on('click', '.checkbox-clone',function(){
+        console.log($(this));
+        $('#data-list-filters').modalPopover({
+            target: $(this),
+            placement: 'bottom'
+        });
+
+        $('#data-list-filters').modalPopover('show')
+    })
 
 
     /* DONATE BUTTONS LOGIC*/
@@ -764,7 +817,7 @@ $(function(){
         var checked = parseInt($('#actTypeCheckboxes').find('input[type=checkbox]:checked').length);
         $('#actTypeCheckboxes').find('input[type=checkbox]').removeAttr("disabled");
         if(checked > 1){
-           $('#actTypeCheckboxes').find('input[type=checkbox]:not(:checked)').attr("disabled","disabled"); 
+           $('#actTypeCheckboxes').find('input[type=checkbox]:not(:checked)').prop("disabled", true); 
         }
     })
 
@@ -1034,17 +1087,25 @@ $(function(){
         });
 
         $('#saveAttendees').click(function(){
-            $('.volunteers-list').find('.volunteer-check:checked').addClass('selected');
+            $('.volunteers-list').find('li.active').removeClass('active').addClass('has-saved-state').find('input[type=text]').prop("disabled",true);
+            $('.volunteers-list').find('.volunteer-check:checked').addClass('selected').prop("disabled",true);
         });
+
+        //enable editing of the list inputs
+        $('.data-list-item').on("click", ".edit-data-list", function(e){
+            $(this).closest('li').find('input[type=text]').prop("disabled", false).addClass('has-slight-shadow');
+            $(this).closest('li').find('.volunteer-check').prop("disabled", false);
+        })
 
         $('#btn-subAttendance').click(function(e){
             e.preventDefault();
-            $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
             $('#confirmModal').modal("show");
         })
 
         $('#li-subAll').click(function(e){
             e.preventDefault();
+            $('.volunteers-list li').addClass('has-saved-state').find('.volunteer-check').prop("checked",true).addClass("selected").prop("disabled", true);
+            $('.volunteers-list li').find('input[type=text]').prop("disabled",true);
             $('#confirmModal').modal("show");
         })
 
@@ -1062,19 +1123,19 @@ $(function(){
                 $(this).closest('.action-btn').find('button:first-child').text("Rejected");
             }
             if(action == "make leader"){
-                $(this).closest('.action-btn').find('button:first-child').text("Leader");
+                $(this).closest('.action-btn').find('button:first-child').text("Accepted");
                 $targetDiv = $(this).closest('.data-list-item').find('.person > div');
                 $leaderTag = '<span class="label label-success m-left45">LEADER</span>';
                 $targetDiv.append($leaderTag);
             }
             
-            $(this).closest('.action-btn').addClass("deactivated").find('button').attr("disabled","disabled");
+            $(this).closest('.action-btn').addClass("deactivated").find('button').prop("disabled", true);
         })
 
         $('.action-btn button:first-child').click(function(){
             var action = $(this).attr("value").toLowerCase();
             console.log(action);
-            $(this).attr("disabled","disabled").next('button').attr("disabled","disabled");
+            $(this).attr("disabled","disabled").next('button').prop("disabled", true);
             $(this).parent().addClass("deactivated");
             if( action == "reject"){
                 $(this).text("Rejected");
@@ -1087,7 +1148,7 @@ $(function(){
          $('#saveAttendance').selectOrDie({
             onChange: function(){
                 var val = $(this).val();
-                $('.volunteers-list li').find('input[type=text]').attr("disabled","disabled");
+                $('.volunteers-list li').find('input[type=text]').prop("disabled", true);
 
                 if(val="subAll"){
                     $('.volunteers-list li').find('.volunteer-check').prop("checked","checked").addClass("selected");
@@ -1114,6 +1175,10 @@ $(function(){
         $('.volunteer-activity #dateNAdd').matchHeight({
             target: $('#actDescWrapper')
         });
+    }
+
+    if($(window).innerWidth() > 767){
+       $('.highlight-item').matchHeight(); 
     }
     $('.person-actions .span6').matchHeight();
 

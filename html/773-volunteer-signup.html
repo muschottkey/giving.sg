@@ -140,7 +140,7 @@
 									<span class="small blue">4 volunteers have been accepted</span>
 								</div>
 							</div>
-							<div class="tab-nav-area">
+							<div class="tab-nav-area visible-all">
 								<ul>
 									<li class="active"><a href="#tab00">SIGN UPS</a></li>
 									<li class="inactive"><a href="#tab01">ATTENDANCE</a></li>
@@ -148,7 +148,7 @@
 							</div>
 							<div class="tab-section">
 								<div id="tab00">
-									<div class="highlights border-all p10 pg478">
+									<div class="highlights border-all p-10 pg478">
 										<div class="row-fluid non-respv">
 											<div class="span3 highlight-item">
 												<div class="large-type">
@@ -184,7 +184,7 @@
 									</div>
 									<div class="table-section m-top50 m-bot40 jplist" id="sortable">
 										<div class="table-container border-all checkbox-parent">
-											<div class="t-header p-10 text-left clearfix">
+											<div class="t-header p-top10 p-bot10 p-left15 p-right10 text-left clearfix">
 												<div class="row-fluid non-respv">
 													<div class="span1 pull-left">
 														<div class="ui master checkbox">
@@ -193,9 +193,9 @@
 												    </div>
 												    <div class="span11 m-left0 pull-right">
 
-												    	<div class="btn-group m-left25 hidden actions-group">
+												    	<div class="btn-group hidden actions-group">
 															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														    ACCEPT <span class="caret"></span>
+														    ACTIONS <span class="caret"></span>
 														  	</button>
 															<ul class="dropdown-menu">
 																<li class="active"><a href="#">Accept</a></li>
@@ -238,7 +238,9 @@
 													</div>
 												</div>
 											</div>
-											<div class="p-10 text-left clearfix filter-holder"></div>
+											<div class="p-10 text-left clearfix filter-holder">
+												<span class="checkbox-clone checked" data-parent="ref_allsignups">All signups</span>
+											</div>
 											<div class="t-body">
 												<ul class="data-list checkbox-children paginate-me">
 													<li class="data-list-item">
@@ -527,7 +529,6 @@
 																	<img src="images/img-avatar-01.png" class="img-circle">
 																	<span class="smaller name">Alvin Heng</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
-																	<span class="label label-success m-left45 smaller">LEADER</span>
 																</div>
 																<span class="smaller">+65 8180 4563</span>
 																<a class="smaller" href="mailto:alvinheng@yahoo.com.sg">alvinheng@yahoo.com.sg</a>
@@ -663,7 +664,6 @@
 																<div>
 																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
 																	<span class="smaller name">Jacelyn Chow</span>
-																	<span class="label label-success m-left45">LEADER</span>
 																</div>
 																<span class="smaller">+65 9776 4352</span>
 																<a class="smaller" href="mailto:jacelyntree3@gmail.com">jacelyntree3@gmail.com</a>
@@ -821,7 +821,7 @@
 	    <div class="arrow"></div>
 	    <div class="popover-content">
 	    	<button class="btn btn-small btn-success pull-right" id="close-filters">done</button>
-	    	<div class="row-fluid m-top40">
+	    	<div class="row-fluid non-respv m-top40">
 				<div class="span6">
 					<ul id="first-filters">
 						<li>
@@ -845,7 +845,7 @@
 				<div class="span6">
 					<ul class="radio-checkboxes" id="filter-radios">
 						<li>
-							<input type="checkbox" checked id="ref_favourites">
+							<input type="checkbox" id="ref_favourites">
 							<label for="ref_favourites">favourite</label>
 						</li>
 						<li>

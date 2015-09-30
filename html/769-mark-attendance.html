@@ -94,13 +94,15 @@
 		<div class="section-page dashboard  ">
 			<div class="wrapper main-content">
 				<div class="row-fluid section-bordered-bottom bg-lightgrey">
-					<div class="wrapper-925">
-						<div class="span12 bg-lightgrey p-20 clearfix p-left0">
-							<aside class="profile-nav mobile-fallback pull-left text-center hidden-desktop clearfix">
-								<img class="img-circle m-bot10" src="images/img-avatar-01.png">
-								<h4 class="m-0">Francis Wong</h4>
-							</aside>
-							<h4 class="m-0 pull-right panel-title">MANAGE ACTIVITY SIGNUPS</h4>
+					<div class="side-padding-wrapper">
+						<div class="wrapper-925">
+							<div class="span12 bg-lightgrey p-top20 p-bot20 clearfix">
+								<aside class="profile-nav mobile-fallback pull-left text-center hidden-desktop clearfix">
+									<img class="img-circle m-bot10" src="images/img-avatar-01.png">
+									<h4 class="m-0">Francis Wong</h4>
+								</aside>
+								<h4 class="m-0 pull-right panel-title">MANAGE ACTIVITY SIGNUPS</h4>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -167,7 +169,7 @@
 												<span class="small">leaders present</span>
 											</div>
 											<div class="span6 highlight-item p-20">
-												<span class="small">The activity is starting in 5 mins.</span>
+												<span class="small activity-start">The activity is starting in 5 mins.</span>
 											</div>
 										</div>
 									</div>
@@ -223,6 +225,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-1" class="volunteer-check">
 																  <label for="chk-1"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -242,6 +245,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-2" class="volunteer-check ">
 																  <label for="chk-2"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -261,6 +265,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-3" class="volunteer-check ">
 																  <label for="chk-3"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -280,6 +285,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-4" class="volunteer-check ">
 																  <label for="chk-4"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -300,6 +306,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-5" class="volunteer-check ">
 																  <label for="chk-5"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -319,6 +326,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-6" class="volunteer-check ">
 																  <label for="chk-6"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -338,6 +346,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-7" class="volunteer-check ">
 																  <label for="chk-7"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -357,6 +366,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-8" class="volunteer-check ">
 																  <label for="chk-8"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -376,6 +386,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-9" class="volunteer-check ">
 																  <label for="chk-9"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -395,6 +406,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-10" class="volunteer-check ">
 																  <label for="chk-10"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -415,6 +427,7 @@
 																<label class="visible-phone small">Check-In</label>
 																  <input type="checkbox" id="chk-11" class="volunteer-check ">
 																  <label for="chk-11"></label>
+																  <i class="edit-data-list fa fa-pencil"></i>
 															</div>
 														</div>
 													</li>
@@ -435,19 +448,25 @@
 										</div>
 										<div class="row-fluid">
 											<div class="span12 m-top40" id="save-actions">
-												<button class="pull-left btn btn-large-custom btn-ghost block-mobile" id="saveAttendees">SAVE ATTENDEES</button>
-												<span class="small pull-left for-attendees" id="save-status">Autosaved 1 minute ago</span>
 												
-												<div class="btn-group dropdown-select pull-right no-float-mobile" id="subAttendees">
-													<button type="button" class="btn btn-normalize-height" value="subAttendance" id="btn-subAttendance">Submit Attendance</button>
-													<button type="button" class="btn dropdown-toggle btn-normalize-height" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														<span class="caret"></span>
-													</button>
-													<ul class="dropdown-menu text-left">
-														<li class="active"><a href="#" id="li-subAttendance">Submit Attendance</a></li>
-														<li><a href="#" id="li-subAll">Submit All Present</a></li>
-													</ul>
+												
+												<div class="span5 pull-right">
+													<button class="pull-left btn btn-large btn-normalize-height btn-ghost m-right20 block-mobile m-bot20" id="saveAttendees">SAVE</button>
+													<div class="btn-group dropdown-select dropdown-green pull-right no-float-mobile m-bot20" id="subAttendees">
+														<button type="button" class="btn btn-normalize-height" value="subAttendance" id="btn-subAttendance">SAVE AND SUBMIT</button>
+														<button type="button" class="btn dropdown-toggle btn-normalize-height" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															<span class="caret"></span>
+														</button>
+														<ul class="dropdown-menu text-left">
+															<li><a href="#" id="li-subAll">Submit All Present</a></li>
+														</ul>
+													</div>
+
+													
+
+													<!-- <span class="small pull-right for-attendees m-right50" id="save-status">Autosaved 1 minute ago</span> -->
 												</div>
+											<span class="small pull-right for-attendees m-right50" id="save-status">Autosaved 1 minute ago</span>
 											</div>
 										</div>
 										
