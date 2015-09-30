@@ -42,8 +42,9 @@
                         <aside class="profile-nav text-center">
                             <img class="img-circle m-bot10" src="images/img-avatar-01.png">
                             <h4 class="m-0">Francis Wong</h4>
+                            <a href="javascript:;" class="small underlined">EDIT PROFILE</a>
                             <h5 class="m-0">Volunteer Manager</h5>
-                            <h6 class="m-0"><a href="#">YMCA Singapore</a></h6>
+                            <h5 class="m-0"><a href="#">YMCA Singapore</a></h5>
                         </aside>
                     </li>
                     <li>
@@ -96,7 +97,7 @@
                 <div class="wrapper main-content no-hide">
                     <div class="row-fluid section-bordered-bottom bg-lightgrey">
                         <div class="wrapper-925 no-break">
-                            <div class="span12 bg-lightgrey p-20 clearfix p-left0">
+                            <div class="span12 p-20 clearfix p-left0">
                                 <h4 class="m-0 pull-right panel-title">CONTACTS</h4>
                             </div>
                         </div>
@@ -105,7 +106,7 @@
                         <div class="wrapper-925 no-break clearfix centered">
                             <div class="row-fluid m-top30 non-respv">
                                 <div class="span8">
-                                    <h4 class="text-left">Manage Volunteers' Contact</h4>
+                                    <h4 class="text-left">Manage Volunteers' Contact Details</h4>
                                     <h6 class="text-left">&nbsp;</h6>
                                 </div>
                                 <div class="span4">
@@ -136,54 +137,47 @@
                                     </div>
                                     <div class="span5 pull-right">
                                         <br>
-                                        <button class="pull-right btn btn-large">Export</button>
+                                        <button class="pull-right btn btn-large-custom">Export</button>
                                     </div>
                                 </div>
                                 <div class="table-section m-top30 m-bot40 jplist" id="sortable">
                                     <div class="table-container border-all checkbox-parent">
-                                        <div class="t-header text-left clearfix">
-                                            <div class="row-fluid non-respv table-actions">
-                                                <div class="span5 pull-left">
-                                                    <div class="input-group input-search m-10 text-right">
-                                                        <label for="searchList481"><i class="fa fa-search"></i></label>
-                                                        <input id="searchList481" class="input-search" type="text" placeholder="Search name...">
-                                                    </div>
-                                                </div>
-                                                <div class="span7 m-left0 pull-right">
-                                                    <div class=" pull-right p-top15 p-bot15 p-right10 p-left10">
-                                                        <div class="jplist-panel">	
-                                                            <!-- jplist bootstrap sort dropdown control -->
-                                                            <div class="dropdown select-like" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" data-control-action="sort">
-                                                                <span class="text small">sorted by</span>
-                                                                <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" aria-expanded="true">	
-                                                                    <span data-type="selected-text">Sort</span>
-                                                                    <span class="caret fa fa-angle-down"></span>						
-                                                                </button>
-                                                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                                    <li role="presentation">
-                                                                        <a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Name</a>
-                                                                    </li>
-                                                                    <li role="presentation">
-                                                                        <a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Number of Activities</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>	
-                                                        </div>				 
-                                                    </div>
+                                        <div class="table-actions row-fluid non-respv">
+                                            <div class="span5 pull-left">
+                                                <div class="input-group input-search m-10 text-right">
+                                                   <label for="searchList481"><i class="fa fa-search"></i></label>
+                                                    <input id="searchList481" class="input-search" type="text" placeholder="Search name...">
                                                 </div>
                                             </div>
-                                            <div class="border-top header-wrapper-481">
+                                            <div class="span7 m-left0 m-right10 pull-right">
+                                                <div class=" pull-right p-top15 p-bot15 p-right10 p-left10">
+                                                    <div class="jplist-panel">  
+                                                        <!-- jplist bootstrap sort dropdown control -->
+                                                        <div class="dropdown select-like" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo" data-control-action="sort">
+                                                            <span class="text small">sorted by</span>
+                                                            <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" aria-expanded="true">    <span data-type="selected-text">Sort</span>
+                                                                <span class="caret fa fa-angle-down"></span>
+                                                            </button>
+                                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                                                                <li role="presentation">
+                                                                    <a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Name</a>
+                                                                </li>
+                                                                <li role="presentation">
+                                                                    <a role="menuitem" tabindex="-1" href="#" data-path=".name" data-order="asc" data-type="text" data-default="true">Number of Activities</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>  
+                                                    </div>               
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="t-header text-left clearfix">
+                                            <div class="border-top t-header-wrapper header-wrapper-481">
                                                 <div class="row-fluid non-respv">
                                                     <div class="row-fluid non-respv volunteer-header p481">
-                                                        <div class="span5">
-                                                            <span>Name</span>
-                                                        </div>
-                                                        <div class="span5">
-                                                            <span>Contact</span>
-                                                        </div>
-                                                        <div class="span2">
-                                                            <span>Number of Activities</span>
-                                                        </div>
+                                                        <div class="span5"><span>Name</span></div>
+                                                        <div class="span5"><span>Contact</span></div>
+                                                        <div class="span2"><span>Number of Activities</span></div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -211,7 +205,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -236,7 +230,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -260,7 +254,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -284,7 +278,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -309,7 +303,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -334,7 +328,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -360,7 +354,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;">Not active</span>
+                                                                <span class="block">Not active</span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -386,7 +380,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -412,7 +406,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -438,7 +432,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -464,7 +458,7 @@
                                                         </div>
                                                         <div class="span2 text-left">
                                                             <div class="row-fluid">
-                                                                <span class="block" style="margin-top:13px;"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
+                                                                <span class="block p-top12"><a href="#modal481" role="button" data-toggle="modal"><strong>6</strong> activities</a></span>
                                                             </div>
                                                         </div>
                                                     </div>
