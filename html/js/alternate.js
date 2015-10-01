@@ -660,11 +660,6 @@ $(function(){
         var parent = $(this).attr('id');
         var content = $(this).next('label').text(); 
         if(checked == true){
-            $('#filter-radios').find('input[type=checkbox]:checked').each(function(){
-                var nparent = $(this).attr('id');
-                $(this).prop('checked',false);
-                $('.filter-holder').find('span[data-parent='+nparent+']').addClass('to-hide');
-            })
             $(this).prop("checked", true);
             $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="'+parent+'" >'+content+'</span>');
         }
