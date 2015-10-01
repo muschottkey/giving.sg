@@ -588,9 +588,9 @@ $(function(){
         else if(checked==false && parent!='ref_allsignups'){
             $('.filter-holder').find('span[data-parent='+parent+']').addClass('to-hide');
         }
-        else{
+        else if(checked==false && parent=='ref_allsignups'){
             $('#ref_allsignups').prop("checked", true);
-            $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+            // $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
         }
     })
 
@@ -608,6 +608,8 @@ $(function(){
                 $(this).closest('.span6').find('input[type=checkbox]:checked').prop("checked",false);
                 $('.filter-holder').find('.checkbox-clone.ff').addClass('to-hide');
                 $(this).prop('checked',true);
+                $('.filter-holder').append('<span class="checkbox-clone hidden ff checked" data-parent="ref_allsignups" >All signups</span>');
+
             }
             else{
                 //if not, deselect it, check if 3 (all other) boxes are checked, deselect them and select all signups instead
@@ -651,18 +653,6 @@ $(function(){
         $('.filter-holder').find('.checkbox-clone.hidden').removeClass('hidden').fadeIn(400);
         $('.filter-holder').find('.checkbox-clone.to-hide').fadeOut(400).detach();
     });
-
-     $('#ref_allsignups').change(function(){
-        var checked = $(this).prop('checked');
-        if(checked == true){
-            $(this).closest('.span6').find('input[type=checkbox]:checked').prop("checked",false);
-            $('.filter-holder').find('.checkbox-clone.ff').addClass('to-hide');
-            $(this).prop('checked',true);
-        }
-        else{
-            $('#causes-toggle').removeClass('checked');
-        }
-    })
 
     $('#filter-radios').on('change','input', function(){
         var checked = $(this).prop('checked');
