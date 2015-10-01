@@ -590,7 +590,8 @@ $(function(){
         }
         else if(checked==false && parent=='ref_allsignups'){
             $('#ref_allsignups').prop("checked", true);
-            // $('.filter-holder').append('<span class="checkbox-clone hidden checked" data-parent="ref_allsignups" >All signups</span>');
+            $('.filter-holder').find('span[data-parent=ref_allsignups]').addClass('to-hide');
+
         }
     })
 
