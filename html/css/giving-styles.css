@@ -2187,7 +2187,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list > li{
     list-style: none; border-bottom: 1px solid #cccccc; padding:20px 3% ; font-size: 1em;
 }
-    .773 .data-list > li { padding-left:0; }
+    .vsignup .data-list > li { padding-left:0; }
     .data-list li.active{background-color: #f5f5f5;}
     .data-list li:last-child{border-bottom: none;}
 .data-list > li .block strong { font-size:1.4em;  }
