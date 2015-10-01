@@ -2104,7 +2104,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     color:#9E9E9E;
 }
 .dashboard .tab-nav-area li.active a{
-    background-color: #ffffff;
+    background-color: #FFF;
     color: #000;
     border-bottom:1px solid #ffffff;
 }
