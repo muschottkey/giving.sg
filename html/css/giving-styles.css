@@ -464,7 +464,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     top: 50%;
     margin-top: -9px;
 }
-.btn-group  button.dropdown-toggle .caret:before { color: #FFF; margin-top:4px; }
+.btn-group  button.dropdown-toggle .caret:before { color: #FFF; margin-top:-11px; }
 
 .btn-group .btn + .dropdown-toggle .caret:before{
     left: 0;

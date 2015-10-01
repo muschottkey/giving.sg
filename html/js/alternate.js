@@ -1079,14 +1079,11 @@ $(function(){
 
         $('#saveAttendees').click(function(){
             $('.volunteers-list').find('li.active').removeClass('active').addClass('has-saved-state').find('input[type=text]').prop("disabled",true);
-
-            $('.volunteers-list').find('li.has-saved-state').find('input[type=text]').removeClass('has-slight-shadow');
             $('.volunteers-list').find('.volunteer-check:checked').addClass('selected').prop("disabled",true);
         });
 
         //enable editing of the list inputs
         $('.data-list-item').on("click", ".edit-data-list", function(e){
-            $(this).closest('li').find('input[type=text]').prop("disabled", false).focus();
             $(this).closest('li').find('input[type=text]').prop("disabled", false).addClass('has-slight-shadow');
             $(this).closest('li').find('.volunteer-check').prop("disabled", false);
         })
