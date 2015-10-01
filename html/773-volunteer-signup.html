@@ -92,14 +92,20 @@
 		</div>
 
 		<div class="section-page dashboard non-respv">
-			<div class="wrapper main-content">
-				<div class="row-fluid section-bordered-bottom bg-lightgrey">
-					<div class="wrapper-925 no-break">
-						<div class="span12 bg-lightgrey p-20 clearfix p-left0">
-							<h4 class="m-0 pull-right panel-title">MANAGE ACTIVITY SIGNUPS</h4>
-						</div>
-					</div>
-				</div>
+            <div class="wrapper main-content no-hide">
+                <div class="row-fluid section-bordered-bottom bg-lightgrey">
+                    <div class="side-padding-wrapper">
+                        <div class="wrapper-925">
+                            <div class="span12 bg-lightgrey p-top20 p-bot20 clearfix">
+                                <aside class="profile-nav mobile-fallback pull-left text-center hidden-desktop clearfix">
+                                    <img class="img-circle m-bot10" src="images/img-avatar-01.png">
+                                    <h4 class="m-0">Francis Wong</h4>
+                                </aside>
+                                <h4 class="m-0 pull-right panel-title">MANAGE ACTIVITY SIGNUPS</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 				<div class="side-padding-wrapper">
 					<div class="wrapper-925 no-break clearfix centered">
 						<div class="row-fluid m-top30 m-bot30 non-respv">
@@ -135,9 +141,9 @@
 					<div class="row-fluid non-respv">
 						<div class="wrapper-925 no-break clearfix">
 							<div class="row-fluid">
-								<div class="span12 text-center p-10 m-bot30">
+								<div class="span12 text-center p-10 ">
 									<span class="fa fa-info-circle blue"></span>
-									<span class="small blue">4 volunteers have been accepted</span>
+									<span class="blue">4 volunteers have been accepted</span>
 								</div>
 							</div>
 							<div class="tab-nav-area visible-all">
@@ -148,43 +154,45 @@
 							</div>
 							<div class="tab-section">
 								<div id="tab00">
-									<div class="highlights border-all p-10 pg478">
-										<div class="row-fluid non-respv">
-											<div class="span3 highlight-item">
-												<div class="large-type">
-													<span>15</span>
-													<span class="small">/</span>
-													<span class="small">30</span>
+									<div class="row-fluid">
+										<div class="highlights border-all span9">
+											<div class="row-fluid non-respv">
+												<div class="span4 highlight-item">
+													<div class="large-type">
+														<span>15</span>
+														<span class="small">/</span>
+														<span class="small">30</span>
+													</div>
+													<span class="small">are confirmed</span>
 												</div>
-												<span class="small">are confirmed</span>
-											</div>
-											<div class="span4 highlight-item">
-												<div class="row-fluid non-respv">
-													<div class="pull-left span6 leaders">
-														<div class="large-type">
-															<span>2</span>
+												<div class="span4 highlight-item ">
+													<div class="row-fluid non-respv">
+														<div class="pull-left span5 leaders">
+															<div class="large-type">
+																<span>2</span>
+															</div>
+															<span class="small">leaders</span>
 														</div>
-														<span class="small">leaders</span>
-													</div>
-													<div class="pull-right span5 leaders">
-														<button class="btn btn-ghost">Add</button>
+														<div class="pull-left span5">
+															<button class="btn btn-ghost btn-large">Add</button>
+														</div>
 													</div>
 												</div>
-											</div>
-											<div class="span3 highlight-item">
-												<div class="large-type">
-													<span>50</span>
+												<div class="span4 highlight-item">
+													<div class="large-type">
+														<span>50</span>
+													</div>
+													<span class="small">total signups</span>
 												</div>
-												<span class="small">total signups</span>
 											</div>
-											<div class="span2 highlight-item">
-												<button class="btn btn-ghost btn-large">EXPORT</button>
-											</div>
+										</div>
+										<div class="span3 highlight-item highlight-button">
+											<button class="btn btn-ghost btn-large pull-right">EXPORT</button>
 										</div>
 									</div>
 									<div class="table-section m-top50 m-bot40 jplist" id="sortable">
 										<div class="table-container border-all checkbox-parent">
-											<div class="t-header p-top10 p-bot10 p-left15 p-right10 text-left clearfix">
+											<div class="t-header p-10 p-right20 p-left0 text-left clearfix">
 												<div class="row-fluid non-respv">
 													<div class="span1 pull-left">
 														<div class="ui master checkbox">
@@ -192,10 +200,10 @@
 												        </div>
 												    </div>
 												    <div class="span11 m-left0 pull-right">
-
-												    	<div class="btn-group hidden actions-group">
+												    	<div class="btn-group hidden select-like actions-group pull-left m-right30">
 															<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-														    ACTIONS <span class="caret"></span>
+																<span data-type="selected-text">Actions</span>
+																<span class="caret fa fa-angle-down"></span>
 														  	</button>
 															<ul class="dropdown-menu">
 																<li class="active"><a href="#">Accept</a></li>
@@ -204,10 +212,12 @@
 															</ul>
 														</div><!--end of button-->
 
-														<div class="btn-group">
-															<button type="button" class="btn btn-default data-list-filter-toggle" aria-haspopup="true" aria-expanded="false">
-														    FILTERS <span class="caret"></span>
-														  	</button>
+														<div class="select-like pull-left">
+															<span class="text small">Showing</span>
+															<button type="button" class="btn btn-default data-list-filter-toggle dropdown-toggle"  aria-haspopup="true" aria-expanded="false">	
+																<span data-type="selected-text">All Signups</span>
+															    <span class="caret fa fa-angle-down"></span>
+															</button>
 														</div><!--end of button-->
 														
 														<div class=" pull-right">
@@ -218,10 +228,10 @@
 															        <button class="btn btn-default dropdown-toggle" type="button" id="sort-by-dropdown-btn" data-toggle="dropdown" 
 															        	aria-expanded="true">	
 															        	<span data-type="selected-text">Sort by</span>
-															         	<span class="caret fa fa-angle-down"></span>						
+															         	<span class="caret fa fa-angle-down"></span>
 															        </button>
 															        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-															        	<li role="presentation">
+															        	<li role="presentation" class="active">
 															            	<a role="menuitem" tabindex="-1" href="#" data-path="default" data-order="default" data-type="text" data-default="true">Recent Sign Ups</a>
 															         	</li>
 															        	<li role="presentation">
@@ -253,22 +263,21 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
+																	<span class="name">Joey Wong</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
+																<span>+65 9508 0779</span>
+																<a href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">32 Years</span>
+																		<span class=" block">Wong Kan Seng Joey</span>
+																		<span class=" block">S1234123J</span>
+																		<span class=" gender">Male</span>
+																		<span class="">32 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
 																	</div>
 																	<div class="span6 relative">
 																		<div class="btn-group action-btn">
@@ -283,7 +292,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -299,22 +308,21 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-02.png" class="img-circle">
-																	<span class="smaller name">Judy Tan</span>
+																	<span class="name">Judy Tan</span>
 																	<span class="icon"><i class="fa fa-bomb"></i></span>
 																</div>
-																<span class="smaller">+65 9768 1123</span>
-																<a class="smaller" href="mailto:judytan11@yahoo.com.sg">judytan11@yahoo.com.sg</a>
+																<span>+65 9768 1123</span>
+																<a href="mailto:judytan11@yahoo.com.sg">judytan11@yahoo.com.sg</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Judy Felicia Tan</span>
-																		<span class="smaller block">S9134123F</span>
-																		<span class="smaller gender">Female</span>
-																		<span class="smaller">26 Years</span>
+																		<span class="block">Judy Felicia Tan</span>
+																		<span class="block">S9134123F</span>
+																		<span class="gender">Female</span>
+																		<span >26 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
-
 																	</div>
 																	<div class="span6 relative">
 																		<div class="btn-group action-btn">
@@ -329,7 +337,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -345,20 +353,20 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-03.png" class="img-circle">
-																	<span class="smaller name">Dan Hee</span>
+																	<span class="name">Dan Hee</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
-																<span class="smaller">+65 9665 4678</span>
-																<a class="smaller" href="mailto:dannyheecs@hotmail.com">dannyheecs@hotmail.com</a>
+																<span>+65 9665 4678</span>
+																<a href="mailto:dannyheecs@hotmail.com">dannyheecs@hotmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Danny Hee C S</span>
-																		<span class="smaller block">S0084100J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">49 Years</span>
+																		<span class="block">Danny Hee C S</span>
+																		<span class="block">S0084100J</span>
+																		<span class="gender">Male</span>
+																		<span>49 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -375,7 +383,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -391,20 +399,20 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-04.png" class="img-circle">
-																	<span class="smaller name">Raymond</span>
+																	<span class="name">Raymond</span>
 																	<span class="icon"><i class="fa fa-bomb"></i></span>
 																</div>
-																<span class="smaller">+65 9335 7780</span>
-																<a class="smaller" href="mailto:raymondtang@live.com">raymondtang@live.com</a>
+																<span>+65 9335 7780</span>
+																<a href="mailto:raymondtang@live.com">raymondtang@live.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Tang Sheng Ching Raymond</span>
-																		<span class="smaller block">S9234123F</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">25 Years</span>
+																		<span class="block">Tang Sheng Ching Raymond</span>
+																		<span class="block">S9234123F</span>
+																		<span class="gender">Male</span>
+																		<span>25 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -421,7 +429,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -437,19 +445,19 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-08.png" class="img-circle">
-																	<span class="smaller name">Wendy Sonia</span>
+																	<span class="name">Wendy Sonia</span>
 																</div>
-																<span class="smaller">+65 8123 5564</span>
-																<a class="smaller" href="mailto:wendysocd@hotmail.com">wendysocd@hotmail.com</a>
+																<span>+65 8123 5564</span>
+																<a href="mailto:wendysocd@hotmail.com">wendysocd@hotmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Wendy Margarita Sonia</span>
-																		<span class="smaller block">S85844100J</span>
-																		<span class="smaller gender">Female</span>
-																		<span class="smaller">30 Years</span>
+																		<span class="block">Wendy Margarita Sonia</span>
+																		<span class="block">S85844100J</span>
+																		<span class="gender">Female</span>
+																		<span>30 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -466,7 +474,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -482,19 +490,19 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-11.png" class="img-circle">
-																	<span class="smaller name">Justin Siow</span>
+																	<span class="name">Justin Siow</span>
 																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:justinsiowtt@hotmail.com">justinsiowtt@hotmail.com</a>
+																<span>+65 9508 0779</span>
+																<a href="mailto:justinsiowtt@hotmail.com">justinsiowtt@hotmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>General Volunteer</h6>
-																		<span class="smaller block">Siow Tng Tng Justin</span>
-																		<span class="smaller block">S8834123J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">29 Years</span>
+																		<span class="block">Siow Tng Tng Justin</span>
+																		<span class="block">S8834123J</span>
+																		<span class="gender">Male</span>
+																		<span>29 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -511,7 +519,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -527,20 +535,20 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-01.png" class="img-circle">
-																	<span class="smaller name">Alvin Heng</span>
+																	<span class="name">Alvin Heng</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
-																<span class="smaller">+65 8180 4563</span>
-																<a class="smaller" href="mailto:alvinheng@yahoo.com.sg">alvinheng@yahoo.com.sg</a>
+																<span>+65 8180 4563</span>
+																<a href="mailto:alvinheng@yahoo.com.sg">alvinheng@yahoo.com.sg</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Heng Heng Ah Alvin</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">49 Years</span>
+																		<span class="block">Heng Heng Ah Alvin</span>
+																		<span class="block">S1234123J</span>
+																		<span class="gender">Male</span>
+																		<span>49 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -557,7 +565,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -573,19 +581,19 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-10.png" class="img-circle">
-																	<span class="smaller name">Aster Ng</span>
+																	<span class="name">Aster Ng</span>
 																</div>
-																<span class="smaller">+65 9768 4678</span>
-																<a class="smaller" href="mailto:asterng@gmail.com">asterng@gmail.com</a>
+																<span>+65 9768 4678</span>
+																<a href="mailto:asterng@gmail.com">asterng@gmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>General Volunteer</h6>
-																		<span class="smaller block">Ng Peck Har Aster</span>
-																		<span class="smaller block">S7884124A</span>
-																		<span class="smaller gender">Female</span>
-																		<span class="smaller">37 Years</span>
+																		<span class="block">Ng Peck Har Aster</span>
+																		<span class="block">S7884124A</span>
+																		<span class="gender">Female</span>
+																		<span>37 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -602,7 +610,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -618,19 +626,19 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-35x35-01.png" class="img-circle">
-																	<span class="smaller name">Louis Eskay</span>
+																	<span class="name">Louis Eskay</span>
 																</div>
-																<span class="smaller">+65 8223 6540</span>
-																<a class="smaller" href="mailto:louis9987@hotmail.com">louis9987@hotmail.com</a>
+																<span>+65 8223 6540</span>
+																<a href="mailto:louis9987@hotmail.com">louis9987@hotmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>General Volunteer</h6>
-																		<span class="smaller block">Louis Jose Antonio Eskay</span>
-																		<span class="smaller block">S82236540</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">32 Years</span>
+																		<span class="block">Louis Jose Antonio Eskay</span>
+																		<span class="block">S82236540</span>
+																		<span class="gender">Male</span>
+																		<span>32 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -647,7 +655,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -663,19 +671,19 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
-																	<span class="smaller name">Jacelyn Chow</span>
+																	<span class="name">Jacelyn Chow</span>
 																</div>
-																<span class="smaller">+65 9776 4352</span>
-																<a class="smaller" href="mailto:jacelyntree3@gmail.com">jacelyntree3@gmail.com</a>
+																<span>+65 9776 4352</span>
+																<a href="mailto:jacelyntree3@gmail.com">jacelyntree3@gmail.com</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Chow Mei Lin Jacelyn</span>
-																		<span class="smaller block">S7634123J</span>
-																		<span class="smaller gender">Female</span>
-																		<span class="smaller">39 Years</span>
+																		<span class="block">Chow Mei Lin Jacelyn</span>
+																		<span class="block">S7634123J</span>
+																		<span class="gender">Female</span>
+																		<span>39 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -692,7 +700,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -708,20 +716,20 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
-																	<span class="smaller name">Zack Snyder</span>
+																	<span class="name">Zack Snyder</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
+																<span>+65 9508 0779</span>
+																<a href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">32 Years</span>
+																		<span class="block">Wong Kan Seng Joey</span>
+																		<span class="block">S1234123J</span>
+																		<span class="gender">Male</span>
+																		<span>32 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -738,7 +746,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -754,20 +762,20 @@
 															<div class="span4 person">
 																<div>
 																	<img src="images/img-avatar-35x35-02.png" class="img-circle">
-																	<span class="smaller name">Joey Wong</span>
+																	<span class="name">Joey Wong</span>
 																	<span class="icon"><i class="fa fa-star"></i></span>
 																</div>
-																<span class="smaller">+65 9508 0779</span>
-																<a class="smaller" href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
+																<span>+65 9508 0779</span>
+																<a href="mailto:joeywong@yahoo.com.sg">joeywong@yahoo.com.sg</a>
 															</div>
 															<div class="span7 person-actions">
 																<div class="row-fluid">
 																	<div class="span6 text-left">
 																		<h6>Befriender</h6>
-																		<span class="smaller block">Wong Kan Seng Joey</span>
-																		<span class="smaller block">S1234123J</span>
-																		<span class="smaller gender">Male</span>
-																		<span class="smaller">32 Years</span>
+																		<span class="block">Wong Kan Seng Joey</span>
+																		<span class="block">S1234123J</span>
+																		<span class="gender">Male</span>
+																		<span>32 Years</span>
 																		<a href="#" class="show-more">+ MORE DETAILS</a>
 
 																	</div>
@@ -784,7 +792,7 @@
 																		</div>
 																	</div>
 																	<div class="span10 m-top10 m-left0 more-details collapse">
-																		<p class="small text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
+																		<p class="text-left">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. </p>
 																	</div>
 																</div>
 															</div>
@@ -804,7 +812,6 @@
 												</div>
 											</div>
 										</div>
-										
 									</div>
 								</div><!--end of tab-->
 							</div><!--end of tab section-->
@@ -813,7 +820,6 @@
 				</div><!--end of side padding wrapper -->
 			</div><!--end of main content-->
 		</div><!--end of section page-->
-		
 	</div><!--end of page wrapper-->
 	<footer class="footer"><p>FOOTER</p></footer>
 
