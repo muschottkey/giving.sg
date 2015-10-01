@@ -181,7 +181,7 @@
 									<div class="table-section m-top50 m-bot40 jplist 480" id="sortable">
 										<div class="table-actions p-bot10 pg480 clearfix">
 											<div class="row-fluid breakpoint-override">
-												<div class="pull-left span6">
+												<div class="pull-left span6 mg-60-mobile">
                                                     <div class="jplist-panel">  
                                                         <!-- jplist bootstrap sort dropdown control -->
                                                         <div class="dropdown select-like pull-left" data-control-type="boot-sort-drop-down" data-control-name="bootstrap-sort-dropdown-demo">
@@ -467,22 +467,27 @@
 												</div>
 											</div>
 										</div>
-										<div class="row-fluid m-top50  m-bot20">
-											<div class="span8">
-												<button class="pull-right btn btn-ghost btn-large btn-normalize-height  block-mobile" id="saveAttendees">SAVE</button>
-												<span class="small pull-right for-attendees p-right20" id="save-status">Autosaved 1 minute ago</span>
-											</div>
-											<div class="span4">
+										<div class="row-fluid breakpoint-override m-top50  m-bot20">
+											<div class="span6 pull-right">
+												<button class="pull-left btn btn-ghost btn-large btn-normalize-height block-mobile m-bot20 " id="saveAttendees">SAVE</button>
 												<div class="btn-group pull-right no-float-mobile m-bot20" id="subAttendees">
-													<button type="button" class="btn btn-primary btn-normalize-height" value="subAttendance" id="btn-subAttendance">SAVE AND SUBMIT</button>
-													<button type="button" class="btn btn-primary dropdown-toggle btn-normalize-height" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+													<button type="button" class="btn btn-primary btn-normalize-height" value="subAttendance" 
+														id="btn-subAttendance">	SAVE AND SUBMIT
+													</button>
+													<button type="button" class="btn btn-primary dropdown-toggle btn-normalize-height" data-toggle="dropdown" 
+														aria-haspopup="true" aria-expanded="false">
 														<span class="caret"></span>
 													</button>
 													<ul class="dropdown-menu text-left">
 														<li><a href="#" id="li-subAll">Submit All Present</a></li>
 													</ul>
 												</div>
+
+												
 											</div>
+
+											<span class="small pull-right for-attendees p-right20" id="save-status">Autosaved 1 minute ago</span>
+
 										</div>
 									</div>
 								</div><!--end of tab-->

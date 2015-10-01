@@ -3384,6 +3384,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     h3 { font-size: 1.375em; } /* 22px */
     h4 { font-size: 1.25em; } /* 20px */
 
+    .mg-60-mobile{margin-bottom: 60px !important;}
     .btns-lst li{ display:block; max-width:240px; margin:0 auto 15px; }
     .btns-lst li a{display:block;}
     .top-header-area{display:none;}
@@ -3838,6 +3839,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
      .table-actions.pg480{
         padding-left:20px;
         padding-right:20px;
+     }
+     .table-actions.pg480 .row-fluid > div {
+        margin-bottom:20px;
      }
      button#saveAttendees{width: 208px !important;}
      #subAttendees button:first-child{width: auto !important;}
