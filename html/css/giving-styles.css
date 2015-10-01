@@ -425,6 +425,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     background-color: #91C2AF; border: none; color: #FFF; 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
 }
+.btn-primary .caret:before{color: #ffffff !important;}
 
 .btn-toggle .btn.active:hover, .btn-group.open .btn-primary.dropdown-toggle,
 #donate-buttons .btn.active:hover,
