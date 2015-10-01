@@ -1073,7 +1073,14 @@ $(function(){
         });
 
         $('#saveAttendees').click(function(){
-            $('.volunteers-list').find('li.active').removeClass('active').addClass('has-saved-state').find('input[type=text]').prop("disabled",true);
+            $('.volunteers-list').find('li.active').each(function(){
+                $(this).removeClass('active').addClass('has-saved-state').find('input[type=text]').prop("disabled",true);
+            })
+
+            $('.volunteers-list').find('li.has-saved-state').each(function(){
+                $(this).find('input[type=text]').prop("disabled",true);
+            })
+
             $('.volunteers-list').find('.volunteer-check:checked').addClass('selected').prop("disabled",true);
         });
 
@@ -1082,6 +1089,13 @@ $(function(){
             $(this).closest('li').find('input[type=text]').prop("disabled", false).addClass('has-slight-shadow');
             $(this).closest('li').find('.volunteer-check').prop("disabled", false);
         })
+
+        // remove the focus on blur oof input
+         $('.data-list-item').on("blur", "input[type=text]", function(){
+            console.log("element blurred");
+            $(this).removeClass('has-slight-shadow');
+        })
+
 
         $('#btn-subAttendance').click(function(e){
             e.preventDefault();
