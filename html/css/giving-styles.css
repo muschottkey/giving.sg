@@ -2599,15 +2599,16 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     transition:all 0.3s ease;
 }
 
-.select-like .dropdown-menu{
+.select-like .dropdown-menu, .dropdown-menu{
     padding:0; margin-top:0; border-radius:0; box-shadow:0 0 5px rgba(0,0,0,.2);
 }
-.select-like .dropdown-menu li a { padding:10px 30px 10px 10px; color: #666; text-align:left; }
-.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a{
+.select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #666; text-align:left; }
+.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, .dropdown-menu li a:hover,
+.dropdown-menu li a:focus, .dropdown-menu li.active a{
     background: #f7f7f7; color:#c66; outline: 0;font-weight: 400;
 }
 
-.select-like .dropdown-menu li.active:before{
+.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before{
     color: #cc6666;
 }
 
