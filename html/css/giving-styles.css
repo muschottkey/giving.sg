@@ -2429,7 +2429,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 
 #addLeadersModal .input-search .tt-menu .tt-suggestion .volunteer-email{
-    font-size: 12px;
+    font-size: .885em;
 }
 
 
