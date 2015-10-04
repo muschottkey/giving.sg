@@ -1037,11 +1037,6 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .search-controls .inline-search { right:10px; }
     #search-results #sortSearchResults { text-align:left; }
 
-/* Clear Fix */
-body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
-.social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
-.summary-wrapper:after { 
-    content:""; clear:both; display:block; }
 
 /*       GIFT BASKET       */
 #gf-bkt-wrapper{margin-bottom: 0px;}
@@ -2449,7 +2444,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 .data-list.volunteers-list .data-list-item.has-saved-state .edit-data-list{display: inline-block;}
 .data-list.volunteers-list .data-list-item .edit-data-list:hover{color: #cc6666;}
-.data-list.volunteers-list .data-list-item img { width:36px; margin-right:5px; }
+.data-list.volunteers-list .data-list-item img { float:left; width:10%; max-width:36px; margin-right:5px; }
+.data-list.volunteers-list .data-list-item .volunteer-details { float:left; width:90%; max-width:450px; }
+    .data-list.volunteers-list .data-list-item .volunteer-checkin { display: block; }
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
 .data-list.volunteers-list .data-list-item .span9{text-align: left;}
 .data-list.volunteers-list .data-list-item .span1 input{
@@ -2965,6 +2962,13 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin:13px 0 0;
 }
 
+/* Clear Fix */
+body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
+.social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
+.summary-wrapper:after, .data-list-item:after { 
+    content:""; clear:both; display:block; 
+}
+
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
@@ -3073,7 +3077,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
       .wrapper-925.no-break{max-width: none !important}
      #collapse-tab01.collapse.in{overflow: visible;}
      .non-respv .side-padding-wrapper { max-width:95%; }
-
 }
 
 @media (min-width: 980px) {
@@ -3367,7 +3370,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
     
 }
-
 @media (min-width: 768px) {
     #nav{display:table !important;}
     .collapse.visible-desktops{height: auto !important;}
@@ -3725,7 +3727,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     }
 
     /* 408 */
-    .vpos-details{}
     .vpos-meta{padding: 10px !important;border-top: 1px solid #cccccc;border-left:none;}
     .vpos-meta h4,.vpos-meta span{display: inline-block;}
     .vpos-meta button{
@@ -3848,6 +3849,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
      #subAttendees button:first-child{width: auto !important;}
      #subAttendees button.dropdown-toggle{width: 50px;}
      .tab-nav-area.pg480{display:none;}
+     .volunteer-check+label:before { width:28px; height:28px; font-size: 28px; margin-top:-15px;}
     
     /*from @320 RICH*/
     #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
