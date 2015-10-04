@@ -3271,6 +3271,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     div#setup-dtn-2-wrapper{max-width: 600px;margin-right: auto;margin-left: auto;}
     #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gft-dtn-prefs tr:nth-child(2) td{border-top: 0;}
+    #vw-gft-dtn-prefs tr.hidden-desktop td:first-child {width: 25%;}
     /**/
     #name-nric, #nric-num{width:92%}
 
