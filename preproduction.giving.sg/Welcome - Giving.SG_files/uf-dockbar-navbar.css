@@ -386,28 +386,7 @@ xheader
     padding: 1em 2em; }
 
   #uf-dockbar-cart .uf-dockbar-item-remove {
-    right: 2em; } 
-
-  /* Search Bar modifications */
-  #uf-dockbar-search-desktop{
-    position: absolute;
-    top: 0px;
-    
-  }
-  #uf-dockbar-search-desktop.active{
-    z-index: 1031; 
-    left: 150px;
-    width: calc( 100% - 150px );
-  }
-  #uf-dockbar-right-menu{
-    position: initial;
-    float: right;
-  }
-  #uf-dockbar-search-desktop.active input[type="text"]{
-    width: 100% !important;
-  }
-
-  }
+    right: 2em; } }
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,
 .uf-dockbar-go-to-cart a:link, .uf-dockbar-go-to-cart a:focus {
   color: #999 !important;
