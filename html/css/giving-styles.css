@@ -2969,6 +2969,31 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     content:""; clear:both; display:block; 
 }
 
+.add-txt-modal-box{
+	padding:10px 20px 15px;
+}
+.add-txt-modal-box p{
+	margin:0 0 20px;
+}
+.popup-btns{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+.popup-btns li{padding:5px 0;}
+.popup-btns a{
+	margin:0 auto;
+	display:block;
+	width:100px;
+	color:#000;
+}
+.popup-btns a.btn{
+	line-height:25px;
+	text-decoration:none;
+}
+
+
 /***************************************************************************
                             Media Queries
 ***************************************************************************/
