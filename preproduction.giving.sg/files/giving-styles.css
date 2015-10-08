@@ -1,4 +1,10 @@
 /* general settings */
+::-ms-clear {
+  width : 0;
+  height: 0;
+  display:none;
+}
+.sod_select .sod_option.selected:before{margin:-11px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
@@ -852,6 +858,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 
 .modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
   text-decoration: none;
+  color:#fff !important;
   opacity: 0.8; }
 
 .modal .social-media-signup a i {
@@ -1247,9 +1254,12 @@ p.block {
 .minimal i {
   margin-right: 10px;
   font-size: 2em;
-  position: absolute;
-  margin-left: -34px;
-  margin-top: -5px; }
+  position: relative;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom:-10px;
+  display:inline-block;
+  vertical-align:middle; }
 
 .org-name {
   width: 80%; }
@@ -1496,6 +1506,7 @@ p.block {
   width: 24px;
   height: 24px;
   border: 1px solid #CCC;
+  vertical-align:top;
   border-radius: 5px; }
 
 .causes.multiple li {
@@ -2782,6 +2793,7 @@ h4.box.reset {
   padding: 8px; }
 
 .cpn-sgtn-item .sgtn-body .sgt-avatar {
+	right:32px;
   position: absolute;
   margin-left: 65px;
   width: 30px;
@@ -3387,7 +3399,7 @@ h4.box.reset {
   vertical-align: top;
   position: relative;
   z-index: 10;
-  width: 3.2%; }
+  width: 3.15%; }
 
 .tab-nav-area li a {
   display: block;
@@ -3978,6 +3990,26 @@ form.text-left input:not([type="checkbox"]) {
 .add-h-area .add-row .user-info {
   float: right;
   margin: 13px 0 0; }
+
+.section-page .btn{
+	display:inline-block;
+	vertical-align:top;
+	font: 1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif;
+  background: #F9F6EC;
+  color: #333 !important;
+  text-transform:uppercase;
+  border-radius:6px;
+  -wekit-border-radius:6px;
+  padding:7px 12px !important;
+}
+.aui a, .aui a:link{color: #333 !important;}
+.section-page .btn:focus,
+.section-page .btn:active,
+.section-page .btn:link{color: #333 !important;}
+.section-page .btn:hover{background:#e6e4dd;}
+.section-page .btn:active{background:#e6e6e6;}
+
+
 
 /***************************************************************************
                             Media Queries
