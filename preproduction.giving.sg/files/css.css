@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Margarine';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Margarine'), local('Margarine-Regular'), url(http://fonts.gstatic.com/s/margarine/v5/CmR2XZ3h63SwGzHu2hppFltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Shadows Into Light Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Shadows Into Light Two'), local('ShadowsIntoLightTwo-Regular'), url(http://fonts.gstatic.com/s/shadowsintolighttwo/v4/gDxHeefcXIo-lOuZFCn2xbIfIbZrEcH2WW587lG91II.woff2) format('woff2');
+}
