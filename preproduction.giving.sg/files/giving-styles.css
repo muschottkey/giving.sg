@@ -1247,9 +1247,12 @@ p.block {
 .minimal i {
   margin-right: 10px;
   font-size: 2em;
-  position: absolute;
-  margin-left: -34px;
-  margin-top: -5px; }
+  position: relative;
+  margin-left: 0;
+  margin-top: 0;
+  margin-bottom:-10px;
+  display:inline-block;
+  vertical-align:middle; }
 
 .org-name {
   width: 80%; }
