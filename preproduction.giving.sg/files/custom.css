@@ -863,7 +863,7 @@ div.charity-donors img.dr-img {
     padding-top: 10px;
 }
 .aui a, .aui a:link {
-    /*color: #9dc9ee !important;*/ color: #333 !important;
+    color: #9dc9ee !important;
 }
 .aui a:hover {
     color: #c66 !important;

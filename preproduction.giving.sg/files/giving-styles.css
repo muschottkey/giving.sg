@@ -1,4 +1,11 @@
 /* general settings */
+::-ms-clear {
+  width : 0;
+  height: 0;
+  display:none;
+}
+.sod_select .sod_option.selected:before{margin:-11px 0 0 !important;}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
   display: block; }
 
@@ -156,6 +163,14 @@ input:not([type=checkbox]) {
 
 /*input:not([type=checkbox]) { font-family: "Margarine", Arial, sans-serif; height:1.3em; }*/
 /* Crafty Girls|Gochi Hand|Margarine|Patrick Hand|Short Stack|Neucha|Dekko|Gloria Hallelujah|*/
+input[type=text]::-ms-clear {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important; 
+  width : 0;
+  height: 0;
+}
+
 .control-group .controls > span, label {
   font: 400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif;
   color: #cc6666; }
@@ -3982,6 +3997,23 @@ form.text-left input:not([type="checkbox"]) {
 .add-h-area .add-row .user-info {
   float: right;
   margin: 13px 0 0; }
+
+  .section-page .btn{
+  display:inline-block;
+  vertical-align:top;
+  font: 1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif;
+  background: #F9F6EC;
+  color: #333 !important;
+  text-transform:uppercase;
+  border-radius:6px;
+  -wekit-border-radius:6px;
+  padding:7px 12px !important;
+}
+.section-page .btn:focus,
+.section-page .btn:active,
+.section-page .btn:link{color: #333 !important;}
+.section-page .btn:hover{background:#e6e4dd;}
+.section-page .btn:active{background:#e6e6e6;}
 
 /***************************************************************************
                             Media Queries
