@@ -1,8 +1,8 @@
 /* general settings */
 ::-ms-clear {
-  width : 0;
-  height: 0;
-  display:none;
+  width : 0 !important;
+  height: 0 !important;
+  display:none !important;
 }
 .sod_select .sod_option.selected:before{margin:-11px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
@@ -715,7 +715,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .amount-pledged span{float: left;}
 .amt-value{font-size: 24px;}
 .more-donations{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px;text-transform: lowercase;font-weight: 400;}
-.more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: absolute;margin-left: -20px;margin-top: 2px;}
+.more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: relative;margin-top:-4px; display:inline-block;vertical-align:middle;}
 
 /* Widgets*/
 .widget{display: none;opacity:0.5;margin-top: 100px;transition:all 2s ease-in-out;overflow: hidden;}
@@ -1976,7 +1976,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     vertical-align:top;
     position:relative;
     z-index:10;
-    width:3.15%;
+    width:3.12%;
 }
 .tab-nav-area li a{
     display:block;
@@ -3009,7 +3009,8 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 	text-decoration:none;
 }
 
-.section-page .btn{
+.inform-area .box-btn .btn,
+.landing-cpn-slider-wrapper .btn{
     display:inline-block;
     vertical-align:top;
     font: 1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif;
@@ -3020,12 +3021,15 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
   -wekit-border-radius:6px;
   padding:7px 12px !important;
 }
-.aui a, .aui a:link{color: #333 !important;}
-.section-page .btn:focus,
-.section-page .btn:active,
-.section-page .btn:link{color: #333 !important;}
-.section-page .btn:hover{background:#e6e4dd;}
-.section-page .btn:active{background:#e6e6e6;}
+.inform-area .box-btn .btn:active,
+.inform-area .box-btn .btn:focus,
+.landing-cpn-slider-wrapper .btn:focus,
+.landing-cpn-slider-wrapper .btn:active,
+.landing-cpn-slider-wrapper .btn:link{color: #333 !important;}
+.inform-area .box-btn .btn:hover,
+.landing-cpn-slider-wrapper .btn:hover{background:#e6e4dd;}
+.inform-area .box-btn .btn:active,
+.landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
 
 /***************************************************************************
                             Media Queries
