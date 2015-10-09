@@ -1,7 +1,7 @@
 /* general settings */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
-body.non-respv { min-width: 1002px; overflow-x: visible; }
+body.non-respv { min-width: 1002px; overflow-x: visible; }  
 
 /* Typography */
 h1, h2, h3, h4, h5{ 
@@ -2968,6 +2968,31 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .summary-wrapper:after, .data-list-item:after { 
     content:""; clear:both; display:block; 
 }
+
+.add-txt-modal-box{
+	padding:10px 20px 15px;
+}
+.add-txt-modal-box p{
+	margin:0 0 20px;
+}
+.popup-btns{
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+.popup-btns li{padding:5px 0;}
+.popup-btns a{
+	margin:0 auto;
+	display:block;
+	width:100px;
+	color:#000;
+}
+.popup-btns a.btn{
+	line-height:25px;
+	text-decoration:none;
+}
+
 
 /***************************************************************************
                             Media Queries
