@@ -413,7 +413,8 @@ xheader
   float: right;
 }
 #uf-dockbar-search-desktop.closing{
-  opacity: 0;
+  opacity: 0 !important;
+  background-color: #765677;
 }
 
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,

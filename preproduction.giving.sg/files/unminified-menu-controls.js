@@ -15,6 +15,13 @@ jQuery(document).ready(function(e) {
         if (a.hasClass("active")) {
             a.removeClass("active");
             c.css("opacity", "1");
+        }
+        if (a.hasClass("closing")) {
+            a.removeClass("closing").addClass("active");
+            c.css("opacity", "0");
+            setTimeout(function() {
+                a.find("input:first").focus()
+            }, 100)
         } else {
             a.addClass("active");
             c.css("opacity", "0");
@@ -23,15 +30,10 @@ jQuery(document).ready(function(e) {
             }, 100)
         }
     });
-    a.on("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", "input[type=text]", function(){
-        if(a.hasClass('closing')){
-            a.removeClass('closing');
-        }
-    })
     w.on("click", function(l) {
         l.preventDefault();
         if (a.hasClass("active")) {
-            a.removeClass("active");
+            a.removeClass("active").addClass('closing');
             c.css("opacity", "1");
         }
     });
