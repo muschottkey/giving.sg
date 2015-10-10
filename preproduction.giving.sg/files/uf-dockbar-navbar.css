@@ -49,6 +49,12 @@ xheader
   box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
   z-index: 1030; }
 
+  #logo a{
+  text-transform: uppercase;
+  font-family: “Century Gothic”, CenturyGothic, AppleGothic, sans-serif;
+  font-size: 20px;
+  }
+
 @media only screen and (min-width: 1200px) {
   #main-nav-header {
     height: 70px; } }
@@ -104,7 +110,8 @@ xheader
   #uf-dockbar-right-menu ul li.sign-in span {
     margin-right: 10px;
     margin-left: 5px;
-    line-height: 27px;
+    line-height: 34px;
+    font-size: 1em;
     -webkit-transform: scale(1);
     -moz-transform: scale(1);
     -ms-transform: scale(1);
@@ -165,7 +172,13 @@ xheader
     padding: 5px; }
 
   #uf-dockbar-search-list-item {
-    display: none !important; } }
+    display: none !important; }
+
+  #uf-dockbar-right-menu{
+    position: absolute !important;
+  }
+
+     }
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
     display: none !important; } }
@@ -223,7 +236,7 @@ xheader
     height: auto;
     width: auto;
     left: auto;
-    right: 20em;
+    right: 14em;
     padding-top: 0.5em;
     top: 0;
     background: transparent;
@@ -387,6 +400,22 @@ xheader
 
   #uf-dockbar-cart .uf-dockbar-item-remove {
     right: 2em; } }
+
+  /* Search Bar modifications */
+
+#uf-dockbar-search-desktop.active{
+  z-index: 1031; 
+  left: 170px;
+  width: calc( 100% - 360px );
+}
+#uf-dockbar-right-menu{
+  position: initial;
+  float: right;
+}
+#uf-dockbar-search-desktop.closing{
+  opacity: 0;
+}
+
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,
 .uf-dockbar-go-to-cart a:link, .uf-dockbar-go-to-cart a:focus {
   color: #999 !important;
@@ -431,12 +460,13 @@ xheader
   box-shadow: none !important;
   border-radius: 0px !important; }
 
-#uf-dockbar-search-desktop.active input[type="text"] {
-  width: 155px;
-  padding: 2px 15px !important;
-  padding-right: 50px !important; }
 
-#uf-dockbar-search-desktop.active input[type="submit"] {
+#uf-dockbar-search-desktop.active input[type="text"] {
+  width: 100% !important;
+  padding: 2px 10px 2px 15px !important;
+  }
+
+#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"],  #uf-dockbar-search-desktop.closing span.close,  #uf-dockbar-search-desktop.active span.close {
   opacity: 1; }
 
 #uf-dockbar-search-desktop form fieldset, #uf-dockbar-search-mobile form fieldset {
@@ -447,7 +477,7 @@ xheader
 #uf-dockbar-search-desktop {
   position: absolute;
   top: 0px;
-  z-index: 1029; }
+ }
 
 #uf-dockbar-search-mobile {
   position: relative;
@@ -455,7 +485,25 @@ xheader
   width: 300px;
   display: none; }
 
-#uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
+#uf-dockbar-search-desktop input[type="submit"]{
+   /* -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s; */
+  position: absolute;
+  right: 50px;
+  top: 1em;
+  background: transparent url("../images/search.png") no-repeat scroll 0% 0%/cover;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 0; 
+}
+
+#uf-dockbar-search-mobile input[type="submit"] {
   /* -webkit-transition: all 0.5s linear 0s;
   -moz-transition: all 0.5s linear 0s;
   -o-transition: all 0.5s linear 0s;
@@ -471,6 +519,20 @@ xheader
   cursor: pointer;
   padding: 0px;
   opacity: 0; }
+
+#uf-dockbar-search-desktop span.close{
+  position: absolute;
+  right: 5px;
+  top: 0.5em;
+  font-size: 40px;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 0; 
+}
 
 @media (max-width: 1200px) {
   #uf-dockbar-search-mobile {

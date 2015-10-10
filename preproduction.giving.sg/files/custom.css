@@ -670,7 +670,7 @@ f .aui h1 {
 }
 .aui .collapse.in {
     height: auto;
-    width: inherit;
+    width: initial;
 }
 #setup-dtn-carousel img {
     display: block;
