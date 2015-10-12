@@ -807,11 +807,10 @@ f
 
 .delete-logo {
   display: none !important; }
-
 .cpn-sgtn-item > .sgtn-img img {
-  max-height: 136px !important;
+  max-height: none !important;
   max-width: 246px !important;
-  height: 100% !important; }
+  }
 
 #portlet_verficationaccount_WAR_givingsgportlet label#email {
   cursor: default;

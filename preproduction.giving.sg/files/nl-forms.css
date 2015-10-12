@@ -44,7 +44,8 @@
 .nl-form input,
 .nl-form select {
   line-height: inherit;
-  display: inline-block;
+  display: inline;
+
   color: #4a4a4a;
   cursor: pointer;
   padding-bottom: 1px;
