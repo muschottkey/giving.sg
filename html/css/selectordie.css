@@ -41,15 +41,14 @@
     }
         /* Down arrow */
         .sod_select:after {
-            font: normal normal normal 14px/1 FontAwesome; content: "\f078"; top: auto; bottom:11px;
+            font: normal normal normal 14px/1 FontAwesome; content: "\f078"; top: auto; bottom:11px;color: #666;
         }
         .sod_select:before{
-            content: ""; position: absolute; right: 32px;
-            top: 0px; bottom: 0px;border-left: 1px solid #e5e5e5;
+           display: none;
         }
 
     /* Change the border color on hover, focus and when open */
-    .sod_select:hover, .sod_select.open, .sod_select.focus { border-color: #9B9B9B; }
+    .sod_select:hover, .sod_select.open, .sod_select.focus { border-color: #999; }
         .sod_select.open { color: #919191; }
         .sod_select.focus { box-shadow: 0 0 5px rgba(0,0,0,.2); }
 
