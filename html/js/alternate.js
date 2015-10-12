@@ -8,6 +8,10 @@ $(function(){
             $('#signupModal').modal('show');
         }, 1000);
     })
+	$('#loginModal .close').click(function(){
+		$('#loginModal').hide();
+		$('.modal-backdrop').remove();
+	});
     $('#toLogin').click(function(){
         $('#signupModal').modal('hide');
         setTimeout(function(){
