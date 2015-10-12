@@ -416,6 +416,14 @@ xheader
   opacity: 0 !important;
   background-color: #765677;
 }
+#uf-dockbar-search-trigger i{
+  font-size: 23px;
+  vertical-align: middle;
+  color: #333;
+}
+#uf-dockbar-search-trigger:hover i{
+  color:#c66;
+}
 
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,
 .uf-dockbar-go-to-cart a:link, .uf-dockbar-go-to-cart a:focus {
@@ -486,22 +494,54 @@ xheader
   width: 300px;
   display: none; }
 
-#uf-dockbar-search-desktop input[type="submit"]{
+#uf-dockbar-search-desktop span.fa-search{
    /* -webkit-transition: all 0.5s linear 0s;
   -moz-transition: all 0.5s linear 0s;
   -o-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s; */
   position: absolute;
   right: 50px;
-  top: 1em;
-  background: transparent url("../images/search.png") no-repeat scroll 0% 0%/cover;
+  top: 1.2em;
+  background: transparent;
   width: 30px;
   height: 30px;
+  border: 0px none;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 1; 
+}
+#uf-dockbar-search-desktop span.fa-search:hover{
+  color: #c66;
+}
+
+#uf-dockbar-search-desktop input[type="submit"]{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
   border: 0px none;
   text-indent: -9999px;
   cursor: pointer;
   padding: 0px;
   opacity: 0; 
+}
+#uf-dockbar-search-desktop span.fa-search:before{
+  font-size: 23px;
+  margin-left: 10px;
+}
+
+#uf-dockbar-search-mobile span.fa-search {
+  position: absolute;
+  top: 1em;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+}
+#uf-dockbar-search-mobile span.fa-search:hover {
+  color: #c66;
 }
 
 #uf-dockbar-search-mobile input[type="submit"] {
@@ -510,9 +550,7 @@ xheader
   -o-transition: all 0.5s linear 0s;
   transition: all 0.5s linear 0s; */
   position: absolute;
-  right: 5px;
-  top: 1em;
-  background: transparent url("../images/search.png") no-repeat scroll 0% 0%/cover;
+  background: transparent;
   width: 30px;
   height: 30px;
   border: 0px none;
@@ -533,6 +571,9 @@ xheader
   cursor: pointer;
   padding: 0px;
   opacity: 0; 
+}
+#uf-dockbar-search-desktop span.close:hover{
+  color: #c66;
 }
 
 @media (max-width: 1200px) {
