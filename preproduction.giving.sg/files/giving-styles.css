@@ -216,30 +216,30 @@ hr.m5{margin: 5px 0;}
 
 /* error state*/
 .control-group.error input, .control-group.error select, .control-group.error textarea {
-  border-color: #cc6666;
+  border-color: #cc6666 !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .control-group.error .checkbox, .control-group.error .radio, .control-group.error input, .control-group.error select, .control-group.error textarea{
     font-family: "Open Sans", sans-serif;
-    color: #cc6666;
+    color: #cc6666 !important;
     font-weight: 400;
 }
 .control-group.error .validation-feedback i{
     color: #cc6666;
 }
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus{
-    border-color: #cc6666;
+    border-color: #cc6666 !important;
 }
 .control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline{
-    color: #cc6666;
+    color: #cc6666 !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 .control-group.error .help-block.smaller{font-size: 0.775em;}
 .control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on{
-    border-color: #cc6666;
-    color: #cc6666;
+    border-color: #cc6666 !important;
+    color: #cc6666 !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
@@ -247,45 +247,45 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     border-color: #cc6666;
 }
 .control-group.error .pretty-text textarea, .control-group.error .pretty-text p{
-    color: #cc6666;
+    color: #cc6666 !important;
 }
 .alert-danger, .alert-error{
-    color: #cc6666;
+    color: #cc6666 !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 .alert-danger, .alert-error h6{
-    color: #cc6666; font-family: "Open Sans", sans-serif;
+    color: #cc6666 !important; font-family: "Open Sans", sans-serif;
     font-weight: 400; text-align:center;
 }
 .alert-danger, .alert-error i{
-    color: #c66;
+    color: #c66 !important;
 }
 
 /*Success state*/
 .control-group.success input, .control-group.success select, .control-group.success textarea{
-    border-color: #91C2AF;
+    border-color: #91C2AF !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus{
-    border-color: #91C2AF;
+    border-color: #91C2AF !important;
 }
 
 .control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea{
-    color: #91C2AF;
+    color: #91C2AF !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 .control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline{
     font-family: "Open Sans", sans-serif;
-    color: #91C2AF;
+    color: #91C2AF !important;
     font-weight: 400;
 }
 
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
-    border-color: #91C2AF;
-    color: #91C2AF;
+    border-color: #91C2AF !important;
+    color: #91C2AF !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
@@ -294,23 +294,23 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 
 .control-group.success .pretty-text .box-footer{
-    border-color: #91C2AF;
+    border-color: #91C2AF !important;
 }
 .control-group.success .pretty-text textarea, .control-group.success .pretty-text p{
-    color: #91C2AF;
+    color: #91C2AF !important;
 }
 
 /*Info state*/
 .control-group.info .control-label, .control-group.info .help-block, .control-group.info .help-inline{
-    color: #9DC9EE;
+    color: #9DC9EE !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
 .control-group.info input, .control-group.info select, .control-group.info textarea{
-    border-color:  #9DC9EE;
+    border-color:  #9DC9EE !important;
 }
 .control-group.info .checkbox, .control-group.info .radio, .control-group.info input, .control-group.info select, .control-group.info textarea{
-    color:  #9DC9EE;
+    color:  #9DC9EE !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }

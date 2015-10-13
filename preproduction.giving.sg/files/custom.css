@@ -635,6 +635,15 @@ f
   font-size: 1em !important;
   height: 1.3em; }
 
+.aui input:-webkit-autofill, .aui textarea:-webkit-autofill, .aui select:-webkit-autofill{
+  background-color: #ffffff !important;
+}
+
+.aui input[type=text]:hover, .aui input[type=text]:focus{
+  border-color: #91C2AF;
+  color: #91C2AF;
+}
+
 .aui label, .aui input, .aui button, .aui select, .aui textarea {
   font-family: "Lato", Arial, sans-serif;
   font-size: 1.125em;
@@ -965,8 +974,20 @@ div.charity-donors img.dr-img {
   color: #999 !important; }
 
 .aui select, .aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
-  color: #999 !important;
+  color: #666 !important;
   font-weight: 400 !important; }
+
+.aui input[disabled]{
+  border-color: #eee !important;
+  color: #999 !important;
+  background-color: #eeeeee;
+  cursor: not-allowed;
+}
+
+.aui .modal input:not([type="checkbox"])[disabled], .aui .main-content input:not([type="checkbox"])[disabled], .aui #setup-donation-content input:not([type="checkbox"])[disabled],
+.aui #gf-bkt-login input:not([type="checkbox"])[disabled], .aui #claim-tax input:not([type="checkbox"])[disabled]{
+  background-color: #fff !important;
+}
 
 .aui a.carousel-control:hover, .aui a.carousel-control:focus,
 .aui a.carousel-control span, .aui a.carousel-control span {
@@ -1065,12 +1086,12 @@ div.charity-donors img.dr-img {
 
 .control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline,
 #signinmodal .control-group.success .control-label h5 {
-  color: #91C2AF !important; }
+  color: #91C2AF !important; border-color: #91C2AF !important; }
 
 .aui .control-group.success .checkbox, .aui .control-group.success .radio,
 .aui .control-group.success input, .aui .control-group.success select,
 .aui .control-group.success textarea {
-  color: #91C2AF !important; }
+  color: #91C2AF !important; color: #91C2AF !important;}
 
 .control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline,
 #signinmodal .control-group.error .control-label h5 {
@@ -1081,7 +1102,7 @@ div.charity-donors img.dr-img {
   color: #B94A48 !important; }
 
 .alert-danger, .alert-error h6 {
-  color: #C66;
+  color: #C66 !important;
   font-weight: 400 !important; }
 
 /********************************/
