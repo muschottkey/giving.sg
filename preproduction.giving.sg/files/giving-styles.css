@@ -1395,7 +1395,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden; 
     -webkit-user-select: none; -khtml-user-select: none; 
     -moz-user-select: none; -o-user-select: none; user-select: none;
-    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+    -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
 .add-cpn-btn { display: table; }
@@ -3563,7 +3563,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  }
+    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  display:block !important;}
     #causes-mobile .swiper-wrapper{
         display: -webkit-box; display: -moz-box; display: -ms-flexbox;
         display: -webkit-flex; display: flex;

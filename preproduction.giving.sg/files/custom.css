@@ -338,7 +338,10 @@
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
 .search-results-wrapper .cpn-sgtn-item > .sgtn-img img {
-  max-width: 100% !important; }
+  max-width: 100% !important; 
+	height:auto !important;
+  
+  }
 
 .search-results-wrapper {
   min-height: 500px; }
@@ -663,7 +666,7 @@ f
   -moz-border-left-colors: none;
   border-image: none;
   box-shadow: none; }
-
+.popover-content .aui .btn {margin-bottom:10px;}
 .aui .btn:hover, .aui .btn:focus {
   background-position: 0 -15px;
   text-decoration: none;
@@ -716,7 +719,10 @@ f
   -webkit-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px white;
   -moz-box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px white;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px white; }
-
+#search-form .control-group input:focus{
+	box-shadow: 0px 0px 2px #7cbff2; 
+	-webkit-box-shadow: 0px 0px 2px #7cbff2;
+} 
 .aui .control-group.error input:focus, .aui .control-group.error select:focus,
 .aui .control-group.error textarea:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
