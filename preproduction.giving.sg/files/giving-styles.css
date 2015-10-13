@@ -1995,9 +1995,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .tab-section .tab{
     position:absolute;
-    top:-9999px;
-    left:0;
-    width:100%;
+    top:-9999em; left:0; width:100%;
 }
 .tab-section .tab.active{
     width:100%;
@@ -3962,7 +3960,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
         padding: 20px 0 30px;
     }
     .footer-ul li{margin-right:5px;}
-    
+}
 @media (max-width:320px) {
     body {max-width:300px; overflow: visible;}
     .mobile-separator {margin: 4em -15px 1em;}
