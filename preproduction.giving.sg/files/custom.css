@@ -141,19 +141,23 @@
 
 #signinmodal .control-label {
   cursor: pointer;
-  text-rendering: optimizelegibility; }
+  text-rendering: optimizelegibility;
+}
 
 #signinmodal .control-label h5 {
+  cursor: pointer;
   font-size: 1.2em;
-  line-height: 1.4;
   font-weight: 300;
-  cursor: pointer; }
+  line-height: 1.4;
+}
 
 #_58_firstName, #_58_emailAddress {
-  max-width: 100%; }
+  max-width: 100%; 
+}
 
 #donatenowmodal div.modalwrapper div.box {
-  border: none !important; }
+  border: none !important; 
+}
 
 #createprofilemodal .row-fluid .signupnpo {
   margin-left: auto;
@@ -170,8 +174,8 @@
 }
 
 #createprofilemodal .modal-footer {
-  border-top: 0px solid #DDD;
   background: #fff none repeat scroll 0% 0%; 
+  border-top: 0px solid #DDD;
 }
 
 #createusermodal div.btn-group.btn-toggle {
@@ -457,7 +461,6 @@
     margin: 0px 15% !important;
     width: 70% !important; 
   }
-
   #signinmodal form {
     width: 80%;
     margin: 0px auto; 
@@ -1359,8 +1362,6 @@ div.charity-donors img.dr-img {
 .aui a.undelined, .aui a.underlined:link {
   text-decoration: underline !important; 
 }
-
-
 
 /*  home carousel */
 @media (min-width: 980px) {
