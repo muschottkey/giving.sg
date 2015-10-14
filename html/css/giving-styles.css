@@ -2559,14 +2559,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     padding:5px 10px 0px 5px;
     text-align: left;
     border-radius: 0;
-     }
-.select-like button:focus, .select-like button:hover{
-    outline: 0;
-    color: #c66;
-    background-color: #ffffff;
-    border-color: #999;
 }
-
+.select-like button:focus, .select-like button:hover{
+    color: #c66;background-color: #FFF;
+    border-color: #999;outline: 0; 
+}
+.select-like button:focus .caret:before, .select-like button:hover .caret:before, .select-like button .caret:before{
+    color: #666;
+}
 .select-like button .caret{ margin-top:2px; border: none; font-weight: 700; font-size: 1.2em; }
     .actions-group button .caret { margin-top:8px; } 
 .select-like button span[data-type=selected-text]{
@@ -2576,18 +2576,21 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     font-weight: 700;
     transition:all 0.3s ease;
 }
-
 .select-like .dropdown-menu, .dropdown-menu{
     padding:0; margin-top:0; border-radius:0; box-shadow:0 0 5px rgba(0,0,0,.2);
 }
+
+/* .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, 
+.dropdown-menu li a:hover,.dropdown-menu li a:focus, .dropdown-menu li.active a */
 .select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #666; text-align:left; }
-.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, .dropdown-menu li a:hover,
-.dropdown-menu li a:focus, .dropdown-menu li.active a{
+.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .dropdown-menu li a:hover,
+.dropdown-menu li a:focus{
     background: #f7f7f7; color:#c66; outline: 0;font-weight: 400;
 }
-.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before{
-    color: #cc6666;
-}
+.select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #666; font-weight: normal; }
+.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #C66; }
+
+
 
 
 /* Other code. probably end of dashboard */
@@ -2980,7 +2983,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
 .social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
-.summary-wrapper:after, .data-list-item:after { 
+.summary-wrapper:after, .data-list-item:after, .conf-states-wrapper:after { 
     content:""; clear:both; display:block; 
 }
 
@@ -2998,15 +3001,18 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 }
 .popup-btns li{padding:5px 0;}
 .popup-btns a{
-	margin:0 auto;
-	display:block;
-	width:100px;
-	color:#000;
+    margin:0 auto;
+    display:block;
+    width:100px;
+    color:#9DC9EE;
 }
+.popup-btns a:hover{color:#C66;}
 .popup-btns a.btn{
-	line-height:25px;
-	text-decoration:none;
+    color:#000;
+    line-height:25px;
+    text-decoration:none;
 }
+.popup-btns a.btn:hover{color:#000;}
 
 .aui .ttl-row .btn,
 .inform-area .box-btn .btn,
@@ -3484,12 +3490,13 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
         padding:0 0 20px !important;
     }
     .ttl-row{padding:25px 0 0;}
-
+    .modalwrapper .summary-wrapper .headings span {font-size: 0.789em;}
     #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 0;padding-top: 6px;}
     #signupModal .modal-body{padding:10px;}
     #signupModal .signup-section{margin-top: 20px;}
     #signupModal .signup-section.step3 h2{font-size: 1.5em;}
     #signupModal .signup-section.step3 h3{font-size: 1.2em;}
+    #loginModal .modal-body{padding:0 !important;}
     #donate-buttons button{font-size:0.8em;line-height:1.2;}
     .steps-list{padding:0 15px 0 0;}
     .btn-row h3{display:block;}
@@ -3555,7 +3562,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #setup-donation-content .progress-dots ul { width:auto; max-width:150px; }
     #setup-donation-content .progress-dots ul li .step-dot {
         -webkit-text-stroke:0.5px;color:#000; font-size:0.8em;line-height: 1.8em;
-        text-align: center; width:24px; height:24px;background:#fff;  border: 1px solid #cccccc;
+        text-align: center; width:24px; height:24px; border: 1px solid #cccccc;
     }
 
     .section-header{padding: 15px 0;}
