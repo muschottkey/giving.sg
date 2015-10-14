@@ -524,7 +524,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 /* Social Media */ 
 .modal .social-media-signup a {
     padding:13px; margin:20px auto 0; clear:both; 
-    color:#fff; border-radius:2px; text-align: center;
+    color:#fff !important; border-radius:2px; text-align: center;
 }
 .modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
     text-decoration: none; opacity: 0.8; color:#fff !important;
@@ -1379,6 +1379,10 @@ span.span12.read-more.text-left.m-0{display: none;}
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
+#causesCheckboxes .popover-filter input[type=checkbox]:checked + label:before {
+  color: #cc6666; 
+}
+.aui .btn-success{margin-bottom:15px !important;}
 .wrapper-925 .cpn-holder { margin-bottom:80px; }
 .cpn-wrapper { 
     position: relative;
@@ -1392,12 +1396,16 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .cpn-suggestions .swiper-slide { width:260px !important;}
 .cpn-sgtn-item{
+	display:block !important;
     width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden; 
     -webkit-user-select: none; -khtml-user-select: none; 
     -moz-user-select: none; -o-user-select: none; user-select: none;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
-
+.cpn-sgtn-item .sgtn-img{
+	height:136px;
+	overflow:hidden;
+}
 .add-cpn-btn { display: table; }
 .add-cpn-btn .sgtn-img { vertical-align:middle; display:table-cell; padding:10%;}
     .add-cpn-btn .sgtn-img a { padding:60% 0; }
@@ -1864,6 +1872,12 @@ span.span12.read-more.text-left.m-0{display: none;}
 .inline-search{ position:absolute; right:30px; top:8px; font-size: 1.2em; color:#333; cursor:pointer; }
 .refine-search .text { font-size:1.2em; padding-right:5px; }
 .refine-inputs input[type=checkbox], #data-list-filters input[type=checkbox] { display: none; }
+#search-form .inline-search{
+	background:url(../images/ico-search-btn.png) no-repeat;
+	width:18px;
+	height:18px;
+}
+#search-form .inline-search:hover{opacity:0.8;}
 
 .refine-inputs input[type=checkbox] + label,
 #select-more-causes input[type=checkbox] + label, 
@@ -1889,6 +1903,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     content: "\f058"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
     position: absolute; width:16px; height:16px; top:8px; right:5px; font-size:.8em;
 }
+#nl-form input[type=checkbox] + label:before{top:11px;}
     .style-tag .checkbox-clone:before, .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
@@ -3027,6 +3042,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
   -wekit-border-radius:6px;
   padding:7px 12px !important;
 }
+.aui .swiper-slide .btn{color:#fff !important;}
 .ttl-row .btn:focus,
 .ttl-row .btn:active,
 .inform-area .box-btn .btn:active,
@@ -3204,6 +3220,10 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 }
 
 @media (max-width: 979px) {
+	.aui.ie #uf-dockbar-search-mobile  input[type="text"],
+	.aui.ie #search-form input[type="text"]{
+    max-width: 95% !important;
+    width: 100% !important; }
     .cpn-holder .btn-close{
         display: block;
         padding: 10px;

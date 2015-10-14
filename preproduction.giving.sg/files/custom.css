@@ -387,7 +387,8 @@
 }
 
 .sgtn-img {
-  min-height: 136px; 
+  height:136px;
+  overflow:hidden; 
 }
 
 #selPayment {
@@ -906,6 +907,7 @@
 #search-form .control-group input:focus{
 	box-shadow: 0px 0px 2px #7cbff2; 
 	-webkit-box-shadow: 0px 0px 2px #7cbff2;
+	border-bottom-color:#fff;
 } 
 .aui .control-group.error input:focus, .aui .control-group.error select:focus,
 .aui .control-group.error textarea:focus {
@@ -992,6 +994,7 @@
 .popover-filter input[type=checkbox]:checked + label:before {
   color: #62c462; 
 }
+
 
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
