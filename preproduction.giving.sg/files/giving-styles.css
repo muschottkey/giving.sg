@@ -2980,7 +2980,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
 .social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
-.summary-wrapper:after, .data-list-item:after { 
+.summary-wrapper:after, .data-list-item:after, .conf-states-wrapper:after { 
     content:""; clear:both; display:block; 
 }
 
