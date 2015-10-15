@@ -992,8 +992,7 @@
 }
 
 .popover-filter input[type=checkbox]:checked + label:before {
-  color: #62c462; 
-}
+  color: #c66; }
 
 
 /*--------------------------------------------------------*/
@@ -1125,6 +1124,9 @@ div.charity-donors img.dr-img {
   border-radius: none !important; 
 }
 
+.aui .btn-small{
+  padding: 2px 10px;border-radius: 3px;
+}
 .open-more, .btn-more-img, .btn-ghost {
   border-radius: 6px !important; 
 }
@@ -1288,6 +1290,7 @@ div.charity-donors img.dr-img {
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5 {
   color: #C66 !important; 
 }
+
 
 /*easy donation*/
 .choice-buttons button.yes.active {
@@ -1642,7 +1645,12 @@ div.charity-donors img.dr-img {
     float: left;
     width: 28%;
     padding-top: 9px;
-    margin: 10px 1% 10px 2% !important; 
+    margin: 10px 1% 10px 2% !important; }
+  .wrapper-npoListing .span6.text-uppercase.text-left.center-mobile.small.pull-left{
+    margin-left: auto !important;
+    margin-right: auto;
+    float: none;
+    max-width: 715px;
   }
 
 }
