@@ -25,7 +25,7 @@
 }
 
 .lfr-input-text, .form .fieldset .lfr-input-text-container input {
-  max-width: 100%; 
+  max-width: 100%;    
 }
 
 /* to centralize span inside div.row-fluid */
@@ -49,11 +49,11 @@
 /******** GLOBAL STYLE FOR MODAL **********************/
 /****************************************************/
 /* .modal-header h2 {
-	font-size: 1.7em !important;
+  font-size: 1.7em !important;
 }
 
 .modal-header h3 {
-	font-size: 1.25em !important;
+  font-size: 1.25em !important;
 } */
 .modal-body .checkbox input[type="checkbox"] {
   float: none;
@@ -85,8 +85,8 @@
 }
 
 /* .aui .modal-header {
-	border-bottom: medium none;
-	text-align: center;
+  border-bottom: medium none;
+  text-align: center;
 } */
 /**********************************************************/
 /***** FOR ALL MODAL, MUST APPLY FOLLOWING STYLE : START */
@@ -417,7 +417,7 @@
 /*--------------------------------------------------------*/
 .search-results-wrapper .cpn-sgtn-item > .sgtn-img img {
   max-width: 100% !important; 
-	height:auto !important;
+  height:auto !important;
 }
 
 .search-results-wrapper {
@@ -435,9 +435,10 @@
   }
 
   .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 {
-    width: 100% !important;
+    width: 100% !important;  
     margin-left: 0px !important; 
   }
+        #search-result-holder .row-fluid .span6 { width:48% !important; }
 
   .donate-btns button {
     width: 48% !important;
@@ -905,9 +906,9 @@
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset, 0px 0px 0px white; 
 }
 #search-form .control-group input:focus{
-	box-shadow: 0px 0px 2px #7cbff2; 
-	-webkit-box-shadow: 0px 0px 2px #7cbff2;
-	border-bottom-color:#fff;
+  box-shadow: 0px 0px 2px #7cbff2; 
+  -webkit-box-shadow: 0px 0px 2px #7cbff2;
+  border-bottom-color:#fff;
 } 
 .aui .control-group.error input:focus, .aui .control-group.error select:focus,
 .aui .control-group.error textarea:focus {
@@ -992,8 +993,7 @@
 }
 
 .popover-filter input[type=checkbox]:checked + label:before {
-  color: #c66; 
-}
+  color: #c66; }
 
 
 /*--------------------------------------------------------*/
@@ -1646,14 +1646,14 @@ div.charity-donors img.dr-img {
     float: left;
     width: 28%;
     padding-top: 9px;
-    margin: 10px 1% 10px 2% !important; 
-  }
+    margin: 10px 1% 10px 2% !important; }
   .wrapper-npoListing .span6.text-uppercase.text-left.center-mobile.small.pull-left{
     margin-left: auto !important;
     margin-right: auto;
     float: none;
     max-width: 715px;
   }
+
 }
 div.clickable > a.img-placeholder-btn {
   margin-top: 100px !important;
