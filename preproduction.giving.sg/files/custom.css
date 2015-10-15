@@ -948,7 +948,7 @@ cursor: pointer; font:1.15em/1.4 "Lato", Arial, sans-serif; color: #999 !importa
   /* max-height:136px !important;
   max-width: 246px !important; */
   max-height: none !important;
-  max-width: 246px !important;
+  max-width: 268px !important;
 }
 
 @media (max-width: 767px) {

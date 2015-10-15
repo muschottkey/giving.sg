@@ -204,6 +204,7 @@ hr.m5{margin: 5px 0;}
 .bg-pumpkin{background-color: #f0ad4e;color: #fff;}
 .bg-darkgrey{  background-color: #999; }
     .bg-darkgrey h3 { color:#FFF; }
+    .journal-content-article .bg-darkgrey h3 { color:#FFF !important; } 
 .bg-white{background-color: #ffffff;}
 .clickable { cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
     .carousel .clickable { width:90%; left:5%; }
@@ -830,6 +831,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 .cause-box.inline-mobile input[type=checkbox] + label { background-position: center center; }
 .cause-box input[type=checkbox] + label:before, .cause-box a h4{ color: #9DC9EE; }
+    .journal-content-article .cause-box a h4 { color: #9DC9EE !important; }
+    .journal-content-article .cause-box a:hover h4 { color: #C66 !important; }
     .cause-box img { opacity:0; }
 
 .causes .img-box.icons{ background-size: 40px; background-repeat: no-repeat;background-position:center;}
@@ -1383,6 +1386,7 @@ span.span12.read-more.text-left.m-0{display: none;}
   color: #cc6666; 
 }
 .aui .btn-success{margin-bottom:15px !important;}
+    .aui .causes .ico-tdr.btn-success { margin-bottom:0 !important;} 
 .wrapper-925 .cpn-holder { margin-bottom:80px; }
 .cpn-wrapper { 
     position: relative;
@@ -1392,7 +1396,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     padding: 0;
 }
 .cpn-suggestions{
-    height:510px; max-height:520px; position:relative; top:0; left:0; display:block; padding:0 10px;
+    height:510px; max-height:560px; position:relative; top:0; left:0; display:block; padding:0 10px;
 }
 .cpn-suggestions .swiper-slide { width:260px !important;}
 .cpn-sgtn-item{
@@ -3573,6 +3577,8 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     .modal, .modal-one-column { max-width:294px !important; }
     .modal-body, .modal-one-column .modal-body { max-width:280px; }
     .boxed-wrapper.gf, .boxed-wrapper { max-width:85%; padding: 0; }
+        .boxed-wrapper.gf { max-width:90%; padding: 0 20px; }
+
     .boxed-wrapper.wide { max-width:320px; }
     .boxed-wrapper.md{padding-top: 0;}
     .start-cta, .span12.start-cta{height: 335px;}
@@ -3963,7 +3969,6 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #cause-image-preview {padding:10px 0 !important;}
     .indicate-tdr {font-size:13px !important;}
     
-    .boxed-wrapper.gf{max-width: 80%;padding: 0 30px;}
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
 
 
