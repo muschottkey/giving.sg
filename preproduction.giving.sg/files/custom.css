@@ -992,16 +992,17 @@
 }
 
 .popover-filter input[type=checkbox]:checked + label:before {
-  color: #c66; }
+  color: #c66; 
+}
 
 
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
 .focused {
-  -webkit-box-shadow: -1px 5px 17px -3px #999799;
-  -moz-box-shadow: -1px 5px 17px -3px #999799;
-  box-shadow: -1px 5px 17px -3px #999799;
+  -webkit-box-shadow: -1px 3px 11px -3px #999799;
+  -moz-box-shadow: -1px 3px 11px -3px #999799;
+  box-shadow: -1px 3px 11px -3px #999799;
   padding-bottom: 0 !important; 
 }
 
@@ -1313,9 +1314,9 @@ div.charity-donors img.dr-img {
 .btn-ghost:focus, .donate-trig.btn-default:focus{
     background-color: #F9F6EC !important;
     outline: 1px !important;
-    -webkit-box-shadow: -1px 5px 10px -3px #999799 !important;
-    -moz-box-shadow: -1px 5px 10px -3px #999799 !important;
-    box-shadow: -1px 5px 10px -3px #999799 !important;
+    -webkit-box-shadow: inset 0px 2px 5px -3px #999799 !important;
+    -moz-box-shadow: inset 0px 2px 5px -3px #999799 !important;
+    box-shadow: inset 0px 2px 5px -3px #999799 !important;
 }
 .tab-nav-area li a, .tab-nav-area li a:visited, .tab-nav-area li a:hover, .tab-nav-area li a:link {
   color: #000 !important; 
@@ -1645,14 +1646,14 @@ div.charity-donors img.dr-img {
     float: left;
     width: 28%;
     padding-top: 9px;
-    margin: 10px 1% 10px 2% !important; }
+    margin: 10px 1% 10px 2% !important; 
+  }
   .wrapper-npoListing .span6.text-uppercase.text-left.center-mobile.small.pull-left{
     margin-left: auto !important;
     margin-right: auto;
     float: none;
     max-width: 715px;
   }
-
 }
 div.clickable > a.img-placeholder-btn {
   margin-top: 100px !important;
