@@ -1862,8 +1862,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 /***************************************************************************
                             SEARCH RESULTS
 ***************************************************************************/
-
-.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.65% 1.5em; min-height:480px; position: relative;}
+.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 10px 1.5em; min-height:480px; position: relative;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body{border-bottom: none;}
@@ -3096,6 +3095,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #evn-volunteer-now .box{padding:2em;}
     #vol-buttons{margin-top:20px;}
     .side-padding-wrapper{max-width: 94%;}
+    .cpn-sgtn-item > .sgtn-img img { max-height: none !important; }
 }
 
 @media (max-width: 1199px){
@@ -3419,8 +3419,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
         right: 0;
     }
     .cpn-suggestions { padding:0; }
-    .listings-wrapper .cpn-sgtn-item { width:210px; margin:1em 5px 1.5em; }
-    .cpn-sgtn-item > .sgtn-img img { max-width: 220px !important; }
+    .listings-wrapper .cpn-sgtn-item { width:220px; margin:1em 8px 1.5em; }
 
 
     .landing-cpn-slider-wrapper .img-box{
