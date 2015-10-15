@@ -1478,7 +1478,12 @@ div.charity-donors img.dr-img {
     }
 }
 
-
+@media (max-width:  320px){
+  #gf-bkt-wrapper {
+    max-width: 93%;
+    padding: 0 0px;
+  }
+}
 @media all and (max-width: 979px) and (min-width: 761px) {
   .main-image__centerer--cell h3{
         font-size: 1.2em;
