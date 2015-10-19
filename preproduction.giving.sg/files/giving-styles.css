@@ -3607,7 +3607,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  display:block !important;}
+    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px; }
     #causes-mobile .swiper-wrapper{
         display: -webkit-box; display: -moz-box; display: -ms-flexbox;
         display: -webkit-flex; display: flex;
