@@ -4,7 +4,7 @@
   height: 0 !important;
   display:none !important;
 }
-.sod_select .sod_option.selected:before{margin:-3px 0 0 !important;}
+.sod_select .sod_option.selected:before{margin:-9px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
 body.non-respv { min-width: 1002px; overflow-x: visible; }  
@@ -418,6 +418,10 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 }
 .control-group.error .validation-feedback, .control-group.success .validation-feedback{
     display: inline-block !important;
+	vertical-align:top;
+	font-size:15px;
+	margin:5px 15px 0 0;
+	z-index:1000;
 }
 #jira-353-content .validation-feedback {
     position: absolute;
@@ -1719,9 +1723,9 @@ span.span12.read-more.text-left.m-0{display: none;}
 .pretty-text textarea{
     border-bottom-right-radius: 0px;
     border-bottom-left-radius: 0px;
-    width:98%;
+    width:98% !important;
     height:100px;
-    max-width: 98%;
+    max-width: 98% !important;
 }
 .pretty-text .box-footer{
     border: 1px solid #cccccc;
@@ -3861,7 +3865,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     /* Jira 353 */
     #jira-353-content .pretty-text textarea{
         width: 95%!important;
-        max-width: 95%;
+        max-width: 95% !important;
     }
     #jira-353-content .pretty-text .box-footer{
         width: 95%;
