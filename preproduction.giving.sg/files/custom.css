@@ -3,7 +3,7 @@
 
 .main-content, .modal-content {
     margin-top: 0px !important;
-    padding: 0px !important;
+    /*padding: 0px !important;*/
 }
 
 .control-group .controls .control-group {
@@ -148,6 +148,26 @@
 	opacity: 1.0;
 	top: -10000px;
 }
+
+.aui .modal-body, .aui .modal-backdrop {
+  max-height: 100%;
+}
+
+.aui .modal, .aui .modal-content, .aui .modal-body {
+  margin: 0 auto !important;
+  overflow-y: initial !important;
+}
+.aui .modal { z-index:9999 !important; position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; }
+
+.aui .modal-header .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  padding: 15px !important;
+  font-size: 20px !important;
+  opacity: 1 !important;
+}
+
 
 /**************************************************/
 /***** FOR ALL MODAL, APPLY FOLLOWING STYLE : END*/
@@ -530,7 +550,7 @@
 	}
 }
 
-#donationAmt {
+/*#donationAmt {
     left: 15% !important;
     top: 5% !important;
     bottom: 5% !important;
@@ -541,18 +561,19 @@
     max-height: 90% !important;
     margin: 0px;
 }
-
+*/
 #donationAmt .dtn-amt-item .dtn-amt, #donationAmt .dtn-amt-item .dtn-desc {
     min-height: 50px !important;
 }
 
-#donationAmt div.modalwrapper {
+/*#donationAmt div.modalwrapper {
     width: 80%;
 	padding: 0% 10%;
-}
+}*/
 
 #donationAmt div.modal-body {
-    width: 100%;
+    max-width: 280px;
+    padding:15px;
 }
 
 
