@@ -73,8 +73,8 @@
 
     /* Options list wrapper */
     .sod_select .sod_list_wrapper  {
-        position: absolute; top: 100%; left:0;margin-left: 0px; display: none; height: auto; width:100%;
-        margin: 0 0 0 -3px; background: #FFF; color:#999; border:1px solid #cccccc;
+        position: absolute; top: 100%; left:0; display: none; height: auto; width:100%;
+        margin: 0; background: #FFF; color:#999; border:1px solid #cccccc;
         box-shadow: 0 0 5px rgba(0,0,0,.2); border-top: none; font-weight: 300; z-index: 1;
     }
 

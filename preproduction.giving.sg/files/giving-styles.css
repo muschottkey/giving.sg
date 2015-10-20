@@ -6,7 +6,7 @@
 }
 .sod_select .sod_option.selected:before{margin:-3px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
+body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
 body.non-respv { min-width: 1002px; overflow-x: visible; }  
 
 /* Typography */
@@ -1432,12 +1432,12 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .cpn-suggestions .swiper-slide { width:260px !important;}
 .cpn-sgtn-item{
-  display:block !important;
     width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden; 
     -webkit-user-select: none; -khtml-user-select: none; 
     -moz-user-select: none; -o-user-select: none; user-select: none;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
+.tab-section .cpn-sgtn-item{display:block !important;}
 .cpn-sgtn-item .sgtn-img{
   height:136px;
   overflow:hidden;
@@ -3036,6 +3036,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     margin:13px 0 0;
 }
 
+.aui .control-group input.form-control:focus,
+.aui .control-group input.field:focus{
+	box-shadow:none !important;
+	border-color:#75b9f0 !important;
+}
+.aui .control-group input.form-control:hover,
+.aui .control-group input.field:hover{border-color:#ccc !important;}
+
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
 .social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
@@ -3097,6 +3105,20 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 .ttl-row .btn:active,
 .inform-area .box-btn .btn:active,
 .landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
+.response-video {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	height: 0;
+}
+.response-video iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
 
 /***************************************************************************
                             Media Queries
@@ -3637,7 +3659,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     #tax-deduc .span6:last-child {border-left: none;}
     .p-section h4 { font-size:1.2em; }
 
-    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px;  display:block;}
+    #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px; }
     #causes-mobile .swiper-wrapper{
         display: -webkit-box; display: -moz-box; display: -ms-flexbox;
         display: -webkit-flex; display: flex;
@@ -4017,6 +4039,7 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     
 }
 @media (max-width:360px) {
+	.evn-details .img-box{margin-right:6px;}
     .img-box { width:19%; max-width:48px; height:50px; margin-right:2%; }
         .img-box:before { width:50px; height:50px; line-height: 4em; }
     .qk-bkt-li ul{width:300px;}
