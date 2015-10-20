@@ -830,14 +830,20 @@ f
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset;
 }
 
+/* Prevents a box shadow from appearing for the one line inputs*/
+.aui .modal input:not([type="checkbox"]), .aui .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]), 
+#gf-bkt-login input:not([type="checkbox"]), #claim-tax input:not([type="checkbox"]) {
+	box-shadow: none !important;
+}
+
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group input:focus, .aui .control-group select:focus, .aui .control-group textarea:focus
+.aui .control-group input:focus, .aui .control-group select:focus, .aui .control-group textarea:focus
 	{
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-}*/
+}
 
 #search-form .control-group input:focus{
    box-shadow: 0px 0px 2px #7cbff2; 
@@ -846,26 +852,26 @@ f
 }
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group.error input:focus, .aui .control-group.error select:focus,
+.aui .control-group.error input:focus, .aui .control-group.error select:focus,
 	.aui .control-group.error textarea:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7; 
-}*/
+}
 
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group.success input:focus, .aui .control-group.success select:focus,
+.aui .control-group.success input:focus, .aui .control-group.success select:focus,
 .aui .control-group.success textarea:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b; 
-}*/
-/*.aui .control-group.success input, .aui .control-group.success select,
+}
+.aui .control-group.success input, .aui .control-group.success select,
 .aui .control-group.success textarea, .aui .control-group.error input,
 .aui .control-group.error select, .aui .control-group.error textarea {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset; 
-}*/
+}
 
 .aui .sgtn-body h5{
 	font-size: 1.125em !important;
