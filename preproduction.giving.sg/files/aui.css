@@ -181,6 +181,7 @@
     /* Responsive images (ensure images don't scale beyond their parents) */
     max-width: 100%;
     /* IE7-8 need help adjusting responsive images */
+	width: auto\9;
     height: auto;
     /* Part 2: Scale the height according to the width, otherwise you get stretching */
     vertical-align: middle;
