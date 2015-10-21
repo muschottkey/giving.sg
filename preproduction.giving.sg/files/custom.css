@@ -112,10 +112,6 @@
 }
 
 
-.aui .btn-group > .btn + .dropdown-toggle {
-    box-shadow: none;
-}
-
 .aui img { 
 	width: auto\9;
 }
@@ -152,6 +148,26 @@
 	opacity: 1.0;
 	top: -10000px;
 }
+
+.aui .modal-body, .aui .modal-backdrop {
+  max-height: 100%;
+}
+
+.aui .modal, .aui .modal-content, .aui .modal-body {
+  margin: 0 auto !important;
+  overflow-y: initial !important;
+}
+.aui .modal { z-index:9999 !important; position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; }
+
+.aui .modal-header .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  padding: 15px !important;
+  font-size: 20px !important;
+  opacity: 1 !important;
+}
+
 
 /**************************************************/
 /***** FOR ALL MODAL, APPLY FOLLOWING STYLE : END*/
@@ -534,7 +550,7 @@
 	}
 }
 
-/* #donationAmt {
+/*#donationAmt {
     left: 15% !important;
     top: 5% !important;
     bottom: 5% !important;
@@ -546,7 +562,6 @@
     margin: 0px;
 }
 */
-
 #donationAmt .dtn-amt-item .dtn-amt, #donationAmt .dtn-amt-item .dtn-desc {
     min-height: 50px !important;
 }
@@ -554,12 +569,11 @@
 /*#donationAmt div.modalwrapper {
     width: 80%;
 	padding: 0% 10%;
-}
-*/
+}*/
+
 #donationAmt div.modal-body {
     max-width: 280px;
     padding:15px;
-    width: 100%;
 }
 
 
@@ -720,14 +734,8 @@ f
   background-color: #ffffff !important;
 }
 
-.aui input[type=text]:hover, .aui input[type=text]:focus{
-  border-color: #91C2AF;
-  color: #91C2AF;
-}
-
-
 .aui label, .aui input, .aui button, .aui select, .aui textarea {
-	font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
+	font-family: "Lato", Arial, sans-serif;
 	font-size: 1.125em;
 	line-height: 1.4;
 }
@@ -745,7 +753,7 @@ f
 }
 
 .aui .btn {
-	font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
+	font-family: "Lato", Arial, sans-serif;
 	line-height: 20px;
 	display: inline-block;
 	margin-bottom: 0px;
@@ -822,14 +830,20 @@ f
 	box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset;
 }
 
+/* Prevents a box shadow from appearing for the one line inputs*/
+.aui .modal input:not([type="checkbox"]), .aui .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]), 
+#gf-bkt-login input:not([type="checkbox"]), #claim-tax input:not([type="checkbox"]) {
+	box-shadow: none !important;
+}
+
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group input:focus, .aui .control-group select:focus, .aui .control-group textarea:focus
+.aui .control-group input:focus, .aui .control-group select:focus, .aui .control-group textarea:focus
 	{
 	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
 	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
-}*/
+}
 
 #search-form .control-group input:focus{
    box-shadow: 0px 0px 2px #7cbff2; 
@@ -838,26 +852,26 @@ f
 }
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group.error input:focus, .aui .control-group.error select:focus,
+.aui .control-group.error input:focus, .aui .control-group.error select:focus,
 	.aui .control-group.error textarea:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7; 
-}*/
+}
 
 /*ISSUE
 /* The implementation of these states is incomplete and overrides the correct behavior by giving the single-line inputs a box-shadow when they shouldn't have one*/
-/*.aui .control-group.success input:focus, .aui .control-group.success select:focus,
+.aui .control-group.success input:focus, .aui .control-group.success select:focus,
 .aui .control-group.success textarea:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b; 
-}*/
-/*.aui .control-group.success input, .aui .control-group.success select,
+}
+.aui .control-group.success input, .aui .control-group.success select,
 .aui .control-group.success textarea, .aui .control-group.error input,
 .aui .control-group.error select, .aui .control-group.error textarea {
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.075) inset; 
-}*/
+}
 
 .aui .sgtn-body h5{
 	font-size: 1.125em !important;
@@ -871,11 +885,6 @@ f
 .aui .collapse.in {
     height: auto;
     width: initial;
-}
-
-/*Custom CSS for collapse mobile showing for organisation profile page*/
-.row-fluid .wrapper-925 .visible-desktops{
-	width: inherit !important;
 }
 
 #setup-dtn-carousel img {
@@ -1272,11 +1281,6 @@ div.charity-donors img.dr-img {
 .donate-trig.btn-default {
     background-color: #F9F6EC; 
 } 
-
-#disabledDonate{
-	margin-bottom: 0 !important;
-}
-
 .btn-ghost:focus, .donate-trig.btn-default:focus{
 	background-color: #F9F6EC !important;
 	outline: 1px !important;
@@ -1836,7 +1840,6 @@ border: 1px solid #ccc !important;
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .social-share { text-align: center; padding:21px 0; }
      .pre-footer h4 {margin : 0px !important}
-     .pre-footer-social .input-append.cpn-url-box {float: none !important}
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -1943,7 +1946,6 @@ border: 1px solid #ccc !important;
 	 padding: 6px; 
 	 left: 1em; 
 	 top: 1em;
-	 z-index: 1;
 }
 
 .numeric-indicator{
