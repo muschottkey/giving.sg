@@ -145,10 +145,10 @@ xheader
   height: 70px; }
 
 #uf-dockbar-right-menu ul li {
-  display: inline-block;
-  height: 38px;
-  padding: 1em 1em;
-  margin-right: -5px; }
+  display: inline-block;height:38px; padding:1em;
+  /* margin-right: -5px; DB HIDE for the alignment */
+}
+#uf-dockbar-right-menu ul li#uf-dockbar-search-list-item { padding:.25em .75em; width:28px; }
 
 #uf-dockbar-right-menu ul li.highlight span {
   display: block;
@@ -166,8 +166,8 @@ xheader
 
 @media (max-width: 1200px) {
   #uf-dockbar-right-menu ul li {
-    height: 34px;
-    padding: 0.5em 0.5em; }
+    height:34px; padding: 0.5em; 
+  }
 
   #uf-dockbar-right-menu img {
     width: 20px;
@@ -238,7 +238,7 @@ xheader
     left: auto;
     right: 14em;
     padding-top: 0.5em;
-    top: 0;
+    top: 0; margin-right: 1em; 
     background: transparent;
     box-shadow: none;
     /* header height */
