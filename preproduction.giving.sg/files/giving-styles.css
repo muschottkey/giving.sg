@@ -102,6 +102,7 @@ input[type=text]::-ms-clear{
     { font:400 1.125em/1.4 "Open Sans", Arial, Helvetica, sans-serif; color:#cc6666; }
     .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#c66; }
 label.small.grey{color: #999;}
+.box label.small{color:#cc6666;}
 .control-group .controls span small {font-size: 100% !important;}
 .control-group .controls .checkbox > .small {font-size: 100% !important;}
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus{cursor: not-allowed;}
