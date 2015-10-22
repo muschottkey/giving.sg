@@ -1,24 +1,6 @@
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 /* gray out during modal popup */
 
-
-/* THIS IS FOR UPDATING AUI.CSS ONLY */ 
-.aui img {
-    /* Responsive images (ensure images don't scale beyond their parents) */
-    max-width: 100%;
-    /* IE7-8 need help adjusting responsive images */
-    height: auto;
-    /* Part 2: Scale the height according to the width, otherwise you get stretching */
-    vertical-align: middle;
-    border: 0;
-    -ms-interpolation-mode: bicubic;
-     }
-
-/* ENDS HERE */ 
-
-
-
-
 .main-content, .modal-content {
     margin-top: 0px !important;
     /*padding: 0px !important;*/
@@ -130,6 +112,10 @@
 }
 
 
+.aui .btn-group > .btn + .dropdown-toggle {
+    box-shadow: none;
+}
+
 .aui img { 
 	width: auto\9;
 }
@@ -182,6 +168,7 @@
 }
 
 .aui .modal, .aui .modal-content, .aui .modal-body {
+  margin: 0 auto !important;
   overflow-y: initial !important;
   height: auto !important;
 }
@@ -768,8 +755,14 @@ f
   background-color: #ffffff !important;
 }
 
+.aui input[type=text]:hover, .aui input[type=text]:focus{
+  border-color: #91C2AF;
+  color: #91C2AF;
+}
+
+
 .aui label, .aui input, .aui button, .aui select, .aui textarea {
-	font-family: "Lato", Arial, sans-serif;
+	font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
 	font-size: 1.125em;
 	line-height: 1.4;
 }
@@ -787,7 +780,7 @@ f
 }
 
 .aui .btn {
-	font-family: "Lato", Arial, sans-serif;
+	font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
 	line-height: 20px;
 	display: inline-block;
 	margin-bottom: 0px;
@@ -921,6 +914,11 @@ f
     width: initial;
 }
 
+/*Custom CSS for collapse mobile showing for organisation profile page*/
+.row-fluid .wrapper-925 .visible-desktops{
+	width: inherit !important;
+}
+
 #setup-dtn-carousel img {
 	display: block;
 	line-height: 1;
@@ -937,7 +935,9 @@ f
 .refine-inputs .checkbox-clone {
 display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
 border:1px solid #CCC; padding:0 25px 5px 8px; margin-right:6px; position:relative;
-cursor: pointer; font:1.15em/1.4 "Lato", Arial, sans-serif; color: #999 !important;
+cursor: pointer; 
+font:1.15em/1.4 "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
+color: #999 !important;
 }
 
 .popover-content ul {
@@ -1315,6 +1315,11 @@ div.charity-donors img.dr-img {
 .donate-trig.btn-default {
     background-color: #F9F6EC; 
 } 
+
+#disabledDonate{
+	margin-bottom: 0 !important;
+}
+
 .btn-ghost:focus, .donate-trig.btn-default:focus{
 	background-color: #F9F6EC !important;
 	outline: 1px !important;
@@ -1880,6 +1885,7 @@ border: 1px solid #ccc !important;
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .social-share { text-align: center; padding:21px 0; }
      .pre-footer h4 {margin : 0px !important}
+     .pre-footer-social .input-append.cpn-url-box {float: none !important}
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
@@ -1986,6 +1992,7 @@ border: 1px solid #ccc !important;
 	 padding: 6px; 
 	 left: 1em; 
 	 top: 1em;
+	 z-index: 1;
 }
 
 .numeric-indicator{
@@ -2056,3 +2063,92 @@ border: 1px solid #ccc !important;
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev{
   right: 0;
 }
+
+/* overwrite giving sg style to increate label width*/
+.data-list li .person .label {
+    width: 80px !important;
+}
+
+/***************************************************************************
+         CSS FOR LONG DISPLAY NAME IN USER SIDEBAR
+***************************************************************************/
+#sidebar aside.profile-nav h4, #uf-dockbar-sidebar aside.profile-nav h4 {
+	word-wrap: break-word;
+}
+
+/* set width 700 for setup campaign page */
+@media (min-width: 1200px){
+	.width700 {
+    width: 700px !important;
+	}
+}
+
+/***************************************************************************
+      Individual Volunteer Activities and Manage Volunteer Activities
+***************************************************************************/
+@media (min-width: 980px) {
+	.individual-volunteer-activities-portlet .span4.person{
+		    margin-right: 10px !important;
+	}
+}
+
+@media all and (max-width: 979px) and (min-width: 761px) {
+  .individual-volunteer-activities-portlet .span4.person{
+		    margin-left: 10px !important;
+	}
+}
+
+@media (max-width: 760px) {
+  .table-section .span4.person{
+		margin-top: 10px;
+	}
+	
+	.table-section .t-header{
+		padding-right: 0px !important;
+	}
+	
+	.table-section .t-header .select-like.pull-left{
+		  	width:100%;
+		  	margin-left: 0px !important;
+		  	margin-bottom: 10px !important;
+		  	float: none;
+	}
+	
+	.table-section .t-header .pull-right{
+			float: none;
+		  width:100%;
+		  margin: 0px !important;
+	}
+	
+	.table-section .t-header .pull-right .select-like.dropdown {
+		  margin-top: 10px !important;
+		  text-align: center;
+	}
+	
+	.table-section .t-header .pull-right .select-like.dropdown ul.dropdown-menu{
+		  margin-top: 5px !important;
+	}
+	
+	.table-section .t-header #sort-by-dropdown-btn {
+		  border: none !important;
+	}
+}
+
+/***************************************************************************
+     Filter for listing
+***************************************************************************/
+.form-control.inline-block.inner span {
+	display: inline-block;
+}
+
+/***************************************************************************
+     Edit Volunteer Activity
+***************************************************************************/
+input.strike-through{
+	text-decoration: line-through;
+}
+
+
+
+
+
