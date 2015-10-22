@@ -3289,6 +3289,10 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 }
 
 @media (max-width: 979px) {
+	.ie.aui .span12.form-control{
+		width:100% !important;
+		max-width:none !important;
+	}
   .aui.ie #uf-dockbar-search-mobile  input[type="text"],
   .aui.ie #search-form input[type="text"]{
     max-width: 95% !important;
