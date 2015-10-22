@@ -2023,6 +2023,9 @@ border: 1px solid #ccc !important;
 .sod_select:before{
     display: none;
 }
+.cpn-sgtn-item .txt-npo {
+  min-height: 51px;
+}
 
 /***************************************************************************
             Saved credit card token for easy donation
