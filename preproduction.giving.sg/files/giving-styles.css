@@ -567,7 +567,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 }
 .modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
     .modal .social-media-signup a.facebook { background-color: #334479; }
-    .modal .social-media-signup a.linkedin { background-color: #1379C3; }
+    .modal .social-media-signup a.linkedin { background-color: #0077B5; }
 
 .or-separator{
     position: absolute; top: 15em; right:calc(50% - 34px); background:#d8d8d8; 
@@ -1368,7 +1368,7 @@ span.span12.read-more.text-left.m-0{display: none;}
  /* TELL A FRIEND: Social Share */
 .social-share a{
     padding: 8px; margin: 20px auto 0; clear: both;
-    color: #fff; border-radius: 2px; text-align: center;
+    color: #fff; border-radius: 6px; text-align: center;
 }
 .social-share a i{
     font-size: 1.5em;
@@ -3354,7 +3354,6 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
         -webkit-border-radius:4px;
     }
     
-    .f-block .social-share .span1{padding: 8px;}
     .f-block .input-append{margin:0;}
 
     /* HELPER CLASSES */
@@ -3461,12 +3460,12 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
     .social-share { text-align:center; max-width:400px; margin:0 auto; border:1px solid #ccc; padding:30px 5%;  }
     .social-share a { 
-        width:3em !important; height:3em; margin: 0; border-radius: 6px; 
+        width:3em !important; height:57px; margin: 0; border-radius: 6px;padding:16px 8px; 
         display: inline-block !important; margin-right:0.5em !important;
     }
-        .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
+    .row-fluid .social-share a { width:18% !important;clear:none;margin: 0 3%; float:left;display: inline-block !important;}
 
-    .social-share a i{line-height:1.5em;}
+    .social-share a i{line-height:1;}
 
     .dr-img-wrapper { max-width:500px;  }
     .cpn-url-box{

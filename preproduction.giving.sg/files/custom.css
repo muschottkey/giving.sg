@@ -1708,15 +1708,6 @@ div.charity-donors img.dr-img {
 	height: inherit !important;
 	position: relative; 
 }
-/*ISSUE
-/* The margin-right directive causes a layout break on 980 - 1199px*/
-/*.social-share a {
-  width: 3em !important;
-  margin: 0;
-  border-radius: 6px;
-  display: inline-block !important;
-  margin-right: 0.5em !important; 
-}*/
 
 .share-box a.facebook, .share-box a.facebook:hover, .share-box a.facebook:active, .share-box a.facebook:link, .share-box a.facebook:visited {
     color: #46629E !important;
@@ -1829,6 +1820,14 @@ div.clickable>a.img-placeholder-btn {
   width: 55px !important;
   }
   
+ .pre-footer-social .f-block .social-share .span1 i{
+ 	width: 100%;
+ }
+ .pre-footer-social .f-block .social-share .span1 i:before{
+ 	position: absolute;
+  	right: 0;
+  	left: 0;
+ }
 .footer-links ul {
 	margin-left: 0 !important;
 }
@@ -1883,10 +1882,11 @@ border: 1px solid #ccc !important;
 @media (max-width: 767px) {
 	.pre-footer .acc-toggle{color:#cc6666!important;}
 	 /*          Footer         */
+	.social-share a i{line-height:1.4em !important;}
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .social-share { text-align: center; padding:21px 0; }
-     .pre-footer h4 {margin : 0px !important}
-     .pre-footer-social .input-append.cpn-url-box {float: none !important}
+    .pre-footer h4 {margin : 0px !important}
+    .pre-footer-social .input-append.cpn-url-box {float: none !important}
 }
 
 @media (min-width: 768px) and (max-width: 979px) { 
