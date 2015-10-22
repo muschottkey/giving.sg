@@ -3546,6 +3546,13 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
 
 @media (max-width: 767px) {
+	.can-clone .delete-row{
+		position:relative;
+		right:auto;
+		margin:0;
+		top:0;
+		display:block;
+	}
     h1 { font-size:2em; } /* 32px */
     h2 { font-size:1.625em; } /* 26px */
     h3 { font-size: 1.375em; } /* 22px */
