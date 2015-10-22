@@ -761,7 +761,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 /* Logged In Modal user form */
 #userDetails .validation-feedback {margin-top: 0;}
-#userDetails .validation-feedback i, #payment-type .validation-feedback i{font-size: 1em;color: #999999;}
+#userDetails .validation-feedback i, #payment-type .validation-feedback i{font-size: 1em;}
 
 /* Donation Confirmed Logged In Individual */
 .summary-wrapper.email-ack{margin-top: 20px;padding: 10px 60px 25px;}
@@ -3046,7 +3046,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 	border-color:#75b9f0 !important;
 }
 .aui .control-group input.form-control:hover,
-.aui .control-group input.field:hover{border-color:#ccc !important;}
+.aui .control-group input.field:hover{border-color:#ccc;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,

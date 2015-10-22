@@ -755,12 +755,6 @@ f
   background-color: #ffffff !important;
 }
 
-.aui input[type=text]:hover, .aui input[type=text]:focus{
-  border-color: #91C2AF;
-  color: #91C2AF;
-}
-
-
 .aui label, .aui input, .aui button, .aui select, .aui textarea {
 	font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
 	font-size: 1.125em;
