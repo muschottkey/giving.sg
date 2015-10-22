@@ -2530,7 +2530,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .table-actions .input-search input {
     border: 1px solid #CCC !important;
     height: 30px; border-radius: 6px; padding: .5em !important;
-    margin: 0; text-align: left; width: 92%;
+    margin: 0; text-align: left; width: 92% !important; max-width:none;
 }
 
 .volunteer-check{display: none;}
