@@ -149,15 +149,31 @@
 	top: -10000px;
 }
 
+
+.aui .modal{
+	height: auto !important;
+	top:20px !important;
+}
 .aui .modal-body, .aui .modal-backdrop {
   max-height: 100%;
 }
 
-.aui .modal, .aui .modal-content, .aui .modal-body {
-  margin: 0 auto !important;
-  overflow-y: initial !important;
+.modal-body{
+	height: auto !important; 
+    max-height: 100% !important; 
 }
-.aui .modal { z-index:9999 !important; position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; }
+
+.aui .modal, .aui .modal-content, .aui .modal-body {
+  overflow-y: initial !important;
+  height: auto !important;
+}
+.aui .modal { z-index:9999 !important;
+ position:absolute;
+  margin-bottom:2em; 
+  right:0; 
+  left:0; 
+  width:100%; 
+}
 
 .aui .modal-header .close {
   position: absolute;
@@ -832,7 +848,7 @@ f
 
 /* Prevents a box shadow from appearing for the one line inputs*/
 .aui .modal input:not([type="checkbox"]), .aui .main-content input:not([type="checkbox"]), #setup-donation-content input:not([type="checkbox"]), 
-#gf-bkt-login input:not([type="checkbox"]), #claim-tax input:not([type="checkbox"]) {
+#gf-bkt-login input:not([type="checkbox"]), #claim-tax input:not([type="checkbox"]), .aui input[type=checkbox]:focus {
 	box-shadow: none !important;
 }
 
@@ -1504,6 +1520,12 @@ div.charity-donors img.dr-img {
   #gf-bkt-wrapper {
     max-width: 96%;
     padding: 0 0px;
+  }
+  .aui .popover{
+  	left: 0px;
+	right: 0;
+	margin-right: auto;
+	margin-left: auto;
   }
 }
 @media all and (max-width: 979px) and (min-width: 761px) {
