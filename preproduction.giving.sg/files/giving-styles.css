@@ -2618,7 +2618,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 .select-like button:focus, .select-like button:hover{
     color: #c66;background-color: #FFF;
-    border-color: #999;outline: 0; 
+    border-color: #999;outline: 0 !important; 
 }
 .select-like button:focus .caret:before, .select-like button:hover .caret:before, .select-like button .caret:before{
     color: #666;
@@ -2642,11 +2642,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 
  .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, 
-.dropdown-menu li a:hover,.dropdown-menu li a:focus, .dropdown-menu li.active a {background-color: #f9f9f7;}
+.dropdown-menu li a:hover,.dropdown-menu li a:focus, .dropdown-menu li.active a {background-color: #f7f7f7;}
 .select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #666; text-align:left; }
 .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .dropdown-menu li a:hover,
 .dropdown-menu li a:focus{
-    background: #f7f7f7; color:#c66; outline: 0;font-weight: 400;
+    background: #f7f7f7; color:#c66 !important; outline: 0;font-weight: 400;
 }
 .select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #666; font-weight: normal; }
 .select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #C66; }
@@ -3040,14 +3040,6 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     float:right;
     margin:13px 0 0;
 }
-
-.aui .control-group input.form-control:focus,
-.aui .control-group input.field:focus{
-	box-shadow:none !important;
-	border-color:#75b9f0 !important;
-}
-.aui .control-group input.form-control:hover,
-.aui .control-group input.field:hover{border-color:#ccc;}
 
 /* Clear Fix */
 body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .causes:after,
@@ -4039,6 +4031,9 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     .indicate-tdr {font-size:13px !important;}
     
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
+
+
+    .data-list li .person-actions{height:auto !important;}
 
 
     /***********************************************************************

@@ -790,6 +790,9 @@ f
 	border-image: none;
 	box-shadow: none;
 }
+.aui .open-more, .aui .btn-more-img, .aui .btn, .aui .btn-ghost{
+	background-color: #F9F6EC;
+}
 
 .popover-content .aui .btn {margin-bottom:10px;}
 
@@ -1882,7 +1885,7 @@ border: 1px solid #ccc !important;
 @media (max-width: 767px) {
 	.pre-footer .acc-toggle{color:#cc6666!important;}
 	 /*          Footer         */
-	.social-share a i{line-height:1.4em !important;}
+	.social-share a i{line-height:1 !important;}
     .pre-footer-social .control-label{text-align:center;}
     .pre-footer-social .social-share { text-align: center; padding:21px 0; }
     .pre-footer h4 {margin : 0px !important}
@@ -1896,6 +1899,18 @@ border: 1px solid #ccc !important;
 /***************************************************************************
                              DASHBOARD PROFILE
 ***************************************************************************/
+
+.dashboard-wrapper.volunteer-contact{
+	overflow-x:scroll; 
+}
+
+
+@media (max-width: 979px){
+	.dashboard-wrapper.volunteer-contact .dashboard.non-respv{
+		margin-left: 0;
+	}
+	.aui .volunteer-contact .select-like button{display: block;}
+}
 
 @media (max-width: 767px){
 	.wrapper-925 {width: 100%;}
@@ -2007,14 +2022,19 @@ border: 1px solid #ccc !important;
 /***************************************************************************
                              CSS FOR FIXES. OVERRIDES OTHER STYLES
 ***************************************************************************/
-.select-like .dropdown-menu li.active a{
+.select-like .dropdown-menu li.active a, .aui .dropdown-menu li a:link{
     color:#666;
 }
-/*ISSUE
-/* This style interferes with the valid one located in selectordie.css*/
-/*.sod_select:hover, .sod_select.open, .sod_select.focus {
-  border-color: #999 !important;
-}*/
+.aui .dropdown-menu li a{color:#666 !important;}
+.aui .dropdown-menu li a:hover{color:#c66 !important;}
+.select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li.active a{
+	background-image: none !important;
+	background-color: #f7f7f7 !important;
+}
+.aui .dropdown-menu > .active > a, .aui .dropdown-menu > .active > a:hover, .aui .dropdown-menu > .active > a:focus{
+	background-image: none !important;
+	background-color: #f7f7f7;
+}
 .select-like button:focus{
     border-bottom-color: #999;
 }
@@ -2151,6 +2171,26 @@ border: 1px solid #ccc !important;
 input.strike-through{
 	text-decoration: line-through;
 }
+
+/***************************************************************************
+     Start Volunteer Activity
+***************************************************************************/
+@media (min-width: 768px) and (max-width: 979px) {
+	#jira-353-content .volunteer-event label.control-label {
+		min-height: 38px;
+	}
+}
+
+@media (max-width: 767px) {
+	#jira-353-content .volunteer-event .control-group span.help-block{
+		width: 100% !important;
+	}
+}
+
+/***************************************************************************
+     Manage Volunteer Contacts
+***************************************************************************/
+button#manage-volunteer-contacts{white-space: nowrap;}
 
 
 
