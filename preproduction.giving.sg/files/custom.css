@@ -1903,6 +1903,10 @@ border: 1px solid #ccc !important;
 .dashboard-wrapper.volunteer-contact{
 	overflow-x:scroll; 
 }
+.dashboard .panel-title span{
+	clear: both !important;
+}
+
 
 
 @media (max-width: 979px){
