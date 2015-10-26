@@ -1396,7 +1396,7 @@ div.charity-donors img.dr-img {
 .aui .control-group.success .checkbox, .aui .control-group.success .radio,
 .aui .control-group.success input, .aui .control-group.success select,
 .aui .control-group.success textarea {
-  color: #91C2AF !important; color: #91C2AF !important;
+  color: #91C2AF !important;
 }
 
 .control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline,
@@ -2237,7 +2237,7 @@ input.strike-through{
 /***************************************************************************
      Manage Volunteer Contacts
 ***************************************************************************/
-button#manage-volunteer-contacts{white-space: nowrap;}
+button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: nowrap;text-transform: uppercase;}
 
 
     
@@ -2264,5 +2264,24 @@ button#manage-volunteer-contacts{white-space: nowrap;}
 	text-align: center !important;
 }
 
+/***************************************************************************
+    Fix for volunteer modal in mobile
+***************************************************************************/
 
+@media (max-width: 767px) {
+	.vpos-meta .openings span{
+		display: block;
+		font-size: 0.889em;
+	}
+}
 
+/***************************************************************************
+    Removing/overriding non-responsive styles in order to make volunteer contact responsive
+***************************************************************************/
+
+@media (max-width: 767px) {
+	
+	.row-fluid.non-respv .span5{
+		width: 100%;
+	}
+}
