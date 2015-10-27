@@ -6,21 +6,25 @@
 }
 .sod_select .sod_option.selected:before{margin:-3px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
-body.non-respv { min-width: 1002px; overflow-x: visible; }  
+body { font:16px/1.375 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
+body.non-respv { min-width: 1002px; overflow-x:visible; }  
 
 /* Typography */
-h1, h2, h3, h4, h5{ 
+h1, h2, h3, h4, h5, h6{ 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
+    font-weight:bold; line-height:1.25em; color:#C66; font-style: normal;
 }
-h1 { font-size:2.5em; } /* 40px */
-h2 { font-size:2.25em; } /* 36px */
-h3 { font-size: 1.75em; } /* 28px */
-h4 { font-size: 1.5em; } /* 24px */
-h5, h6 { font-size: 1.125em; color:#999; } /* 18px */
+h1 { font-size:2rem; line-height:1.25em; } /* 32px */
+h2 { font-size:1.625rem; line-height:1.15384615em; } /* 26px */
+h3 { font-size: 1.375rem; line-height: 1.13636364em; } /* 22px */
+h4 { font-size: 1.125em; line-height: 1.11111111em; } /* 18px */
+h5 { font-size: 1rem;  } /* 24px */
+h6 { font-size: 1rem; color:#999; } /* 18px */
+h4, h5, h6 { line-height:1.25em; }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
-p, textarea, input { line-height:1.4; word-wrap: break-word; }
+p, textarea, input { /* 16px */
+    font-size:1rem; line-height:1.25; word-wrap: break-word; margin: 0.5rem 0 0.4rem 0; 
+} 
 
 a, a:link {color:#9DC9EE; text-decoration: none; }
     a:visited {color:#999;}
@@ -3124,6 +3128,14 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
                             Media Queries
 ***************************************************************************/
 @media (min-width: 1200px) {
+    h1 { font-size:4rem; line-height:1.05em; } /* 64px */
+    h2 { font-size:3.5rem; line-height:1.1em; } /* 56px */
+    h3 { font-size:3rem; line-height:1.1em; } /* 48px */
+    h4 { font-size:2.5rem; line-height:1.125em; } /* 40px */
+    h5 { font-size:2rem; line-height:1.25em; } /* 32px */
+    h6 { font-size:1.75rem; line-height:1.25em; } /* 24px */
+    p { line-height: 1.375em; }
+
     body.non-respv{overflow-x:hidden;}
     .modal { max-width:1000px; }
     .start-cta, .span12.start-cta{height: 377px;}
@@ -3151,6 +3163,14 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     .table-section.jplist{margin-bottom:80px;}
 }
 @media (min-width: 980px) and (max-width: 1199px) { 
+    /* Typography */
+    h1 { font-size:3rem; line-height:1.05em; } /* 48px */
+    h2 { font-size:2.5rem; } /* 40px */
+    h3 { font-size: 2rem; } /* 32px */
+    h4 { font-size: 1.5rem; } /* 24px */
+    h5 { font-size: 1.125em;  } /* 18px */
+    h6 { font-size: 1em;  } /* 16px */
+
     #evn-volunteer-now .box{padding:2em;}
     #vol-buttons{margin-top:20px;}
     .side-padding-wrapper{max-width: 94%;}
@@ -3238,10 +3258,11 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
 }
 @media (min-width: 768px) and (max-width: 979px) { 
-    h2 { font-size:2em; } /* 32px */
-    h3 { font-size: 1.75em; } /* 28px */
-    h4 { font-size: 1.5em; } /* 24px */
-    h5 { font-size: 1.125em; } /* 18px */
+    h2 { font-size: 1.75rem; } /* 28px */
+    h3 { font-size: 1.375rem; line-height: 1.13636364em; } /* 22px */
+    h4 { font-size: 1.125rem; } /* 18px */
+    h5, h6 { font-size: 1rem; } /* 16px */
+
     .left-tablet{text-align: left;}
     #causes-wrapper { max-width:600px; }
     #causes-wrapper .cause-box { width:28%; margin-left: 3%; }
@@ -3542,11 +3563,6 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
 
 @media (max-width: 767px) {
-    h1 { font-size:2em; } /* 32px */
-    h2 { font-size:1.625em; } /* 26px */
-    h3 { font-size: 1.375em; } /* 22px */
-    h4 { font-size: 1.25em; } /* 20px */
-
     .mg-60-mobile{margin-bottom: 60px !important;}
     .btns-lst li{ display:block; max-width:240px; margin:0 auto 15px; }
     .btns-lst li a{display:block;}
