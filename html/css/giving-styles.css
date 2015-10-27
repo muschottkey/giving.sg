@@ -11,8 +11,8 @@ body.non-respv { min-width: 1002px; overflow-x:visible; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6{ 
-    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    font-weight:bold; line-height:1.25em; color:#C66; font-style: normal;
+    font-family: 'Century Gothic', 'Apple Gothic', Arial, Helvetica, sans-serif;
+    line-height:1.25em; color:#C66; font-style: normal; font-weight:200;
 }
 h1 { font-size:2rem; line-height:1.25em; } /* 32px */
 h2 { font-size:1.625rem; line-height:1.15384615em; } /* 26px */
@@ -20,7 +20,7 @@ h3 { font-size: 1.375rem; line-height: 1.13636364em; } /* 22px */
 h4 { font-size: 1.125em; line-height: 1.11111111em; } /* 18px */
 h5 { font-size: 1rem;  } /* 24px */
 h6 { font-size: 1rem; color:#999; } /* 18px */
-h4, h5, h6 { line-height:1.25em; }
+h4, h5, h6 { line-height:1.25em; font-weight:bold;  }
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { /* 16px */
     font-size:1rem; line-height:1.25; word-wrap: break-word; margin: 0.5rem 0 0.4rem 0; 
@@ -34,8 +34,7 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 #logo a { font-size:1.1em; }
 .section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
 .p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5 { 
-    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
+    color:#C66; 
 }
 .section-header h5, .section-header h6, .p-section h5, .conf-states-wrapper .box h5
     { font-size: 1.125em; color:#999; font-weight:700; }
@@ -3131,9 +3130,10 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     h1 { font-size:4rem; line-height:1.05em; } /* 64px */
     h2 { font-size:3.5rem; line-height:1.1em; } /* 56px */
     h3 { font-size:3rem; line-height:1.1em; } /* 48px */
-    h4 { font-size:2.5rem; line-height:1.125em; } /* 40px */
-    h5 { font-size:2rem; line-height:1.25em; } /* 32px */
-    h6 { font-size:1.75rem; line-height:1.25em; } /* 24px */
+    h4 { font-size:1.5rem; } /* 24px */
+    h5 { font-size:1.25rem; margin: 0.82rem 0 0.656rem; } /* 20px */
+    h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
+    h4, h5, h6 { font-weight:200; line-height:1.25em; }
     p { line-height: 1.375em; }
 
     body.non-respv{overflow-x:hidden;}
