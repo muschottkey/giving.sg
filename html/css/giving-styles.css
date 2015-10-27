@@ -263,6 +263,9 @@ hr.m5{margin: 5px 0;}
 .control-group.error .validation-feedback i{
     color: #cc6666;
 }
+.control-group.error .fa-check-circle:before { content: "\f057"; }
+
+
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus{
     border-color: #cc6666 !important;
 }
@@ -526,7 +529,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .dropdown-green.btn-group button .caret:before{
     color: #FFF;
 }
-.control-group.error .validation-feedback i { color: #cc6666; }
 .control-group.success .validation-feedback i { color: #91C2AF; }
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
