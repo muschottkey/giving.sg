@@ -1622,7 +1622,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 /* CAMPAIGN LANDING */
 .landing-cpn-slider-wrapper{
-    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;border:1px solid #ccc;
+    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
 }
 .landing-cpn-slider-wrapper.slider-small, .landing-cpn-slider-wrapper.slider-small .swiper-slide{
     margin-bottom: 0px;border-bottom:none;
@@ -1632,11 +1632,11 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 100%;
 }
 
-.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc; }
+.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc !important; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
     border:1px solid #CCCCCC; border-bottom: none; overflow: hidden;
 }
-.landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px; }
+.landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px;background: rgb(238, 238, 238); }
 .landing-cpn-slider-wrapper .cn-ln-details .causes{
     border:none; border-right:1px solid #cccccc;
 }
@@ -1656,7 +1656,7 @@ span.span12.read-more.text-left.m-0{display: none;}
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
-  background: rgb(238, 238, 238);
+  
 }
 
 .landing-cpn-slider-wrapper .slider-navigation{

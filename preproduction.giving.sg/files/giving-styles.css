@@ -4,6 +4,7 @@
   height: 0 !important;
   display:none !important;
 }
+input, textarea{-webkit-appearance: none !important;}
 .sod_select .sod_option.selected:before{margin:-9px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
@@ -433,7 +434,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     right: 12px;
 }
 #jira-353-content input{
-    padding-right:12px;
+    padding-right:44px;
 }
 
 #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
@@ -1381,7 +1382,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 
 .social-share a.gplus{ 
-    background-color: #3B6B94;
+    background-color: #0007b5;
 }
 .social-share a.shareit{ 
     background-color: #BBBBBB;
@@ -1624,7 +1625,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 /* CAMPAIGN LANDING */
 .landing-cpn-slider-wrapper{
-    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;border:1px solid #ccc;
+    margin-top: 80px; overflow: hidden; position: relative; width: 100%; margin-bottom: 20px;
 }
 .landing-cpn-slider-wrapper.slider-small, .landing-cpn-slider-wrapper.slider-small .swiper-slide{
     margin-bottom: 0px;border-bottom:none;
@@ -1634,11 +1635,11 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 100%;
 }
 
-.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc; }
+.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc !important; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
     border:1px solid #CCCCCC; border-bottom: none; overflow: hidden;
 }
-.landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px; }
+.landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px; background: rgb(238, 238, 238);}
 .landing-cpn-slider-wrapper .cn-ln-details .causes{
     border:none; border-right:1px solid #cccccc;
 }
@@ -1658,7 +1659,7 @@ span.span12.read-more.text-left.m-0{display: none;}
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
-  background: rgb(238, 238, 238);
+
 }
 
 .landing-cpn-slider-wrapper .slider-navigation{
@@ -3107,7 +3108,6 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
   -wekit-border-radius:6px;
   padding:7px 12px !important;
 }
-.aui .swiper-slide .btn{color:#fff !important;}
 .ttl-row .btn:focus,
 .ttl-row .btn:active,
 .inform-area .box-btn .btn:active,
