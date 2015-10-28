@@ -1374,7 +1374,7 @@ div.charity-donors img.dr-img {
     background: transparent none repeat scroll 0% 0% !important;
 }
 
-.ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
+.ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn, 
 .tax-status .fa-check-circle-o {
   color: #9DC9EE !important; 
 }
@@ -1908,9 +1908,6 @@ border: 1px solid #ccc !important;
                              DASHBOARD PROFILE
 ***************************************************************************/
 
-.dashboard-wrapper.volunteer-contact{
-	overflow-x:scroll; 
-}
 .dashboard .panel-title span{
 	clear: both !important;
 }
@@ -1926,6 +1923,9 @@ border: 1px solid #ccc !important;
 
 @media (max-width: 767px){
 	.wrapper-925 {width: 100%;}
+	.dashboard-wrapper.volunteer-contact{
+		overflow-x:scroll; 
+	}
 }
 
 @media (max-width: 320px) {
@@ -2238,6 +2238,20 @@ input.strike-through{
 ***************************************************************************/
 button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: nowrap;text-transform: uppercase;}
 
+@media (max-width: 767px) {
+	.aui .volunteer-contact .data-list-item .span5:nth-child(2) .span6{
+		width: 100% !important;
+	}
+
+	.aui .volunteer-contact .block.email a{
+		  display: block;
+		  max-width: 100% !important;
+		  text-overflow: ellipsis;
+		  white-space: nowrap;
+		  overflow: hidden;
+	}
+
+}
 
     
 /***************************************************************************
