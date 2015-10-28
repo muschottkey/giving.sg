@@ -248,6 +248,10 @@ xheader
 
   #main-nav li {
     display: inline-block; }
+    
+  #main-nav li:nth-child(n+7) {
+    display: none !important;
+  }
 
   #main-nav ul a {
     display: inline-block;
