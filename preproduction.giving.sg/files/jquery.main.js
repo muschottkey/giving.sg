@@ -121,7 +121,7 @@
 }(jQuery));
 
 function MainTabs(){
-	var item_click = $('.tab-nav-area a');
+	var item_click = $('.tab-nav-area a:not(.ignore-tab-event)');
 	item_click.click(function(){
 		var id_ = $(this).attr('href');
 		

@@ -425,7 +425,9 @@
 .cpn-url-box input, .cpn-url-box button{
     height: 40px !important;
 }
-
+.cpn-url-box button:hover{
+	background-color: #F9F6EC;
+}
 .accordion-title {
     margin: 0px auto 20px !important;
 }
