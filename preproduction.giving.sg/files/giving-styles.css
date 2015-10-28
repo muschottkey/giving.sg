@@ -1436,7 +1436,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .cpn-suggestions{
     height:510px; max-height:560px; position:relative; top:0; left:0; display:block; padding:0 10px;
 }
-.cpn-suggestions .swiper-slide { width:260px !important;}
+.cpn-suggestions .swiper-slide { width:270px !important;}
 .cpn-sgtn-item{
     width: 240px; float: left; margin-right:20px; position: relative; overflow: hidden; 
     -webkit-user-select: none; -khtml-user-select: none; 
@@ -3563,7 +3563,6 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
 
 @media (max-width: 767px) {
 	.tab-section .row-fluid.non-respv .span6{width:48.7179% !important;}
-	.row-fluid .social-share a{padding:4px !important;}
 	.can-clone .delete-row{
 		right:-50px;
 		width:40px;
