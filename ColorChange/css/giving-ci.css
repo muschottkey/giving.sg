@@ -1,0 +1,186 @@
+/* general settings */
+body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; }
+h1, h2, h3, h4, h5 { 
+	font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
+    color:#000; line-height: 1.1em; font-weight: normal;
+}
+h6 { font-size: 1.125em; }	/* 18px */
+h5 { font-size: 1.3125em; }	/* 21px */
+h4 { font-size: 1.5em; }	/* 24px */
+h3 { font-size: 1.875em; }	/* 30px */
+h2 { font-size: 2.25em; }	/* 36px */
+h1 { font-size: 3em; } 		/* 48px */
+
+a, a:link { color:#17a4e1; text-decoration:underline; }
+a:hover, a:active  { text-decoration:none; }
+
+header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
+	h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
+		text-decoration:none; color:#000;
+	}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration:underline; }
+p { font-size: 1em; line-height: 1.45; }
+
+.z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+}
+.z-depth-2 {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.z-depth-3 {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.btn { border-radius:2px; }
+
+.btn-primary, .btn-success { 
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+	background-color: #17A4E1; color: #FFF;
+}
+
+/* HEADER 
+Corporate Identity CHANGE (BLUE) */
+#main-nav-header {  background:#17A4E1; height:70px; }
+#logo { 
+	position: absolute; font-size:28px; font-weight:200; 
+    left:1em; top: 0; padding:.65em 0 0;
+    font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; 
+}
+#logo a {
+    color:#FFF; max-width: 250px; display: inline-block; text-transform: uppercase;
+}
+#main-nav { overflow:hidden; }
+#main-nav ul a {
+    color:#FFF; display: block; height: 50px;
+    font-size:1em; line-height:3.7; padding: 0 .5em;
+    text-transform: uppercase; border:0 none;
+}
+#main-nav li { display: inline-block; }
+
+#uf-dockbar-right-menu { right:1em; }
+#uf-dockbar-right-menu ul li { height:38px; padding: 1em 0.5em;}
+#uf-dockbar-right-menu ul a { text-transform: uppercase; color:#FFF; font-weight:500;  }
+#uf-dockbar-hamburger-menu, #uf-dockbar-hamburger-menu a, #main-nav #uf-dockbar-search-mobile { display: none; }
+
+/* CAROUSEL 
+Corporate Identity CHANGE (BLUE) */
+
+.home-slider  { margin-bottom:40px; }
+.gallery-txt-box {
+    position: absolute; background: #17a4e1; color: #fff; text-align: left;
+    right: 14%; bottom:10%; width:168px; padding: 1em 1.5em; border-radius: 6px;
+}
+.gallery-date-box { 
+	border-top: 1px solid #73C8ED; margin: 1em -1.5em 0;padding: 1em 1em .5em;
+}
+.gallery-txt-box p { margin: 0 0 30px; font-size: .9em; float: left; }
+.gallery-txt-box .fa-stack { float:right; }
+.gallery-date-box .fa-stack-2x { font-size:1.2em; }
+.gallery-date-box .fa-stack-1x { font-size:.4em; top: -4px; } 
+
+/* Why Giving TYPO 1 scale downwards
+Corporate Identity CHANGE (BLUE) */
+.inform-area h2 { font-size: 1.875em; }	/* 30px */
+.inform-area h3 { font-size: 1.5em; }	/* 24px */
+.inform-area p { font-size:1em; font-weight:300; line-height: 1.5em; }
+
+.inform-add-lst .img{padding:0 0 10px;}
+.inform-add-lst p { margin:0 0 20px; }
+
+.inform-add-lst li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -3px 0 0;
+    width: 23.076923076923077%; /* Col-3 */
+    padding: 0 0 0 5.982905982905983%;
+}
+.inform-add-lst li:first-child { padding-left: 0; }
+
+/* Why Giving TYPO 1 scale downwards
+Corporate Identity CHANGE (BLUE) */
+.text-block-add { background: #ededed; }
+.text-block-add:before { border-color: #ededed transparent transparent transparent; }
+.text-block-add p { font-weight:500; }
+
+
+/* Why Giving TYPO 1 scale downwards
+Corporate Identity CHANGE (BLUE) */
+.cause-box img { background: #e8e8e8; }
+#causes-wrapper .cause-box { border:none; }
+.cause-box a, .cause-box a:link { text-decoration:none; color: #000; }
+	.cause-box a:hover, .cause-box a:active, .cause-box a:hover h4, .cause-box a:active  h4 { 
+		text-decoration:none; color: #000 !important; 
+	}
+.cause-box a h4 { color: #000 !important; }
+.sgtn-body h5 { font-weight:500; }
+.sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; }
+.cpn-suggestions .swiper-slide { width: 270px !important; }
+.cpn-sgtn-item .sgtn-body .sgt-avatar { width:100%; }
+.cpn-sgtn-item .sgtn-body .sgt-avatar {
+    width: 36px; height: 36px; border: 2px solid #FFF;
+}
+#cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
+.mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
+.modalwrapper .summary-wrapper .headings span{ color:#999; }
+
+.campaign-stats h4 { font-size:1.75em; color:#999; }
+
+.cpn-sgtn-item .causes.multiple ul li{ display: none; }
+.cpn-sgtn-item:hover { border-bottom:0px; background:#1283B4; }
+
+.cpn-sgtn-item .campaign-stats .progress { 
+    border: 1px solid #FFF; background-color:#ccc;  height:3px; margin-bottom:7px; 
+}
+.campaign-stats .progress .bar {
+    border-radius:0px; background:#45B6E7; text-shadow: none; box-shadow: none;
+}
+.cpn-sgtn-item:hover .campaign-stats .progress{
+    border:1px solid #17a4e1;
+    background-color: #1283B4;
+}
+
+.cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
+    background-color: #1283B4;
+}
+.cpn-sgtn-item:hover .campaign-stats h4{
+	color:#0D6287;
+}
+.cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
+.more-days.inline h4 { font-size:1.125em; color:#999; }
+.cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
+.ttl-row .btn { text-transform: uppercase; color:#333; text-decoration: none; padding:7px 20px; }
+
+/* NPO lIsting */
+.main-content, .modal-content { margin-top: 70px; }
+.listings-wrapper .cpn-sgtn-item { min-height:auto; }
+
+.checkbox-clone.checked:before { color:#000 !important; }
+.cause-box img { opacity: 1; }
+#causes-wrapper:after  { content:""; clear:both; display:block;  }
+.title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
+
+/* FOOTER */
+.pre-footer { margin: 0 auto;  }
+.social-share a, .social-share a:link { color: #FFF;}
+.pre-footer h4 { font-weight: normal; font-size: 1.3125em; }
+.footer-links li a, .footer a { text-decoration: none; }
+.footer-links li a:hover, .footer a:hover { text-decoration: underline; }
+.pre-footer h4 a, .pre-footer h4 a:hover { color: #000; }
+.control-group .controls > span, label { 
+	color:#000; 
+}
+
+
+
+@media only screen and (min-width: 980px) {
+	#main-nav {
+	    /* reset main nav style */
+	    position: absolute; height: auto;
+	    width: auto;
+	    left:170px; right:auto;
+	    padding-top: 0.5em;
+	    top: 0; margin-right: 1em; 
+	    background: transparent;
+	    box-shadow: none;
+	    z-index: 1030; 
+	}
+}
