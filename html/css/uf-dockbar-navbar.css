@@ -458,6 +458,7 @@ xheader
   background-color: white;
   text-align: left;
   height: 66px;
+  margin-top: 0;
   width: 0px;
   min-width: 0px; }
 
@@ -641,6 +642,37 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-sidebar .b-top {
   border-top: 1px solid #CCC;
   border-bottom: 2px solid #CCC; }
+
+/* Temporary additions. Should remove from template when going live*/
+#uf-dockbar-sidebar ul li > a .li-icon {
+  border: 1px solid #999999;
+  background-color: transparent;
+  background: none;
+  font-size: 22px;
+  padding-left: 3px;
+  padding-bottom: 4px;
+  padding-top: 1px;
+  padding-right: 2px;
+}
+
+#uf-dockbar-sidebar ul li > a .li-icon {
+  border: 0px solid rgb(153, 153, 153);
+}
+
+.dark a.active {
+  text-decoration: underline !important;
+  color: #c66 !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  color: #FFF !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  background: #C66 none repeat scroll 0% 0%;
+}
+
+/* End of temporary additions */
 
 #uf-dockbar-sidebar {
   position: fixed;
