@@ -273,18 +273,20 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
-body { color:#333; font:16px/1.25 "Roboto", Arial, sans-serif; -webkit-font-smoothing:antialiased; }
+body { font:16px/1.25 "Roboto", Arial, sans-serif; color:#333; -webkit-font-smoothing:antialiased; }
 h1, h2, h3, h4, h5 { 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
     color:#000; line-height: 1.1em; font-weight: normal;
 }
-h1 { font-size:2em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }                /* 32px */
-h2 { font-size:1.625em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0; }     /* 26px */
-h3 { font-size:1.375em; line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0; }     /* 24px */
+h1 { font-size:3em; line-height:1.05em; margin: 2.1rem 0 1.68rem 0; }       /* 48px */
+h2 { font-size:2.25em; margin: 1.78rem 0 1.424rem 0; }  /* 36px */
+h3 { font-size:1.75em; margin: 1.46rem 0 1.168rem 0; }     /* 24px */
 h4 { font-size:1.125em; margin: 1.14rem 0 0.912rem 0; } /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
-p { font-size:.875em; line-height: 1.45; margin:0 0 0.5em }
+h2, h3 { line-height:1.25em; }
+h4, h5, h6 { line-height:1.22222222em;  }
+p { font-size:1em; line-height: 1.375em; margin:0 0 0.5em }
 
 button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em; line-height:1em; }
 
@@ -449,29 +451,28 @@ Corporate Identity CHANGE (BLUE) */
 	color:#000; 
 }
 
+/* TABLET (LARGE) */
+@media only screen and (max-width: 980px) {
+    h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
+    h2 { font-size:2em; }       /* 36px */
+    h3 { font-size:1.5rem; }    /* 24x */
+}
 
-@media only screen and (min-width: 768px) {
-    h1 { font-size:2em; }       /* 32px */
-    h2 { font-size:2em;  }      /* 32px */
-    h3 { font-size:1.375em; }  /* 22x */
-    h4 { font-size:1.125em; }  /* 18px */
-    h5 { font-size:1.125rem; margin: 0.82rem 0 0.656rem; }
-    h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
-    h1, h2, h3 { line-height:1.25em; }
-    h4, h5 { line-height:1.22222222em; }
-    p { line-height: 1.375em; }
+/* TABLET (SMALL) */
+@media only screen and (max-width: 768px) {
+    h1 { font-size:2em; line-height:1.25em; }               /* 32px */
+    h2 { font-size:1.625em; line-height: 1.15384615em; }    /* 26px */
+    h3 { font-size:1.375rem; line-height: 1.13636364em; }   /* 22px */
+    h4, h5, h6 { line-height:1.11111111em; }
+    p { line-height: 1.25em; } 
+}
+
+/* PHONE */
+@media only screen and (max-width:480px) {
+    p { font-size:.875em; } /* 14px */
 }
 
 @media only screen and (min-width: 980px) {
-    h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
-    h2 { font-size:2em;  }      /* 36px */
-    h3 { font-size:1.5rem; }    /* 284x */
-    h4 { font-size:1.125rem; }  /* 18px */
-    h5 { font-size:1.125rem; margin: 0.82rem 0 0.656rem; }
-    h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
-    h2, h3 { line-height:1.25em; }
-    h4, h5 { line-height:1.22222222em; }
-    p { line-height: 1.375em; }
 
     #main-nav {
         /* reset main nav style */
@@ -484,16 +485,4 @@ Corporate Identity CHANGE (BLUE) */
         box-shadow: none;
         z-index: 1030; 
     }
-}
-
-@media only screen and (min-width: 1200px) {
-    h1 { font-size:3em; line-height:1.05em; }   /* 48px */
-    h2 { font-size:2.25em; }                    /* 36px */
-    h3 { font-size:1.75rem; }                   /* 28px */
-    h4 { font-size:1.125rem; }                  /* 18px */
-    h5 { font-size:1.125rem; margin: 0.82rem 0 0.656rem; }
-    h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
-    h2, h3 { font-weight:200; line-height:1.25em; }
-    h4, h5 { line-height:1.22222222em; }
-    p { line-height: 1.375em; }
 }
