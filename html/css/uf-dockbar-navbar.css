@@ -52,7 +52,7 @@ xheader
 #logo a {
   text-transform: uppercase;
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
-  font-size: 20px; }
+ }
 
 @media only screen and (min-width: 1200px) {
   #main-nav-header {
@@ -78,7 +78,7 @@ xheader
   -o-transform: scale(0.8);
   transform: scale(0.8); }
 
-#logo a, #uf-dockbar-right-menu ul li.sign-in span {
+#uf-dockbar-right-menu ul li.sign-in span {
   color: #999 !important;
   font-size: 20px;
   font-weight: 200;
@@ -228,7 +228,7 @@ xheader
   line-height: 50px;
   padding: 0 1em;
   border-bottom: 1px solid #e0e6ef;
-  color: #999 !important; }
+  color: #999; }
 
 #main-nav ul .current {
   box-shadow: 8px 0px #c66 inset; }
