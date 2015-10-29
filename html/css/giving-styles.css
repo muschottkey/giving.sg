@@ -1,9 +1,5 @@
 /* general settings */
-::-ms-clear {
-  width : 0 !important;
-  height: 0 !important;
-  display:none !important;
-}
+::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
 .sod_select .sod_option.selected:before{margin:-3px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.375 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
