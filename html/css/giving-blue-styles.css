@@ -318,18 +318,25 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-5 { box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
 /* HEADER 
 Corporate Identity CHANGE (BLUE) */
-#main-nav-header {  background:#17A4E1; height:70px; }
+#main-nav-header {   }
+#main-nav{
+    padding-top: 0;
+}
+#main-nav ul a.current{
+    background-color: #ebebeb;
+    color: #999 !important;
+}
+
+
+
 @media only screen and (min-width: 1200px) {
-    #logo { 
-    	position: absolute; font-size:28px; font-weight:200; 
-        left:1em; top: 0; padding:.65em 0 0;
-        font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif; 
-    }
+    
 }
+
 #logo a {
-    color:#FFF; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
+    color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
 }
-#main-nav { overflow:hidden; }
+/*#main-nav { overflow:hidden; }
 #main-nav ul a {
     color:#FFF; display: block; height: 50px;
     font-size:1em; line-height:3.7; padding: 0 .5em;
@@ -340,12 +347,13 @@ Corporate Identity CHANGE (BLUE) */
 #uf-dockbar-right-menu { right:1em; }
 #uf-dockbar-right-menu ul li { height:38px; padding: 1em 0.5em;}
 #uf-dockbar-right-menu ul a { text-transform: uppercase; color:#FFF; font-weight:500;  }
-
+*/
 
 /* CAROUSEL 
 Corporate Identity CHANGE (BLUE) */
 
 .home-slider  { margin-bottom:40px; }
+.p-title, h3{color: #333;}
 .gallery-txt-box {
     position: absolute; background: #17a4e1; color: #fff; text-align: left;
     right: 14%; bottom:10%; width:168px; padding: 1em 1.5em; border-radius: 6px;
@@ -384,39 +392,31 @@ Corporate Identity CHANGE (BLUE) */
 
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
+/* Causes Display */
+#causes-mobile{
+    background-color: #17a4e1;
+}
 .cause-box img { background: #e8e8e8; }
-#causes-wrapper .cause-box { border:none; }
-.cause-box a, .cause-box a:link { text-decoration:none; color: #000; }
+#causes-wrapper .cause-box { border:none;border-radius: 6px; }
+.cause-box a, .cause-box a:link { text-decoration:none; color: #000;background-color: #ffffff; }
 	.cause-box a:hover, .cause-box a:active, .cause-box a:hover h4, .cause-box a:active  h4 { 
 		text-decoration:none; color: #000 !important; 
 	}
-.cause-box a h4 { color: #000 !important; }
+.cause-box a h4 { color: #141414 !important; }
 .sgtn-body h5 { font-weight:500; }
 .sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; }
 .cpn-suggestions .swiper-slide { width: 270px !important; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar { width:100%; }
-.cpn-sgtn-item .sgtn-body .sgt-avatar {
-    width: 36px; height: 36px; border: 2px solid #FFF;
-}
+
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
 
-.campaign-stats h4 { font-size:1.75em; color:#999; }
 
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 .cpn-sgtn-item:hover { border-bottom:0px; background:#1283B4; }
 
-.cpn-sgtn-item .campaign-stats .progress { 
-    border: 1px solid #FFF; background-color:#ccc;  height:3px; margin-bottom:7px; 
-}
-.campaign-stats .progress .bar {
-    border-radius:0px; background:#45B6E7; text-shadow: none; box-shadow: none;
-}
-.cpn-sgtn-item:hover .campaign-stats .progress{
-    border:1px solid #17a4e1;
-    background-color: #1283B4;
-}
+
 
 .cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
     background-color: #1283B4;
@@ -425,8 +425,7 @@ Corporate Identity CHANGE (BLUE) */
 	color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-.more-days.inline h4 { font-size:1.125em; color:#999; }
-.cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
+
 .ttl-row .btn { text-transform: uppercase; color:#333; text-decoration: none; padding:7px 20px; }
 
 /* NPO lIsting */
@@ -438,17 +437,173 @@ Corporate Identity CHANGE (BLUE) */
 #causes-wrapper:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
-/* FOOTER */
-.pre-footer { margin: 0 auto;  }
+
+
+/******************************************/
+/*  START OF FOOTER*/
+/*****************************************/
+.pre-footer, .pre-footer-social { margin: 0 auto !important; }
+.pre-footer{
+    background-color: #242424 !important;
+}
+.pre-footer-social{
+    background-color: #333333;
+    border-top-color: #353535 !important;
+    border-bottom-color: #424242 !important;
+}
 .social-share a, .social-share a:link { color: #FFF;}
-.pre-footer h4 { font-weight: normal; font-size: 1.3125em; }
-.footer-links li a, .footer a { text-decoration: none; }
+.pre-footer h4 { font-weight: normal; font-size: 1.3125em;}
+.pre-footer h4 a, .pre-footer h4 a:link{color: #ffffff !important;}
+.footer-links li a,.footer-links li a:link, .footer a, .footer a:link { text-decoration: none; color: #ffffff !important;}
 .footer-links li a:hover, .footer a:hover { text-decoration: underline; }
-.pre-footer h4 a, .pre-footer h4 a:hover { color: #000; }
 .control-group .controls > span, label { 
 	color:#000; 
 }
+.footer{background-color: #333333;}
+.footer-ul span{color: #ffffff;}
 
+.pre-footer-social label{color: #ffffff;}
+.acc-toggle:before{color:#ffffff;}
+/******************************************/
+/*  END OF FOOTER*/
+/*****************************************/
+
+/******************************************/
+/*  START OF CARD UI */
+/*****************************************/
+
+.cpn-sgtn-item{
+    border-radius:6px;
+}
+.cpn-sgtn-item .sgtn-img{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    overflow: hidden;
+}
+.cpn-sgtn-item > .sgtn-img img {
+    max-height: none !important;
+    max-width: 270px !important;
+}
+.cpn-sgtn-item .sgtn-body h5 a{
+    color: #141414;
+}
+.cpn-sgtn-item .sgtn-body h5 a:visited{
+    color: #424242;
+}
+.cpn-sgtn-item .txt-npo{
+    color: #666;
+}
+
+.campaign-stats h4 { font-size:1.75em; color:#141414; }
+.more-days.inline h4 { font-size:1.125em; color:#141414; }
+.campaign-stats span.em, .more-days.inline span.em{color: #141414 !important;}
+
+.cpn-sgtn-item .campaign-stats .progress { 
+    border: 1px solid #FFF;
+    background-color:#666;  
+    height:5px; 
+    margin-bottom:7px; 
+}
+.campaign-stats .progress .bar {
+    border-radius:0px; 
+    background:#17A4E1; 
+    text-shadow: none; 
+    box-shadow: none;
+}
+
+.cpn-sgtn-item .sgtn-body .sgt-avatar {
+    width: 40px;
+    height: 40px; 
+    border: 2px solid #FFF;
+    margin-top:-47px;
+}
+
+/* Hover state of card */
+
+.cpn-sgtn-item:hover{
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+.cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
+    background-color: #17a4e1;
+    border-bottom-color: #117ca9;
+}
+.cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5 a:visited, .cpn-sgtn-item:hover .txt-npo{
+    color: #ffffff;
+}
+.cpn-sgtn-item:hover .campaign-stats .progress{
+    border:1px solid #17a4e1;
+    background-color: #0c5372;
+}
+.cpn-sgtn-item:hover .campaign-stats .progress .bar {
+    background-color: #49bbec;
+}
+.cpn-sgtn-item:hover .campaign-stats .btn{
+    background-color: #117ca9 !important;
+    color: #ffffff;
+}
+.cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
+
+.cpn-sgtn-item:hover .campaign-stats h4 , .cpn-sgtn-item:hover .campaign-stats span.em , .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{ color:#0c5372 !important; }
+
+/* Expired Card */
+.cpn-sgtn-item.expired .sgtn-body, .cpn-sgtn-item.expired .box-r-footer, .cpn-sgtn-item.expired:hover .sgtn-body, .cpn-sgtn-item.expired:hover .box-r-footer{
+    background-color: #f7f7f7;
+    border-bottom-color: #CCC;
+}
+.cpn-sgtn-item.expired .more-days.inline h4, .cpn-sgtn-item.expired .more-days.inline span{
+    color: #a8a8a8 !important;
+}
+.cpn-sgtn-item.expired:hover .sgtn-img{
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+    overflow: hidden;
+}
+.cpn-sgtn-item.expired:hover .campaign-stats .progress{
+    border:1px solid #f7f7f7;
+    background-color: #0c5372;
+}
+.cpn-sgtn-item.expired:hover .sgtn-body h5 a{
+    color: #141414;
+}
+.cpn-sgtn-item.expired:hover .sgtn-body h5 a:visited{
+    color: #424242;
+}
+.cpn-sgtn-item.expired:hover .txt-npo{
+    color: #666;
+}
+
+/******************************************/
+/*  END OF CARD UI */
+/*****************************************/
+
+/*****************************************/
+/*  BUTTON STYLES START */
+/****************************************/
+.btn {line-height: 1 !important;}
+
+#donate-buttons button:hover{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; /* Depth shadow 2*/
+}
+#donate-buttons .btn.active,  #donate-buttons .btn.active:hover{
+    background-color: #17a4e1 !important;
+}
+
+
+.carousel > .ico.active .fa, .carousel > .ico:hover .fa{
+    color: #93c564;
+}
+
+@media only screen and (max-width: 767px) {
+    .pre-footer .acc-toggle {
+      color: #fff;
+      background-color: #242424;
+      border-color:#424242;
+      border-width:1px 0 0;
+    }
+    .pre-footer .p-section{
+        background-color: #333333;
+    }
+}
 
 @media only screen and (min-width: 768px) {
     h1 { font-size:2em; }       /* 32px */
@@ -459,7 +614,7 @@ Corporate Identity CHANGE (BLUE) */
     h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
     h1, h2, h3 { line-height:1.25em; }
     h4, h5 { line-height:1.22222222em; }
-    p { line-height: 1.375em; }
+    p { line-height: 1.375em; }#93c564#93c564
 }
 
 @media only screen and (min-width: 980px) {
@@ -471,19 +626,21 @@ Corporate Identity CHANGE (BLUE) */
     h6 { font-size:1rem; margin: 0.5rem 0 0.4rem; } /* 16px */
     h2, h3 { line-height:1.25em; }
     h4, h5 { line-height:1.22222222em; }
-    p { line-height: 1.375em; }
+    p { line-height: 1.375em; }  
+}
 
-    #main-nav {
-        /* reset main nav style */
-        position: absolute; height: auto;
-        width: auto;
-        left:170px; right:auto;
-        padding-top: 0.5em;
-        top: 0; margin-right: 1em; 
-        background: transparent;
-        box-shadow: none;
-        z-index: 1030; 
+@media only screen and (max-width: 1200px) {
+    #main-nav-header{ background:#ffffff;}
+    #main-nav{ 
+        padding-top: 50px;
     }
+    #main-nav ul a{
+        border-bottom:0px;
+    }
+    #main-nav ul a.current, #main-nav ul a:hover{
+        box-shadow: 6px 0px #74ac40 inset;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -496,4 +653,26 @@ Corporate Identity CHANGE (BLUE) */
     h2, h3 { font-weight:200; line-height:1.25em; }
     h4, h5 { line-height:1.22222222em; }
     p { line-height: 1.375em; }
+
+    #main-nav-header{ background:#ffffff;height:70px;}
+
+     #main-nav {
+    /* reset main nav style */
+        left:170px; right:auto;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1030; 
+    }
+
+    #main-nav ul a {
+        padding: 1.6875em 1.4em; /* 27px margin each added to a height of 16px totalling 70px*/
+        border-radius: 0;
+    }
+
+    #main-nav ul a:hover, #main-nav ul a.current {
+        box-shadow: 0 -6px 0 0 #74ac40 inset;
+    }
+
+   
+   
 }
