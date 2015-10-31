@@ -286,8 +286,6 @@ h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 p { font-size:.875em; line-height: 1.45; margin:0 0 0.5em }
 
-button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em; line-height:1em; }
-
 a, a:link { color:#17a4e1; text-decoration:underline; }
 a:hover, a:active  { text-decoration:none; }
 
@@ -297,13 +295,6 @@ header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
 	}
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration:underline; }
 
-
-.btn { border-radius:2px; }
-
-.btn-primary, .btn-success { 
-    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-	background-color: #17A4E1; color: #FFF;
-}
 
 .z-depth-0 { box-shadow: none !important; }
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
@@ -327,6 +318,9 @@ Corporate Identity CHANGE (BLUE) */
     color: #999 !important;
 }
 
+/* MANUAL MARGIN, FOR DEMO ONLY */
+.section-page{margin-top: 37px;}
+
 
 
 @media only screen and (min-width: 1200px) {
@@ -336,28 +330,21 @@ Corporate Identity CHANGE (BLUE) */
 #logo a {
     color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
 }
-/*#main-nav { overflow:hidden; }
-#main-nav ul a {
-    color:#FFF; display: block; height: 50px;
-    font-size:1em; line-height:3.7; padding: 0 .5em;
-    text-transform: uppercase; border:0 none;
-}
-#main-nav li { display: inline-block; }
-
-#uf-dockbar-right-menu { right:1em; }
-#uf-dockbar-right-menu ul li { height:38px; padding: 1em 0.5em;}
-#uf-dockbar-right-menu ul a { text-transform: uppercase; color:#FFF; font-weight:500;  }
-*/
 
 /* CAROUSEL 
 Corporate Identity CHANGE (BLUE) */
 
 .home-slider  { margin-bottom:40px; }
-.p-title, h3{color: #333;}
+.p-title.landing, h3{color: #141414;}
+.p-title.landing + p{color:#424242;}
 .gallery-txt-box {
     position: absolute; background: #17a4e1; color: #fff; text-align: left;
     right: 14%; bottom:10%; width:168px; padding: 1em 1.5em; border-radius: 6px;
 }
+.nl-form{
+    color:#333333;
+}
+.nl-form .refine-inputs span{color: #333333 !important;}
 .gallery-date-box { 
 	border-top: 1px solid #73C8ED; margin: 1em -1.5em 0;padding: 1em 1em .5em;
 }
@@ -404,40 +391,44 @@ Corporate Identity CHANGE (BLUE) */
 	}
 .cause-box a h4 { color: #141414 !important; }
 .sgtn-body h5 { font-weight:500; }
-.sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; }
-.cpn-suggestions .swiper-slide { width: 270px !important; }
-.cpn-sgtn-item .sgtn-body .sgt-avatar { width:100%; }
+
 
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
-
-
-.cpn-sgtn-item .causes.multiple ul li{ display: none; }
-.cpn-sgtn-item:hover { border-bottom:0px; background:#1283B4; }
-
-
-
-.cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
-    background-color: #1283B4;
-}
-.cpn-sgtn-item:hover .campaign-stats h4{
-	color:#0D6287;
-}
-.cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-
 .ttl-row .btn { text-transform: uppercase; color:#333; text-decoration: none; padding:7px 20px; }
 
 /* NPO lIsting */
 .main-content, .modal-content { margin-top: 70px; }
 .listings-wrapper .cpn-sgtn-item { min-height:auto; }
-
-.checkbox-clone.checked:before { color:#000 !important; }
+.checkbox-clone.checked:before { color:#74ac40 !important; content: "\f00c" !important; }
 .cause-box img { opacity: 1; }
 #causes-wrapper:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
+/* Search Page */
+#search-form label.control-label{
+    color: #999 !important;
+}
+#search-form input#search_term{
+    border-color: #999;
+    color: #333 !important;
+}
+#search-form input#search_term:focus{border-color: #17A4E1;}
+#search-form input#search_term::-webkit-input-placeholder {color: #ccc !important;} /* WebKit, Blink, Edge */
+#search-form input#search_term:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
+#search-form input#search_term::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
+#search-form input#search_term:-ms-input-placeholder{color: #ccc !important;} /* Internet Explorer 10-11 */
 
+/* Checkboxes */
+#select-more-camp input[type=checkbox]:checked + label:before,
+ .refine-inputs input[type=checkbox]:checked + label:before,
+  #select-more-causes input[type=checkbox]:checked + label:before,
+  #data-list-filters input[type=checkbox]:checked + label:before,
+  .refine-inputs .checkbox-clone.checked:before,
+  .checkbox-clone.checked:before{
+    color: #74ac40 !important;
+  }
 
 /******************************************/
 /*  START OF FOOTER*/
@@ -464,6 +455,11 @@ Corporate Identity CHANGE (BLUE) */
 
 .pre-footer-social label{color: #ffffff;}
 .acc-toggle:before{color:#ffffff;}
+
+form#signUpNewsletterForm input{
+    background-color: #242424;
+    border-color: #525252;
+} 
 /******************************************/
 /*  END OF FOOTER*/
 /*****************************************/
@@ -518,6 +514,17 @@ Corporate Identity CHANGE (BLUE) */
     margin-top:-47px;
 }
 
+.cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
+    background-color: #1283B4;
+}
+.cpn-sgtn-item:hover .campaign-stats h4{
+    color:#0D6287;
+}
+.cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
+.sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; }
+.cpn-suggestions .swiper-slide { width: 270px !important; }
+.cpn-sgtn-item .causes.multiple ul li{ display: none; }
+
 /* Hover state of card */
 
 .cpn-sgtn-item:hover{
@@ -542,6 +549,7 @@ Corporate Identity CHANGE (BLUE) */
     color: #ffffff;
 }
 .cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
+.cpn-sgtn-item:hover { border-bottom:0px; background:#17a4e1; }
 
 .cpn-sgtn-item:hover .campaign-stats h4 , .cpn-sgtn-item:hover .campaign-stats span.em , .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{ color:#0c5372 !important; }
 
@@ -579,7 +587,18 @@ Corporate Identity CHANGE (BLUE) */
 /*****************************************/
 /*  BUTTON STYLES START */
 /****************************************/
-.btn {line-height: 1 !important;}
+button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em; line-height:1em; }
+
+.btn { border-radius:2px !important;line-height: 1 !important; }
+
+.btn-primary, .btn-success { 
+    font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
+    background-color: #17A4E1 !important; color: #FFF;
+}
+
+.btn, .aui .btn, .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img{
+    background-color: #BCE6FB;
+}
 
 #donate-buttons button:hover{
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; /* Depth shadow 2*/
@@ -588,6 +607,21 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #17a4e1 !important;
 }
 
+
+/* Hover states */
+.btn-primary:hover, .aui .btn-primary:hover, .btn-success:hover, .aui .btn-success:hover{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+}
+
+/* Disabled state */
+.btn:disabled, .aui .btn:disabled{
+    background-color: #999 !important;
+    cursor: not-allowed;
+}
+
+/*****************************************/
+/*  BUTTON STYLES END */
+/****************************************/
 
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
     color: #93c564;
