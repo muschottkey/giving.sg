@@ -1,6 +1,6 @@
 /* COLOR PALETTE */
 /* PRIMARY COLOR BLUE */
-.blue { background-color: #17a4e1 !important; }
+/*.blue { background-color: #17a4e1 !important; }*/
 .blue-text { color: #17a4e1 !important; }
 
 .blue.light-50, .blue.accent-100 { background-color: #FFF !important; }
@@ -199,7 +199,7 @@
 .light-grey-text.text-dark-900 { color: #8f8f8f !important; }
 
 /* PRIMARY COLOR GREY */
-.grey { background-color: #999 !important; }
+/*.grey { background-color: #999 !important; }*/
 .grey-text { color: #999 !important; }
 
 .grey.light-50, .grey.accent-100 { background-color: #FFF !important; }
@@ -230,7 +230,7 @@
 .grey-text.text-dark-900 { color: #5c5c5c !important; }
 
 /* PRIMARY COLOR DARK GREY */
-.grey { background-color: #333 !important; }
+/*.grey { background-color: #333 !important; }*/
 .grey-text { color: #333 !important; }
 
 .grey.light-50, .grey.accent-100 { background-color: #b8b8b8 !important; }
@@ -260,7 +260,8 @@
 .grey.dark-900 {background-color: #000 !important; }
 .grey-text.text-dark-900 { color: #000 !important; }
 
-.shades.black, .black { background-color: #000 !important; }
+/*.shades.black, .black { background-color: #000 !important; }*/
+.shades.black{ background-color: #000 !important; }
 .shades-text.text-black, .black-text { color: #000 !important; }
 
 .shades-text.text-black-87, .black-text-87 { color: #202020 !important; }
@@ -430,6 +431,11 @@ Corporate Identity CHANGE (BLUE) */
     color: #74ac40 !important;
   }
 
+/* Single Campaign Listing*/
+#cpn-info div.img-box a i{
+    padding: 4px 8px;
+}
+
 /******************************************/
 /*  START OF FOOTER*/
 /*****************************************/
@@ -534,6 +540,9 @@ form#signUpNewsletterForm input{
     background-color: #17a4e1;
     border-bottom-color: #117ca9;
 }
+.cpn-sgtn-item:hover .box-r-footer{
+    border-top-color: #117ca9;
+}
 .cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5 a:visited, .cpn-sgtn-item:hover .txt-npo{
     color: #ffffff;
 }
@@ -589,22 +598,38 @@ form#signUpNewsletterForm input{
 /****************************************/
 button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em; line-height:1em; }
 
+.btn-group > .btn {
+  font-size: 16px !important;
+}
+
 .btn { border-radius:2px !important;line-height: 1 !important; }
 
-.btn-primary, .btn-success { 
+.btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn,.choice-buttons button.yes.active, .btn-toggle .btn.active { 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     background-color: #17A4E1 !important; color: #FFF;
 }
 
-.btn, .aui .btn, .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img{
+.btn, .aui .btn{
     background-color: #BCE6FB;
+}
+
+.btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url{
+    background-color: #BCE6FB !important;
 }
 
 #donate-buttons button:hover{
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; /* Depth shadow 2*/
 }
-#donate-buttons .btn.active,  #donate-buttons .btn.active:hover{
+#donate-buttons .btn.active,  #donate-buttons .btn.active:hover, .preset-amts .btn-ghost.active{
     background-color: #17a4e1 !important;
+}
+
+.dropdown > button, .select-like button, .action-btn > button{
+    box-shadow: none !important;
+}
+
+.steps-content .btn-area input, .steps-content .btn-save input, .add-btn-lst a{
+    background-color: #BCE6FB !important;
 }
 
 
@@ -710,3 +735,16 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
    
    
 }
+
+
+/*************************************************************/
+            /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
+/*************************************************************/
+
+.data-list li .action-btn button, .dropdown-select button{
+    border:1px solid #ccc !important;
+}
+
+.dropdown-menu a{text-decoration: none;}
+.select-like > button { border-bottom:1px solid #ccc !important;}
+.progress-dots ul li:first-child{margin-left: 0;}
