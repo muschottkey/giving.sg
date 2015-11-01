@@ -385,14 +385,34 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #17a4e1;
 }
 .cause-box img { background: #e8e8e8; }
+.donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
 #causes-wrapper .cause-box { border:none;border-radius: 6px; }
 .cause-box a, .cause-box a:link { text-decoration:none; color: #000;background-color: #ffffff; }
-	.cause-box a:hover, .cause-box a:active, .cause-box a:hover h4, .cause-box a:active  h4 { 
-		text-decoration:none; color: #000 !important; 
+	.cause-box a:hover h4, .cause-box a:active  h4 { 
+		text-decoration:none; color: #ffffff !important; 
 	}
 .cause-box a h4 { color: #141414 !important; }
-.sgtn-body h5 { font-weight:500; }
-
+.cause-box a{
+    position: relative;
+    overflow: hidden;
+    }
+.cause-box a img{
+    border-radius:6px;
+}
+.cause-box a h4{
+    color: #FFFDFD !important;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0,0,0,0.3);
+    display: block; 
+    bottom: 0;
+    margin-bottom: -50px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.cause-box:hover a h4{
+    margin-bottom: 0;
+}
 
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
@@ -499,7 +519,6 @@ form#signUpNewsletterForm input{
 .campaign-stats h4 { font-size:1.75em; color:#141414; }
 .more-days.inline h4 { font-size:1.125em; color:#141414; }
 .campaign-stats span.em, .more-days.inline span.em{color: #141414 !important;}
-
 .cpn-sgtn-item .campaign-stats .progress { 
     border: 1px solid #FFF;
     background-color:#666;  
@@ -527,7 +546,7 @@ form#signUpNewsletterForm input{
     color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-.sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; }
+.sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden;font-weight:500; }
 .cpn-suggestions .swiper-slide { width: 270px !important; }
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 
@@ -648,6 +667,30 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 /*  BUTTON STYLES END */
 /****************************************/
 
+/******************************************/
+/*  START OF SIDEBAR */
+/*****************************************/
+
+#uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
+    text-decoration: none;
+}
+#uf-dockbar-sidebar li.admin > a, #uf-dockbar-sidebar ul li > a.active, #sidebar ul li > a.active{
+    background-color: #ebebeb;
+    color: #999 !important;
+    box-shadow: 6px 0 0 0 #74ac40 inset;
+    border:0;
+    text-decoration: none !important;
+}
+
+
+/* Hover styles */
+#uf-dockbar-sidebar ul li > a:hover, #sidebar ul li > a:hover{
+    box-shadow: 6px 0 0 0 #74ac40 inset;
+}
+/******************************************/
+/*  END OF SIDEBAR */
+/*****************************************/
+
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
     color: #93c564;
 }
@@ -748,3 +791,4 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 .dropdown-menu a{text-decoration: none;}
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
+
