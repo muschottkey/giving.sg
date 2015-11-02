@@ -23,9 +23,9 @@ h5, h6 { font-size: 1.125em; color:#999; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p, textarea, input { line-height:1.4; word-wrap: break-word; }
 
-a, a:link {color:#9DC9EE; text-decoration: none; }
-    a:visited {color:#999;}
-    a:hover {color:#C66;text-decoration: underline;}
+a{color:#17a4e1; text-decoration: none; }
+    a:visited {color:#7a7a7a;}
+    a:hover {text-decoration: underline;}
 
 /* Corporate Identity chnages */
 #logo a { font-size:1.1em; }
@@ -40,7 +40,7 @@ a, a:link {color:#9DC9EE; text-decoration: none; }
 .conf-states-wrapper p, .dtn-desc .small, .cpn-story .body p, .cpn-holder .sgtn-body p,
 .refine-search p, .boxed-wrapper .gf-bkt tr td, .box .summary-wrapper p.small.grey,
 .control-group p.small, .npo-header p, .signupnpo p, .controls label.small
-    { color:#333;}
+    { color:#666;}
     #gf-bkt-wrapper .gf-bkt tr td.warning { color:#faa732;}
     #gf-bkt-wrapper .gf-bkt tr td.info  { color:#999;}
 
@@ -250,7 +250,7 @@ hr.m5{margin: 5px 0;}
 
 /* error state*/
 .control-group.error input, .control-group.error select, .control-group.error textarea {
-  border-color: #cc6666 !important;
+  border-color: #d47d7d !important;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
@@ -303,11 +303,14 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     font-weight: 400;
 }
 .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus{
-    border-color: #91C2AF !important;
+    border-color: #838d4e !important;
+}
+.control-group.error input:focus, .control-group.error textarea:focus{
+	color:#d47d7d;
 }
 
 .control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea{
-    color: #91C2AF !important;
+    color: #333 !important;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
 }
@@ -530,7 +533,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     color: #FFF;
 }
 .control-group.error .validation-feedback i { color: #cc6666; }
-.control-group.success .validation-feedback i { color: #91C2AF; }
+.control-group.success .validation-feedback i { color: #838d4e; }
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
 .btn-toggle { margin-bottom:40px; width:100%; }
@@ -1195,7 +1198,7 @@ a.carousel-control { color:#FFF;}
 #vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(2) td,
 #vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(3) td:first-child{
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    color:#C66; font-weight: bold; background-color: #F9F6EC;
+    color:#141414; font-weight: bold; background-color: #F9F6EC;
 }
 .t-header-wrapper { padding: 15px 3%; }
 #gf-bkt-wrapper .gf-bkt thead tr td { font-size:1em;}
@@ -2639,7 +2642,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .volunteer-contact .email{margin-top:0px; word-break:break-all;}
 
 .volunteer-header.p481 > div{ position: relative; min-height: 40px; }
-.volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; color: #cc6666;}
+.volunteer-header.p481 > div > span{ position: absolute; top: 50%; margin-top:-10px; color: #141414;}
 .volunteer-header.p481 > div:last-child > span{ top:0; margin-top: 0; }
 .data-list-item .label.label-success{font-size: .75em;}
 .data-list li .icon i{font-size: 0.9em;}

@@ -131,7 +131,7 @@
             /* Hover state for options, also used when a user uses his/hers up/down keys */
             .sod_select .sod_option.active
                 {
-                    background: #f7f7f7;
+                    background: #dbdbdb;
                     color: #cc6666;
                 }
 
