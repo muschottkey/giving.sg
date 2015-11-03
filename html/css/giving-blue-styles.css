@@ -287,8 +287,9 @@ h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 p { font-size:.875em; line-height: 1.45; margin:0 0 0.5em }
 
-a, a:link { color:#17a4e1; text-decoration:underline; }
-a:hover, a:active  { text-decoration:none; }
+a, a:link { color:#17a4e1; text-decoration:none; }
+a:visited {color:#7a7a7a;}
+    a:hover {text-decoration: underline;}
 
 header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
     h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 

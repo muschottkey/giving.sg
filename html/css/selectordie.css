@@ -145,15 +145,13 @@
                 /* Displays a check mark for the selected option */
                 .sod_select .sod_option.selected:before
                     {   
+						line-height:1;
                         font-family: FontAwesome;
                         font-size: 0.75em;
                         content: "\f00c";
                         position: absolute;
                         right: 10px;
                         top: 50%;
-                        -webkit-transform: translateY(-50%);
-                            -ms-transform: translateY(-50%);
-                                transform: translateY(-50%);
                         display: inline-block;
                         color: #cc6666;
                         height: 9px;

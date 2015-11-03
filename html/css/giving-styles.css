@@ -5,7 +5,8 @@
   display:none !important;
 }
 input, textarea{-webkit-appearance: none !important;}
-.sod_select .sod_option.selected:before{margin:-9px 0 0 !important;}
+.popover-content ul label:before{margin:-3px 0 0 !important;}
+.sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
 body.non-respv { min-width: 1002px; overflow-x: visible; }  
@@ -420,6 +421,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #donation-userDetails .validation-feedback{
     position: absolute; display: none; background: transparent; 
     height: 15px; margin-top:7px; right:15px;
+	width:auto;
 }
 .control-group.error .validation-feedback, .control-group.success .validation-feedback{
     display: inline-block !important;
