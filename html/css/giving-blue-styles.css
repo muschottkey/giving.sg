@@ -274,28 +274,26 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
-body { font:16px/1.25 "Roboto", Arial, sans-serif; color:#333; -webkit-font-smoothing:antialiased; }
+body { color:#333; font:16px/1.25 "Roboto", Arial, sans-serif; -webkit-font-smoothing:antialiased; }
 h1, h2, h3, h4, h5 { 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
     color:#000; line-height: 1.1em; font-weight: normal;
 }
-h1 { font-size:3em; line-height:1.05em; margin: 2.1rem 0 1.68rem 0; }       /* 48px */
-h2 { font-size:2.25em; margin: 1.78rem 0 1.424rem 0; }  /* 36px */
-h3 { font-size:1.75em; margin: 1.46rem 0 1.168rem 0; }     /* 24px */
+h1 { font-size:2em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }                /* 32px */
+h2 { font-size:1.625em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0; }     /* 26px */
+h3 { font-size:1.375em; line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0; }     /* 24px */
 h4 { font-size:1.125em; margin: 1.14rem 0 0.912rem 0; } /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
-h2, h3 { line-height:1.25em; }
-h4, h5, h6 { line-height:1.22222222em;  }
-p { font-size:1em; line-height: 1.375em; margin:0 0 0.5em }
+p { font-size:.875em; line-height: 1.45; margin:0 0 0.5em }
 
 a, a:link { color:#17a4e1; text-decoration:underline; }
 a:hover, a:active  { text-decoration:none; }
 
 header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
-	h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
-		text-decoration:none; color:#000;
-	}
+    h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
+        text-decoration:none; color:#000;
+    }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration:underline; }
 
 
@@ -310,8 +308,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-3 { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 .z-depth-4, .modal { box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 .z-depth-5 { box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
-
-
 /* HEADER 
 Corporate Identity CHANGE (BLUE) */
 #main-nav-header {   }
@@ -322,13 +318,19 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #ebebeb;
     color: #999 !important;
 }
-#logo a {
-    color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
-}
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
 .section-page{margin-top: 37px;}
 
+
+
+@media only screen and (min-width: 1200px) {
+    
+}
+
+#logo a {
+    color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
+}
 
 /* CAROUSEL 
 Corporate Identity CHANGE (BLUE) */
@@ -345,7 +347,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 .nl-form .refine-inputs span{color: #333333 !important;}
 .gallery-date-box { 
-	border-top: 1px solid #73C8ED; margin: 1em -1.5em 0;padding: 1em 1em .5em;
+    border-top: 1px solid #73C8ED; margin: 1em -1.5em 0;padding: 1em 1em .5em;
 }
 .gallery-txt-box p { margin: 0 0 30px; font-size: .9em; float: left; }
 .gallery-txt-box .fa-stack { float:right; }
@@ -354,7 +356,7 @@ Corporate Identity CHANGE (BLUE) */
 
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
-.inform-area h3 { font-size: 1.5em; }	/* 24px */
+.inform-area h3 { font-size: 1.5em; }   /* 24px */
 .inform-area p { font-size:1em; font-weight:300; line-height: 1.5em; }
 
 .inform-add-lst .img{padding:0 0 10px;}
@@ -386,9 +388,9 @@ Corporate Identity CHANGE (BLUE) */
 .donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
 #causes-wrapper .cause-box { border:none;border-radius: 6px; }
 .cause-box a, .cause-box a:link { text-decoration:none; color: #000;background-color: #ffffff; }
-	.cause-box a:hover h4, .cause-box a:active  h4 { 
-		text-decoration:none; color: #ffffff !important; 
-	}
+    .cause-box a:hover h4, .cause-box a:active  h4 { 
+        text-decoration:none; color: #ffffff !important; 
+    }
 .cause-box a h4 { color: #141414 !important; }
 .cause-box a{
     position: relative;
@@ -472,7 +474,7 @@ Corporate Identity CHANGE (BLUE) */
 .footer-links li a,.footer-links li a:link, .footer a, .footer a:link { text-decoration: none; color: #ffffff !important;}
 .footer-links li a:hover, .footer a:hover { text-decoration: underline; }
 .control-group .controls > span, label { 
-	color:#000; 
+    color:#000; 
 }
 .footer{background-color: #333333;}
 .footer-ul span{color: #ffffff;}
@@ -660,12 +662,15 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     background-color: #999 !important;
     cursor: not-allowed;
 }
+
 /*****************************************/
 /*  BUTTON STYLES END */
+/****************************************/
 
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
+
 #uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
     text-decoration: none;
 }
@@ -676,6 +681,7 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     border:0;
     text-decoration: none !important;
 }
+
 /* Hover styles */
 #uf-dockbar-sidebar ul li > a:hover, #sidebar ul li > a:hover{
     box-shadow: 6px 0 0 0 #74ac40 inset;
@@ -687,27 +693,8 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
     color: #93c564;
 }
-/* DESKTOP (LARGE) */
-@media only screen and (max-width: 1200px) {
-    #main-nav-header{ background:#ffffff; height:70px; }
-    #main-nav {
-    /* reset main nav style */
-        left:170px; right:auto;
-        background: transparent;
-        box-shadow: none;
-        z-index: 1030; 
-    }
-    #main-nav ul a {
-        padding: 1.6875em 1.4em; /* 27px margin each added to a height of 16px totalling 70px*/
-        border-radius: 0;
-    }
 
-    #main-nav ul a:hover, #main-nav ul a.current {
-        box-shadow: 0 -6px 0 0 #74ac40 inset;
-    }
-}
-
-/* DESKTOP & TABLET (LARGE) */
+/* TABLET (LARGE) */
 @media only screen and (max-width: 980px) {
     h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
     h2 { font-size:2em; }       /* 36px */
@@ -721,20 +708,58 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     h3 { font-size:1.375rem; line-height: 1.13636364em; }   /* 22px */
     h4, h5, h6 { line-height:1.11111111em; }
     p { line-height: 1.25em; } 
-
-    .pre-footer .acc-toggle {
-      color: #fff; background-color: #242424;
-      border-color:#424242;border-width:1px 0 0;
-    }
-    .pre-footer .p-section{ background-color: #333;}
 }
-
 /* PHONE */
 @media only screen and (max-width:480px) {
     p { font-size:.875em; } /* 14px */
 }
 
+@media only screen and (max-width: 767px) {
+    .pre-footer .acc-toggle {
+      color: #fff;
+      background-color: #242424;
+      border-color:#424242;
+      border-width:1px 0 0;
+    }
+    .pre-footer .p-section{
+        background-color: #333333;
+    }
+}
 
+@media only screen and (max-width: 1200px) {
+    #main-nav-header{ background:#ffffff;}
+    #main-nav{ 
+        padding-top: 50px;
+    }
+    #main-nav ul a{
+        border-bottom:0px;
+    }
+    #main-nav ul a.current, #main-nav ul a:hover{
+        box-shadow: 6px 0px #74ac40 inset;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    #main-nav-header{ background:#ffffff;height:70px;}
+
+     #main-nav {
+    /* reset main nav style */
+        left:170px; right:auto;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1030; 
+    }
+
+    #main-nav ul a {
+        padding: 1.6875em 1.4em; /* 27px margin each added to a height of 16px totalling 70px*/
+        border-radius: 0;
+    }
+
+    #main-nav ul a:hover, #main-nav ul a.current {
+        box-shadow: 0 -6px 0 0 #74ac40 inset;
+    }
+}
 
 
 /*************************************************************/
