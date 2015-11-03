@@ -310,6 +310,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-3 { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 .z-depth-4, .modal { box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 .z-depth-5 { box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
+
+
 /* HEADER 
 Corporate Identity CHANGE (BLUE) */
 #main-nav-header {   }
@@ -320,13 +322,13 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #ebebeb;
     color: #999 !important;
 }
+#logo a {
+    color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
+}
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
 .section-page{margin-top: 37px;}
 
-#logo a {
-    color:#74ac40; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
-}
 
 /* CAROUSEL 
 Corporate Identity CHANGE (BLUE) */
@@ -658,15 +660,12 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     background-color: #999 !important;
     cursor: not-allowed;
 }
-
 /*****************************************/
 /*  BUTTON STYLES END */
-/****************************************/
 
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
-
 #uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
     text-decoration: none;
 }
@@ -677,8 +676,38 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     border:0;
     text-decoration: none !important;
 }
+/* Hover styles */
+#uf-dockbar-sidebar ul li > a:hover, #sidebar ul li > a:hover{
+    box-shadow: 6px 0 0 0 #74ac40 inset;
+}
+/******************************************/
+/*  END OF SIDEBAR */
+/*****************************************/
 
-/* TABLET (LARGE) */
+.carousel > .ico.active .fa, .carousel > .ico:hover .fa{
+    color: #93c564;
+}
+/* DESKTOP (LARGE) */
+@media only screen and (max-width: 1200px) {
+    #main-nav-header{ background:#ffffff; height:70px; }
+    #main-nav {
+    /* reset main nav style */
+        left:170px; right:auto;
+        background: transparent;
+        box-shadow: none;
+        z-index: 1030; 
+    }
+    #main-nav ul a {
+        padding: 1.6875em 1.4em; /* 27px margin each added to a height of 16px totalling 70px*/
+        border-radius: 0;
+    }
+
+    #main-nav ul a:hover, #main-nav ul a.current {
+        box-shadow: 0 -6px 0 0 #74ac40 inset;
+    }
+}
+
+/* DESKTOP & TABLET (LARGE) */
 @media only screen and (max-width: 980px) {
     h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
     h2 { font-size:2em; }       /* 36px */
@@ -694,47 +723,19 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     p { line-height: 1.25em; } 
 
     .pre-footer .acc-toggle {
-      color: #fff;
-      background-color: #242424;
-      border-color:#424242;
-      border-width:1px 0 0;
+      color: #fff; background-color: #242424;
+      border-color:#424242;border-width:1px 0 0;
     }
-    .pre-footer .p-section{
-        background-color: #333333;
-    }
-
+    .pre-footer .p-section{ background-color: #333;}
 }
+
 /* PHONE */
 @media only screen and (max-width:480px) {
     p { font-size:.875em; } /* 14px */
 }
 
-@media only screen and (min-width: 980px) {
-/* Hover styles */
-#uf-dockbar-sidebar ul li > a:hover, #sidebar ul li > a:hover{
-    box-shadow: 6px 0 0 0 #74ac40 inset;
-}
-/******************************************/
-/*  END OF SIDEBAR */
-/*****************************************/
 
-.carousel > .ico.active .fa, .carousel > .ico:hover .fa{
-    color: #93c564;
-    }
-}
-@media only screen and (max-width: 1200px) {
-    #main-nav-header{ background:#ffffff;}
-    #main-nav{ 
-        padding-top: 50px;
-    }
-    #main-nav ul a{
-        border-bottom:0px;
-    }
-    #main-nav ul a.current, #main-nav ul a:hover{
-        box-shadow: 6px 0px #74ac40 inset;
-    }
 
-}
 
 /*************************************************************/
             /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
