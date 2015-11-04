@@ -311,13 +311,22 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-5 { box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
 /* HEADER 
 Corporate Identity CHANGE (BLUE) */
-#main-nav-header {   }
+#main-nav-header { 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+     }
 #main-nav{
     padding-top: 0;
 }
+#main-nav ul li > a{text-transform: uppercase;}
+#main-nav ul a{color: #333;text-decoration: none;}
 #main-nav ul a.current{
-    background-color: #ebebeb;
+    background-color: #f0f0f0;
     color: #999 !important;
+}
+
+#uf-dockbar-hamburger-menu a i{
+    font-size: 1.875em; /*30px*/
+    color: #333;
 }
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
@@ -354,6 +363,13 @@ Corporate Identity CHANGE (BLUE) */
 .gallery-txt-box .fa-stack { float:right; }
 .gallery-date-box .fa-stack-2x { font-size:1.2em; }
 .gallery-date-box .fa-stack-1x { font-size:.4em; top: -4px; } 
+.gallery-txt-box button{
+    padding: 10px 20px !important;
+    text-transform: uppercase;
+}
+.gallery-txt-box button:hover{
+    background-color: #8AD3F3 !important;
+}
 
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
@@ -428,7 +444,7 @@ Corporate Identity CHANGE (BLUE) */
 #causes-wrapper:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
-/* Search Page */
+/* Search Page & Search UI */
 #search-form label.control-label{
     color: #999 !important;
 }
@@ -436,12 +452,20 @@ Corporate Identity CHANGE (BLUE) */
     border-color: #999;
     color: #333 !important;
 }
-#search-form input#search_term:focus{border-color: #17A4E1;}
-#search-form input#search_term::-webkit-input-placeholder {color: #ccc !important;} /* WebKit, Blink, Edge */
-#search-form input#search_term:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
-#search-form input#search_term::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
-#search-form input#search_term:-ms-input-placeholder{color: #ccc !important;} /* Internet Explorer 10-11 */
-
+#search-form input#search_term:focus, #uf-dockbar-search-mobile input[type="text"]:focus{border-color: #17A4E1;}
+#search-form input#search_term::-webkit-input-placeholder , #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder{color: #ccc !important;} /* WebKit, Blink, Edge */
+#search-form input#search_term:-moz-placeholder, #uf-dockbar-search-mobile input[type="text"]:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
+#search-form input#search_term::-mox-placeholder, #uf-dockbar-search-mobile input[type="text"]::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
+#search-form input#search_term:-ms-input-placeholder, #uf-dockbar-search-mobile input[type="text"]:-ms-input-placeholder{color: #ccc !important;} /* Internet Explorer 10-11 */
+#uf-dockbar-search-mobile input[type="text"]{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important; 
+}
+#uf-dockbar-search-mobile input[type="text"]:focus{
+    -webkit-box-shadow: 0 -1px 0 0 #999 inset !important;
+    box-shadow: 0 -1px 0 0 #999 inset !important;
+    border-radius: 0;
+    border-color: #ffffff;
+}
 /* Checkboxes */
 #select-more-camp input[type=checkbox]:checked + label:before,
  .refine-inputs input[type=checkbox]:checked + label:before,
@@ -469,18 +493,23 @@ Corporate Identity CHANGE (BLUE) */
     border-top-color: #353535 !important;
     border-bottom-color: #424242 !important;
 }
+.pre-footer-social .f-block .social-share .span1{padding: 11.5px 7px;width: 48px !important;height: 48px !important;}
+.pre-footer-social .f-block .social-share .span1 i:before{position: relative;}
+.f-block .social-share .fa{margin-right: 0;}
 .social-share a, .social-share a:link { color: #FFF;}
 .pre-footer h4 { font-weight: normal; font-size: 1.3125em;}
-.pre-footer h4 a, .pre-footer h4 a:link{color: #ffffff !important;}
-.footer-links li a,.footer-links li a:link, .footer a, .footer a:link { text-decoration: none; color: #ffffff !important;}
-.footer-links li a:hover, .footer a:hover { text-decoration: underline; }
+.pre-footer h4 a, .pre-footer h4 a:link, .pre-footer h4 a:visited{color: #ffffff !important;text-transform: uppercase;}
+.footer-links li a,.footer-links li a:link{ text-decoration: none; color: #ffffff !important;}
+.footer-links li a:hover{ text-decoration: underline; }
+.footer a, .footer a:link{text-decoration: underline;}
+.footer a:hover{text-decoration: none;}
 .control-group .controls > span, label { 
     color:#000; 
 }
 .footer{background-color: #333333;}
 .footer-ul span{color: #ffffff;}
 
-.pre-footer-social label{color: #ffffff;}
+.pre-footer-social label{color: #ffffff;text-transform: uppercase;}
 .acc-toggle:before{color:#ffffff;}
 
 form#signUpNewsletterForm input{
@@ -499,6 +528,7 @@ form#signUpNewsletterForm input{
     border-radius:6px;
 }
 .cpn-sgtn-item .sgtn-img{
+    height: 152px;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     overflow: hidden;
@@ -514,15 +544,17 @@ form#signUpNewsletterForm input{
     color: #424242;
 }
 .cpn-sgtn-item .txt-npo{
-    color: #666;
+    color: #ADADAD;
+    max-height: 3.75em !important;
 }
 
 .campaign-stats h4 { font-size:1.75em; color:#141414; }
 .more-days.inline h4 { font-size:1.125em; color:#141414; }
-.campaign-stats span.em, .more-days.inline span.em{color: #141414 !important;}
+.campaign-stats span.em{color: #ADADAD!important; }
+.more-days.inline span.em{color: #141414 !important;}
 .cpn-sgtn-item .campaign-stats .progress { 
     border: 1px solid #FFF;
-    background-color:#666;  
+    background-color:#CCC;  
     height:5px; 
     margin-bottom:7px; 
 }
@@ -539,7 +571,9 @@ form#signUpNewsletterForm input{
     border: 2px solid #FFF;
     margin-top:-47px;
 }
-
+.cpn-sgtn-item.corp-blue .sgtn-body .campaign-stats button{
+    box-shadow: none;
+}
 .cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
     background-color: #1283B4;
 }
@@ -550,7 +584,7 @@ form#signUpNewsletterForm input{
 .sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden;font-weight:500; }
 .cpn-suggestions .swiper-slide { width: 270px !important; }
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
-
+.more-days span.em{font-weight: 400 !important;}
 /* Hover state of card */
 
 .cpn-sgtn-item:hover{
@@ -671,16 +705,30 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
+#uf-dockbar-sidebar ul{margin:0;}
 
 #uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
     text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
 }
+#uf-dockbar-sidebar ul li:first-child, #sidebar ul li:first-child{
+    padding-bottom:10px !important;
+}
+#sidebar ul li > a{
+    padding: 13px 15px 13px 30px;
+}
+#uf-dockbar-sidebar ul li > a{padding: 13px 12px 13px 40px;}
 #uf-dockbar-sidebar li.admin > a, #uf-dockbar-sidebar ul li > a.active, #sidebar ul li > a.active{
-    background-color: #ebebeb;
+    background-color: #f0f0f0;
     color: #999 !important;
     box-shadow: 6px 0 0 0 #74ac40 inset;
     border:0;
     text-decoration: none !important;
+}
+#uf-dockbar-sidebar .profile-nav img{
+    width: 240px;
+    height: 135px;
 }
 
 /* Hover styles */
@@ -724,6 +772,12 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     }
     .pre-footer .p-section{
         background-color: #333333;
+    }
+    .social-share a i {
+      line-height: 1.4 !important;
+    }
+    .inform-add-lst li{
+        width: auto !important; 
     }
 }
 
