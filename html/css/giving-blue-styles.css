@@ -672,7 +672,7 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 }
 
 #donate-buttons button:hover{
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; /* Depth shadow 2*/
+    box-shadow: 0 8px 11px 0 rgba(0, 0, 0, 0.1), 0 6px 14px 0 rgba(0, 0, 0, 0.09) !important; /* Depth shadow 2*/
 }
 #donate-buttons .btn.active,  #donate-buttons .btn.active:hover, .preset-amts .btn-ghost.active{
     background-color: #17a4e1 !important;

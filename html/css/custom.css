@@ -2088,7 +2088,7 @@ border: 1px solid #ccc !important;
     border-bottom-color: #999;
 }
 .sod_select:after{
-    color:#666;
+    color:#333;
 }
 .sod_select:before{
     display: none;

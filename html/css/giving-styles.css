@@ -535,7 +535,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     color: #FFF;
 }
 .control-group.error .validation-feedback i { color: #cc6666; }
-.control-group.success .validation-feedback i { color: #838d4e; }
+.control-group.success .validation-feedback i { color: #4cb848; }
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
 .btn-toggle { margin-bottom:40px; width:100%; }
