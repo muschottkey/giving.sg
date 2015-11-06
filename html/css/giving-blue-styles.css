@@ -325,8 +325,9 @@ Corporate Identity CHANGE (BLUE) */
 }
 
 #uf-dockbar-hamburger-menu a i{
-    font-size: 1.875em; /*30px*/
+    font-size: 1.4em; /*22.4px*/
     color: #333;
+    line-height: 1.4;
 }
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
@@ -420,10 +421,12 @@ Corporate Identity CHANGE (BLUE) */
     color: #FFFDFD !important;
     position: absolute;
     width: 100%;
+    height:30px;
+    border-top:0;
+    line-height: 30px;
     background-color: rgba(0,0,0,0.3);
     display: block; 
     bottom: 0;
-    margin-bottom: -50px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
@@ -451,6 +454,7 @@ Corporate Identity CHANGE (BLUE) */
 #search-form input#search_term{
     border-color: #999;
     color: #333 !important;
+    height: auto !important;
 }
 #search-form input#search_term:focus, #uf-dockbar-search-mobile input[type="text"]:focus{border-color: #17A4E1;}
 #search-form input#search_term::-webkit-input-placeholder , #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder{color: #ccc !important;} /* WebKit, Blink, Edge */
@@ -465,6 +469,10 @@ Corporate Identity CHANGE (BLUE) */
     box-shadow: 0 -1px 0 0 #999 inset !important;
     border-radius: 0;
     border-color: #ffffff;
+}
+.inline-search{
+    font-size: 1em;
+    right: 20px;
 }
 /* Checkboxes */
 #select-more-camp input[type=checkbox]:checked + label:before,
@@ -664,12 +672,12 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 }
 
 .btn, .aui .btn{
-    background-color: #cc6699;
+    background-color: #BCE6FB;
     color: #ffffff;
 }
 
 .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url{
-    background-color: #cc6699 !important;color: #ffffff !important;
+    background-color: #BCE6FB !important;color: #ffffff !important;
 }
 
 #donate-buttons button:hover{
@@ -687,7 +695,7 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     background-color: #BCE6FB !important;
 }
 .inform-area .box-btn .btn{
-    background-color: #cc6699;
+    background-color: #BCE6FB;
     color: #ffffff !important;
 }
 
@@ -695,19 +703,19 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 /* Hover states */
 .btn-primary:hover, .aui .btn-primary:hover, .btn-success:hover, .aui .btn-success:hover{
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; 
-    background-color: #93c564 !important;
+    background-color: #17a4e1  !important;
 }
 
 .btn-ghost:hover, .aui .btn-ghost:hover, .donate-trig.btn-default:hover, .open-more:hover, .btn-more-img:hover, .ttl-row .btn:hover, .inform-area .box-btn .btn:hover{
-    background-color: #d47da8 !important;color: #ffffff !important;
+    background-color: #BCE6FB !important;color: #ffffff !important;
 }
 .btn:hover, .aui .btn:hover{
-    background-color: #d47da8;
+    background-color: #BCE6FB;
     color: #ffffff;
 }
 #copy-url:hover{
     box-shadow: none !important;
-    background-color: #cc6699 !important;
+    background-color: #BCE6FB !important;
 }
 
 
@@ -756,6 +764,16 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 }
 /******************************************/
 /*  END OF SIDEBAR */
+/*****************************************/
+
+/******************************************/
+/*  START OF MODAL UI */
+/*****************************************/
+.modal-footer{background-color: #FFF;}
+
+
+/******************************************/
+/*  END OF MODAL UI */
 /*****************************************/
 
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
@@ -807,9 +825,11 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     }
     #main-nav ul a{
         border-bottom:0px;
+        font-weight: normal;
     }
     #main-nav ul a.current, #main-nav ul a:hover{
         box-shadow: 6px 0px #4cb848 inset;
+        font-weight: bold;
     }
 
 }
