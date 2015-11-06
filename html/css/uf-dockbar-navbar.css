@@ -54,7 +54,7 @@ xheader
   font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
  }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   #main-nav-header {
     height: 70px; } }
 #logo {
@@ -91,7 +91,7 @@ xheader
 @media only screen and (min-width: 720px) {
   #logo a {
     max-width: 600px; } }
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   #logo {
     font-size: 20px;
     font-weight: 200;
@@ -134,8 +134,7 @@ xheader
   padding: 0.5em 1em; }
 
 @media only screen and (min-width: 1200px) {
-  #uf-dockbar-hamburger-menu {
-    display: none; } }
+  }
 #uf-dockbar-right-menu {
   right: 0; }
 
@@ -168,7 +167,11 @@ xheader
 #uf-dockbar-right-menu ul li.sign-in img {
   width: 0 !important; }
 
-@media (max-width: 1200px) {
+@media (max-width: 968px) {
+  #main-nav {
+  left: 143px;
+  right: auto;
+  }
   #uf-dockbar-right-menu ul li {
     height: 34px;
     padding: 0.5em; }
@@ -200,7 +203,10 @@ xheader
 
 @media only screen and (min-width: 768px) {
   #main-nav, #uf-dockbar-cart {
-    width: 350px; } }
+    width: 350px; }
+     #uf-dockbar-hamburger-menu {
+    display: none; }
+     }
 @media only screen and (min-width: 1200px) {
   #main-nav, #uf-dockbar-cart {
     width: 30%;
@@ -233,7 +239,7 @@ xheader
 #main-nav ul .current {
   box-shadow: 8px 0px #c66 inset; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   #main-nav {
     /* reset main nav style */
     position: absolute;
@@ -596,7 +602,7 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-search-desktop span.close:hover {
   color: #c66; }
 
-@media (max-width: 1200px) {
+@media (max-width: 767px) {
   #uf-dockbar-search-mobile {
     display: block; }
 
@@ -608,7 +614,7 @@ transition: all 0.5s linear 0s; */
 
   #uf-dockbar-search-mobile input[type="text"] {
     height: 20px; } }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #uf-dockbar-search-mobile {
     width: 200px; } }
 /*********************************************/

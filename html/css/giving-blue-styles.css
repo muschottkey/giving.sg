@@ -314,9 +314,7 @@ Corporate Identity CHANGE (BLUE) */
 #main-nav-header { 
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
      }
-#main-nav{
-    padding-top: 0;
-}
+
 #main-nav ul li > a{text-transform: uppercase;}
 #main-nav ul a{color: #333;text-decoration: none;}
 #main-nav ul a.current{
@@ -335,8 +333,10 @@ Corporate Identity CHANGE (BLUE) */
 
 
 
-@media only screen and (min-width: 1200px) {
-    
+@media only screen and (min-width: 768px) {
+   #main-nav{
+    padding-top: 0;
+} 
 }
 
 #logo a {
@@ -424,20 +424,28 @@ Corporate Identity CHANGE (BLUE) */
     height:30px;
     border-top:0;
     line-height: 30px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.6);
     display: block; 
     bottom: 0;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+
+.cause-box:hover a{
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .cause-box:hover a h4{
-    margin-bottom: 0;
+    background-color: rgba(0,0,0,0);
+    border:0;
+}
+.nature .mobile-block > h4 {
+  line-height: 30px;
 }
 
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
-.ttl-row .btn { text-transform: uppercase; color:#ffffff; text-decoration: none; padding:7px 20px; }
+.ttl-row .btn { text-transform: uppercase; color:#2174B5; text-decoration: none; padding:7px 20px; }
 
 /* NPO lIsting */
 .main-content, .modal-content { margin-top: 70px; }
@@ -658,7 +666,14 @@ form#signUpNewsletterForm input{
 /*****************************************/
 /*  BUTTON STYLES START */
 /****************************************/
-button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em; line-height:1em; }
+button, input[type="submit"],.aui .btn,.btn { 
+    -webkit-font-smoothing:antialiased;
+    font-size:12px;
+    line-height:1em;
+    text-transform: uppercase !important;
+    border-radius: 3px;
+    padding: 10px 20px;
+     }
 
 .btn-group > .btn {
   font-size: 16px !important;
@@ -672,12 +687,12 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 }
 
 .btn, .aui .btn{
-    background-color: #BCE6FB;
-    color: #ffffff;
+    background-color: #B3E7FF;
+    color: #2174B5;
 }
 
 .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url{
-    background-color: #BCE6FB !important;color: #ffffff !important;
+    background-color: #B3E7FF !important;color: #2174B5 !important;
 }
 
 #donate-buttons button:hover{
@@ -692,30 +707,38 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 }
 
 .steps-content .btn-area input, .steps-content .btn-save input, .add-btn-lst a{
-    background-color: #BCE6FB !important;
+    background-color: #B3E7FF !important;
 }
 .inform-area .box-btn .btn{
-    background-color: #BCE6FB;
-    color: #ffffff !important;
+    background-color: #B3E7FF;
+    color: #2174B5 !important;
 }
 
 
 /* Hover states */
 .btn-primary:hover, .aui .btn-primary:hover, .btn-success:hover, .aui .btn-success:hover{
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; 
-    background-color: #17a4e1  !important;
+    background-color: #0E678E !important;
 }
 
 .btn-ghost:hover, .aui .btn-ghost:hover, .donate-trig.btn-default:hover, .open-more:hover, .btn-more-img:hover, .ttl-row .btn:hover, .inform-area .box-btn .btn:hover{
-    background-color: #BCE6FB !important;color: #ffffff !important;
+    background-color: #B3E7FF !important;color: #2174B5 !important;
 }
+.btn-toggle .btn.active:hover, #donate-buttons .btn.active:hover, #btnDonate:hover, 
+#btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active,
+ #login_button:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+ .btn-success:hover, .btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, 
+ .add-bottom-lst input:active, .add-bottom-lst input:focus{
+   background-color: #0E678E !important;
+ }
+
 .btn:hover, .aui .btn:hover{
-    background-color: #BCE6FB;
-    color: #ffffff;
+    background-color: #B3E7FF;
+    color: #2174B5;
 }
 #copy-url:hover{
     box-shadow: none !important;
-    background-color: #BCE6FB !important;
+    background-color: #B3E7FF !important;
 }
 
 
@@ -818,7 +841,7 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 767px) {
     #main-nav-header{ background:#ffffff;}
     #main-nav{ 
         padding-top: 50px;
@@ -834,7 +857,7 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
     #main-nav-header{ background:#ffffff;height:70px;}
 
      #main-nav {
@@ -855,7 +878,12 @@ button, input[type="submit"] { -webkit-font-smoothing:antialiased; font-size:1em
     }
 }
 
-
+@media only screen and (max-width: 320px){
+    #donationAmt div.modal-body {
+      max-width: 280px;
+      padding: 15px;
+    }
+}
 /*************************************************************/
             /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
 /*************************************************************/

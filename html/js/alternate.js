@@ -698,9 +698,11 @@ $(function(){
         beforeToggle: function(trigger, element, expanded){
            if(expanded) { // The "Close" link was clicked
               $('#cpn-body').removeClass('open').addClass('closed');
+                console.log("Closing");
             }
             else{
               $('#cpn-body').removeClass('closed').addClass('open');
+              console.log("Opening");
             }
         },
         afterToggle: function(trigger, element, expanded) {
