@@ -2282,6 +2282,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list > li{
     list-style: none; border-bottom: 1px solid #cccccc; padding:20px 3% ; font-size: 1em;
 }
+.data-list .block{color:#666;}
     .vsignup .data-list > li { padding-left:0; }
     .data-list li.active{background-color: #f9f9f7;}
     .data-list li:last-child{border-bottom: none;}
@@ -2576,11 +2577,11 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     height: 30px; border-radius: 6px; padding: .5em !important;
     margin: 0; text-align: left; width: 92% !important; max-width:none;
 }
-.section-page .control-group input[type="text"]{
+.modal-body .control-group input[type="email"]{
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 31px !important;
-    padding-right: 35px !important;
+    padding-right: 47px !important;
 } 
 
 .volunteer-check{display: none;}

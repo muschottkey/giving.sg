@@ -40,13 +40,13 @@ $(function(){
         },
         highlight: function (element) {
             $(element).closest('.control-group').removeClass('success').addClass('error');
-            $(element).closest('.control-group').find('.validation-feedback').find('i').removeClass('fa-check-circle').addClass('fa-minus-circle');
+            $(element).closest('.control-group').find('.validation-feedback').find('i').removeClass('fa-check').addClass('fa-times');
             $(element).closest('.control-group').find('.validation-feedback').show();
             $(element).closest('.modal').delay(1000).find('.error-feedback').slideDown();
         },
         success: function (element) {
             element.hide().addClass('valid').closest('.control-group').removeClass('error').addClass('success');
-            $(element).closest('.control-group').find('.validation-feedback').find('i').removeClass('fa-minus-circle').addClass('fa-check-circle');
+            $(element).closest('.control-group').find('.validation-feedback').find('i').removeClass('fa-times').addClass('fa-check');
             $(element).closest('.control-group').find('.validation-feedback').show();
             $(element).closest('.modal').find('.error-feedback').delay(1000).slideUp();
         }
