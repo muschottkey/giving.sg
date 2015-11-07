@@ -393,10 +393,10 @@ Corporate Identity CHANGE (BLUE) */
 #causes-mobile{
     background-color: #17a4e1;
 }
-.cause-box img { background: #e8e8e8; }
+.cause-box img {background: #e8e8e8;}
 .donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
 
-.cause-box a, .cause-box a:link { text-decoration:none; color: #000;background-color: #ffffff; }
+.cause-box a, .cause-box a:link { text-decoration:none; }
     .cause-box a:hover h4, .cause-box a:active  h4 { 
         text-decoration:none; color: #ffffff !important; 
     }
@@ -405,9 +405,6 @@ Corporate Identity CHANGE (BLUE) */
     position: relative;
     overflow: hidden;
     }
-.cause-box a img{
-    border-radius:6px;
-}
 .cause-box a h4{
     color: #FFFDFD !important;
     position: absolute;
@@ -443,7 +440,7 @@ Corporate Identity CHANGE (BLUE) */
 .main-content, .modal-content { margin-top: 70px; }
 .listings-wrapper .cpn-sgtn-item { min-height:auto; }
 .checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
-.cause-box img { opacity: 1; }
+
 #causes-wrapper:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 

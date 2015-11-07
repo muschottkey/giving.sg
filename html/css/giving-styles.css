@@ -839,10 +839,11 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 .cause-box input[type=checkbox] { display: none; }
 .cause-box input[type=checkbox] + label, .cause-box img, .cause-box h4 {
-    height: 100px; width: auto; display: block; position: relative; transition: all 0.4s;
-    border-top-left-radius:6px; border-top-right-radius: 6px;
-    box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
-    background-repeat: no-repeat; background-size: 64px; 
+    height: 100px; width: auto; display: block;
+    position: relative; transition: all 0.4s;
+    border-radius:6px;
+    background-repeat: no-repeat;
+    background-size: 64px;
 }
 .cause-box img { height: auto; width: 200px; }
 
@@ -884,12 +885,11 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .journal-content-article .cause-box a:hover h4 { color: #C66 !important; }
 .cause-box input[type=checkbox] + label:before, .cause-box a:hover h4{ color: #c66 !important; }
 
-.cause-box img { opacity:0; }
 
 .causes .img-box.icons{ background-size: 40px; background-repeat: no-repeat;background-position:center;}
 
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .animal a.mobile-block, .img-box.animal{
+    .img-box.animal{
         background-image: url('../images/ico-causes-animalx64.png');
     }
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
@@ -898,63 +898,63 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     }
 
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .children a.mobile-block, .img-box.children{
+    .img-box.children{
         background-image: url('../images/ico-causes-childrenx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .community a.mobile-block, .img-box.community{
+    .img-box.community{
         background-image: url('../images/ico-causes-communityx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .disabilities a.mobile-block, .img-box.disabilities{
+    .img-box.disabilities{
         background-image: url('../images/ico-causes-disabilitiesx64.png');
     }
 #causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .education a.mobile-block, .img-box.education{
+    .img-box.education{
         background-image: url('../images/ico-causes-educationx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .elderly a.mobile-block, .img-box.elderly{
+    .img-box.elderly{
         background-image: url('../images/ico-causes-elderlyx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .families a.mobile-block, .img-box.families{
+    .img-box.families{
         background-image: url('../images/ico-causes-familiesx64.png');
     }
 #causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .health a.mobile-block, .img-box.health{
+    .img-box.health{
         background-image: url('../images/ico-causes-heartx64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .humanitarian a.mobile-block, .img-box.humanitarian{
+    .img-box.humanitarian{
         background-image: url('../images/ico-causes-humanitarianx64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .nature a.mobile-block, .img-box.nature{
+    .img-box.nature{
         background-image: url('../images/ico-causes-naturex64.png');
     }
 #causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .public a.mobile-block, .img-box.public{
+    .img-box.public{
         background-image: url('../images/ico-causes-publicx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .religion a.mobile-block, .img-box.riligion{
+    .img-box.riligion{
         background-image: url('../images/ico-causes-religionx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .social a.mobile-block, .img-box.social{
+    .img-box.social{
         background-image: url('../images/ico-causes-socialx64.png');
     }
 #causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
-    .sports a.mobile-block, .img-box.sports{
+    .img-box.sports{
         background-image: url('../images/ico-causes-sportsx64.png');
     }
 #causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label, 
-    .tech a.mobile-block, .img-box.tech{
+    .img-box.tech{
         background-image: url('../images/ico-causes-technologyx64.png');
     }
 #causes-wrapper > .span12:nth-child(6) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .women a.mobile-block, .img-box.women{
+    .img-box.women{
         background-image: url('../images/ico-causes-womenx64.png');
     }
 
@@ -3863,10 +3863,11 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
     #causes-mobile { overflow: hidden; }
-    #causes-wrapper .cause-box,  #causes-wrapper .swdiper-slide, 
+    #causes-wrapper .cause-box,  .cause-box a.mobile-block, #causes-wrapper .swdiper-slide, 
         .cause-box.block-mobile input[type=checkbox] + label{
-        width: 140px;
+        width: 140px; height:140px;
     }
+
     #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
 
     .acc-toggle.landing{
