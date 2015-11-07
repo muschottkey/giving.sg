@@ -44,10 +44,9 @@ xheader
   left: 0;
   height: 50px;
   width: 100%;
-  background: #F9F6EC none repeat scroll 0% 0%;
   text-align: center;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
-  z-index: 1030; }
+  z-index: 1030; 
+}
 
 #logo a {
   text-transform: uppercase;
@@ -55,8 +54,8 @@ xheader
  }
 
 @media only screen and (min-width: 768px) {
-  #main-nav-header {
-    height: 70px; } }
+  #main-nav-header { height: 70px; } 
+}
 #logo {
   padding-top: 0.8em;
   /* delete this property if you don't want your logo to scale down on mobile devices */
@@ -64,7 +63,8 @@ xheader
   -moz-transform: scale(0.8);
   -ms-transform: scale(0.8);
   -o-transform: scale(0.8);
-  transform: scale(0.8); }
+  transform: scale(0.8); 
+}
 
 #uf-dockbar-right-menu ul li.sign-in span {
   float: right;
@@ -133,7 +133,8 @@ xheader
   left: 0;
   padding: 0.5em 1em; }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 980px) {
+  #logo { left:0.5em;}
   }
 #uf-dockbar-right-menu {
   right: 0; }
@@ -146,7 +147,7 @@ xheader
 #uf-dockbar-right-menu ul li {
   display: inline-block;
   height: 38px;
-  padding: 1em;
+  padding: 1em .75em 1em .25em;
   /* margin-right: -5px; DB HIDE for the alignment */ }
 
 #uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
@@ -167,25 +168,24 @@ xheader
 #uf-dockbar-right-menu ul li.sign-in img {
   width: 0 !important; }
 
-@media (max-width: 968px) {
-  #main-nav {
-  left: 143px;
+
+@media (max-width: 980px) {
+  #uf-dockbar-right-menu img { width: 24px; height: 24px; padding: 5px; }
+
+
+}
+@media (max-width: 768px) {
+  #main-nav {  left: 143px;
   right: auto;
   }
   #uf-dockbar-right-menu ul li {
     height: 34px;
     padding: 0.5em; }
 
-  #uf-dockbar-right-menu img {
-    width: 20px;
-    height: 20px;
-    padding: 5px; }
-
-  #uf-dockbar-search-list-item {
-    display: none !important; }
-
+#uf-dockbar-search-list-item { display: none !important;  }
   #uf-dockbar-right-menu {
-    position: absolute !important; } }
+    position: absolute !important; } 
+}
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
     display: none !important; } }
@@ -195,23 +195,23 @@ xheader
   height: 100%;
   width: 260px;
   /* header height */
-  padding-top: 50px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   z-index: 1029; }
 
 @media only screen and (min-width: 768px) {
+  /* DB commented
   #main-nav, #uf-dockbar-cart {
-    width: 350px; }
+    width: 350px; } */
      #uf-dockbar-hamburger-menu {
     display: none; }
      }
 @media only screen and (min-width: 1200px) {
+  /* DB commented
   #main-nav, #uf-dockbar-cart {
     width: 30%;
-    /* header height has changed */
-    padding-top: 70px; }
+    padding-top: 70px; }*/
 
   #uf-dockbar-cart {
     max-width: 360px;
@@ -236,8 +236,10 @@ xheader
   border-bottom: 1px solid #e0e6ef;
   color: #999; }
 
+/* DB - COMMENTED OUT 
 #main-nav ul .current {
   box-shadow: 8px 0px #c66 inset; }
+  --- */
 
 @media only screen and (min-width: 768px) {
   #main-nav {
@@ -247,7 +249,6 @@ xheader
     width: auto;
     left: auto;
     right: 14em;
-    padding-top: 0.5em;
     top: 0;
     margin-right: 1em;
     background: transparent;
@@ -269,12 +270,13 @@ xheader
     line-height: 1;
     padding: 1em 1.4em;
     border-bottom: none;
-    border-radius: 0.25em; }
-
+    }
+/* DB COMMENTED 
   #main-nav ul a.current {
     box-shadow: none;
     color: #FFF !important;
     background: #c66; }
+    -- */
 
   .no-touch #main-nav ul a:hover {
     background: #435779; } }

@@ -276,8 +276,8 @@
 /* TYPOGRAPHY FOR SERVER */
 body { color:#333; font:16px/1.25 "Roboto", Arial, sans-serif; -webkit-font-smoothing:antialiased; }
 h1, h2, h3, h4, h5 { 
-    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    color:#000; line-height: 1.1em; font-weight: normal;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; 
+    color:#141414; line-height: 1.1em; font-weight: normal;
 }
 h1 { font-size:2em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }                /* 32px */
 h2 { font-size:1.625em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0; }     /* 26px */
@@ -315,7 +315,6 @@ Corporate Identity CHANGE (BLUE) */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
      }
 
-#main-nav ul li > a{text-transform: uppercase;}
 #main-nav ul a{color: #333;text-decoration: none;}
 #main-nav ul a.current{
     background-color: #f0f0f0;
@@ -330,14 +329,6 @@ Corporate Identity CHANGE (BLUE) */
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
 .section-page{margin-top: 37px;}
-
-
-
-@media only screen and (min-width: 768px) {
-   #main-nav{
-    padding-top: 0;
-} 
-}
 
 #logo a {
     color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
@@ -404,7 +395,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 .cause-box img { background: #e8e8e8; }
 .donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
-#causes-wrapper .cause-box { border:none;border-radius: 6px; }
+
 .cause-box a, .cause-box a:link { text-decoration:none; color: #000;background-color: #ffffff; }
     .cause-box a:hover h4, .cause-box a:active  h4 { 
         text-decoration:none; color: #ffffff !important; 
@@ -441,6 +432,7 @@ Corporate Identity CHANGE (BLUE) */
 .nature .mobile-block > h4 {
   line-height: 30px;
 }
+
 
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
@@ -809,6 +801,7 @@ button, input[type="submit"],.aui .btn,.btn {
     h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
     h2 { font-size:2em; }       /* 36px */
     h3 { font-size:1.5rem; }    /* 24x */
+
 }
 
 /* TABLET (SMALL) */
@@ -818,13 +811,18 @@ button, input[type="submit"],.aui .btn,.btn {
     h3 { font-size:1.375rem; line-height: 1.13636364em; }   /* 22px */
     h4, h5, h6 { line-height:1.11111111em; }
     p { line-height: 1.25em; } 
-}
-/* PHONE */
-@media only screen and (max-width:480px) {
-    p { font-size:.875em; } /* 14px */
-}
 
-@media only screen and (max-width: 767px) {
+    #main-nav-header{ background:#ffffff;}
+    #main-nav { padding-top: 50px; }
+    #main-nav ul a{
+        border-bottom:0px;
+        font-weight: normal;
+    }
+    #main-nav ul a.current, #main-nav ul a:hover{
+        box-shadow: 6px 0px #4cb848 inset;
+        font-weight: bold;
+    }
+
     .pre-footer .acc-toggle {
       color: #fff;
       background-color: #242424;
@@ -840,51 +838,37 @@ button, input[type="submit"],.aui .btn,.btn {
     .inform-add-lst li{
         width: auto !important; 
     }
-}
 
-@media only screen and (max-width: 767px) {
-    #main-nav-header{ background:#ffffff;}
-    #main-nav{ 
-        padding-top: 50px;
-    }
-    #main-nav ul a{
-        border-bottom:0px;
-        font-weight: normal;
-    }
-    #main-nav ul a.current, #main-nav ul a:hover{
-        box-shadow: 6px 0px #4cb848 inset;
-        font-weight: bold;
-    }
 
 }
-
-@media only screen and (min-width: 768px) {
-    #main-nav-header{ background:#ffffff;height:70px;}
-
-     #main-nav {
-    /* reset main nav style */
-        left:170px; right:auto;
-        background: transparent;
-        box-shadow: none;
-        z-index: 1030; 
-    }
-
-    #main-nav ul a {
-        padding: 1.6875em 1.4em; /* 27px margin each added to a height of 16px totalling 70px*/
-        border-radius: 0;
-    }
-
-    #main-nav ul a:hover, #main-nav ul a.current {
-        box-shadow: 0 -6px 0 0 #4cb848 inset;
-    }
+/* PHONE */
+@media only screen and (max-width:480px) {
+    p { font-size:.875em; } /* 14px */
 }
-
 @media only screen and (max-width: 320px){
     #donationAmt div.modal-body {
       max-width: 280px;
       padding: 15px;
     }
 }
+
+@media only screen and (min-width: 768px) {
+    #main-nav-header{ background:#FFF; }
+    #main-nav {  /* reset main nav style */
+        left:130px; right:auto; background: transparent;
+        box-shadow: none; z-index: 1030; font-size: 1.125em;
+    }
+    #main-nav ul a { padding:1.45em .7em; }
+
+    #main-nav ul a:hover, #main-nav ul a.current {
+        box-shadow: 0 -6px 0 0 #4cb848 inset;
+    }
+}
+@media only screen and (min-width:980px) {
+    #main-nav ul a { padding: 1.45em 1.3em; }
+    #main-nav { left:170px; }
+}
+
 /*************************************************************/
             /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
 /*************************************************************/
@@ -896,7 +880,7 @@ button, input[type="submit"],.aui .btn,.btn {
 .dropdown-menu a{text-decoration: none;}
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
-@media (max-width: 1023px) and (min-width: 980px)
+@media (max-width: 1023px) and (min-width: 980px) {
 .donors-area .dr-img {
   margin-left: 3.3%;
   margin-right: 3.3%;

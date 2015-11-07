@@ -8,7 +8,7 @@ input[type="text"], input[type="password"], textarea{-webkit-appearance: none !i
 .popover-content ul label:before{margin:-3px 0 0 !important;}
 .sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-body { font:16px/1.25 "Open Sans", Arial, Helvetica, sans-serif; margin:0 auto; min-width:320px !important; }
+body { margin:0 auto; min-width:320px !important; }
 body.non-respv { min-width: 1002px; overflow-x: visible; }  
 
 /* Typography */
@@ -176,7 +176,7 @@ div.centered,.centered{margin-left: auto !important;margin-right: auto !importan
 .p-top12 { padding-top: 12px;}
 .p-top15 { padding-top: 15px;}
 .p-top20 { padding-top: 20px;}
-.p-top30 { padding-top: 30px;}
+.p-top30 { padding-top: 30px  !important;}
 .p-top40 { padding-top:40px;}
 .p-bot0 { padding-bottom:0 !important;}
 .p-bot5 { padding-bottom: 5px;}
@@ -359,7 +359,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .wrapper { width:100%; overflow:hidden; position:relative;}
 .wrapper.no-hide { overflow-x: visible;}
     .dashboard-wrapper.no-hide { min-width: 1002px; }
-.wrapper-925{ max-width: 925px;margin-left: auto;margin-right: auto;float: none;}
+.wrapper-925{ max-width:960px; margin-left:auto; margin-right:auto; float: none; }
 .navbar { background: #efefef; }
     .navbar-fixed-top { position:fixed; }
 .navbar-inverse .navbar-inner{
@@ -819,11 +819,11 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 /***************************************************************************
                             CAUSE ICONS
 ***************************************************************************/
-#causes-wrapper { max-width:750px; margin: 40px auto; }
+#causes-wrapper { max-width:920px; margin: 40px auto; }
     .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { width:22%; float:left; margin:0 1.35% 20px; border:solid 1px #CCC; border-radius:6px; }   
+#causes-wrapper .cause-box { width:200px; float:left; margin:0 15px 20px; border-radius:6px; }   
 
 .causes ul { margin:0 -15px; }
 .causes li { 
@@ -844,6 +844,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     box-shadow: 0 0 1px #FFF; /* Soften the jagged edge */
     background-repeat: no-repeat; background-size: 64px; 
 }
+.cause-box img { height: auto; width: 200px; }
+
 .cause-box input[type=checkbox] + label:hover:before, .cause-box a:hover h4{
     text-decoration:underline; color: #c66;
 }
@@ -857,12 +859,14 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 .nature .mobile-block > h4{ line-height: 20px;}
-
+.cause-box a.mobile-block { width:200px; height:200px; }
 .cause-box a.mobile-block, .causes li a { 
     display:block; background-color:#FFF; background-position:center 25%; border-radius:6px; 
     background-repeat: no-repeat; text-indent:-9999em;
 }
     .campaign-stats .ico-tdr a, .cause-box h4 { text-indent: 0; }
+
+
 
 .cause-box input[type=checkbox] + label:before {
     content:""; display: block; background: #FFF; position: absolute; bottom:-36px; left:-1px;
@@ -889,9 +893,10 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
         background-image: url('../images/ico-causes-animalx64.png');
     }
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label, 
-    .arts a.mobile-block, .img-box.arts{
+    .img-box.arts{
         background-image: url('../images/ico-causes-artx64.png');
     }
+
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label, 
     .children a.mobile-block, .img-box.children{
         background-image: url('../images/ico-causes-childrenx64.png');
@@ -1722,7 +1727,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 .swiper-button-prev.original, .swiper-button-next.original{height: 44px;}
 
-.landing-cpn-slider-wrapper.add-inner-gallery{margin-top:0;border:1px s;}
+.landing-cpn-slider-wrapper.add-inner-gallery{margin-top:0; }
 
 
 /* home slider */
@@ -1740,9 +1745,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     transition-duration: 0ms;
    -webkit-transition-duration: 0ms;
     transform: translate3d(0px, 0px, 0px) !important;
-}
-#causes-mobile .swiper-slide.reset{
-    margin-right: 1.35% !important;
 }
 
 .swiper-container-horizontal>.swiper-scrollbar{
@@ -3295,8 +3297,8 @@ body:after, .wrapper:after, .social-media-signup:after, .section-header:after, .
     h4 { font-size: 1.5em; } /* 24px */
     h5 { font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
-    #causes-wrapper { max-width:600px; }
-    #causes-wrapper .cause-box { width:28%; margin-left: 3%; }
+    #causes-wrapper { max-width:680px; }
+    #causes-wrapper .cause-box, .cause-box a.mobile-block { width:180px; height:180px; }
     #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
