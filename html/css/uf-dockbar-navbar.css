@@ -611,9 +611,8 @@ transition: all 0.5s linear 0s; */
   border-bottom: 1px solid #CCC; }
 
 #uf-dockbar-sidebar ul li > a {
-  padding: 10px 12px 13px 40px;
-  display: block;
-  font-weight: 600; }
+  display: block; 
+  }
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   display: inline-block;
@@ -644,19 +643,6 @@ transition: all 0.5s linear 0s; */
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   border: 0px solid rgb(153, 153, 153);
-}
-
-.dark a.active {
-  text-decoration: underline !important;
-  color: #c66 !important;
-}
-
-#uf-dockbar-sidebar li.admin > a {
-  color: #FFF !important;
-}
-
-#uf-dockbar-sidebar li.admin > a {
-  background: #C66 none repeat scroll 0% 0%;
 }
 
 /* End of temporary additions */

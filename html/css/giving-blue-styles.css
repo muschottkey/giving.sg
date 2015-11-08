@@ -273,13 +273,9 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
-h1, h2, h3, h4, h5 { 
-    font-family: "Roboto", Arial, Helvetica, sans-serif; 
-    color:#141414; line-height: 1.1em; font-weight: normal;
-}
 h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
-h2 {font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
-h3 { font-size:1.5rem; line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0; }    /* 24px */
+h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
+h3 { font-size:1.5rem;line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0;}    /* 24px */
 h4 { font-size:1.125em; margin: 1.14rem 0 0.912rem 0; } /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
@@ -295,7 +291,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 
 .z-depth-0 { box-shadow: none !important; }
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); 
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 .z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important; 
@@ -304,6 +300,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-3 { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 .z-depth-4, .modal { box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
 .z-depth-5 { box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22); }
+
 /* HEADER 
 Corporate Identity CHANGE (BLUE) */
 #main-nav-header { 
@@ -326,9 +323,11 @@ Corporate Identity CHANGE (BLUE) */
     color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;
 }
 
-/* CAROUSEL 
-Corporate Identity CHANGE (BLUE) */
-.p-title.landing, .gallery-txt-box h3 { color: #FFF; }
+/* CAROUSEL  */
+.gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;}
+.gallery-txt-box h3 a { text-decoration:none; color: #FFF; }
+
+.p-title.landing { color: #FFF; }    
 .p-title.landing + p{color:#424242;}
 .gallery-txt-box {
     position: absolute;
@@ -336,11 +335,13 @@ Corporate Identity CHANGE (BLUE) */
     color: #fff;
     text-align: left;
     right: 14%;
-    bottom:10%;
-    width: 180px;
+    bottom: 15%;
+    width: 190px;
     padding: 1em 1.5em;
     border-radius: 6px;
 }
+
+
 .nl-form{
     color:#333333;
 }
@@ -572,7 +573,6 @@ form#signUpNewsletterForm input{
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
 .sgtn-body h5 { min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden;font-weight:500; }
-.cpn-suggestions .swiper-slide { width: 270px !important; }
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 .more-days span.em{font-weight: 400 !important;}
 /* Hover state of card */
@@ -640,30 +640,17 @@ form#signUpNewsletterForm input{
 /*****************************************/
 /*  BUTTON STYLES START */
 /****************************************/
-button, input[type="submit"],.aui .btn,.btn { 
-    -webkit-font-smoothing:antialiased;
-    font-size:12px;
-    line-height:1em;
-    text-transform: uppercase !important;
-    border-radius: 3px;
-    padding: 10px 20px;
-     }
 
 .btn-group > .btn {
   font-size: 16px !important;
 }
 
-.btn { border-radius:2px !important;line-height: 1 !important; }
 
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn,.choice-buttons button.yes.active, .btn-toggle .btn.active { 
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
     background-color: #17A4E1 !important; color: #FFF;
 }
 
-.btn, .aui .btn{
-    background-color: #B3E7FF;
-    color: #2174B5;
-}
 
 .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url{
     background-color: #B3E7FF !important;color: #2174B5 !important;
@@ -696,9 +683,7 @@ button, input[type="submit"],.aui .btn,.btn {
     background-color: #0E678E !important;
 }
 
-.btn-ghost:hover, .aui .btn-ghost:hover, .donate-trig.btn-default:hover, .open-more:hover, .btn-more-img:hover, .ttl-row .btn:hover, .inform-area .box-btn .btn:hover{
-    background-color: #B3E7FF !important;color: #2174B5 !important;
-}
+
 .btn-toggle .btn.active:hover, #donate-buttons .btn.active:hover, #btnDonate:hover, 
 #btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active,
  #login_button:focus, .btn-primary:hover, .btn-primary:active, .btn-primary:focus,
@@ -733,10 +718,10 @@ button, input[type="submit"],.aui .btn,.btn {
 #uf-dockbar-sidebar ul{margin:0;}
 
 #uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #333;
+    text-decoration: none; color: #333;
 }
+#uf-dockbar-sidebar ul li > a:visited, #sidebar ul li > a:visited { color: #333; }
+
 #uf-dockbar-sidebar ul li:first-child, #sidebar ul li:first-child{
     padding-bottom:10px !important;
 }
@@ -745,11 +730,9 @@ button, input[type="submit"],.aui .btn,.btn {
 }
 #uf-dockbar-sidebar ul li > a{padding: 13px 12px 13px 40px;}
 #uf-dockbar-sidebar li.admin > a, #uf-dockbar-sidebar ul li > a.active, #sidebar ul li > a.active{
-    background-color: #f0f0f0;
-    color: #333 !important;
+    background-color: #f0f0f0; font-weight:600;
     box-shadow: 6px 0 0 0 #4cb848 inset;
     border:0;
-    text-decoration: none !important;
 }
 #uf-dockbar-sidebar .profile-nav img{
     width: 240px;
@@ -782,7 +765,6 @@ button, input[type="submit"],.aui .btn,.btn {
 @media only screen and (max-width: 980px) {
     h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
     h2 { font-size:2em; }       /* 36px */
-    h3 { font-size:1.5rem; }    /* 24x */
 }
 
 /* TABLET (SMALL) */
@@ -801,7 +783,6 @@ button, input[type="submit"],.aui .btn,.btn {
     }
     #main-nav ul a.current, #main-nav ul a:hover{
         box-shadow: 6px 0px #4cb848 inset;
-        font-weight: bold;
     }
 
     .pre-footer .acc-toggle {
