@@ -1680,7 +1680,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 100%;
 }
 
-.landing-cpn-slider-wrapper .swiper-slide { border:1px solid #cccccc !important; }
 .landing-cpn-slider-wrapper .cpn-slide-img{
     border:1px solid #CCCCCC; border-bottom: none; overflow: hidden;
 }
@@ -1698,7 +1697,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     margin:0;
 }
 .landing-cpn-slider-wrapper .swiper-slide {
-  border: none;
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;

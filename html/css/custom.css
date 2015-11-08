@@ -1677,10 +1677,11 @@ div.charity-donors img.dr-img {
     }
 }
 
+/* DB Commented
 .home-slider .swiper-slide {
   border: 0px;
   min-height: 350px;
-}
+} */
 
 .home-slider .swiper-slide picture{
   min-height: inherit;
