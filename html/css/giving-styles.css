@@ -8,14 +8,15 @@ input[type="text"], input[type="password"], textarea{-webkit-appearance: none !i
 .popover-content ul label:before{margin:-3px 0 0 !important;}
 .sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
-body { margin:0 auto; min-width:320px !important; }
+body { 
+    color:#333; font:16px/1.25 "Roboto", Arial, sans-serif; margin:0 auto; min-width:320px !important;
+    -webkit-font-smoothing:antialiased; 
+}
 body.non-respv { min-width: 1002px; overflow-x: visible; }  
 
+
 /* Typography */
-h1, h2, h3, h4, h5{ 
-    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
-}
+
 h1 { font-size:2.5em; } /* 40px */
 h2 { font-size:2.25em; } /* 36px */
 h3 { font-size: 1.75em; } /* 28px */
@@ -29,7 +30,7 @@ a{color:#17a4e1; text-decoration: underline; }
     a:hover {color:#2174b5;}
 
 /* Corporate Identity chnages */
-#logo a { font-size:1.1em; }
+
 .section-header h1, .section-header h2, .section-header h3, .section-header h4, .section-header h5,
 .p-section h1, .p-section h2, .p-section h3, .p-section h4, .p-section h5 { 
     font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
@@ -2942,13 +2943,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     padding:0;
     list-style:none;
 }
-.inform-add-lst li{
-    display:inline-block;
-    vertical-align:top;
-    margin:0 -3px 0 0;
-    width:31%;
-    padding:0 0 0 3.5%;
+.inform-add-lst li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 -3px 0 0;
+    width: 27%;/* Col-3 */
+    padding: 0 0 0 6%;
 }
+
 .inform-add-lst li:first-child{padding:0;}
 .text-block-add{
     background:#d8d8d8;
@@ -2992,11 +2994,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 .inform-add-lst .img{padding:0 0 25px;}
 .inform-add-lst .img img{border:1px solid #bbb;}
-.inform-add-lst p{
-    margin:0 0 20px;
-    font-size:13px;
-    line-height:17px;
-}
+.inform-area p { font-size:1em; line-height: 1.45em; margin:0 0 20px; }
+
 .top-header-area fieldset,
 .top-header-area form{
     border:0;

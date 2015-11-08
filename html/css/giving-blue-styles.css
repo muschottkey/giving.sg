@@ -260,7 +260,6 @@
 .grey.dark-900 {background-color: #000 !important; }
 .grey-text.text-dark-900 { color: #000 !important; }
 
-/*.shades.black, .black { background-color: #000 !important; }*/
 .shades.black{ background-color: #000 !important; }
 .shades-text.text-black, .black-text { color: #000 !important; }
 
@@ -274,22 +273,18 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
-body { color:#333; font:16px/1.25 "Roboto", Arial, sans-serif; -webkit-font-smoothing:antialiased; }
 h1, h2, h3, h4, h5 { 
     font-family: "Roboto", Arial, Helvetica, sans-serif; 
     color:#141414; line-height: 1.1em; font-weight: normal;
 }
-h1 { font-size:2em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }                /* 32px */
-h2 { font-size:1.625em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0; }     /* 26px */
-h3 { font-size:1.375em; line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0; }     /* 24px */
+h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
+h2 {font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
+h3 { font-size:1.5rem; line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0; }    /* 24px */
 h4 { font-size:1.125em; margin: 1.14rem 0 0.912rem 0; } /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 p { font-size:.875em; line-height: 1.45; margin:0 0 0.5em }
-
-a, a:link { color:#17a4e1; text-decoration:underline; }
-a:visited {color:#7a7a7a;}
-    a:hover {color:#2174b5;}
+a:hover {color:#2174b5;}
 
 header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
     h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
@@ -316,10 +311,7 @@ Corporate Identity CHANGE (BLUE) */
      }
 
 #main-nav ul a{color: #333;text-decoration: none;}
-#main-nav ul a.current{
-    background-color: #f0f0f0;
-    color: #333 !important;
-}
+#main-nav ul a.current{ background-color: #f0f0f0; font-weight: bold; }
 
 #uf-dockbar-hamburger-menu a i{
     font-size: 1.4em; /*22.4px*/
@@ -331,7 +323,7 @@ Corporate Identity CHANGE (BLUE) */
 .section-page{margin-top: 37px;}
 
 #logo a {
-    color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;font-size: 1em;
+    color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;
 }
 
 /* CAROUSEL 
@@ -366,19 +358,7 @@ Corporate Identity CHANGE (BLUE) */
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
-.inform-area p { font-size:1em; font-weight:300; line-height: 1.5em; }
-
 .inform-add-lst .img{padding:0 0 10px;}
-.inform-add-lst p { margin:0 0 20px; }
-
-.inform-add-lst li {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 -3px 0 0;
-    width: 23.076923076923077%; /* Col-3 */
-    padding: 0 0 0 5.982905982905983%;
-}
-.inform-add-lst li:first-child { padding-left: 0; }
 
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
@@ -798,7 +778,6 @@ button, input[type="submit"],.aui .btn,.btn {
     h1 { font-size:2.5em; line-height:1.125em; }   /* 40px */
     h2 { font-size:2em; }       /* 36px */
     h3 { font-size:1.5rem; }    /* 24x */
-
 }
 
 /* TABLET (SMALL) */
