@@ -444,7 +444,7 @@ $(function(){
             loop:true,
             autoplay: 3000,
             speed: 800,
-            autoplayDisableOnInteraction: false
+            autoplayDisableOnInteraction: true
         })  
     }
           
