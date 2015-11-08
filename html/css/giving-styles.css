@@ -13,8 +13,8 @@ body.non-respv { min-width: 1002px; overflow-x: visible; }
 
 /* Typography */
 h1, h2, h3, h4, h5{ 
-    font-family: 'Century Gothic', "Apple Gothic", Arial, Helvetica, sans-serif;
-    color:#C66; font-weight:bold; line-height:1.2em; font-style: normal;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color:#141414; font-weight:bold; line-height:1.2em; font-style: normal;
 }
 h1 { font-size:2.5em; } /* 40px */
 h2 { font-size:2.25em; } /* 36px */
