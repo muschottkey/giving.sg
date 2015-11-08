@@ -854,10 +854,54 @@ button, input[type="submit"],.aui .btn,.btn {
 }
 
 .dropdown-menu a{text-decoration: none;}
+.home-page .section-page {
+  margin-top: 70px;
+}
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
-@media (max-width: 1023px) and (min-width: 980px) {
-.donors-area .dr-img {
-  margin-left: 3.3%;
-  margin-right: 3.3%;
+
+@media (max-width: 1023px) and (min-width: 980px){
+    .donors-area .dr-img {
+      margin-left: 3.3%;
+      margin-right: 3.3%;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px){
+    #main-nav {
+      left: 148px;
+      right: auto;
+      background: transparent;
+      box-shadow: none;
+      z-index: 1030;
+    }
+}
+.cpn-slider-inner .swiper-slide{
+    overflow: hidden;
+}
+
+.home-slider .swiper-slide picture img{
+      min-height: inherit;
+      max-height: 600px;
+      width: 100%;
+    }
+@media (max-width:1199px){
+    .home-slider .swiper-slide picture img{
+      min-height: inherit;
+      width: 100%;
+      height: auto;
+    }
+}
+@media (max-width:767px){
+    .home-slider .swiper-slide picture img{
+  min-height: inherit;
+   height: auto;
+  width: 100%;
+}
+}
+@media (max-width:319px){
+    .home-slider .swiper-slide picture img{
+      min-height: inherit;
+      height: auto;
+      width: 100%;
+    }
 }

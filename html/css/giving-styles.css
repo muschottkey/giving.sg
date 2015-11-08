@@ -16,7 +16,14 @@ body.non-respv { min-width: 1002px; overflow-x: visible; }
 
 
 /* Typography */
+<<<<<<< HEAD
 
+=======
+h1, h2, h3, h4, h5{ 
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    color:#141414; font-weight:bold; line-height:1.2em; font-style: normal;
+}
+>>>>>>> origin/blueSkin
 h1 { font-size:2.5em; } /* 40px */
 h2 { font-size:2.25em; } /* 36px */
 h3 { font-size: 1.75em; } /* 28px */
