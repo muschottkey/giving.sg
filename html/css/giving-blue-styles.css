@@ -328,13 +328,18 @@ Corporate Identity CHANGE (BLUE) */
 
 /* CAROUSEL 
 Corporate Identity CHANGE (BLUE) */
-
-.home-slider  { margin-bottom:40px; }
-.p-title.landing, h3{color: #141414;}
+.p-title.landing, .gallery-txt-box h3 { color: #FFF; }
 .p-title.landing + p{color:#424242;}
 .gallery-txt-box {
-    position: absolute; background: #17a4e1; color: #fff; text-align: left;
-    right: 14%; bottom:10%; width:168px; padding: 1em 1.5em; border-radius: 6px;
+    position: absolute;
+    background: #17a4e1;
+    color: #fff;
+    text-align: left;
+    right: 14%;
+    bottom:10%;
+    width: 180px;
+    padding: 1em 1.5em;
+    border-radius: 6px;
 }
 .nl-form{
     color:#333333;
@@ -881,8 +886,8 @@ button, input[type="submit"],.aui .btn,.btn {
 
 .home-slider .swiper-slide picture img{
       min-height: inherit;
-      max-height: 600px;
       width: 100%;
+      margin-top: -10%;
     }
 @media (max-width:1199px){
     .home-slider .swiper-slide picture img{

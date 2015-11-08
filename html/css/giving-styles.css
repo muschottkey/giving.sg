@@ -1739,7 +1739,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 
 /* home slider */
-.home-slider .cpn-slider-inner.swiper-wrapper{ margin-bottom: 0px; }
+.home-slider .cpn-slider-inner.swiper-wrapper{/* margin-bottom: 0px; */height: 400px;}
 .home-slider .swiper-button-prev, .home-slider .swiper-button-next {
     display: none;
 }
@@ -2909,9 +2909,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     left:0;right:0;margin:auto;
 }
 .add-inner-gallery.landing-cpn-slider-wrapper .swiper-pagination{border:0;}
-.gallery-txt-box{
-    padding:145px 0 150px;
-}
+
 .add-inner-gallery.landing-cpn-slider-wrapper.slider-small .swiper-pagination{border:0;}
 
 .landing-cpn-slider-wrapper.slider-small .gallery-txt-box{
