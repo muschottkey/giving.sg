@@ -344,7 +344,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 #setup-donation-content .p-section h4{color:#333;}
 
 #setup-donation-content .p-section h4 {
-  margin-left: -300px !important;
+  /* margin-left: -300px !important; */
   margin-top: 0 !important;
   float: left;
 }
