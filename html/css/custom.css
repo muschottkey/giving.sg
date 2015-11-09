@@ -24,11 +24,11 @@
 .validation-feedback.success i {
   color: #91C2AF;
 }
-
+ /* DB commented
 .validation-feedback.forgot-pwd{
-  width: 100%;
+ width: 100%; 
   right: 0px;
-}
+}*/
 
 #forget_password{
   font-size: .8em !important;
@@ -496,11 +496,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {
     min-height: 100px !important;
 }
-
+/* DB Commemt 
 .sgtn-img {
     height:136px;
     overflow:hidden; 
-}
+} */
 
 #selPayment {
     min-width: 150px;
@@ -514,11 +514,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 .fa-heart.active {
   color: #d33030;
 }
-
+/* DB Commemt 
 .square-border {
   border-radius: 0 !important;
 }
-/* DB Commemt 
+
 .landing-cpn-slider-wrapper .swiper-slide {
   margin: 0 !important;
 }*/
@@ -1026,13 +1026,13 @@ color: #999 !important;
 .delete-logo {
   display: none !important;
 }     
-            
+/* db comment            
 .cpn-sgtn-item > .sgtn-img img{
   /* max-height:136px !important;
-  max-width: 246px !important; */
+  max-width: 246px !important;
   max-height: none !important;
   max-width: 268px !important;
-}
+} */
 
 @media (max-width: 767px) {
   .cpn-sgtn-item .sgtn-body img{

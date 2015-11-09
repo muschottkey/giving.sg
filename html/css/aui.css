@@ -4962,10 +4962,10 @@
     .aui .navbar-fixed-top,
     .aui .navbar-fixed-bottom,
     .aui .navbar-static-top {
-      	/*
-      	margin-left: -20px;
+        /*
+        margin-left: -20px;
         margin-right: -20px;
-      	*/
+        */
       margin-left: 0px;
       margin-right: 0px; }
     .aui .container-fluid {

@@ -372,7 +372,7 @@ Corporate Identity CHANGE (BLUE) */
 .swiper-pagination-bullet{
     background-color: #666;
 }
-.gallery-txt-box h3 { margin-top:0;max-height: 5em; overflow:hidden;}
+.gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;}
 .gallery-txt-box h3 a { text-decoration:none; color: #FFF; }
 
 .p-title.landing + p{color:#424242;}
@@ -471,7 +471,6 @@ Corporate Identity CHANGE (BLUE) */
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
-.ttl-row .btn { text-transform: uppercase; color:#2174B5; text-decoration: none; padding:7px 20px; }
 
 /* NPO lIsting */
 .main-content, .modal-content { margin-top: 70px; }
@@ -578,18 +577,10 @@ Corporate Identity CHANGE (BLUE) */
 /*  START OF CARD UI */
 /*****************************************/
 
-.cpn-sgtn-item{
-    border-radius:6px;
-}
 .cpn-sgtn-item .sgtn-img{
-    height: 152px;
     border-top-right-radius: 6px;
     border-top-left-radius: 6px;
     overflow: hidden;
-}
-.cpn-sgtn-item > .sgtn-img img {
-    max-height: none !important;
-    max-width: 100% !important;
 }
 .cpn-sgtn-item .sgtn-body h5 a{
     color: #141414;
@@ -732,7 +723,7 @@ Corporate Identity CHANGE (BLUE) */
 
 /* Hover states */
 .btn-primary:hover, .aui .btn-primary:hover, .btn-success:hover, .aui .btn-success:hover{
-    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
     background-color: #0E678E !important;
     color:#FFF;
 }
@@ -796,16 +787,6 @@ Corporate Identity CHANGE (BLUE) */
 }
 /******************************************/
 /*  END OF SIDEBAR */
-/*****************************************/
-
-/******************************************/
-/*  START OF MODAL UI */
-/*****************************************/
-.modal-footer{background-color: #FFF;}
-
-
-/******************************************/
-/*  END OF MODAL UI */
 /*****************************************/
 
 
@@ -907,7 +888,7 @@ Corporate Identity CHANGE (BLUE) */
     .navbar-inverse .navbar-inner { height: 70px; }
     .navbar-inverse .brand{
         font-size: 1.25em; font-weight: 500; padding: 1em 0; position: absolute;
-        left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important;
+        left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important; text-decoration:none;
         max-width: 250px; display: inline-block; text-transform: uppercase;
     }
     .section-page { margin-top: 70px; }

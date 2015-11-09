@@ -443,13 +443,12 @@ xheader
   transition: all 0.2s ease-in 0.1s;
   background-color: white;
   text-align: left;
-  height: 66px;
+  height: 50px;
   margin-top: 0;
   width: 0px;
-  min-width: 0px; }
+  min-width: 0px;
+  }
 
-#uf-dockbar-search-desktop.active input[type="submit"] {
-  opacity: 1; }
 
 #uf-dockbar-search-mobile input[type="text"] {
   padding: 0.8em !important;
@@ -465,9 +464,10 @@ xheader
   border-radius: 0px !important; }
 
 #uf-dockbar-search-desktop.active input[type="text"] {
-  width: 155px;
-  padding: 2px 15px !important;
-  padding-right: 50px !important; }
+  width: 180px;
+  padding: 10px 15px !important;
+  padding-right: 50px !important;
+  }
 
 /* search modification
 #uf-dockbar-search-desktop.active input[type="text"] {
@@ -483,7 +483,9 @@ xheader
 
 #uf-dockbar-search-desktop {
   position: absolute;
-  top: 0px; }
+  top: 0;
+  right: 0;
+  }
 
 #uf-dockbar-search-mobile {
   position: relative;
@@ -526,7 +528,7 @@ transition: all 0.5s linear 0s; */
 }*/
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 1em;
   background: transparent url("../images/search.png") no-repeat scroll 0% 0%/cover;
   width: 30px;
@@ -534,8 +536,9 @@ transition: all 0.5s linear 0s; */
   border: 0px none;
   text-indent: -9999px;
   cursor: pointer;
-  padding: 0px;
-  opacity: 0; }
+  padding: 0;
+  opacity: 0;
+  }
 
 #uf-dockbar-search-desktop span.fa-search:before {
   font-size: 23px;
