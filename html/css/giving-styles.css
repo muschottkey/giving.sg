@@ -1409,6 +1409,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 .landing-cpn-slider-wrapper .row-fluid .cn-ln-details .span2{min-height:100px;}
 .ui.checkbox label:before{
+	display:block;
     background:url(../images/bg-checkbox.png) no-repeat !important;
     width:17px !important;
     height:13px !important;
