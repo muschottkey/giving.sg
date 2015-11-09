@@ -708,7 +708,7 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #17a4e1 !important;
 }
 
-.dropdown > button, .select-like button, .action-btn > button{
+.dropdown > button, .dropdown > button:hover,  .select-like button,.select-like button:hover, .action-btn > button{
     box-shadow: none !important;
 }
 

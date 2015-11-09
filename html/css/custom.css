@@ -717,7 +717,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 }
 
 /* Typography */
-
+/* DB comment
 .aui body {
   font: 16px/1.25 "Open Sans", Arial, Helvetica, sans-serif;
 }
@@ -756,13 +756,13 @@ f
 .box h5 {
     font-size: 1.2em !important;
 }
-
+/*db comment 
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5 {
   font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
     font-weight: bold;
     line-height: 1.2em;
     font-style: normal;
-}
+} */
 
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui span, .aui a, .aui p,
   .aui blockquote, .aui button, .aui input, .aui label {
@@ -787,12 +787,12 @@ f
 .aui input:-webkit-autofill, .aui textarea:-webkit-autofill, .aui select:-webkit-autofill{
   background-color: #ffffff !important;
 }
-
+/*db comment 
 .aui label, .aui input, .aui button, .aui select, .aui textarea {
   font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
   font-size: 1.125em;
   line-height: 1.4;
-}
+}*/
 
 .aui input:not([type=checkbox]), .aui input[type="radiobutton"] {
   height: 20px;
@@ -807,7 +807,7 @@ f
 }
 
 .aui .btn {
-  font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
+ /* db comment font-family: "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif; */
   line-height: 20px;
   display: inline-block;
   margin-bottom: 0px;
@@ -963,7 +963,8 @@ f
 display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
 border:1px solid #CCC; padding:0 25px 5px 8px; margin-right:6px; position:relative;
 cursor: pointer; 
-font:1.15em/1.4 "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif;
+/* db comment font:1.15em/1.4 "Century Gothic","Apple Gothic",Arial,Helvetica,sans-serif; */
+font-size: 1.15em; 
 color: #999 !important;
 }
 
@@ -1888,9 +1889,9 @@ div.clickable>a.img-placeholder-btn {
   border: 1px solid #ccc !important;
   border-radius: 0 4px 4px 0;
   margin-left: -1px;
-  font: 1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif;
+ /*  font: 1em /1.4 'Century Gothic',verdana,arial,helvetica,sans-serif; */
   background: #F9F6EC;
-  font-size: 16px !important;
+  font-size: 1em !important;
   padding: 4px 12px !important;
   max-width: 90px !important; 
 }
