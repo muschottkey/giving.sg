@@ -1953,7 +1953,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 /***************************************************************************
                             SEARCH RESULTS
 ***************************************************************************/
-.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 10px 1.5em; min-height:480px; position: relative;}
+.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em; min-height:480px; position: relative;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body { 
@@ -3874,7 +3874,9 @@ body:after, .wrapper:after, .gallery-txt-box:after, .social-media-signup:after, 
         margin-bottom: 10px;
     }
 
-
+    .listings-wrapper .cpn-sgtn-item {
+      margin: 1em 0px 5em;
+    }
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
     h3.landing{ font-size:1.0625em; color:#FFF; padding:10px 20px 10px; }
@@ -3896,6 +3898,9 @@ body:after, .wrapper:after, .gallery-txt-box:after, .social-media-signup:after, 
         .tab-section .sgtn-body h5 { font-size:1.125em; }
     .tab-section .sgtn-body { text-align:left; padding-bottom:20px; }
     .nl-field ul { font-size:1.2em !important;  }
+    .listings-wrapper .tab .cpn-sgtn-item {border-radius: 0;}
+    .listings-wrapper .tab .cpn-sgtn-item:hover {border-radius: 6px;}
+    .listings-wrapper .tab .cpn-sgtn-item .sgtn-body{min-height: inherit !important;}
 
     /* Search results page*/
     .search-controls form .control-group{margin-top: 1em;}

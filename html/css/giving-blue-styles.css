@@ -326,7 +326,6 @@ Corporate Identity CHANGE (BLUE) */
 .gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;}
 .gallery-txt-box h3 a { text-decoration:none; color: #FFF; }
 
-.p-title.landing { color: #FFF; }    
 .p-title.landing + p{color:#424242;}
 .gallery-txt-box {
     position: absolute;
@@ -385,7 +384,7 @@ Corporate Identity CHANGE (BLUE) */
 #causes-mobile{
     background-color: #17a4e1;
 }
-.cause-box img {background: #e8e8e8;}
+.cause-box img {background: #e8e8e8;height: 100%;}
 .donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
 
 .cause-box a, .cause-box a:link { text-decoration:none; }
@@ -450,14 +449,16 @@ Corporate Identity CHANGE (BLUE) */
 #search-form input#search_term:-moz-placeholder, #uf-dockbar-search-mobile input[type="text"]:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
 #search-form input#search_term::-mox-placeholder, #uf-dockbar-search-mobile input[type="text"]::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
 #search-form input#search_term:-ms-input-placeholder, #uf-dockbar-search-mobile input[type="text"]:-ms-input-placeholder{color: #ccc !important;} /* Internet Explorer 10-11 */
-#uf-dockbar-search-mobile input[type="text"]{
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important; 
+#uf-dockbar-search-mobile input[type="text"],#uf-dockbar-search-mobile input[type="text"]:focus{
+    border-width:0 0 1px 0;
+    border-style: solid;
+    color: #333 !important;
+    height: auto !important;
+    border-radius: 0;
+    box-shadow: none;
 }
 #uf-dockbar-search-mobile input[type="text"]:focus{
-    -webkit-box-shadow: 0 -1px 0 0 #999 inset !important;
-    box-shadow: 0 -1px 0 0 #999 inset !important;
-    border-radius: 0;
-    border-color: #ffffff;
+    border-color: #17A4E1;
 }
 
 /* Checkboxes */
@@ -474,6 +475,49 @@ Corporate Identity CHANGE (BLUE) */
 #cpn-info div.img-box a i{
     padding: 4px 8px;
 }
+/******************************************/
+/*  START OF OTHER PAGES HEADER */
+/*****************************************/
+.navbar-inverse .navbar-inner{
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+@media only screen and (min-width: 768px){
+    .navbar-inverse .navbar-inner {
+      height: 70px;
+    }
+    .navbar-inverse .brand{
+        font-size: 1.25em;
+        font-weight: 500;
+        padding: 1em 0;
+        position: absolute;
+        left: 1.1em;
+        top: 0;
+        margin-left: 0;
+        color: #4cb848 !important;
+        max-width: 250px;
+        display: inline-block;
+        text-transform: uppercase;
+    }
+    .section-page {
+      margin-top: 70px;
+    }
+}
+.navbar .nav-pills{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: auto;
+}
+.navbar .nav-pills li{
+    display: inline-block;
+    height: 38px;
+    padding: 1em;
+}
+
+/******************************************/
+/*  END OF OTHER PAGES HEADER */
+/*****************************************/
 
 /******************************************/
 /*  START OF FOOTER*/
@@ -525,7 +569,7 @@ form#signUpNewsletterForm input{
 }
 .cpn-sgtn-item > .sgtn-img img {
     max-height: none !important;
-    max-width: 270px !important;
+    max-width: 100% !important;
 }
 .cpn-sgtn-item .sgtn-body h5 a{
     color: #141414;
@@ -586,7 +630,7 @@ form#signUpNewsletterForm input{
 .cpn-sgtn-item:hover .box-r-footer{
     border-top-color: #117ca9;
 }
-.cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5 a:visited, .cpn-sgtn-item:hover .txt-npo{
+.cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5,.cpn-sgtn-item:hover p ,.cpn-sgtn-item:hover .sgtn-body h5 a:visited, .cpn-sgtn-item:hover .txt-npo{
     color: #ffffff;
 }
 .cpn-sgtn-item:hover .campaign-stats .progress{
@@ -632,6 +676,9 @@ form#signUpNewsletterForm input{
     color: #666;
 }
 
+@media (max-width: 979px){
+    .cpn-sgtn-item .sgtn-img{height: auto;}
+}
 /******************************************/
 /*  END OF CARD UI */
 /*****************************************/
@@ -879,5 +926,74 @@ form#signUpNewsletterForm input{
     .donors-area .dr-img {
       margin-left: 3.3%;
       margin-right: 3.3%;
+    }
+}
+@media only screen and (max-width: 1000px) and (min-width: 768px){
+    #main-nav {
+      left: 148px;
+      right: auto;
+      background: transparent;
+      box-shadow: none;
+      z-index: 1030;
+    }
+}
+
+/*************************************************************/
+            /* HOME PAGE CAROUSEL */
+/*************************************************************/
+
+.home-slider .swiper-slide picture img{
+      min-height: inherit;
+      width: 100%;
+      margin-top: -10%;}
+
+.home-slider .swiper-slide {
+  border: 0px;
+  min-height: inherit;
+}
+.cpn-slider-inner .swiper-slide{
+    overflow: hidden;
+}
+
+.home-slider .swiper-slide picture img{
+      min-height: inherit;
+      height: auto;
+      width: 100%;
+    }
+.home-slider .swiper-button-prev, .home-slider .swiper-button-next{
+    background-image: none !important;
+}
+.home-slider .swiper-button-prev:hover:before, .home-slider .swiper-button-next:hover:before{
+    color: #17A4E1;
+}
+.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before{
+    font-family: "fontAwesome";
+    height: 40px;
+    width: 40px;
+    /*background-color: #ff00b0;*/
+    display: block;
+    font-size: 3em;
+    color: #666;
+    line-height: 0.8;
+}
+.home-slider .swiper-button-prev:before{
+    content: "\f104";
+}
+.home-slider .swiper-button-next:before{
+    content: "\f105";
+}
+.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+    background-color: #17A4E1;
+}
+.swiper-pagination-bullet{
+    background-color: #666;
+}
+
+@media (max-width: 760px){
+    .gallery-txt-box{
+        right: 0;
+        bottom: 0;
+        width: calc(100% - 48px);
+        border-radius: 0;
     }
 }
