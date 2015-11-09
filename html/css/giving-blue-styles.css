@@ -558,8 +558,8 @@ Corporate Identity CHANGE (BLUE) */
     .footer-links li a:visited  { color:#AAA; }
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
-.control-group .controls > span, label { 
-    color:#333; 
+.control-group .controls > span, label {
+    color: #666;
 }
 .footer{background-color: #333333;}
 .footer-ul span{color: #ffffff;}
@@ -706,6 +706,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 #donate-buttons .btn.active,  #donate-buttons .btn.active:hover, .preset-amts .btn-ghost.active{
     background-color: #17a4e1 !important;
+    border-color: #17a4e1 !important;
 }
 
 .dropdown > button, .dropdown > button:hover,  .select-like button,.select-like button:hover, .action-btn > button{

@@ -106,9 +106,10 @@ xheader
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
   top: 0;
-  height: 80px; }
+  height: 70px;
+  }
 
-#uf-dockbar-hamburger-menu a, #uf-dockbar-right-menu a {/* width: 60px; */}
+#uf-dockbar-hamburger-menu a {width: 60px;}
 
 #uf-dockbar-hamburger-menu {
   left: 0;
@@ -124,17 +125,22 @@ xheader
 
 #uf-dockbar-right-menu ul li {
   display: inline-block;
-  height: 38px;
+  height: 30px;
   padding: 1em .75em 1em .25em;
-  /* margin-right: -5px; DB HIDE for the alignment */ }
+  /* margin-right: -5px; DB HIDE for the alignment */
+  }
 
 #uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
   padding: .25em .75em;
-  width: 28px; }
+  width: 30px;
+  }
 
 #uf-dockbar-right-menu ul li.highlight span {
-  display: block; float: right; line-height: 35px;
-  margin-left: 8px; font-weight: 900;
+  display: block;
+  float: right;
+  line-height: 35px;
+  /* db margin-left: 0px; */
+  font-weight: 900;
 }
 
 #uf-dockbar-right-menu ul li.highlight {
@@ -445,7 +451,7 @@ xheader
   text-align: left;
   height: 50px;
   margin-top: 0;
-  width: 0px;
+  width: 0;
   min-width: 0px;
   }
 
@@ -527,18 +533,10 @@ transition: all 0.5s linear 0s; */
   opacity: 0; 
 }*/
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
-  position: absolute;
-  right: 15px;
-  top: 1em;
-  background: transparent url("../images/search.png") no-repeat scroll 0% 0%/cover;
-  width: 30px;
-  height: 30px;
-  border: 0px none;
-  text-indent: -9999px;
-  cursor: pointer;
-  padding: 0;
-  opacity: 0;
-  }
+  position: absolute; right: 15px; top: 1em; padding: 0; opacity: 0;
+  background: transparent url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
+  width: 30px; height: 30px; border: 0px none; text-indent: -9999px; cursor: pointer;
+}
 
 #uf-dockbar-search-desktop span.fa-search:before {
   font-size: 23px;

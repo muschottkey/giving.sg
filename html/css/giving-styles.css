@@ -97,7 +97,7 @@ input[type=text]::-ms-clear{
     visibility: hidden !important;
 }
 
-.control-group .controls > span, label  { font-size:1.125em ;  }
+.control-group .controls > span, label  {font-size: .875em;}
     .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#c66; }
 label.small.grey{color: #999;}
 .box label.small{color:#cc6666;}
@@ -195,7 +195,7 @@ hr.m5{margin: 5px 0;}
 
 .btn a, .btn-group a{text-decoration: none;}
 .grey{color: #999;}
-.red{color: #F00;}
+.red{color: #C66;}
 .white{color: #FFF;}
 .blue{color: #9DC9EE;}
 .bg-green{ background-color: #5cb85c; color: #FFF; }
@@ -312,7 +312,6 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 .navbar-inverse .brand:visited, .navbar-inverse .nav > li > a:visited {color: #999; }
 .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover{ text-decoration: underline;color: #2174b5;}
-.main-content, .modal-content { padding:0.5em 0 0; }
 .boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
 
 footer.footer a{font-size: 14px;text-decoration: underline;}
@@ -394,7 +393,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 
 /* UI Controls - CONTROLS  */
 textarea, input { font-size:1em !important; height:1.3em; font-weight:500; color: #666;}
-    input:not([type=checkbox]) { color: #666; }
+    input:not([type=checkbox]) {color: #333;}
 
 input[type="text"]:focus, textarea:focus,
     .pre-footer-social input:focus {
@@ -2154,7 +2153,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 #sidebar.show, #sidebar.hide   {display: block;}
 
-#sidebar ul{ margin: 0; margin-top: 42px; }
+#sidebar ul{ margin: 0;margin-top: 50px;}
 #sidebar ul li{
     list-style: none;  background-color: #FFF;
 }
@@ -2182,7 +2181,8 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar ul li > a .li-icon.pull-left{
     margin-right: 6px;
 }
-#sidebar .profile-nav{ padding:30px; border-bottom:1px solid #CCC; }
+#sidebar .profile-nav { padding:30px; border-bottom:1px solid #CCC; }
+    #sidebar .profile-nav .img-circle { max-width:150px; }
 
 aside.profile-nav.mobile-fallback{
     width: 190px;
@@ -2201,7 +2201,7 @@ aside.profile-nav.mobile-fallback h4{
 .dashboard{  margin-left: 315px; }
 .dashboard .control-group{margin-top:1em;}
 .dashboard.non-respv{min-width:680px;}
-.dashboard .section-title{ font-weight: 800; font-size: 1.25em; text-align: left; padding-left: 70px; }
+.dashboard .section-title{font-size: 1.125em;  padding-left: 70px;margin-top: 1em;text-align: left;font-weight: 500;}
 .section-bordered-bottom{ border-bottom:1px solid #CCC; }
 form.text-left input:not([type="checkbox"]) { text-align: left; }
 .dashboard .main-content > .row-fluid{  padding:0;  }
