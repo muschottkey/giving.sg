@@ -401,10 +401,10 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 .dashboard-wrapper .check.active{
     background-position: 0px -20px;
 }
-
+/* DB commente
 .social-share a:hover, .social-share a:active, .social-share a:focus {
    color: #FFF !important;
-}
+} */
 
 .action-link {
     color: #555 !important;
@@ -451,10 +451,10 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
   background: white !important;
   font-size: 12px !important;
 }
-
+/* DB COMMENTS
 .cpn-url-box input, .cpn-url-box button{
     height: 40px !important;
-}
+}*/
 #copy-url:hover{
   background-color: #F9F6EC !important;
 }
@@ -518,10 +518,10 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 .square-border {
   border-radius: 0 !important;
 }
-
+/* DB Commemt 
 .landing-cpn-slider-wrapper .swiper-slide {
   margin: 0 !important;
-}
+}*/
 
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
@@ -559,12 +559,12 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
   .dtn-amt-item .dtn-desc {
       width: 100% !important;
   }
-  
+  /*DB comment
   .cpn-url-box button {
       width: inherit !important;
       max-width: 70px !important;
       margin-top: 0px !important;
-  }
+  }*/
 }
 
 @media ( max-width : 767px) {
@@ -652,7 +652,7 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 .m-bot50{margin-bottom: 50px !important;}
 .m-top0{margin-top: 0 !important;}
 .m-top5{margin-top: 5px !important;}
-.m-top10{margin-top: 10px !important;}
+/*.m-top10{margin-top: 10px !important;} */
 .m-top15{margin-top: 15px !important;}
 .m-top20{margin-top: 20px !important;}
 .m-top30{margin-top: 30px !important;}
@@ -1050,11 +1050,11 @@ color: #999 !important;
 .steps-content .decor-txtarea {
   padding: 0 0 0px;
 }
-
+/* DB COMMENT
 .control-group {
   margin-top: 1em;
   position: relative;
-}
+} */
 
 #user-about-links .controls {
   margin-left: 1px;
@@ -1470,9 +1470,9 @@ div.charity-donors img.dr-img {
 } 
 
 @media (max-width: 760px) {
-  .home-slider .slider-navigation {
+  /* DB commented.home-slider .slider-navigation {
     display:none !important;
-  }
+  } */
   
   .home-slider .main-image__centerer--cell p{
     display:none !important;
@@ -1694,9 +1694,9 @@ div.charity-donors img.dr-img {
   width: 100%;
 } */
 
-.home-slider .slider-navigation{
+/*.home-slider .slider-navigation{
   bottom: 0px !important;
-}
+}*/
 
 .aui .navbar-inverse .navbar-inner {
   background-color: transparent !important;
@@ -1854,7 +1854,7 @@ div.clickable>a.img-placeholder-btn {
                                 PRE FOOTER
 ***************************************************************************/
 /* .pre-footer{ margin:20px auto; } */
-.pre-footer-social{
+/* DB commented.pre-footer-social{
     padding: 30px 10px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;
     background-color: #f5f5f5;
 }
@@ -1863,7 +1863,7 @@ div.clickable>a.img-placeholder-btn {
 .pre-footer-social form .control-group{ margin-top: 0; }
 .footer-links li{ list-style: none; margin:5px 0; }
 .footer-links li a, .footer-links li a:link, .footer-links li a:active, .footer-links li a:hover, .footer-links li a:visited, 
-.footer a, .footer a:link, .footer a:hover, .footer a:active, .footer a:visited{ color: #666 !important;}
+.footer a, .footer a:link, .footer a:hover, .footer a:active, .footer a:visited{ color: #666 !important;} 
 
 .pre-footer-social .f-block .social-share .span1 {
   width: 55px !important;
@@ -1874,15 +1874,15 @@ div.clickable>a.img-placeholder-btn {
  }
  .pre-footer-social .f-block .social-share .span1 i:before{
   position: absolute;
-    right: 0;
-    left: 0;
+  right: 0;
+  left: 0;
  }
 .footer-links ul {
   margin-left: 0 !important;
 }
 
 .pre-footer-social .social-share a, .pre-footer-social .social-share a:link, .pre-footer-social .social-share a:active,
-.pre-footer-social .social-share a:hover, .pre-footer-social .social-share a:visited {color: #fff !important;}
+.pre-footer-social .social-share a:hover, .pre-footer-social .social-share a:visited {color: #fff !important;} */
 
 #mc-embedded-subscribe-form .btn.border-all {
   border: 1px solid #ccc !important;
@@ -1920,7 +1920,7 @@ border: 1px solid #ccc !important;
   /* pre-footer, footer*/
     .pre-footer-social{padding-left: 0;padding-right: 0;}
     .pre-footer-social .social-share{ border:none; padding:0; text-align:left; }
-    .pre-footer-social .cpn-url-box{ width: 100%;  }
+    /*DB COMMENT .pre-footer-social .cpn-url-box{ width: 100%; } */
 }
 
 @media (min-width: 768px) {
@@ -2099,9 +2099,10 @@ border: 1px solid #ccc !important;
 .sod_select:before{
     display: none;
 }
+/* DB comment
 .cpn-sgtn-item .txt-npo {
   min-height: 51px;
-}
+} */
 
 /***************************************************************************
             Saved credit card token for easy donation
@@ -2309,9 +2310,10 @@ input.strike-through{
 }
 /** increate min height for npo title to fit 3 row **/
 /** override giving.sg style **/
+/* DB comment
 .txt-npo {
     min-height: 3.75em !important;
-}
+} */
 /***************************************************************************
      Start Volunteer Activity
 ***************************************************************************/

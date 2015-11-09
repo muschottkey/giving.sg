@@ -50,7 +50,7 @@ xheader
 
 
 @media only screen and (min-width: 768px) {
-  #main-nav-header {height: 70px;} 
+  #main-nav-header { height: 70px; } 
 }
 #logo {
   padding-top: 0.8em;/* delete this property if you don't want your logo to scale down on mobile devices */
@@ -106,8 +106,9 @@ xheader
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
   top: 0;
-  height: 70px; }
+  height: 80px; }
 
+#uf-dockbar-hamburger-menu a, #uf-dockbar-right-menu a {/* width: 60px; */}
 
 #uf-dockbar-hamburger-menu {
   left: 0;
@@ -141,17 +142,13 @@ xheader
 
 #uf-dockbar-right-menu ul li.sign-in img {
   width: 0 !important; }
-@media (max-width: 979px){
-  #uf-dockbar-search-list-item {
-    display: none !important; }
-}
 
 @media only screen and (max-width: 980px) {
   #logo {left:0.5em;}
   #uf-dockbar-right-menu img {width: 24px; height:24px; padding: 5px 0; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #main-nav {  left: 143px;
   right: auto;
   }
@@ -159,22 +156,26 @@ xheader
     height: 34px;
     padding: 0.5em; }
 
-#uf-dockbar-search-list-item { display: none !important;  }
- 
+  #uf-dockbar-right-menu {
+    position: absolute !important; } 
+
+  #uf-dockbar-search-list-item { display: none !important; }
 }
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
     display: none !important; } }
+
+/* DB COMMENT    
 #main-nav, #uf-dockbar-cart, #uf-dockbar-sidebar {
   position: fixed;
   top: 0;
   height: 100%;
   width: 260px;
-  /* header height */
+  /* header height
   overflow-y: none;
   -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  z-index: 1029; }
+  z-index: 1029; }  */
 
 @media only screen and (min-width: 768px) {
   /* DB commented
@@ -609,8 +610,9 @@ transition: all 0.5s linear 0s; */
   border-bottom: 1px solid #CCC; }
 
 #uf-dockbar-sidebar ul li > a {
-  display: block; 
-  }
+  padding: 10px 12px 13px 40px;
+  display: block;
+ /* DB COMMENT font-weight: 600; */}
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   display: inline-block;
@@ -642,20 +644,33 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-sidebar ul li > a .li-icon {
   border: 0px solid rgb(153, 153, 153);
 }
+/* DB COMMENT
+.dark a.active {
+  text-decoration: underline !important;
+  color: #c66 !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  color: #FFF !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  background: #C66 none repeat scroll 0% 0%;
+} */
 
 /* End of temporary additions */
 
 #uf-dockbar-sidebar {
   position: fixed;
-  top: 0;
+  /* db comment top: 0; */
   background: #CCC none repeat scroll 0% 0%;
   border-right: 1px solid #CCC;
   height: 100%;
-  width: 315px;
-  /* header height */
+  width: 315px;/* header height */
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
 
 #uf-dockbar-sidebar {
   right: -120%;
