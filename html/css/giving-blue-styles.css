@@ -338,7 +338,7 @@ Corporate Identity CHANGE (BLUE) */
   border: 0px;
   min-height: inherit;
 }
-.cpn-slider-inner .swiper-slide{/* overflow: hidden; */}
+.cpn-slider-inner .swiper-slide{overflow: hidden;}
 
 .home-slider .swiper-slide picture img{
       min-height: inherit;
