@@ -544,10 +544,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
     margin-right: 20px
   }
   
+  /* DB comment
   .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 {
       width: 100% !important;
       margin-left: 0px !important;
-  }
+  } */
   
   .donate-btns button {
       width: 48% !important;
@@ -1182,14 +1183,14 @@ div.charity-donors img.dr-img {
 .aui .btn.active, .aui .btn:active {
     box-shadow: none;
 }
-
+/* DB COMMENTED OUT
 #login_button, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active, .btn-toggle .btn.active {
     border: medium none;
     font-family: "Century Gothic",verdana,arial,helvetica,sans-serif;
     font-weight: 300 !important;
 }
 
-/* DB COMMENTED OUT 
+ 
 .open-more, .btn-more-img, .btn, .btn-ghost {
   font: 1em/1.4 "Century Gothic",verdana,arial,helvetica,sans-serif !important;
   background: #F9F6EC none repeat scroll 0% 0%;
@@ -1332,12 +1333,12 @@ div.charity-donors img.dr-img {
 .btn-ghost:hover, .btn-ghost:focus, .btn-ghost.disabled, .btn-ghost[disabled] {
   background-color: #E6E4DD !important; 
 }
-
+/* DB COMMENTED OUT
 #login_button, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active, .btn-toggle .btn.active {
   background-color: #17a4e1 !important;
   color: #FFF !important;
   border: none !important; 
-}
+}*/
 
 .btn-ghost:hover,.btn-ghost:active, .btn-ghost.active,
 .btn-ghost.disabled, .btn-ghost[disabled],.donate-trig.btn-default:hover {
@@ -1359,7 +1360,7 @@ div.charity-donors img.dr-img {
   box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
   
 }
-
+/* DB COMMENTED OUT
 .btn-toggle .btn.active:hover,
 #donate-buttons .btn.active:hover,
 #btnDonate:hover,#btnDonate:active,#btnDonate:focus,
@@ -1369,7 +1370,7 @@ div.charity-donors img.dr-img {
 .add-bottom-lst input:hover,.add-bottom-lst input:active,.add-bottom-lst input:focus{
     background-color:#50967B !important; 
     color: #FFFFFF!important;
-}
+} */
 
 #view-campaign h5.indicate-tdr {
     color: #999 !important;
@@ -1687,11 +1688,11 @@ div.charity-donors img.dr-img {
 .home-slider .swiper-slide picture{
   min-height: inherit;
 }
-
+/* DB COMMENTED OUT
 .home-slider .swiper-slide picture img{
   min-height: inherit;
   width: 100%;
-}
+} */
 
 .home-slider .slider-navigation{
   bottom: 0px !important;
@@ -1852,7 +1853,7 @@ div.clickable>a.img-placeholder-btn {
 /***************************************************************************
                                 PRE FOOTER
 ***************************************************************************/
-.pre-footer{ margin:20px auto; }
+/* .pre-footer{ margin:20px auto; } */
 .pre-footer-social{
     padding: 30px 10px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;
     background-color: #f5f5f5;
@@ -1910,10 +1911,10 @@ border: 1px solid #ccc !important;
 ***************************************************************************/
 .footer-ul{margin-left: 0 !important;}
 .footer-ul li{list-style: none;float: left;margin-right:30px;}
-
+/* Db Commente
 @media (min-width: 980px) {
-    .pre-footer{border-top:1px solid #cccccc;padding-top:30px;}
-}
+    .pre-footer{ border-top:1px solid #cccccc; padding-top:30px;}
+}*/
 
 @media (max-width: 979px) {
   /* pre-footer, footer*/
@@ -1959,17 +1960,17 @@ border: 1px solid #ccc !important;
 }
 
 @media (max-width: 767px){
-  .wrapper-925 {width: 100%;}
+  /* DB comment .wrapper-925 {width: 100%; } */
   .dashboard-wrapper.volunteer-contact{
     overflow-x:scroll; 
   }
 }
-
+/* DB comment
 @media (max-width: 320px) {
   body {
       max-width: 320px !important;
   }
-}
+}*/
 
 
 /***************************************************************************

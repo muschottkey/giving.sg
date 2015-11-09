@@ -50,7 +50,7 @@ xheader
 
 
 @media only screen and (min-width: 768px) {
-  #main-nav-header { height: 70px; } 
+  #main-nav-header {height: 70px;} 
 }
 #logo {
   padding-top: 0.8em;/* delete this property if you don't want your logo to scale down on mobile devices */
@@ -106,9 +106,8 @@ xheader
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
   top: 0;
-  height: 80px; }
+  height: 70px; }
 
-#uf-dockbar-hamburger-menu a, #uf-dockbar-right-menu a {/* width: 60px; */}
 
 #uf-dockbar-hamburger-menu {
   left: 0;
@@ -161,8 +160,7 @@ xheader
     padding: 0.5em; }
 
 #uf-dockbar-search-list-item { display: none !important;  }
-  #uf-dockbar-right-menu {
-    position: absolute !important; } 
+ 
 }
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
