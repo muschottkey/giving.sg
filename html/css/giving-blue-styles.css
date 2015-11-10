@@ -315,7 +315,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
-.section-page{margin-top: 37px;}
+.section-page{margin-top: 70px;}
 
 #logo a {
     color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;
@@ -466,10 +466,10 @@ Corporate Identity CHANGE (BLUE) */
   line-height: 30px;
 }
 
-
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
-.modalwrapper .summary-wrapper .headings span{ color:#999; }
+.modalwrapper .summary-wrapper .headings span{color:#666;}
+
 /* D COMMENT
 .box.reset span.small,
 .box.reset p.small,

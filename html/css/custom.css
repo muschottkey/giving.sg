@@ -689,11 +689,11 @@ input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder {
 
 /* DB .minimal {
   font-weight: 400 !important;
-}*/
+}
 
 .small {
   font-size: .875em !important;
-}
+}*/
 
 .text-left {
   text-align: left !important;
@@ -1343,10 +1343,10 @@ div.charity-donors img.dr-img {
 .btn-ghost:hover,.btn-ghost:active, .btn-ghost.active,
 .btn-ghost.disabled, .btn-ghost[disabled],.donate-trig.btn-default:hover {
   background-color: #E6E4DD !important; 
-}*/
-
+}
+/*
 .donate-trig.btn-default {
-    background-color: #F9F6EC; 
+     background-color: #F9F6EC; 
 } 
 
 #disabledDonate{
@@ -1360,7 +1360,6 @@ div.charity-donors img.dr-img {
   box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
   
 }
-/* DB COMMENTED OUT
 .btn-toggle .btn.active:hover,
 #donate-buttons .btn.active:hover,
 #btnDonate:hover,#btnDonate:active,#btnDonate:focus,
