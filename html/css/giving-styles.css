@@ -407,7 +407,6 @@ input[type="text"]:focus, textarea:focus,
 
 
 .control-group { margin-top: 1em; padding-bottom: 1em;  position:relative; }
-    .control-group, .controls {overflow: hidden; }
     .control-group:after, .controls:after{ content:""; clear:both; display:block; }
     
 /* UI Controls - BUTTONS */
