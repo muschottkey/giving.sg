@@ -757,8 +757,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .choice-buttons{margin-top: 30px;}
 .choice-buttons button{width: 35%;padding: 7px;}
 .choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
-.choice-buttons button.yes.active{background-color: #91C2AF;}
-.choice-buttons button.no.active{background-color: #cc6666;}
+.choice-buttons button.yes.active{background-color: #91C2AF;color: #ffffff !important;}
+.choice-buttons button.no.active{background-color: #cc6666 !important;color: #ffffff !important;}
 
 /*.btn-ghost{ background: #FFF;color: #000;font-weight:700;box-shadow: none;border-width:2px;border-radius:6px;border-color: #cccccc;}*/
 .btn-ghost{ box-shadow: none;border-radius:6px;}
@@ -1311,7 +1311,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .more-days span.em{color: #adadad;}
 .dtn-amt-item{position: relative;}
 .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-vacs { display:table; }
-.dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell;  }
+.dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block;  }
 .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {min-height:100px; }
 #custom-amt-input-modal { min-height:30px; padding: 1em;  }
 #custom-amt-input-modal .em { font-size:1.5em;  }
