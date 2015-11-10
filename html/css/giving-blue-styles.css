@@ -483,12 +483,16 @@ Corporate Identity CHANGE (BLUE) */
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
+.row-fluid.m-bot20 .action-link,
 .box-r-footer a,
 #dtn-user-large-cta .action-link, 
 .link-box .action-link{color:#17a4e1 !important;}
+.row-fluid.m-bot20 .action-link:hover,
 .box-r-footer a:hover,
 #dtn-user-large-cta .action-link:hover, 
 .link-box .action-link:hover{color:#2174b5 !important;}
+
+.row-fluid.m-bot20 .small,
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
@@ -712,6 +716,8 @@ Corporate Identity CHANGE (BLUE) */
 .btn-group > .btn {
   font-size: 16px !important;
 }
+.btn-group.select-like.actions-group > .btn.dropdown-toggle {font-size: 13px !important;}
+.dropdown-menu > li > a{font-size:14px;}
 
 
 

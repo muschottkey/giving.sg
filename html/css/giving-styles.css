@@ -275,12 +275,12 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
     color: #333 !important;
 }
 .control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline{
-    color: #91C2AF !important; 
+    color: #666 !important; 
     font-weight: 400;
 }
 
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
-    border-color: #91C2AF !important;
+    border-color: #4cb848 !important;
     color: #91C2AF !important;
     font-weight: 400;
 }
@@ -1001,7 +1001,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 .lbl-chkbox input[type=checkbox]:checked + label:before{
-    content: "\f058"; font-family:"FontAwesome"; display:block; background:transparent;
+    content: "\f00c"; font-family:"FontAwesome"; display:block; background:transparent;
     color:#C66; position:absolute; width: 20px; height: 20px; top:10px; right:10px;
 }
 
@@ -1027,14 +1027,25 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
 
 #user-about-links input{ 
-    border-width:1px !important;font-size:16px !important;padding-left:5px !important;height: 40px; margin:0 auto !important;
+    border-width:0 0 1px !important;font-size:16px !important;padding-left:5px !important;height: 40px; margin:0 auto !important;
 }
 #user-about-links .control-group{margin-top: 10px;}
 #user-about-links .input-append.input-prepend{width: 55%;float: left;}
 #user-about-links .input-append.input-prepend .add-on{height: 30px;font-size: 12px;line-height: 2.5em;}
-#user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686;}
-#user-about-links .input-append.input-prepend .add-on:first-child{width: 60px;}
-#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #91C2AF;content: "\f058";}
+#user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686; border-width:0 0 1px !important; border-radius:0 !important; margin:1px 0 0;}
+#user-about-links .input-append.input-prepend .add-on:first-child{
+	float:none;
+	width:auto;
+	display:block;
+	text-align:left;
+	color:#666 !important;
+	background:none;
+	border:0;
+	font-size:12px !important;
+	line-height:16px !important;
+	height:auto;
+}
+#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #91C2AF;content: "\f00c";}
 
 /* Set-up donation step 2*/
 .action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
@@ -2121,22 +2132,26 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .top-title-area{
     display:none;
-    background-color: #F9F6EC;
+    background-color: #fff;
     margin:-1px 0 0;
     cursor:pointer;
-    border:1px solid #ccc;
+    border:1px solid #999;
     text-align:left;
     padding:8px 50px 8px 25px;
     overflow:hidden;
 }
+.top-title-area.active{background:#f7f7f7;}
 .top-title-area .ttl{
     float:left;
     width:34px;
     padding:0 10px 0 0;
     font-size:28px;
     line-height:32px;
-    color: #999999 ;
+    color: #666;
 }
+.top-title-area.active .ico,
+.top-title-area.active .add-text,
+.top-title-area.active .ttl{color:#333;}
 .top-title-area .ttl:hover{
     color: #CC6666;
     text-decoration: underline;
@@ -2145,7 +2160,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .top-title-area .add-text{
     display:block;
     overflow:hidden;
-    color:#999;
+    color:#666;
     font-style:italic;
     font-size:14px;
     line-height:20px;
@@ -2157,7 +2172,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     font-size:18px;
     line-height:22px;
     top:15px;
-    color:#CC6666;
+    color:#666;
 }
 
 /***************************************************************************
@@ -2247,10 +2262,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .dashboard .tab-nav-area li a{
     padding: 10px 15px;
     border:1px solid #ccc;
-    border-top-left-radius: 6px;
-    border-top-right-radius: 6px;
+    
     background-color: #f5f5f5;
-    color:#9E9E9E;
+    color:#ccc;
 }
 .dashboard .tab-nav-area li.active a{
     background-color: #FFF;
@@ -2297,7 +2311,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .data-list li.active{background-color: #f2f2f2;}
     .data-list li:last-child{border-bottom: none;}
 .data-list > li .block strong { font-size:1.4em;  }
-.data-list a{text-decoration:none;border-bottom:1px solid #17a4e1;}
+.data-list .row-fluid.non-respv > span:last-child a{text-decoration:none !important;border-bottom:1px solid #17a4e1;
+display:inline-block !important; vertical-align:top;
+}
 .data-list a:hover{border-color:#2174b5;}
 
 
@@ -2353,6 +2369,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     right: 5px;
     top:50%;
     margin-top: -10px; }
+	.dropdown.select-like .dropdown-menu li.active:before{
+		font-size:13px !important;
+	}
 
 .data-list li .action-btn{ position: absolute;top: 50%;height: 30px;margin-top: -15px;right: 10px;}
 .data-list li .action-btn button, .dropdown-select button{ 
@@ -2564,9 +2583,16 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .data-list.volunteers-list .data-list-item .icon i.fa-star{color:#f89406;}
 .data-list.volunteers-list .data-list-item .span9{text-align: left;}
 .data-list.volunteers-list .data-list-item .span1 input{
-    border:1px solid #CCC; padding:5px; border-radius: 5px;
+    border-bottom:1px solid #CCC; padding:5px; 
     margin-top: 0px; margin-bottom: 0px;
 }
+
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
+	background:none;
+	color:#ccc;
+	border-color:#ccc;
+}
+
 .data-list.volunteers-list .data-list-item .span1 input:disabled{
     cursor: not-allowed;
 }
@@ -2662,6 +2688,13 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 
 
 .row-fluid [class*="span"]{min-height:0px}
+.controls  input[type="text"],
+.time-fields-wrapper input[type="text"],
+.control-group .form-control{
+	border-width:0 0 1px;
+	border-radius:0;
+	box-shadow:none !important;
+}
 .volunteer-contact .name, .volunteer-name {font-size:1.25em; display:inline-box; font-weight:bold;}
 .volunteer-contact .name a{color:#000;}
 .volunteer-contact .email{margin-top:0px; word-break:break-all;}
@@ -2689,6 +2722,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     text-align: left;
     border-radius: 0;
 }
+.select-like button.dropdown-toggle{
+	box-shadow:none;
+}
 .select-like button:focus, .select-like button:hover{
     color: #c66;background-color: #FFF;
     border-color: #999; outline: 0 !important; 
@@ -2698,7 +2734,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 .select-like button .caret{ margin-top:0px; border: none; font-weight: 700; font-size: 1.2em; }
     .select-like button .caret:before, .actions-group button .caret:before{
-        content: "\f078"; font-size: 13px;
+        content: "\f0d7"; font-size: 13px;
         color: #333;
     }
     .actions-group button .caret { margin-top:8px; } 
@@ -2714,14 +2750,14 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 }
 
  .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, 
-.dropdown-menu li a:hover,.dropdown-menu li a:focus, .dropdown-menu li.active a {background-color: #dbdbdb;}
+.dropdown-menu li a:hover,.dropdown-menu li a:focus, .dropdown-menu li.active a {background-color: #f0f0f0;}
 .select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #17A4E1; text-align:left; }
 .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .dropdown-menu li a:hover,
 .dropdown-menu li a:focus{
-    background: #f7f7f7; color:#c66 !important; outline: 0;font-weight: 400;
+    background: #f0f0f0; color:#17A4E1 !important; outline: 0;font-weight: 400;
 }
-.select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #666; font-weight: normal; }
-.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #C66; }
+.select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #17A4E1 !important; font-weight: normal; }
+.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #17A4E1; }
 
 
 
