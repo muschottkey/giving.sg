@@ -344,13 +344,13 @@ Corporate Identity CHANGE (BLUE) */
       height: auto;
       width: 100%;
     }
-.home-slider .swiper-button-prev, .home-slider .swiper-button-next{
+.home-slider .swiper-button-prev, .home-slider .swiper-button-next,.swiper-button-next , .swiper-button-prev {
     background-image: none !important;
 }
-.home-slider .swiper-button-prev:hover:before, .home-slider .swiper-button-next:hover:before{
+.home-slider .swiper-button-prev:hover:before, .home-slider .swiper-button-next:hover:before, .swiper-button-next:hover:before, .swiper-button-prev:hover:before {
     color: #17A4E1;
 }
-.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before{
+.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, .swiper-button-prev:before, .swiper-button-prev:before {
     font-family: "fontAwesome";
     height: 40px;
     width: 40px;
@@ -359,16 +359,25 @@ Corporate Identity CHANGE (BLUE) */
     color: #666;
     line-height: 0.8;
 }
-.home-slider .swiper-button-prev:before{
+.swiper-button-prev:before,.swiper-button-next:before  {
+    font-family: "fontAwesome";
+    height: 40px;
+    width: 40px;
+    display: block;
+    font-size: 2.5em;
+    color: #666;
+    line-height: 1;
+}
+.home-slider .swiper-button-prev:before, .swiper-button-prev:before {
     content: "\f104";
 }
-.home-slider .swiper-button-next:before{
+.home-slider .swiper-button-next:before, .swiper-button-next:before {
     content: "\f105";
 }
-.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
+.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active{
     background-color: #17A4E1;
 }
-.swiper-pagination-bullet{
+.swiper-pagination-bullet, .carousel-indicators li{
     background-color: #666;
 }
 .gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;}
@@ -390,7 +399,7 @@ Corporate Identity CHANGE (BLUE) */
 .home-slider .swiper-slide picture img{
     min-height: inherit; width: 100%; margin-top: -10%; height: auto;
 }
-
+.landing-cpn-slider-wrapper .swiper-button-prev{left: 0;}
 
 .nl-form{
     color:#333333;
@@ -410,7 +419,9 @@ Corporate Identity CHANGE (BLUE) */
 .gallery-txt-box button:hover{
     background-color: #8AD3F3 !important;
 }
-
+.btn-ghost, .gallery-txt-box .btn{
+    border:0 !important;
+}
 /* Why Giving TYPO 1 scale downwards
 Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
@@ -466,7 +477,9 @@ Corporate Identity CHANGE (BLUE) */
   line-height: 30px;
 }
 
-
+#cpn-donate-now .donate-btns{
+    margin-top: 15px;
+}
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
@@ -566,11 +579,11 @@ Corporate Identity CHANGE (BLUE) */
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
 .acc-toggle:before{color:#ffffff;}
 
-    
+/*************************************************************/
+            /* SELECTS AND DROPDOWNS */
+/*************************************************************/
 
-/******************************************/
-/*  END OF FOOTER*/
-/*****************************************/
+
 
 /******************************************/
 /*  START OF CARD UI */
@@ -743,6 +756,10 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #B3E7FF !important;
 }
 
+.btn-ghost:hover, .gallery-txt-box .btn:hover{
+    background-color: #0e678e; color:#FFF;border:none;
+}
+
 
 /* Disabled state */
 .btn:disabled, .aui .btn:disabled{
@@ -789,6 +806,17 @@ Corporate Identity CHANGE (BLUE) */
 /*  END OF SIDEBAR */
 /*****************************************/
 
+
+#setup-dtn-carousel .carousel-control, .carousel-control{
+    background-color: transparent;
+}
+#setup-dtn-carousel .carousel-control span, .carousel-control span{
+    color: #666;
+    font-size: 3em;
+}
+#setup-dtn-carousel .carousel-control span:hover, .carousel-control span:hover{
+    color: #17A4E1;
+}
 
 
 /* TABLET (LARGE) */
@@ -910,6 +938,12 @@ Corporate Identity CHANGE (BLUE) */
 
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
+.add-inner-gallery.landing-cpn-slider-wrapper .slider-navigation{
+    bottom: 36px !important;
+}
+.landing-cpn-slider-wrapper{border:1px solid #ccc;}
+.landing-cpn-slider-wrapper .swiper-pagination{border:none;}
+.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
 
 @media (max-width: 1023px) and (min-width: 980px){
     .donors-area .dr-img {
@@ -936,3 +970,30 @@ Corporate Identity CHANGE (BLUE) */
         border-radius: 0;
     }
 }
+
+/*************************************************************/
+            /* PERMANENT ADDITIONS */
+/*************************************************************/
+.tax-status-i{
+    width: 36px;
+    height: auto;
+}
+
+
+/*************************************************************/
+            /* TEMPORARY EDITS */
+/*************************************************************/
+#donate-now{
+    display: none;
+}
+#cause-image-preview{
+    display: none;
+}
+.donate-btns{
+    padding: 0px 1.8em;
+}
+#cpn-info .evn-details, #cpn-info .box.causes{
+    display: none;
+}
+#cpn-donate-now > .box > h4{display: none;}
+.cn-ln-details{display: none;}

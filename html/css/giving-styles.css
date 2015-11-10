@@ -439,7 +439,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
         background-color:#81D5F8; color: #2174B5;
 }
 .btn-ghost:hover, .gallery-txt-box .btn:hover{
-    background-color: #0e678e; border-color: #0e678e; color:#FFF;
+    background-color: #0e678e; color:#FFF;
 }
 
 
@@ -1199,7 +1199,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 
 #setup-dtn-carousel{ border:1px solid #CCC; border-bottom:0; }
 #setup-dtn-carousel .carousel-control {
-    background:#C66; border:0 none; margin-top: 10px;height: 30px; width: 30px; font-size:1em; 
+    background:#C66; border:0 none; margin-top: 10px;height: 48px; width: 30px; font-size:1em; 
 }
 a.carousel-control { color:#FFF;}
 
