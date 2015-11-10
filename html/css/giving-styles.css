@@ -104,6 +104,14 @@ label.small.grey{color: #999;}
 .control-group .controls span small {font-size: 100% !important;}
 .control-group .controls .checkbox > .small {font-size: 100% !important;}
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus{cursor: not-allowed;}
+.pagination ul{
+	box-shadow:none;
+	border-radius:none;
+}
+.pagination ul > li > a, .pagination ul > li > span{
+	border:0;
+	background:none;
+}
 
 /* Inline form elements styling in horizontal forms */
 .inline-elements  input:not([type=checkbox]){
@@ -1104,7 +1112,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 #dtn-user-large-cta .span6.box.reset .action-link{margin-top: 40px;}
 #dtn-user-large-cta .span6.box.reset span.small{width:75%; display: inline-block;margin-top:20px;margin-bottom:50px;}
 #dtn-user-actions .btn{height: 40px;line-height: 30px;}
-#dtn-add-logo .box.reset{background-color: #efefef;}
+
 .border-round .centered { padding:10px 0; }
 
 /* Search Results */
@@ -1238,7 +1246,10 @@ a.carousel-control { color:#FFF;}
 #vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
 #vw-gft-dtn-prefs tr td label{text-align: left;}
-#vw-gft-dtn-prefs tr td:first-child{width: 30%}
+#vw-gft-dtn-prefs tr td:first-child{
+	width: 30%;
+	border-right:1px solid #ccc;
+}
 #vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 40px;padding-top: 6px;}
 .box-r-footer { 
     display: block; padding:5px 10px; margin-top:20px;  
@@ -2286,6 +2297,8 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     .data-list li.active{background-color: #f2f2f2;}
     .data-list li:last-child{border-bottom: none;}
 .data-list > li .block strong { font-size:1.4em;  }
+.data-list a{text-decoration:none;border-bottom:1px solid #17a4e1;}
+.data-list a:hover{border-color:#2174b5;}
 
 
 .data-list li .prn-chk-bx{ position: relative;}
@@ -3456,7 +3469,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     #dtn-impact-s .box {padding: 30px 30px !important;}
     #dtn-user-actions > .box{background-color: #efefef;margin-top: 20px;}
     #dtn-user-actions #dtn-impact-s{background-color: #fff;border: 1px solid #cccccc;}
-    #dtn-add-logo .box.reset{background-color: #efefef;}
+    
     #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:10px 1% 10px 2% !important; }
     .npo-deet #custom-amt-input{ float: left; width: 28%; padding-top: 9px; margin:2px 1% 10px 2%; }
 

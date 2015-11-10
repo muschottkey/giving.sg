@@ -483,6 +483,13 @@ Corporate Identity CHANGE (BLUE) */
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
 .modalwrapper .summary-wrapper .headings span{ color:#999; }
+.box-r-footer a,
+#dtn-user-large-cta .action-link, 
+.link-box .action-link{color:#17a4e1 !important;}
+.box-r-footer a:hover,
+#dtn-user-large-cta .action-link:hover, 
+.link-box .action-link:hover{color:#2174b5 !important;}
+#dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
 .main-content, .modal-content { margin-top: 70px; }
