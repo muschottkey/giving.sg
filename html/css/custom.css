@@ -1320,7 +1320,7 @@ div.charity-donors img.dr-img {
 }
 
 .open-more, .btn-more-img, .btn-ghost {
-    background: #F9F6EC none repeat scroll 0% 0% !important;
+    /* background: #F9F6EC none repeat scroll 0% 0% !important; */
     color: #333 !important;
 }
 
