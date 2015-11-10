@@ -404,13 +404,9 @@ input[type="text"]:focus, textarea:focus,
     border-bottom:1px solid #17A4E1; box-shadow: none; 
 }
 
-
 .control-group { margin-top: 1em; padding-bottom: 1em;  position:relative; }
     .control-group:after, .controls:after{
-    	content:"";
-		clear:both;
-		display:block;
-		
+    	content:""; clear:both; display:block;
     }
     
 /* UI Controls - BUTTONS */
@@ -1772,7 +1768,6 @@ span.span12.read-more.text-left.m-0{display: none;}
 #jira-353-content .control-group{
     margin-top: 1em;
 }
-
 #jira-353-content #postcode  {
     margin-top: 60px;
 }
@@ -2691,7 +2686,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     background: #dbdbdb; color:#17A4E1 !important; outline: 0;font-weight: 400;
 }
 .select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #17a4e1; font-weight: normal; }
-.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #C66; }
+.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #0E678E; }
 
 
 
