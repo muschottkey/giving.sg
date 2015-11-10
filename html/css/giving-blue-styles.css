@@ -734,7 +734,8 @@ Corporate Identity CHANGE (BLUE) */
 #login_button:focus,  .btn-primary:active, .btn-primary:focus,
 .btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, 
  .add-bottom-lst input:active, .add-bottom-lst input:focus{
-   background-color: #0E678E !important;
+   background-color: #81D5F8!important;
+   /* color: #FFF; */
  }
 
 

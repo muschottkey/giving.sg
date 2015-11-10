@@ -1118,7 +1118,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 /*       GIFT BASKET       */
 #gf-bkt-wrapper{margin-bottom: 0px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
-.gf-bkt{border-collapse: separate;margin-top: 40px; width:100%;}
+.gf-bkt{border-collapse: separate;margin-top: 40px; width:100%;border: 1px solid #ddd;}
 .gf-bkt thead tr td{font-size: 0.889em;}
 .gf-bkt tr{border-top:0px solid #333;border-left:1px solid #cccccc;border-right:1px solid #cccccc;}
 .gf-bkt tr td{text-align: center;vertical-align: middle;}
@@ -2163,8 +2163,9 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar ul li{
     list-style: none;  background-color: #FFF;
 }
-#sidebar ul li a { text-decoration: none; }
-#sidebar ul li.active a{ color: #91C2AF;  }
+#sidebar ul li.active a{
+    color: #91C2AF;
+}
 #sidebar .b-top{ border-top: 1px solid #CCC; border-bottom:2px solid #CCC; }
 #sidebar ul li.dark h5, #sidebar ul li > a { padding:12px 15px 13px 30px; display: block; } 
  #sidebar ul li h5 { color: #333; padding:0; } 
@@ -2534,7 +2535,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .highlights.resp .highlight-item.span3{width: auto;}
 .data-list.volunteers-list .data-list-item{padding: 15px 30px;}
 .data-list.volunteers-list.pg480 .data-list-item{padding: 15px 20px;}
-.data-list.volunteers-list .data-list-item.active{background-color: #f2f2f2;}
+.data-list.volunteers-list .data-list-item.active{background-color: #f9f9f7;}
 .data-list.volunteers-list .data-list-item .edit-data-list{
     display: none;
     width: 40px;
@@ -2585,12 +2586,16 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     padding-right: 47px !important;
 } 
 
-
 .volunteer-check{display: none;}
 .volunteer-check+label{
     display: inline-block;
+    /*COmment out for D 
     width: 20px;
     height: 32px;
+    position: relative; */
+    width: 17px;
+    height: 17px;
+    background:url(../images/bg-checkbox.png) no-repeat;
     position: relative;
     background-color: transparent;
     right: 0;
@@ -2599,6 +2604,7 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     vertical-align: middle;
     line-height: 1.5;
 }
+/*COmment out for D 
 .volunteer-check+label:before{
     content: "";
     width: 20px;
@@ -2618,18 +2624,20 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
     content: "\f05d" !important;
     color: #91C2AF;
     border-color:transparent;
-}
+} */
+
 .volunteer-check:disabled+label{
     cursor: not-allowed;
 }
 .volunteer-check+label:before{
-    content: ""; background-color: #FFF; border:1px solid #CCC; border-radius: 500px;
+    content: ""; width:17px; height:17px; display:block; background:url(../images/bg-checkbox.png) no-repeat;
+}
+.volunteer-check:checked+label:before{
+   background:url(../images/bg-checkbox.png) no-repeat 0 -73px;
+    /*comment out for D font-family: "FontAwesome"; content: "\f192";  border-color: transparent; */
 }
 
-.volunteer-check:checked+label:before{
-    font-family: "FontAwesome"; content: "\f192";
-    border-color: transparent;
-}
+
 #subAttendees .dropdown-menu li > a{ padding:10px 40px 10px 25px !important; }
 
 /*      773     */
@@ -2698,9 +2706,9 @@ form.text-left input:not([type="checkbox"]) { text-align: left; }
 .select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #17A4E1; text-align:left; }
 .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .dropdown-menu li a:hover,
 .dropdown-menu li a:focus{
-    background: #dbdbdb; color:#17A4E1 !important; outline: 0;font-weight: 400;
+    background: #f7f7f7; color:#c66 !important; outline: 0;font-weight: 400;
 }
-.select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #17a4e1; font-weight: normal; }
+.select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #666; font-weight: normal; }
 .select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #C66; }
 
 
@@ -3165,7 +3173,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     .donation-wrapper{max-width: 700px;float: right;}
     .dashboard-wrapper{max-width: 1175px;margin-left: auto;margin-right: auto;position: relative;
         border-right: 1px solid #cccccc;border-left: 1px solid #cccccc;}
-    #setup-donation-content .acc-toggle.text-left, #jira-353-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em; color:#333;}
+    #setup-donation-content .acc-toggle.text-left, #jira-353-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -300px;margin-top: 0;line-height: 1em;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px; /**padding-top: 0 !important; hided by yen**/}
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
