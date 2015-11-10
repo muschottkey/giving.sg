@@ -1,0 +1,704 @@
+body.overflow-hidden {
+  /* prevent 2 vertical scrollbars on ie and firefox when the cart is visible */
+  overflow: hidden; }
+
+/* -------------------------------- 
+Modules - reusable parts of our design
+-------------------------------- */
+/* http://stackoverflow.com/questions/802175/truncating-long-strings-with-css-feasible-yet */
+.uf-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  -moz-binding: url("assets/xml/ellipsis.xml#ellipsis"); }
+
+.uf-dockbar-container {
+  /* this class is used to horizontally align the gallery of items */
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto; }
+
+.uf-dockbar-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both; }
+
+.uf-dockbar-img-replace {
+  /* replace text with a background-image */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap; }
+
+/* -------------------------------- 
+
+xheader 
+
+-------------------------------- */
+#main-nav-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  z-index: 1030; 
+}
+
+
+@media only screen and (min-width: 768px) {
+  #main-nav-header { height: 70px; } 
+}
+#logo {
+  padding-top: 0.8em;/* delete this property if you don't want your logo to scale down on mobile devices */
+
+}
+
+#uf-dockbar-right-menu ul li.sign-in span {
+  float: right;
+  display: block;
+  line-height: 35px;
+  margin-right: 0px;
+  margin-left: -10px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8); }
+
+#uf-dockbar-right-menu ul li.sign-in span {
+  color: #999 !important;
+  font-size: 20px;
+  font-weight: 200;
+  max-width: 250px;
+  display: inline-block; }
+
+@media only screen and (min-width: 1200px) {
+  #logo a {
+    max-width: 700px; } }
+@media only screen and (min-width: 720px) {
+  #logo a {
+    max-width: 600px; } }
+@media only screen and (min-width: 768px) {
+  #logo {
+    font-size: 1.25em; font-weight: 500; padding: 1em 0;
+    position: absolute; /* logo left margin on Desktop */
+    left: 1.1em;top: 0;
+  }
+
+  #uf-dockbar-right-menu ul li.sign-in span {
+    margin-right: 10px;
+    margin-left: 5px;
+    line-height: 34px;
+    font-size: 1em;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1); }
+
+  li#uf-dockbar-sidebar-trigger a img {
+    margin-right: 10px;
+    margin-left: 5px; } }
+#uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
+  position: absolute;
+  top: 0;
+  height: 70px;
+  }
+
+#uf-dockbar-hamburger-menu a {width: 60px;}
+
+#uf-dockbar-hamburger-menu {
+  left: 0;
+  padding: 0.5em 1em; }
+
+#uf-dockbar-right-menu {
+  right: 0; }
+
+#uf-dockbar-right-menu ul {
+  list-style: none;
+  margin: 0px !important;
+  height: 70px; }
+
+#uf-dockbar-right-menu ul li {
+  display: inline-block;
+  height: 30px;
+  padding: 1em .75em 1em .25em;
+  /* margin-right: -5px; DB HIDE for the alignment */
+  }
+
+#uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
+  padding: .25em .75em;
+  width: 30px;
+  }
+
+#uf-dockbar-right-menu ul li.highlight span {
+  display: block;
+  float: right;
+  line-height: 35px;
+  /* db margin-left: 0px; */
+  font-weight: 900;
+}
+
+#uf-dockbar-right-menu ul li.highlight {
+  background: white; }
+
+#uf-dockbar-right-menu ul li.sign-in img {
+  width: 0 !important; }
+
+@media only screen and (max-width: 980px) {
+  #logo {left:0.5em;}
+  #uf-dockbar-right-menu img {width: 24px; height:24px; padding: 5px 0; }
+}
+
+@media (max-width: 767px) {
+  #main-nav {  left: 143px;
+  right: auto;
+  }
+  #uf-dockbar-right-menu ul li {
+    height: 34px;
+    padding: 0.5em; }
+
+  #uf-dockbar-right-menu {
+    position: absolute !important; } 
+
+  #uf-dockbar-search-list-item { display: none !important; }
+}
+@media (max-width: 480px) {
+  #uf-dockbar-cart-trigger.highlight a > span {
+    display: none !important; } }
+
+/* DB COMMENT    
+#main-nav, #uf-dockbar-cart, #uf-dockbar-sidebar {
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  /* header height
+  overflow-y: none;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  z-index: 1029; }  */
+
+@media only screen and (min-width: 768px) {
+  /* DB commented
+  #main-nav, #uf-dockbar-cart {
+    width: 350px; } */
+     #uf-dockbar-hamburger-menu {
+    display: none; }
+     }
+@media only screen and (min-width: 1200px) {
+  /* DB commented
+  #main-nav, #uf-dockbar-cart {
+    width: 30%;
+    padding-top: 70px; }*/
+
+  #uf-dockbar-cart {
+    max-width: 360px;
+    /* header height has changed */
+    padding-top: 70px; } }
+#main-nav {
+  left: -120%;
+  background: #FFF;
+  -webkit-transition: left 0.3s;
+  -moz-transition: left 0.3s;
+  transition: left 0.3s;
+  background: #fff; }
+
+#main-nav.speed-in {
+  left: 0; }
+
+#main-nav ul a {
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 1em;
+  border-bottom: 1px solid #e0e6ef;
+  color: #999; }
+
+/* DB - COMMENTED OUT 
+#main-nav ul .current {
+  box-shadow: 8px 0px #c66 inset; }
+  --- */
+
+@media only screen and (min-width: 768px) {
+  #main-nav {
+    /* reset main nav style */
+    position: absolute;
+    height: auto;
+    width: auto;
+    left: auto;
+    right: 14em;
+    top: 0;
+    margin-right: 1em;
+    background: transparent;
+    box-shadow: none;
+    /* header height */
+    /*  line-height: 70px;*/
+    z-index: 1030;
+    background-color: #F9F6EC; }
+
+  #main-nav li {
+    display: inline-block;
+    float: left; }
+
+  #main-nav li:nth-child(n+7) {
+    display: none !important; }
+
+  #main-nav ul a {
+    display: inline-block;
+    height: auto;
+    line-height: 1;
+    padding: 1em 1.4em;
+    border-bottom: none;
+    }
+/* DB COMMENTED 
+  #main-nav ul a.current {
+    box-shadow: none;
+    color: #FFF !important;
+    background: #c66; }
+    -- */
+
+  .no-touch #main-nav ul a:hover {
+    background: #435779; } }
+.no-js #main-nav {
+  position: fixed; }
+
+#main-nav ul, .uf-dockbar-cart-items {
+  cursor: default;
+  list-style: none;
+  margin: 0px; }
+
+#uf-dockbar-cart {
+  right: -120%;
+  background: #FFF;
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  transition: right 0.3s; }
+
+#uf-dockbar-cart.speed-in {
+  right: 0; }
+
+#uf-dockbar-cart > * {
+  padding: 0 1em; }
+
+#uf-dockbar-cart h2 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+#uf-dockbar-cart .uf-dockbar-cart-items {
+  padding: 0;
+  margin: 0; }
+
+#uf-dockbar-cart .uf-dockbar-cart-items li {
+  position: relative;
+  padding: 1em;
+  min-height: 60px;
+  max-height: 60px;
+  border-top: 1px solid #e0e6ef; }
+
+#uf-dockbar-cart .uf-dockbar-price {
+  color: #a5aebc; }
+
+#uf-dockbar-cart .uf-dockbar-name {
+  width: 66%;
+  text-align: left;
+  display: inline-block;
+  max-height: 65px;
+  overflow: hidden; }
+
+#uf-dockbar-cart .uf-dockbar-price {
+  float: right;
+  width: 25%;
+  background-color: #F5F5F5;
+  padding: 15px 8px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #CCC;
+  font-weight: 900; }
+
+#uf-dockbar-cart .uf-dockbar-item-remove {
+  position: absolute;
+  right: 1em;
+  top: 50%;
+  bottom: auto;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%; }
+
+.uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,
+.uf-dockbar-go-to-cart a:link, .uf-dockbar-go-to-cart a:focus {
+  color: #999 !important;
+  cursor: default; }
+
+.uf-dockbar-more-items-message {
+  text-align: center;
+  color: #999;
+  padding: 30px 60px 0px !important;
+  line-height: 1.5em !important; }
+
+#uf-dockbar-cart a.checkout-btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none; }
+
+.no-touch #uf-dockbar-cart .uf-dockbar-item-remove:hover {
+  background-color: #e0e6ef; }
+
+#uf-dockbar-cart .uf-dockbar-cart-total {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-weight: 900;
+  cursor: default;
+  border-top: 1px solid #e0e6ef; }
+
+#uf-dockbar-cart .uf-dockbar-cart-total span {
+  float: right; }
+
+#uf-dockbar-cart .uf-dockbar-cart-total::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both; }
+
+#uf-dockbar-cart .checkout-btn {
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #7dcf85;
+  color: #FFF !important;
+  text-align: center;
+  padding: 0px; }
+
+.no-touch #uf-dockbar-cart .checkout-btn:hover {
+  background: #a2dda8; }
+
+#uf-dockbar-cart .uf-dockbar-go-to-cart {
+  text-align: center;
+  margin: 1em 0; }
+
+#uf-dockbar-cart .uf-dockbar-go-to-cart a {
+  text-decoration: underline; }
+
+@media only screen and (min-width: 1200px) {
+  #uf-dockbar-cart > * {
+    padding: 0 2em; }
+
+  #uf-dockbar-cart .uf-dockbar-cart-items li {
+    padding: 1em 2em; }
+
+  #uf-dockbar-cart .uf-dockbar-item-remove {
+    right: 2em; } }
+/* Search Bar modifications
+#uf-dockbar-search-desktop.active {
+  z-index: 1031;
+  left: 170px;
+  width: calc(100% - 360px ); }
+
+#uf-dockbar-right-menu {
+  position: initial;
+  float: right; }
+
+#uf-dockbar-search-desktop.closing {
+  opacity: 0 !important;
+  background-color: #765677; }
+*/
+#uf-dockbar-search-trigger i {
+  font-size: 23px;
+  vertical-align: middle;
+  color: #333; }
+
+#uf-dockbar-search-trigger:hover i {
+  color: #c66; }
+
+.uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,
+.uf-dockbar-go-to-cart a:link, .uf-dockbar-go-to-cart a:focus {
+  color: #999 !important;
+  cursor: default; }
+
+.uf-dockbar-more-items-message {
+  text-align: center;
+  color: #999;
+  padding: 30px 60px 0px !important;
+  line-height: 1.5em !important; }
+
+#uf-dockbar-cart a.checkout-btn.disabled {
+  opacity: 0.5;
+  cursor: default;
+  pointer-events: none; }
+
+#uf-dockbar-search-desktop input[type="text"] {
+  border: 0px;
+  padding: 2px 0px !important;
+  border-radius: 0px !important;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.2s ease-in 0.1s;
+  -moz-transition: all 0.2s ease-in 0.1s;
+  -o-transition: all 0.2s ease-in 0.1s;
+  transition: all 0.2s ease-in 0.1s;
+  background-color: white;
+  text-align: left;
+  height: 50px;
+  margin-top: 0;
+  width: 0;
+  min-width: 0px;
+  }
+
+
+#uf-dockbar-search-mobile input[type="text"] {
+  padding: 0.8em !important;
+  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 90%; }
+
+#uf-dockbar-search-mobile input[type="text"]:focus {
+  box-shadow: none !important; }
+
+#uf-dockbar-search-desktop input[type="text"]:focus {
+  box-shadow: none !important;
+  border-radius: 0px !important; }
+
+#uf-dockbar-search-desktop.active input[type="text"] {
+  width: 180px;
+  padding: 10px 15px !important;
+  padding-right: 50px !important;
+  }
+
+/* search modification
+#uf-dockbar-search-desktop.active input[type="text"] {
+  width: 100% !important;
+  padding: 2px 10px 2px 15px !important; }  */
+#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"], #uf-dockbar-search-desktop.closing span.close, #uf-dockbar-search-desktop.active span.close {
+  opacity: 1; }
+
+#uf-dockbar-search-desktop form fieldset, #uf-dockbar-search-mobile form fieldset {
+  border: 0px !important;
+  margin: 0px !important;
+  padding: 0px !important; }
+
+#uf-dockbar-search-desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  }
+
+#uf-dockbar-search-mobile {
+  position: relative;
+  margin: 2em 1em 0em 1em;
+  width: 300px;
+  display: none; }
+
+#uf-dockbar-search-desktop span.fa-search {
+ /* -webkit-transition: all 0.5s linear 0s;
+-moz-transition: all 0.5s linear 0s;
+-o-transition: all 0.5s linear 0s;
+transition: all 0.5s linear 0s; */
+  position: absolute;
+  right: 50px;
+  top: 1.2em;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 1; }
+
+#uf-dockbar-search-desktop span.fa-search:hover {
+  color: #c66; }
+
+/* Search Modification 
+#uf-dockbar-search-desktop input[type="submit"] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 0px none;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 0; 
+}*/
+#uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
+  position: absolute; right: 15px; top: 1em; padding: 0; opacity: 0;
+  background: transparent url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
+  width: 30px; height: 30px; border: 0px none; text-indent: -9999px; cursor: pointer;
+}
+
+#uf-dockbar-search-desktop span.fa-search:before {
+  font-size: 23px;
+  margin-left: 10px; }
+
+#uf-dockbar-search-mobile span.fa-search {
+  position: absolute;
+  top: 1em;
+  right: 0px;
+  width: 20px;
+  height: 20px;
+  opacity: 1; }
+
+#uf-dockbar-search-mobile span.fa-search:hover {
+  color: #c66; }
+
+#uf-dockbar-search-mobile input[type="submit"] {
+  /* -webkit-transition: all 0.5s linear 0s;
+  -moz-transition: all 0.5s linear 0s;
+  -o-transition: all 0.5s linear 0s;
+  transition: all 0.5s linear 0s; */
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  text-indent: -9999px;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 0; }
+
+#uf-dockbar-search-desktop span.close {
+  position: absolute;
+  right: 5px;
+  top: 0.5em;
+  font-size: 40px;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  border: 0px none;
+  cursor: pointer;
+  padding: 0px;
+  opacity: 0; }
+
+#uf-dockbar-search-desktop span.close:hover {
+  color: #c66; }
+
+@media (max-width: 767px) {
+  #uf-dockbar-search-mobile {
+    display: block; }
+
+  #uf-dockbar-search-mobile input[type="submit"] {
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    opacity: 1; }
+
+  #uf-dockbar-search-mobile input[type="text"] {
+    height: 20px; } }
+@media (max-width: 767px) {
+  #uf-dockbar-search-mobile {
+    width: 200px; } }
+/*********************************************/
+#uf-dockbar-sidebar ul {
+  margin: 70px 0px 0px; }
+
+#uf-dockbar-sidebar ul li {
+  list-style: outside none none;
+  background-color: #FFF; }
+
+#uf-dockbar-sidebar .profile-nav {
+  padding: 30px;
+  border-bottom: 1px solid #CCC; }
+
+#uf-dockbar-sidebar ul li > a {
+  padding: 10px 12px 13px 40px;
+  display: block;
+ /* DB COMMENT font-weight: 600; */}
+
+#uf-dockbar-sidebar ul li > a .li-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #CCC;
+  background-color: #FFF;
+  border-radius: 100px; }
+
+#uf-dockbar-sidebar ul li > a .li-icon.pull-left {
+  margin-right: 6px; }
+
+#uf-dockbar-sidebar .b-top {
+  border-top: 1px solid #CCC;
+  border-bottom: 2px solid #CCC; }
+
+/* Temporary additions. Should remove from template when going live*/
+#uf-dockbar-sidebar ul li > a .li-icon {
+  border: 1px solid #999999;
+  background-color: transparent;
+  background: none;
+  font-size: 22px;
+  padding-left: 3px;
+  padding-bottom: 4px;
+  padding-top: 1px;
+  padding-right: 2px;
+}
+
+#uf-dockbar-sidebar ul li > a .li-icon {
+  border: 0px solid rgb(153, 153, 153);
+}
+/* DB COMMENT
+.dark a.active {
+  text-decoration: underline !important;
+  color: #c66 !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  color: #FFF !important;
+}
+
+#uf-dockbar-sidebar li.admin > a {
+  background: #C66 none repeat scroll 0% 0%;
+} */
+
+/* End of temporary additions */
+
+#uf-dockbar-sidebar {
+  position: fixed;
+  /* db comment top: 0; */
+  background: #CCC none repeat scroll 0% 0%;
+  border-right: 1px solid #CCC;
+  height: 100%;
+  width: 315px;/* header height */
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+
+#uf-dockbar-sidebar {
+  right: -120%;
+  background: #FFF;
+  -webkit-transition: right 0.3s;
+  -moz-transition: right 0.3s;
+  transition: right 0.3s; }
+
+#uf-dockbar-sidebar.speed-in {
+  right: 0; }
+
+#uf-dockbar-shadow-layer {
+  background-color: black;
+  zoom: 1;
+  -ms-filter: "alpha(opacity=40)";
+  filter: alpha(opacity=40);
+  opacity: .4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1020;
+  display: none; }
+
+#uf-dockbar-shadow-layer.is-visible {
+  display: block; }
+
+#_145_navAccountControls {
+  display: none; }
