@@ -2163,9 +2163,8 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar ul li{
     list-style: none;  background-color: #FFF;
 }
-#sidebar ul li.active a{
-    color: #91C2AF;
-}
+#sidebar ul li a { text-decoration: none; }
+#sidebar ul li.active a{ color: #91C2AF;  }
 #sidebar .b-top{ border-top: 1px solid #CCC; border-bottom:2px solid #CCC; }
 #sidebar ul li.dark h5, #sidebar ul li > a { padding:12px 15px 13px 30px; display: block; } 
  #sidebar ul li h5 { color: #333; padding:0; } 

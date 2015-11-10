@@ -315,7 +315,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 
 /* MANUAL MARGIN, FOR DEMO ONLY */
-.section-page{margin-top: 70px;}
+.section-page{margin-top: 37px;}
 
 #logo a {
     color:#4cb848; max-width: 250px; display: inline-block; text-transform: uppercase;
@@ -466,16 +466,10 @@ Corporate Identity CHANGE (BLUE) */
   line-height: 30px;
 }
 
+
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
-.modalwrapper .summary-wrapper .headings span{color:#666;}
-
-/* D COMMENT
-.box.reset span.small,
-.box.reset p.small,
-.box.border-round p.small{color:#333;}
-#setup-dtn-2-wrapper .action-link{color:#17a4e1;}
-#setup-dtn-2-wrapper .action-link:hover{color:#2174b5;} */
+.modalwrapper .summary-wrapper .headings span{ color:#999; }
 
 /* NPO lIsting */
 .main-content, .modal-content { margin-top: 70px; }
@@ -528,22 +522,16 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #ffffff;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-/* D COMMENT
 .navbar .nav-pills{
   position: absolute;
   top: 0;
   right: 0;
   left: auto;
-}*/
+}
 .navbar .nav-pills li{
     display: inline-block;
     height: 38px;
     padding: 1em;
-}
-.navbar .nav-pills li:after{
-    content:"";
-    clear:both;
-    display:block;
 }
 
 /******************************************/
@@ -569,13 +557,8 @@ Corporate Identity CHANGE (BLUE) */
     .footer-links li a:visited  { color:#AAA; }
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
-<<<<<<< HEAD
-.control-group .controls > span, label { 
-    color:#666; 
-=======
 .control-group .controls > span, label {
     color: #666;
->>>>>>> origin/blueSkin
 }
 .footer{background-color: #333333;}
 .footer-ul span{color: #ffffff;}
@@ -678,10 +661,6 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #f7f7f7;
     border-bottom-color: #CCC;
 }
-/* D COMMENT 
-.box-r-footer a{color:#17a4e1 !important;}
-.box-r-footer a:hover{ color:#2174b5 !important; }
-*/
 .cpn-sgtn-item.expired .more-days.inline h4, .cpn-sgtn-item.expired .more-days.inline span{
     color: #a8a8a8 !important;
 }
@@ -924,12 +903,7 @@ Corporate Identity CHANGE (BLUE) */
 /*************************************************************/
 
 .data-list li .action-btn button, .dropdown-select button{
-    color:#666;
-    /* D COMMENT border:solid #ccc !important;
-    border-width:0 0 1px !important;
-    border-radius:0 !important;
-    -webkit-border-radius:0 !important;
-    box-shadow:none !important; */
+    border:1px solid #ccc !important;
 }
 
 .dropdown-menu a{text-decoration: none;}

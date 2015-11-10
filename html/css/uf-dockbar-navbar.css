@@ -533,9 +533,17 @@ transition: all 0.5s linear 0s; */
   opacity: 0; 
 }*/
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
-  position: absolute; right: 15px; top: 1em; padding: 0; opacity: 0;
+  position: absolute;
+  right: 15px;
+  top: 1em;
+  padding: 0;
+  opacity: 0;
   background: transparent url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
-  width: 30px; height: 30px; border: 0px none; text-indent: -9999px; cursor: pointer;
+  width: 29px;
+  height: 29px;
+  border: 0px none;
+  text-indent: -9999px;
+  cursor: pointer;
 }
 
 #uf-dockbar-search-desktop span.fa-search:before {
