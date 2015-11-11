@@ -398,10 +398,10 @@ xheader
 
 @media only screen and (min-width: 1200px) {
   #uf-dockbar-cart > * {
-    padding: 0 2em; }
+    padding: 0 1.5em; }
 
   #uf-dockbar-cart .uf-dockbar-cart-items li {
-    padding: 1em 2em; }
+    padding: 1em 1.5em; }
 
   #uf-dockbar-cart .uf-dockbar-item-remove {
     right: 2em; } }
