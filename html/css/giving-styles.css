@@ -423,7 +423,7 @@ input[type="text"]:focus, textarea:focus,
 button, .btn { background-image: none !important; text-decoration: none; }
 button, input[type="submit"], .btn, .aui .btn, .btn-ghost, 
 .open-more, .btn-more-img {
-    font-size:.8125em; line-height:1.4; text-transform: uppercase; padding: 8px 25px;
+    font-size:.8125em; line-height:1.4; text-transform: uppercase; padding: 10px 20px;
     background:#B3E7FF; color:#2174B5; border-radius:3px; border:none;
     -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
     -webkit-font-smoothing:antialiased;
@@ -2858,13 +2858,17 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     display:block;
     text-align:center;
     text-decoration:none;
+    text-transform: uppercase;
     color:#333333;
     background-color: #F9F6EC;
-    border-radius:6px;
-    -webkit-border-radius:6px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    font-size: 1.125em !important;
+    font-size: 13px !important;
     line-height:28px;
+    padding:5px 20px;
+    transition:all 0.3s ease;
+    -wekit-transition:all 0.3s ease;
 }
 .add-btn-lst a:hover{background-color: #E6E4DD;color: #333333;}
 .steps-content .default-image{padding:0 0 20px;}
@@ -2875,15 +2879,15 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     float:right;
     background-color: #F9F6EC;
     width:150px;
-    height:34px;
+    height:38px;
     color:#333333;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    font-size: 1em !important;
+    font-size: 13px !important;
     border:0;
-    border-radius:6px;
-    -webkit-border-radius:6px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
 }
-
+.steps-content .btn-save input{height: 46px;}
 .steps-content .btn-area input:hover,
 .steps-content .btn-area input:focus,
 .steps-content .btn-save input:hover,
@@ -2903,13 +2907,13 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     width:100%;
     float:right;
     background-color: #91C2AF;
-    height:34px;
+    height:46px;
     color:#ffffff;
     font-family: 'Century Gothic',verdana,arial,helvetica,sans-serif;
-    font-size: 1.125em !important;
+    font-size: 13px !important;
     border:0;
-    border-radius:6px;
-    -webkit-border-radius:6px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
 }
 .steps-content .input-prepend{
     display:block;
@@ -4172,7 +4176,6 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
         .img-box:before { width:50px; height:50px; line-height: 4em; }
     .qk-bkt-li ul{width:300px;}
     .fr-widget-wrapper.closed {  max-height: 500px; }
-    .donors-area .dr-img { margin-left:1.2%; margin-right:1.2%;  }
     .gift-box span.badge{right: -10%;}
     .vpos-meta button {
       max-width: 130px;margin-left: 0;
@@ -4193,4 +4196,6 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     .qk-bkt-li ul{width:300px;}
     .dr-img { margin-right: 8px;  }
     input#search_term{width: 90%;}
+    .donors-area .dr-img { margin-left:1.8%; margin-right:1.8%;  }
+
 }   

@@ -84,10 +84,11 @@ xheader
     max-width: 600px; } }
 @media only screen and (min-width: 768px) {
   #logo {
-    font-size: 1.25em; font-weight: 500; padding: 1em 0;
+    font-size: 1.25em; font-weight: 500; padding: 0.6em 0;
     position: absolute; /* logo left margin on Desktop */
     left: 1.1em;top: 0;
   }
+  #logo img{max-width: 120px;}
 
   #uf-dockbar-right-menu ul li.sign-in span {
     margin-right: 10px;
@@ -165,6 +166,11 @@ xheader
     position: absolute !important; } 
 
   #uf-dockbar-search-list-item { display: none !important; }
+
+  #logo img, .navbar-inverse .brand img{max-width: 120px;}
+  #logo{padding-top: 0;}
+
+
 }
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
