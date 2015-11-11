@@ -337,7 +337,6 @@ Corporate Identity CHANGE (BLUE) */
   border: 0px;
   min-height: inherit;
 }
-.cpn-slider-inner .swiper-slide{overflow: hidden;}
 
 .home-slider .swiper-slide picture img{
       min-height: inherit;
@@ -419,16 +418,10 @@ Corporate Identity CHANGE (BLUE) */
 .gallery-txt-box button:hover{
     background-color: #8AD3F3 !important;
 }
-.btn-ghost, .gallery-txt-box .btn{
-    border:0 !important;
-}
-/* Why Giving TYPO 1 scale downwards
-Corporate Identity CHANGE (BLUE) */
+.btn-ghost { border:0 !important; }
+/* Why Giving  Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
 .inform-add-lst .img{padding:0 0 10px;}
-
-/* Why Giving TYPO 1 scale downwards
-Corporate Identity CHANGE (BLUE) */
 .text-block-add { background: #ededed; }
 .text-block-add:before { border-color: #ededed transparent transparent transparent; }
 
@@ -584,7 +577,7 @@ Corporate Identity CHANGE (BLUE) */
 .control-group .controls > span, label {
     color: #666;
 }
-.footer{background-color: #333333;}
+.footer{background-color: #333333;padding: .35em 0;}
 .footer-ul span{color: #ffffff;}
 
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
@@ -772,7 +765,7 @@ Corporate Identity CHANGE (BLUE) */
     background-color: #B3E7FF !important;
 }
 
-.btn-ghost:hover, .gallery-txt-box .btn:hover,.open-more:hover{
+.btn-ghost:hover,.open-more:hover{
     background-color: #0e678e; color:#FFF;border:none;
 }
 
@@ -955,9 +948,8 @@ Corporate Identity CHANGE (BLUE) */
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
 .add-inner-gallery.landing-cpn-slider-wrapper .slider-navigation{
-    bottom: 36px !important;
+    bottom: -10px !important;
 }
-.landing-cpn-slider-wrapper{border:1px solid #ccc;}
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block; margin: 1.368rem 0 1.168rem 0; }

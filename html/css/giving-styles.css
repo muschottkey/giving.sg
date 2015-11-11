@@ -427,8 +427,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     -webkit-font-smoothing:antialiased;
 }
 .btn-ghost, .gallery-txt-box .btn {
-    border: 1px solid #B3E7FF; color:#FFF; background-color: transparent;
-    box-shadow:none; -webkit-user-select: none; will-change: opacity, transform;
+    color:#FFF; background-color: transparent; box-shadow:none; 
+    -webkit-user-select: none; will-change: opacity, transform;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
@@ -449,6 +449,10 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     background-color: #0e678e; color:#FFF;
 }
 
+
+/* CUSTOM BUTTONS */
+.gallery-txt-box .btn { border: 1px solid #B3E7FF;  color:#FFF; }
+.gallery-txt-box .btn:hover{ background-color: #0e678e; border: 1px solid #0e678e; }
 
 /* BUTTON UI (standardization) */
 .btn-large, .aui .btn-large, .aui .button-large-custom{
@@ -1668,21 +1672,15 @@ span.span12.read-more.text-left.m-0{display: none;}
 .btn-block + .btn-block {margin-top:0 !important;}
 
 /* CAMPAIGN LANDING */
-.landing-cpn-slider-wrapper{
-    margin-top: 80px; overflow: hidden; position: relative;
-    width: 100%; margin-bottom:40px;
-}
-.landing-cpn-slider-wrapper.slider-small, .landing-cpn-slider-wrapper.slider-small .swiper-slide{
-    margin-bottom: 0px;border-bottom:none;
-}
+.landing-cpn-slider-wrapper { margin:80px auto 40px; overflow: hidden; position: relative; width: 100%;  }
+    .landing-cpn-slider-wrapper.add-inner-gallery { margin:0 auto;  }
 
-.landing-cpn-slider-wrapper.slider-small .swiper-slide{
-    width: 100%;
-}
+.cpn-slider-inner.swiper-wrapper { margin-bottom:70px; }
+.landing-cpn-slider-wrapper.slider-small .swiper-slide{ margin-bottom:0; }
 
-.landing-cpn-slider-wrapper .cpn-slide-img{
-    border:1px solid #CCCCCC; border-bottom: none; overflow: hidden;
-}
+.landing-cpn-slider-wrapper .swiper-slide { margin:0; border:1px solid #ccc; }
+.landing-cpn-slider-wrapper .cpn-slide-img { overflow: hidden; }
+
 .landing-cpn-slider-wrapper .cn-ln-details{ min-height:70px; background: rgb(238, 238, 238);}
 .landing-cpn-slider-wrapper .cn-ln-details .causes{
     border:none; border-right:1px solid #cccccc;
@@ -1693,9 +1691,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .cpn-slide-right .c-inner { width:93%; padding: 15px 8%; }
 .cpn-slide-right h3 { margin:0; }
-.landing-cpn-slider-wrapper .swiper-slide{
-    margin:0;
-}
+
 
 .landing-cpn-slider-wrapper .slider-navigation{
     position: absolute;
@@ -1708,8 +1704,6 @@ span.span12.read-more.text-left.m-0{display: none;}
 .landing-cpn-slider-wrapper .swiper-pagination{
     position:relative; padding:10px 20px; border-radius:10px; border:1px solid #CCC;
 }
-.cpn-slider-inner.swiper-wrapper{ margin-bottom: 70px; }
-
 
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet {
     margin: 0 5px; width: 12px; height: 12px;
@@ -1725,7 +1719,6 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 .swiper-button-prev.original, .swiper-button-next.original{height: 44px;}
 
-.landing-cpn-slider-wrapper.add-inner-gallery{margin-top:0; }
 
 
 #causes-mobile .acc-toggle{
@@ -2984,7 +2977,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .home-slider .cpn-slider-inner.swiper-wrapper{margin-bottom: 0px;height: 400px;}
 .home-slider .swiper-button-prev, .home-slider .swiper-button-next { display: none; }
 
-.inform-area{padding:0 0 40px;}
+.inform-area{padding:30px 0 30px;}
 .inform-add-lst{ margin:0 0 1em; padding:0; list-style:none; }
 .inform-add-lst li {
     display: inline-block;
@@ -3030,7 +3023,6 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     -webkit-border-bottom-right-radius:6px;
 }
 .inform-add-lst .img{padding:0 0 25px;}
-.inform-add-lst .img img{border:1px solid #bbb;}
 
 .top-header-area fieldset,
 .top-header-area form{
@@ -3407,7 +3399,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     display:block !important;
    }
     .top-title-area{display:block;}
-    .wrapper-925 { max-width: 715px; } 
+    .wrapper-925 {max-width: 750px;} 
     .wrapper-925 .title-search { padding-bottom:20px; }
     .wrapper-925 .title-search .span6 { width:48.618%; float:left; }
     .wrapper-925 .tab .cpn-holder { display:none; }

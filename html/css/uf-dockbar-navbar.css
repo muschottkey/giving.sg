@@ -100,9 +100,8 @@ xheader
     -o-transform: scale(1);
     transform: scale(1); }
 
-  li#uf-dockbar-sidebar-trigger a img {
-    margin-right: 10px;
-    margin-left: 5px; } }
+  li#uf-dockbar-sidebar-trigger a img { margin-right: 10px;margin-left: 5px;} 
+}
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
   top: 0;
@@ -479,7 +478,8 @@ xheader
 #uf-dockbar-search-desktop.active input[type="text"] {
   width: 100% !important;
   padding: 2px 10px 2px 15px !important; }  */
-#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"], #uf-dockbar-search-desktop.closing span.close, #uf-dockbar-search-desktop.active span.close {
+#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"], 
+#uf-dockbar-search-desktop.closing span.close, #uf-dockbar-search-desktop.active span.close {
   opacity: 1; }
 
 #uf-dockbar-search-desktop form fieldset, #uf-dockbar-search-mobile form fieldset {
@@ -533,19 +533,12 @@ transition: all 0.5s linear 0s; */
   opacity: 0; 
 }*/
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
-  position: absolute;
-  right: 15px;
-  top: 1em;
-  padding: 0;
-  opacity: 0;
   background: transparent url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
-  width: 29px;
-  height: 29px;
-  border: 0px none;
-  text-indent: -9999px;
-  cursor: pointer;
+  position: absolute; right: 15px;  top: 1em; padding: 0; opacity: 0; width: 29px;
+  height: 29px;  border: 0px none; text-indent: -9999px;
+  cursor: pointer; display: none;
 }
-
+ #uf-dockbar-search-desktop.active input[type="submit"] { display: block; }
 #uf-dockbar-search-desktop span.fa-search:before {
   font-size: 23px;
   margin-left: 10px; }
