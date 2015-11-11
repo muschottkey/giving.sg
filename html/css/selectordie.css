@@ -196,7 +196,7 @@
     #selAmount.long_input .sod_prefix{margin-right: 5px;}
     #selArea, #selSalutation{padding-top: 7px;padding-bottom: 7px;font-size: 1em;}
 
-    #sortSearchResults{border:none;border-bottom: 1px solid #cccccc;font-size: 1em;border-radius: 0;}
+    #sortSearchResults{border:none;border-bottom: 1px solid #999;font-size: 1em;border-radius: 0;}
     #sortSearchResults .sod_label{font-size: 1em;}
     #sortSearchResults{padding:5px; width:180px; }
         #sortSearchResults:before {display: none;}
