@@ -1845,6 +1845,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .social-share a i{
     font-size: 1.5em;
 }
+.social-share a{margin-bottom:7px !important;}
 .social-share a.facebook{ 
     background-color: #334479;
 }
