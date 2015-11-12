@@ -641,7 +641,10 @@ Corporate Identity CHANGE (BLUE) */
     color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-.sgtn-body h5 { font-size:1.125em;min-height: 3.45em; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; font-weight:500;}
+.sgtn-body h5 { 
+    font-size:1.125em; min-height: 3.45em; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; font-weight:500;
+}
+    .swiper-container-3 .sgtn-body h5 {  min-height:auto; }
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 .more-days span.em{font-weight: 400 !important;}
 
@@ -741,6 +744,7 @@ button.close{font-size: 20px !important;}
 #LoginForm .btn:hover {
     background-color:#0E678E ;color:#FFF;
 }
+.btn:hover { background-color:#B3E7FF;color: #2174B5;}
 
 .btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
 .aui .btn-ghost:hover, .aui .btn-ghost:active, .aui .btn-ghost:focus,
