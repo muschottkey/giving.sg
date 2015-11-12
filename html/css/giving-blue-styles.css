@@ -528,14 +528,23 @@ Corporate Identity CHANGE (BLUE) */
 
 /* Checkboxes */
 #select-more-camp input[type=checkbox]:checked + label:before,
- .refine-inputs input[type=checkbox]:checked + label:before,
-  #select-more-causes input[type=checkbox]:checked + label:before,
-  #data-list-filters input[type=checkbox]:checked + label:before,
-  .refine-inputs .checkbox-clone.checked:before,
-  .checkbox-clone.checked:before{
+.refine-inputs input[type=checkbox]:checked + label:before,
+#select-more-causes input[type=checkbox]:checked + label:before,
+#data-list-filters input[type=checkbox]:checked + label:before,
+.refine-inputs .checkbox-clone.checked:before,
+.checkbox-clone.checked:before{
     color: #4cb848 !important;
+
   }
 
+#select-more-camp input[type=checkbox]:checked + label,
+.refine-inputs input[type=checkbox]:checked + label,
+#select-more-causes input[type=checkbox]:checked + label,
+#data-list-filters input[type=checkbox]:checked + label,
+.checkbox-clone.checked { background:#f7f7f7; color:#333; } 
+
+
+#select-more-camp input[type=checkbox] + label:hover {}
 /* Single Campaign Listing*/
 #cpn-info div.img-box a i{
     padding: 4px 8px;
@@ -605,12 +614,11 @@ Corporate Identity CHANGE (BLUE) */
     color: #141414;
 }
 .cpn-sgtn-item .sgtn-body h5 a:visited{
-    color: #424242;
+    /* color: #7a7a7a; */
 }
 
 .campaign-stats h4 { font-size:1.75em; color:#141414; }
 .more-days.inline h4 { font-size:1.125em; color:#141414; }
-.campaign-stats span.em{color: #ADADAD!important; }
 .more-days.inline span.em{color: #141414 !important;}
 .cpn-sgtn-item .campaign-stats .progress { 
     border: 1px solid #FFF;
@@ -642,9 +650,12 @@ Corporate Identity CHANGE (BLUE) */
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
 .sgtn-body h5 { 
-    font-size:1.125em; min-height: 3.45em; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; font-weight:500;
+    font-size:1.125em;min-height: 3.45em; max-height: 3.45em;margin: 0 auto 10px; overflow: hidden; font-weight:500;
 }
-    .swiper-container-3 .sgtn-body h5 {  min-height:auto; }
+    .swiper-container-3 .sgtn-body h5 { min-height: auto; }
+.volunteer-activity .cpn-sgtn-item h4 { font-size:1.5em; }
+.volunteer-activity .cpn-sgtn-item .block { font-size:1em; color:#999;}
+
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 .more-days span.em{font-weight: 400 !important;}
 
@@ -677,7 +688,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 .cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
 
-.cpn-sgtn-item:hover .campaign-stats h4 , .cpn-sgtn-item:hover .campaign-stats span.em , .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{ color:#0c5372 !important; }
+.cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{color: #0c5372;}
 
 /* Expired Card */
 .cpn-sgtn-item.expired .sgtn-body, .cpn-sgtn-item.expired .box-r-footer, .cpn-sgtn-item.expired:hover .sgtn-body, .cpn-sgtn-item.expired:hover .box-r-footer{
@@ -744,7 +755,6 @@ button.close{font-size: 20px !important;}
 #LoginForm .btn:hover {
     background-color:#0E678E ;color:#FFF;
 }
-.btn:hover { background-color:#B3E7FF;color: #2174B5;}
 
 .btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
 .aui .btn-ghost:hover, .aui .btn-ghost:active, .aui .btn-ghost:focus,

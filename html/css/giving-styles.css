@@ -26,10 +26,10 @@ h4 { font-size: 1.5em; } /* 24px */
 h5, h6 { font-size: 1.125em; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p { font-size:.935em;line-height: 1.4; margin:0 0 0.5em;color: #666;}
-textarea, input:not([type=checkbox]) { line-height:1.4; word-wrap: break-word; font-size:1em; }
+textarea, input { line-height:1.4; word-wrap: break-word; font-size:1em; }
 
 a{color:#17a4e1; text-decoration: underline; }
-    a:visited {color:#7a7a7a;}
+    a:visited, .cpn-sgtn-item .sgtn-body h5 a:visited {color:#7a7a7a;}
     a:hover {color:#2174b5;}
 
 /* Corporate Identity chnages */
@@ -76,8 +76,6 @@ p.small.text-center {font-size: 1em;}
 .bg-giving-blue,  .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
-    .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
-    .tax-status .fa-check-circle-o { color:#9DC9EE; }
 
 #vw-gft-dtn-prefs .sod_select,
 #donateForm .form-group .sod_select{ height: 40px; line-height: 1.3; width: 200px; }
@@ -347,6 +345,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 /* MODAL - Typography */
 .modal h2, .main-content h2, .main-content h3 { }
     .modal-header h3, .modal-body h3 { }
+.main-content h3 { font-size:2em; margin-top: 2em; }
 
 /* MODAL - UI Controls */
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
@@ -387,7 +386,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
 
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
-    .forgot-pwd a.txt-forgot {font-size:.9em;}
+    .forgot-pwd a.txt-forgot { font-size:.9em;}
 
 /* UI Controls - CONTROLS  */
 textarea, input[type="text"]  {font-size: inherit;height: 1.4em; color: #666;}
@@ -409,8 +408,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
     -webkit-font-smoothing:antialiased;
 }
-a.btn:visited { color:#2174B5; }
-
 .btn-ghost, .gallery-txt-box .btn {
     color:#FFF;
     background-color: transparent;
@@ -677,9 +674,11 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .cpn-holder .accordion-content .cpn-wrapper {overflow:hidden;}
 
 /* Make Donation page*/
-.section-page{
+.section-page {
     text-align: center;
 }
+#npo-listing .bg-lightgrey { background:url(../images/img-section-npo.jpg) no-repeat; }
+
 #btnDonate, #btn-addLeaders{
     position: absolute;top: 50%;margin-top: -15px;
 }
@@ -1315,7 +1314,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
     display: block;
 }
 
-.campaign-stats span.em{ color: #919191; font-size: 0.875em; }
+.campaign-stats span.em{color: #999; font-size: 0.875em;}
 .campaign-stats span.darker{
     color: #5d5d5d;
 }
@@ -1511,7 +1510,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .cpn-sgtn-item.evn .sgtn-body {
     min-height: 150px;
 }   
-.sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto;float: none;}
+.sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto;float: none;}
 
 .cpn-sgtn-item .sgtn-body .heading-group { min-height:6.5em; max-height:6.5em; } 
 .sgtn-body p { font-size:.875em; margin:0 auto 5px; min-height:6.7em; max-height: 6.7em;overflow: hidden;}
@@ -1977,16 +1976,24 @@ span.span12.read-more.text-left.m-0{display: none;}
 #select-more-camp input[type=checkbox] + label,
 #data-list-filters input[type=checkbox] + label,
 .refine-inputs .checkbox-clone, .checkbox-clone {
-    display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
-    border:1px solid #CCC; padding:5px 25px 5px 8px; margin-right:6px; position:relative;
-    cursor: pointer; font-size: 1em; color: #999;
+    display:inline-block;
+    height:auto;
+    width:auto;
+    background:#FFF;
+    border-radius: 6px;
+    border:1px solid #CCC;
+    padding:5px 25px 5px 8px;
+    margin-right:6px;
+    position:relative;
+    cursor: pointer;
+    font-size: 1em;
+    color: #666;
 } 
 #select-more-causes input[type=checkbox] + label:hover,
 #select-more-camp input[type=checkbox] + label:hover,
-#data-list-filters input[type=checkbox] + label:hover{
-    background: #f7f7f7;
-    color: #cc6666;
-    border-color: #ccc;
+#data-list-filters input[type=checkbox] + label:hover, 
+#select-more-causes input[type=checkbox]:checked + label:hover {
+    background: #f7f7f7; color: #333; order-color: #ccc;
 }
 
 .style-tag input[type=checkbox] + label:before,.style-tag .checkbox-clone:before,.checkbox-clone:before,
@@ -2000,19 +2007,14 @@ span.span12.read-more.text-left.m-0{display: none;}
     .style-tag .checkbox-clone:before, .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
-#select-more-camp input[type=checkbox]:checked + label:before,
-.refine-inputs input[type=checkbox]:checked + label:before,
-#select-more-causes input[type=checkbox]:checked + label:before,
-#data-list-filters input[type=checkbox]:checked + label:before, 
-.refine-inputs .checkbox-clone.checked:before,
-.checkbox-clone.checked:before{
+.refine-inputs input[type=checkbox]:checked + label:before, #select-more-causes input[type=checkbox]:checked + label:before, #data-list-filters input[type=checkbox]:checked + label:before, .refine-inputs .checkbox-clone.checked:before{
     color: #cc6666;
 }
 
 #select-more-camp input[type=checkbox]:hover + label:hover:before,
 #select-more-causes input[type=checkbox]:hover + label:hover:before,
 #data-list-filters input[type=checkbox]:hover + label:before{
-    color: #cc6666;
+    color: #4cb848 ;
 }
 
 #select-more-camp .popover-content ul li,
@@ -2617,6 +2619,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 31px !important;
+    padding-right: 47px !important;
 } 
 
 .volunteer-check{display: none;}
@@ -3187,7 +3190,9 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
 .landing-cpn-slider-wrapper .btn:focus,
 .landing-cpn-slider-wrapper .btn:active,
 .landing-cpn-slider-wrapper .btn:link{color: #333 !important;}
-
+.ttl-row .btn:hover,
+.inform-area .box-btn .btn:hover,
+.landing-cpn-slider-wrapper .btn:hover{/* background:#e6e4dd; */}
 .ttl-row .btn:active,
 .inform-area .box-btn .btn:active,
 .landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
