@@ -26,7 +26,7 @@ h4 { font-size: 1.5em; } /* 24px */
 h5, h6 { font-size: 1.125em; } /* 18px */
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
 p { font-size:.935em;line-height: 1.4; margin:0 0 0.5em;color: #666;}
-textarea, input { line-height:1.4; word-wrap: break-word; font-size:1em; }
+textarea, input:not([type=checkbox]) { line-height:1.4; word-wrap: break-word; font-size:1em; }
 
 a{color:#17a4e1; text-decoration: underline; }
     a:visited {color:#7a7a7a;}
@@ -387,7 +387,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
 
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
-    .forgot-pwd a.txt-forgot { font-size:.9em;}
+    .forgot-pwd a.txt-forgot {font-size:.9em;}
 
 /* UI Controls - CONTROLS  */
 textarea, input[type="text"]  {font-size: inherit;height: 1.4em; color: #666;}
@@ -409,6 +409,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
     -webkit-font-smoothing:antialiased;
 }
+a.btn:visited { color:#2174B5; }
+
 .btn-ghost, .gallery-txt-box .btn {
     color:#FFF;
     background-color: transparent;
@@ -2615,7 +2617,6 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     height: 31px !important;
-    padding-right: 47px !important;
 } 
 
 .volunteer-check{display: none;}
@@ -3186,9 +3187,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
 .landing-cpn-slider-wrapper .btn:focus,
 .landing-cpn-slider-wrapper .btn:active,
 .landing-cpn-slider-wrapper .btn:link{color: #333 !important;}
-.ttl-row .btn:hover,
-.inform-area .box-btn .btn:hover,
-.landing-cpn-slider-wrapper .btn:hover{/* background:#e6e4dd; */}
+
 .ttl-row .btn:active,
 .inform-area .box-btn .btn:active,
 .landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
