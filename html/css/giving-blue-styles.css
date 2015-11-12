@@ -276,7 +276,7 @@
 h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
 h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
 h3 { font-size:1.5rem;line-height:1.13636364em;margin: .75em 0;}    /* 24px */
-h4 { font-size:1.125em;margin: 1.04rem 0 0.912rem 0;} /* 18px */
+h4 { font-size:1.125em;margin: 0;} /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 
@@ -571,7 +571,6 @@ Corporate Identity CHANGE (BLUE) */
 .pre-footer-social .f-block .social-share .span1{padding: 11.5px 7px;width: 48px !important;height: 48px !important;}
 .pre-footer-social .f-block .social-share .span1 i:before{position: relative;}
 .f-block .social-share .fa{margin-right: 0;}
-.social-share a, .social-share a:link { color: #FFF;}
 .pre-footer h4 { font-weight: normal; font-size: 1.3125em;}
 .pre-footer h4 a, .pre-footer h4 a:link, .pre-footer h4 a:visited{color: #ffffff !important;text-transform: uppercase;}
 .footer-links li a,.footer-links li a:link{ text-decoration: none; color: #FFF;}
@@ -579,9 +578,7 @@ Corporate Identity CHANGE (BLUE) */
     .footer-links li a:visited  { color:#AAA; }
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
-.control-group .controls > span, label {
-    color: #666;
-}
+
 .footer{background-color: #333333;padding: .35em 0;}
 .footer-ul span{color: #ffffff;}
 
@@ -644,7 +641,7 @@ Corporate Identity CHANGE (BLUE) */
     color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-.sgtn-body h5 { font-size:1.125em; min-height:auto; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; font-weight:500; }
+.sgtn-body h5 { font-size:1.125em;min-height: 3.45em; max-height: 3.45em; margin: 0 auto 5px; overflow: hidden; font-weight:500;}
 .cpn-sgtn-item .causes.multiple ul li{ display: none; }
 .more-days span.em{font-weight: 400 !important;}
 
@@ -653,7 +650,7 @@ Corporate Identity CHANGE (BLUE) */
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
     border-bottom-color:transparent; background:#17a4e1;
 }
-.cpn-suggestions .load-all-box:hover { background:none; box-shadow:none;  }
+.cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover { background:none; box-shadow:none;  }
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
     background-color: #17a4e1;
     border-bottom-color: #117ca9;
@@ -712,13 +709,12 @@ Corporate Identity CHANGE (BLUE) */
 /*****************************************/
 /*  BUTTON STYLES START */
 /****************************************/
-.btn-group > .btn { font-size: 1em; }
 .btn-group.select-like.actions-group > .btn.dropdown-toggle {font-size: 13px !important;}
 .dropdown-menu > li > a{font-size:14px;}
 
 button.close{font-size: 20px !important;}
 
-.btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url,.open-more:hover{
+.btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, #copy-url, .open-more:hover{
     background-color: #B3E7FF; color: #2174B5;
 }
 .dropdown > button, .dropdown > button:hover,Â  .select-like button,.select-like button:hover, .action-btn > button{
@@ -936,9 +932,7 @@ button.close{font-size: 20px !important;}
 
 .select-like > button { border-bottom:1px solid #999 !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
-.add-inner-gallery.landing-cpn-slider-wrapper .slider-navigation{
-    bottom: -10px !important;
-}
+
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block; margin: 1.368rem 0 1.168rem 0; }
