@@ -52,7 +52,7 @@ $(function(){
         }
     });
 
-    $('#signupForm').validate({
+    $('#signupForm, #profile-form').validate({
         rules: {
             username: {
                 required: true
@@ -61,12 +61,8 @@ $(function(){
                 required: true,
                 email: true
             },
-            spassword: {
+            disp_name: {
                 required: true
-            },
-            'conf_password': {
-                required: true,
-                equalTo: "#spassword"
             }
         },
         messages: {

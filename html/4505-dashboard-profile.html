@@ -28,7 +28,9 @@
 	      	<div class="navbar-inner">
 	        	<div class="container">
 	        		<a class="nav-menu-toggle pull-left" href="#"><i class="fa fa-bars"></i></a>
-	          		<a class="brand" href="./index.html">Giving.SG</a>
+	          		<a class="brand" href="./index.html">
+	          			<img src="images/img-logo-giving.png">
+	          		</a>
 		          	<div class="pull-right">
 			            <ul class="nav nav-pills">
 			            	<li><a id="btn-signup" href="#">Sign Up</a></li>
@@ -114,16 +116,19 @@
 						</div>
 						<div id="collapse-basicinfo">
 							<div class="span7 text-left">
-								<form class="form span8 text-left">
+								<form class="form span8 text-left" id="profile-form">
 									<div class="control-group">
 										<label class="control-label">Display Name<i class="red m-left5">*</i></label>
-										<input type="text" name="disp_name" placeholder="Francis Wang" class="form-control field-required" type="text">
+										<div class="controls">
+											<span class="validation-feedback pull-right"><i class="fa fa-check" ></i></span>
+											<input type="text" name="disp_name" placeholder="Francis Wang" class="form-control field-required" type="text">
+										</div>
 									</div>
 
 									<div class="control-group">
 										<label class="control-label" for="email">Email Address<i class="red m-left5">*</i></label>
 										<div class="controls">
-											<!-- <span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span> -->
+											<span class="validation-feedback pull-right"><i class="fa fa-check" ></i></span>
 											<input name="email" id="email" placeholder="francis@gmail.com" class="form-control field-required" type="email">
 											<!-- <span class="help-block"><p class="small">Enter your First name or a nickname</p></span> -->
 										</div>
@@ -132,7 +137,7 @@
 									<div class="control-group">
 										<label class="control-label" for="birthday">Birthday<i class="red m-left5">*</i></label>
 										<div class="controls">
-											<!-- <span class="validation-feedback pull-right"><i class="fa fa-check-circle" ></i></span> -->
+											<span class="validation-feedback pull-right"><i class="fa fa-check" ></i></span>
 											<input name="username" id="username" placeholder="27th Jun 1983" class="form-control field-required" type="text">
 										</div>
 									</div>

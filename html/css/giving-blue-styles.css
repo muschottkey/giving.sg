@@ -290,7 +290,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
-.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  .steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover {
+.btn-group .btn.btn-ghost{
+  box-shadow:none;
+}
+.btn-group .btn.btn-ghost.active,
+.btn-group .btn.btn-ghost:hover{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  .steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover ,.open-more:hover,.btn-more-img:hover{
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important; 
 }
 .z-depth-2 { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
@@ -581,7 +589,8 @@ Corporate Identity CHANGE (BLUE) */
 .footer-ul span{color: #ffffff;}
 
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
-.acc-toggle:before{color:#ffffff;}
+.acc-toggle:before{color:#333;}
+.acc-toggle.collapsed:before{color:#666;}
 
 /*************************************************************/
             /* SELECTS AND DROPDOWNS */
@@ -645,7 +654,7 @@ Corporate Identity CHANGE (BLUE) */
 /* Hover state of card */
 .cpn-sgtn-item:hover{
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
-    border-bottom:0px; background:#17a4e1;
+    border-bottom-color:transparent; background:#17a4e1;
 }
 .cpn-suggestions .load-all-box:hover { background:none; box-shadow:none;  }
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
@@ -712,14 +721,16 @@ Corporate Identity CHANGE (BLUE) */
 .btn-group.select-like.actions-group > .btn.dropdown-toggle {font-size: 13px !important;}
 .dropdown-menu > li > a{font-size:14px;}
 
+.aui .btn, .btn, button, input[type=submit]{
+  font-size: 13px !important;
+}
 
+button.close{font-size: 20px !important;}
 
 .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url,.open-more:hover{
     background-color: #B3E7FF;
     color: #2174B5;
 }
-
-
 .dropdown > button, .dropdown > button:hover,  .select-like button,.select-like button:hover, .action-btn > button{
     box-shadow: none !important;
 }
@@ -747,7 +758,7 @@ Corporate Identity CHANGE (BLUE) */
 #login_button:focus,  
  .add-bottom-lst input:hover, 
  .add-bottom-lst input:active, .add-bottom-lst input:focus{
-   background-color: #81D5F8!important;
+   background-color: #0E678E !important;
    /* color: #FFF; */
  }
 
@@ -906,9 +917,9 @@ Corporate Identity CHANGE (BLUE) */
         #main-nav ul a:hover, #main-nav ul a.current {  box-shadow: 0 -6px 0 0 #4cb848 inset; }
     .navbar-inverse .navbar-inner { height: 70px; }
     .navbar-inverse .brand{
-        font-size: 1.25em; font-weight: 500; padding: 1em 0; position: absolute;
+        font-size: 1.25em; font-weight: 500; padding: 0; position: absolute;
         left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important; text-decoration:none;
-        max-width: 250px; display: inline-block; text-transform: uppercase;
+        max-width: 180px; display: inline-block; text-transform: uppercase;
     }
     .section-page { margin-top: 70px; }
 }
@@ -927,13 +938,15 @@ Corporate Identity CHANGE (BLUE) */
 
 .dropdown-menu a{text-decoration: none;}
 
-.select-like > button { border-bottom:1px solid #ccc !important;}
+.select-like > button { border-bottom:1px solid #999 !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
 
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block; margin: 1.368rem 0 1.168rem 0; }
-
+button.btn.btn-ghost.delete-row {
+  margin-right: -10px;
+}
 
   
 
