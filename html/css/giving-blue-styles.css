@@ -276,7 +276,7 @@
 h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
 h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
 h3 { font-size:1.5rem;line-height:1.13636364em; margin: 1.46rem 0 1.168rem 0;}    /* 24px */
-h4 { font-size:1.125em; margin: 1.14rem 0 0.912rem 0; } /* 18px */
+h4 { font-size:1.125em;margin: 1.04rem 0 0.912rem 0;} /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 
@@ -418,7 +418,7 @@ Corporate Identity CHANGE (BLUE) */
 .gallery-txt-box button:hover{
     background-color: #8AD3F3 !important;
 }
-.btn-ghost { border:0 !important; }
+.btn-ghost {border: 0;}
 /* Why Giving  Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
 .inform-add-lst .img{padding:0 0 10px;}
@@ -475,7 +475,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 #cpn-donate-now .small, .box .small, #cpn-meta .side-contact-lst, .section-page .campaign-stats span.em, 
 .mod-tell-friends .small, .cpn-sgtn-item .txt-npo, .signup-section p.small, 
-.modalwrapper .summary-wrapper .headings span{ color:#999; }
+.modalwrapper .summary-wrapper .headings span{color: #666;}
 .row-fluid.m-bot20 .action-link,
 .box-r-footer a,
 #dtn-user-large-cta .action-link, 
@@ -715,17 +715,10 @@ Corporate Identity CHANGE (BLUE) */
 
 
 .btn-ghost, .aui .btn-ghost, .donate-trig.btn-default, .open-more, .btn-more-img, #copy-url,.open-more:hover{
-    background-color: #B3E7FF !important;color: #2174B5 !important;
+    background-color: #B3E7FF;
+    color: #2174B5;
 }
 
-#donate-buttons button:hover{
-    -webkit-box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-  box-shadow:0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
-}
-#donate-buttons .btn.active,  #donate-buttons .btn.active:hover, .preset-amts .btn-ghost.active{
-    background-color: #17a4e1 !important;
-    border-color: #17a4e1 !important;
-}
 
 .dropdown > button, .dropdown > button:hover,  .select-like button,.select-like button:hover, .action-btn > button{
     box-shadow: none !important;
@@ -743,38 +736,27 @@ Corporate Identity CHANGE (BLUE) */
 }
 
 /* Hover states */
+.btn:hover,
 .btn-primary:hover, .aui .btn-primary:hover, .btn-success:hover, .aui .btn-success:hover, #LoginForm .btn:hover{
-    /* box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; */
-    background-color: #0E678E !important;
-    color:#FFF !important;
+    background-color: #0E678E ;color:#FFF;
 }
 
 
-.btn-toggle .btn.active:hover, #donate-buttons .btn.active:hover, #btnDonate:hover, 
+.btn-toggle .btn.active:hover, #btnDonate:hover, 
 #btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active,
-#login_button:focus,  .btn-primary:active, .btn-primary:focus,
-.btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, 
+#login_button:focus,  
+ .add-bottom-lst input:hover, 
  .add-bottom-lst input:active, .add-bottom-lst input:focus{
    background-color: #81D5F8!important;
    /* color: #FFF; */
  }
 
-
-#copy-url:hover{
-    box-shadow: none !important;
-    background-color: #B3E7FF !important;
+.btn-success:active, .btn-success:focus, .btn-primary:active, .btn-primary:focus, { background:#0e678e; }
+#copy-url:hover { 
+    box-shadow: none !important; background-color: #B3E7FF !important;
 }
-
-.btn-ghost:hover,.open-more:hover{
-    background-color: #0e678e; color:#FFF;border:none;
-}
-
-
-/* Disabled state */
-.btn:disabled, .aui .btn:disabled{
-    background-color: #999 !important;
-    cursor: not-allowed;
-}
+.btn-ghost:hover,.open-more:hover { background-color:#B3E7FF; color:#0E678E; border:none; }
+.btn:disabled, .aui .btn:disabled { background-color: #999 !important; cursor: not-allowed; }
 
 /*****************************************/
 /*  BUTTON STYLES END */
@@ -947,9 +929,7 @@ Corporate Identity CHANGE (BLUE) */
 
 .select-like > button { border-bottom:1px solid #ccc !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
-.add-inner-gallery.landing-cpn-slider-wrapper .slider-navigation{
-    bottom: -10px !important;
-}
+
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block; margin: 1.368rem 0 1.168rem 0; }
