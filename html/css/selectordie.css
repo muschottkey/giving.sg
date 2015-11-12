@@ -183,7 +183,7 @@
                 z-index: 1;
             }
 
-    .sod_select.autofit{width: 80px;}
+    .sod_select.autofit{width: auto;}
     .sod_select.medium{width: 120px;}
     .sod_select.tall:after{bottom:15px;}
     .sod_select .sod_list_wrapper{

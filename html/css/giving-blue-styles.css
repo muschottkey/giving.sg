@@ -389,7 +389,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .swiper-pagination-bullet, .carousel-indicators li{
     background-color: #666;
 }
-.gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;}
+.gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;font-size: 1.5em;}
 .gallery-txt-box h3 a { text-decoration:none; color: #FFF; }
 
 .p-title.landing + p{color:#424242;}
