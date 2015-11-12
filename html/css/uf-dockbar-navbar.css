@@ -38,7 +38,7 @@ Modules - reusable parts of our design
 xheader 
 
 -------------------------------- */
-#main-nav-header {
+/* DB comment #main-nav-header {
   position: fixed;
   top: 0;
   left: 0;
@@ -47,15 +47,9 @@ xheader
   text-align: center;
   z-index: 1030; 
 }
-
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #main-nav-header { height: 70px; } 
-}
-#logo {
-  padding-top: 0.8em;/* delete this property if you don't want your logo to scale down on mobile devices */
-
-}
+}*/
 
 #uf-dockbar-right-menu ul li.sign-in span {
   float: right;
@@ -76,19 +70,22 @@ xheader
   max-width: 250px;
   display: inline-block; }
 
+/* DB comment
 @media only screen and (min-width: 1200px) {
   #logo a {
-    max-width: 700px; } }
-@media only screen and (min-width: 720px) {
-  #logo a {
-    max-width: 600px; } }
+    max-width: 700px; } } 
+@media only screen and (max-width: 768px) {
+  #logo a { overflow: hidden; } 
+  #logo a img { width:150px;  } 
+}*/
 @media only screen and (min-width: 768px) {
-  #logo {
-    font-size: 1.25em; font-weight: 500; padding: 0.6em 0;
-    position: absolute; /* logo left margin on Desktop */
-    left: 1.1em;top: 0;
+/* DB comment  #logo {
+    font-size:1.25em;
+    padding: 0;
+    top: 0;
+    position: absolute;
   }
-  #logo img{max-width: 120px;}
+  #logo img{max-width: 170px;} */
 
   #uf-dockbar-right-menu ul li.sign-in span {
     margin-right: 10px;
@@ -107,16 +104,15 @@ xheader
   position: absolute;
   top: 0;
   height: 70px;
+  z-index: 1090;
   }
-
 #uf-dockbar-hamburger-menu a {width: 60px;}
 
-#uf-dockbar-hamburger-menu {
-  left: 0;
-  padding: 0.5em 1em; }
+#uf-dockbar-hamburger-menu { left: 0; padding: 0.5em 1em; } 
 
 #uf-dockbar-right-menu {
-  right: 0; }
+  right: 0;
+  }
 
 #uf-dockbar-right-menu ul {
   list-style: none;
@@ -131,7 +127,7 @@ xheader
   }
 
 #uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
-  padding: .25em .75em;
+  padding: .25em;
   width: 30px;
   }
 
@@ -150,11 +146,10 @@ xheader
   width: 0 !important; }
 
 @media only screen and (max-width: 980px) {
-  #logo {left:0.5em;}
-  #uf-dockbar-right-menu img {width: 24px; height:24px; padding: 5px 0; }
+  #uf-dockbar-right-menu img {width: 24px;height: 24px; padding: 5px 0;}
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   #main-nav {  left: 143px;
   right: auto;
   }
@@ -163,12 +158,15 @@ xheader
     padding: 0.5em; }
 
   #uf-dockbar-right-menu {
-    position: absolute !important; } 
+    position: absolute !important;
+    } 
 
   #uf-dockbar-search-list-item { display: none !important; }
+  /* DB comment 
+  #logo a { overflow: hidden;display: block;} 
+  #logo a img {width: 156px;}
 
-  #logo img, .navbar-inverse .brand img{max-width: 120px;}
-  #logo{padding-top: 0;}
+  #logo{padding-top: 0;}*/
 
 
 }
@@ -191,9 +189,9 @@ xheader
 @media only screen and (min-width: 768px) {
   /* DB commented
   #main-nav, #uf-dockbar-cart {
-    width: 350px; } */
+    width: 350px; } 
      #uf-dockbar-hamburger-menu {
-    display: none; }
+    display: none; }*/
      }
 @media only screen and (min-width: 1200px) {
   /* DB commented
@@ -205,13 +203,13 @@ xheader
     max-width: 360px;
     /* header height has changed */
     padding-top: 70px; } }
-#main-nav {
+/* DB - COMMENTED OUT #main-nav {
   left: -120%;
   background: #FFF;
   -webkit-transition: left 0.3s;
   -moz-transition: left 0.3s;
   transition: left 0.3s;
-  background: #fff; }
+  background: #fff; } */
 
 #main-nav.speed-in {
   left: 0; }
@@ -229,7 +227,7 @@ xheader
   box-shadow: 8px 0px #c66 inset; }
   --- */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 769px) {
   #main-nav {
     /* reset main nav style */
     position: absolute;
@@ -238,13 +236,9 @@ xheader
     left: auto;
     right: 14em;
     top: 0;
-    margin-right: 1em;
     background: transparent;
     box-shadow: none;
-    /* header height */
-    /*  line-height: 70px;*/
-    z-index: 1030;
-    background-color: #F9F6EC; }
+    z-index: 1030; }
 
   #main-nav li {
     display: inline-block;
@@ -445,39 +439,45 @@ xheader
 
 #uf-dockbar-search-desktop input[type="text"] {
   border: 0px;
-  padding: 2px 0px !important;
+  /* padding: 2px 0px !important; */
   border-radius: 0px !important;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   -webkit-transition: all 0.2s ease-in 0.1s;
   -moz-transition: all 0.2s ease-in 0.1s;
   -o-transition: all 0.2s ease-in 0.1s;
   transition: all 0.2s ease-in 0.1s;
-  background-color: white;
+  background: #FFF;
   text-align: left;
   height: 50px;
   margin-top: 0;
   width: 0;
   min-width: 0px;
+  font-size: 1em;
+  display: block;
+  /* z-index: 1100; */
   }
 
 
 #uf-dockbar-search-mobile input[type="text"] {
-  padding: 0.8em !important;
+  padding: .5em 0.8em !important;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   text-align: left;
-  width: 90%; }
+  width: 90%;
+  font-size: 1em;
+  }
 
-#uf-dockbar-search-mobile input[type="text"]:focus {
-  box-shadow: none !important; }
+  /* DB comment #uf-dockbar-search-mobile input[type="text"]:focus {
+box-shadow: none !important; 
+  }*/
 
 #uf-dockbar-search-desktop input[type="text"]:focus {
   box-shadow: none !important;
   border-radius: 0px !important; }
 
 #uf-dockbar-search-desktop.active input[type="text"] {
-  width: 180px;
+  width: 160px; z-index: 1100;
   padding: 10px 15px !important;
-  padding-right: 50px !important;
+  padding-right: 40px !important;
   }
 
 /* search modification
@@ -497,6 +497,7 @@ xheader
   position: absolute;
   top: 0;
   right: 0;
+  /* z-index: 1100; */
   }
 
 #uf-dockbar-search-mobile {
@@ -539,10 +540,18 @@ transition: all 0.5s linear 0s; */
   opacity: 0; 
 }*/
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
-  background: transparent url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
-  position: absolute; right: 15px;  top: 1em; padding: 0; opacity: 0; width: 29px;
-  height: 29px;  border: 0px none; text-indent: -9999px;
-  cursor: pointer; display: none;
+  background: white url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
+  position: absolute;
+  right: 10px;
+  top: 1.5em;
+  padding: 0 1em;
+  opacity: 0;
+  width: 22px;
+  height: 24px;
+  border: 0px none;
+  text-indent: -9999px;
+  cursor: pointer;
+  display: none;
 }
  #uf-dockbar-search-desktop.active input[type="submit"] { display: block; }
 #uf-dockbar-search-desktop span.fa-search:before {
@@ -561,18 +570,18 @@ transition: all 0.5s linear 0s; */
   color: #c66; }
 
 #uf-dockbar-search-mobile input[type="submit"] {
-  /* -webkit-transition: all 0.5s linear 0s;
+  -webkit-transition: all 0.5s linear 0s;
   -moz-transition: all 0.5s linear 0s;
   -o-transition: all 0.5s linear 0s;
-  transition: all 0.5s linear 0s; */
-  position: absolute;
+  transition: all 0.5s linear 0s;
   width: 30px;
   height: 30px;
   border: 0px none;
   text-indent: -9999px;
   cursor: pointer;
-  padding: 0px;
-  opacity: 0; }
+  padding: 0;
+  opacity: 0;
+  }
 
 #uf-dockbar-search-desktop span.close {
   position: absolute;
@@ -590,21 +599,19 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-search-desktop span.close:hover {
   color: #c66; }
 
-@media (max-width: 767px) {
-  #uf-dockbar-search-mobile {
-    display: block; }
-
+@media (max-width: 768px) {
+  #uf-dockbar-search-mobile { display: block; width: 200px;}
   #uf-dockbar-search-mobile input[type="submit"] {
     right: 10px;
     width: 20px;
     height: 20px;
-    opacity: 1; }
-
+    opacity: 1;
+    z-index: 1091;
+    display: block;
+  }
   #uf-dockbar-search-mobile input[type="text"] {
     height: 20px; } }
-@media (max-width: 767px) {
-  #uf-dockbar-search-mobile {
-    width: 200px; } }
+
 /*********************************************/
 #uf-dockbar-sidebar ul {
   margin: 70px 0px 0px; }
