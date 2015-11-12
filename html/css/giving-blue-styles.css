@@ -428,7 +428,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .gallery-txt-box button:hover{
     background-color: #8AD3F3 !important;
 }
-.btn-ghost { border:0 !important; }
+.btn-ghost { border:0 ; }
 /* Why Giving  Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
 .inform-add-lst .img{padding:0 0 10px;}
@@ -712,9 +712,7 @@ Corporate Identity CHANGE (BLUE) */
 /*****************************************/
 /*  BUTTON STYLES START */
 /****************************************/
-.btn-group > .btn {
-  font-size: 16px !important;
-}
+.btn-group > .btn { font-size: 1em; }
 .btn-group.select-like.actions-group > .btn.dropdown-toggle {font-size: 13px !important;}
 .dropdown-menu > li > a{font-size:14px;}
 
@@ -808,10 +806,6 @@ button.close{font-size: 20px !important;}
 
 #setup-dtn-carousel .carousel-control, .carousel-control{
     background-color: transparent;
-}
-#setup-dtn-carousel .carousel-control span, .carousel-control span{
-    color: #666;
-    font-size: 3em;
 }
 #setup-dtn-carousel .carousel-control span:hover, .carousel-control span:hover{
     color: #17A4E1;
