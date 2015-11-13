@@ -854,7 +854,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { width:200px; float:left; margin:0 15px 20px; border-radius:6px;border: 1px solid #CCC;}   
+#causes-wrapper .cause-box { width:200px; float:left; margin:0 12px 20px; border-radius:6px;border: 1px solid #CCC;}   
 
 .causes ul { margin:0 -15px; }
 .causes li { 
