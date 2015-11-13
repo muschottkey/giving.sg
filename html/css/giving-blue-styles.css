@@ -481,20 +481,13 @@ Corporate Identity CHANGE (BLUE) */
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
-.listings-wrapper .cpn-sgtn-item { min-height:auto; }
+.listings-wrapper .cpn-sgtn-item {/* min-height:auto; */}
 .checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
 
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 
 /* Search Page & Search UI */
-#search-form label.control-label{
-    color: #333 !important;
-}
-#search-form input#search_term{
-    border-color: #999;
-    color: #333 !important;
-    height: auto !important;
-}
+
 #search-form input#search_term::-webkit-input-placeholder , #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder{color: #ccc !important;} /* WebKit, Blink, Edge */
 #search-form input#search_term:-moz-placeholder, #uf-dockbar-search-mobile input[type="text"]:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
 #search-form input#search_term::-mox-placeholder, #uf-dockbar-search-mobile input[type="text"]::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */

@@ -24,7 +24,7 @@ textarea, input { font-size:.935em; line-height:1.4; word-wrap: break-word; }
 
 ::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
 input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
-input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important;font-size: inherit;}
+input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important; }
 
 a, a:link {color:#17a4e1; text-decoration: underline; }
     a:hover {color:#2174b5;}
@@ -342,11 +342,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .modal-header h3, .modal-body h3 { }
 
 /* MODAL - UI Controls */
-.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
-#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
-#claim-tax input:not([type="checkbox"]) { 
-    width:98%; padding:7px 0 2px; line-height:1.4; border-width: 0 0 1px; box-shadow:none !important; border-radius: 0;
-}
+
 
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
@@ -378,13 +374,24 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 }
 
 #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
-
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
 /* UI Controls - CONTROLS  */
-textarea, input[type="text"]  {font-size: inherit;height: 1.4em; color: #666;}
-    input:not([type=checkbox]) {color: #333;}
+textarea, input[type="text"], .control-group .form-control { 
+    border-width:0 0 1px; border-radius:0; box-shadow:none !important;
+    font-size:inherit; line-height:1.4; color:#333;
+}
+    input:not([type=checkbox]) { color:#333; }
+
+.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
+#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
+#claim-tax input:not([type="checkbox"]) {
+    width:98%; border-width: 0 0 1px;
+    box-shadow:none !important;
+    border-radius: 0;
+    padding: 7px 2px;
+}
 
 input[type="text"]:focus, textarea:focus,
     .pre-footer-social input:focus {
@@ -1138,11 +1145,11 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 #dtn-user-large-cta .span6.box.reset span.small{width:75%; display: inline-block; margin-bottom:50px;}
 #dtn-user-actions .btn{height: 40px;line-height: 30px;}
 
-.border-round .centered { padding:10px 0; }
+.border-round .centered { padding:10px 0; }  
 
 /* Search Results */
-.main-content .search-controls input {padding: .25em .5em .25em  1em;font-size: 1.25em !important;}
-.search-controls .control-label { line-height:2em; }
+.main-content .search-controls input {padding: 10px .5em;font-size: 1.25em !important;}
+.search-controls .control-label { line-height:2em;font-size: 1.25em; color: #333;}
     .search-controls .link-refine { line-height:3em; }
     #search-results #sortSearchResults { text-align:left; }
 
@@ -1956,8 +1963,8 @@ span.span12.read-more.text-left.m-0{display: none;}
 /***************************************************************************
                             SEARCH RESULTS
 ***************************************************************************/
-.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em; min-height:480px; position: relative;}
-    .search-results-wrapper .cpn-sgtn-item { display:none; }
+.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em;min-height: 450px; position: relative;}
+    .search-results-wrapper .cpn-sgtn-item { display:none;/* min-height: 400px; */}
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body { 
     border-bottom: none; min-height:220px;  
@@ -2684,12 +2691,6 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 
 
 .row-fluid [class*="span"]{min-height:0px}
-.controls  input[type="text"], .time-fields-wrapper input[type="text"],
-.control-group .form-control, .control-group textarea {
-	border-width:0 0 1px;
-	border-radius:0;
-	box-shadow:none !important;
-}
 .volunteer-contact .name, .volunteer-name {font-size:1.25em; display:inline-box; font-weight:bold;}
 .volunteer-contact .name a{color:#000;}
 .volunteer-contact .email{margin-top:0px; word-break:break-all;}
