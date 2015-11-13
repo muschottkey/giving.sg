@@ -659,6 +659,14 @@ Corporate Identity CHANGE (BLUE) */
 
 .cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{color: #0c5372;}
 
+.action-link .fa{color: #17a4e1;}
+.cpn-sgtn-item .action-link{
+  position: absolute;
+  top:50%;
+  margin-top: -36px;
+  left:0;
+  right: 0;
+}
 /* Expired Card */
 .cpn-sgtn-item.expired .sgtn-body, .cpn-sgtn-item.expired .box-r-footer, .cpn-sgtn-item.expired:hover .sgtn-body, .cpn-sgtn-item.expired:hover .box-r-footer{
     background-color: #f7f7f7;
