@@ -1343,8 +1343,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .campaign-stats .progress .bar{ border-radius:0px; background:#91C2AF; text-shadow:none; box-shadow:none; }
 
 .cpn-suggestions .load-all-box, .cpn-suggestions .add-cpn-btn { font-size:1.25em;height: auto; border: 0 none;}
-.load-all-results { margin: calc(100% - 50px) 0;}
-    .add-cpn-btn .load-all-results { margin: calc(100% - 90px) 0;  }
 .load-all-box .action-link {margin-bottom:3px;}
 
 .more-days.inline h4{ display: inline-block; }
