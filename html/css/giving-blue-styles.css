@@ -479,7 +479,7 @@ Corporate Identity CHANGE (BLUE) */
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
-.checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
+.checkbox-clone.checked:before { color:#333 !important; content: "\f0d7" !important; }
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 
 /* Search Page & Search UI */
@@ -501,9 +501,6 @@ Corporate Identity CHANGE (BLUE) */
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
 #select-more-causes input[type=checkbox]:checked + label:before,
-#data-list-filters input[type=checkbox]:checked + label:before,
-.refine-inputs .checkbox-clone.checked:before,
-.checkbox-clone.checked:before,
 #data-list-filters input[type=checkbox]:checked + label:before{
     color: #4cb848 !important;
 
