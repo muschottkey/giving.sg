@@ -1,12 +1,4 @@
 /* general settings */
-::-ms-clear {
-  width : 0 !important;
-  height: 0 !important;
-  display:none !important;
-}
-input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important;font-size: inherit;}
-.popover-content ul label:before{margin:-3px 0 0 !important;}
-.sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
 body {
     color:#333; font:16px/1.25 "Roboto", Arial, sans-serif;
@@ -19,20 +11,27 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Roboto", Arial, Helvetica, sans-serif; line-height:1.1em;
     color:#141414; font-weight: normal;
 }
-h1 { font-size:2.5em; } /* 40px */
-h2 { font-size:2.25em; } /* 36px */
-h3 { font-size: 1.75em; } /* 28px */
-h4 { font-size: 1.5em; } /* 24px */
-h5, h6 { font-size: 1.125em; } /* 18px */
-h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label{text-shadow:none !important;}
-p { font-size:.935em;line-height: 1.4; margin:0 0 0.5em;color: #666;}
-textarea, input { line-height:1.4; word-wrap: break-word; font-size:1em; }
+h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }        /* 40px */
+h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}    /* 36px */
+h3 { font-size:1.75em; line-height:1.13636364em;margin: .75em 0;}               /* 28px */
+h4 { font-size:1.5em; margin: 0;}                           /* 24px */
+h5 { font-size:1.25em; margin: 0.82rem 0 0.656rem 0; }      /* 20px */
+h6 { font-size:1.125em; margin: 0.5rem 0 0.4rem 0; }        /* 18px */
 
-a{color:#17a4e1; text-decoration: underline; }
-    a:visited, .cpn-sgtn-item .sgtn-body h5 a:visited {color:#7a7a7a;}
+h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label { text-shadow:none !important; }
+p { font-size:.935em; line-height: 1.4; margin:0 0 0.5em; color: #666; }
+textarea, input { font-size:.935em; line-height:1.4; word-wrap: break-word; }
+
+::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
+input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
+input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important;font-size: inherit;}
+
+a, a:link {color:#17a4e1; text-decoration: underline; }
     a:hover {color:#2174b5;}
+    a:visited, .cpn-sgtn-item .sgtn-body h5 a:visited {color:#7a7a7a;}
 
-/* Corporate Identity chnages */
+
+/* CONTENT HEADINGS */
 .section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
     font-size: 1.125em; color:#141414; font-weight: 400;
 }
@@ -41,13 +40,14 @@ a{color:#17a4e1; text-decoration: underline; }
 
 /* BODY TEXT */
 .cpn-story .body p {font-size: 1.063em; font-weight: 300;}
-span.error.help-block { }
     #gf-bkt-wrapper .gf-bkt tr td.warning { color:#faa732;}
     #gf-bkt-wrapper .gf-bkt tr td.info  { color:#999;}
 
 /* SMALL BODY TEXT */
 p.small.text-center {font-size: 1em;}
 
+.popover-content ul label:before{margin:-3px 0 0 !important;}
+.sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 .box #setup-dtn-carousel a .small{color:#9DC9EE; text-decoration: none; }
 .box #setup-dtn-carousel a:visited .small{color:#999;}
 .box #setup-dtn-carousel a:hover .small{color:#C66;text-decoration: underline;}
@@ -88,14 +88,9 @@ hr { border-top: 1px solid #CCC; }
   z-index: 1024; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); -webkit-overflow-scrolling: touch;
 }
 
-input[type=text]::-ms-clear{
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-}
 
-.control-group .controls > span, label  {font-size: .875em;color: #666;}
-    .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#c66; }
+.control-group .controls > span, label  {font-size: .875em; color: #666;}
+    .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#666; }
 label.small.grey{color: #999;}
 .box label.small{color:#666;}
 .control-group .controls span small {font-size: 100% !important;}
@@ -343,6 +338,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 
 /* MODAL - Typography */
 .modal h2, .main-content h2, .main-content h3 { }
+.main-content h3 { font-size:2em; }
     .modal-header h3, .modal-body h3 { }
 
 /* MODAL - UI Controls */
@@ -2119,6 +2115,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     position:relative;
     z-index:100;
 }
+
 .cpn-holder .btn-close{
     display:none;
     margin: 30px 0 0;
@@ -3693,6 +3690,9 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     .accordion-title{font-size:16px;}
     .accordion-title .fa {top:7px;}
     .wrapper-925 .title-search .span6 { width:100%; }
+
+
+
     .row-fluid.border-all { margin-right:-1px !important; margin-left:-2px !important; }
     .carousel-indicators{bottom: 10px;}
     .modal, .modal-one-column { max-width:294px !important; }

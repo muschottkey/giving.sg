@@ -273,12 +273,6 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
-h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
-h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
-h3 { font-size:1.5rem;line-height:1.13636364em;margin: .75em 0;}    /* 24px */
-h4 { font-size:1.125em;margin: 0;} /* 18px */
-h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
-h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 
 header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
     h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
@@ -491,7 +485,6 @@ Corporate Identity CHANGE (BLUE) */
 .checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
 
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
-.title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
 /* Search Page & Search UI */
 #search-form label.control-label{
