@@ -618,7 +618,7 @@ Corporate Identity CHANGE (BLUE) */
 }
 
 .campaign-stats h4 { font-size:1.75em; color:#141414; }
-.more-days.inline h4 { font-size:1.125em; color:#141414; }
+.more-days.inline h4 {font-size: 1.25em; color:#141414;}
 .more-days.inline span.em{color: #141414 !important;}
 .cpn-sgtn-item .campaign-stats .progress { 
     border: 1px solid #FFF;
