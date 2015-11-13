@@ -305,7 +305,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 .navbar-inverse .brand:visited, .navbar-inverse .nav > li > a:visited {color: #999; }
 .navbar-inverse .brand:hover, .navbar-inverse .nav > li > a:hover{ text-decoration: underline;color: #2174b5;}
-.boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 46px;padding-top: 30px; }
+.boxed-wrapper { max-width:800px;margin:0 auto;margin-top: 70px;padding-top: 30px;}
 
 footer.footer a{font-size: 14px;text-decoration: underline;}
 .footer p {text-align:center;margin:0; padding:10px 0;}
@@ -756,7 +756,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .summary-wrapper .headings { border-bottom: 1px solid #ddd; margin:10px auto 8px; height:20px; }
 .summary-wrapper .headings span { color:#999 !important; }
 .summary-wrapper .headings .pull-left{width: auto;}
-.box:first-child {margin-top:4px;margin-left: 0 }
+.box:first-child { margin-left: 0 }
 
 .minimal i {
   margin-right: 10px;
@@ -3771,14 +3771,14 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     /* Mobile Interactions for Set up donation sections */
     .acc-toggle {
       background-color: #F7F7F7;
-      color: #333 !important;
+      color: #666 !important;
       padding: 10px 20px;
       font-size: 1.1em !important;
       margin: 0;
       cursor: pointer;
       border: solid 1px #999;
     }
-    .acc-toggle:hover{text-decoration: underline;color: #CC6666!important;}
+    .acc-toggle:hover{ background-color: #F0F0F0; }
     .acc-toggle.minimal{
         background-color: #fff;
         color: #666;
@@ -3795,7 +3795,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     .pre-footer .acc-toggle{color:#cc6666!important;}
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
-    #user-about-links input{width: 64% !important;}
+    #user-about-links input{width: 90% !important;}
     #save-actions .btn {width: 48%;font-size: .875em;padding-left: 15px;padding-right: 15px;}
     .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
     .gf-bkt tbody tr td:first-child{height: 130px;}
