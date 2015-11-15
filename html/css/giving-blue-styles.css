@@ -497,7 +497,7 @@ Corporate Identity CHANGE (BLUE) */
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
-.checkbox-clone.checked:before { color:#333 !important; content: "\f0d7" !important; }
+.checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
@@ -526,11 +526,13 @@ Corporate Identity CHANGE (BLUE) */
 /* Checkboxes */
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
+#select-org-type input[type=checkbox]:checked + label:before,
 #select-more-causes input[type=checkbox]:checked + label:before,
 #data-list-filters input[type=checkbox]:checked + label:before {
     color: #4cb848 !important;
 }
 #select-more-camp input[type=checkbox]:checked + label,
+#select-org-type input[type=checkbox]:checked + label,
 .refine-inputs input[type=checkbox]:checked + label,
 #select-more-causes input[type=checkbox]:checked + label,
 #data-list-filters input[type=checkbox]:checked + label,
@@ -818,10 +820,13 @@ button.close{font-size: 20px !important;}
 
 
 #setup-dtn-carousel .carousel-control, .carousel-control{
-    background-color: transparent;
-}
-#setup-dtn-carousel .carousel-control span:hover, .carousel-control span:hover{
+    background-color: #fff;
     color: #17A4E1;
+    opacity: 0.6;
+}
+#setup-dtn-carousel .carousel-control:hover, .carousel-control:hover{
+    color: #17A4E1;
+    opacity: 1;
 }
 
 /* TABLET (LARGE) */
@@ -970,8 +975,21 @@ button.btn.btn-ghost.delete-row {
   right:0;
   left: 0;
 }
-
-  
+.bottom-r{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 0 !important;
+}
+.bottom-r .cn-days-wrapper{
+   width: 100%; 
+   right: 0; 
+   top: inherit; 
+   position: relative; 
+   padding: 5px;
+   background-color: rgba(0,0,0,0.5);
+   color: #ccc;
+}
 
 @media (max-width: 1023px) and (min-width: 980px){
     .donors-area .dr-img {
@@ -1014,4 +1032,4 @@ button.btn.btn-ghost.delete-row {
     display: none;
 }
 #cpn-donate-now > .box > h4{display: none;}
-.cn-ln-details{/* display: none; */}
+.cn-ln-details{ display: none; }
