@@ -497,10 +497,7 @@ Corporate Identity CHANGE (BLUE) */
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
-.main-content, .modal-content { margin-top: 70px; }
-.listings-wrapper .cpn-sgtn-item { min-height:auto; }
-.checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
-
+.checkbox-clone.checked:before { color:#333 !important; content: "\f0d7" !important; }
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
@@ -530,13 +527,9 @@ Corporate Identity CHANGE (BLUE) */
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
 #select-more-causes input[type=checkbox]:checked + label:before,
-#data-list-filters input[type=checkbox]:checked + label:before,
-.refine-inputs .checkbox-clone.checked:before,
-.checkbox-clone.checked:before{
+#data-list-filters input[type=checkbox]:checked + label:before {
     color: #4cb848 !important;
-
-  }
-
+}
 #select-more-camp input[type=checkbox]:checked + label,
 .refine-inputs input[type=checkbox]:checked + label,
 #select-more-causes input[type=checkbox]:checked + label,
@@ -691,6 +684,14 @@ Corporate Identity CHANGE (BLUE) */
 
 .cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{color: #0c5372;}
 
+.action-link .fa{color: #17a4e1;}
+.cpn-sgtn-item .action-link{
+  position: absolute;
+  top:50%;
+  margin-top: -36px;
+  left:0;
+  right: 0;
+}
 /* Expired Card */
 .cpn-sgtn-item.expired .sgtn-body, .cpn-sgtn-item.expired .box-r-footer, .cpn-sgtn-item.expired:hover .sgtn-body, .cpn-sgtn-item.expired:hover .box-r-footer{
     background-color: #f7f7f7;
@@ -951,9 +952,23 @@ button.close{font-size: 20px !important;}
 
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
-.dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:block; margin: 1.368rem 0 1.168rem 0; }
+.dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell; margin: 1.368rem 0 1.168rem 0; }
 button.btn.btn-ghost.delete-row {
   margin-right: -10px;
+}
+.qk-basket-wrapper li{
+  display: block !important;
+  height: auto !important;
+  padding: 0.2em !important;
+}
+
+.dtn-amt{position: relative;}
+.dtn-amt h3{
+  position: absolute;
+  top: 50%;
+  margin: -16px auto !important;
+  right:0;
+  left: 0;
 }
 
   

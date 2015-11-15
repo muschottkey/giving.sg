@@ -752,9 +752,9 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .box .box{border-left: none;border-right: none;border-bottom: none;padding-right:10px !important; padding-left: 10px !important;}
 .p-title.block{line-height: 1.5;}
     .contact-us h5 { font-size:1.125em; }
-.summary-wrapper{max-width: 500px;min-height:40px;left:0;right: 0;padding: 0 15px;border:1px solid #cccccc;border-radius: 4px;}
+.summary-wrapper{max-width: 500px;min-height:20px;left:0;right: 0;padding: 10px 15px;border:1px solid #ddd;border-radius: 4px;}
 .summary-wrapper .pull-left{width: auto;}
-.summary-wrapper .headings { border-bottom: 1px solid #ddd; margin:10px auto 8px; height:20px; }
+.summary-wrapper .headings { border-bottom: 1px solid #ddd; margin:5px auto 8px; height:20px; }
 .summary-wrapper .headings span { color:#999 !important; }
 .summary-wrapper .headings .pull-left{width: auto;}
 .box:first-child {margin-top:4px;margin-left: 0 }
@@ -855,7 +855,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { width:200px; float:left;margin: 0px 14px 20px; border-radius:6px;border: 1px solid #CCC;}   
+#causes-wrapper .cause-box { width:200px; float:left; margin:0 13px 20px; border-radius:6px;border: 1px solid #CCC;}  
 
 .causes ul { margin:0 -15px; }
 .causes li { 
@@ -1344,8 +1344,6 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .campaign-stats .progress .bar{ border-radius:0px; background:#91C2AF; text-shadow:none; box-shadow:none; }
 
 .cpn-suggestions .load-all-box, .cpn-suggestions .add-cpn-btn { font-size:1.25em;height: auto; border: 0 none;}
-.load-all-results { margin: calc(100% - 50px) 0;}
-    .add-cpn-btn .load-all-results { margin: calc(100% - 90px) 0;  }
 .load-all-box .action-link {margin-bottom:3px;}
 
 .more-days.inline h4{ display: inline-block; }
@@ -1358,7 +1356,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 #custom-amt-input-modal .em {font-size: 1em;}
     #custom-amt-input-modal .button-input { width: 60% !important; margin: 10px 1em;font-size: 1.4em !important;}
 
-.dtn-amt-item .dtn-desc { border-left: 1px solid #CCC; padding:1.3em 1em; }
+.dtn-amt-item .dtn-desc { border-left: 1px solid #ddd; padding:1.3em 1em; }
 .dtn-amt-item .dtn-btns { padding: 1em 0; }
 .dtn-amt-item .dtn-btns .btn{
     float: left; padding:12px; margin-top: 10px; width: 70%;
