@@ -28,13 +28,14 @@ input[type="text"], input[type="password"], textarea{-webkit-appearance: none !i
 
 a, a:link {color:#17a4e1; text-decoration: underline; }
     a:hover {color:#2174b5;}
-    a:visited, .cpn-sgtn-item .sgtn-body h5 a:visited {color:#7a7a7a;}
+    a:visited,Â .cpn-sgtn-item .sgtn-body h5 a:visited {color:#7a7a7a;}
 
 
 /* CONTENT HEADINGS */
 .section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
     font-size: 1.125em; color:#141414; font-weight: 400;
 }
+h3.p-title  { font-size: 1.75em; }
 .box h5 { font-size: 1.2em; margin-bottom: 5px !important; }
 .p-section .form-group h5 { color:#666; }
 
@@ -67,13 +68,13 @@ p.small.text-center {font-size: 1em;}
 .modalwrapper > .row-fluid > .text-center h2.black,
 .modalwrapper > .row-fluid > .text-center h4.black,
 .modalwrapper > .row-fluid > .span6 .text-center h4.black
-    { color:#C66; }
+    {color: #333;}
 
 .modalwrapper > .row-fluid > .text-center .form-group h5.black
     { color:#999; }
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
 .signup-section h2, .signup-section h3 { margin:0; }
-.bg-giving-blue,  .causes li.ico-tdr { 
+.bg-giving-blue, Â .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
 
@@ -229,7 +230,7 @@ hr.m5{margin: 5px 0;}
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus{
     border-color: #cc6666 !important;
 }
-.control-group.error .help-block p, .control-group.error .help-block,  .control-group.error .help-inline{
+.control-group.error .help-block p, .control-group.error .help-block, Â .control-group.error .help-inline{
     color: #c66; font-weight: 400;
 }
 .control-group.error .help-block.smaller, #donation-userDetails .smaller {font-size: 0.875em;}
@@ -747,7 +748,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 .user-img img{max-height:100%;max-width: 100%; }
 
-.box{background-color:#fff;border:1px solid #cccccc;margin-top: 20px;margin-bottom: 0px;padding: 1em 1.75em;}
+.box{background-color:#fff;border: 1px solid #DDD;margin-top: 20px;margin-bottom: 0px;padding: 1em 1.75em;}
 .box .box{border-left: none;border-right: none;border-bottom: none;padding-right:10px !important; padding-left: 10px !important;}
 .p-title.block{line-height: 1.5;}
     .contact-us h5 { font-size:1.125em; }
@@ -854,7 +855,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .acc-section #causes-wrapper { max-width:650px; }
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { width:200px; float:left; margin:0 15px 20px; border-radius:6px;border: 1px solid #CCC;}   
+#causes-wrapper .cause-box { width:200px; float:left;margin: 0px 14px 20px; border-radius:6px;border: 1px solid #CCC;}   
 
 .causes ul { margin:0 -15px; }
 .causes li { 
@@ -1071,7 +1072,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .action-link i{width: 100%;margin-bottom: 10px;font-size: 24px;}
 .action-link.inline i{width: auto;margin-bottom: 0px;font-size: 18px; margin-right: 5px;}
 #dtn-cause-images { padding-top: 0 !important;overflow: hidden;  position: relative; }
-.bg-grey { position:absolute; z-index:1; top:0; left:0; margin:0 auto; width: 100%; height: 100%; }
+.bg-grey { position:absolute; z-index:1; top:0; left:0; margin:0 auto; width: 100%;height: 100%;}
 .bg-grey .img-placeholder-btn { max-width:100%; margin:17% auto; width: 80%; }
     
 #cause-image-preview{border: none;overflow: hidden;}
@@ -1213,7 +1214,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 #gf-bkt-login input{padding: 5px 0 !important;}
 #gf-bkt-login .help-block{font-size: 0.875em;}
 .gf-bkt .cellEditing{max-width: 100%;}
-.p-footer{background-color:#F6F09A; padding: 15px 5px; }
+.p-footer{ padding: 15px 5px;}
 .editIp{border-color: rgba(82, 168, 236, 0.8);
   outline: 0;
   outline: thin dotted \9;
@@ -1299,14 +1300,14 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 /* CAMPAIGN WIDGETS*/
-.cn-details { padding:0 2%; position:relative; border-bottom:0;  }
+.cn-details { padding:0 2%; position:relative; }
 .cn-ln-details { padding:0; position: relative;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #CCC; }
 
 .cn-details .more-days h4{font-size: 1.5em;}
 
 .campaign-stats h4{ display: inline-block; font-size:1.5em; margin:0 5px;}
-
+#cpn-donate-now .box h3 { display: none; visibility: hidden; }
 .cn-stats-wrapper{
     width: 70%;
     float: left;
@@ -1462,8 +1463,14 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 /* Subscribe to Newsletter */
 .pre-footer-social input.span9 {
-    background-color: #242424; border:none; border-bottom:1px solid #525252; color:#DDD;
+    background-color: #FFF;
+    border:none;
+    border-bottom:1px solid #525252;
+    color: #333;
     width:75%;
+    display: block;
+    float: left;
+    height: 40px;
 } 
     .pre-footer-social input:focus { border-bottom: 1px solid #17A4E1; }
 .pre-footer-social .cpn-url-box button { border:0 none; }
@@ -1525,7 +1532,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .cpn-sgtn-item .sgtn-body .heading-group { min-height:6.5em; max-height:6.5em; } 
 .sgtn-body p { font-size:.875em; margin:0 auto 5px; min-height:6.7em; max-height: 6.7em;overflow: hidden;}
     .sgtn-body .campaign-stats button { width:100%;}
-.cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0; }
+.cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DDD;}
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
     position: absolute; margin-left: 65px; width:30px; height:30px;
@@ -2216,8 +2223,9 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar ul li > a .li-icon.pull-left{
     margin-right: 6px;
 }
-#sidebar .profile-nav { padding:30px; border-bottom:1px solid #CCC; }
-    #sidebar .profile-nav .img-circle { max-width:150px; }
+#sidebar .profile-nav { padding:30px;border-bottom:1px solid #CCC; }
+    #sidebar .profile-nav .img-circle { max-width:150px;background: #F7F7F7;border: 1px solid #ccc;max-height: 150px;margin-bottom: 10px;}
+#sidebar .profile-nav h4 { margin-top:10px; }
 
 aside.profile-nav.mobile-fallback{
     width: 190px;

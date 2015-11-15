@@ -273,6 +273,12 @@
 .text-transparent { color: transparent !important; }
 
 /* TYPOGRAPHY FOR SERVER */
+h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
+h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
+h3 { font-size:1.5rem;line-height:1.13636364em;margin: .75em 0;}    /* 24px */
+h4 { font-size:1.125em;margin: 0;} /* 18px */
+h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
+h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 
 header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
     h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
@@ -284,8 +290,17 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 .z-depth-1, nav, .card-panel, .card, .toast, .btn, .btn-large, .btn-floating, .dropdown-content, .collapsible, .side-nav {
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+.btn-group .btn.btn-ghost{
+  box-shadow:none;
+}
+.btn-group .btn.btn-ghost.active,
+.btn-group .btn.btn-ghost:hover{
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
 
-.z-depth-1-half { box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;}
+.z-depth-1-half, .btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  .steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover ,.open-more:hover,.btn-more-img:hover{
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+}
 .z-depth-2 { box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 .z-depth-3 { box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 .z-depth-4, .modal { box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
@@ -311,6 +326,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 #uf-dockbar-hamburger-menu a i { font-size: 1.4em; color: #333; line-height: 1.4; }
 
 /* LOGO */
+.section-page{margin-top: 37px;}
 #logo { padding: 0; top: 0;position: absolute;margin: 0 auto;z-index: 1090;}
 #logo a { color:#4cb848; max-width:250px;display: inline-block; text-transform: uppercase;padding: 0 1em;}
 #logo img{ max-width: 170px;}
@@ -428,6 +444,8 @@ Corporate Identity CHANGE (BLUE) */
 
 .cause-box img {background: #e8e8e8;height: 100%;}
 
+.donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
+
 .cause-box a, .cause-box a:link { text-decoration:none; }
     .cause-box a:hover h4, .cause-box a:active  h4 { 
         text-decoration:none; color: #ffffff !important; 
@@ -479,11 +497,22 @@ Corporate Identity CHANGE (BLUE) */
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
+.main-content, .modal-content { margin-top: 70px; }
+.listings-wrapper .cpn-sgtn-item { min-height:auto; }
 .checkbox-clone.checked:before { color:#4cb848 !important; content: "\f00c" !important; }
+
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
+.title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
 /* Search Page & Search UI */
-
+#search-form label.control-label{
+    color: #333 !important;
+}
+#search-form input#search_term{
+    border-color: #999;
+    color: #333 !important;
+    height: auto !important;
+}
 #search-form input#search_term::-webkit-input-placeholder , #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder{color: #ccc !important;} /* WebKit, Blink, Edge */
 #search-form input#search_term:-moz-placeholder, #uf-dockbar-search-mobile input[type="text"]:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
 #search-form input#search_term::-mox-placeholder, #uf-dockbar-search-mobile input[type="text"]::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
@@ -544,7 +573,8 @@ Corporate Identity CHANGE (BLUE) */
 /*  START OF FOOTER*/
 /*****************************************/
 .pre-footer-social{
-    background-color: #333333; margin: 0 auto !important;
+    background-color: #444;
+    margin: 0 auto !important;
     border-top-color: #353535 !important;
     border-bottom-color: #424242 !important;
 }
@@ -555,11 +585,11 @@ Corporate Identity CHANGE (BLUE) */
 .pre-footer h4 a, .pre-footer h4 a:link, .pre-footer h4 a:visited{color: #ffffff !important;text-transform: uppercase;}
 .footer-links li a,.footer-links li a:link{ text-decoration: none; color: #FFF;}
     .footer-links li a:hover{ text-decoration: underline; }
-    .footer-links li a:visited  { color:#AAA; }
+    .footer-links li a:visited  {/* color:#AAA; */}
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
 
-.footer{background-color: #333333;padding: .35em 0;}
+.footer{background-color: #444;padding: .35em 0;}
 .footer-ul span{color: #ffffff;}
 
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
@@ -706,14 +736,14 @@ button.close{font-size: 20px !important;}
     box-shadow: none !important;
 }
 
-.steps-content .btn-area input, .add-btn-lst a{
+.steps-content .btn-area input, .steps-content .btn-save input, .add-btn-lst a{
     background-color: #B3E7FF !important;color: #2174B5 !important;
 }
 .inform-area .box-btn .btn{
     background-color: #B3E7FF;
     color: #2174B5 !important;
 }
-.btn-area input[type=submit]{
+.add-bottom-lst li input[type=submit], .btn-area input[type=submit], .btn-save input[type=submit]{
     line-height: 1 !important;
 }
 
@@ -723,10 +753,7 @@ button.close{font-size: 20px !important;}
 .btn-success:hover, .btn-success:active, .btn-success:focus,
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
 .aui .btn-success:hover, .aui .btn-success:active,.aui .btn-success:focus, 
-#btnDonate:hover, #btnDonate:active, #btnDonate:focus,
-#LoginForm .btn:hover, #LoginForm .btn:active, #LoginForm .btn:focus,
-#login_button:hover, #login_button:focus, 
-.add-bottom-lst input:hover, .add-bottom-lst input:active, .add-bottom-lst input:focus {
+#LoginForm .btn:hover {
     background-color:#0E678E ;color:#FFF;
 }
 
@@ -735,12 +762,18 @@ button.close{font-size: 20px !important;}
 .open-more:hover, .open-more:active, .open-more:focus, 
 .btn-more-img:hover, .btn-more-img:active, .btn-more-img:focus, 
 .donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
-#copy-url:hover { 
+#copy-url:hover, .load-all-results:hover { 
     background-color:#B3E7FF; color:#2174B5; border:none; 
 }
-.btn-toggle .btn.active:hover, 
-  
- 
+
+
+.btn-toggle .btn.active:hover, #btnDonate:hover, 
+#btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active,
+#login_button:focus,  .btn-primary:active, .btn-primary:focus,
+.btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, 
+ .add-bottom-lst input:active, .add-bottom-lst input:focus{
+   background-color: #0E678E !important;
+}
 .btn:disabled, .aui .btn:disabled { background-color: #999 !important; cursor: not-allowed; }
 
 /*****************************************/
@@ -945,7 +978,7 @@ button.btn.btn-ghost.delete-row {
             /* PERMANENT ADDITIONS */
 /*************************************************************/
 .tax-status-i{
-    width: 36px;
+    width: 24px;
     height: auto;
 }
 

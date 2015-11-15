@@ -3476,8 +3476,8 @@ input[type="button"].btn-block {
 .btn-success.disabled,
 .btn-success[disabled] {
   color: #ffffff;
-  background-color: #51a351;
-  *background-color: #499249;
+  background-color: #17a4e1;*
+  background-color: #499249;
 }
 
 .btn-success:active,
