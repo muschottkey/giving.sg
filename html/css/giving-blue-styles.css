@@ -275,13 +275,13 @@
 /* TYPOGRAPHY FOR SERVER */
 h1 { font-size:2.5em; line-height: 1.25em; margin: 2.1rem 0 1.68rem 0; }            /* 40px */
 h2 { font-size:2em; line-height:1.15384615em; margin: 1.78rem 0 1.424rem 0;}         /* 36px */
-h3 { font-size:1.5rem;line-height:1.13636364em;margin: .75em 0;}    /* 24px */
-h4 { font-size:1.125em;margin: 0;} /* 18px */
+h3 { font-size:1.5rem;line-height:1.13636364em; margin: .75em 0;}    /* 24px */
+h4 { font-size:1.125em; margin: 0.82rem 0 0.656rem; } /* 18px */
 h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }     /* 16px */
 h6 { font-size:1em; margin: 0.5rem 0 0.4rem 0; }        /* 16px */
 
-header a, header a:link, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, 
-    h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link { 
+header a, header a:link, h1 a, h2 a, h3 a, h4 a, h6 a, 
+    h1 a:link, h2 a:link, h3 a:link, h4 a:link,  h6 a:link {
         text-decoration:none; color:#000;
     }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration:underline; }
@@ -336,7 +336,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
             /* HOME PAGE CAROUSEL */
 /*************************************************************/
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
-    color: #93c564;
+    color: #4CB848;
 }
 .home-slider .swiper-slide picture img{
       min-height: inherit;
@@ -1010,8 +1010,8 @@ button.btn.btn-ghost.delete-row {
 .donate-btns{
     padding: 0px 1.8em;
 }
-#cpn-info .evn-details, #cpn-info .box.causes{
+#cpn-info .cn-statswrapper, #cpn-info .box.causes{
     display: none;
 }
 #cpn-donate-now > .box > h4{display: none;}
-.cn-ln-details{display: none;}
+.cn-ln-details{/* display: none; */}
