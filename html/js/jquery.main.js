@@ -140,7 +140,6 @@ $('.m-nav-link').click(function(){
 	return false;
 })
 
-
 $(function(){
 	if($('.dtn-amt-item .dtn-amt.span2').length){
 		$('.dtn-amt-item').sameHeight({

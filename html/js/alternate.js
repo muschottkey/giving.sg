@@ -335,6 +335,14 @@ $('.switch').bootstrapSwitch({
     $('.donate-trig').click(function(){
         $('#donationAmt').modal();
     });
+	
+	$('#donationAmt').on('shown.bs.modal', function (e) {
+		$('#donationAmt .dtn-amt-item').sameHeight({
+			elements: '> div',
+			flexible: true,
+			multiLine: true
+		});
+	});
 
     function createMobSlider(){
         //initialize campaign suggestions swiper when mobile ready  
