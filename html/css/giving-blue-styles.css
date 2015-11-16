@@ -326,7 +326,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-de
 #uf-dockbar-hamburger-menu a i { font-size: 1.4em; color: #333; line-height: 1.4; }
 
 /* LOGO */
-.section-page{margin-top: 37px;}
 #logo { padding: 0; top: 0;position: absolute;margin: 0 auto;z-index: 1090;}
 #logo a { color:#4cb848; max-width:250px;display: inline-block; text-transform: uppercase;padding: 0 1em;}
 #logo img{ max-width: 170px;}
@@ -777,7 +776,7 @@ button.close{font-size: 20px !important;}
  .add-bottom-lst input:active, .add-bottom-lst input:focus{
    background-color: #0E678E !important;
 }
-.btn:disabled, .aui .btn:disabled { background-color: #999 !important; cursor: not-allowed; }
+.btn:disabled, .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 
 /*****************************************/
 /*  BUTTON STYLES END */
@@ -871,7 +870,7 @@ button.close{font-size: 20px !important;}
     #logo a, .navbar-inverse .brand { 
         overflow: hidden; display:block; margin: 0 auto; max-height: 40px; max-width: 200px; }
         #logo a img, .navbar-inverse .brand img  {width: 160px;}
-    .navbar-inverse .navbar-inner, #uf-dockbar-right-menu ul { height:50px; }
+    .navbar-inverse .navbar-inner, #uf-dockbar-right-menu ul { height:50px; padding: 0;}
 
     .navbar-inverse .brand { padding:0; float: none; }
 
@@ -916,13 +915,13 @@ button.close{font-size: 20px !important;}
 }
 
 @media only screen and (min-width: 769px) {
-    .navbar-inverse .navbar-inner { height: 70px; }
-    .navbar-inverse .brand{
+    .navbar-inverse .brand {
         font-size: 1.25em; font-weight: 500; padding: 0; position: absolute;
-        left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important; text-decoration:none;
-        max-width: 180px; display: inline-block; text-transform: uppercase;
+        left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important;
+        text-decoration:none; max-width: 180px; display: inline-block;
+        text-transform: uppercase;
     }
-    #main-nav-header { height: 70px; } 
+    #main-nav-header, .navbar-inverse .navbar-inner { height: 70px;padding: 0;} 
     #main-nav {/* reset main nav style */
         left: 190px; right:auto;background: transparent;
         box-shadow: none;z-index: 1030; font-size: 1.125em;
@@ -931,15 +930,11 @@ button.close{font-size: 20px !important;}
          #main-nav ul a:hover, #main-nav ul a.current {  box-shadow: 0 -6px 0 0 #4cb848 inset; }
 
     #uf-dockbar-hamburger-menu { display: none; }
-
-    .section-page { margin-top: 70px; }
-
 }
 
 @media only screen and (min-width:981px) {
     #main-nav { left:200px;  }
     #main-nav ul a { padding: 1.45em 1.3em; }
-
 }
 
 /*************************************************************/

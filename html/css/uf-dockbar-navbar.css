@@ -543,12 +543,12 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-search-desktop input[type="submit"], #uf-dockbar-search-mobile input[type="submit"] {
   background: white url(../images/ico-search.png) no-repeat scroll 0% 0%/cover;
   position: absolute;
-  right: 10px;
-  top: .7em;
+  right: 12px;
+  top: 1.2em;
   padding: 0 1em;
   opacity: 0;
-  width: 22px;
-  height: 24px;
+  width: 21px;
+  height: 28px;
   border: 0px none;
   text-indent: -9999px;
   cursor: pointer;
