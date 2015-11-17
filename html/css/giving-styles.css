@@ -35,7 +35,7 @@ a, a:link {color:#17a4e1; text-decoration: underline; }
 .section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
     font-size: 1.125em; color:#141414; font-weight: 400;
 }
-h3.p-title  { font-size: 1.75em; }
+h3.p-title  {font-size: 2.125em;margin: 0.5rem 0 .5rem !important;font-weight: 400;}
 .box h5 { font-size: 1.2em; margin-bottom: 5px !important; }
 .p-section .form-group h5 { color:#666; }
 
@@ -328,11 +328,10 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 /* MODAL */
 .modal, .modal-content, .modal-body { margin:0 auto; overflow-y:initial; }
 .modal-body, .modal-backdrop  { max-height:100%; }
-    
 .modal { position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; }
 .modal.non-respv { min-width:858px !important; width:100%; }
 .modal.non-respv .modal-body{ min-width:800px !important; width:100%; }
-
+.modal.fade { display: none; }
 .modal.fade.in { display:block; }
 .modal-header { border-bottom: none; }
 .modal-header .close{  position: absolute;right: 10px;top: 5px;padding: 20px;}
@@ -345,8 +344,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .modal-header h3, .modal-body h3 { }
 
 /* MODAL - UI Controls */
-
-
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
 #profile-form .validation-feedback,
