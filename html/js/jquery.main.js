@@ -145,6 +145,7 @@ $(function(){
 		$('.dtn-amt-item').sameHeight({
 			elements: '> div',
 			flexible: true,
+			useMinHeight: true,
 			multiLine: true
 		});
 	}
