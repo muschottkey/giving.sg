@@ -497,6 +497,7 @@ Corporate Identity CHANGE (BLUE) */
 
 /* NPO lIsting */
 .checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
+.checkbox-clone.checked[data-parent="ref_allcauses"]:before{content: "\f0d7" !important;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
@@ -927,7 +928,8 @@ button.close{font-size: 20px !important;}
         box-shadow: none;z-index: 1030; font-size: 1.125em;
     }
      #main-nav ul a { padding:1.45em .7em; }
-         #main-nav ul a:hover, #main-nav ul a.current {  box-shadow: 0 -6px 0 0 #4cb848 inset; }
+    #main-nav ul a.current {  box-shadow: 0 -6px 0 0 #4cb848 inset; }
+    #main-nav ul a:hover{  box-shadow: 0 -6px 0 0 #62C15E inset;}
 
     #uf-dockbar-hamburger-menu { display: none; }
 }
@@ -976,6 +978,9 @@ button.btn.btn-ghost.delete-row {
   bottom: 0;
   margin: 0 !important;
 }
+.carousel .bottom-r{
+  right:9px;
+}
 .bottom-r .cn-days-wrapper{
    width: 100%; 
    right: 0; 
@@ -1009,7 +1014,22 @@ button.btn.btn-ghost.delete-row {
     width: 24px;
     height: auto;
 }
-
+#cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
+  background-image: url(../images/ico-tax-deductible.png);
+  background-position: 0 0;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding-left: 30px;
+  text-align: left;
+  white-space: pre-wrap;
+}
+.load-all-results i{
+  display: inline-block;
+  width: auto;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+}
+.btn{font-weight: normal !important;}
 
 /*************************************************************/
             /* TEMPORARY EDITS */
@@ -1026,5 +1046,8 @@ button.btn.btn-ghost.delete-row {
 #cpn-info .cn-statswrapper, #cpn-info .box.causes{
     display: none;
 }
+.popover-content .btn-row > h3 {display: inline-block;}
 #cpn-donate-now > .box > h4{display: none;}
 .cn-ln-details{ display: none; }
+/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, making them inaccessible for nteraction like clicking etc*/
+.modal{display: none;}

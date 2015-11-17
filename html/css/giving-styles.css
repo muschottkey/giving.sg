@@ -40,7 +40,7 @@ h3.p-title  {font-size: 2.125em;margin: 0.5rem 0 .5rem !important;font-weight: 4
 .p-section .form-group h5 { color:#666; }
 
 /* BODY TEXT */
-.cpn-story .body p {font-size: 1.063em; font-weight: 300;}
+.cpn-story .body p {font-size: 1.063em; font-weight: 300;margin-bottom: 1em;}
     #gf-bkt-wrapper .gf-bkt tr td.warning { color:#cc6666;}
     #gf-bkt-wrapper .gf-bkt tr td.info  { color:#333;}
 	#gf-bkt-wrapper .gf-bkt tr td.info .fa.fa-info-circle{display:none;}
@@ -207,7 +207,7 @@ hr.m5{margin: 5px 0;}
     .journal-content-article .bg-darkgrey h3 { color:#FFF !important; } 
 .bg-white{background-color: #ffffff;}
 .clickable { cursor: pointer; -webkit-transition:all 0.4s ease;transition:all 0.4s ease;}
-    .carousel .clickable { width:90%; left:5%; }
+    .carousel .clickable { width:84%; left:7%; }
 .border-round {border-radius:6px;}
 .border-round-top {border-top-left-radius: 6px;border-top-right-radius:6px;}
 .border-round-bottom {border-bottom-right-radius: 6px;border-bottom-left-radius:6px;}
@@ -517,7 +517,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     box-shadow: none;
 }
     .preset-amts button:hover, .preset-amts button:focus, .preset-amts button:active,
-    #donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active { 
+    #donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active , #vol-buttons button:hover{ 
         border-color:#17a4e1; background:#17a4e1; color:#fff;
     }
 
@@ -1246,7 +1246,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 
 #setup-dtn-carousel{ border:1px solid #CCC; border-bottom:0; }
 #setup-dtn-carousel .carousel-control {
-    background:#C66; border:0 none; margin-top: 10px;height: 48px; width: 30px; font-size:1em; 
+    background:#C66; border:0 none; margin-top: 10px;height: 30px; width: 30px; font-size:1em; 
 }
 a.carousel-control { color:#FFF;opacity: .7; font-size: 3em; }
 
@@ -1372,7 +1372,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 /* Campaign Story */
 .cpn-story { position:relative; } 
-.cpn-story .body {  height: inherit;position: relative; }
+.cpn-story .body {  height: inherit;position: relative;padding-left: 1em; }
 
 .cpn-story .body.closed:before{
     content: ""; width:100%; height:100px; position: absolute;bottom:0;
@@ -1388,7 +1388,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 }
 .cpn-story .body.open:before{display: none;}
 span.span12.read-more.text-left.m-0{display: none;}
-.cpn-story .toggle-readmore{padding:10px;padding-left:0;}
+.cpn-story .toggle-readmore{padding:10px;padding-left:1em;width: auto !important;}
 .cpn-end-date.smaller{
     margin-top: 15px;
     color: #91C2AF;
@@ -2054,6 +2054,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 #select-more-camp input[type=checkbox],
 #data-list-filters input[type=checkbox],
+#select-org-type input[type=checkbox],
 #select-more-causes input[type=checkbox]{
     display: none;
 }

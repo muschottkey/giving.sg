@@ -74,8 +74,8 @@
         .sod_select .sod_prefix {
             float:right;
             font-size: .7em;
-            line-height: 1.3em;
-            margin: 0 10px;
+            line-height: 1.6em;
+            margin: 0 5px;
             text-transform: lowercase;
         }
         .sod_select .sod_placeholder { /* Use this if you're using a placeholder and want to style it */ }

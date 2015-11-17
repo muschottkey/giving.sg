@@ -462,14 +462,14 @@ $('.switch').bootstrapSwitch({
 
     $('#custom-amt-input-modal>input').change(function(){
         amt = $(this).val();
-        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
+        $('#user-input-holder').text("$"+amt+" ADDED");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
     })
 
     $('#donationAmt .dtn-amt-item').click(function(){
         amt = parseInt($(this).find('.dtn-amt h3').text());
-        $('#user-input-holder').text("ADDED "+amt+" DOLLARS TO");
+        $('#user-input-holder').text("$"+amt+" ADDED");
         $('#user-input-holder').closest('button').addClass('with-amount').next().addClass('hide');
         $('#donationAmt').modal('hide');
 
