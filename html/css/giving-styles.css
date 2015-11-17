@@ -522,7 +522,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
         border-color:#17a4e1; background:#17a4e1; color:#fff;
     }
 
-#donate-buttons button { width: 46%; float:left; margin: 5px 2%; }
+#donate-buttons button { width: 46%; float:left; margin: 5px 2%;min-width: inherit; }
 
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px;/* margin-top: 20px; */}
@@ -782,7 +782,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .box-footer{border-top:1px solid #CCC;margin-top:30px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .choice-buttons{margin-top: 30px;}
-.choice-buttons button{width: 35%;padding: 7px;}
+.choice-buttons button{width: 35%;padding: 7px;min-width: inherit;}
 .choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
 .choice-buttons button.yes.active{background-color: #91C2AF;color: #ffffff !important;}
 .choice-buttons button.no.active{background-color: #cc6666 !important;color: #ffffff !important;}
@@ -856,7 +856,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .acc-section #causes-wrapper {max-width: 720px;}
 #causes-wrapper > .span12{margin-left: 0;}
     .cause-box { text-decoration: none; }
-#causes-wrapper .cause-box { width:200px; float:left; margin:0 13px 20px; border-radius:6px;border: 1px solid #CCC;}  
+#causes-wrapper .cause-box { width:180px; float:left; margin:0 20px 20px; border-radius:6px;border: 1px solid #CCC;}  
 .swiper-container-4 #causes-wrapper .cause-box { border: 0 none; }
 
 .causes ul { margin:0 -15px; }
@@ -898,7 +898,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 .nature .mobile-block > h4{ line-height: 20px;}
-.cause-box a.mobile-block { width:200px; height:200px; }
+.cause-box a.mobile-block { width:180px; height:180px; }
 .cause-box a.mobile-block, .causes li a { 
     display:block; background-color:#FFF; background-position:center 25%; border-radius:6px; 
     background-repeat: no-repeat; text-indent:-9999em;
@@ -1367,7 +1367,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .dtn-amt-item .dtn-desc { border-left: 1px solid #ddd; padding:1.3em 1em; }
 .dtn-amt-item .dtn-btns { padding: 1em 0; }
 .dtn-amt-item .dtn-btns .btn{
-    float: left; padding:12px; margin-top: 10px; width: 70%;
+    float: left; padding:12px; margin-top: 10px; width: 70%;min-width: inherit;
 }
 .vpos-wrapper .btn { font-size: 0.875em; padding:10px;width: 75%;margin: 5px auto 0;} 
 
@@ -1464,7 +1464,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     .pre-footer-social .cpn-url-box input {  margin-right:2%;}
 .cpn-url-box button { border-radius:4px; padding:8px 10px; height: 40px; border:none; }
    
-#copy-url, #cpn-url {font-size: 16px;box-shadow: none;}
+#copy-url, #cpn-url {font-size: 16px;box-shadow: none;min-width: inherit;}
 
 
 /* Subscribe to Newsletter */
@@ -1611,9 +1611,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     text-decoration:none;
 }
 .start-campaign-area .fa{
-    font-size:24px;
-    line-height:28px;
-    margin:0 0 5px;
+    font-size:18px;
 }
 .start-campaign-area .txt{
     display:block;
@@ -1997,6 +1995,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 #select-more-causes input[type=checkbox] + label, 
 #select-more-camp input[type=checkbox] + label,
 #data-list-filters input[type=checkbox] + label,
+#select-org-type input[type=checkbox] + label,
 .refine-inputs .checkbox-clone, .checkbox-clone {
     display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
     border:1px solid #CCC; padding:5px 25px 5px 8px; margin-right:6px; position:relative;
@@ -2013,6 +2012,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .style-tag input[type=checkbox] + label:before,.style-tag .checkbox-clone:before,.checkbox-clone:before,
 #select-more-camp input[type=checkbox] + label:before,
 #select-more-causes input[type=checkbox] + label:before,
+#select-org-type input[type=checkbox] + label:before,
 #data-list-filters input[type=checkbox] + label:before {
     content: "\f00c"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
     position: absolute; width:16px; height:16px; top:8px; right:5px; font-size:.8em;
@@ -2038,7 +2038,8 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 #select-more-camp .popover-content ul li,
 #data-list-filters ul li,
-#select-more-causes .popover-content ul li{
+#select-more-causes .popover-content ul li,
+.popover-content ul li{
     list-style: none;
     display: inline-block;
     margin-bottom: 4px;

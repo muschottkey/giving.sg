@@ -497,7 +497,11 @@ Corporate Identity CHANGE (BLUE) */
 
 /* NPO lIsting */
 .checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
-.checkbox-clone.checked[data-parent="ref_allcauses"]:before{content: "\f0d7" !important;}
+.checkbox-clone.checked[data-parent="ref_allcauses"]:before,
+.checkbox-clone.checked[data-parent="ref_campaigns"]:before,
+.checkbox-clone.checked[data-parent="ref_allorgs"]:before,
+#camp-holder .checkbox-clone.checked:before
+{content: "\f0d7" !important;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
@@ -522,12 +526,17 @@ Corporate Identity CHANGE (BLUE) */
     border-radius: 0;
     box-shadow: none;
 }
+.title-search .big{
+  margin-right: 8px;
+  margin-left: 8px;
+}
 
 /* Checkboxes */
 #select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
 #select-org-type input[type=checkbox]:checked + label:before,
 #select-more-causes input[type=checkbox]:checked + label:before,
+#select-org-type input[type=checkbox]:checked + label:before,
 #data-list-filters input[type=checkbox]:checked + label:before {
     color: #4cb848 !important;
 }
@@ -536,6 +545,7 @@ Corporate Identity CHANGE (BLUE) */
 .refine-inputs input[type=checkbox]:checked + label,
 #select-more-causes input[type=checkbox]:checked + label,
 #data-list-filters input[type=checkbox]:checked + label,
+#select-org-type input[type=checkbox]:checked + label,
 .checkbox-clone.checked { background:#f7f7f7; color:#333; } 
 
 
@@ -568,7 +578,7 @@ Corporate Identity CHANGE (BLUE) */
 /*  START OF FOOTER*/
 /*****************************************/
 .pre-footer-social{
-    background-color: #444;
+    background-color: #505050;
     margin: 0 auto !important;
     border-top-color: #353535 !important;
     border-bottom-color: #424242 !important;
@@ -584,7 +594,7 @@ Corporate Identity CHANGE (BLUE) */
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
 
-.footer{background-color: #444;padding: .35em 0;}
+.footer{background-color: #505050;padding: .35em 0;}
 .footer-ul span{color: #ffffff;}
 
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
@@ -888,6 +898,11 @@ button.close{font-size: 20px !important;}
     }
     .gallery-txt-box h3 { float: left; width:65%;  }
     .gallery-txt-box .btn { margin-left:2%; max-width:25%; }
+
+    /* LISTINGS PAGE */
+    .listings-wrapper .cpn-holder{
+      margin: 0px auto 20px;
+    }
 }
 
 @media only screen and (max-width: 599px) {
@@ -977,6 +992,7 @@ button.btn.btn-ghost.delete-row {
   right: 0;
   bottom: 0;
   margin: 0 !important;
+  z-index: 99;
 }
 .carousel .bottom-r{
   right:9px;
@@ -990,6 +1006,24 @@ button.btn.btn-ghost.delete-row {
    background-color: rgba(0,0,0,0.5);
    color: #ccc;
 }
+.cpn-url-box input[type=text]{
+  border:1px solid #ccc;
+}
+.accordion-content .cpn-sgtn-item .sgtn-body {
+    min-height: 170px;
+}
+.vpos-meta .openings > h4{
+  font-size: 1.5em;
+}
+.cpn-url-box input.span10{margin-right: 0;}
+#save-actions button, #setup-dtn-conf-submission,
+#subAttendees, .donate-btns button,
+#vw-gift-bkt-donate button,
+#donateLoggedModal .modal-footer button,
+button, .btn{min-width: 150px;}
+
+.cpn-story-title{margin-bottom:20px;}
+.cpn-url-box button{min-width: inherit;}
 
 @media (max-width: 1023px) and (min-width: 980px){
     .donors-area .dr-img {
@@ -1023,13 +1057,14 @@ button.btn.btn-ghost.delete-row {
   text-align: left;
   white-space: pre-wrap;
 }
-.load-all-results i{
+.load-all-results i, .btn i{
   display: inline-block;
   width: auto;
   font-size: 14px;
   margin: 0 5px 0 0;
 }
 .btn{font-weight: normal !important;}
+.btn-primary a i, .btn-primary a span{color: #ffffff;}
 
 /*************************************************************/
             /* TEMPORARY EDITS */
@@ -1043,7 +1078,7 @@ button.btn.btn-ghost.delete-row {
 .donate-btns{
     padding: 0px 1.8em;
 }
-#cpn-info .cn-statswrapper, #cpn-info .box.causes{
+#cpn-info .cn-statswrapper, #cpn-info .box.causes, .evn-details .cn-days-wrapper{
     display: none;
 }
 .popover-content .btn-row > h3 {display: inline-block;}
