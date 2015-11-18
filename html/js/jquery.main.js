@@ -140,7 +140,7 @@ $('.m-nav-link').click(function(){
 	return false;
 })
 
-$(function(){
+$(window).load(function(){
 	if($('.dtn-amt-item .dtn-amt.span2').length){
 		$('.dtn-amt-item').sameHeight({
 			elements: '> div',
@@ -149,6 +149,16 @@ $(function(){
 			multiLine: true
 		});
 	}
+});
+
+$(function(){
+	$('.dtn-btns .btn.btn-ghost').click(function(){
+		var txt_ = $(this).find('.add-text');
+		if(!txt_.hasClass('active')){
+			txt_.addClass('active');
+			txt_.text('ADDED');
+		}
+	});
 	
 	$(document).click(function(e){
 		if($(e.target).closest('.table.gf-bkt').get(0) == null){
