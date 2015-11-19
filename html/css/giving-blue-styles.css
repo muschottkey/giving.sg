@@ -76,25 +76,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
       width: 100%;
     }
 
-.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, .swiper-button-prev:before, .swiper-button-prev:before {
-    font-family: "fontAwesome";
-    height: 40px;
-    width: 40px;
-    display: block;
-    font-size: 3em;
-    color: #666;
-    line-height: 0.8;
-}
-.swiper-button-prev:before,.swiper-button-next:before  {
-    font-family: "fontAwesome";
-    height: 40px;
-    width: 105%;
-    display: block;
-    font-size: 2em;
-    color: #666;
-    line-height: 1.2;
-    text-align: center;
-}
 .home-slider .swiper-button-prev:before, .swiper-button-prev:before {
     content: "\f104";
 }
@@ -634,7 +615,7 @@ button.close{font-size: 20px !important;}
         box-shadow: none;z-index: 1030; font-size: 1.125em;
     }
     #main-nav ul a { padding:1.45em .7em; }
-    #main-nav ul a.current { box-shadow: 0 -4px 0 0 rgba(67,173,73,1) inset; }
+    #main-nav ul a.current {box-shadow: 0 -4px 0 0 #43AD49 inset;}
     #main-nav ul a:hover { box-shadow: 0 -4px 0 0 rgba(67,173,73,0.5) inset; }
 
     #uf-dockbar-hamburger-menu { display: none; }

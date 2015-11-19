@@ -1286,7 +1286,6 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #setup-dtn-carousel .carousel-control {
     background:#C66; border:0 none; margin-top: 10px;height: 30px; width: 30px; font-size:1em; 
 }
-a.carousel-control { color:#FFF;opacity: .7; font-size: 3em; }
 
 #vw-gift-bkt-donate{ max-width: 800px; margin-left: auto; margin-right: auto; }
 #vw-gift-bkt-donate .box{ padding:15px; }
@@ -1764,13 +1763,32 @@ span.span12.read-more.text-left.m-0{display: none;}
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
     width: 11px; height: 11px; background: #C66;
 }
+a.carousel-control { font-size: 3em; }
+a.carousel-control, .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next,
 .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev {
-    width:30px; height:30px; z-index:11; border: 0 none; margin-top:-10px; font-size: 1em; border-radius: 50%;
+    height: 39px; width: 39px; border-radius: 50%; background: #fff; opacity:.6; background-image: none;
 }
 
-.cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next {
-    background: rgba(224, 224, 224, 0.6); height: 39px; width: 39px; border-radius:40px;
+.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev {
+    width:30px; height:30px; z-index:11; margin-top:-10px; 
 }
+
+.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, 
+.swiper-button-prev:before, .swiper-button-prev:before {
+    font-family: "fontAwesome"; height: 40px; width: 40px;
+    display: block; font-size:2em; color: #666; line-height: 0.8;
+}
+.swiper-button-prev:before,.swiper-button-next:before  {
+    font-family: "fontAwesome";
+    height: 40px;
+    width: 105%;
+    display: block;
+    font-size: 2em;
+    color: #666;
+    line-height: 1.2;
+    text-align: center;
+}
+
 .cpn-holder .swiper-button-prev {left: 0%;}
 .cpn-holder .swiper-button-next {right: -1%;}
 
@@ -2173,7 +2191,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     left:0;
     width:100%;
     height:2px;
-    background:#74ac40;
+    background:#43AD49;
     z-index:1;
 }
 .tab-section .tab{
