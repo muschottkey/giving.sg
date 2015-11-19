@@ -396,8 +396,8 @@ $('.switch').bootstrapSwitch({
  /* For normal swiper */
  $('.swiper-auto').each(function(){
     new Swiper($(this)[0], {
-        pagination: $(this).find('.swiper-pagination'),
-        paginationClickable: $(this).find('.swiper-pagination'),
+        // pagination: $(this).find('.swiper-pagination'),
+        // paginationClickable: $(this).find('.swiper-pagination'),
         nextButton: $(this).parent().find('.swiper-button-next'),
         prevButton: $(this).parent().find('.swiper-button-prev'),
         loop: true,

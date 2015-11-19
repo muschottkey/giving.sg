@@ -1041,15 +1041,11 @@ button.btn.btn-ghost.delete-row {
   background-position: 0 0;
   background-size: 30px;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   text-align: center;
   white-space: pre-wrap;
   display: block;
   font-size: 1em;
   line-height: 1.4;
-=======
-  padding-left: 30px;
->>>>>>> 01fc75caa10327b24d2dbbb75357f08e81f06d4b
 }
 .load-all-results i, .btn i{
   display: inline-block;
@@ -1059,6 +1055,15 @@ button.btn.btn-ghost.delete-row {
 }
 .btn{font-weight: normal !important;}
 .btn-primary a i, .btn-primary a span{color: #ffffff;}
+.cpn-holder > .swiper-button-next.original, .cpn-holder > .swiper-button-prev.original{
+  font-size: 1.4em;
+}
+.cpn-holder > .swiper-button-next.original{
+  right: -10px;
+  } 
+  .cpn-holder > .swiper-button-prev.original{
+    left: -10px;
+  }  
 
 /*************************************************************/
             /* TEMPORARY EDITS */
