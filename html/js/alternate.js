@@ -398,8 +398,8 @@ $('.switch').bootstrapSwitch({
     new Swiper($(this)[0], {
         pagination: $(this).find('.swiper-pagination'),
         paginationClickable: $(this).find('.swiper-pagination'),
-        nextButton: $(this).find('.swiper-button-next'),
-        prevButton: $(this).find('.swiper-button-prev'),
+        nextButton: $(this).parent().find('.swiper-button-next'),
+        prevButton: $(this).parent().find('.swiper-button-prev'),
         loop: true,
         slidesPerView:'auto',
         spaceBetween:15,
