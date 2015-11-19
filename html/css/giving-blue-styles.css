@@ -75,12 +75,7 @@ h4.cpn-story-title {/* margin-bottom:0.25em; */}
       height: auto;
       width: 100%;
     }
-.home-slider .swiper-button-prev, .home-slider .swiper-button-next,.swiper-button-next , .swiper-button-prev {
-    background-image: none !important;
-}
-.home-slider .swiper-button-prev:hover:before, .home-slider .swiper-button-next:hover:before, .swiper-button-next:hover:before, .swiper-button-prev:hover:before {
-    color: #17A4E1;
-}
+
 .home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, .swiper-button-prev:before, .swiper-button-prev:before {
     font-family: "fontAwesome";
     height: 40px;
@@ -92,12 +87,13 @@ h4.cpn-story-title {/* margin-bottom:0.25em; */}
 }
 .swiper-button-prev:before,.swiper-button-next:before  {
     font-family: "fontAwesome";
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 105%;
     display: block;
-    font-size: 1.5em;
+    font-size: 2em;
     color: #666;
     line-height: 1.2;
+    text-align: center;
 }
 .home-slider .swiper-button-prev:before, .swiper-button-prev:before {
     content: "\f104";
@@ -216,7 +212,10 @@ h4.cpn-story-title {/* margin-bottom:0.25em; */}
 
 /* NPO lIsting */
 .checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
-.checkbox-clone.checked[data-parent="ref_allcauses"]:before
+.checkbox-clone.checked[data-parent="ref_allcauses"]:before,
+.checkbox-clone.checked[data-parent="ref_campaigns"]:before,
+.checkbox-clone.checked[data-parent="ref_allorgs"]:before,
+#camp-holder .checkbox-clone.checked:before
 {content: "\f0d7" !important;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
@@ -335,28 +334,14 @@ h4.cpn-story-title {/* margin-bottom:0.25em; */}
 .cpn-sgtn-item .sgtn-body h5 a { color: #141414; text-decoration: none; }
 .cpn-sgtn-item .sgtn-body h5 a:hover { text-decoration: underline; }
 
-
-.campaign-stats h4 { font-size:1.75em; color:#141414; }
 .more-days.inline h4 {font-size: 1.25em; color:#141414;}
 .more-days.inline span.em{color: #141414 !important;}
-.cpn-sgtn-item .campaign-stats .progress { 
-    border: 1px solid #FFF;
-    background-color:#CCC;  
-    height:5px; 
-    margin-bottom:7px; 
-}
+
 .campaign-stats .progress .bar {
     border-radius:0px; 
     background:#17A4E1; 
     text-shadow: none; 
     box-shadow: none;
-}
-
-.cpn-sgtn-item .sgtn-body .sgt-avatar {
-    width: 40px;
-    height: 40px; 
-    border: 2px solid #FFF;
-    margin-top:-47px;
 }
 .cpn-sgtn-item.corp-blue .sgtn-body .campaign-stats button{
     box-shadow: none;
@@ -368,15 +353,7 @@ h4.cpn-story-title {/* margin-bottom:0.25em; */}
     color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
-.sgtn-body h5 {
-    font-size:1.125em;
-    min-height: 3.44em;
-    max-height: 3.44em;
-    margin: 0 auto 5px;
-    overflow: hidden;
-    font-weight:500;
-}
-    .swiper-container-3 .sgtn-body h5 { min-height: auto; }
+
 .volunteer-activity .cpn-sgtn-item h4 { font-size:1.5em;margin: 0;}
 .volunteer-activity .cpn-sgtn-item .block { font-size:1em; color:#999;}
 
@@ -543,7 +520,7 @@ button.close{font-size: 20px !important;}
 /*****************************************/
 
 
-#setup-dtn-carousel .carousel-control, .carousel-control, .landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{
+#setup-dtn-carousel .carousel-control, .carousel-control{
     background-color: #fff;
     color: #17A4E1;
     opacity: 0.6;
@@ -729,8 +706,7 @@ button.btn.btn-ghost.delete-row {
 .cpn-url-box input.span10{margin-right: 0;}
 #save-actions button, #setup-dtn-conf-submission, #subAttendees, .donate-btns button, #vw-gift-bkt-donate button, #donateLoggedModal .modal-footer button{min-width: 150px;}
 
-.cpn-story-title{margin-bottom:20px;}
-.cpn-url-box button, .dropdown-toggle, .input-append button,.input-prepend button{min-width: inherit;}
+.cpn-url-box button{min-width: inherit;}
 
 @media (max-width: 1023px) and (min-width: 980px){
     .donors-area .dr-img {
@@ -760,11 +736,7 @@ button.btn.btn-ghost.delete-row {
   background-position: 0 0;
   background-size: 30px;
   background-repeat: no-repeat;
-  text-align: center;
-  white-space: pre-wrap;
-  display: block;
-  font-size: 1em;
-  line-height: 1.4;
+  padding-left: 30px;
 }
 .load-all-results i, .btn i{
   display: inline-block;
@@ -774,15 +746,6 @@ button.btn.btn-ghost.delete-row {
 }
 .btn{font-weight: normal !important;}
 .btn-primary a i, .btn-primary a span{color: #ffffff;}
-.cpn-holder > .swiper-button-next.original, .cpn-holder > .swiper-button-prev.original{
-  font-size: 1.4em;
-}
-.cpn-holder > .swiper-button-next.original{
-  right: -10px;
-  } 
-  .cpn-holder > .swiper-button-prev.original{
-    left: -10px;
-  }  
 
 /*************************************************************/
             /* TEMPORARY EDITS */
@@ -802,6 +765,5 @@ button.btn.btn-ghost.delete-row {
 .popover-content .btn-row > h3 {display: inline-block;}
 #cpn-donate-now > .box > h4{display: none;}
 .cn-ln-details{ display: none; }
-/*  Bug probably caused by , hidden modal div overlaps onscreen elements, making them inaccessible for 
-nteraction like clicking etc
-.modal{display: none;}*/
+/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, making them inaccessible for nteraction like clicking etc*/
+.modal{display: none;}
