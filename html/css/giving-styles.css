@@ -85,6 +85,8 @@ p.small.text-center {font-size: 1em;}
 .modalwrapper > .row-fluid > .text-center .form-group h5.black
     { color:#999; }
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
+.p-section.row-fluid .collapse.has-focused{overflow:hidden;}
+.box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3 { margin:0; }
 .bg-giving-blue, Ã‚Â .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
@@ -563,6 +565,10 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     font-size: 13px;
     top: 50%;
     margin-top: -9px;
+}
+.btn-group.select-like button.dropdown-toggle .caret.fa.fa-angle-down:before{
+	margin-top:-6px;
+	top:0;
 }
 .btn-group .btn + .dropdown-toggle .caret:before{
     left: 0;
@@ -2806,7 +2812,9 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .select-like .text{
     color: #666; text-transform: uppercase;
     vertical-align:bottom; display: inline-block;
-    margin-bottom:3px; 
+    margin-bottom:3px;
+	font-size:14px;
+	line-height:16px; 
 }
 .select-like button{
     background-color: #fff;
