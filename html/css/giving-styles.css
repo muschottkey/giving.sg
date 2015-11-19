@@ -494,6 +494,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     padding-left: 30px;
     padding-right: 30px;
     font-size: 1em;
+    min-width: 150px;
 }
 .btn-normalize-height{height:48px !important; padding-top:12px !important;padding-bottom:12px!important; }
 .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
@@ -1544,7 +1545,11 @@ span.span12.read-more.text-left.m-0{display: none;}
     -o-user-select: none; user-select: none; -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;  box-sizing: border-box;
 }
+.short .cpn-sgtn-item{
+    height: 380px !important;}
+
     .tab-section .cpn-sgtn-item{display:block !important;}
+}
 
 .cpn-sgtn-item .sgtn-body {
     border-top:1px solid #ccc;
@@ -2037,7 +2042,7 @@ a.carousel-control, .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-
 /***************************************************************************
                             SEARCH RESULTS
 ***************************************************************************/
-.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em;min-height: 450px; position: relative;}
+.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em;min-height: 380px; position: relative;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body { 
@@ -2068,7 +2073,7 @@ a.carousel-control, .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-
 #select-more-camp input[type=checkbox] + label:hover,
 #data-list-filters input[type=checkbox] + label:hover{
     background: #f7f7f7;
-    color: #cc6666;
+    color: #999;
     border-color: #ccc;
 }
 
@@ -2090,13 +2095,13 @@ a.carousel-control, .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-
 #data-list-filters input[type=checkbox]:checked + label:before, 
 .refine-inputs .checkbox-clone.checked:before,
 .checkbox-clone.checked:before{
-    color: #cc6666;
+    color: #4cb848;
 }
 
 #select-more-camp input[type=checkbox]:hover + label:hover:before,
 #select-more-causes input[type=checkbox]:hover + label:hover:before,
 #data-list-filters input[type=checkbox]:hover + label:before{
-    color: #cc6666;
+    color: #666;
 }
 
 #select-more-camp .popover-content ul li,

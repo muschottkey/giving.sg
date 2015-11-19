@@ -393,13 +393,13 @@ $('.switch').bootstrapSwitch({
 });
 })
 
- /* For normal swiper */
+//  /* For normal swiper */
  $('.swiper-auto').each(function(){
     new Swiper($(this)[0], {
-        // pagination: $(this).find('.swiper-pagination'),
-        // paginationClickable: $(this).find('.swiper-pagination'),
-        nextButton: $(this).parent().find('.swiper-button-next'),
-        prevButton: $(this).parent().find('.swiper-button-prev'),
+        pagination: $(this).find('.swiper-pagination'),
+        paginationClickable: true,
+        nextButton: $(this).find('.swiper-button-next'),
+        prevButton: $(this).find('.swiper-button-prev'),
         loop: true,
         slidesPerView:'auto',
         spaceBetween:15,
@@ -407,6 +407,18 @@ $('.switch').bootstrapSwitch({
         freeMode: true
     });
 });
+
+    // var swpr = new Swiper('.swiper-auto', {
+    //     pagination: $(this).find('.swiper-pagination'),
+    //     paginationClickable: $(this).find('.swiper-pagination'),
+    //     nextButton: '.swiper-button-next.original',
+    //     prevButton: '.swiper-button-prev.original',
+    //     loop: true,
+    //     slidesPerView:'auto',
+    //     spaceBetween:15,
+    //     mode: 'horizontal',
+    //     freeMode: true
+    // });
 
  /* For swiper with scrollbars */
  $('.swiper-container-3').each(function(){

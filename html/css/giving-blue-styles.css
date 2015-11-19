@@ -521,6 +521,9 @@ button.close{font-size: 20px !important;}
     .home-slider .cpn-slider-inner.swiper-wrapper { height:300px; }
     /* CARDS UI  */
     .cpn-sgtn-item .sgtn-img{height: auto;}
+    #cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
+      line-height: 2 !important; 
+    }
 }
 
 /* TABLET (SMALL) */
@@ -626,6 +629,12 @@ button.close{font-size: 20px !important;}
     #main-nav ul a { padding: 1.45em 1.3em; }
 }
 
+@media (max-width:1199px){
+  #cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
+    padding-left:30px;
+  }
+}
+
 /*************************************************************/
             /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
 /*************************************************************/
@@ -714,7 +723,9 @@ button.btn.btn-ghost.delete-row {
   background-position: 0 0;
   background-size: 30px;
   background-repeat: no-repeat;
-  padding-left: 30px;
+  font-size: 1em;
+  display: block;
+  line-height: 1.4;
 }
 .load-all-results i, .btn i{
   display: inline-block;
