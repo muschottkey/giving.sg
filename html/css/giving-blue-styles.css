@@ -802,5 +802,6 @@ button.btn.btn-ghost.delete-row {
 .popover-content .btn-row > h3 {display: inline-block;}
 #cpn-donate-now > .box > h4{display: none;}
 .cn-ln-details{ display: none; }
-/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, making them inaccessible for nteraction like clicking etc*/
-.modal{display: none;}
+/*  Bug probably caused by , hidden modal div overlaps onscreen elements, making them inaccessible for 
+nteraction like clicking etc
+.modal{display: none;}*/
