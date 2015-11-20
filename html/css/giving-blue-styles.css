@@ -1,11 +1,7 @@
 
 
 /* TYPOGRAPHY FOR SERVER */
-header a, header a:link, h1 a, h2 a, h3 a, h4 a, h6 a, 
-    h1 a:link, h2 a:link, h3 a:link, h4 a:link,  h6 a:link {
-        text-decoration:none; color:#000;
-    }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { text-decoration:underline; }
+
 
 h4.cpn-story-title {margin-bottom:0.25em;}
 
@@ -65,10 +61,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
       width: 100%;
       margin-top: -10%;}
 
-.home-slider .swiper-slide {
-  border: 0px;
-  min-height: inherit;
-}
 
 .home-slider .swiper-slide picture img{
       min-height: inherit;
@@ -427,7 +419,7 @@ button.close{font-size: 20px !important;}
 .add-bottom-lst li input[type=submit], .btn-area input[type=submit], .btn-save input[type=submit]{
     line-height: 1 !important;
 }
-}
+
 /* Hover states */
 /* LIGHTER BLUE  */
 .btn:hover, .btn:active, .btn:focus,
@@ -441,8 +433,7 @@ button.close{font-size: 20px !important;}
 }
 /*  BRIGHT BLUE 
 .btn:hover, .btn:active, .btn:focus,
-  */
-
+*/
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, 
 .btn-success:hover, .btn-success:active, .btn-success:focus,
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
@@ -454,8 +445,6 @@ button.close{font-size: 20px !important;}
 .btn-toggle .btn.active:hover {
     background-color:#0E678E !important;color:#FFF;
 }
-
-
 
 .btn:disabled, .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 
@@ -733,5 +722,6 @@ button.btn.btn-ghost.delete-row {
 .popover-content .btn-row > h3 {display: inline-block;}
 #cpn-donate-now > .box > h4{display: none;}
 .cn-ln-details{ display: none; }
-/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, making them inaccessible for nteraction like clicking etc*/
-.modal{display: none;}
+/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, 
+making them inaccessible for nteraction like clicking etc
+.modal{display: none;}*/
