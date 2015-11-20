@@ -76,12 +76,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
       width: 100%;
     }
 
-.home-slider .swiper-button-prev:before, .swiper-button-prev:before {
-    content: "\f104";
-}
-.home-slider .swiper-button-next:before, .swiper-button-next:before {
-    content: "\f105";
-}
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active{
     background-color: #17A4E1;
 }
@@ -648,7 +642,7 @@ button.close{font-size: 20px !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
 
 .landing-cpn-slider-wrapper .swiper-pagination{border:none;}
-.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{margin-top:-22px;}
+.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev{/* margin-top:-22px; */}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell; margin: 1.368rem 0 1.168rem 0; }
 button.btn.btn-ghost.delete-row {
   margin-right: -10px;
