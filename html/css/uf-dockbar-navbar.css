@@ -377,7 +377,8 @@ xheader
 
 #uf-dockbar-cart .uf-dockbar-go-to-cart {
   text-align: center;
-  margin: 1em 0; }
+  margin: .25em 0;
+  }
 
 
 @media only screen and (min-width: 1200px) {

@@ -68,12 +68,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
       width: 100%;
     }
 
-.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active{
-    background-color: #17A4E1;
-}
-.swiper-pagination-bullet, .carousel-indicators li{
-    background-color: #666;
-}
 .gallery-txt-box h3 { margin-top:0;max-height: 6em; overflow:hidden;font-size: 1.5em;}
 .gallery-txt-box h3 a { text-decoration:none; color: #FFF; }
 
@@ -259,10 +253,10 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 /*  START OF FOOTER*/
 /*****************************************/
 .pre-footer-social{
-    background-color: #505050;
+    background-color: #6b6b6b;
     margin: 0 auto !important;
     border-top-color: #353535 !important;
-    border-bottom-color: #424242 !important;
+    border-bottom-color: #606060  !important;
 }
 .pre-footer-social .f-block .social-share .span1{padding: 11.5px 7px;width: 48px !important;height: 48px !important;float: left;}
 .pre-footer-social .f-block .social-share .span1 i:before{position: relative;}
@@ -275,7 +269,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 .footer a, .footer a:link{text-decoration: underline;color: #fff !important;}
 .footer a:hover{text-decoration: none;}
 
-.footer{background-color: #505050;padding: .35em 0;}
+.footer{background-color: #6b6b6b;padding: .35em 0;}
 .footer-ul span{color: #ffffff;}
 
 .pre-footer-social label{color: #ffffff;text-transform: uppercase;}
@@ -619,7 +613,6 @@ button.close{font-size: 20px !important;}
 .select-like > button { border-bottom:1px solid #999 !important;}
 .progress-dots ul li:first-child{margin-left: 0;}
 
-.landing-cpn-slider-wrapper .swiper-pagination{border:none;}
 .dtn-amt-item .dtn-amt  h3 { vertical-align: middle; display:table-cell; margin: 1.368rem 0 1.168rem 0; }
 button.btn.btn-ghost.delete-row {
   margin-right: -10px;
@@ -646,8 +639,12 @@ button.btn.btn-ghost.delete-row {
   z-index: 99;
 }
 .bottom-r .cn-days-wrapper{
-   width: 90%; right: 0; top: inherit; position: relative;
-   padding: 5px 5%;background-color: rgba(0,0,0,0.6); 
+   width: 90%;
+   right: 0;
+   top: inherit;
+   position: relative;
+   padding: 5px 5%;
+   background-color: rgba(0,0,0,0.5);
 }
 .bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF;  }
 
