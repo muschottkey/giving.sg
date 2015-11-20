@@ -1531,7 +1531,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-.wrapper-925 .cpn-holder { width:98%; padding: 0 1%;}
+.wrapper-925 .cpn-holder {width: 101%;padding: 0;margin-left: -1%;margin-right: -4%;}
 #causesCheckboxes .popover-filter input[type=checkbox]:checked + label:before {
   color: #cc6666; 
 }
@@ -1539,10 +1539,16 @@ span.span12.read-more.text-left.m-0{display: none;}
     .aui .causes .ico-tdr.btn-success { margin-bottom:0 !important;} 
 
 /*********************      CARDS UI       ********************/
-.cpn-wrapper { position:relative; display:block; overflow:hidden; margin:0; padding:0 0 15px; }
+.cpn-wrapper { position:relative; display:block;overflow:hidden; margin:0;padding: 0;}
 .cpn-suggestions{
-    height:510px; max-height:550px; position:relative; top:0; left:0;
-    display:block; padding:0 10px;
+    height:510px;
+    max-height:550px;
+    position:relative;
+    top:0;
+    left:0;
+    display:block;
+    padding: 0 4% 0 1%;
+    margin-right: 4%;
 }
 .cpn-suggestions .swiper-slide { width:270px;}
 .cpn-sgtn-item {
@@ -1551,22 +1557,17 @@ span.span12.read-more.text-left.m-0{display: none;}
     -o-user-select: none; user-select: none; -webkit-box-sizing: border-box; 
     -moz-box-sizing: border-box;  box-sizing: border-box;
 }
-.short .cpn-sgtn-item{
-    height: 380px !important;}
-
-    .tab-section .cpn-sgtn-item{display:block !important;}
-}
+.short .cpn-sgtn-item{ height: 380px !important;}
+.tab-section .cpn-sgtn-item{display:block !important;}
 
 .cpn-sgtn-item .sgtn-body {
-    border-top:1px solid #ccc;
-    padding: 15px 15px 10px;
-    background:#FFF;
-    text-align:center;
-    min-height:250px;
+    border-top:1px solid #ccc; padding: 15px 15px 10px; background:#FFF; text-align:center; min-height:170px;
 }
-.cpn-sgtn-item .sgtn-body .heading-group { min-height:7.2em; max-height:7.2em; } 
+    .cpn-sgtn-item.evn .sgtn-body { min-height: 150px;}  
+    .accordion-content .cpn-sgtn-item .sgtn-body { min-height:200px; }
+
 .sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%;margin: 5px auto 0; float:none;}
-.cpn-sgtn-item.evn .sgtn-body { min-height: 150px;}  
+.cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em; max-height:6.8em; } 
 
 .add-cpn-btn .sgtn-img { height: auto;font-size: 16px;}
 .sgtn-body .causes { padding:.5em 0; display:none; }
@@ -1580,7 +1581,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     margin-left: 65px;
     width: 36px;
     height: 36px;
-    margin-top: -45px;
+    margin-top: -42px;
     border: 2px solid #FFF;
     right:32px;
 }
@@ -1608,9 +1609,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
     .sgtn-body .heading-group  h5 { min-height: auto; }
 /*  Cards UI no Buttons - In Accordion  */
-.accordion-content .cpn-sgtn-item .sgtn-body { 
-    min-height:200px;
-}
+
 
 
 .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
@@ -1630,7 +1629,6 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .carousel > .active { left:auto; }
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa { color:#C66; left:0;}
-#cpn-meta h5 {margin-top: 24px; font-size: 1.125em;}
 .side-logo{
     border:1px solid #ccc;
     border-radius:6px;
@@ -1774,44 +1772,34 @@ span.span12.read-more.text-left.m-0{display: none;}
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active{
     width: 11px; height: 11px; background: #C66;
 }
-a.carousel-control { font-size: 3em; }
-a.carousel-control, .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next,
-.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev {
-    height: 39px; width: 39px; border-radius: 50%; background: #fff; opacity:.6; background-image: none;
-}
 
-.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev {
-    width:30px; height:30px; z-index:11; margin-top:-10px; 
-}
 
+#setup-dtn-carousel .carousel-control, .carousel-control,
+.cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next,
+.landing-cpn-slider-wrapper .swiper-button-next, .landing-cpn-slider-wrapper .swiper-button-prev {
+    height:40px; width:40px; opacity:.6; border-radius: 50%; background: #eee; background-image: none; 
+}
+.carousel-control { font-size: 3em; }
+#setup-dtn-carousel .carousel-control:hover, .carousel-control:hover,
+.cpn-holder .swiper-button-prev:hover, .cpn-holder .swiper-button-next:hover,
+.landing-cpn-slider-wrapper .swiper-button-next:hover, .landing-cpn-slider-wrapper .swiper-button-prev:hover{
+    color: #17A4E1; background: #eee; opacity: 1; 
+}
 .home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, 
-.swiper-button-prev:before, .swiper-button-prev:before {
-    font-family: "fontAwesome"; height: 40px; width: 40px;
-    display: block; font-size:2em; color: #666; line-height: 0.8;
-}
 .swiper-button-prev:before,.swiper-button-next:before  {
-    font-family: "fontAwesome";
-    height: 40px;
-    width: 105%;
-    display: block;
-    font-size: 2em;
-    color: #666;
-    line-height: 1.2;
-    text-align: center;
+    font-family: "fontAwesome"; height: 40px; width: 105%; color: #17A4E1;
+    display: block; font-size: 2em; line-height: 1.2; text-align: center;
+    
+}
+.home-slider .swiper-button-prev:before, .swiper-button-prev:before {
+    font-family: "fontAwesome"; content: "\f104";
+}
+.home-slider .swiper-button-next:before, .swiper-button-next:before {
+    font-family: "fontAwesome"; content: "\f105";
 }
 
-.cpn-holder .swiper-button-prev {left: 0%;}
-.cpn-holder .swiper-button-next {right: -1%;}
-
-
-.landing-cpn-slider-wrapper .swiper-button-prev { left:20px; }
-.landing-cpn-slider-wrapper .swiper-button-next { right:20px; }
-
-
-.home-slider .swiper-button-prev:hover:before, .home-slider .swiper-button-next:hover:before, 
-.swiper-button-next:hover:before, .swiper-button-prev:hover:before {
-    color: #17A4E1;
-}
+.swiper-wrapper .swiper-button-prev { left:20px; }
+.swiper-wrapper .swiper-button-next { right:20px; }
 
 
 #causes-mobile .acc-toggle{

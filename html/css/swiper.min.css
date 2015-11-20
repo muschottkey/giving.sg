@@ -113,7 +113,7 @@
   width: 27px;
   height: 44px;
   margin-top: -22px;
-  z-index: 10;
+  z-index: 1000;
   cursor: pointer;
   -moz-background-size: 27px 44px;
   -webkit-background-size: 27px 44px;
