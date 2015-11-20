@@ -96,12 +96,10 @@ p.small.text-center {font-size: 1em;}
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3 { margin:0; }
-.bg-giving-blue, Ã‚Â .causes li.ico-tdr { 
+.bg-giving-blue, Ãƒâ€šÃ‚Â .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
 
-#vw-gft-dtn-prefs .sod_select,
-#donateForm .form-group .sod_select{ height: 40px; line-height: 1.3; width: 200px; }
 #view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
 hr { border-top: 1px solid #CCC; }
 
@@ -252,7 +250,7 @@ hr.m5{margin: 5px 0;}
 input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:focus{
     border-color: #cc6666 !important;
 }
-.control-group.error .help-block p, .control-group.error .help-block, Ã‚Â .control-group.error .help-inline{
+.control-group.error .help-block p, .control-group.error .help-block, Ãƒâ€šÃ‚Â .control-group.error .help-inline{
     color: #c66; font-weight: 400;
 }
 .control-group.error .help-block.smaller, #donation-userDetails .smaller {font-size: 0.875em;}
