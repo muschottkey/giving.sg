@@ -552,7 +552,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px;/* margin-top: 20px; */}
 
-.indicate-tdr {font-size: 1em;font-weight: 500;}
+.indicate-tdr {font-size: 1em;font-weight: 400;}
 .indicate-tdr span { display: inline-block;}
 
 /*Custom caret for dropdowns*/
@@ -1550,8 +1550,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     top:0;
     left:0;
     display:block;
-    padding: 0 4% 0 1%;
-    margin-right: 4%;
+    padding: 0 1% 0 1%;
 }
 .cpn-suggestions .swiper-slide { width:270px;}
 .cpn-sgtn-item {
@@ -2047,7 +2046,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 /***************************************************************************
                             SEARCH RESULTS
 ***************************************************************************/
-.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.35em 1.5em;min-height: 380px; position: relative;}
+.listings-wrapper .cpn-sgtn-item { width:270px; margin:1em 1.45em 1.5em;min-height: 380px; position: relative;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .search-results-wrapper .cpn-sgtn-item .sgtn-body { 
