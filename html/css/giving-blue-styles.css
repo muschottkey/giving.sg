@@ -213,7 +213,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 #select-more-causes input[type=checkbox]:checked + label:before,
 #select-org-type input[type=checkbox]:checked + label:before,
 #data-list-filters input[type=checkbox]:checked + label:before {
-    color: #4cb848 !important;
+    color: #333 !important;
 }
 #select-more-camp input[type=checkbox]:checked + label,
 #select-org-type input[type=checkbox]:checked + label,
@@ -648,6 +648,15 @@ button.btn.btn-ghost.delete-row {
 }
 .bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF;  }
 
+.long .cpn-sgtn-item{
+    height: 480px;
+}
+.short .cpn-sgtn-item{
+    height: 380px;
+}
+.short .cpn-sgtn-item .sgtn-body {
+     min-height: 100px; 
+}
 .cpn-url-box input[type=text]{
   border:1px solid #ccc;
 }

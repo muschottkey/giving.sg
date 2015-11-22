@@ -25,6 +25,7 @@
     }
 /* The SoD - Please keep this first three lines intact, otherwise all hell will break looooooose */
 .sod_select {
+	vertical-align:top;
     display: inline-block;
     position: relative;
     line-height: 1.3;
@@ -36,7 +37,7 @@
     font-weight: 500 !important;
     text-align:left;
     text-transform: uppercase;
-    padding: 10px 34px 5px 10px;
+    padding: 7px 34px 0 10px;
     outline: 0;
     outline-offset: -2px;/* Opera */
     cursor: default;
@@ -50,8 +51,8 @@
         .sod_select:after {/* Down arrow */
             font: normal normal normal 14px/1 FontAwesome;
             content: "\f0d7";
-            top: auto;
-            bottom: 8px;
+            top: 50% !important;
+            margin:-4px 0 0 !important;
             color: #333;
         }
         .sod_select:before{ display: none; }
@@ -196,11 +197,11 @@
     #selAmount .sod_label{font-size: 1.8em;}
     #selAmount.long_input{width: 220px;}
     #selAmount.long_input .sod_prefix{margin-right: 5px;}
-    #selArea, #selSalutation{padding-top: 7px;padding-bottom: 7px;font-size: 1em;}
+    #selArea, #selSalutation{padding-top: 7px;padding-bottom: 1px;font-size: 1em;}
 
     #sortSearchResults{border:none;border-bottom: 1px solid #999;font-size: 1em;border-radius: 0;}
-    #sortSearchResults .sod_label{font-size: 1em;}
-    #sortSearchResults{padding:5px; width:180px; }
+    #sortSearchResults .sod_label{font-size: 16px;}
+    #sortSearchResults{padding:5px 5px 0; width:180px; }
         #sortSearchResults:before {display: none;}
         #sortSearchResults:after {top: 5px;}
 

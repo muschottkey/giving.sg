@@ -380,11 +380,9 @@ $('.switch').bootstrapSwitch({
  $('.modal').on("shown", function(){ 
    $('.swiper-auto').each(function(){
     mswiper = new Swiper($(this)[0], {
-        pagination: $(this).find('.swiper-pagination'),
-        paginationClickable: $(this).find('.swiper-pagination'),
         nextButton: $(this).find('.swiper-button-next'),
         prevButton: $(this).find('.swiper-button-prev'),
-        loop: true,
+        loop: false,
         slidesPerView:'auto',
         spaceBetween:15,
         mode: 'horizontal',
@@ -396,29 +394,15 @@ $('.switch').bootstrapSwitch({
 //  /* For normal swiper */
  $('.swiper-auto').each(function(){
     new Swiper($(this)[0], {
-        pagination: $(this).find('.swiper-pagination'),
-        paginationClickable: true,
         nextButton: $(this).find('.swiper-button-next'),
         prevButton: $(this).find('.swiper-button-prev'),
-        loop: true,
+        loop: false,
         slidesPerView:'auto',
         spaceBetween:15,
         mode: 'horizontal',
         freeMode: true
     });
 });
-
-    // var swpr = new Swiper('.swiper-auto', {
-    //     pagination: $(this).find('.swiper-pagination'),
-    //     paginationClickable: $(this).find('.swiper-pagination'),
-    //     nextButton: '.swiper-button-next.original',
-    //     prevButton: '.swiper-button-prev.original',
-    //     loop: true,
-    //     slidesPerView:'auto',
-    //     spaceBetween:15,
-    //     mode: 'horizontal',
-    //     freeMode: true
-    // });
 
  /* For swiper with scrollbars */
  $('.swiper-container-3').each(function(){
@@ -455,8 +439,8 @@ $('.switch').bootstrapSwitch({
             pagination: '.swiper-pagination',
             sliderPerView: 1,
             paginationClickable: true,
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev',
+            nextButton: $(this).find('.swiper-button-next'),
+            prevButton: $(this).find('.swiper-button-prev'),
             loop:true,
             autoplay: 3000,
             speed: 800,
