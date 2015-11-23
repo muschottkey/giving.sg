@@ -577,8 +577,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     margin-top: -9px;
 }
 .btn-group.select-like button.dropdown-toggle .caret.fa.fa-angle-down:before{
-	margin-top:-6px;
-	top:0;
+	margin-top:-4px;
+	top:50%;
 }
 .btn-group .btn + .dropdown-toggle .caret:before{
     left: 0;
@@ -1823,6 +1823,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 	width:98% !important;
 	height: 111px;
 }
+.pretty-text textarea#addressDesc{height: 113px;}
 .pretty-text .box-footer{
     border-top:none;
     margin-top:0;
@@ -2809,7 +2810,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 .select-like button .caret{ margin-top:0px; border: none; font-weight: 700; font-size: 1.2em; }
     .select-like button .caret:before, .actions-group button .caret:before{
-        content: "\f0d7"; font-size: 13px;
+        content: "\f0d7"; font-size: 12px; line-height:15px;
         color: #333;
     }
     .actions-group button .caret { margin-top:8px; } 
