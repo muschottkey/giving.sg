@@ -46,7 +46,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 
 /* LOGO */
 #logo { padding: 0; top: 0;position: absolute;margin: 0 auto;z-index: 1090;}
-#logo a { color:#4cb848; max-width:250px;display: inline-block; text-transform: uppercase;padding: 0 1em;}
+#logo a { color:#43AD49; max-width:250px;display: inline-block; text-transform: uppercase;padding: 0 1em;}
 #logo img{max-width: 160px;}
 
 
@@ -54,7 +54,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
             /* HOME PAGE CAROUSEL */
 /*************************************************************/
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa{
-    color: #4CB848;
+    color: #43AD49;
 }
 .home-slider .swiper-slide picture img{
       min-height: inherit;
@@ -180,14 +180,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 
 /* Search Page & Search UI */
-#search-form label.control-label{
-    color: #333 !important;
-}
-#search-form input#search_term{
-    border-color: #999;
-    color: #333 !important;
-    height: auto !important;
-}
 #search-form input#search_term::-webkit-input-placeholder , #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder{color: #ccc !important;} /* WebKit, Blink, Edge */
 #search-form input#search_term:-moz-placeholder, #uf-dockbar-search-mobile input[type="text"]:-moz-placeholder{color: #ccc !important;} /* Mozilla Firefox 4 to 18 */
 #search-form input#search_term::-mox-placeholder, #uf-dockbar-search-mobile input[type="text"]::-mox-placeholder{color: #ccc !important;} /* Mozilla Firefox 19+ */
@@ -205,26 +197,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
   margin-left: 8px;
 }
 
-/* Checkboxes */
-#select-more-camp input[type=checkbox]:checked + label:before,
-.refine-inputs input[type=checkbox]:checked + label:before,
-#select-org-type input[type=checkbox]:checked + label:before,
-#select-more-causes input[type=checkbox]:checked + label:before,
-#select-org-type input[type=checkbox]:checked + label:before,
-#data-list-filters input[type=checkbox]:checked + label:before {
-    color: #333 !important;
-}
-#select-more-camp input[type=checkbox]:checked + label,
-#select-org-type input[type=checkbox]:checked + label,
-.refine-inputs input[type=checkbox]:checked + label,
-#select-more-causes input[type=checkbox]:checked + label,
-#data-list-filters input[type=checkbox]:checked + label,
-#select-org-type input[type=checkbox]:checked + label,
-.checkbox-clone.checked { background:#f7f7f7; color:#333; } 
-
-
-#select-more-camp input[type=checkbox] + label:hover {}
-/* Single Campaign Listing*/
 #cpn-info div.img-box a i{
     padding: 4px 8px;
 }
@@ -570,7 +542,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 @media only screen and (min-width: 769px) {
     .navbar-inverse .brand {
         font-size: 1.25em; font-weight: 500; padding: 0; position: absolute;
-        left: 1.1em; top: 0; margin-left: 0; color: #4cb848 !important;
+        left: 1.1em; top: 0; margin-left: 0; color: #43AD49 !important;
         text-decoration:none; max-width: 180px; display: inline-block;
         text-transform: uppercase;
     }

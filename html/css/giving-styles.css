@@ -275,7 +275,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 /*Success state*/
 .control-group.success input, .control-group.success select, .control-group.success textarea,
 .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
-    border-color: #4CB848 !important;
+    border-color: #43AD49 !important;
 }
 .control-group.error input:focus, .control-group.error textarea:focus{
 	color: #C66;
@@ -291,16 +291,16 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 }
 
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
-    border-color: #4cb848 !important; color: #4cb848 !important; font-weight: 400;
+    border-color: #43AD49 !important; color: #43AD49 !important; font-weight: 400;
 }
 .control-group .input-prepend .add-on.fa, .control-group .input-append .add-on.fa{
     font-family: "FontAwesome";
 }
 .control-group.success .pretty-text .box-footer{
-    border-color: #4cb848 !important;
+    border-color: #43AD49 !important;
 }
 .control-group.success .pretty-text textarea, .control-group.success .pretty-text p{
-    color: #4cb848 !important;
+    color: #43AD49 !important;
 }
 
 /*Info state*/
@@ -317,7 +317,7 @@ input:focus:invalid:focus, textarea:focus:invalid:focus, select:focus:invalid:fo
 .alert-info { color:#999; border: 1px solid #CCC; font-weight: 400; background:none; background:#eee; font-size:1.125em;}
     .alert-info .black {/* color:#999; */ font-size:1em;}
 	
-	#collapse-taxdeduc .sod_select .sod_option.selected:before{color:#4cb848;}
+	#collapse-taxdeduc .sod_select .sod_option.selected:before{color:#43AD49;}
 	#collapse-taxdeduc .sod_select .sod_option{color:#333;}
 
 /* CONTENT LAYOUT */
@@ -600,7 +600,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     color: #FFF;
 }
 .control-group.error .validation-feedback i { color: #cc6666; }
-.control-group.success .validation-feedback i { color: #4cb848;font-size: 12px;}
+.control-group.success .validation-feedback i { color: #43AD49;font-size: 12px;}
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
 .btn-toggle { margin-bottom:40px; width:100%; }
@@ -613,7 +613,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
         margin-right:0; width:100px; text-align: left;
     }
 
-.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #4cb848 !important;}
+.bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #43AD49 !important;}
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{background-color:#cc6666!important;}
 .link-add-leader{
 	display:inline-block;
@@ -677,7 +677,7 @@ i.signup-envelope { font-size:5.625em;color: #333; }
     text-align: center; width:30px; height:30px; border: solid 1px #999;border-radius: 50%; 
     background:#fff; color:#000; font-size:0.75em;line-height: 2.5em;
 }
-    .progress-dots ul li .step-dot.active {background-color: #4cb848;border: solid 1px #4cb848!important;color: #fff !important;}
+    .progress-dots ul li .step-dot.active {background-color: #43AD49;border: solid 1px #43AD49!important;color: #fff !important;}
 .progress-dots ul li .step-label{
     margin-right: 0; margin-left:6px; width: 60%;
 	padding-left:7px;
@@ -829,7 +829,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
      background: #FFF;
 }
 .choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
-.choice-buttons button.yes.active{background-color: #4cb848;border-color:#4cb848;color: #ffffff !important;}
+.choice-buttons button.yes.active{background-color: #43AD49;border-color:#43AD49;color: #ffffff !important;}
 .choice-buttons button.no.active{background-color: #cc6666 !important;border-color:#c66;color: #ffffff !important;}
 .contact-us { padding-right: 20px; }
 
@@ -1116,7 +1116,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 	line-height:16px !important;
 	height:auto;
 }
-#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #4cb848;content: "\f00c";}
+#user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #43AD49;content: "\f00c";}
 
 /* Set-up donation step 2*/
 .action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
@@ -1202,7 +1202,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 /* Search Results */
 .main-content .search-controls input {padding: 10px .5em;font-size: 1.25em !important;}
 .search-controls .control-label { line-height:2em;font-size: 1.25em; color: #333;}
-    .search-controls .link-refine {line-height: 2em;font-size: .935em;}
+    .search-controls .link-refine {line-height: 3em;font-size: .935em;}
     #search-results #sortSearchResults {/* text-align:left; */}
 
 
@@ -1259,7 +1259,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .gf-bkt .check-col .check.active{background-position:0 -73px;}
 .gf-bkt tr td i{display: block;margin-bottom:4px;}
 .gf-bkt tr td i.visible-phone{margin-top: 5px;position: absolute;padding: 10px 20px;right:70px;}
-.gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#4cb848;}
+.gf-bkt tr td.success,.gf-bkt tr td .tax-statement.success,.gf-bkt tr td.success i{color:#43AD49;}
 .gf-bkt tr td.warning,.gf-bkt tr td .tax-statement.warning,.gf-bkt tr td.warning i {color:#faa732;}
 .gf-bkt tr td.warning i{color:#cc6666;}
 .gf-bkt tr td.info,.gf-bkt tr td .tax-statement.info, .gf-bkt tr td.info i{color:#9DC9EE;}
@@ -2034,52 +2034,50 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 #search-form .inline-search:hover{opacity:0.8;}
 
-.refine-inputs input[type=checkbox] + label,
-#select-more-causes input[type=checkbox] + label, 
-#select-more-camp input[type=checkbox] + label,
-#data-list-filters input[type=checkbox] + label,
-#select-org-type input[type=checkbox] + label,
-.refine-inputs .checkbox-clone, .checkbox-clone {
-    display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
-    border:1px solid #CCC; padding:5px 25px 5px 8px; margin-right:6px; position:relative;
-    cursor: pointer; font-size: 1em; color: #999;
-} 
-#select-more-causes input[type=checkbox] + label:hover,
-#select-more-camp input[type=checkbox] + label:hover,
-#data-list-filters input[type=checkbox] + label:hover{
-    background: #f7f7f7;
+.refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, 
+#data-list-filters input[type=checkbox] + label, #select-org-type input[type=checkbox] + label,
+.checkbox-clone {
+    display:inline-block;
+    height:auto;
+    width:auto;
+    background:#FFF;
+    border-radius: 6px;
+    border:1px solid #DDD;
+    padding:5px 25px 5px 8px;
+    margin-right:6px;
+    position:relative;
+    cursor: pointer;
+    font-size: 1em;
     color: #999;
-    border-color: #ccc;
+} 
+#select-more-causes input[type=checkbox] + label:hover, #data-list-filters input[type=checkbox] + label:hover {
+    background: #f7f7f7; color: #666; 
 }
+.refine-inputs input[type=checkbox]:checked + label, #select-more-causes input[type=checkbox]:checked + label,
+#data-list-filters input[type=checkbox]:checked + label, #select-org-type input[type=checkbox]:checked + label,
+.checkbox-clone.checked { background:#f7f7f7; color:#333;} 
 
-.style-tag input[type=checkbox] + label:before,.style-tag .checkbox-clone:before,.checkbox-clone:before,
-#select-more-camp input[type=checkbox] + label:before,
-#select-more-causes input[type=checkbox] + label:before,
-#select-org-type input[type=checkbox] + label:before,
-#data-list-filters input[type=checkbox] + label:before {
-    content: "\f00c"; font-family: "FontAwesome"; display: block; color: #BABABA; background: transparent;
+.refine-inputs input[type=checkbox] + label:before, #select-more-causes input[type=checkbox] + label:before, 
+#data-list-filters input[type=checkbox] + label:before, #select-org-type input[type=checkbox] + label:before,
+.checkbox-clone:before {
+    content: "\f00c"; font-family:"FontAwesome"; display: block; background: transparent;
     position: absolute; width:16px; height:16px; top:8px; right:5px; font-size:.8em;
 }
 #nl-form input[type=checkbox] + label:before{top:11px;}
-    .style-tag .checkbox-clone:before, .checkbox-clone:before { content: "\f00d"; /* cross icon */ }
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
-#select-more-camp input[type=checkbox]:checked + label:before,
 .refine-inputs input[type=checkbox]:checked + label:before,
 #select-more-causes input[type=checkbox]:checked + label:before,
 #data-list-filters input[type=checkbox]:checked + label:before, 
-.refine-inputs .checkbox-clone.checked:before,
+#select-org-type input[type=checkbox]:checked + label:before, 
 .checkbox-clone.checked:before{
-    color: #4cb848;
+    color: #43AD49;
 }
 
-#select-more-camp input[type=checkbox]:hover + label:hover:before,
-#select-more-causes input[type=checkbox]:hover + label:hover:before,
-#data-list-filters input[type=checkbox]:hover + label:before{
-    color: #666;
-}
 
-#select-more-camp .popover-content ul li,
+
+
+
 #data-list-filters ul li,
 #select-more-causes .popover-content ul li,
 .popover-content ul li{
@@ -2087,7 +2085,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     display: inline-block;
     margin-bottom: 4px;
 }
-#select-more-camp .popover-content ul ,
 #select-more-causes .popover-content ul {
     margin: 0 30px 10px 15px;
 }
@@ -2103,7 +2100,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 #select-more-causes input[type=checkbox]{
     display: none;
 }
-#select-more-camp, #select-more-causes, #select-more-camp .popover-content, #select-more-causes .popover-content{
+#select-more-causes, #select-more-causes .popover-content{
     width:90%; max-width:280px;
 }
 .popover.wide{
@@ -2281,8 +2278,8 @@ span.span12.read-more.text-left.m-0{display: none;}
     border-radius: 100px;
 }
 #sidebar ul li.active > a .li-icon{
-    background-color: #4cb848;
-    border-color: #4cb848;
+    background-color: #43AD49;
+    border-color: #43AD49;
 }
 
 #sidebar ul li > a .li-icon.pull-left{
@@ -2834,7 +2831,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     background: #f0f0f0; color:#333 !important; outline: 0;font-weight: 400;
 }
 .select-like .dropdown-menu li.active a,.dropdown-menu li.active a { color: #333 !important; font-weight: normal; }
-.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #4cb848; }
+.select-like .dropdown-menu li.active:before, .dropdown-menu li.active:before { color: #43AD49; }
 
 
 
@@ -4015,15 +4012,11 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label{
         font-size: 0.875em;
     }
-    #select-more-camp,#select-more-camp .popover-content,
     #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
-    #select-more-camp .popover-content,
     #select-more-causes .popover-content{width: 220px;}
-    #select-more-camp,
     #select-more-causes{
         margin-left: 100px;
     }
-    #select-more-camp.popover.bottom .arrow ,
     #select-more-causes.popover.bottom .arrow {
         top: -11px;
         left: 50%;

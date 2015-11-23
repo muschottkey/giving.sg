@@ -957,7 +957,7 @@ f
 }
 
 .refine-inputs input[type=checkbox] + label,
-#select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label,
+#select-more-causes input[type=checkbox] + label,
 .popover-filter input[type=checkbox] + label,
 .refine-inputs .checkbox-clone {
 display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
