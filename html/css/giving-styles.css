@@ -1144,7 +1144,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .img-box a { color:#333; text-decoration:none; }
 
 
-.txt-npo { min-height: 2.5em; max-height: 2.5em; }
+.txt-npo { min-height: 2.5em; max-height: 2.5em;overflow: hidden;}
 
 #setup-donation-cta{border:none;padding-left: 0;padding-right: 0;}
 #setup-donation-cta .btn-group button{width: 50%;height: 40px;font-weight: 800;background: #f5f5f5;}
@@ -1549,7 +1549,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .tab-section .cpn-sgtn-item { display:block !important; }
 
 /* Listings & Search Results */
-.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 390px;height: auto;}
+.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 400px;height: auto;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .cpn-sgtn-item .sgtn-body {
@@ -1561,13 +1561,13 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 
 .sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto; float:none; padding:0; }
-.campaign-stats { margin:10px auto 5px; }
-.cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em; max-height:6.8em; } 
+.campaign-stats {margin: 0 auto;padding: 10px 0;}
+.cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em;max-height: 9.4em;} 
 
 .add-cpn-btn .sgtn-img { height: auto;font-size: 16px;}
 .sgtn-body .causes { padding:.5em 0; display:none; }
 
-.sgtn-body p {/* font-size:.875em; */ margin:0 auto 5px; min-height:6.7em; max-height: 6.7em;overflow: hidden;}
+.sgtn-body p { margin:0 auto 5px;min-height: 4em;max-height: 5em;overflow: hidden;}
     .sgtn-body .campaign-stats button { width:100%;}
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DDD;}
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
@@ -1772,8 +1772,14 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, 
 .swiper-button-prev:before,.swiper-button-next:before  {
-    font-family: "fontAwesome"; height: 35px; width: 35px;
-    color: #17A4E1; display: block; font-size:1.8em; line-height: 1.2;
+    font-family: "fontAwesome";
+    height: 35px;
+    width: 35px;
+    color: #17A4E1;
+    display: block;
+    font-size:1.8em;
+    line-height: 1.2;
+    text-align: center;
 }
 .home-slider .swiper-button-prev:before, .swiper-button-prev:before { content: "\f104"; }
 .home-slider .swiper-button-next:before, .swiper-button-next:before { content: "\f105"; }
