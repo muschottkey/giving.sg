@@ -178,7 +178,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 #camp-holder .checkbox-clone.checked:before
 {content: "\f0d7" !important;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
-.title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#000; }
 
 /* Search Page & Search UI */
 #search-form label.control-label{
@@ -553,7 +552,7 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 
 /* PHONE */
 @media only screen and (max-width:480px) {
-    p { font-size:.875em; } /* 14px */
+    
 }
 @media only screen and (max-width: 320px){
     #donationAmt div.modal-body {
