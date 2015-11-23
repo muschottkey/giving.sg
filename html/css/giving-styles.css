@@ -1756,6 +1756,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     width: 35px;
     opacity:.6;
     border-radius: 50%;
+    border-width: 0;
     background: #eee;
     background-image: none;
     margin-top: 10px;

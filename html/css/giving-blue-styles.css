@@ -157,6 +157,13 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 #cpn-donate-now .donate-btns{
     margin-top: 15px;
 }
+.may-like-title{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+.may-like-title + .cpn-holder{
+    margin-top: 5px;
+}
 
 .row-fluid.m-bot20 .action-link,
 .box-r-footer a,
@@ -171,11 +178,10 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 #dtn-add-logo p{color:#333;}
 
 /* NPO lIsting */
-.checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
+.checkbox-clone.checked:before,#camp-holder .checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
 .checkbox-clone.checked[data-parent="ref_allcauses"]:before,
 .checkbox-clone.checked[data-parent="ref_campaigns"]:before,
-.checkbox-clone.checked[data-parent="ref_allorgs"]:before,
-#camp-holder .checkbox-clone.checked:before
+.checkbox-clone.checked[data-parent="ref_allorgs"]:before
 {content: "\f0d7" !important;}
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 
