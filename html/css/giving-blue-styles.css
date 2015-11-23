@@ -394,7 +394,6 @@ h4.cpn-story-title {margin-bottom:0.25em;}
 .btn-group.select-like.actions-group > .btn.dropdown-toggle {font-size: 14px !important;}
 .dropdown-menu > li > a{font-size:14px;}
 
-button.close{font-size: 20px !important;}
 
 .btn-ghost, .aui .btn-ghost, .open-more, #copy-url, .open-more:hover{
     background-color: #B3E7FF; color: #2174B5;
@@ -487,9 +486,7 @@ button.close{font-size: 20px !important;}
     .home-slider .cpn-slider-inner.swiper-wrapper { height:300px; }
     /* CARDS UI  */
     .cpn-sgtn-item .sgtn-img{height: auto;}
-    #cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
-      line-height: 2 !important; 
-    }
+    
 }
 
 /* TABLET (SMALL) */
@@ -596,9 +593,6 @@ button.close{font-size: 20px !important;}
 }
 
 @media (max-width:1199px){
-  #cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
-    padding-left:30px;
-  }
 }
 
 /*************************************************************/
@@ -648,12 +642,6 @@ button.btn.btn-ghost.delete-row {
 }
 .bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF;  }
 
-.long .cpn-sgtn-item{
-    height: 480px;
-}
-.short .cpn-sgtn-item{
-    height: 380px;
-}
 .short .cpn-sgtn-item .sgtn-body {
      min-height: 100px; 
 }
@@ -692,20 +680,8 @@ button.btn.btn-ghost.delete-row {
     width: 24px;
     height: auto;
 }
-#cpn-donate-now .box > h4 + p, #cpn-donate-now .box > h3 + p, #cpn-donate-now .box > h4 + span{
-  background-image: url(../images/ico-tax-deductible.png);
-  background-position: 0 0;
-  background-size: 30px;
-  background-repeat: no-repeat;
-  font-size: 1em;
-  display: block;
-  line-height: 1.4;
-}
 .load-all-results i, .btn i{
-  display: inline-block;
-  width: auto;
-  font-size: 14px;
-  margin: 0 5px 0 0;
+  display: inline-block; width: auto; margin: 0 5px 0 0; color: #2174B5;
 }
 .btn{font-weight: normal !important;}
 .btn-primary a i, .btn-primary a span{color: #ffffff;}
@@ -726,7 +702,6 @@ button.btn.btn-ghost.delete-row {
     display: none;
 }
 .popover-content .btn-row > h3 {display: inline-block;}
-#cpn-donate-now > .box > h4{display: none;}
 .cn-ln-details{ display: none; }
 /*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, 
 making them inaccessible for nteraction like clicking etc
