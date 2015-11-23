@@ -2772,12 +2772,19 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 #modal481 .modal-body .modal-body-container{margin: 0 150px 20px 150px; background-color:#fff;}
 .data-list-item a[role=button]:focus{ outline:0; }
 .table-actions  .select-like { text-align: center; }
+.jplist-panel.add-inner{text-align:left;}
+.jplist-panel.add-inner .text, 
 .select-like .text{
     color: #666; text-transform: uppercase;
     vertical-align:bottom; display: inline-block;
     margin-bottom:3px;
-	font-size:14px;
-	line-height:16px; 
+	font-size:16px;
+	line-height:19px; 
+}
+.jplist-panel.add-inner .dropdown.select-like{
+	display:inline-block;
+	vertical-align:top;
+	float:none !important;
 }
 .select-like button{
     background-color: #fff;
