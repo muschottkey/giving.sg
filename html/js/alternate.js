@@ -862,10 +862,10 @@ function showSidebar(winWidth){
         $(this).closest('.person-actions').find('.more-details').collapse('toggle');
     })
     $('.more-details').on('hide', function () {
-      $(this).closest('.person-actions').find('.show-more').text("+ MORE DETAILS")
+      $(this).closest('.person-actions').find('.show-more').text("View volunteer answer")
   })
     $('.more-details').on('show', function () {
-      $(this).closest('.person-actions').find('.show-more').text("- LESS DETAILS")
+      $(this).closest('.person-actions').find('.show-more').text("+ MORE DETAILS")
   })
 
     /* MULTI STATE CHECKBOXES */

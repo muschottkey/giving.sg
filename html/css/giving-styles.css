@@ -25,7 +25,14 @@ textarea, input { font-size:.935em; line-height:1.4; word-wrap: break-word; }
 
 ::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
 input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
-input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important; }
+input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important;}
+input::-webkit-clear-button, textarea::-webkit-clear-button{
+	-webkit-appearance: none !important;
+	display:none !important; 
+}
+::-webkit-search-cancel-button {
+    -webkit-appearance: none !important;
+}
 
 a, a:link { color:#17a4e1; text-decoration: underline;}
     a:hover { color:#2174b5; }
@@ -1186,7 +1193,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .main-content .search-controls input {padding: 10px .5em;font-size: 1.25em !important;}
 .search-controls .control-label { line-height:2em;font-size: 1.25em; color: #333;}
     .search-controls .link-refine {line-height: 3em;font-size: .935em;}
-    #search-results #sortSearchResults {/* text-align:left; */}
+    #search-results #sortSearchResults {min-width:156px;}
 
 
 /*       GIFT BASKET       */
