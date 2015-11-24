@@ -973,11 +973,11 @@ color: #999 !important;
 }
 
 .popover-filter .popover-content ul li label:hover{
-  color: #C66 !important;
+  color: #F16577 !important;
 }
 
 .popover-filter .popover-content ul li input[type=checkbox]:hover{
-  color: #C66 !important;
+  color: #F16577 !important;
 }
 
 .popover-filter input[type=checkbox] {
@@ -1004,7 +1004,7 @@ color: #999 !important;
   font-size: .8em; 
 }
 .popover-filter input[type=checkbox]:checked + label:before {
-  color: #c66; 
+  color: #F16577; 
 }
 
 
@@ -1164,7 +1164,8 @@ div.charity-donors img.dr-img {
 }
 
 .aui .volunteer-contact .block.email a:hover, .aui .volunteer-contact .block.email a:focus {
-  color: #9DC9EE !important;
+  color: #7ccef2
+#7ccef2 !important;
   text-decoration: none;
 }
 
@@ -1271,11 +1272,12 @@ div.charity-donors img.dr-img {
 /********************************/
 
 .aui a, .aui a:link {
-    color: #9DC9EE !important;
+    color: #7ccef2
+#7ccef2 !important;
 }
 
 .aui a:hover {
-    color: #C66 !important;
+    color: #F16577 !important;
 }
 
 .aui a:visited {
@@ -1381,7 +1383,7 @@ div.charity-donors img.dr-img {
 }
 
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5 {
-  color: #C66 !important;
+  color: #F16577 !important;
 }
 
 /*easy donation*/
@@ -1391,7 +1393,7 @@ div.charity-donors img.dr-img {
 }
 
 .choice-buttons button.no.active {
-    background-color: #C66 !important;
+    background-color: #F16577 !important;
     color: #FFF !important;
 }
 /* DB COMMENTED OUT
@@ -1412,7 +1414,8 @@ div.charity-donors img.dr-img {
 
 .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn, 
 .tax-status .fa-check-circle-o {
-  color: #9DC9EE !important; 
+  color: #7ccef2
+#7ccef2 !important; 
 }
 
 .section-header h5, .section-header h6, .p-section h5, .conf-states-wrapper .box h5 {
@@ -1420,7 +1423,7 @@ div.charity-donors img.dr-img {
 }
 
 #displayTitle{
-  color: #C66 !important;
+  color: #F16577 !important;
 }
 
 .control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline,
@@ -1436,7 +1439,7 @@ div.charity-donors img.dr-img {
 
 .control-group.error .control-label, .control-group.error .help-block, .control-group.error .help-inline,
 #signinmodal .control-group.error .control-label h5 {
-  color: #cc6666 !important; 
+  color: #F16577 !important; 
 }
 .aui .control-group.error .control-label, .control-group.error .control-label{
   font-weight: 600;
@@ -1448,11 +1451,11 @@ div.charity-donors img.dr-img {
 
 .aui .control-group.error .control-label, .aui .control-group.error .help-block,
 .aui .control-group.error .help-inline {
-  color: #cc6666 !important; 
+  color: #F16577 !important; 
 }
 
 .alert-danger, .alert-error h6 {
-  color: #C66 !important;
+  color: #F16577 !important;
   font-weight: 400 !important;
 }
 
@@ -1857,7 +1860,7 @@ div.clickable>a.img-placeholder-btn {
     padding: 30px 10px; border-top:1px solid #CCC; border-bottom:1px solid #CCC;
     background-color: #f5f5f5;
 }
-.pre-footer h4 a, .pre-footer h4 a:link, , .pre-footer h4 a:active , .pre-footer h4 a:hover { color:#c66 !important; }
+.pre-footer h4 a, .pre-footer h4 a:link, , .pre-footer h4 a:active , .pre-footer h4 a:hover { color:#F16577 !important; }
     .pre-footer h4 a:visited { color:#999 !important;}
 .pre-footer-social form .control-group{ margin-top: 0; }
 .footer-links li{ list-style: none; margin:5px 0; }
@@ -1928,7 +1931,7 @@ border: 1px solid #ccc !important;
 }
 
 @media (max-width: 767px) {
-  .pre-footer .acc-toggle{color:#cc6666!important;}
+  .pre-footer .acc-toggle{color:#F16577!important;}
    /*          Footer         */
   .social-share a i{line-height:1 !important;}
     .pre-footer-social .control-label{text-align:center;}
@@ -2075,7 +2078,7 @@ border: 1px solid #ccc !important;
     color:#666;
 }
 .aui .dropdown-menu li a{color:#666 !important;}
-.aui .dropdown-menu li a:hover{color:#c66 !important;}
+.aui .dropdown-menu li a:hover{color:#F16577 !important;}
 .select-like .dropdown-menu li a:hover, .select-like .dropdown-menu li a:focus, .select-like .dropdown-menu li.active a, .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li.active a{
   background-image: none !important;
   background-color: #f7f7f7 !important;

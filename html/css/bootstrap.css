@@ -3389,7 +3389,7 @@ input[type="button"].btn-block {
 .btn-warning {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #faa732;
+  background-color: #F5866C;
   *background-color: #f89406;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
@@ -5681,12 +5681,12 @@ a.badge:focus {
 
 .label-warning,
 .badge-warning {
-  background-color: #cc6666;
+  background-color: #F16577;
 }
 
 .label-warning[href],
 .badge-warning[href] {
-  background-color: #cc6666;
+  background-color: #F16577;
 }
 
 .label-success,
@@ -5701,12 +5701,14 @@ a.badge:focus {
 
 .label-info,
 .badge-info {
-  background-color: #9DC9EE;
+  background-color: #7ccef2
+#7ccef2;
 }
 
 .label-info[href],
 .badge-info[href] {
-  background-color: #9DC9EE;
+  background-color: #7ccef2
+#7ccef2;
 }
 
 .label-inverse,
@@ -5918,7 +5920,7 @@ a.badge:focus {
 
 .progress-warning .bar,
 .progress .bar-warning {
-  background-color: #faa732;
+  background-color: #F5866C;
   background-image: -moz-linear-gradient(top, #fbb450, #f89406);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#fbb450), to(#f89406));
   background-image: -webkit-linear-gradient(top, #fbb450, #f89406);

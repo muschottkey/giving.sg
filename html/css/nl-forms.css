@@ -100,7 +100,7 @@
 }
 
 .nl-dd ul li { padding:0.5em 2.2em 0.5em 0.8em; cursor: pointer; white-space: nowrap; }
-.nl-dd ul li:hover{color:#cc6666; background: #f7f7f7;}
+.nl-dd ul li:hover{color:#F16577; background: #f7f7f7;}
 
 .no-touch .nl-dd ul li:hover {
 	background: rgba(0,0,0,0.05);
@@ -119,7 +119,7 @@
 	text-transform: none; -webkit-font-smoothing: antialiased;
 }
 
-.nl-dd ul li.nl-dd-checked:before { content: "\f00c"; position:absolute; right:1em;  font-size: .675em; color: #cc6666; }
+.nl-dd ul li.nl-dd-checked:before { content: "\f00c"; position:absolute; right:1em;  font-size: .675em; color: #F16577; }
 
 .nl-ti-text ul {
 	min-width: 8em;

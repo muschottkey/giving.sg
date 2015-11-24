@@ -225,7 +225,7 @@ xheader
 
 /* DB - COMMENTED OUT 
 #main-nav ul .current {
-  box-shadow: 8px 0px #c66 inset; }
+  box-shadow: 8px 0px #F16577 inset; }
   --- */
 
 @media only screen and (min-width: 769px) {
@@ -259,7 +259,7 @@ xheader
   #main-nav ul a.current {
     box-shadow: none;
     color: #FFF !important;
-    background: #c66; }
+    background: #F16577; }
     -- */
 
   .no-touch #main-nav ul a:hover {
@@ -410,7 +410,7 @@ xheader
   color: #333; }
 
 #uf-dockbar-search-trigger:hover i {
-  color: #c66; }
+  color: #F16577; }
 
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,  .uf-dockbar-go-to-cart a:focus {
   color: #999 !important;
@@ -513,7 +513,7 @@ transition: all 0.5s linear 0s; */
   opacity: 1; }
 
 #uf-dockbar-search-desktop span.fa-search:hover {
-  color: #c66; }
+  color: #F16577; }
 
 /* Search Modification 
 #uf-dockbar-search-desktop input[type="submit"] {
@@ -557,7 +557,7 @@ transition: all 0.5s linear 0s; */
   opacity: 1; }
 
 #uf-dockbar-search-mobile span.fa-search:hover {
-  color: #c66; }
+  color: #F16577; }
 
 #uf-dockbar-search-mobile input[type="submit"] {
   -webkit-transition: all 0.5s linear 0s;
@@ -587,7 +587,7 @@ transition: all 0.5s linear 0s; */
   opacity: 0; }
 
 #uf-dockbar-search-desktop span.close:hover {
-  color: #c66; }
+  color: #F16577; }
 
 @media (max-width: 768px) {
   #uf-dockbar-search-mobile { display: block; width: 200px;}
@@ -654,7 +654,7 @@ transition: all 0.5s linear 0s; */
 /* DB COMMENT
 .dark a.active {
   text-decoration: underline !important;
-  color: #c66 !important;
+  color: #F16577 !important;
 }
 
 #uf-dockbar-sidebar li.admin > a {
@@ -662,7 +662,7 @@ transition: all 0.5s linear 0s; */
 }
 
 #uf-dockbar-sidebar li.admin > a {
-  background: #C66 none repeat scroll 0% 0%;
+  background: #F16577 none repeat scroll 0% 0%;
 } */
 
 /* End of temporary additions */
