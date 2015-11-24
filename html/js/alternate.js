@@ -324,6 +324,14 @@ $('.switch').bootstrapSwitch({
     }
 
     $('#setup-dtn-carousel').carousel();
+    $("#setup-dtn-carousel").swiperight(function() {  
+        $("#setup-dtn-carousel").carousel('prev');  
+    });  
+    $("#setup-dtn-carousel").swipeleft(function() {  
+          $("#setup-dtn-carousel").carousel('next');  
+    });  
+   
+
 
     $('#setup-dtn-conf-submission').click(function(){
         $(this).closest('.boxed.span12').next('.boxed.span12').removeClass('hide').addClass('animated fadeIn');

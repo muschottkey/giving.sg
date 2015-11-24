@@ -1767,7 +1767,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     background-image: none;
     margin-top: 10px;
 }
-    #setup-dtn-carousel .carousel-control { margin-top: 10px;height: 30px; width: 30px;font-size: 1.5em; }
+    #setup-dtn-carousel .carousel-control { margin-top: 10px;height: 30px; width: 30px;font-size: 1.5em;z-index: 1020;}
     .navigation-inner .swiper-button-next, .navigation-inner .swiper-button-prev {
         background:none; top: 54%;
     }
