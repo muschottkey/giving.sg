@@ -425,6 +425,9 @@
     .home-slider .cpn-slider-inner.swiper-wrapper { height:300px; }
     /* CARDS UI  */
     .cpn-sgtn-item .sgtn-img{height: auto;}
+    .may-like-title {
+        margin-bottom: 38px;
+    }
     
 }
 
@@ -595,6 +598,12 @@ button.btn.btn-ghost.delete-row {
         border-radius: 0;
     }
 }
+
+/* IE image fixes for image icons in header and buttons*/
+#uf-dockbar-right-menu ul li img, button img.icon{
+    max-height: 100%;
+}
+.donate-btns img.icon{max-height:24px; }
 
 /*************************************************************/
             /* PERMANENT ADDITIONS */

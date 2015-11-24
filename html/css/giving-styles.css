@@ -1355,7 +1355,7 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
    width: 90%; right: 0; top: inherit; position: relative;
    padding: 5px 5%; background-color: rgba(0,0,0,0.5);
 }
-.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF; }
+.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span, .bottom-r .more-days span.em { color:#FFF; }
 
 .campaign-stats span.em{color: #999; font-size: 0.875em;}
 .campaign-stats span.darker{
