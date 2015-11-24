@@ -49,6 +49,8 @@ h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 {
     margin: 24px 0 .5rem !important; font-weight:400; 
 }
     h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { font-size: 1.5em; text-align:left; }
+    h4.cpn-story-title {margin-bottom:0.25em;}
+
     #cpn-meta h5, .contact-us h5 { margin-top: 24px; font-size:1.125em; }
 
 .box h5 { font-size: 1.2em; }
@@ -114,7 +116,6 @@ hr { border-top: 1px solid #CCC; }
   position: fixed; top:50px; height:100%; width: 260px; overflow-y: hidden;
   z-index: 1024; box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); -webkit-overflow-scrolling: touch;
 }
-
 
 .control-group .controls > span, label  {font-size: .875em; color: #666;}
     .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#666;line-height: 2.2;}
@@ -356,13 +357,14 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .modal.non-respv .modal-body{ min-width:800px !important; width:100%; }
 .modal.fade { display: none; }
 .modal.fade.in { display:block; }
-.modal-header {border-bottom: none;height: 15px;}
+.modal-header {border-bottom: none;padding: 15px 15px 0;}
 .modal-header .close {position:absolute; right: 10px; top:0;padding: 10px;}
 .modal-body { max-width:800px; }
 .modal-footer { text-align:center; padding: 10px 5px; border: none;}
 
 /* MODAL - UI Controls */
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
+
 
 #profile-form .validation-feedback,
 .modal .validation-feedback , #respwdForm .validation-feedback,#gf-bkt-login .validation-feedback,
@@ -396,6 +398,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
 /* UI Controls - CONTROLS / FIELDS */
+
 textarea, input[type="text"], .button-input, .control-group .form-control { 
     border-width:0 0 1px; border-radius:0; box-shadow:none !important;
     font-size:inherit; line-height:1.4; color:#333; border-color:#ccc;
@@ -421,58 +424,61 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     .control-group:after, .controls:after, .cpn-url-box:after { content:""; clear:both; display:block; }
     
 /* UI Controls - BUTTONS */
-button, .btn, .btn:link {background-image: none !important; text-decoration: none;}
-button, input[type="submit"], .btn, .aui .btn, .btn-ghost, 
-.open-more, .btn-more-img {
-    line-height:1.4;
-    text-transform: uppercase;
-    padding: 10px 20px;
-    background:#B3E7FF;
-    color:#2174B5;
-    border-radius: 6px;
-    border:none;
-    outline: none;
-    -webkit-font-smoothing:antialiased;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    text-decoration: none;
+button, .btn, .btn:link { background-image: none !important; text-decoration: none; }
+button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-more-img {
+    line-height:1.4; text-transform: uppercase; padding: 10px 20px; border-radius: 6px; border:none;
+    background:#B3E7FF; color:#2174B5; font-size:16px; text-decoration: none; font-weight: normal; outline: none; 
+    -webkit-font-smoothing:antialiased; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
 }
 .btn-ghost, .gallery-txt-box .btn {
-    color:#FFF;
-    background-color: transparent;
-    box-shadow:none;
-    -webkit-user-select: none;
-    will-change: opacity, transform;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
+    color:#FFF; background-color: transparent; box-shadow:none;
+    -webkit-user-select: none; will-change: opacity, transform;
+    -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
 }
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn,.choice-buttons button.yes.active, 
 .btn-toggle .btn.active { background-color:#17a4e1; color: #FFF; }
 .btn-group .btn.btn-ghost{ box-shadow:none; }
 
+nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
+
 
 /* UI Controls - BUTTONS (HOVER / ACTIVE) */
-.btn:hover, .btn:focus, .btn:active, .aui .btn:hover, .aui .btn:focus, .aui .btn:active, 
-.btn-ghost:hover, .btn-ghost:focus, .btn-ghost:active, 
+/* LIGHTER BLUE  */
+.btn:hover, .btn:active, .btn:focus, .aui .btn:hover, .aui .btn:active, .aui .btn:focus, 
+.btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
 .aui .btn-ghost:hover, .aui .btn-ghost:focus, .aui .btn-ghost:focus,  
+.open-more:hover, .open-more:active, .open-more:focus, .btn-more-img:hover, .btn-more-img:active, .btn-more-img:focus, 
+.donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
-.open-more:hover, .btn-more-img:hover, .donate-trig.btn-default:hover, .ttl-row .btn:hover,
+.ttl-row .btn:hover, #copy-url:hover, .load-all-results:hover, .ttl-row .btn:hover
      .inform-area .box-btn .btn:hover { 
-        background-color:#B3E7FF; color: #2174B5;
+        background-color:#B3E7FF; color: #2174B5; border:none; 
 }
 .gallery-txt-box .btn:hover { background-color: #0e678e; color:#FFF; }
 
 .btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  
 .steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover,
-.add-bottom-lst input:hover,
-.open-more:hover,.btn-more-img:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
+.add-bottom-lst input:hover, .btn-more-img:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
+/*  BRIGHT BLUE  */
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus, 
+.btn-success:hover, .btn-success:active, .btn-success:focus,
+.aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
+.aui .btn-success:hover, .aui .btn-success:active,.aui .btn-success:focus, 
+.add-bottom-lst input:hover, .add-bottom-lst input:active,
+#btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus,
+#login_button:hover, #login_button:focus,
+#LoginForm .btn:hover, #LoginForm .btn:active,
+.btn-toggle .btn.active:hover {
+    background-color: #0E678E;
+    color:#FFF;
+}
+
+.btn:disabled, .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 .btn-group .btn.btn-ghost.active,
 .btn-group .btn.btn-ghost:hover{
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
@@ -532,24 +538,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   background: #E6E4DD;
 }
 
-.preset-amts button, #donate-buttons button, #vol-buttons button {
-    width: 80px; height:40px;
-    margin: 10px 4px;
-    font-size: 16px;
-    color: #666;
-    background:#FFF;
-    border:1px solid #CCC;
-    padding: 7px 10px;
-    border-radius: 4px;
-    outline: none;
-    box-shadow: none;
-}
-    .preset-amts button:hover, .preset-amts button:focus, .preset-amts button:active,
-    #donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active , #vol-buttons button:hover,  #donate-buttons button.active, #vol-buttons button.active{ 
-        border-color:#17a4e1; background:#17a4e1; color:#fff;
-    }
 
-#donate-buttons button { width: 46%; float:left; margin: 5px 2%;min-width: inherit; }
 
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px; }
@@ -604,16 +593,35 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .control-group.success .validation-feedback i { color: #43AD49;font-size: 12px;}
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
-.btn-toggle { margin-bottom:40px; width:100%; }
-.btn-toggle .btn { padding:5px; width:33%; height:5em; line-height:1.3; }
-    
-    .btn-toggle .btn i { margin-right:10px; font-size:36px; color:#333333; }
-    .btn-toggle .btn.active  i {color: #fff;}
+.preset-amts button, #donate-buttons button, #vol-buttons button, .btn-toggle button {
+    background:#FFF; border:1px solid #DDD; color: #666; font-size: 16px;
+    line-height:1.2; outline: none; box-shadow: none;
+} 
+.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
+.btn-group > .btn:first-child { border:1px solid #DDD; }
+.preset-amts button, #donate-buttons button, #vol-buttons button {
+    width:80px; height:40px; font-size: 1.125em; border-radius: 4px; margin: 10px 4px; padding:5px 10px;
+}
+    #donate-buttons button { width: 46%; float:left; margin: 5px 2%;min-width: inherit; }
+
+.btn-toggle button:hover, .btn-toggle button:focus, .btn-toggle button:active,  
+.preset-amts button:hover, .preset-amts button:focus, .preset-amts button:active,
+#donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active, #donate-buttons button.active,
+#vol-buttons button:hover, #vol-buttons button.active { 
+    border-color:#17a4e1; background:#17a4e1; color:#fff; box-shadow: none;
+}
+    .btn-toggle button:hover,.btn-toggle button:focus, .btn-toggle button:active { border:0 none; }
+
+.btn-toggle { margin-bottom: 30px; width:100%; }
+.btn-toggle button i { margin-right:10px; font-size:36px; color:#666; }
+.btn-toggle button.active i, .btn-toggle button:hover i { color:#fff; }
     .btn-toggle .btn span{
         display: inline-block; white-space: normal; text-transform: capitalize;
         margin-right:0; width:100px; text-align: left;
     }
-
+.load-all-results i, .btn i{
+  display: inline-block; width: auto; margin: 0 5px 0 0; color: #2174B5;
+}
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #43AD49 !important;}
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{background-color:#cc6666!important;}
 .link-add-leader{
@@ -633,8 +641,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     .modal-one-column .checkbox input[type="checkbox"] { float:none; margin-top: 0; }
 
 /* MODAL - TWO COLUMN */
-.modal .row-fluid .span6 { padding:1em 1.5em; } 
-    .modal .row-fluid .span6:first-child { padding:1em 1.5em; } 
+.modal .row-fluid .span6 {padding: 1em 0 0 3em;} 
+    .modal .row-fluid .span6:first-child {padding-left: 0;} 
 
 /* Social Media */ 
 .modal .social-media-signup a {
@@ -3178,7 +3186,7 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 
 /* Clear Fix */
 body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-media-signup:after, 
-.section-header:after, .causes:after, .conf-states-wrapper:after,
+.section-header:after, .causes:after, .modal-header:after,
 .social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
 .summary-wrapper:after, .data-list-item:after, .conf-states-wrapper:after { 
     content:""; clear:both; display:block; 
