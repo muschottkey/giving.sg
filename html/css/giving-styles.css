@@ -4203,10 +4203,11 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
 }
 
 @media (max-width: 600px) {
-    #cpn-info, #cpn-meta {width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
-    #setup-dtn-carousel { padding-bottom:9.5%; }
-    .bottom-r .cn-days-wrapper { top:0; background-color: rgba(0,0,0,0.7); }
-    .carousel-indicators {bottom: 18%;}
+    #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0 auto;}
+        #cpn-info { width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
+    #setup-dtn-carousel {padding-bottom:48px;}
+    .carousel-indicators {bottom: 17%;}
+    .bottom-r .cn-days-wrapper { background-color: rgba(0,0,0,0.7);position: relative;}
 }
 @media (min-width:768px) and (max-width:1023px) {
     .donors-area .dr-img{
