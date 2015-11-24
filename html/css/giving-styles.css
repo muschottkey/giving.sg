@@ -1362,19 +1362,18 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 
 #cpn-donate-now .box h3 { display: none; visibility: hidden; }
 .cn-stats-wrapper{
-    width: 70%;  float: left;  padding: 0 10px 10px;
-    border-right: 1px solid #CCC;
+    width: 70%; float: left; padding: 0 10px 10px;  border-right: 1px solid #CCC;
 }
 
 .cn-stats-inner{ padding:10px 0; }
 
-.cn-days-wrapper{
-    width: 18%;
-    right: 5%;
-    top: 30%;
-    position: absolute;
-    display: block;
+.cn-days-wrapper{ width: 18%; right: 5%; top: 30%; position: absolute; display: block; }
+.bottom-r { position: absolute; right: 0; bottom: 0; margin: 0 !important; z-index: 99; }
+.bottom-r .cn-days-wrapper {
+   width: 90%; right: 0; top: inherit; position: relative;
+   padding: 5px 5%; background-color: rgba(0,0,0,0.5);
 }
+.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF; }
 
 .campaign-stats span.em{color: #999; font-size: 0.875em;}
 .campaign-stats span.darker{
@@ -3273,8 +3272,6 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
     #vol-buttons{margin-top: 5px;}
     .side-padding-wrapper{max-width: 94%;}
     .cpn-sgtn-item > .sgtn-img img { max-height: none !important; }
-    .donate-trig.btn-default { }
-
 }
 
 @media (max-width: 1199px){
@@ -4207,6 +4204,9 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
 
 @media (max-width: 600px) {
     #cpn-info, #cpn-meta {width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
+    #setup-dtn-carousel { padding-bottom:9.5%; }
+    .bottom-r .cn-days-wrapper { top:0; background-color: rgba(0,0,0,0.7); }
+    .carousel-indicators {bottom: 18%;}
 }
 @media (min-width:768px) and (max-width:1023px) {
     .donors-area .dr-img{

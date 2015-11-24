@@ -602,22 +602,6 @@ button.btn.btn-ghost.delete-row {
   right:0;
   left: 0;
 }
-.bottom-r{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  margin: 0 !important;
-  z-index: 99;
-}
-.bottom-r .cn-days-wrapper{
-   width: 90%;
-   right: 0;
-   top: inherit;
-   position: relative;
-   padding: 5px 5%;
-   background-color: rgba(0,0,0,0.5);
-}
-.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span { color:#FFF;  }
 
 .short .cpn-sgtn-item .sgtn-body {
      min-height: 100px; 
