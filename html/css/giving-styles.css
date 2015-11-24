@@ -1752,8 +1752,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     .home-slider .slider-navigation { bottom:0; }
     .slider-navigation .navigation-inner { width: 220px; }
 
-
-
 /* CONTROLS */
 #setup-dtn-carousel .carousel-control, .carousel-control,
 .cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next,
@@ -4208,7 +4206,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-
 }
 
 @media (max-width: 600px) {
-    #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0;}
+    #cpn-info, #cpn-meta {width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
 }
 @media (min-width:768px) and (max-width:1023px) {
     .donors-area .dr-img{
