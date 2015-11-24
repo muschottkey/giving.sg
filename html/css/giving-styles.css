@@ -506,6 +506,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     padding-right: 30px;
     font-size: 1em;
     min-width: 150px;
+    margin-top: 5px;
 }
 .btn-normalize-height{height:48px !important; padding-top:12px !important;padding-bottom:12px!important; }
 .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
@@ -1537,8 +1538,13 @@ span.span12.read-more.text-left.m-0{display: none;}
 /*********************      CARDS UI       ********************/
 .cpn-wrapper { position:relative; display:block;overflow:hidden; margin:0;padding:0 0 10px;}
 .cpn-suggestions{
-    height:510px; max-height:550px; position:relative; top:0;
-    left:0; display:block; padding: 2em 1%;
+    height: 460px;
+    max-height:550px;
+    position:relative;
+    top:0;
+    left:0;
+    display:block;
+    padding: 2em 1%;
 }
 .cpn-suggestions .swiper-slide {width:270px;}
 .cpn-sgtn-item {
@@ -1549,7 +1555,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .tab-section .cpn-sgtn-item { display:block !important; }
 
 /* Listings & Search Results */
-.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 400px;height: auto;}
+.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 410px;height: auto;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .cpn-sgtn-item .sgtn-body {
@@ -1561,13 +1567,13 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 
 .sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto; float:none; padding:0; }
-.campaign-stats {margin: 0 auto;padding: 10px 0;}
+.campaign-stats {margin: 0 auto;padding: 5px 0 10px;}
 .cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em;max-height: 9.4em;} 
 
 .add-cpn-btn .sgtn-img { height: auto;font-size: 16px;}
 .sgtn-body .causes { padding:.5em 0; display:none; }
 
-.sgtn-body p { margin:0 auto 5px;min-height: 4em;max-height: 5em;overflow: hidden;}
+.sgtn-body p {margin:0 auto 5px;min-height: 4em;max-height: 6em;overflow: hidden;font-size: .9375em;}
     .sgtn-body .campaign-stats button { width:100%;}
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DDD;}
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
