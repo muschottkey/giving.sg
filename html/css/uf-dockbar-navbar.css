@@ -7,24 +7,16 @@ Modules - reusable parts of our design
 -------------------------------- */
 /* http://stackoverflow.com/questions/802175/truncating-long-strings-with-css-feasible-yet */
 .uf-ellipsis {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -o-text-overflow: ellipsis;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; -o-text-overflow: ellipsis;
   -moz-binding: url("assets/xml/ellipsis.xml#ellipsis"); }
 
 .uf-dockbar-container {
   /* this class is used to horizontally align the gallery of items */
-  position: relative;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto; }
+  position: relative; width: 90%; max-width: 1200px; margin: 0 auto; }
 
 .uf-dockbar-container::after {
   /* clearfix */
-  content: '';
-  display: table;
-  clear: both; }
+  content: ''; display: table; clear: both; }
 
 .uf-dockbar-img-replace {
   /* replace text with a background-image */
@@ -38,81 +30,35 @@ Modules - reusable parts of our design
 xheader 
 
 -------------------------------- */
-/* DB comment #main-nav-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  text-align: center;
-  z-index: 1030; 
+#uf-dockbar-right-menu ul li.sign-in span { 
+  float: right; display: block; line-height: 35px; margin-left: -10px;color: #333; font-size:1.125em;
 }
-@media only screen and (min-width: 769px) {
-  #main-nav-header { height: 70px; } 
-}*/
+#uf-dockbar-right-menu ul li.sign-in:hover span { text-decoration:underline; }
 
-#uf-dockbar-right-menu ul li.sign-in span {
-  float: right;
-  display: block;
-  line-height: 35px;
-  margin-right: 0px;
-  margin-left: -10px;
-  -webkit-transform: scale(0.8);
-  -moz-transform: scale(0.8);
-  -ms-transform: scale(0.8);
-  -o-transform: scale(0.8);
-  transform: scale(0.8); }
-
-#uf-dockbar-right-menu ul li.sign-in span {
-  color: #999 !important;
-  font-size: 20px;
-  font-weight: 200;
-  max-width: 250px;
-  display: inline-block; }
-
-/* DB comment
-@media only screen and (min-width: 1200px) {
-  #logo a {
-    max-width: 700px; } } 
-@media only screen and (max-width: 768px) {
-  #logo a { overflow: hidden; } 
-  #logo a img { width:150px;  } 
-}*/
 @media only screen and (min-width: 768px) {
-/* DB comment  #logo {
-    font-size:1.25em;
-    padding: 0;
-    top: 0;
-    position: absolute;
-  }
-  #logo img{max-width: 170px;} */
-
   #uf-dockbar-right-menu ul li.sign-in span {
     margin-right: 10px;
     margin-left: 5px;
-    line-height: 34px;
-    font-size: 1em;
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    transform: scale(1); }
+    line-height: 34px; }
 
-  li#uf-dockbar-sidebar-trigger a img { margin-right: 10px;margin-left: 5px;} 
-}
+  li#uf-dockbar-sidebar-trigger a img {
+    margin-right: 10px;
+    margin-left: 5px; } }
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
   top: 0;
   height: 70px;
-  z-index: 1090;
-  }
-#uf-dockbar-hamburger-menu a {width: 60px;}
+  z-index: 1090; }
 
-#uf-dockbar-hamburger-menu { left: 0; padding: 0.5em 1em; } 
+#uf-dockbar-hamburger-menu a {
+  width: 60px; }
+
+#uf-dockbar-hamburger-menu {
+  left: 0;
+  padding: 0.5em 1em; }
 
 #uf-dockbar-right-menu {
-  right: 0;
-  }
+  right: 0; }
 
 #uf-dockbar-right-menu ul {
   list-style: none;
@@ -123,21 +69,18 @@ xheader
   display: inline-block;
   height: 30px;
   padding: 1em .75em 1em .25em;
-  /* margin-right: -5px; DB HIDE for the alignment */
-  }
+  /* margin-right: -5px; DB HIDE for the alignment */ }
 
 #uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
   padding: .25em;
-  width: 30px;
-  }
+  width: 30px; }
 
 #uf-dockbar-right-menu ul li.highlight span {
   display: block;
   float: right;
   line-height: 35px;
   /* db margin-left: 0px; */
-  font-weight: 900;
-}
+  font-weight: 900; }
 
 #uf-dockbar-right-menu ul li.highlight {
   background: white; }
@@ -146,35 +89,35 @@ xheader
   width: 0 !important; }
 
 @media only screen and (max-width: 980px) {
-  #uf-dockbar-right-menu img {width: 24px;height: 24px; padding: 5px 0;}
-}
-
+  #uf-dockbar-right-menu img {
+    width: 24px;
+    height: 24px;
+    padding: 5px 0; } }
 @media (max-width: 768px) {
-  #main-nav {  left: 143px;
-  right: auto;
-  }
+  #main-nav {
+    left: 143px;
+    right: auto; }
+
   #uf-dockbar-right-menu ul li {
-    height: 34px;
-    padding: 0.5em; }
+    /* height: 34px; */
+    padding: 0.5em;
+    }
 
   #uf-dockbar-right-menu {
-    position: absolute !important;
-    } 
+    position: absolute !important; }
 
-  #uf-dockbar-search-list-item { display: none !important; }
+  #uf-dockbar-search-list-item {
+    display: none !important; }
+
   /* DB comment 
   #logo a { overflow: hidden;display: block;} 
   #logo a img {width: 156px;}
 
-  #logo{padding-top: 0;}*/
-
-
-}
+  #logo{padding-top: 0;}*/ }
 @media (max-width: 480px) {
   #uf-dockbar-cart-trigger.highlight a > span {
     display: none !important; } }
-
-/* DB COMMENT    
+  /* DB COMMENT    
 #main-nav, #uf-dockbar-cart, #uf-dockbar-sidebar {
   position: fixed;
   top: 0;
@@ -185,24 +128,21 @@ xheader
   -webkit-overflow-scrolling: touch;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   z-index: 1029; }  */
-
 @media only screen and (min-width: 768px) {
   /* DB commented
   #main-nav, #uf-dockbar-cart {
     width: 350px; } 
      #uf-dockbar-hamburger-menu {
-    display: none; }*/
-     }
+    display: none; }*/ }
 @media only screen and (min-width: 1200px) {
   /* DB commented
   #main-nav, #uf-dockbar-cart {
     width: 30%;
     padding-top: 70px; }*/
-
   #uf-dockbar-cart {
     max-width: 360px;
     /* header height has changed */
-    padding-top: 70px; } }
+    /* padding-top: 70px;  */ } }
 /* DB - COMMENTED OUT #main-nav {
   left: -120%;
   background: #FFF;
@@ -210,7 +150,6 @@ xheader
   -moz-transition: left 0.3s;
   transition: left 0.3s;
   background: #fff; } */
-
 #main-nav.speed-in {
   left: 0; }
 
@@ -220,18 +159,16 @@ xheader
   line-height: 50px;
   padding: 0 1em 0 1.5em;
   border-bottom: 1px solid #e0e6ef;
-  color: #999;
-  }
+  color: #999; }
 
 /* DB - COMMENTED OUT 
 #main-nav ul .current {
-  box-shadow: 8px 0px #F16577 inset; }
+  box-shadow: 8px 0px #c66 inset; }
   --- */
-
 @media only screen and (min-width: 769px) {
   #main-nav {
     /* reset main nav style */
-    position: absolute;
+    /* position: absolute; */
     height: auto;
     width: auto;
     left: auto;
@@ -253,15 +190,14 @@ xheader
     height: auto;
     line-height: 1;
     padding: 1em 1.4em;
-    border-bottom: none;
-    }
-/* DB COMMENTED 
-  #main-nav ul a.current {
-    box-shadow: none;
-    color: #FFF !important;
-    background: #F16577; }
-    -- */
+    border-bottom: none; }
 
+  /* DB COMMENTED 
+    #main-nav ul a.current {
+      box-shadow: none;
+      color: #FFF !important;
+      background: #c66; }
+      -- */
   .no-touch #main-nav ul a:hover {
     background: #435779; } }
 .no-js #main-nav {
@@ -300,20 +236,17 @@ xheader
   padding: 1em;
   min-height: 3em;
   max-height: 4em;
-  border-top: 1px solid #e0e6ef;
-  }
+  border-top: 1px solid #e0e6ef; }
 
 #uf-dockbar-cart .uf-dockbar-price {
-  color: #333;
-  }
+  color: #333; }
 
 #uf-dockbar-cart .uf-dockbar-name {
   width: 65%;
   text-align: left;
   display: inline-block;
   max-height: 3.9em;
-  overflow: hidden;
-  }
+  overflow: hidden; }
 
 #uf-dockbar-cart .uf-dockbar-price {
   float: right;
@@ -323,8 +256,7 @@ xheader
   text-align: center;
   border-radius: 4px;
   border: 1px solid #DDD;
-  font-weight: 500;
-  }
+  font-weight: 500; }
 
 #uf-dockbar-cart .uf-dockbar-item-remove {
   position: absolute;
@@ -354,8 +286,7 @@ xheader
   font-weight: 500;
   cursor: default;
   border-top: 1px solid #e0e6ef;
-  font-size: 1.25em;
-  }
+  font-size: 1.25em; }
 
 #uf-dockbar-cart .uf-dockbar-cart-total span {
   float: right; }
@@ -367,19 +298,21 @@ xheader
   clear: both; }
 
 #uf-dockbar-cart .checkout-btn {
-  display: block; width: 100%; height: 60px;
-  line-height: 60px; background: #17a4e1;
-  color: #FFF !important; text-align: center;
-  padding: 0;
-}
+  display: block;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: #17a4e1;
+  color: #FFF !important;
+  text-align: center;
+  padding: 0; }
 
-#uf-dockbar-cart .checkout-btn:hover, #uf-dockbar-cart .checkout-btn:focus { background:#0e678e; }
+#uf-dockbar-cart .checkout-btn:hover, #uf-dockbar-cart .checkout-btn:focus {
+  background: #0e678e; }
 
 #uf-dockbar-cart .uf-dockbar-go-to-cart {
   text-align: center;
-  margin: .25em 0;
-  }
-
+  margin: 1em 0; }
 
 @media only screen and (min-width: 1200px) {
   #uf-dockbar-cart > * {
@@ -410,17 +343,15 @@ xheader
   color: #333; }
 
 #uf-dockbar-search-trigger:hover i {
-  color: #F16577; }
+  color: #c66; }
 
 .uf-dockbar-go-to-cart a:active, .uf-dockbar-go-to-cart a:hover,  .uf-dockbar-go-to-cart a:focus {
   color: #999 !important;
-  cursor: default;
-  }
+  cursor: default; }
 
 .uf-dockbar-more-items-message {
   text-align: center;
-  color: #333;
-  }
+  color: #333; }
 
 #uf-dockbar-cart a.checkout-btn.disabled {
   opacity: 0.5;
@@ -432,10 +363,10 @@ xheader
   /* padding: 2px 0px !important; */
   border-radius: 0px !important;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.2s ease-in 0.1s;
-  -moz-transition: all 0.2s ease-in 0.1s;
-  -o-transition: all 0.2s ease-in 0.1s;
-  transition: all 0.2s ease-in 0.1s;
+  -webkit-transition: all .1s ease-out;
+  -moz-transition: all .1s ease-out;
+  -o-transition: all .1s ease-out;
+  transition: all .1s ease-out;
   background: #FFF;
   text-align: left;
   height: 50px;
@@ -444,37 +375,33 @@ xheader
   min-width: 0px;
   font-size: 1em;
   display: block;
-  /* z-index: 1100; */
-  }
-
+  /* z-index: 1100; */ }
 
 #uf-dockbar-search-mobile input[type="text"] {
   padding: .5em 0.8em !important;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   text-align: left;
   width: 90%;
-  font-size: 1em;
-  }
+  font-size: 1em; }
 
   /* DB comment #uf-dockbar-search-mobile input[type="text"]:focus {
 box-shadow: none !important; 
   }*/
-
 #uf-dockbar-search-desktop input[type="text"]:focus {
   box-shadow: none !important;
   border-radius: 0px !important; }
 
 #uf-dockbar-search-desktop.active input[type="text"] {
-  width: 160px; z-index: 1100;
+  width: 160px;
+  z-index: 1100;
   padding: 10px 15px !important;
-  padding-right: 40px !important;
-  }
+  padding-right: 40px !important; }
 
 /* search modification
 #uf-dockbar-search-desktop.active input[type="text"] {
   width: 100% !important;
   padding: 2px 10px 2px 15px !important; }  */
-#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"], 
+#uf-dockbar-search-desktop.active input[type="submit"], #uf-dockbar-search-desktop.closing input[type="submit"],
 #uf-dockbar-search-desktop.closing span.close, #uf-dockbar-search-desktop.active span.close {
   opacity: 1; }
 
@@ -487,8 +414,7 @@ box-shadow: none !important;
   position: absolute;
   top: 0;
   right: 0;
-  /* z-index: 1100; */
-  }
+  /* z-index: 1100; */ }
 
 #uf-dockbar-search-mobile {
   position: relative;
@@ -513,7 +439,7 @@ transition: all 0.5s linear 0s; */
   opacity: 1; }
 
 #uf-dockbar-search-desktop span.fa-search:hover {
-  color: #F16577; }
+  color: #c66; }
 
 /* Search Modification 
 #uf-dockbar-search-desktop input[type="submit"] {
@@ -541,9 +467,11 @@ transition: all 0.5s linear 0s; */
   border: 0px none;
   text-indent: -9999px;
   cursor: pointer;
-  display: none;
-}
- #uf-dockbar-search-desktop.active input[type="submit"] { display: block; }
+  display: none; }
+
+#uf-dockbar-search-desktop.active input[type="submit"] {
+  display: block; }
+
 #uf-dockbar-search-desktop span.fa-search:before {
   font-size: 23px;
   margin-left: 10px; }
@@ -557,7 +485,7 @@ transition: all 0.5s linear 0s; */
   opacity: 1; }
 
 #uf-dockbar-search-mobile span.fa-search:hover {
-  color: #F16577; }
+  color: #c66; }
 
 #uf-dockbar-search-mobile input[type="submit"] {
   -webkit-transition: all 0.5s linear 0s;
@@ -570,8 +498,7 @@ transition: all 0.5s linear 0s; */
   text-indent: -9999px;
   cursor: pointer;
   padding: 0;
-  opacity: 0;
-  }
+  opacity: 0; }
 
 #uf-dockbar-search-desktop span.close {
   position: absolute;
@@ -587,21 +514,23 @@ transition: all 0.5s linear 0s; */
   opacity: 0; }
 
 #uf-dockbar-search-desktop span.close:hover {
-  color: #F16577; }
+  color: #c66; }
 
 @media (max-width: 768px) {
-  #uf-dockbar-search-mobile { display: block; width: 200px;}
+  #uf-dockbar-search-mobile {
+    display: block;
+    width: 200px; }
+
   #uf-dockbar-search-mobile input[type="submit"] {
     right: 10px;
     width: 20px;
     height: 20px;
     opacity: 1;
     z-index: 1091;
-    display: block;
-  }
+    display: block; }
+
   #uf-dockbar-search-mobile input[type="text"] {
     height: 20px; } }
-
 /*********************************************/
 #uf-dockbar-sidebar ul {
   margin: 70px 0px 0px; }
@@ -609,8 +538,12 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-sidebar ul li {
   list-style: outside none none;
   background-color: #FFF; }
-#uf-dockbar-sidebar ul li aside {padding: 0 2em 1em;}
-#uf-dockbar-sidebar ul li aside h5 {color: #999;}
+
+#uf-dockbar-sidebar ul li aside {
+  padding: 0 2em 1em; }
+
+#uf-dockbar-sidebar ul li aside h5 {
+  color: #999; }
 
 #uf-dockbar-sidebar .profile-nav {
   padding: 30px;
@@ -619,7 +552,7 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-sidebar ul li > a {
   padding: 10px 12px 13px 40px;
   display: block;
- /* DB COMMENT font-weight: 600; */}
+  /* DB COMMENT font-weight: 600; */ }
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   display: inline-block;
@@ -645,16 +578,15 @@ transition: all 0.5s linear 0s; */
   padding-left: 3px;
   padding-bottom: 4px;
   padding-top: 1px;
-  padding-right: 2px;
-}
+  padding-right: 2px; }
 
 #uf-dockbar-sidebar ul li > a .li-icon {
-  border: 0px solid rgb(153, 153, 153);
-}
+  border: 0px solid #999999; }
+
 /* DB COMMENT
 .dark a.active {
   text-decoration: underline !important;
-  color: #F16577 !important;
+  color: #c66 !important;
 }
 
 #uf-dockbar-sidebar li.admin > a {
@@ -662,11 +594,9 @@ transition: all 0.5s linear 0s; */
 }
 
 #uf-dockbar-sidebar li.admin > a {
-  background: #F16577 none repeat scroll 0% 0%;
+  background: #C66 none repeat scroll 0% 0%;
 } */
-
 /* End of temporary additions */
-
 #uf-dockbar-sidebar {
   position: fixed;
   /* db comment top: 0; 
@@ -676,8 +606,7 @@ transition: all 0.5s linear 0s; */
   height: 100%;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
 
 #uf-dockbar-sidebar {
   right: -120%;

@@ -134,23 +134,30 @@
 		  			<li class="active"><span>3</span></li>
 		  		</ul>
 				<div class="steps-content">
-					<h2>About the Campaign</h2>
-					<h3>Campaign Url*</h3>
-					<div class="decor-field">
-						<input type="text" value="www.giving.com/" />
-						<input type="text" placeholder="Capmaign Title" />
+					<div class="decor-field-area" id="user-about-links">
+						<h2>About the Campaign</h2>
+						<h3>Campaign Url*</h3>
+						<div class="control-group success">
+							<div class="decor-field input-prepend input-append">
+								<span class="add-on" id="yui_patched_v3_11_0_1_1448441695623_602">giving.sg/campaigns/</span>
+								<input type="text" placeholder="Capmaign Title" />
+							</div>
+							<div class="decor-field pull-left" style="width:100%"> 
+								<input type="button" id="shortUrlGenerator" value="Generate Short Url">
+								<input type="text" id="shortUrl" placeholder="http://bit.ly/givingsg" disabled=""> <input type="hidden" id="hiddenShortUrl" name="_campaign_WAR_givingsgportlet_campaign_short_url"> 
+							</div>
+						</div>
 					</div>
-					<div class="btn-area">
-						<input type="submit" value="Generate Short Url" />
+					<div class="decor-field-area">
+						<label>Campaign Image*</label>
+						<div class="default-image">
+							<img src="images/image.gif" alt="" width="244" height="132" />
+						</div>
+						<ul class="add-btn-lst">
+							<li><a href="#">Choose another image</a></li>
+							<li><a href="#">Upload</a></li>
+						</ul>
 					</div>
-					<label>Campaign Image*</label>
-					<div class="default-image">
-						<img src="images/image.gif" alt="" width="244" height="132" />
-					</div>
-					<ul class="add-btn-lst">
-						<li><a href="#">Choose another image</a></li>
-						<li><a href="#">Upload</a></li>
-					</ul>
 					<div class="decor-field-area">
 						<label>Campaign Description</label>
 						<div class="decor-txtarea">

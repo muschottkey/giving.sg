@@ -353,7 +353,7 @@
     box-shadow: none !important;
 }
 
-.steps-content .btn-area input, .steps-content .btn-save input, .add-btn-lst a{
+.steps-content .btn-save input, .add-btn-lst a{
     background-color: #B3E7FF !important;color: #2174B5 !important;
 }
 .inform-area .box-btn .btn{

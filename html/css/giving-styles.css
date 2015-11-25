@@ -256,37 +256,39 @@ select:focus:invalid:focus { border-color: #F16577; }
     color: #F16577 !important;
 }
 .alert-danger, .alert-error h6 { text-align:center; }
+.control-group.error input:focus, .control-group.error textarea:focus{
+    color: #F16577;
+}
 
 /*Success state*/
 .control-group.success input, .control-group.success select, .control-group.success textarea,
-.control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus {
+.control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus,
+.control-group.success .pretty-text .box-footer {
     border-color: #43AD49 !important;
 }
-.control-group.error input:focus, .control-group.error textarea:focus{
-	color: #F16577;
-}
-
-.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, .control-group.success textarea{
+.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, 
+.control-group.success textarea{
     color: #333 !important;
 }
 .control-group.error .control-label, 
 .control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline{
-    color: #666 !important; 
-    font-weight: 400;
+    color: #666 !important;  font-weight: 400;
 }
-
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
-    border-color: #43AD49 !important; color: #43AD49 !important; font-weight: 400;
+    border-color: #43AD49; color: #43AD49; font-weight: 400;
 }
 .control-group .input-prepend .add-on.fa, .control-group .input-append .add-on.fa{
     font-family: "FontAwesome";
 }
-.control-group.success .pretty-text .box-footer{
-    border-color: #43AD49 !important;
-}
 .control-group.success .pretty-text textarea, .control-group.success .pretty-text p{
     color: #43AD49 !important;
 }
+#user-about-links .input-append.input-prepend .add-on:first-child{
+    float:none; width:auto; display:block; text-align:left; border:0 none; border-bottom:1px solid #DDD;
+    color:#666 !important; background:#F2F2F2; 
+}
+#user-about-links .input-append.input-prepend .add-on { height: 30px; line-height:2em;}
+
 
 /*Info state*/
 .control-group.info .control-label, .control-group.info .help-block, .control-group.info .help-inline, 
@@ -297,8 +299,10 @@ select:focus:invalid:focus { border-color: #F16577; }
 .control-group.info input, .control-group.info select, .control-group.info textarea {
     border-color:  #58c1ee !important;
 }
-.alert-info { color:#999; border: 1px solid #CCC; font-weight: 400; background:none; background:#eee; font-size:1.125em;}
-    .alert-info .black {/* color:#999; */ font-size:1em;}
+.p-section .alert-info, .p-section .aui .alert-info { 
+    background:#F2f2f2; border:0 none; color:#666; border-bottom:1px solid #DDD; font-weight:400; font-size:1.5em; 
+}
+    .alert-info .black { font-size:1em;}
 	
 	#collapse-taxdeduc .sod_select .sod_option.selected:before{color:#43AD49;}
 	#collapse-taxdeduc .sod_select .sod_option{color:#333;}
@@ -439,12 +443,23 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     
 /* UI Controls - BUTTONS */
 button, .btn, .btn:link { background-image: none !important; text-decoration: none; }
-nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+nav, .btn, .btn-large { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 
-button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-more-img {
-    line-height:1.4; text-transform: uppercase; padding: 10px 20px; border-radius: 6px; border:none;
-    background:#B3E7FF; color:#2174B5; font-size:16px; text-decoration: none; font-weight: normal; outline: none; 
-    -webkit-font-smoothing:antialiased; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
+button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more-img, #user-about-links .control-group input#shortUrlGenerator {
+    line-height:1.4;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border:none;
+    background:#B3E7FF;
+    color: #2174B5 !important;
+    font-size:16px;
+    text-decoration: none;
+    font-weight: normal;
+    outline: none;
+    -webkit-font-smoothing:antialiased;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 .btn-ghost, .gallery-txt-box .btn {
     color:#FFF; background-color: transparent; box-shadow:none; -webkit-user-select: none; 
@@ -455,6 +470,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-mor
 .btn-toggle .btn.active, .btn-toggle .btn:active, .btn-toggle .btn:focus { 
     background-color:#17a4e1; color: #FFF; 
 }
+#user-about-links input { border-width:0 0 1px; font-size:16px; color:#333; height: 40px; margin:0 auto;}
+#shortUrl { max-width: 305px;border-color: #ddd !important;}
 
 /* UI Controls - BUTTONS (HOVER / ACTIVE) */
 /* LIGHTER BLUE  */
@@ -466,16 +483,15 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-mor
 .donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
 .ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, .ttl-row .btn:hover,
-     .inform-area .box-btn .btn:hover { 
-        background-color:#B3E7FF; color: #2174B5; border:none; outline:0;
+#user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover { 
+    background-color:#B3E7FF; color: #2174B5; border:none; outline:0;
 }
-
 .btn-group .btn.btn-ghost, .btn-ghost { box-shadow:none; border:0; }
 
-.btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  
-.steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover,
-.add-bottom-lst input:hover, .btn-more-img:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+.btn:hover, .btn-large:hover, .btn-floating:hover, .open-more:hover, .btn-more-img:hover,
+.steps-content .btn-save input:hover, .steps-content .btn-area input:hover, .add-btn-lst li a:hover,
+.add-bottom-lst input:hover, #user-about-links input#shortUrlGenerator:hover {
+    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 }
 
 /*  BRIGHT BLUE  */
@@ -500,11 +516,16 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-mor
 /* CUSTOM BUTTONS */
 .gallery-txt-box .btn { border: 1px solid #B3E7FF;  color:#FFF; }
 .gallery-txt-box .btn:hover{ background-color: #0e678e; border: 1px solid #0e678e; }
+#user-about-links input#shortUrlGenerator {
+    margin-right:10px !important;
+    margin-left:5px !important;
+    text-align: center;
+    float: left;
+}
 
 /* BUTTON UI (standardization) */
 .aui .btn-large, .aui .btn-block{
-    -webkit-border-radius: 6px;
-    border-radius: 6px;
+    -webkit-border-radius: 6px;  border-radius: 6px;
 }
 .btn-ghost:focus, .donate-trig.btn-default:focus, .donors-area .btn-area span:focus, .open-more:focus, 
 .btn-more-img:focus {
@@ -1089,24 +1110,9 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
 
-#user-about-links input{ 
-    border-width:0 0 1px !important;font-size:16px !important;padding-left:5px !important;height: 40px; margin:0 auto !important;
-}
 #user-about-links .input-append.input-prepend{width: 55%;float: left;}
-#user-about-links .input-append.input-prepend .add-on{height: 30px;font-size: 12px;line-height: 2.5em;}
 #user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686; border-width:0 0 1px !important; border-radius:0 !important; margin:1px 0 0;}
-#user-about-links .input-append.input-prepend .add-on:first-child{
-	float:none;
-	width:auto;
-	display:block;
-	text-align:left;
-	color:#666 !important;
-	background:none;
-	border:0;
-	font-size:12px !important;
-	line-height:16px !important;
-	height:auto;
-}
+
 #user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #43AD49;content: "\f00c";}
 
 /* Set-up donation step 2*/
@@ -2928,10 +2934,9 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .steps-content .default-image{padding:0 0 20px;}
 .steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
 
-.steps-content .btn-area input, .steps-content .btn-save input{
+.steps-content .btn-save input{
     float:right; width:150px;
 }
-.steps-content .btn-area input{width:100%;}
 .add-bottom-lst{
     margin:0;
     padding:0;
@@ -2955,11 +2960,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
     top:4px;
 }
 .steps-content .add-on{
-	border:1px solid #999 !important;
-	margin-right:0 !important;
-	border-radius:0 !important;
-    margin-left:0;
-    float:left;
+	border:1px solid #DDD; margin-right:0 !important; border-radius:0 !important;
+    margin-left:0; float:left;
 }
 .steps-content .box{
     overflow:hidden;
@@ -3167,8 +3169,8 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 }
 
 /* Clear Fix */
-body:after, .wrapper:after, .gallery-txt-box:after, .control-groupafter .social-media-signup:after, 
-.section-header:after, .causes:after, .modal-header:after,
+body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .social-media-signup:after, 
+.section-header:after, .causes:after, .modal-header:after, .decor-field-area:after,
 .social-share:after, .causes ul:after, .accordion-content:after, .cpn-wrapper:after, .swiper-slide:after,
 .summary-wrapper:after, .data-list-item:after, .conf-states-wrapper:after { 
     content:""; clear:both; display:block; 
