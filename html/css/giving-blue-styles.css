@@ -610,7 +610,7 @@ button.btn.btn-ghost.delete-row {
 /*************************************************************/
             /* TEMPORARY EDITS */
 /*************************************************************/
-#donate-now, #cause-image-preview, .cn-ln-details
+#donate-now, #cause-image-preview, .cn-ln-details,s
 #cpn-info .cn-statswrapper, #cpn-info .box.causes, .evn-details .cn-days-wrapper {
     display: none;
 }
