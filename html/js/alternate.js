@@ -238,7 +238,6 @@ $('.switch').bootstrapSwitch({
 
 
     $('.select-giving').selectOrDie();
-
     $('#selectAmount').selectOrDie({
         prefix: "DOLLARS",
         onChange: function(){
@@ -248,7 +247,6 @@ $('.switch').bootstrapSwitch({
             $('#selAmount').css('width', dynamic_width);
         }
     })
-
     $('.select-giving-autofit').selectOrDie({
         onChange: function(){
             var amtvalue = $(this).val();
