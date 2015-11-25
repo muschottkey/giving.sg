@@ -146,14 +146,6 @@
 #cpn-donate-now .donate-btns{
     margin-top: 15px;
 }
-.may-like-title{
-    margin-top:10px;
-    margin-bottom:5px;
-}
-.may-like-title + .cpn-holder{
-    margin-top: 5px;
-}
-
 .row-fluid.m-bot20 .action-link,
 .box-r-footer a,
 #dtn-user-large-cta .action-link, 

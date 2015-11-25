@@ -46,27 +46,29 @@ header a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
     h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
         color:#242424; text-decoration:underline; 
     }
-.inform-area h2 { font-size:2.75em; font-weight: 100; }         /* 44px */
-h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title { font-size:2.125em; font-weight:300; }  /* 34px */
-
-.section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
-    font-size: 1.125em; color:#242424; font-weight: 400;
-}
+/* 44px */  .inform-area h2 { font-size:2.75em; font-weight: 100; }         
+/* 34px */  
+h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title { font-size:2.125em; font-weight:300; }  
 h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { 
     margin: 24px 0 .5rem !important; font-weight:400; 
 }
     h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { font-size: 1.5em; text-align:left; }
-    h4.cpn-story-title {margin-bottom:0.25em;}
+    h4.cpn-story-title { margin-bottom:0.25em; }
 
-    #cpn-meta h5, .contact-us h5 { margin-top: 24px; font-size:1.125em; }
-
+/* 18px */ 
+.section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
+    font-size: 1.125em; color:#242424; font-weight: 400;
+}
+#cpn-meta h5, .contact-us h5 { margin-top: 24px; font-size:1.125em; }
 .box h5 { font-size: 1.2em; }
 .p-section .form-group h5 { color:#666; }
+
+.may-like-title { margin-top:10px; margin-bottom:5px; }
+.may-like-title + .cpn-holder { margin-top: 5px; }
 
 /* CONTENT HEADINGS */
 .main-content h3.landing { font-size:2.75em;font-weight:100;} /* 44px */
 .main-content h3 { font-size: 2.125em; }
-
 .main-content .ttl-row h3 { float:left; width:65%; text-align:left; margin:.25em 0 0; font-size:1.75em; }
 
 /* BODY TEXT */
@@ -1516,7 +1518,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     touch-action: pan-y;
     -webkit-tap-highlight-color: transparent;
 }
-.wrapper-925 .cpn-holder {width: 101%;padding: 0;margin-left: -1%;margin-right: -4%;}
+.wrapper-925 .cpn-holder { width: 101%; padding: 0; margin:0 -4% 30px -1%;}
 #causesCheckboxes .popover-filter input[type=checkbox]:checked + label:before {
   color: #F16577; 
 }
@@ -1536,14 +1538,25 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .cpn-suggestions .swiper-slide {width:270px;}
 .cpn-sgtn-item {
-    width: 270px; height: 480px; float:left; margin-right:20px; position: relative; overflow: hidden;
-    -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -o-user-select: none;
-    user-select: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+    width: 270px;
+    height: 485px;
+    float:left;
+    margin-right:20px;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .tab-section .cpn-sgtn-item { display:block !important; }
 
 /* Listings & Search Results */
-.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 410px;height: auto;}
+.listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em;min-height: 415px;height: auto;}
     .search-results-wrapper .cpn-sgtn-item { display:none; }
 
 .cpn-sgtn-item .sgtn-body {
@@ -1555,13 +1568,14 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 
 .sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto; float:none; padding:0; }
-.campaign-stats {margin: 0 auto;padding: 5px 0 10px;}
+.campaign-stats {margin: 0 auto;padding: 15px 0 10px;}
 .cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em;max-height: 9.4em;} 
 
 .add-cpn-btn .sgtn-img { height: auto;font-size: 16px;}
 .sgtn-body .causes { padding:.5em 0; display:none; }
 
-.sgtn-body p {margin:0 auto 5px;min-height: 4em;max-height: 6em;overflow: hidden;font-size: .9375em;}
+.sgtn-body p { margin:0 auto 5px;min-height: 4em;max-height: 6em;overflow: hidden;font-size: .9375em;}
+    .sgtn-body .heading-group p { margin-top:25px; }
     .sgtn-body .campaign-stats button { width:100%;}
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DDD;}
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
