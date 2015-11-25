@@ -76,7 +76,8 @@ h3.may-like-title { margin-top:10px; margin-bottom:5px; }
 	#gf-bkt-wrapper .gf-bkt tr td.info .fa.fa-info-circle{display:none;}
 
 /* SMALL BODY TEXT */
-p.small.text-center {font-size: 1em;}
+p.small.text-center { font-size:1em; }
+.box .small.grey { color:#555; }
 
 /********************       LANDING PAGES CONTAINERS        ****************/
 .main-content .bg-lightgrey { padding-top:20px; max-height: 400px; }
@@ -375,9 +376,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 }
 
 
-
-
-
 /* MODAL - UI Controls */
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
@@ -441,39 +439,38 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     
 /* UI Controls - BUTTONS */
 button, .btn, .btn:link { background-image: none !important; text-decoration: none; }
+nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+
 button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-more-img {
     line-height:1.4; text-transform: uppercase; padding: 10px 20px; border-radius: 6px; border:none;
     background:#B3E7FF; color:#2174B5; font-size:16px; text-decoration: none; font-weight: normal; outline: none; 
     -webkit-font-smoothing:antialiased; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
 }
 .btn-ghost, .gallery-txt-box .btn {
-    color:#FFF; background-color: transparent; box-shadow:none;
-    -webkit-user-select: none; will-change: opacity, transform;
-    -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
+    color:#FFF; background-color: transparent; box-shadow:none; -webkit-user-select: none; 
+    will-change: opacity, transform; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
 }
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn,.choice-buttons button.yes.active, 
 .btn-toggle .btn.active, .btn-toggle .btn:active, .btn-toggle .btn:focus { 
     background-color:#17a4e1; color: #FFF; 
 }
-.btn-group .btn.btn-ghost{ box-shadow:none; }
-
-nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
 
 /* UI Controls - BUTTONS (HOVER / ACTIVE) */
 /* LIGHTER BLUE  */
 .btn:hover, .btn:active, .btn:focus, .aui .btn:hover, .aui .btn:active, .aui .btn:focus, 
-.btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
-.aui .btn-ghost:hover, .aui .btn-ghost:focus, .aui .btn-ghost:focus,  
-.open-more:hover, .open-more:active, .open-more:focus, .btn-more-img:hover, .btn-more-img:active, .btn-more-img:focus, 
+.btn-ghost, .btn-ghost:hover, .btn-ghost:active, .btn-ghost:focus,
+.aui .btn-ghost, .aui .btn-ghost:hover, .aui .btn-ghost:focus, .aui .btn-ghost:focus,  
+.open-more, .open-more:hover, .open-more:active, .open-more:focus, 
+.btn-more-img:hover, .btn-more-img:active, .btn-more-img:focus, 
 .donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
-.ttl-row .btn:hover, #copy-url:hover, .load-all-results:hover, .ttl-row .btn:hover
+.ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, .ttl-row .btn:hover,
      .inform-area .box-btn .btn:hover { 
-        background-color:#B3E7FF; color: #2174B5; border:none; 
+        background-color:#B3E7FF; color: #2174B5; border:none; outline:0;
 }
-.gallery-txt-box .btn:hover { background-color: #0e678e; color:#FFF; }
+
+.btn-group .btn.btn-ghost, .btn-ghost { box-shadow:none; border:0; }
 
 .btn:hover, .btn-large:hover, .btn-floating:hover,.open-more:hover,  
 .steps-content .btn-save input:hover, .steps-content .btn-area input:hover,.add-btn-lst li a:hover,
@@ -489,10 +486,11 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 .add-bottom-lst input:hover, .add-bottom-lst input:active,
 #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus,
 #login_button:hover, #login_button:focus,
-#LoginForm .btn:hover, #LoginForm .btn:active {
-    background-color: #0E678E;
-    color:#FFF;
+#LoginForm .btn:hover, #LoginForm .btn:active,
+.gallery-txt-box .btn:hover {
+    background-color: #0E678E; color:#FFF;
 }
+
 .modal-footer button { margin-left:10px; }
 .btn:disabled, .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 .btn-group .btn.btn-ghost.active,
@@ -509,7 +507,7 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
     border-radius: 6px;
 }
 .btn-ghost:focus, .donate-trig.btn-default:focus, .donors-area .btn-area span:focus, .open-more:focus, 
-.btn-more-img:focus{
+.btn-more-img:focus {
     border:0 none; outline: 0 !important;
 }
 .popover-content .btn.pull-right{
@@ -554,14 +552,58 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
   background: #E6E4DD;
 }
 
-
-
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px; }
 
 #cpn-donate-now .box > h4 + .indicate-tdr {
     background:url(../images/ico-tax-deductible.png) no-repeat 0 0;
     background-size: 30px; font-size: 1em; display: block; line-height: 1;
+}
+/* UI Controls - BUTTONS (Button Group / Toggle)  */
+/* BUTTON OPTIONS */
+#donate-buttons { font-size: inherit; white-space: normal; }
+#donate-buttons.npo-deet button { margin-top: 1px; }
+
+/* UI Controls - BUTTONS (Button Group / Toggle)  */
+.preset-amts button, #donate-buttons button, #vol-buttons button, .btn-toggle button, .choice-buttons button {
+    background:#FFF; border:1px solid #DDD; color: #666; font-size:17px; border-radius: 4px;
+    line-height:1.2; outline: none; box-shadow: none;
+} 
+    .preset-amts button, #donate-buttons button, #vol-buttons button, .choice-buttons button {
+        width:80px; height:40px; margin: 10px 4px; padding:5px 10px; 
+    }
+    #donate-buttons button { width: 46%; float:left; margin: 5px 2%; }
+    .choice-buttons button {width:35%;}
+
+.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
+.btn-group > .btn:first-child { border:1px solid #DDD; }
+
+.choice-buttons button:hover, .choice-buttons button.active { 
+    background:#FFF; color:#666; box-shadow:none; outline: none; border:none;
+}
+.choice-buttons button.yes:hover, .choice-buttons button.yes.active { background:#43AD49; color:#FFF; }
+.choice-buttons button.no:hover, .choice-buttons button.no.active { background-color: #F16577; color: #FFF; }
+   
+    
+
+
+.btn-toggle button:hover, .btn-toggle button:focus, .btn-toggle button:active,  
+.preset-amts button:hover, .preset-amts button:focus, .preset-amts button:active,
+#donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active, #donate-buttons button.active,
+#vol-buttons button:hover, #vol-buttons button.active { 
+    border-color:#17a4e1; background:#17a4e1; color:#fff; box-shadow: none;
+}
+    .btn-toggle button:hover,.btn-toggle button:focus, .btn-toggle button:active { border:0 none; }
+
+.btn-toggle { margin-bottom: 30px; width:100%; }
+.btn-toggle button i { margin-right:10px; font-size:36px; color:#666; }
+.btn-toggle button.active i, .btn-toggle button:hover i { color:#fff; }
+    .btn-toggle .btn span{
+        display: inline-block; white-space: normal; text-transform: capitalize;
+        margin-right:0; width:100px; text-align: left;
+    }
+.load-all-results i, .btn i, .more-donations i{
+  display: inline-block; width: auto; margin: 0 5px 0 0; color: #2174B5;
 }
 
 /*Custom caret for dropdowns*/
@@ -608,36 +650,6 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 .control-group.error .validation-feedback i { color: #F16577; }
 .control-group.success .validation-feedback i { color: #43AD49;font-size: 12px;}
 
-/* UI Controls - BUTTONS (Button Group / Toggle)  */
-.preset-amts button, #donate-buttons button, #vol-buttons button, .btn-toggle button {
-    background:#FFF; border:1px solid #DDD; color: #666; font-size:17px;
-    line-height:1.2; outline: none; box-shadow: none;
-} 
-.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
-.btn-group > .btn:first-child { border:1px solid #DDD; }
-.preset-amts button, #donate-buttons button, #vol-buttons button {
-    width:80px; height:40px; border-radius: 4px; margin: 10px 4px; padding:5px 10px;
-}
-    #donate-buttons button { width: 46%; float:left; margin: 5px 2%;min-width: inherit; }
-
-.btn-toggle button:hover, .btn-toggle button:focus, .btn-toggle button:active,  
-.preset-amts button:hover, .preset-amts button:focus, .preset-amts button:active,
-#donate-buttons button:hover, #donate-buttons button:focus, #donate-buttons button:active, #donate-buttons button.active,
-#vol-buttons button:hover, #vol-buttons button.active { 
-    border-color:#17a4e1; background:#17a4e1; color:#fff; box-shadow: none;
-}
-    .btn-toggle button:hover,.btn-toggle button:focus, .btn-toggle button:active { border:0 none; }
-
-.btn-toggle { margin-bottom: 30px; width:100%; }
-.btn-toggle button i { margin-right:10px; font-size:36px; color:#666; }
-.btn-toggle button.active i, .btn-toggle button:hover i { color:#fff; }
-    .btn-toggle .btn span{
-        display: inline-block; white-space: normal; text-transform: capitalize;
-        margin-right:0; width:100px; text-align: left;
-    }
-.load-all-results i, .btn i{
-  display: inline-block; width: auto; margin: 0 5px 0 0; color: #2174B5;
-}
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #43AD49 !important;}
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{background-color:#F16577!important;}
 .link-add-leader{
@@ -807,34 +819,17 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .tax-status i {margin-right:3px;}
 .tax-status.large i{margin-left: -26px;margin-top:-3px;position:absolute;font-size: 1.5em;}
 .tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
-.box .small.grey{color: #333;}
+
 .box > h4{margin-bottom: 0px;}
 #cpn-donate-now .box > h4 {display: none;}
-.box-footer{border-top:1px solid #CCC;margin-top:30px;}
+.box-footer{border-top: 1px solid #DDD;margin-top: 15px;padding-top: 7px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
-.choice-buttons{margin-top: 30px;}
-.choice-buttons button{width: 35%;padding: 7px;min-width: inherit;
-    font-size: 16px;
-    color: #666;
-    background: #FFF;
-    border: 1px solid #CCC;
-    outline: none;
-    box-shadow: none;}
-.choice-buttons button:hover{
-     background: #FFF;
-}
-.choice-buttons button.active{outline: none;border:none;color: #fff;box-shadow: none;}
-.choice-buttons button.yes.active{background-color: #43AD49;border-color:#43AD49;color: #ffffff !important;}
-.choice-buttons button.no.active{background-color: #F16577 !important;border-color:#F16577;color: #ffffff !important;}
 .contact-us { padding-right: 20px; }
-
-.btn-ghost{ box-shadow: none;border-radius:6px;}
 
 .amount-pledged{width: 40px;margin-top: 4px;}
 .amount-pledged span{float: left;}
 .amt-value{font-size: 24px;}
 .more-donations{margin-top: 20px;padding-top: 15px;padding-bottom: 15px;margin-bottom: 15px;text-transform: lowercase;font-weight: 400;}
-.more-donations i{margin-right: 6px;color: #333;font-size: 1.25em;position: relative;margin-top:-4px; display:inline-block;vertical-align:middle;}
 
 /* Widgets*/
 .widget{display: none;opacity:0.5;margin-top: 100px;transition:all 2s ease-in-out;overflow: hidden;}
@@ -1147,13 +1142,7 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .mobile-title{width: 181px;}
 
 #cpn-donate-now .box {padding-left: 1.25em;padding-right: 1.25em;}
-#donate-buttons{
-    font-size: inherit;
-    white-space: normal;
-}
-#donate-buttons.npo-deet button{
-    margin-top: 1px;
-}
+
 
 
 #donate-buttons span.small{
