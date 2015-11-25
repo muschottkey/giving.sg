@@ -93,8 +93,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper .portlet-
 .aui .btn-group > .btn + .dropdown-toggle {
   box-shadow: none; }
 
-.aui img {
-  width: auto\9; }
+
 
 /* .aui .modal-header {
 	border-bottom: medium none;
