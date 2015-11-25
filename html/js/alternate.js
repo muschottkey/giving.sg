@@ -8,7 +8,7 @@ $(function(){
             $('#signupModal').modal('show');
         }, 1000);
     })
-    $('#loginModal .close').click(function(){
+    $('#loginModal .close,.modal-backdrop ').click(function(){
         $('#loginModal').hide();
         $('.modal-backdrop').remove();
     });
@@ -863,7 +863,7 @@ function showSidebar(winWidth){
       $(this).closest('.person-actions').find('.show-more').text("View volunteer answer")
   })
     $('.more-details').on('show', function () {
-      $(this).closest('.person-actions').find('.show-more').text("+ MORE DETAILS")
+      $(this).closest('.person-actions').find('.show-more').text("- LESS DETAILS")
   })
 
     /* MULTI STATE CHECKBOXES */
