@@ -574,13 +574,13 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
 .preset-amts button, #donate-buttons button, #vol-buttons button, .btn-toggle button {
-    background:#FFF; border:1px solid #DDD; color: #666; font-size: 16px;
+    background:#FFF; border:1px solid #DDD; color: #666; font-size:17px;
     line-height:1.2; outline: none; box-shadow: none;
 } 
 .btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
 .btn-group > .btn:first-child { border:1px solid #DDD; }
 .preset-amts button, #donate-buttons button, #vol-buttons button {
-    width:80px; height:40px; font-size: 1.125em; border-radius: 4px; margin: 10px 4px; padding:5px 10px;
+    width:80px; height:40px; border-radius: 4px; margin: 10px 4px; padding:5px 10px;
 }
     #donate-buttons button { width: 46%; float:left; margin: 5px 2%;min-width: inherit; }
 
