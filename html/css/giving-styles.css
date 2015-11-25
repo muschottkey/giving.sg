@@ -1513,7 +1513,11 @@ span.span12.read-more.text-left.m-0{display: none;}
   color: #F16577; 
 }
 .aui .btn-success{margin-bottom:15px !important;}
-    .aui .causes .ico-tdr.btn-success { margin-bottom:0 !important;} 
+    .aui .causes .ico-tdr.btn-success { margin-bottom:0 !important;}
+	.aui .img-rounded{
+		border-radius:150px !important;
+		-webkit-border-radius:150px !important;
+	} 
 
 /*********************      CARDS UI       ********************/
 .cpn-wrapper { position:relative; display:block;overflow:hidden; margin:0;padding:0 0 10px;}
