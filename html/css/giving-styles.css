@@ -21,18 +21,15 @@ h4, h5 { font-weight:500; }
 
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label {text-shadow:none !important;}
 p, p.black {font-size: 1em;line-height: 1.4;margin: 0 0 1em;color: #555;}
-textarea, input { font-size:.935em; line-height:1.4; word-wrap: break-word; }
+textarea, input { font-size:1em; line-height:1.4; word-wrap: break-word; }
 
 ::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
 input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
-input[type="text"], input[type="password"], textarea{-webkit-appearance: none !important;}
-input::-webkit-clear-button, textarea::-webkit-clear-button{
-	-webkit-appearance: none !important;
-	display:none !important; 
-}
-::-webkit-search-cancel-button {
-    -webkit-appearance: none !important;
-}
+
+input[type="text"], input[type="password"], textarea, 
+input::-webkit-clear-button, textarea::-webkit-clear-button,
+::-webkit-search-cancel-button { -webkit-appearance: none !important; }
+input::-webkit-clear-button, textarea::-webkit-clear-button { display:none !important; }
 
 a, a:link { color:#17a4e1; text-decoration: underline;}
     a:hover { color:#2174b5; }
@@ -342,8 +339,43 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .modal.fade.in { display:block; }
 .modal-header {border-bottom: none;padding: 25px 15px 0;}
 .modal-header .close {position:absolute; right: 10px; top:0;padding: 10px;}
-.modal-body { max-width:800px; }
+.modal-body {max-width: 780px;}
 .modal-footer { text-align:center; padding: 10px 5px; border: none;}
+
+/* MODAL - ONE COLUMN */
+.modal-one-column, .modal-one-column input:not([type=checkbox]) { text-align:center; }
+.modal-one-column .modal-body-container { text-align:left; }
+.modal-one-column { max-width:600px !important; } 
+.modal-one-column .modal-body, .one-column .span4 { max-width:400px; width:100%; margin:0 auto; float:none; }
+    .one-column .span4 { margin-top:40px; }
+.modal-one-column .radio input[type="radio"], .modal-one-column .checkbox input[type="checkbox"] { 
+    float:none; margin-top: 0; 
+}
+/* MODAL - TWO COLUMN */
+.modal .row-fluid .span6 { padding: 1em 0 0 3em; } 
+    .modal .row-fluid .span6:first-child { padding-left:0; } 
+
+/* MODAL - Sign up [Social Media] */ 
+.modal .row-fluid .social-media-signup { padding:0 3em; }
+.modal .social-media-signup a {
+    padding:13px; margin:20px auto 0; clear:both; 
+    color:#fff !important; border-radius:2px; text-align: center;
+}
+.modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
+    text-decoration: none; opacity: 0.8; color:#fff !important;
+}
+.modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
+    .modal .social-media-signup a.facebook { background-color: #334479; }
+    .modal .social-media-signup a.linkedin { background-color: #0077B5; }
+
+.or-separator{
+    position: absolute; top: 15em; right:calc(50% - 34px); background:#d8d8d8; 
+    padding:12px; border:1px solid #cccccc; border-radius: 50%; font-size: 0.875em;
+}
+
+
+
+
 
 /* MODAL - UI Controls */
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
@@ -421,7 +453,9 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,  .open-more, .btn-mor
     transition: all 0.3s ease-out;
 }
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn,.choice-buttons button.yes.active, 
-.btn-toggle .btn.active { background-color:#17a4e1; color: #FFF; }
+.btn-toggle .btn.active, .btn-toggle .btn:active, .btn-toggle .btn:focus { 
+    background-color:#17a4e1; color: #FFF; 
+}
 .btn-group .btn.btn-ghost{ box-shadow:none; }
 
 nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);}
@@ -454,8 +488,7 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 .add-bottom-lst input:hover, .add-bottom-lst input:active,
 #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus,
 #login_button:hover, #login_button:focus,
-#LoginForm .btn:hover, #LoginForm .btn:active,
-.btn-toggle .btn.active:hover {
+#LoginForm .btn:hover, #LoginForm .btn:active {
     background-color: #0E678E;
     color:#FFF;
 }
@@ -613,36 +646,6 @@ nav, .btn, .btn-large {box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0
 	font-size:14px;
 	line-height:17px;
 }
-/* MODAL - ONE COLUMN */
-.modal-one-column, .modal-one-column input:not([type=checkbox]) { text-align:center; }
-.modal-one-column .modal-body-container{text-align:left;}
-.modal-one-column { max-width:600px !important; } 
-.modal-one-column .modal-body, .one-column .span4 { max-width:400px; width:100%; margin:0 auto; float: none; }
-    .one-column .span4 { margin-top:40px; }
-.modal-one-column .radio input[type="radio"], 
-    .modal-one-column .checkbox input[type="checkbox"] { float:none; margin-top: 0; }
-
-/* MODAL - TWO COLUMN */
-.modal .row-fluid .span6 {padding: 1em 0 0 3em;} 
-    .modal .row-fluid .span6:first-child {padding-left: 0;} 
-
-/* Social Media */ 
-.modal .social-media-signup a {
-    padding:13px; margin:20px auto 0; clear:both; 
-    color:#fff !important; border-radius:2px; text-align: center;
-}
-.modal .social-media-signup a:focus, .modal .social-media-signup a:hover {
-    text-decoration: none; opacity: 0.8; color:#fff !important;
-}
-.modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
-    .modal .social-media-signup a.facebook { background-color: #334479; }
-    .modal .social-media-signup a.linkedin { background-color: #0077B5; }
-
-.or-separator{
-    position: absolute; top: 15em; right:calc(50% - 34px); background:#d8d8d8; 
-    padding:12px; border:1px solid #cccccc; border-radius: 50%; font-size: 0.875em;
-}
-
 /* Sign Up As Individual Page */
 .signup-section { margin-bottom:30px; }
     .modal-header .signup-section { margin-bottom:0; }
