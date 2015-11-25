@@ -49,9 +49,9 @@ h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title { font-size:2.125em; font
 h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { 
     margin: 24px 0 .5rem !important; font-weight:400; 
 }
+/* 24px */ 
     h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { font-size: 1.5em; text-align:left; }
     h4.cpn-story-title { margin-bottom:0.25em; }
-
 /* 18px */ 
 .section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
     font-size: 1.125em; color:#242424; font-weight: 400;
@@ -60,8 +60,9 @@ h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 {
 .box h5 { font-size: 1.2em; }
 .p-section .form-group h5 { color:#666; }
 
-.may-like-title { margin-top:10px; margin-bottom:5px; }
-.may-like-title + .cpn-holder { margin-top: 5px; }
+h3.may-like-title { margin-top:10px; margin-bottom:5px; }
+    .volunteer-activity .m-bot30 h4 { font-size: 1.5em; font-weight: 400; margin-top:10px; margin-bottom:5px; }
+.may-like-title + .cpn-holder, .volunteer-activity .m-bot30 h4 + .cpn-holder { margin-top: 5px; }
 
 /* CONTENT HEADINGS */
 .main-content h3.landing { font-size:2.75em;font-weight:100;} /* 44px */
@@ -859,7 +860,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 /* Gift Box */
 .gift-box{font-size: 8em !important;position: relative;}
 .gift-box img {width:128px;}
-.gift-box span.badge{position: absolute;top: 35%;right: 22%;padding: 12px;width: 15px;}
+.gift-box span.badge{position: absolute;top: 27%;right: 30%;padding: 12px;width: 15px;font-size: 16px;}
 
 /* set up donation */
 .focused{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
@@ -1505,10 +1506,10 @@ span.span12.read-more.text-left.m-0{display: none;}
 .pre-footer-social .cpn-url-box button { border:0 none; }
 
 /* Suggestions widget */
-.cpn-holder { 
-    position: relative; 
+.cpn-holder {
+    position: relative;
     display: block;
-    margin: 30px auto 50px;
+    margin: 20px auto 50px;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-user-select: none;
@@ -1537,7 +1538,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     top:0;
     left:0;
     display:block;
-    padding: 2em 1%;
+    padding: 1em 1% 2em;
 }
 .cpn-suggestions .swiper-slide {width:270px;}
 .cpn-sgtn-item {

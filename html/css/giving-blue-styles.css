@@ -571,7 +571,7 @@ button.btn.btn-ghost.delete-row {
   font-weight: 500;
 }
 .cpn-url-box input.span10{margin-right: 0;}
-#save-actions button, #setup-dtn-conf-submission, #subAttendees, .donate-btns button, #vw-gift-bkt-donate button, #donateLoggedModal .modal-footer button{min-width: 150px;}
+#save-actions button, #setup-dtn-conf-submission, .donate-btns button, #vw-gift-bkt-donate button, #donateLoggedModal .modal-footer button{min-width: 150px;}
 
 .cpn-url-box button{min-width: inherit;}
 
