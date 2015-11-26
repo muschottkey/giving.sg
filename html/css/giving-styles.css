@@ -451,6 +451,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
     background:#B3E7FF; color: #2174B5; font-size:16px; text-decoration: none; font-weight: normal; 
     outline: none; -webkit-font-smoothing:antialiased; -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
 }
+#cpn-meta .special-btn{
+	padding:15px 20px;
+	background:#fff;
+	color:#666;
+}
     #user-about-links .control-group input#shortUrlGenerator { color: #2174B5 !important; }
     
 .btn-ghost, .gallery-txt-box .btn {
@@ -587,8 +592,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
     #donate-buttons button { width: 46%; float:left; margin: 5px 2%; }
     .choice-buttons button {width:35%;}
 
-.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
-.btn-group > .btn:first-child { border:1px solid #DDD; }
+/*.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
+.btn-group > .btn:first-child { border:1px solid #DDD; }*/
 
 .choice-buttons button:hover, .choice-buttons button.active { 
     background:#FFF; color:#666; box-shadow:none; outline: none; border:none;
@@ -2257,9 +2262,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar ul li{
     list-style: none;  background-color: #FFF;
 }
-#sidebar ul li.active a{
-    color: #91C2AF;
-}
+#sidebar ul li.active a{background-color: #f2f2f2; font-weight: bold;box-shadow: 5px 0px rgba(67,173,73,1) inset !important; }
 #sidebar .b-top{ border-top: 1px solid #CCC; border-bottom:2px solid #CCC; }
 #sidebar ul li.dark h5, #sidebar ul li > a { padding:12px 15px 13px 30px; display: block; } 
  #sidebar ul li h5 { color: #333; padding:0; } 
@@ -2272,6 +2275,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     border:1px solid #cccccc;
     background-color: #ffffff;
     border-radius: 100px;
+	display:none;
 }
 #sidebar ul li.active > a .li-icon{
     background-color: #43AD49;
@@ -2284,6 +2288,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 #sidebar .profile-nav { padding:30px;border-bottom:1px solid #CCC; }
     #sidebar .profile-nav .img-circle { max-width:150px;background: #F7F7F7;border: 1px solid #ccc;max-height: 150px;margin-bottom: 10px;}
 #sidebar .profile-nav h4 { margin-top:10px; }
+
 
 aside.profile-nav.mobile-fallback{
     width: 190px;
@@ -3396,6 +3401,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
 }
 
 @media (max-width: 979px) {
+	#view-campaign .cpn-contact-info{margin-top:15px;}
     #wrapper { padding-top:50px; }
     .top-title-area{margin-bottom:10px;}
 
@@ -4212,6 +4218,17 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
     
 }
 @media (max-width:360px) {
+	.vpos-meta .openings{
+		float:none;
+		text-align:center;
+		padding:0 0 7px;
+	}
+	.vpos-meta button.btn{
+		float:none;
+		display:block;
+		margin:0 auto 8px;
+		clear:both;
+	}
     #cpn-donate-now .box > h4 + .indicate-tdr { line-height:1.5; }
 
     .evn-details .img-box{margin-right:6px;}
