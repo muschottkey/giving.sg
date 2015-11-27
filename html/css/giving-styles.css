@@ -56,7 +56,7 @@ h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 {
 .section-header h5, .section-header h6, .p-section h5, .p-section .box h5, .box h5 {
     font-size: 1.125em; color:#242424; font-weight: 400;
 }
-#cpn-meta h5, .contact-us h5 { margin-top: 24px; font-size:1.125em; }
+#cpn-meta .span4 h5, .contact-us h5 { margin-top: 24px; font-size:1.125em; }
 .box h5 { font-size: 1.2em; }
 .p-section .form-group h5 { color:#666; }
 
@@ -105,7 +105,7 @@ p.small.text-center { font-size:1em; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3 { margin:0; }
-.bg-giving-blue,Â .causes li.ico-tdr { 
+.bg-giving-blue,Ã‚Â .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
 
@@ -243,7 +243,7 @@ select:focus:invalid:focus { border-color: #F16577; }
 .control-group.error select, .control-group.error textarea{
     color: #333 !important;
 }
-.control-group.error .help-block p, .control-group.error .help-block,Â .control-group.error .help-inline{
+.control-group.error .help-block p, .control-group.error .help-block,Ã‚Â .control-group.error .help-inline{
     color: #F16577; font-weight: 400;
 }
 .control-group.error .help-block.smaller, #donation-userDetails .smaller { font-size: 0.875em; }
@@ -614,7 +614,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
         display: inline-block; white-space: normal; text-transform: capitalize;
         margin-right:0; width:100px; text-align: left;
     }
-.load-all-results i, .btn i, .more-donations i{
+.load-all-results i, .btn i,Â .more-donations i{
   display: inline-block; width: auto; margin: 0 5px 0 0; color: #2174B5;
 }
 
@@ -1595,7 +1595,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     height:9px;
     text-align:center;
 }
-.sgtn-body h5 {
+.sgtn-body h5, #cpn-meta .sgtn-body h5 {
     font-size: 1.125em;
     min-height: 3.44em;
     max-height: 3.44em;
@@ -3460,7 +3460,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
     .tr-show-desktop-only{display: none !important;}
 
     /* CONTENT LAYOUT */
-    .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid > .span7, #cpn-meta .row-fluid > .span12 {
+    .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid > .span7,Â #cpn-meta .row-fluid > .span12 {
         width:100%; margin:0; padding:0;
     }
         .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1em !important; }

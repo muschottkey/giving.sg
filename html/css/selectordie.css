@@ -72,7 +72,7 @@
         .sod_select .sod_prefix {
             float:right;
             font-size: .7em;
-            line-height: 1.6em;
+            line-height: 2em;
             margin: 0 5px;
             text-transform: lowercase;
         }
@@ -188,7 +188,7 @@
         border:1px solid #cccccc !important;
         box-shadow: 0 0 5px rgba(0,0,0,.2);
     }
-    #selAmount{ font-size: 1em;width: 160px;}
+    #selAmount{ font-size: 1em;width: 150px;}
     #selAmount.focus,  #sortSearchResults.focus{box-shadow: none;}
     #selAmount .sod_option,  #sortSearchResults .sod-option{text-align: center;}
     #selAmount .sod_label{font-size: 1.8em;}
