@@ -206,14 +206,6 @@
 /******************************************/
 /*  START OF FOOTER*/
 /*****************************************/
-.pre-footer-social{
-    background-color: #6b6b6b;
-    margin: 0 auto !important;
-    border-top-color: #353535 !important;
-    border-bottom-color: #606060  !important;
-}
-.pre-footer-social .f-block .social-share .span1{padding: 11.5px 7px;width: 48px !important;height: 48px !important;float: left;}
-.pre-footer-social .f-block .social-share .span1 i:before{position: relative;}
 .f-block .social-share .fa{margin-right: 0;}
 .pre-footer h4 { font-weight: normal; font-size: 1.3125em;}
 .pre-footer h4 a, .pre-footer h4 a:link{color: #ffffff !important;text-transform: uppercase;}
@@ -423,6 +415,7 @@
       background-color: #242424;
       border-color:#424242;
       border-width:1px 0 0;
+      margin-bottom: 0 !important;
     }
     .pre-footer .p-section{
         background-color: #333333;
@@ -555,9 +548,6 @@ button.btn.btn-ghost.delete-row {
 
 .short .cpn-sgtn-item .sgtn-body {
      min-height: 100px; 
-}
-.cpn-url-box input[type=text]{
-  border:1px solid #ccc;
 }
 .vpos-meta .openings > h4{
   font-size: 1.75em;
