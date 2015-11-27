@@ -863,7 +863,7 @@ function showSidebar(winWidth){
       $(this).closest('.person-actions').find('.show-more').text("View volunteer answer")
   })
     $('.more-details').on('show', function () {
-      $(this).closest('.person-actions').find('.show-more').text("- LESS DETAILS")
+      $(this).closest('.person-actions').find('.show-more').text("Hide details")
   })
 
     /* MULTI STATE CHECKBOXES */
