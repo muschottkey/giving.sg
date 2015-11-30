@@ -443,6 +443,26 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
     border-radius: 0;
     padding: 8px 0;
 }
+#respwdForm input.form-control,
+#claim-tax input.form-control,
+#gf-bkt-login input.form-control,
+#donation-userDetails input.form-control{
+	padding-left:42px !important;
+	padding-right:42px !important;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	height:33px;
+}
+#respwdForm input.form-control,
+#claim-tax input.form-control{height:37px;}
+
+#signupForm  input.form-control,
+#profile-form input.form-control{
+	padding-right:42px !important;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	height:37px;
+}
 
 input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .form-control:focus,
     .pre-footer-social input:focus {
@@ -562,7 +582,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
     border-radius:0 !important;
     box-shadow:none !important;
     background:none !important;
-} 
+}
 
 .btn-primary .caret:before{color: #ffffff !important;}
 
@@ -591,6 +611,9 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 #donate-buttons.npo-deet button { margin-top: 1px; }
 
 /* UI Controls - BUTTONS (Button Group / Toggle)  */
+#signupModal .btn-group.btn-toggle > .btn:first-child{
+	border:1px solid #DDD;
+}
 .preset-amts button, #donate-buttons button, #vol-buttons button, .btn-toggle button, .choice-buttons button {
     background:#FFF; border:1px solid #DDD; color: #666; font-size:17px; border-radius: 4px;
     line-height:1.2; outline: none; box-shadow: none;
@@ -1792,7 +1815,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .home-slider .swiper-button-next:hover, .home-slider .swiper-button-prev:hover{
     color: #00acd0; background: #eee; opacity: 1; 
 }
-.home-slider .swiper-button-prev:before, .home-slider .swiper-button-next:before, 
+.aui body .home-slider .swiper-button-prev:before, .aui body .home-slider .swiper-button-next:before, 
 .swiper-button-prev:before,.swiper-button-next:before  {
     font-family: "fontAwesome";
     height: 35px;
