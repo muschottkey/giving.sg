@@ -3476,7 +3476,7 @@ input[type="button"].btn-block {
 .btn-success.disabled,
 .btn-success[disabled] {
   color: #ffffff;
-  background-color: #17a4e1;*
+  background-color: #00acd0;*
   background-color: #499249;
 }
 
@@ -5007,7 +5007,7 @@ input[type="submit"].btn.btn-mini {
 .pagination ul > li > a:focus,
 .pagination ul > .active > a,
 .pagination ul > .active > span {
-  background-color: #17a4e1;
+  background-color: #00acd0;
   color: #fff;
 }
 

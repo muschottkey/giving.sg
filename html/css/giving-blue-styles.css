@@ -60,7 +60,7 @@
 .p-title.landing + p{color:#424242;}
 .gallery-txt-box {
     position: absolute;
-    background: #17a4e1;
+    background: #00acd0;
     color: #fff;
     text-align: left;
     right: 14%;
@@ -94,15 +94,11 @@
 }
 /* Why Giving  Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }   /* 24px */
-.inform-add-lst .img{padding:0 0 10px;}
 .text-block-add { background: #ededed; }
 .text-block-add:before { border-color: #ededed transparent transparent transparent; }
 
-
 /* Why Giving Corporate Identity CHANGE (BLUE) */
 /* Causes Display */
-
-
 .donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
 
 .cause-box a, .cause-box a:link { text-decoration:none; }
@@ -145,7 +141,7 @@
 .row-fluid.m-bot20 .action-link,
 .box-r-footer a,
 #dtn-user-large-cta .action-link, 
-.link-box .action-link{color:#17a4e1 !important;}
+.link-box .action-link{color:#00acd0 !important;}
 .row-fluid.m-bot20 .action-link:hover,
 .box-r-footer a:hover,
 #dtn-user-large-cta .action-link:hover, 
@@ -245,7 +241,7 @@
 
 .campaign-stats .progress .bar {
     border-radius:0px; 
-    background:#17A4E1; 
+    background:#00acd0; 
     text-shadow: none; 
     box-shadow: none;
 }
@@ -269,11 +265,11 @@
 /* Hover state of card */
 .cpn-sgtn-item:hover{
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
-    border-bottom-color:transparent; background:#17a4e1;
+    border-bottom-color:transparent; background:#00acd0;
 }
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover { background:none; box-shadow:none;  }
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
-    background-color: #17a4e1;
+    background-color: #00acd0;
     border-bottom-color: #117ca9;
 }
 .cpn-sgtn-item:hover .box-r-footer{
@@ -283,7 +279,7 @@
     color: #ffffff;
 }
 .cpn-sgtn-item:hover .campaign-stats .progress{
-    border:1px solid #17a4e1;
+    border:1px solid #00acd0;
     background-color: #0c5372;
 }
 .cpn-sgtn-item:hover .campaign-stats .progress .bar {
@@ -422,9 +418,6 @@
     }
     .social-share a i {
       line-height: 1.4 !important;
-    }
-    .inform-add-lst li{
-        width: auto !important; 
     }
 }
 @media only screen and (max-width: 768px) {

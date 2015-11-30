@@ -1304,7 +1304,7 @@ div.charity-donors img.dr-img {
 
 .main-image__item .main-image__show-holder {
   position: absolute;
-  background: #17a4e1;
+  background: #00acd0;
   color: #fff;
   text-align: left;
   width: 190px;
@@ -2298,10 +2298,10 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
     padding: 0 !important; } }
 /* added important to overwrite aui indicator*/
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active {
-  background-color: #17A4E1 !important; }
+  background-color: #00acd0 !important; }
 
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .choice-buttons button.yes.active, .btn-toggle .btn.active {
-  background-color: #17a4e1 !important;
+  background-color: #00acd0 !important;
   color: #FFF !important; }
 
 /* overwrite giving sg style .aui .btn-success */
@@ -2353,7 +2353,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   color: #fff !important; }
 
 #login_button, .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .choice-buttons button.yes.active, .btn-toggle .btn.active {
-  background-color: #17A4E1 !important;
+  background-color: #00acd0 !important;
   color: #FFF !important; }
 
 @media (max-width: 979px) {
