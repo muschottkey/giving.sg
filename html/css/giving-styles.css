@@ -221,7 +221,6 @@ hr.m5{margin: 5px 0;}
 .red{color: #F16577;}
 .white{color: #FFF;}
 .blue{color: #58c1ee;}
-.bg-green{/* background-color: #5cb85c; *//* color: #FFF; */}
 .bg-lightgrey{ background-color: #f8f8f8;padding-bottom: 20px;}
 .bg-pumpkin{background-color: #f0ad4e;color: #fff;}
     .journal-content-article .bg-darkgrey h3 { color:#FFF !important; } 
@@ -234,6 +233,11 @@ hr.m5{margin: 5px 0;}
 .show-desktop-only{display: inherit;}
 
 /* CUSTOM FORM STATES */
+::-webkit-input-placeholder { font-size:1.0625em; color:#cdcecf; font-family:"Kalam", cursive; }
+:-moz-placeholder { /* older Firefox*/ font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; }
+::-moz-placeholder { /* Firefox 19+ */  font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; } 
+:-ms-input-placeholder { font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; }
+
 #preview-label{background-color: #999;}
 
 /* error state*/
@@ -418,11 +422,17 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
 /* UI Controls - CONTROLS / FIELDS */
-textarea, input[type="text"], .button-input, .control-group .form-control { 
-    border-width:0 0 1px; border-radius:0; box-shadow:none !important; padding:6px 0; 
-    font-size:inherit; line-height:1.4; color:#333; border-color:#DDD;
+textarea, input[type="text"], .button-input, .control-group .form-control {
+    border-width:0 0 1px;
+    border-radius:0;
+    box-shadow:none !important;
+    padding:6px 0;
+    font-size:inherit;
+    line-height: 1.8;
+    color: #172A35;
+    border-color:#DDD;
 }
-    input:not([type=checkbox]) { color:#333; }
+    input:not([type=checkbox]) {color: #172A35;}
 
 .modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
 #setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
@@ -431,7 +441,7 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
     border-width: 0 0 1px;
     box-shadow:none !important;
     border-radius: 0;
-    padding: 6px 0;
+    padding: 8px 0;
 }
 
 input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .form-control:focus,
