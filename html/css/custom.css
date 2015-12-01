@@ -1815,8 +1815,9 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
   background-color: #17A4E1 !important; }
 
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-  background-color: #17a4e1 !important;
-  color: #FFF !important; }
+  /* background-color: #17a4e1 !important; */
+  color: #FFF !important;
+  }
 
 /* overwrite giving sg style .aui .btn-success */
 .aui .btn-success.m-bot10, .aui .btn-default.m-bot10 {
@@ -1853,8 +1854,9 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   color: #fff !important; }
 
 #login_button, .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-  background-color: #17A4E1 !important;
-  color: #FFF !important; }
+  /* background-color: #17A4E1 !important; */
+  color: #FFF !important;
+  }
 
 @media (max-width: 979px) {
   .upload-section .input-append {
