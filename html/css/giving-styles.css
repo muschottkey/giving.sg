@@ -140,7 +140,6 @@ label.small.grey{color: #999;}
 .side-contact a, .modal-body a.underlined{color:#00acd0;}
 .side-contact a:hover, .modal-body a.underlined:hover{color:#006b82;}
 
-.square-border{border-radius: 0;}
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline !important;margin-top: 10px; }
 .border-left{border-left: 1px solid #ddd;}
@@ -3388,7 +3387,6 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px; }
     #user-about-links .input-append.input-prepend .add-on:last-child{width: 40px;}
-    .dtn-amt-item .dtn-btns{  padding: 1.4em 0; }
     .dtn-amt-item .dtn-btns .btn{ float: left; margin-right: 10px; width: 45%; }
     .dr-img-wrapper { width:620px;} 
     .donors-area .dr-img { width:55px; height:55px; }
@@ -3492,7 +3490,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
       position: absolute;
       right: 0;
       top: 50%;
-      margin-top: -55px;
+      margin-top: -50px;
     }
 }
 @media (max-width: 979px) and (min-width: 768px) { 

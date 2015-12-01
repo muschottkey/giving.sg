@@ -244,7 +244,7 @@
     text-shadow: none; 
     box-shadow: none;
 }
-.cpn-sgtn-item.corp-blue .sgtn-body .campaign-stats button{
+.cpn-sgtn-item .sgtn-body .campaign-stats button{
     box-shadow: none;
 }
 .cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
@@ -266,28 +266,28 @@
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover { background:none; box-shadow:none;  }
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
     background-color: #00acd0;
-    border-bottom-color: #117ca9;
+    border-bottom-color: #008ba9;
 }
 .cpn-sgtn-item:hover .box-r-footer{
-    border-top-color: #117ca9;
+    border-top-color: #008ba9;
 }
 .cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5,.cpn-sgtn-item:hover p ,/*.cpn-sgtn-item:hover .sgtn-body h5 a:visited,*/ .cpn-sgtn-item:hover .txt-npo{
     color: #ffffff;
 }
 .cpn-sgtn-item:hover .campaign-stats .progress{
     border:1px solid #00acd0;
-    background-color: #0c5372;
+    background-color: #2f556c;
 }
 .cpn-sgtn-item:hover .campaign-stats .progress .bar {
     background-color: #49bbec;
 }
 .cpn-sgtn-item:hover .campaign-stats .btn{
     background-color: #117ca9 !important;
-    color: #ffffff;
+    color: #ffffff; box-shadow:none; 
 }
 .cpn-sgtn-item:hover .more-days.inline h4 { color:#FFF; }
 
-.cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{color: #0c5372;}
+.cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em{color: #294b5e;}
 
 .cpn-sgtn-item .action-link{
   position: absolute;

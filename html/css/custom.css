@@ -351,9 +351,9 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .fa-heart.active {
   color: #d33030; }
-
+/* DB COMMENT
 .square-border {
-  border-radius: 0 !important; }
+  border-radius: 0 !important; } */
 
 .landing-cpn-slider-wrapper .swiper-slide {
   margin: 0 !important; }
@@ -1844,19 +1844,20 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 .aui #tax-deduc, .aui .box.reset {
   margin-left: 0px; }
 
-/* npo listing button round */
+/*DB COMMENT  npo listing button round 
 button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .open-more, .btn-more-img {
-  border-radius: 6px !important; }
+    border-radius: 6px !important; 
+  }
 
 .btn-toggle .btn.active:hover, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active, #login_button:focus, .btn-primary:active, .btn-primary:focus, .btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, .add-bottom-lst input:focus {
   background-color: #0E678E !important;
   color: #fff !important; }
 
 #login_button, .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-  /* background-color: #17A4E1 !important; */
+  background-color: #17A4E1 !important; 
   color: #FFF !important;
-  }
+  }*/
 
 @media (max-width: 979px) {
   .upload-section .input-append {
