@@ -11,12 +11,12 @@ h1, h2, h3, h4, h5, h6{
     font-family: "Roboto", Arial, Helvetica, sans-serif; font-weight:400;
     line-height:1.1em; color: #242424; margin-top:24px; margin-bottom: 16px; 
 }
-h1 { font-size:2.75em !important; line-height: 1.2em !important; font-weight:100; }           /* 44px */
-h2 { font-size:2.125em !important; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
-h3 { font-size:1.5em; line-height:1.13636364em !important; }      /* 24px */
-h4 {font-size: 1.25em; margin: 0;}                    /* 20px */
-h5 { font-size:1em !important; margin: 0.82rem 0 0.656rem 0; }    /* 16px */
-h6 { font-size:.875em !important; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }    /* 14px */
+h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
+h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
+h3 { font-size:1.5em; line-height:1.13636364em !important; }                        /* 24px */
+h4 {font-size: 1.25em; margin: 0;}                                                  /* 20px */
+h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }                                 /* 16px */
+h6 { font-size:.875em; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }       /* 14px */
 h4, h5 { font-weight:500; }
 
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label {text-shadow:none !important;}
@@ -792,7 +792,9 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .section-page { text-align: center; }
 #wrapper { padding-top: 70px; }
 #btnDonate, #btn-addLeaders{
-    position: absolute;top: 50%;margin-top: -15px;
+    position: absolute;
+    /* top: 50%; */
+    /* margin-top: -15px; */
 }
 #donateLoggedModal #spca,
 #spca { 
@@ -1986,14 +1988,13 @@ span.span12.read-more.text-left.m-0{display: none;}
 .pre-footer-social form .control-group{ margin-top: 0; }
 
 .pre-footer-social #signUpNewsletterForm .cpn-url-box{ margin-top:0; float: none; }
-.pre-footer-social #signUpNewsletterForm .cpn-url-box input{padding: 5px 5px; font-size: 16px;width: 50%;}
+.pre-footer-social #signUpNewsletterForm .cpn-url-box input { padding:5px 10px; font-size: 16px; }
 .footer-links li{ list-style: none; margin:5px 0; }
 .footer-links li a, .footer a{ color: #666; }
 
 .footer-ul{ margin: 0;}
 .footer-ul li{list-style: none;float: left;margin-right:30px;}
 .footer-logo.nvpc{
-    text-align: center;
     margin-left: 0;
 }
 .footer-logo.nvpc .inner{
@@ -2007,11 +2008,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     margin-bottom: 5px;
     text-align: left;
 }
-.footer-logo.nvpc img{
-    width: 90px;
-    clear: both;
-    background-color: #ffffff;
-}
+.footer-logo.nvpc img{ max-width:180px; clear: both; }
 
 
 /***************************************************************************

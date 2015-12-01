@@ -233,7 +233,6 @@
     overflow: hidden;
     max-height: 152px;
 }
-.cpn-sgtn-item .sgtn-body h5 a { color: #141414; text-decoration: none; }
 .cpn-sgtn-item .sgtn-body h5 a:hover { text-decoration: underline; }
 
 .more-days.inline h4 {font-size: 1.25em; color:#141414;}
@@ -250,9 +249,6 @@
 }
 .cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button{
     background-color: #1283B4;
-}
-.cpn-sgtn-item:hover .campaign-stats h4{
-    color:#0D6287;
 }
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status { top: 17px; left: -42px;}
 

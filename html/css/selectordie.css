@@ -165,12 +165,11 @@
             .sod_select .sod_option.linkexternal { /* If data-link-external is set on a specific option */ }
 
     /* Hide native select */
-    .sod_select select { display: none !important; }
+    .sod_select select {display: none !important;}
 
         /* The native select in touch mode. Keep this first line. Sorry, keep everything. */
         .sod_select.touch select            {
                 -webkit-appearance: menulist-button;
-
                 position: absolute;
                 top: 0;
                 left: 0;
