@@ -442,6 +442,7 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
     border-radius: 0;
     padding: 8px 0;
 }
+#LoginForm .form-control,
 #respwdForm input.form-control,
 #claim-tax input.form-control,
 #gf-bkt-login input.form-control,
@@ -452,8 +453,15 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
 	-webkit-box-sizing:border-box;
 	height:33px;
 }
+#LoginForm .form-control,
 #respwdForm input.form-control,
 #claim-tax input.form-control{height:37px;}
+.decor-ttl{
+	display:block;
+	font-size:17px;
+	line-height:20px;
+	padding:0 0 5px;
+}
 
 #signupForm  input.form-control,
 #profile-form input.form-control{
@@ -1265,7 +1273,15 @@ input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 
 .border-round .centered { padding:10px 0; }  
 
 /* Search Results */
-.main-content .search-controls input {padding: 10px .5em;font-size: 1.25em !important;}
+.main-content .search-controls input {
+	padding: 10px 36px 10px .5em;
+	box-sizing:border-box;
+	height:40px;
+	width:100% !important;
+	-webkit-box-sizing:border-box;
+	font-size: 1.25em !important;
+	
+}
 .search-controls .control-label { line-height:2em;font-size: 1.25em; color: #333;}
     .search-controls .link-refine {line-height: 3em;font-size: .935em;}
     #search-results #sortSearchResults {min-width:156px;}
@@ -3793,6 +3809,11 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
 }
 
 @media (max-width: 767px) {
+	#tab00 .span3.highlight-item.highlight-button,
+	#tab00 .row-fluid 	.highlights.border-all.span9{
+		float:none !important;
+		width:auto !important;
+	}
 	.row-fluid.section-bordered-bottom.breakpoint-override.m-top20{margin:0;}
     h1 { font-size:2em; } /* 32px */
     h2 { font-size:1.625em; } /* 26px */
@@ -3813,6 +3834,17 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
     #cpn-info { width:90%; padding:0;margin: 0 auto;}
         
     .tab-section .row-fluid.non-respv .span6{width:48.7179% !important;}
+	.tab-section .row-fluid.non-respv .span6 {
+    margin-top: 10px !important;
+	float:none !important;
+    width: 100% !important;
+}
+	.tab-section .row-fluid.non-respv .span7.person-actions {
+    padding: 0 10px !important;
+    width: 100% !important;
+}
+.data-list-item .row-fluid.non-respv .span1{margin-top:0}
+.data-list li .person-actions::before{display:none;}
     .can-clone .delete-row{
         right:-50px;
         width:40px;
