@@ -145,7 +145,7 @@
 .row-fluid.m-bot20 .action-link:hover,
 .box-r-footer a:hover,
 #dtn-user-large-cta .action-link:hover, 
-.link-box .action-link:hover{color:#2174b5 !important;}
+.link-box .action-link:hover{color:#006b82 !important;}
 
 .row-fluid.m-bot20 .small,
 #dtn-add-logo p{color:#333;}
@@ -338,11 +338,11 @@
 }
 
 .steps-content .btn-save input, .add-btn-lst a{
-    background-color: #B3E7FF !important;color: #2174B5 !important;
+    background-color: #B3E7FF !important;color: #006b82 !important;
 }
 .inform-area .box-btn .btn{
     background-color: #B3E7FF;
-    color: #2174B5 !important;
+    color: #006b82 !important;
 }
 .add-bottom-lst li input[type=submit], .btn-area input[type=submit], .btn-save input[type=submit]{
     line-height: 1 !important;
