@@ -488,6 +488,7 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
 	padding:0 0 5px;
 }
 
+#user-about-links .controls input[type="text"],
 #signupForm  input.form-control,
 #profile-form input.form-control{
 	padding-right:42px !important;
@@ -495,6 +496,7 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
 	-webkit-box-sizing:border-box;
 	height:37px;
 }
+#user-about-links .controls input[type="text"]{height:39px;}
 
 input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .form-control:focus,
     .pre-footer-social input:focus {
@@ -868,6 +870,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 #selAmount.sod_select{border-radius: 0;}
 #selAmount.sod_select:before{display: none;}
+#user-about-links .controls{position:relative;}
 
 /* Donation Logged In Page */
 #donateLoggedModal{background-color: #efefef;}
