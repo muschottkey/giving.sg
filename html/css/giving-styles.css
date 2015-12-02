@@ -65,11 +65,12 @@ h3.may-like-title { margin-top:10px; margin-bottom:5px; }
 .may-like-title + .cpn-holder, .volunteer-activity .m-bot30 h4 + .cpn-holder { margin-top: 5px; }
 
 /* CONTENT HEADINGS */
-.main-content h3.landing { font-size:2.75em;font-weight:100;} /* 44px */
+.main-content h3.landing { font-size:2.75em;font-weight:100;}   /* 44px */
 .main-content h3 { font-size: 2.125em; }
 .main-content .ttl-row h3 { float:left; width:65%; text-align:left; margin:.25em 0 0; font-size:1.75em; }
 .signup-section h2{font-weight: 100;}
 .signup-section h3{font-size: 1.5em !important;}
+.bg-lightgrey h5 { }
 
 /* BODY TEXT */
 .cpn-story .body p {font-size: 1.0625em;font-weight: 300;margin-bottom: 1.5em;line-height: 1.45;}
@@ -246,10 +247,14 @@ hr.m5{margin: 5px 0;}
 .show-desktop-only{display: inherit;}
 
 /* CUSTOM FORM STATES */
-::-webkit-input-placeholder { font-size:1.0625em; color:#cdcecf; font-family:"Kalam", cursive; }
-:-moz-placeholder { /* older Firefox*/ font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; }
-::-moz-placeholder { /* Firefox 19+ */  font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; } 
-:-ms-input-placeholder { font-size:1.0625em; color:#bec0c2; font-family:"Kalam", cursive; }
+.aui input::-webkit-input-placeholder { 
+    font-size:1.0625em; font-weight:400; color:#bec0c2; font-family:"Roboto", "Kalam", sans-serif; 
+}
+input:-moz-placeholder { /* older Firefox*/ 
+    font-size:1.0625em; font-weight:400;  color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; }
+input::-moz-placeholder { /* Firefox 19+ */  
+    font-size:1.0625em; font-weight:400; color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; } 
+input:-ms-input-placeholder { font-size:1.0625em; color:#bec0c2; font-weight:400;  font-family:"Roboto", "Kalam", sans-serif; }
 
 #preview-label{background-color: #999;}
 
@@ -1163,12 +1168,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     right:10px;
 }
 
-
 /* Separate styles for each browser pack or they will all be ignored*/
-input::-webkit-input-placeholder {color: #999 !important;} /* WebKit, Blink, Edge */
-input:-moz-placeholder{color: #999 !important;} /* Mozilla Firefox 4 to 18 */
-input::-mox-placeholder{color: #999 !important;} /* Mozilla Firefox 19+ */
-input:-ms-input-placeholder{color: #999 !important;} /* Internet Explorer 10-11 */
 #donation-userDetails .control-group{margin-top: 5px;margin-bottom: 5px;}
 #donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
 #donation-userDetails input{margin-bottom: 3px;height: 1em;  }
@@ -1640,7 +1640,6 @@ span.span12.read-more.text-left.m-0{display: none;}
     .accordion-content .cpn-sgtn-item .sgtn-body { min-height:200px; }
     .search-results-wrapper .cpn-sgtn-item .sgtn-body { border-bottom: none; min-height:220px; }
 
-
 .sgtn-body .span11, .sgtn-body .span10, .sgtn-body .span9 { width:90%; margin:0 auto; float:none; padding:0; }
 .campaign-stats {margin: 0 auto;padding: 15px 0 10px;}
 .cpn-sgtn-item .sgtn-body .heading-group { min-height:6.8em;max-height: 9.4em;} 
@@ -1648,7 +1647,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .add-cpn-btn .sgtn-img { height: auto;font-size: 16px;}
 .sgtn-body .causes { padding:.5em 0; display:none; }
 
-.sgtn-body p { margin:0 auto 5px;min-height: 4em;max-height: 6em;overflow: hidden;font-size: .9375em;}
+.sgtn-body p { margin:0 auto 5px; min-height:5.8em; max-height:5.8em; overflow:hidden; font-size: .9375em; }
     .sgtn-body .heading-group p { margin-top:25px; }
     .sgtn-body .campaign-stats button { width:100%;}
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DDD;}

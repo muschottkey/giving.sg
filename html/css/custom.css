@@ -1012,19 +1012,6 @@ div.charity-donors img.dr-img {
 #addthis_toolbox a, #addthis_toolbox a:link, #addthis_toolbox a:active {
   color: #FFF !important; }
 
-::-webkit-input-placeholder {
-  color: #A7A7A7; }
-
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #A7A7A7; }
-
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #A7A7A7; }
-
-:-ms-input-placeholder {
-  color: #A7A7A7; }
 
 .open-more, .btn-more-img, .btn-ghost {
   box-shadow: none !important;
