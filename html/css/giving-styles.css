@@ -3486,6 +3486,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 }
 
 @media (max-width: 979px) {
+	#tab00 .row-fluid .span9{width:72% !important;}
 	#view-campaign .cpn-contact-info{margin-top:15px;}
     .top-title-area{margin-bottom:10px;}
 
@@ -3768,6 +3769,11 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     #cpn-info { width:90%; padding:0;margin: 0 auto;}
         
     .tab-section .row-fluid.non-respv .span6{width:48.7179% !important;}
+	#sortable .span11 .select-like.pull-left{padding-top:25px;}
+	#sortable .non-respv .ui.checkbox{padding-left:10px;}
+	#sortable .span4.person{margin-top:20px !important;}
+	#tab00 .highlights .highlight-item::before{display:none;}
+	#tab00 .highlights .highlight-item,
 	.tab-section .row-fluid.non-respv .span6 {
     margin-top: 10px !important;
 	float:none !important;
