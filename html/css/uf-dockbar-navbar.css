@@ -531,16 +531,15 @@ transition: all 0.5s linear 0s; */
 
   #uf-dockbar-search-mobile input[type="text"] {
     height: 20px; } }
-/*********************************************/
+/********************************************DB COMMENT
 #uf-dockbar-sidebar ul {
-  margin: 70px 0px 0px; }
-
+  margin: 70px 0px 0px; } 
 #uf-dockbar-sidebar ul li {
-  list-style: outside none none;
-  background-color: #FFF; }
-
+  list-style: none;
+  background-color: #FFF;
+  }
 #uf-dockbar-sidebar ul li aside {
-  padding: 0 2em 1em; }
+  padding: 0 2em 1em; } 
 
 #uf-dockbar-sidebar ul li aside h5 {
   color: #999; }
@@ -552,7 +551,7 @@ transition: all 0.5s linear 0s; */
 #uf-dockbar-sidebar ul li > a {
   padding: 10px 12px 13px 40px;
   display: block;
-  /* DB COMMENT font-weight: 600; */ }
+  font-weight: 600; }
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   display: inline-block;
@@ -567,22 +566,23 @@ transition: all 0.5s linear 0s; */
 
 #uf-dockbar-sidebar .b-top {
   border-top: 1px solid #CCC;
-  border-bottom: 2px solid #CCC; }
+  border-bottom: 2px solid #CCC; }*/
 
-/* Temporary additions. Should remove from template when going live*/
+/* Temporary additions. Should remove from template when going live
 #uf-dockbar-sidebar ul li > a .li-icon {
   border: 1px solid #999999;
   background-color: transparent;
   background: none;
-  font-size: 22px;
+  font-size: 20px;
   padding-left: 3px;
   padding-bottom: 4px;
   padding-top: 1px;
-  padding-right: 2px; }
+  padding-right: 2px;
+  }
 
 #uf-dockbar-sidebar ul li > a .li-icon {
   border: 0px solid #999999; }
-
+*/
 /* DB COMMENT
 .dark a.active {
   text-decoration: underline !important;
@@ -597,30 +597,26 @@ transition: all 0.5s linear 0s; */
   background: #C66 none repeat scroll 0% 0%;
 } */
 /* End of temporary additions */
-#uf-dockbar-sidebar {
-  position: fixed;
-  /* db comment top: 0; 
-  width: 315px; */
-  background: #CCC none repeat scroll 0% 0%;
+  /*#uf-dockbar-sidebar {
+ db comment position: fixed;
+   top: 0; 
+  width: 315px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+  background: #CCC none repeat scroll 0% 0%; 
   border-right: 1px solid #CCC;
   height: 100%;
-  overflow-y: auto;
+  
   -webkit-overflow-scrolling: touch;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
-
-#uf-dockbar-sidebar {
-  right: -120%;
   background: #FFF;
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
-  transition: right 0.3s; }
+  transition: right 0.3s; overflow-y: auto; }*/
 
 #uf-dockbar-sidebar.speed-in {
   right: 0; }
 
 #uf-dockbar-shadow-layer {
-  background-color: black;
-  zoom: 1;
+  background-color: black;zoom:1;
   -ms-filter: "alpha(opacity=40)";
   filter: alpha(opacity=40);
   opacity: .4;
@@ -630,7 +626,8 @@ transition: all 0.5s linear 0s; */
   top: 0px;
   left: 0px;
   z-index: 1020;
-  display: none; }
+  display: none;
+  }
 
 #uf-dockbar-shadow-layer.is-visible {
   display: block; }

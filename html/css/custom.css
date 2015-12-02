@@ -588,11 +588,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   .aui .row-fluid [class*="span"] {
     margin-left: auto; } }
 /* Typography */
-.aui body {
+/*DB COMMENT .aui body {
   color: #333;
   font: 16px/1.25 "Roboto", Arial, sans-serif !important;
   margin: 0 auto;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased; } */
 
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui input, .aui button, .aui select, .aui textarea {
   font-family: "Roboto", Arial, sans-serif; }
@@ -762,7 +762,8 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   object-fit: cover;
   object-position: center;
   -moz-transform-style: preserve-3d; }
-
+  
+/* DB comment 
 .refine-inputs input[type=checkbox] + label,
 #select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label,
 .popover-filter input[type=checkbox] + label,
@@ -782,7 +783,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .popover-content ul {
   margin-top: 10px !important;
-  margin: 0 30px 10px 15px !important; }
+  margin: 0 30px 10px 15px !important; } */
 
 .popover-filter input[type=checkbox] {
   display: none; }
@@ -1714,10 +1715,6 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 /***************************************************************************
     ADDED : APPLY BLUE-CI, overwriting aui default
 ***************************************************************************/
-#wrapper {
-  padding-top: 70px !important;
-  position: relative; }
-
 @media (max-width: 767px) {
   #wrapper {
     padding-top: 50px !important;
@@ -1796,10 +1793,13 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 
 /* set margin to 0 as we already apply margin value for liferay #wrapper*/
 @media only screen and (min-width: 769px) {
+  /* DB COMMENTED
   .section-page {
-    margin-top: 0px !important; } }
+    margin-top: 0px !important;
+    } }
 .section-page {
-  margin-top: 0px !important; }
+   margin-top: 0px !important; 
+  }*/
 
 .boxed-wrapper {
   margin-top: 0px !important; }
@@ -1911,7 +1911,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   #orgCausesInfo .cause-box input[type=checkbox] + label:before {
     max-width: 90%; }
 
-  #orgCausesInfo .cause-box.span4, #causes-wrapper .cause-box {
+  #orgCausesInfo .cause-box.span4 {
     width: 100% !important;
     margin: 0 !important; }
 
@@ -1966,9 +1966,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .cause-box input[type=checkbox] + label:before {
   border-radius: 8px !important;
   padding: 5px 3px !important; }
-
-#causes-wrapper .cause-box {
-  border: none !important; }
 
 .cause-box input[type=checkbox]:checked + label:after {
   display: none !important;

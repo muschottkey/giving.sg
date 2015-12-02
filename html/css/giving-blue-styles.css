@@ -356,18 +356,16 @@
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
-#uf-dockbar-sidebar ul{margin:0;}
 
-#uf-dockbar-sidebar ul li > a, #sidebar ul li > a {
-    text-decoration: none; color: #333;
-}
+
+
 /*#uf-dockbar-sidebar ul li > a:visited, #sidebar ul li > a:visited { color: #333; }*/
 
 #uf-dockbar-sidebar ul li:first-child, #sidebar ul li:first-child{
     padding-bottom:10px !important;
 }
 #sidebar ul li > a{ padding: 13px 15px 13px 30px; }
-#uf-dockbar-sidebar ul li > a{padding: 13px 1em 13px 2em;}
+
 #uf-dockbar-sidebar li.admin > a, #uf-dockbar-sidebar ul li > a.active, #sidebar ul li > a.active,
 #uf-dockbar-sidebar ul li > a.active:hover, #sidebar ul li > a.active:hover {
     background:#f2f2f2; box-shadow: 5px 0px rgba(67,173,73,1) inset;  border:0;
