@@ -510,6 +510,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 /* UI Controls - BUTTONS */
 button, .btn, .btn:link { background-image: none !important; text-decoration: none; }
 nav, .btn, .btn-large { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
+.donate-btns .btn.btn-large{width:100% !important;}
 
 button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more-img, 
 #user-about-links .control-group input#shortUrlGenerator {
@@ -1890,6 +1891,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     margin: 0 4px;
     color: #F5866C;
 }
+
 #jira-353-content select,#jira-353-content input[type=number]{
 	height: 38px;
 }
