@@ -23,11 +23,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .main-content, .modal-content {
   margin-top: 0px !important;
   /*padding: 0px !important;*/ }
-
+/* DB commented 
 .validation-feedback {
   z-index: 1;
   position: absolute;
-  right: 0px; }
+  right: 0px; } */
 
 .validation-feedback.error i {
   color: #FC353A; }
@@ -570,9 +570,9 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .text-right {
   text-align: right !important; }
-
+/* DB
 .text-center {
-  text-align: center !important; }
+  text-align: center !important; } */
 
 .aui a.undelined, .aui a.underlined:link {
   text-decoration: underline !important; }
