@@ -232,10 +232,27 @@ select:focus:invalid:focus { border-color: #F16577; }
 #gf-bkt-login .validation-feedback, #donation-userDetails .validation-feedback{ } 
 .validation-feedback i { top:-18px; }*/
 
-
+/*      RADIO OPTIONS SELECT | LABEL CHECKBOXES     */
+.row-fluid .lbl-chkbox { margin:5px 5% 0 0; }
+.lbl-chkbox label {
+    display: block; border-radius:6px; border:1px solid #dcddde; padding:10px 15px; color: #6a6c6f;
+    text-align: left; font-size: 1em; position: relative;
+}
+.lbl-chkbox input[type=checkbox]{ display: none; }
+.lbl-chkbox input[type=checkbox]:checked + label{ color: #00bce4; }
+.control-group .lbl-chkbox input[type=checkbox]:checked + label:before { width: 20px; font-size:1em; }
 #jira-353-content input{
     padding-right:44px;
 }
+
+/***************************************************************************
+                            LABEL CHECKBOXES
+***************************************************************************/
+
+
+
+
+
 
 
 /* GLOBAL STYLES & HELPER CLASSES */
@@ -1115,45 +1132,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
         background-image: url('../images/ico-causes-womenx64.png');
     }
 
-/***************************************************************************
-                            LABEL CHECKBOXES
-***************************************************************************/
-.lbl-chkbox{
-    margin-left: 0 !important;
-    margin-right: 20px;
-    margin-top: 5px;
-}
 
-.lbl-chkbox input[type=checkbox]{
-    display: none;
-}
-.lbl-chkbox label{
-    display: block;
-    border:1px solid #cccccc;
-    padding:10px 15px;
-    color: #666;
-    border-radius: 5px;
-    text-align: left;
-    font-size: 1em;
-    position: relative;
-}
-
-.lbl-chkbox input[type=checkbox]:checked + label{
-    color: #00acd0;
-}
-
-.lbl-chkbox input[type=checkbox]:checked + label:before{
-    content: "\f00c";
-    font-family:"FontAwesome";
-    display:block;
-    background:transparent;
-    color: #00acd0;
-    position:absolute;
-    width: 20px;
-    height: 20px;
-    top:10px;
-    right:10px;
-}
 
 /* Separate styles for each browser pack or they will all be ignored*/
 #donation-userDetails .control-group{margin-top: 5px;margin-bottom: 5px;}
@@ -2136,27 +2115,25 @@ span.span12.read-more.text-left.m-0{display: none;}
 .aui .popover-content input[type=checkbox] + label:hover, .popover-content input[type=checkbox] + label:hover {
     background:#f1f1f2; color:#6a6c6f; 
 }
-.refine-inputs input[type=checkbox]:checked + label, .refine-inputs.style-tag .checkbox-clone {
+.refine-inputs input[type=checkbox]:checked + label, .popover-content input[type=checkbox]:checked + label, 
+.refine-inputs.style-tag .checkbox-clone, .control-group .lbl-chkbox input[type=checkbox]:checked + label {
     background:#f1f1f2; color: #172A35;
 } 
-.refine-inputs input[type=checkbox] + label:before, #select-more-causes input[type=checkbox] + label:before, 
-#data-list-filters input[type=checkbox] + label:before, #select-org-type input[type=checkbox] + label:before,
-.checkbox-clone:before {
+.refine-inputs input[type=checkbox] + label:before, .popover-content input[type=checkbox] + label:before, 
+.control-group input[type=checkbox]:checked + label:before,
+#data-list-filters input[type=checkbox] + label:before,  .checkbox-clone:before {
     content: "\f00c"; font-family:"FontAwesome"; display: block; background: transparent;
     position: absolute; width:14px; right:5px; font-size: .75em;
 }
-
 #nl-form input[type=checkbox] + label:before{top:11px;}
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
 .refine-inputs input[type=checkbox]:checked + label:before, .popover-content input[type=checkbox]:checked + label:before,
-.refine-inputs.style-tag .checkbox-clone.checked:before,
-#data-list-filters input[type=checkbox]:checked + label:before, 
-#select-org-type input[type=checkbox]:checked + label:before {
+.refine-inputs.style-tag .checkbox-clone.checked:before, .control-group input[type=checkbox]:checked + label:before,
+#data-list-filters input[type=checkbox]:checked + label:before {
     color: #43AD49;
 }
 .checkbox-clone.checked:before, #camp-holder .checkbox-clone.checked:before { color:#172A35; }
-.refine-inputs input[type=checkbox]:checked + label:before, .checkbox-clone:before {  }
 
 #data-list-filters ul{
     margin: 0 10px 10px 15px;
