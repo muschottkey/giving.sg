@@ -762,7 +762,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   object-fit: cover;
   object-position: center;
   -moz-transform-style: preserve-3d; }
-  
+
 /* DB comment 
 .refine-inputs input[type=checkbox] + label,
 #select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label,
@@ -780,7 +780,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   cursor: pointer;
   font-size: 1em;
   color: #999 !important; }
-
 .popover-content ul {
   margin-top: 10px !important;
   margin: 0 30px 10px 15px !important; } */
@@ -839,10 +838,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /*Campaign Title*/
 .steps-content .decor-txtarea {
   padding: 0 0 0px; }
-
-.control-group {
-  margin-top: 1em;
-  position: relative; }
 
 #user-about-links .controls {
   margin-left: 1px; }
@@ -1544,8 +1539,8 @@ div.clickable > a.img-placeholder-btn {
 /***************************************************************************
      Filter for listing
 ***************************************************************************/
-.form-control.inline-block.inner span {
-  /*  display: inline-block; */ }
+/* DB COMMENT .form-control.inline-block.inner span {
+  display: inline-block;  } */
 
 /***************************************************************************
      Edit Volunteer Activity
@@ -1826,7 +1821,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 .cpn-sgtn-item .sgtn-img {
   background: white; }
 
-.preset-amts button, #donate-buttons button, #vol-buttons button {
+.preset-amts button, #vol-buttons button {
   font-size: 16px !important;
   border: 1px solid #CCC !important;
   border-radius: 4px !important; }
@@ -2196,9 +2191,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 .main-content .bg-lightgrey {
   max-height: 600px !important; }
 
-.popover-content .btn.pull-right {
-  width: 70px; }
-
 .btn-group.action-btn > .btn:first-child:not(.btn-success) {
   min-width: 100px;
   height: 50px; }
@@ -2238,9 +2230,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
   font-size: 1em !important;
   line-height: 17.5px !important;
   margin-bottom: 10px; }
-
-.checkbox-clone.checked[data-parent="ref_allcauses"]:before, .checkbox-clone.checked[data-parent="ref_campaigns"]:before, .checkbox-clone.checked[data-parent="ref_allorgs"]:before {
-  content: "\f0d7" !important; }
 
 @media (max-width: 600px) {
   #setup-dtn-carousel {

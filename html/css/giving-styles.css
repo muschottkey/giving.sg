@@ -1,5 +1,5 @@
 /* general settings */
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display:block; }
 body, .aui body {
     font:16px/1.25 "Roboto", Arial, sans-serif; color: #555;
     margin:0 auto; -webkit-font-smoothing:antialiased;
@@ -10,11 +10,7 @@ body.non-respv { min-width: 1002px; overflow-x: visible; }
 /* Typography */
 h1, h2, h3, h4, h5, h6{
     font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight:400;
-    line-height:1.1em;
-    color: #172A35;
-    margin-top:24px;
-    margin-bottom: 16px;
+    font-weight:400; line-height:1.1em; color: #172A35; margin-top:24px; margin-bottom: 16px;
 }
 h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
 h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
@@ -30,13 +26,12 @@ textarea, input { font-size:1em; line-height:1.4; word-wrap: break-word; }
 
 ::-ms-clear { width : 0 !important; height: 0 !important; display:none !important; }
 input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
-
 input[type="text"], input[type="password"], textarea, 
 input::-webkit-clear-button, textarea::-webkit-clear-button,
 ::-webkit-search-cancel-button { -webkit-appearance: none !important; }
 input::-webkit-clear-button, textarea::-webkit-clear-button { display:none !important; }
 
-a, a:link { color:#00acd0; text-decoration: underline;}
+a, a:link { color:#00acd0; text-decoration: underline; }
     a:hover { color:#006b82; }
 
 /* CONTENT HEADINGS */
@@ -88,8 +83,6 @@ p.small.text-center { font-size:1em; }
 
 /********************       LANDING PAGES CONTAINERS        ****************/
 .main-content .bg-lightgrey { padding-top:20px; max-height: 400px; }
-
-.popover-content ul label:before{margin:-3px 0 0 !important;}
 .sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
 .box #setup-dtn-carousel a:hover .small{color:#F16577;text-decoration: underline;}
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus{
@@ -503,38 +496,6 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
  
 
 
- .form-control.inner span  {
-    line-height: inherit;
-    display: inline-block;
-    color: #4a4a4a;
-    cursor: pointer;
-    padding-bottom: 1px;
-    border-bottom: 2px solid #CCC;
-    border-radius: 0;
-    width: auto;
-    line-height: 1;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 1.125em;
-}   
-
-
-.form-control.inner span:hover,
-.nl-field-toggle:hover,
-.nl-form input:hover,
-.nl-form select:hover{
-    text-decoration: none;
-} 
-
-.form-control.inner span{
-    background:none;
-    line-height:1.1;
-    margin:0 4px;
-    border:0;
-    border-bottom: 1px solid #333;
-    padding-left: 0;
-}
-
 /* UI Controls - BUTTONS */
 button, .btn, .btn:link { background-image: none !important; text-decoration: none; }
 nav, .btn, .btn-large { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
@@ -581,8 +542,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 .donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
 .ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, .ttl-row .btn:hover,
-#user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover { 
-    background-color:#B3E7FF; color: #006b82; border:none; outline:0;
+#user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover {
+    background-color: #b4f2ff; color: #006b82; border:none; outline:0;
 }
 .btn-group .btn.btn-ghost, .btn-ghost { box-shadow:none; border:0; }
 
@@ -612,7 +573,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 }
 /* CUSTOM BUTTONS */
 #cpn-meta .open-more { background:#FFF; color:#666; border:1px solid #DDD; }
-.gallery-txt-box .btn { border: 1px solid #B3E7FF;  color:#FFF; }
+.gallery-txt-box .btn { border: 1px solid #b4f2ff;  color:#FFF; }
 .gallery-txt-box .btn:hover{ background-color: #0e678e; border: 1px solid #0e678e; }
 #user-about-links input#shortUrlGenerator {
     margin-right:10px !important;
@@ -694,7 +655,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
     .preset-amts button, #donate-buttons button, #vol-buttons button, .choice-buttons button {
         width:80px; height:40px; margin: 10px 4px; padding:5px 10px; 
     }
-    #donate-buttons button { width: 46%; float:left; margin: 5px 2%; }
+    #donate-buttons button { width:46%; float:left; margin: 5px 2%; font-size:1.125em; }
     .choice-buttons button {width:35%;}
 
 /*.btn-toggle button, .btn-group > .btn:first-child { padding:5px; width:33%; height:5em; margin:0; } 
@@ -1089,7 +1050,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .journal-content-article .cause-box a h4 { color: #58c1ee !important; }
     .journal-content-article .cause-box a:hover h4 { color: #F16577 !important; }
 .cause-box input[type=checkbox] + label:before, .cause-box a:hover h4{color: #333 !important;}
-
 
 .causes .img-box.icons{ background-size: 40px; background-repeat: no-repeat;background-position:center;}
 
@@ -2167,51 +2127,56 @@ span.span12.read-more.text-left.m-0{display: none;}
 .inline-search{ position:absolute; right:10px; top:8px; font-size:1em; color:#333; cursor:pointer; }
 .refine-search .text { font-size:1.2em; padding-right:5px; }
 .refine-inputs input[type=checkbox], #data-list-filters input[type=checkbox] { display: none; }
+#search-form { margin-top: 2em; }
 #search-form .inline-search{
   background:url(../images/ico-search-btn.png) no-repeat;
   width:18px; height:18px;
 }
 #search-form .inline-search:hover{opacity:0.8;}
 
-/*      FITLERs     */
+/*      FITLER DROPLIST    */
+.form-control.inner span, .refine-inputs input[type=checkbox] + label {
+    font-size: 1.25em; font-weight: 500; color:#172A35; margin:0 4px 16px; padding-bottom:2px; 
+    background:none; border:0; border-bottom:1px solid #919396; border-radius: 0; text-decoration: none; 
+}
+/*  #data-list-filters input[type=checkbox] + label */
+.popover-content input[type=checkbox]+label, .aui .popover-content input[type=checkbox] + label, 
+.refine-inputs input[type=checkbox] + label, .refine-inputs .checkbox-clone, .checkbox-clone {
+    display:inline-block; height:auto; width:auto; line-height:1.1em; background:#FFF; border-radius: 6px;
+    border:1px solid #E7E8E9; padding:5px 22px 5px 8px; margin-right:6px;
+    position:relative; cursor: pointer; font-size: 1em; color: #919396;
+}
+.refine-inputs input[type=checkbox] + label, .refine-inputs.style-tag .checkbox-clone.checked { font-size:1.125em; font-weight: 500; }
+
+/*      FITLER POPOVERS    */
 .aui .popover, .popover { max-width:280px; }
 .aui .popover-content, .popover-content { width:90%; max-width:280px; }
 .aui .popover-content ul, .popover-content ul { margin:10px 0; } 
 
-/* .refine-inputs input[type=checkbox] + label, #select-more-causes input[type=checkbox] + label, 
-#data-list-filters input[type=checkbox] + label, #select-org-type input[type=checkbox] + label,
-#select-more-camp input[type=checkbox] + label, .popover-filter input[type=checkbox] + label, */
-.popover-content input[type=checkbox] + label, .aui .popover-content input[type=checkbox] + label,
-.checkbox-clone, .refine-inputs .checkbox-clone {
-    display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
-    border:1px solid #E7E8E9; padding:5px 22px 5px 8px; margin-right:6px;
-    position:relative; cursor: pointer; font-size: 1em; color: #919396;
-} 
 .aui .popover-content input[type=checkbox] + label:hover, .popover-content input[type=checkbox] + label:hover {
-    background: #f1f1f2; color:#6a6c6f; 
+    background:#f1f1f2; color:#6a6c6f; 
 }
-.refine-inputs input[type=checkbox]:checked + label, #select-more-causes input[type=checkbox]:checked + label,
-#data-list-filters input[type=checkbox]:checked + label, #select-org-type input[type=checkbox]:checked + label,
-.checkbox-clone.checked {background: #f1f1f2;color: #172A35;} 
-
+.refine-inputs input[type=checkbox]:checked + label, .refine-inputs.style-tag .checkbox-clone {
+    background:#f1f1f2; color: #172A35;
+} 
 .refine-inputs input[type=checkbox] + label:before, #select-more-causes input[type=checkbox] + label:before, 
 #data-list-filters input[type=checkbox] + label:before, #select-org-type input[type=checkbox] + label:before,
 .checkbox-clone:before {
     content: "\f00c"; font-family:"FontAwesome"; display: block; background: transparent;
-    position: absolute; width: 14px; height: 14px; top: 33%; right:5px; font-size: .75em;
+    position: absolute; width:14px; right:5px; font-size: .75em;
 }
+
 #nl-form input[type=checkbox] + label:before{top:11px;}
     .refine-inputs .checkbox-clone.hidden { display: none; }
 
-.refine-inputs input[type=checkbox]:checked + label:before,
-#select-more-causes input[type=checkbox]:checked + label:before,
+.refine-inputs input[type=checkbox]:checked + label:before, .popover-content input[type=checkbox]:checked + label:before,
+.refine-inputs.style-tag .checkbox-clone.checked:before,
 #data-list-filters input[type=checkbox]:checked + label:before, 
-#select-org-type input[type=checkbox]:checked + label:before, 
-.checkbox-clone.checked:before{
+#select-org-type input[type=checkbox]:checked + label:before {
     color: #43AD49;
 }
-
-
+.checkbox-clone.checked:before, #camp-holder .checkbox-clone.checked:before { color:#172A35; }
+.refine-inputs input[type=checkbox]:checked + label:before, .checkbox-clone:before {  }
 
 #data-list-filters ul{
     margin: 0 10px 10px 15px;
@@ -3372,7 +3337,7 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
   background-color:#0E678E !important; color: #FFF !important; 
 }
 .main-image__centerer--cell .btn{
-    border: 1px solid #B3E7FF !important;
+    border: 1px solid #b4f2ff !important;
     color: #FFF !important;
     background-color: transparent !important;
     box-shadow: none;
@@ -3393,11 +3358,6 @@ body:after, .wrapper:after, .gallery-txt-box:after, .control-group:after, .socia
     border: 1px solid #0e678e !important;
 }
 
-/**********NL forms on 1005, 10100 **********/
-.form-control.inner span {
-    border-bottom: 1px solid #333 !important;
-    padding-left: 0;
-}
 
 /***************************************************************************
                             Media Queries

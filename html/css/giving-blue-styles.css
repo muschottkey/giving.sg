@@ -1,5 +1,3 @@
-
-
 /* TYPOGRAPHY FOR SERVER */
 .btn-group .btn.btn-ghost.active,
 .btn-group .btn.btn-ghost:hover{
@@ -150,12 +148,7 @@
 .row-fluid.m-bot20 .small,
 #dtn-add-logo p{color:#333;}
 
-/* NPO lIsting */
-.checkbox-clone.checked:before,#camp-holder .checkbox-clone.checked:before { color:#333 !important; content: "\f00c" !important; }
-.checkbox-clone.checked[data-parent="ref_allcauses"]:before,
-.checkbox-clone.checked[data-parent="ref_campaigns"]:before,
-.checkbox-clone.checked[data-parent="ref_allorgs"]:before
-{content: "\f0d7" !important;}
+/* NPO lIsting */ 
 #causes-wrapper:after, .navbar-inverse:after  { content:""; clear:both; display:block;  }
 
 /* Search Page & Search UI */
