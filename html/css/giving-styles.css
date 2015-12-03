@@ -2509,7 +2509,6 @@ display:inline-block !important; vertical-align:top;
 .input-search{position: relative;}
 .input-search input{padding-right:30px;position: relative;}
 .input-search label{ position: absolute; right:22px; width:20px; height:20px; top:50%; margin-top: -8px; z-index:99; }
-
 .search-results{
     color:#6a6c6f; min-height: 100px; padding-bottom:80px;
     border-left:1px solid #dcddde; border-right:1px solid #dcddde; border-bottom:1px solid #dcddde;
