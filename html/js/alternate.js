@@ -18,7 +18,6 @@ $(function(){
             $('#loginModal').modal('show');
         }, 1000);
     })
-
     $('#LoginForm').validate({
         rules: {
             email: {
@@ -89,7 +88,6 @@ $('#signupForm, #profile-form').validate({
 
 $('#respwdForm').validate({
     rules: {
-
         spassword: {
             required: true
         },
@@ -129,29 +127,18 @@ $('#npoCarousel .carousel-indicators').hide();
 $('#btnStartYes').click(function(){
     $(this).closest('.carousel').carousel('next');
     $('.carousel-indicators').delay(1000).slideDown();
-
 });
 
 $('#btnDonate').click(function(){
     $('#donateModal').modal();
 })
-$('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
-
-$('.sod_list').on('change','.customAmt',function(){
-    var amtvalue = $(this).val();
-    var length = amtvalue.length - 2;
-    var dynamic_width = 160 + 15*length;
-    $('#selAmount').css('width', dynamic_width);
-    $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
-    $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
-});
 
 $('#donateLoggedModal').modal('show');
 
 $('.widget').on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
     if($(this).hasClass('fadeIn')){$(this).removeClass('animated fadeIn')}
         if($(this).hasClass('fadeOut')){$(this).removeClass('animated fadeOut')}
-    });
+});
 
 
 $('.Anon .yes').click(function(){
@@ -192,8 +179,6 @@ $('.Anon .no').click(function(){
     })
 
 $('.Tax .yes').click(function(){
-        // $('.Anon .choice-buttons').find('button.active').removeClass('active').addClass('active');
-        // $(this).addClass('active');
         $('.Anon .choice-buttons').find('button.active').removeClass('active');
         $('.Anon .no').addClass('active');
         $('.Tax > .widget.active').removeClass('active').next().addClass('active animated fadeIn');
@@ -263,22 +248,36 @@ $('.switch').bootstrapSwitch({
     });
 
     $('.select-giving-autofit-text').selectOrDie({
-       onChange: function(){
+        onChange: function(){
+            var amtvalue = $(this).val();
+            var length = amtvalue.length;
+            var dynamic_width = 50 + 10*length*1.05;
+            $(this).closest('.sod_select').css('width', dynamic_width);
+        }
+    });
+
+    $('#selAmount .sod_list').append('<span class="sod_option custom"><small>Type Your Own Amount</small><input class="customAmt" type="text"><small>dollars</small></span>');
+
+    $('.sod_list').on('change','.customAmt',function(){
         var amtvalue = $(this).val();
-        var length = amtvalue.length ;
-        var dynamic_width = 50 + 10*length*1.05;
-        $(this).closest('.sod_select').css('width', dynamic_width);
-    }
-});
+        var length = amtvalue.length - 2;
+        var dynamic_width = 160 + 15*length;
+        $('#selAmount').css('width', dynamic_width);
+        $('#selectAmount').append('<option value="'+amtvalue+'" selected>'+amtvalue+'</option>').selectOrDie("update");
+    });
+    if ("ontouchstart" in document.documentElement)
+        { 
+        }
+        else
+        {
+          // Others devices.
+        }
 
     // Customized Bootstrap dropdowns that behave like SelectOrDie 
-
     $('.select-like').on("click", ".dropdown-menu li a", function(){
         $(this).closest('.dropdown-menu').find('.active').removeClass('active');
         $(this).closest('li').addClass('active');
     })
-
-    // $('.sod_select')
 
     var winWidth = $(window).innerWidth();
     var $things = $('.acc-section');

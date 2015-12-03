@@ -70,10 +70,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .modal-body .spanCentralize {
   max-width: 800px; }
-
+  /*Db Comment
 .modal .row-fluid .span6 {
-  /* padding: 1em 1.5em !important; */
-  padding: 1em 2em 4.6em !important; }
+ padding: 1em 1.5em !important; 
+  padding: 1em 2em 4.6em !important; }*/
 
 .aui .modal.fade {
   transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
@@ -987,12 +987,12 @@ div.charity-donors img.dr-img {
 
 .sod_select.open .sod_list_wrapper {
   min-width: 170px; }
-
+/* DB COmment 
 #selAmount {
   line-height: 1.9em !important;
   height: 45px !important;
   margin-bottom: 10px; }
-
+*/ 
 .box-footer {
   padding-top: 10px; }
 
@@ -1431,8 +1431,8 @@ div.clickable > a.img-placeholder-btn {
 .select-like button:focus {
   border-bottom-color: #999; }
 
-.sod_select:after {
-  color: #666; }
+/* DB COmment  .sod_select:after {
+  color: #666; } */
 
 .sod_select:before {
   display: none; }

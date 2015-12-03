@@ -252,9 +252,6 @@ select:focus:invalid:focus { border-color: #F16577; }
 
 
 
-
-
-
 /* GLOBAL STYLES & HELPER CLASSES */
 .btn.active, .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .big { font-size: 1.5em; }
@@ -264,9 +261,9 @@ select:focus:invalid:focus { border-color: #F16577; }
 
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline !important;margin-top: 10px; }
-.border-left{border-left: 1px solid #ddd;}
-.border-top{border-top: 1px solid #ddd;}
-.border-all{border: 1px solid #ddd;}
+.border-left {border-left: 1px solid #dcddde; }
+.border-top{border-top: 1px solid #dcddde;}
+.border-all{border: 1px solid #dcddde;}
 .no-border{border:none !important;}
 .inline-block { display:inline-block; }
 .d-inline { display:inline; }
@@ -441,6 +438,35 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     padding:12px; border:1px solid #cccccc; border-radius: 50%; font-size: 0.875em;
 }
 
+/* UI FORM Controls - CONTROLS / FIELDS */
+textarea, input[type="text"], .button-input, .control-group .form-control {
+    border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none !important;
+    padding:6px 0; font-size:inherit; line-height: 1.25; color: #172A35; margin-bottom:5px;
+}
+.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
+#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
+#claim-tax input:not([type="checkbox"]) {
+    width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
+}
+.btn.disabled, .btn.disabled:hover,.btn.disabled:focus,
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
+    background:#f5f6f6; color: #919396; border-color:#dcddde; box-shadow: none !important;
+}
+.input-append .add-on, .input-prepend .add-on { border: none; background: none; font-size:18px; line-height: 1.8; }
+
+/*  CUSTOM SELECT   */
+.modal .controls input.customAmt { width:50%; font-size: 1.75em; height: 1em; max-width:200px; font-weight:500; } 
+#selAmount { font-size:1em; width:140px; height: 40px; }
+#selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; }
+    #selAmount.sod_select:after { top:42%; }
+
+#donateLoggedModal #spca, #spca { 
+    font-weight:900; margin-bottom: 10px; font-size:2.25em !important; color:#919396; text-align:center; background:#FFF; 
+}
+.mobile-customAmt { margin-top:10px; }
+.mobile-customAmt .input-append .span8 { 
+    width:100px; margin-right:5px; font-size:28px; font-weight:500; height:35px; text-align: right; padding: 0 5px;
+}
 
 /* MODAL - UI Controls */
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
@@ -450,23 +476,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
-/* UI Controls - CONTROLS / FIELDS */
-textarea, input[type="text"], .button-input, .control-group .form-control {
-    border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none !important;
-    padding:6px 0; font-size:inherit;  line-height: 1.8; height: 38px;
-    color: #172A35;
-}
-    input:not([type=checkbox]) { color: #172A35; }
-
-.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
-#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
-#claim-tax input:not([type="checkbox"]) {
-    width:98%;
-    border-width: 0 0 1px;
-    box-shadow:none !important;
-    border-radius: 0;
-    padding: 8px 0;
-}
 #LoginForm .form-control,
 #respwdForm input.form-control,
 #claim-tax input.form-control,
@@ -841,11 +850,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     position: absolute;
     /* top: 50%; */
     /* margin-top: -15px; */
-}
-#donateLoggedModal #spca,
-#spca { 
-    font-weight: 900; line-height:1; margin-bottom: 10px; 
-    font-size:2.5em !important; color:#999; text-align:center; background:#FFF; 
 }
 #donateForm .form-group{
     margin-bottom: 30px;
@@ -2745,10 +2749,6 @@ display:inline-block !important; vertical-align:top;
 .data-list.volunteers-list .data-list-item .span1 input{
     border-bottom:1px solid #CCC; padding:5px; 
     margin-top: 0px; margin-bottom: 0px;
-}
-.btn.disabled, .btn.disabled:hover,.btn.disabled:focus,
-input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
-	background:#EEE; color: #999; border-color:#ccc; box-shadow: none !important;
 }
 
 .data-list.volunteers-list .data-list-item .span1 input:disabled{

@@ -19,7 +19,8 @@
 	<link rel="stylesheet" type="text/css" href="css/uf-dockbar-navbar.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
 	<link rel="stylesheet" type="text/css" href="css/giving-blue-styles.css">
-	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,|Open+Sans:400italic,600italic,700italic,400,600,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Shadows+Into+Light|Shadows+Into+Light+Two|Bad+Script|Marck+Script|Waiting+for+the+Sunrise|Kalam:400,700,300|Loved+by+the+King|Give+You+Glory' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="wrapper">
@@ -67,7 +68,15 @@
 												<option>100</option>
 												<option>250</option>
 												<option>500</option>
+												<option class="opt-otherAmount">other amount</option>
 											</select>
+											<div class="mobile-customAmt">
+												<label class="control-label" for="ownAmt">Type Your Own Amount</label>
+												<div class="input-append">
+													<input name="ownAmt" id="ownAmt" class="span8 form-control field-required" type="text">
+													<span class="add-on">dollars</span>
+												</div>
+											</div>
 											<p class="span12 small m-left0 m-bot30">Would you like to donate more? <br>Only donations $50 and above to this <br>organization are elligible for tax deduction</p>
 										</div>
 										<br>
@@ -82,13 +91,13 @@
 										</div>
 										<div class="form-group">
 											<h5 class="clearfix black">I'd like to pay by</h5>
-											<select class="select-giving-autofit">
+											<select class="select-giving">
 												<option>Credit Card</option>
 												<option>Internet Banking</option>
 											</select>
 										</div>
 									</form>
-									<hr class="mobile-separator">
+									<hr class="mobile-separator visible-phone">
 								</div>
 								<div class="span6 border-left">
 									<div class="row-fluid">
@@ -100,7 +109,7 @@
 												<div class="controls">
 													<span class="validation-feedback pull-right" style="display: inline-block;"><i class="fa fa-check" ></i></span>
 													<input name="email" id="email" placeholder="name@domain.com" 
-													class="form-control field-required text-center"  type="text">
+													class="form-control field-required text-center" type="text">
 												</div>
 											</div>
 											<div class="control-group error">
