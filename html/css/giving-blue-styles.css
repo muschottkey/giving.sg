@@ -250,7 +250,7 @@
 /* Hover state of card */
 .cpn-sgtn-item:hover{
     box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); 
-    border-bottom-color:transparent; background:#00acd0;
+    border-bottom-color:transparent;
 }
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover { background:none; box-shadow:none;  }
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer{
@@ -345,15 +345,9 @@
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
-
-
-
-/*#uf-dockbar-sidebar ul li > a:visited, #sidebar ul li > a:visited { color: #333; }*/
-
 #uf-dockbar-sidebar ul li:first-child, #sidebar ul li:first-child{
     padding-bottom:10px !important;
 }
-#sidebar ul li > a{ padding: 13px 15px 13px 30px; }
 
 #uf-dockbar-sidebar li.admin > a, #uf-dockbar-sidebar ul li > a.active, #sidebar ul li > a.active,
 #uf-dockbar-sidebar ul li > a.active:hover, #sidebar ul li > a.active:hover {

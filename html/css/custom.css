@@ -342,10 +342,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {
   min-height: 100px !important; }
-
+/*
 .sgtn-img {
   height: 136px;
-  overflow: hidden; }
+  overflow: hidden; } */
 
 #selPayment {
   min-width: 150px; }
@@ -1176,12 +1176,12 @@ div.charity-donors img.dr-img {
 
 #_145_dockbarMessages .footer {
   background: none !important; }
-
+/* DB comment
 #copy-url {
   font-size: 16px !important;
   border-radius: 0 4px 4px 0 !important;
   border: solid #cccccc 1px !important;
-  background-color: #F9F6EC; }
+  background-color: #F9F6EC; } */
 
 #cpn-body {
   height: inherit !important;
@@ -1797,11 +1797,11 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 /* added important to overwrite aui indicator*/
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active {
   background-color: #17A4E1 !important; }
-
+  /*
 .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-  /* background-color: #17a4e1 !important; */
+  /* background-color: #17a4e1 !important; 
   color: #FFF !important;
-  }
+  }*/
 
 /* overwrite giving sg style .aui .btn-success */
 .aui .btn-success.m-bot10, .aui .btn-default.m-bot10 {
@@ -2145,12 +2145,13 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .one-column .span4 {
   margin-top: 40px !important; }
 
+/* db comment
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-success:hover, .btn-success:active, .btn-success:focus, .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus, .aui .btn-success:hover, .aui .btn-success:active, .aui .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus, #login_button:hover, #login_button:focus, #LoginForm .btn:hover, #LoginForm .btn:active, .gallery-txt-box .btn:hover {
   background-color: #0E678E !important;
   color: #FFF !important; }
 
 .btn:hover, .btn-large:hover, .btn-floating:hover, .open-more:hover, .btn-more-img:hover, .steps-content .btn-save input:hover, .steps-content .btn-area input:hover, .add-btn-lst li a:hover, .add-bottom-lst input:hover, #user-about-links input#shortUrlGenerator:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important; }
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important; }*/
 
 .modal .btn.close:focus,
 .modal .btn.close:focus,
