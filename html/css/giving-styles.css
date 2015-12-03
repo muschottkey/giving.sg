@@ -9,8 +9,8 @@ body.non-respv { min-width: 1002px; overflow-x: visible; }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6{
-    font-family: "Roboto", Arial, Helvetica, sans-serif;
-    font-weight:400; line-height:1.1em; color: #172A35; margin-top:24px; margin-bottom: 16px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif; font-weight:400; 
+    line-height:1.1em; color: #172A35; margin-top:24px; margin-bottom: 16px;
 }
 h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
 h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
@@ -28,10 +28,9 @@ textarea, input { font-size:1em; line-height:1.4; word-wrap: break-word; }
 input[type=text]::-ms-clear { display: none !important; opacity: 0 !important; visibility: hidden !important; }
 input[type="text"], input[type="password"], textarea, 
 input::-webkit-clear-button, textarea::-webkit-clear-button, ::-webkit-search-cancel-button { 
-    -webkit-appearance: none !important; 
+    -webkit-appearance:none !important;
 }
 input::-webkit-clear-button, textarea::-webkit-clear-button { display:none !important; }
-input, textarea { -webkit-appearance:none !important;}
 
 a, a:link { color:#00acd0; text-decoration: underline; }
     a:hover { color:#006b82; }
@@ -98,12 +97,9 @@ p.small.text-center { font-size:1em; }
     p#emailFeedback { margin-top:15px; }
 
 .modalwrapper > .row-fluid > .text-center h2.black,
-.modalwrapper > .row-fluid > .text-center h4.black,
 .modalwrapper > .row-fluid > .span6 .text-center h4.black
     {color: #333;}
 
-.modalwrapper > .row-fluid > .text-center .form-group h5.black
-    { color:#999; }
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
@@ -149,8 +145,8 @@ hr { border-top: 1px solid #CCC; }
 .box.focused{ border:1px solid #dcddde; }
 .row-fluid form.form { margin:0 0 10px; }
 .control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important;}
-.control-group .controls > span, label { font-size: .875em; color:#6a6c6f; }
-
+.control-group .controls > span, label { font-size:.875em; color:#6a6c6f; }
+table td label { font-size:1em; }
 
     .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#666; line-height: 2.2; }
 label.small.grey{color: #999;}
@@ -161,61 +157,92 @@ label.small.grey{color: #999;}
 .pagination ul { box-shadow:none; border-radius:none; }
 .pagination ul > li > a, .pagination ul > li > span { border:0; background:none; }
 
-/* Inline form elements styling in horizontal forms */
-.inline-elements input:not([type=checkbox]) { width: auto; }
-
-/* CUSTOM FORM STATES */
-#preview-label{background-color: #999;}
-
-/* error state*/
-.control-group.error input, .control-group.error select, .control-group.error textarea,
-.control-group.error textarea:focus, input:focus:invalid:focus, textarea:focus:invalid:focus, 
-select:focus:invalid:focus { border-color: #F16577; }
-
-.control-group.error .checkbox, .control-group.error input, .control-group.error .radio, 
-.control-group.error select, .control-group.error textarea{
-    color: #333 !important;
+/* UI FORM Controls - CONTROLS / FIELDS */
+textarea, input[type="text"], .button-input, .control-group .form-control {
+    border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none !important; 
+    padding:6px 20px 6px 5px; margin-bottom:5px; height:33px; font-size:inherit;
+    line-height:1.25; color: #172A35;  
 }
-.control-group.error .help-block p, .control-group.error .help-block,Ã‚Â .control-group.error .help-inline{
-    color: #F16577; font-weight: 400;
+.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
+#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
+#claim-tax input:not([type="checkbox"]) {
+    width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
 }
-.control-group.error .help-block.smaller, #donation-userDetails .smaller { font-size: 0.875em; }
-
-.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on{
-    border-color: #F16577 !important;
-    color: #F16577 !important; font-weight: 400;
+input[type="text"], .control-group .form-control,
+#respwdForm input.form-control,
+#claim-tax input.form-control,
+#gf-bkt-login input.form-control,
+#donation-userDetails input.form-control{
+    padding-left:5px; padding-right:20px; box-sizing:border-box;
+    -webkit-box-sizing:border-box;
 }
-.control-group.error .validation-feedback i, .alert-danger, .alert-error, .alert-error i, .alert-error h6 {
-    color: #F16577 !important;
-}
-.alert-danger, .alert-error h6 { text-align:center; }
-.control-group.error input:focus, .control-group.error textarea:focus{
-    color: #F16577;
-}
+.control-group .input-prepend .add-on.fa, .control-group .input-append .add-on.fa{
+    font-family: "FontAwesome";
+} 
+.control-group .validation-feedback i { line-height:1.2; }
 
 /*Success state*/
-.control-group.success input, .control-group.success select, .control-group.success textarea,
+.control-group.success input, .control-group.success select, .control-group.success textarea, 
+.control-group.success .checkbox, .control-group.success .radio {
+    color:#172A35 !important; border-color: #43AD49 !important;
+}
 .control-group.success input:focus, .control-group.success select:focus, .control-group.success textarea:focus,
-.control-group.success .pretty-text .box-footer {
-    border-color: #43AD49 !important;
+.control-group.success .pretty-text .box-footer, .control-group.success .pretty-text p {
+    border-color:#43AD49;
 }
-.control-group.success .checkbox, .control-group.success .radio, .control-group.success input, .control-group.success select, 
-.control-group.success textarea{
-    color: #333 !important;
-}
-.control-group.error .control-label, 
-.control-group.success .control-label, .control-group.success .help-block, .control-group.success .help-inline{
+.control-group.error .control-label, .control-group.success .control-label, 
+.control-group.success .help-block, .control-group.success .help-inline{
     color: #6a6c6f;  font-weight: 400;
 }
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
     border-color: #43AD49; color: #43AD49; font-weight: 400;
 }
-.control-group .input-prepend .add-on.fa, .control-group .input-append .add-on.fa{
-    font-family: "FontAwesome";
+.control-group.success .validation-feedback i { color: #43AD49; }
+
+/* error state*/
+.control-group.error input, .control-group.error select, .control-group.error textarea, .control-group.error input:focus, 
+.control-group.error textarea:focus, input:focus:invalid:focus, textarea:focus:invalid:focus { border-color:#F16577; }
+
+.control-group.error input, .control-group.error select, .control-group.error textarea,
+.control-group.error .radio, .control-group.error .checkbox {
+    color:#172A35 !important;
 }
-.control-group.success .pretty-text textarea, .control-group.success .pretty-text p{
-    color: #43AD49 !important;
+.control-group.error .validation-feedback i, .alert-danger, .alert-error, .alert-error i, .alert-error h6,
+.control-group.error .help-block p, .control-group.error .help-block, .control-group.error .help-inline {
+    color:#F16577; 
 }
+.control-group.error .input-prepend .add-on, .control-group.error .input-append .add-on{
+    border-color: #F16577; color: #F16577; font-weight: 400;
+}
+.alert-danger, .alert-error h6 { text-align:center; }
+
+.btn.disabled, .btn.disabled:hover,.btn.disabled:focus,
+input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
+    background:#f5f6f6; color: #919396; border-color:#dcddde; box-shadow: none !important;
+}
+
+/* Inline form elements styling in horizontal forms */
+.inline-elements input:not([type=checkbox]) { width: auto; }
+/* Inline form elements for adding label in front */
+.input-append .add-on, .input-prepend .add-on { border:none; background:none; font-size:18px; line-height:1.8; }
+
+/*  CUSTOM SELECT   */
+.modal .controls input.customAmt { width:50%; font-size: 1.75em; height: 1em; max-width:200px; font-weight:500; } 
+#selAmount { font-size:1em; width:140px; height: 40px; }
+#selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; }
+    #selAmount.sod_select:after { top:42%; }
+
+#donateLoggedModal #spca, #spca { 
+    font-weight:900; margin-bottom: 10px; font-size:2.25em !important; color:#919396; text-align:center; background:#FFF; 
+}
+.mobile-customAmt { margin-top:10px; }
+.mobile-customAmt .input-append .span8 { 
+    width:100px; margin-right:5px; font-size:24px; height:35px; text-align: right; padding: 0 5px;
+}
+
+/* CUSTOM FORM STATES */
+#preview-label{background-color: #999;}
+
 #user-about-links .input-append.input-prepend .add-on:first-child{
     float:none; width:auto; display:block; text-align:left; border:0 none; border-bottom:1px solid #DDD;
     color:#666 !important; background:#F2F2F2; 
@@ -244,10 +271,6 @@ select:focus:invalid:focus { border-color: #F16577; }
 #jira-353-content input{
     padding-right:44px;
 }
-
-/***************************************************************************
-                            LABEL CHECKBOXES
-***************************************************************************/
 
 
 
@@ -388,7 +411,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #vw-gft-dtn-prefs .radio input[type="radio"] {width:16px;}
 #vw-gft-dtn-prefs .radio span {margin:3px 0 ;}
 #vw-gft-dtn-prefs input[type="text"] {text-align:left; background:#fff;}
-#vw-gft-dtn-prefs  .controls {width:58%;}
+#vw-gft-dtn-prefs  .controls {width:60%; margin-left: 35%; }
 #vw-gft-dtn-prefs  .controls .validation-feedback {margin: 10px 3px -30px 0;}
 #vw-gft-dtn-prefs label.control-label {text-align:left; width:80%; line-height:14px;}
 #claim-tax {background:#f8f8f8; }
@@ -438,36 +461,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     padding:12px; border:1px solid #cccccc; border-radius: 50%; font-size: 0.875em;
 }
 
-/* UI FORM Controls - CONTROLS / FIELDS */
-textarea, input[type="text"], .button-input, .control-group .form-control {
-    border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none !important;
-    padding:6px 0; font-size:inherit; line-height: 1.25; color: #172A35; margin-bottom:5px;
-}
-.modal input:not([type="checkbox"]), .main-content input:not([type="checkbox"]), 
-#setup-donation-content input:not([type="checkbox"]), #gf-bkt-login input:not([type="checkbox"]), 
-#claim-tax input:not([type="checkbox"]) {
-    width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
-}
-.btn.disabled, .btn.disabled:hover,.btn.disabled:focus,
-input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
-    background:#f5f6f6; color: #919396; border-color:#dcddde; box-shadow: none !important;
-}
-.input-append .add-on, .input-prepend .add-on { border: none; background: none; font-size:18px; line-height: 1.8; }
-
-/*  CUSTOM SELECT   */
-.modal .controls input.customAmt { width:50%; font-size: 1.75em; height: 1em; max-width:200px; font-weight:500; } 
-#selAmount { font-size:1em; width:140px; height: 40px; }
-#selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; }
-    #selAmount.sod_select:after { top:42%; }
-
-#donateLoggedModal #spca, #spca { 
-    font-weight:900; margin-bottom: 10px; font-size:2.25em !important; color:#919396; text-align:center; background:#FFF; 
-}
-.mobile-customAmt { margin-top:10px; }
-.mobile-customAmt .input-append .span8 { 
-    width:100px; margin-right:5px; font-size:28px; font-weight:500; height:35px; text-align: right; padding: 0 5px;
-}
-
 /* MODAL - UI Controls */
 #setup-donation-content input:not([type="checkbox"]){padding-bottom: 7px;}
 
@@ -476,20 +469,6 @@ input[disabled], select[disabled], textarea[disabled], input[readonly], select[r
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
-#LoginForm .form-control,
-#respwdForm input.form-control,
-#claim-tax input.form-control,
-#gf-bkt-login input.form-control,
-#donation-userDetails input.form-control{
-	padding-left:42px !important;
-	padding-right:42px !important;
-	box-sizing:border-box;
-	-webkit-box-sizing:border-box;
-	height:33px;
-}
-#LoginForm .form-control,
-#respwdForm input.form-control,
-#claim-tax input.form-control{height:37px;}
 .decor-ttl{
 	display:block;
 	font-size:17px;
@@ -751,8 +730,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 .dropdown-green.btn-group button .caret:before{
     color: #FFF;
 }
-.control-group.error .validation-feedback i { color: #F16577; }
-.control-group.success .validation-feedback i { color: #43AD49;font-size: 12px;}
 
 .row-fluid .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-success{background-color: #43AD49;}
 .row-fluid .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-danger{background-color:#F16577;}
@@ -854,9 +831,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #donateForm .form-group{
     margin-bottom: 30px;
 }
-#donateModal label.error.help-block{font-size: 0.9em;}
-#donateModal .small a{font-size: 0.9em;}
-.black{color: #000;}
 
 #donateLoggedModal .sgt-avatar {margin-left:175px;}
 #donateLoggedModal .cpn-featured-status {transform: scale(1) rotate(-45deg) translate(-5px); -moz-transform: scale(1) rotate(-45deg) translate(-5px); -webkit-transform: scale(1) rotate(-45deg) translate(-5px); -o-transform: scale(1) rotate(-45deg) translate(-5px);}
@@ -1244,22 +1218,17 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     .search-controls .link-refine {line-height: 3em;font-size: .935em;}
     #search-results #sortSearchResults {min-width:156px;}
 
-
 /*       GIFT BASKET       */
 #gf-bkt-wrapper{margin-bottom: 0px;}
 #gf-bkt-wrapper .section-header{background-color: #ffffff;}
 
 /*************************         TABLE       **************************/
-.gf-bkt { border-collapse:separate; margin-top: 40px; width:100%; border:1px solid #DDD; }
-
-.gf-bkt thead tr td, .gf-bkt tr td { font-size:1em; }
-.t-header-wrapper, .gf-bkt thead tr:first-child td, 
-#vw-gift-bkt-donate .gf-bkt tbody tr:first-child td:first-child,
-#vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(2) td,
-#vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(3) td:first-child{
-    color:#242424; font-weight:500;
+.gf-bkt, .aui .gf-bkt { border-collapse:separate; margin-top:20px; border:1px solid #dcddde; vertical-align: middle; }
+.gf-bkt thead tr td, .gf-bkt tr td { font-size:1em; border-top: 1px solid #dcddde; }
+.t-header-wrapper, .gf-bkt thead tr:first-child td,  #vw-gift-bkt-donate .gf-bkt tbody tr:first-child td:first-child,
+#vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(2) td, #vw-gift-bkt-donate .gf-bkt tbody tr:nth-child(3) td:first-child{
+    color:#172A35; font-weight:500;
 }
-
 .gf-bkt tr { border-top:0 none; border-left:1px solid #DDD; border-right:1px solid #DDD ;}
 .gf-bkt tr td { text-align:center; vertical-align: middle; }
    
@@ -1317,7 +1286,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .gf-bkt tbody tr td span.tax-statement{display: block;margin-top: 20px;}
 #gf-bkt-login{max-width: 350px;margin-left: auto;margin-right: auto;}
 #gf-bkt-login .control-group{margin-top: 1em;}
-#gf-bkt-login input{padding: 5px 0 !important;}
+
 #gf-bkt-login .help-block{font-size: 0.875em;}
 .gf-bkt .cellEditing{max-width: 100%;}
 .p-footer{ padding: 15px 5px;}
@@ -1349,8 +1318,6 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #vw-gift-bkt-donate ul li{list-style: none;text-align: left;padding: 10px 8px 10px 30px;border-bottom: 1px solid #CCCCCC;}
 
 /* Basket Quick Access */
-
-#vw-gift-bkt-donate .gf-bkt tbody tr td:first-child{color:#666 !important;}
 .t-header-wrapper { padding: 15px 3%; }
 
 #payment-type.box{padding: 0;}
@@ -1364,17 +1331,12 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
   border-radius: 0;
 }
 
-#vw-gft-dtn-prefs{}
 #vw-gft-dtn-prefs tr td{text-align: left;padding: 10px 15px;height: 40px;}
 #vw-gft-dtn-prefs tr:first-child td{border-top: 0; width: 25%;}
 #vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
 #vw-gft-dtn-prefs tr td input[type=checkbox]{margin-top: 0;}
-#vw-gft-dtn-prefs tr td label{text-align: left;}
-#vw-gft-dtn-prefs tr td:first-child{
-	width: 30%;
-	border-right:1px solid #ccc;
-}
-#vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left: 40px;padding-top: 6px;}
+#vw-gft-dtn-prefs tr td:first-child{ width: 30%; border-right:1px solid #dcddde; }
+#vw-gft-dtn-prefs tr td .control-label {width: auto; padding-left:20px; padding-top:6px;}
 .box-r-footer {
     display: block;
     padding:5px 10px;
@@ -3474,21 +3436,14 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.2%; margin-left:1.2%; }
     #dtn-about-us-container {margin-left:0;}
-    #vw-gft-dtn-prefs tr td:first-child{width: 30%}
     .dtn-amt-item{position: relative;}
-     .dtn-amt-item .dtn-btns {
-      position: absolute;
-      right: 0;
-      top: 50%;
-      margin-top: -50px;
-    }
+    .dtn-amt-item .dtn-btns { position: absolute; right: 0; top: 50%; margin-top: -50px;  }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
     h4 { font-size: 1.5em; } /* 24px */
     h5 { font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
-    #causes-wrapper .cause-box, .cause-box a.mobile-block { }
     #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}

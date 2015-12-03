@@ -240,24 +240,25 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .aui .table th, .aui .table td {
   text-align: center;
   vertical-align: middle; }
-
+/*
 .gf-bkt {
   border: 1px solid #DDD !important;
   border-radius: 8px !important;
   border-collapse: separate !important;
   margin-top: 40px !important;
-  vertical-align: middle !important; }
+  vertical-align: middle !important; } */
 
 #donation-userDetails label {
   font-size: 0.8em !important;
   font-weight: normal; }
-
+/* db comment
 .gf-bkt {
+
   border: 1px solid #DDD !important;
-  border-radius: 8px !important;
+  border-radius: 8px !important; 
   border-collapse: separate !important;
   margin-top: 40px !important;
-  vertical-align: middle !important; }
+  vertical-align: middle !important; } */
 
 #gf-bkt-table tbody tr td:first-child {
   height: 75px !important; }
@@ -870,8 +871,9 @@ input[disabled]#campaign-title-textfield {
 .creditcard-option.enets img {
   max-height: 20px; }
 
+/* DB Comment
 #vw-gft-dtn-prefs tr td label {
-  min-width: 100%; }
+  min-width: 100%; }*/
 
 /* collapsible section title in mobile */
 @media (max-width: 767px) {
@@ -945,10 +947,10 @@ div.charity-donors img.dr-img {
   transition: none 0s ease 0s;
   font-weight: 300 !important;
   padding: 7px !important;
-  border-radius: none !important; }*/
+  border-radius: none !important; }
 
 .open-more, .btn-more-img, .btn-ghost {
-  border-radius: 6px !important; }
+  border-radius: 6px !important; }*/
 
 /* easy donation add more donation button */
 .more-donations {
@@ -1012,10 +1014,10 @@ div.charity-donors img.dr-img {
 #addthis_toolbox a, #addthis_toolbox a:link, #addthis_toolbox a:active {
   color: #FFF !important; }
 
-
+/*
 .open-more, .btn-more-img, .btn-ghost {
   box-shadow: none !important;
-  border-radius: 6px; }
+  border-radius: 6px; }*/
 
 #disabledDonate {
   margin-bottom: 0 !important; }
@@ -2157,7 +2159,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .modal .btn.active.close {
   box-shadow: none !important; }
 
-button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more-img, #user-about-links .control-group input#shortUrlGenerator {
+button, input[type="submit"], .btn, .aui .btn,  .open-more, .btn-more-img, #user-about-links .control-group input#shortUrlGenerator {
   font-weight: normal !important; }
 
 .control-group.error .help-block p, .control-group.error .help-block, ? .control-group.error .help-inline {
