@@ -8,17 +8,17 @@ body.non-respv { min-width: 1002px; overflow-x: visible; }
 #wrapper, .aui #wrapper { padding-top:70px; position: relative; }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6{
     font-family: "Roboto", Arial, Helvetica, sans-serif; font-weight:400; 
     line-height:1.1em; color: #172A35; margin-top:24px; margin-bottom: 16px;
 }
-h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
-h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
-h3 { font-size:1.5em; line-height:1.13636364em !important; }                        /* 24px */
-h4 {font-size: 1.25em; margin: 0;}                                                  /* 20px */
-h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }                                 /* 16px */
-h6 { font-size:.875em; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }       /* 14px */
-h4, h5 { font-weight:500; }
+h1, .aui h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
+h2, .aui h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
+h3, .aui h3 { font-size:1.5em; line-height:1.13636364em !important; }                        /* 24px */
+h4, .aui h4 {font-size: 1.25em; margin: 0;}                                                  /* 20px */
+h5, .aui h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }                                 /* 16px */
+h6, .aui h6 { font-size:.875em; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }       /* 14px */
+h4, .aui h4, h5, .aui h5 { font-weight:500; }
 
 h1, h2, h3, h4, h5 ,span, a, p, blockquote,button,input,label {text-shadow:none !important;}
 p, p.black {font-size: 1em;line-height: 1.4;margin: 0 0 1em;color: #555;}
@@ -134,12 +134,10 @@ hr { border-top: 1px solid #CCC; }
 #uf-dockbar-sidebar .b-top { border-top:1px solid #E7E8E9; border-bottom:1px solid #E7E8E9; }
 
 /*  FORM ELEMENTS STYLING       +++++++++++++++++++++++++++++++++++++++++++ */
-::-webkit-input-placeholder { 
-    font-size:1.0625em; font-weight:400; color:#bec0c2; font-family:"Roboto", "Kalam", sans-serif; 
-}
-:-moz-placeholder { /* older Firefox*/ font-size:1.0625em; font-weight:400; color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; }
-::-moz-placeholder { /* Firefox 19+ */  font-size:1.0625em; font-weight:400; color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; } 
-:-ms-input-placeholder { font-size:1.0625em; color:#bec0c2; font-weight:400; font-family:"Roboto", "Kalam", sans-serif; }
+::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#FFF; font-family:"Roboto", "Kalam", sans-serif; }
+:-moz-placeholder { /* older Firefox*/ font-size:.875em font-weight:400; color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; }
+::-moz-placeholder { /* Firefox 19+ */  font-size:.875em font-weight:400; color:#bec0c2; font-family:"Roboto","Kalam", sans-serif; } 
+:-ms-input-placeholder { font-size:.875em color:#bec0c2; font-weight:400; font-family:"Roboto", "Kalam", sans-serif; }
 
 /*  FORM STYLING */
 .box.focused{ border:1px solid #dcddde; }
@@ -779,7 +777,7 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 /* NPO step3 modal carousel */
 #npoItem2 p{margin-top:20px;}
 p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;text-align: center;border:1px solid #cccccc;}
-.carousel-indicators{top:inherit;right: auto;left:auto;bottom: 20px;text-align: center;width: 100%;}
+.carousel-indicators{ top:inherit; right:auto; left:45%; bottom:20px; text-align:center; }
 #npoCarousel .carousel-indicators{bottom: -30px;}
 #npoCarousel #btnStartYes{display: block;margin: 0 auto;}
 .carousel-indicators li { background:#999; float:none; display:inline-block; cursor:pointer; }
@@ -1723,7 +1721,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .cpn-slide-right .c-inner { width:93%; padding: 15px 8%; }
 .cpn-slide-right h3 { font-size:1.5em; font-weight:400; max-height: 3.55em; overflow:hidden; margin: 0;}
 .cpn-slide-right .grey { color:#666; margin-top: 5px; max-height: 2.5em; overflow: hidden; }
-.cpn-slide-right .campaign-stats {margin: 2.25em 1em 1em;}
+.cpn-slide-right .campaign-stats {margin:1.5em 1em .5em;}
 
 .landing-cpn-slider-wrapper .swiper-pagination{ position:relative; padding: 15px 20px; }
 
@@ -1736,25 +1734,22 @@ span.span12.read-more.text-left.m-0{display: none;}
     .slider-navigation .navigation-inner { width: 220px; }
 
 /* CONTROLS */
-.wrapper .swiper-button-prev, .wrapper .swiper-button-next, .carousel-control { 
-    height:320px; width:50px; opacity:.5; background:none; background-image:none; border:none;
-    color:#919396; top:22%; margin-top:0; display:table; right:0;
+body .swiper-button-prev, body .swiper-button-next, .carousel-control { 
+    height:200px; width:50px; opacity:.5; background:none; background-image:none; border:none;
+    color:#919396; top:22%; margin-top:0; display:table; right:0; 
 }
-    .home-slider .swiper-button-next, .home-slider .swiper-button-prev { color:#fbfbfb; top:10%; }
-    .wrapper .swiper-button-prev { left:0; }
-.wrapper .swiper-button-prev:hover, .wrapper .swiper-button-next:hover { 
-    background:none; opacity:1; 
-}
-.wrapper .swiper-button-prev:before, .wrapper .swiper-button-next:before {
+    .home-slider .swiper-button-next, .home-slider .swiper-button-prev { height:320px; color:#fbfbfb; top:10%; }
+    body .swiper-button-prev, .carousel-control.left { left:0; text-decoration:none; }
+    .carousel-control.right { right:0; text-decoration:none; }
+
+body .swiper-button-prev:hover, body .swiper-button-next:hover { background:none; opacity:1; }
+body .swiper-button-prev:before, body .swiper-button-next:before, .carousel-control .fa {
     font-family:"fontAwesome"; display:table-cell; text-align:center; font-size:5em; font-weight:100;
-    vertical-align:middle;
+    vertical-align:middle; z-index: 1020; 
 }
-
-#setup-dtn-carousel .carousel-control:hover, .carousel-control:hover{
-    color: #00acd0; background: #eee; opacity: 1; 
-}
-.wrapper .swiper-button-prev.swiper-button-disabled, .wrapper .swiper-button-next.swiper-button-disabled { opacity:.25; }
-
+.carousel-control .fa { font-size:1em; color:#fbfbfb; }
+.carousel-control:hover{ color:#00acd0; background:none; opacity:1;  }
+body .swiper-button-prev.swiper-button-disabled, body .swiper-button-next.swiper-button-disabled { opacity:.25; }
 .navigation-inner .swiper-button-prev, .navigation-inner .swiper-button-next {
     height:36px; width:36px; opacity:.6; background:#E7E8E9; border-radius:50%; border-width: 0; 
     top: 17%;
@@ -1765,18 +1760,11 @@ span.span12.read-more.text-left.m-0{display: none;}
 .navigation-inner .swiper-button-prev:hover, .navigation-inner .swiper-button-next:hover {
     opacity: 1; background: #eee;
 }
+body .swiper-button-prev:before { content: "\f104"; }
+body .swiper-button-next:before { content: "\f105"; }
 
-    #setup-dtn-carousel .carousel-control { margin-top: 10px;font-size: 1.5em;z-index: 1020;}
 
-
-#cpn-meta .swiper-button-next,
-#cpn-meta .swiper-button-prev{
-	width:35px;
-	height:140px;
-	top:50%;
-	margin-top:-70px;
-	background:none;
-}
+/*
 #cpn-meta .swiper-button-prev div, #cpn-meta .swiper-button-next div{
     height: 35px;
     width: 35px;
@@ -1787,6 +1775,15 @@ span.span12.read-more.text-left.m-0{display: none;}
     color: #00acd0;
     background-image: none;
     margin-top: 53px;
+}
+
+#cpn-meta .swiper-button-next,
+#cpn-meta .swiper-button-prev{
+	width:35px;
+	height:140px;
+	top:50%;
+	margin-top:-70px;
+	background:none;
 }
 #cpn-meta .swiper-button-prev div{
       height: 35px;
@@ -1807,11 +1804,7 @@ span.span12.read-more.text-left.m-0{display: none;}
     font-size:1.8em;
     line-height: 1.2;
     text-align: center;
-}
-#cpn-meta .swiper-button-prev div:before,
-.home-slider .swiper-button-prev:before, .swiper-button-prev:before { content: "\f104"; }
-#cpn-meta .swiper-button-next div:before,
-.home-slider .swiper-button-next:before, .swiper-button-next:before { content: "\f105"; }
+}*/
 
 
 /* CAROUSEL DOTS */

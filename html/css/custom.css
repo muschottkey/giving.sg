@@ -268,11 +268,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .clear-both {
   clear: both; }
-
+/*
 #setup-dtn-carousel .carousel-indicators {
   left: 50%;
   margin-left: -45px;
-  width: 90px; }
+  width: 90px; } */
 
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
@@ -1812,9 +1812,9 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
   font-size: 16px !important;
   border: 1px solid #CCC !important;
   border-radius: 4px !important; }
-
+/*
 #setup-dtn-carousel {
-  border: 1px solid #CCC !important; }
+  border: 1px solid #CCC !important; } */
 
 .fr-widget > h4 {
   margin-top: 20px !important; }
@@ -2197,10 +2197,10 @@ button, input[type="submit"], .btn, .aui .btn,  .open-more, .btn-more-img, #user
 
 #user-about-links input#shortUrlGenerator {
   margin-left: 0px !important; }
-
+/* DB COMMENT 
 #setup-dtn-carousel .carousel-control .fa {
   font-size: 0.8em !important;
-  color: #17A4E1 !important; }
+  color: #17A4E1 !important; } */
 
 .btn:disabled, .aui .btn:disabled {
   color: inherit !important; }
