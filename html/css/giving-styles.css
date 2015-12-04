@@ -1736,49 +1736,39 @@ span.span12.read-more.text-left.m-0{display: none;}
     .slider-navigation .navigation-inner { width: 220px; }
 
 /* CONTROLS */
-#setup-dtn-carousel .carousel-control, .carousel-control,
-.cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next {
-    height: 35px;
-    width: 35px;
-    opacity:.6;
-    border-radius: 50%;
-    border-width: 0;
-    background: #eee;
-    color: #00acd0;
-    background-image: none;
-    margin-top: 10px;
+.wrapper .swiper-button-prev, .wrapper .swiper-button-next, .carousel-control { 
+    height:320px; width:50px; opacity:.5; background:none; background-image:none; border:none;
+    color:#919396; top:22%; margin-top:0; display:table; right:0;
 }
-.home-slider .swiper-button-next, .home-slider .swiper-button-prev{
-      height: 35px;
-    width: 35px;
-    opacity:.6;
-    border-radius: 50%;
-    border-width: 0;
-    background: #eee;
-    background-image: none;
-    margin-top: -17px;
+    .home-slider .swiper-button-next, .home-slider .swiper-button-prev { color:#fbfbfb; top:10%; }
+    .wrapper .swiper-button-prev { left:0; }
+.wrapper .swiper-button-prev:hover, .wrapper .swiper-button-next:hover { 
+    background:none; opacity:1; 
 }
-    #setup-dtn-carousel .carousel-control { margin-top: 10px;height: 30px; width: 30px;font-size: 1.5em;z-index: 1020;}
-    .navigation-inner .swiper-button-next, .navigation-inner .swiper-button-prev {
-        background:none; top: 54%;
-    }
+.wrapper .swiper-button-prev:before, .wrapper .swiper-button-next:before {
+    font-family:"fontAwesome"; display:table-cell; text-align:center; font-size:5em; font-weight:100;
+    vertical-align:middle;
+}
 
-#setup-dtn-carousel .carousel-control:hover, .carousel-control:hover,
-.cpn-holder .swiper-button-prev:hover, .cpn-holder .swiper-button-next:hover,
-.home-slider .swiper-button-next:hover, .home-slider .swiper-button-prev:hover{
+#setup-dtn-carousel .carousel-control:hover, .carousel-control:hover{
     color: #00acd0; background: #eee; opacity: 1; 
 }
-.aui body .home-slider .swiper-button-prev:before, .aui body .home-slider .swiper-button-next:before, 
-.swiper-button-prev:before,.swiper-button-next:before  {
-    font-family: "fontAwesome";
-    height: 35px;
-    width: 35px;
-    color: #00acd0;
-    display: block;
-    font-size:1.8em;
-    line-height: 1.2;
-    text-align: center;
+.wrapper .swiper-button-prev.swiper-button-disabled, .wrapper .swiper-button-next.swiper-button-disabled { opacity:.25; }
+
+.navigation-inner .swiper-button-prev, .navigation-inner .swiper-button-next {
+    height:36px; width:36px; opacity:.6; background:#E7E8E9; border-radius:50%; border-width: 0; 
+    top: 17%;
 }
+.navigation-inner .swiper-button-prev:before, .navigation-inner .swiper-button-next:before { 
+    color:#00acd0; font-size:1.8em;
+}
+.navigation-inner .swiper-button-prev:hover, .navigation-inner .swiper-button-next:hover {
+    opacity: 1; background: #eee;
+}
+
+    #setup-dtn-carousel .carousel-control { margin-top: 10px;font-size: 1.5em;z-index: 1020;}
+
+
 #cpn-meta .swiper-button-next,
 #cpn-meta .swiper-button-prev{
 	width:35px;
@@ -3596,7 +3586,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 @media (min-width: 768px) {
     
     .collapse.visible-desktops{height: auto !important;}
-    .home-slider:hover .swiper-button-prev, .home-slider:hover .swiper-button-next{ display: block; }
     .footer-links{ margin-left:0; font-size:.875em; }
     .pre-footer .acc-toggle{font-size: 1.125em;height: 3.2em; display:table-cell;vertical-align:bottom; padding-bottom:.5em;}
     #signUpNewsletterForm label { text-align: left;}
