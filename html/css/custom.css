@@ -1950,7 +1950,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   padding: 5px 3px !important; }
 
 .cause-box input[type=checkbox]:checked + label:after {
-  display: none !important;
+  display: none;
   top: 3px !important;
   right: 0px !important; }
 

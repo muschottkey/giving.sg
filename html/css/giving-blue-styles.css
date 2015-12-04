@@ -97,7 +97,13 @@
 
 /* Why Giving Corporate Identity CHANGE (BLUE) */
 /* Causes Display */
-.donation-wrapper #causes-wrapper .cause-box { border:1px solid #ccc;border-radius: 6px; }
+.donation-wrapper #causes-wrapper .cause-box { border:1px solid #dcddde;border-radius: 6px; }
+.donation-wrapper #causes-wrapper .cause-box label{color:#6a6c6f !important;}
+#causes-wrapper .cause-box input[type="checkbox"]:checked + label::before{
+	background:#f1f1f2;
+	color:#3d2a35;
+}
+
 
 .cause-box a, .cause-box a:link { text-decoration:none; }
     .cause-box a:hover h4, .cause-box a:active  h4 { 
