@@ -428,9 +428,10 @@ $('.switch').bootstrapSwitch({
      var campaignLandingSwiper = new Swiper ('.landing-cpn-slider-wrapper', {
         pagination: '.swiper-pagination',
         sliderPerView: 1,
-        paginationClickable: true,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+         pagination: $(this).find('.swiper-pagination'),
+        paginationClickable: $(this).find('.swiper-pagination'),
+        nextButton: $(this).find('.b-next'),
+        prevButton: $(this).find('.b-prev'),
         loop:true
     })  
 
