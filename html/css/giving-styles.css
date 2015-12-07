@@ -608,6 +608,26 @@ button:hover, .aui button:hover, .btn:hover, .aui .btn:hover, .btn-large:hover, 
 #save-actions{border:none;}
 #donation-userDetails{padding: 20px; }
 
+#setup-dtn-carousel .carousel-control .fa{height:24px;vertical-align:middle;}
+.contact-us #contact-us .action-link{
+	background: #b4f2ff none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 6px;
+    color: #006b82;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.4;
+    outline: medium none;
+    padding: 10px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+.contact-us #contact-us .action-link i{
+	width:auto !important;
+	font-size:18px;
+}
+
 /* UI ELEMENTS - TAX TDR ICON */
 #cpn-donate-now .box > h4 + .indicate-tdr {
     background:url(../images/ico-tax-deductible.png) no-repeat 5px -2px; background-size:28px;
@@ -1025,8 +1045,9 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #donation-userDetails input#user_address1 {  margin-bottom:30px; }
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
-#user-about-links .input-append.input-prepend{width: 55%;float: left;}
-#user-about-links .input-append.input-prepend .add-on:last-child{background-color: #ffffff;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686; border-width:0 0 1px !important; border-radius:0 !important; margin:1px 0 0;}
+#user-about-links .input-append.input-prepend{width: 55%;float: left; position:relative;}
+#user-about-links .input-append.input-prepend .add-on:last-child{position:absolute; right:-5px; bottom:0; background: none;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686; border-width:0 0 1px !important; border-radius:0 !important; margin:1px 0 0;}
+#user-about-links .error .input-append.input-prepend .add-on:last-child{color:#F16577;}
 
 #user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #43AD49;content: "\f00c";}
 
@@ -3468,8 +3489,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 @media (max-width: 767px) {
 	#tab00 .data-list .data-list-item{padding-top:0;}
 	#sortable .t-header .ui.checkbox{margin-top:9px;}
-	#cpn-meta .cpn-holder .swiper-button-prev,
-	#cpn-meta .cpn-holder .swiper-button-next{display:none;}
     #wrapper { padding-top:50px; }
 	#tab00 .span3.highlight-item.highlight-button,
 	#tab00 .row-fluid 	.highlights.border-all.span9{
@@ -4016,6 +4035,10 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 }
 
 @media (max-width: 600px) {
+	
+	.cpn-holder .swiper-button-prev,
+	.cpn-holder .swiper-button-next{display:none;}
+	
     #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0 auto;}
         #cpn-info { width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
     #setup-dtn-carousel {padding-bottom:48px;}
