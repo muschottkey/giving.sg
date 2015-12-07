@@ -702,8 +702,6 @@
 .select-like > button {
   border-bottom: 1px solid #999 !important; }
 
-.progress-dots ul li:first-child {
-  margin-left: 0; }
 
 .dtn-amt-item .dtn-amt h3 {
   vertical-align: middle;

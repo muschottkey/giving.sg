@@ -713,42 +713,29 @@ i.signup-envelope { font-size:5.625em;color: #333; }
 .signupnpo .alert { min-height:320px; }
 
 /* signup Progress Indicators */
-.progress-dots { margin: 30px 0; }
+.progress-dots { margin:30px 0 20px; }
 .progress-dots ul { margin: 0 auto; width:100%; padding-left:0;}
 .progress-dots ul li { width:30%; display: inline-block; margin-right:5px; }
-.progress-dots ul li:first-child{margin-left: 10px;}
-.progress-dots.step3 ul li {
-  width: 15%;
-  display: inline-block;
-  margin-right: 5%;
-  margin-left: 5%;
-}
+.progress-dots ul li:first-child { margin-left:0; float:left; }
+.progress-dots ul li:last-child { margin-right:0; float:right; }
+.progress-dots.step3 ul li { width: 15%; display:inline-block; margin-right:5%; margin-left: 5%; }
 .progress-dots ul li span { float:left;}
 .progress-dots ul li .step-dot{
-    text-align: center; width:30px; height:30px; border: solid 1px #999;border-radius: 50%; 
-    background:#fff; color:#000; font-size:0.75em;line-height: 2.5em;
+    text-align: center; width:30px; height:30px; border:solid 1px #dcddde; border-radius:50%; 
+    background:#fff; color:#172A35; font-size:0.75em; line-height: 2.5em;
 }
-    .progress-dots ul li .step-dot.active {background-color: #43AD49;border: solid 1px #43AD49!important;color: #fff !important;}
+    .boxed-wrapper .progress-dots ul li .step-dot {
+       width:36px; height:36px; font-size:1.125em; line-height:2.2em; font-weight:500;
+    }
+.progress-dots ul li .step-dot.active { background:#43AD49; border:solid 1px #43AD49; color:#fff; }
 .progress-dots ul li .step-label{
-    margin-right: 0; margin-left:6px; width: 60%;
-	padding-left:7px;
-    line-height: 1.2em; font-size: 0.8em; text-align: left;
-	display:table-cell;vertical-align:middle;
-	float:none;
-	height:30px;
+    width:65%; padding-left:7px; font-size: 0.8em; line-height: 1.1em; text-align: left; 
+    display:table-cell; vertical-align:middle; float:none; height:30px;
 }
+.boxed-wrapper .progress-dots ul li .step-label { padding-top:7px; font-weight:700; font-size:1em; }
 
-#setup-donation-content .progress-dots, #jira-353-content .progress-dots{margin-bottom: 0; }
-#setup-donation-content .progress-dots ul li, #jira-353-content .progress-dots ul li {width: 22%; }
-#setup-donation-content .progress-dots ul li:first-child, #jira-353-content .progress-dots ul li:first-child {float: left;}
 #setup-donation-content .progress-dots ul li:nth-child(2), #jira-353-content .progress-dots ul li:nth-child(2) {margin: 0 auto;}
-#setup-donation-content .progress-dots ul li:last-child, #jira-353-content .progress-dots ul li:last-child {float:right; margin-right:0;}
-#setup-donation-content .progress-dots ul li .step-label , #jira-353-content .progress-dots ul li .step-label{
-    margin-top: 4px; line-height: 1.4em; font-size: 0.8em;font-weight: 800;
-}
-#setup-donation-content .progress-dots ul li .step-dot, #jira-353-content .progress-dots ul li .step-dot {
-   text-align: center; width:36px; height:36px; -webkit-text-stroke:1px;font-size:1em;line-height: 2.2em;
-}
+
 
 .signupnpo .title { text-transform: uppercase; }
 .upload-section { padding: 10px 0; }
@@ -3204,7 +3191,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { margin:0 1.4% 1em;} 
     /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
-    #setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
     #contact-info .span6.centered{width: 50%;}
     #dtn-cause-images{padding: 0 !important}
@@ -3251,24 +3237,19 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
         padding: 10px;
         background-color: #efefef;
     }
-
     .cpn-url-box input.span10 {width: 99%;}
     .centered-small-screen{text-align: center;}
     .box.reset {padding-top:10px !important;}
     #cause-image-preview {margin:15px !important;}
     .contact-us p {margin-left:10px;}
     #dtn-add-logo>h4{text-align:center !important;}
-    .modal .progress-dots{
-        text-align: center;
-    }
-   .modal .progress-dots ul li{
-    width: auto;
-   }
-   .modal .progress-dots ul li .step-dot{
-    margin-right: 10px;
-    margin-left: 10px;
-   }
-   .tab-nav-area{display:none;}
+    .modal .progress-dots { text-align: center; }
+    .progress-dots ul li, .progress-dots ul li:first-child, .progress-dots ul li:last-child { width:auto; float:none; }
+    .progress-dots ul li .step-dot{ margin-right:10px; margin-left: 10px; }
+
+    .btn-toggle .btn { width:30%; padding:5px; }
+        .btn-toggle .btn:last-child { width:39%; } 
+    .tab-nav-area, .modal .progress-dots ul li .step-label {display:none;}
    .tab-nav-area.pg480, .tab-nav-area.visible-all{display:block;}
    .tab-section .tab{
     top:0;
@@ -3327,7 +3308,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     .mobile-separator { margin:4em -15px 1em; }
     .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:5.2em; }
 
-    .step-label{display: none !important;}
     .start-cta, .span12.start-cta{padding: 20px 20px;}
     .modal-tiles{width: 100%;padding: 5px 0px 5px;}
     .tile{width:60px;height: 60px;margin-right: 4px;margin-left: 4px;}
@@ -3447,9 +3427,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     .dashboard { margin-left:0; padding:0; }
     .dashboard.non-respv { margin-left:30%; }
     #sidebar.non-respv { width:30%; }
-
     .panel-title{margin-top: 20px !important;}
-
     #donateLoggedModal .modal-body .modalwrapper .span6 div.box {padding-bottom:10px !important;}
 
     /* 353 responsivity hacks */
@@ -3480,7 +3458,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     #nav { display:table !important; }
 }
 @media (min-width: 768px) {
-    
     .collapse.visible-desktops{height: auto !important;}
     .footer-links{ margin-left:0; font-size:.875em; }
     .pre-footer .acc-toggle{font-size: 1.125em;height: 3.2em; display:table-cell;vertical-align:bottom; padding-bottom:.5em;}
@@ -3536,6 +3513,8 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 	vertical-align:top;
     width: auto !important;
 }
+    
+    .step-label{display: none !important;}
 
 #sortable .row-fluid.non-respv .span4.person,
 #sortable .row-fluid.non-respv .span6 {
@@ -3660,13 +3639,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     .signup-section.step1{margin-top:60px;}
 
     .progress-dots ul { text-align: center; }
-    .progress-dots ul li, #setup-donation-content .progress-dots ul li { width:auto; margin-right:0; }
-
-    #setup-donation-content .progress-dots ul { width:auto; max-width:150px; }
-    #setup-donation-content .progress-dots ul li .step-dot {
-        -webkit-text-stroke:0.5px;color:#000; font-size:0.8em;line-height: 1.8em;
-        text-align: center; width:24px; height:24px; border: 1px solid #cccccc;
-    }
+    .progress-dots ul li { width:auto; margin-right:0; }
 
     .section-header{padding: 15px 0;}
     .p-section{margin-bottom:0 ;}
@@ -3679,9 +3652,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
         display: -webkit-flex; display: flex;
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
-    .donation-wrapper #causes-wrapper{margin-left: 0px;margin: 0 auto;max-width: 270px;}
-    
-    
+    .donation-wrapper #causes-wrapper{margin-left: 0px;margin: 0 auto;max-width: 270px;}    
     #causes-span{margin-left: 30px;margin-right: 30px;display: block;}
 
     .causes { padding: 1em 7px; }
@@ -3874,13 +3845,9 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     }
     #select-more-causes,#select-more-causes .popover-content{max-width: 250px;}
     #select-more-causes .popover-content{width: 220px;}
-    #select-more-causes{
-        margin-left: 100px;
-    }
+    #select-more-causes{  margin-left: 100px; }
     #select-more-causes.popover.bottom .arrow {
-        top: -11px;
-        left: 50%;
-        margin-left: -100px;
+        top: -11px;  left: 50%;  margin-left: -100px;
     }
 
     /* Jira 353 */
@@ -4036,7 +4003,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
      #subAttendees button:first-child{width: auto !important;}
      #subAttendees button.dropdown-toggle{width: 50px;}
      .tab-nav-area.pg480{display:none;}
-     
     
     /*from @320 RICH*/
     #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
@@ -4046,10 +4012,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     #cause-image-preview {padding:10px 0 !important;}
     
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
-
-
     .data-list li .person-actions{height:auto !important;}
-
 }
 
 @media (max-width: 600px) {
