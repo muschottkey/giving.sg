@@ -294,12 +294,12 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .social-share a:hover, .social-share a:active, .social-share a:focus {
   color: #FFF !important; }
-
+/* DB  COMMENT 
 #donate-buttons button {
-  font-size: 1.25em !important; }
+  font-size: 1.25em !important; } 
 
 .button-input {
-  margin: 10px 5px !important; }
+  margin: 10px 5px !important; }*/
 
 .img-box span.small {
   font-size: 1em !important;
@@ -312,14 +312,14 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .dtn-amt-item .dtn-amt {
   display: table !important; }
-
+/* DB Comment
 .f-block .input-append {
   width: auto !important;
   float: none !important;
   height: inherit; }
-
+/*
 .cpn-url-box input, .cpn-url-box button {
-  height: 40px !important; }
+  height: 40px !important; } */
 
 .accordion-title {
   margin: 0px auto 20px !important; }
@@ -376,11 +376,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
   .aui .dockbar-split .dockbar .navbar-inner {
     margin-right: 20px; }
-
+/* DB comment 
   .donate-btns button {
     width: 48% !important;
     display: inline-block !important;
-    margin-bottom: 0px !important; }
+    margin-bottom: 0px !important; } */
 
   .dtn-amt-item .dtn-desc {
     width: 100% !important; } }
@@ -936,11 +936,11 @@ div.charity-donors img.dr-img {
 /********************************/
 .aui .btn.active, .aui .btn:active {
   box-shadow: none; }
-
+/* DB  COMMENT 
 #login_button, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active, .btn-toggle .btn.active {
   border: medium none;
-  /*  font-weight: 300 !important; */ }
-/* DB  COMMENT 
+ font-weight: 300 !important;  }
+
 .open-more, .btn-more-img, .btn-ghost {
   background: #F9F6EC none repeat scroll 0% 0%;
   border: medium none !important;
@@ -961,7 +961,7 @@ div.charity-donors img.dr-img {
   text-transform: lowercase !important;
   font-weight: 400 !important;
   border-radius: 6px !important; }
-
+/* DB CComment 
 .preset-amts button, #donate-buttons button {
   width: 70px;
   height: 40px !important;
@@ -973,7 +973,7 @@ div.charity-donors img.dr-img {
 #donate-buttons button {
   width: 46% !important;
   margin: 8px 2% !important;
-  font-size: 1.25em !important; }
+  font-size: 1.25em !important; }*/
 
 #signinmodal .checkbox input[type="checkbox"] {
   margin-top: 2px;
@@ -1181,11 +1181,11 @@ div.charity-donors img.dr-img {
   font-size: 16px !important;
   border-radius: 0 4px 4px 0 !important;
   border: solid #cccccc 1px !important;
-  background-color: #F9F6EC; } */
+  background-color: #F9F6EC; } 
 
 #cpn-body {
   height: inherit !important;
-  position: relative; }
+  position: relative; } */
 
 div.toggle-cpn-body .cpn-body p, #cpn-meta .cpn-body p {
   white-space: pre-line; }
@@ -1721,8 +1721,8 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 /***************************************************************************
     ADDED : APPLY BLUE-CI, overwriting giving sg by ufinity
 ***************************************************************************/
-#custom-amt-input .button-input {
-  font-size: 1em !important; }
+/** DB COMMENT  #custom-amt-input .button-input {
+  font-size: 1em !important; } */
 
 .aui button.close, .aui button.btn.close {
   min-width: 50px; }
@@ -1787,11 +1787,11 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
   margin-top: 0px !important; }
 
 /* added important to overwrite aui default responsive rule*/
-@media (max-width: 979px) {
+/* DB COMMENT @media (max-width: 979px) {
   .row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 {
     width: 100% !important;
     margin: 0;
-    padding: 0; } }
+    padding: 0; } } */
 /* added important to overwrite aui indicator*/
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active {
   background-color: #17A4E1 !important; }
@@ -2157,9 +2157,9 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .modal .btn.close.active,
 .modal .btn.active.close {
   box-shadow: none !important; }
-
+/* DB comment 
 button, input[type="submit"], .btn, .aui .btn,  .open-more, .btn-more-img, #user-about-links .control-group input#shortUrlGenerator {
-  font-weight: normal !important; }
+  font-weight: normal !important; } */
 
 .control-group.error .help-block p, .control-group.error .help-block, ? .control-group.error .help-inline {
   color: #F16577 !important; }
@@ -2192,8 +2192,8 @@ button, input[type="submit"], .btn, .aui .btn,  .open-more, .btn-more-img, #user
 @media (max-width: 600px) {
   #cpn-info {
     width: 110% !important; } }
-#cpn-donate-now .box > h4 + .indicate-tdr {
-  padding-left: 30px; }
+/* DB COMMENT  #cpn-donate-now .box > h4 + .indicate-tdr {
+  padding-left: 30px; } */
 
 #user-about-links input#shortUrlGenerator {
   margin-left: 0px !important; }
