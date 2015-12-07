@@ -1268,9 +1268,9 @@ div.clickable > a.img-placeholder-btn {
 /***************************************************************************
               Home page causes
 ***************************************************************************/
-.aui .journal-content-article #manage-all-causes .cause-box a h4 {
+/* DB comment .aui .journal-content-article #manage-all-causes .cause-box a h4 {
   color: #FFFDFD !important;
-  text-align: center; }
+  text-align: center; } */
 
 /***************************************************************************
               Footer
@@ -1807,11 +1807,11 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 
 .cpn-sgtn-item .sgtn-img {
   background: white; }
-
+/* db comment 
 .preset-amts button, #vol-buttons button {
   font-size: 16px !important;
   border: 1px solid #CCC !important;
-  border-radius: 4px !important; }
+  border-radius: 4px !important; } */
 /*
 #setup-dtn-carousel {
   border: 1px solid #CCC !important; } */
@@ -1942,20 +1942,21 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 
   #setup-donation-wrapper #causes-wrapper {
     margin-top: 20px !important; } }
+    /*DB comment
 .cause-box input[type=checkbox]:checked + label:before {
   background: #B3E7FF; }
 
 .cause-box input[type=checkbox] + label:before {
   border-radius: 8px !important;
-  padding: 5px 3px !important; }
+  padding: 5px 3px !important; } */
 
 .cause-box input[type=checkbox]:checked + label:after {
   display: none;
   top: 3px !important;
   right: 0px !important; }
-
+/*DB comment
 .cause-box input[type=checkbox] + label {
-  height: 0px !important; }
+  height: 0px !important; } 
 
 .cause-box.inline-mobile {
   white-space: nowrap !important; }
@@ -1964,8 +1965,8 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   display: none; }
 
 #causes-wrapper .control-group.error {
-  clear: both; }
-
+  clear: both; }*/
+/* DB COMMENT OUT
 #causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
 .img-box.animal {
   background-image: url("/givingsg-theme/images/img-causes-animal.jpg") !important;
@@ -2040,7 +2041,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .img-box.women {
   background-image: url("/givingsg-theme/images/img-causes-women.jpg") !important;
   background-size: 100px 100px; }
-
+*/ 
 /* NPO Listing */
 #npo-listing .bg-lightgrey {
   background: url(../images/img-header-npolisting.jpg) no-repeat 0 0/cover !important;

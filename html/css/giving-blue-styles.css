@@ -158,9 +158,6 @@
 
 /* Why Giving Corporate Identity CHANGE (BLUE) */
 /* Causes Display */
-.donation-wrapper #causes-wrapper .cause-box {
-  border: 1px solid #ccc;
-  border-radius: 6px; }
 
 .cause-box a, .cause-box a:link {
   text-decoration: none; }
@@ -169,23 +166,6 @@
   text-decoration: none;
   color: #ffffff !important; }
 
-.cause-box a {
-  position: relative;
-  overflow: hidden; }
-
-.cause-box a h4 {
-  color: #FFFDFD;
-  position: absolute;
-  width: 100%;
-  height: 30px;
-  border-top: 0;
-  line-height: 30px;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: block;
-  bottom: 0;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  font-size: 1.125em; }
 
 .cause-box:hover a {
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
