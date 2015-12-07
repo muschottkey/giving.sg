@@ -136,11 +136,13 @@ hr { border-top: 1px solid #CCC; }
 /*  FORM STYLING */
 .box.focused{ border:1px solid #dcddde; }
 .row-fluid form.form { margin:0 0 10px; }
-.control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important;}
+.control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important; }
+
+/* LABEL */
 .control-group .controls > span, label { font-size:.875em; color:#6a6c6f; }
 table td label { font-size:1em; }
 
-    .title-search .span6 > .mobile-block > span.text.small, .upload-section label.small { color:#666; line-height: 2.2; }
+.title-search .span6 > .mobile-block > span.text, .upload-section label.small { color:#6a6c6f; line-height: 2.2; }
 label.small.grey{color: #999;}
 .box label.small { color:#666; }
 .control-group .controls span small, .control-group .controls .checkbox > .small { font-size: 100% !important; }
@@ -177,6 +179,8 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
     display:inline-block; z-index:1000;
 }
 
+.input-append .add-on, .input-prepend .add-on { border:none; background:none; font-size:18px; line-height:1.8; }
+
 /*Success state*/
 .control-group.success input, .control-group.success select, .control-group.success textarea, 
 .control-group.success .checkbox, .control-group.success .radio {
@@ -188,12 +192,12 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
 }
 .control-group.error .control-label, .control-group.success .control-label, 
 .control-group.success .help-block, .control-group.success .help-inline{
-    color: #6a6c6f;  font-weight: 400;
+    color:#6a6c6f;  font-weight: 400;
 }
 .control-group.success .input-prepend .add-on, .control-group.success .input-append .add-on{
-    border-color: #43AD49; color: #43AD49; font-weight: 400;
+    border-color:#43AD49; color:#43AD49; font-weight: 400;
 }
-.control-group.success .validation-feedback i { color: #43AD49; }
+.control-group.success .validation-feedback i { color:#43AD49; }
 
 /* error state*/
 .control-group.error input, .control-group.error select, .control-group.error textarea, .control-group.error input:focus, 
@@ -216,11 +220,9 @@ textarea, input[type="text"], .button-input, .control-group .form-control {
 input[disabled], select[disabled], textarea[disabled], input[readonly], select[readonly], textarea[readonly]{
     background:#f5f6f6; color: #919396; border-color:#dcddde; box-shadow: none !important;
 }
-
 /* Inline form elements styling in horizontal forms */
 .inline-elements input:not([type=checkbox]) { width: auto; }
 /* Inline form elements for adding label in front */
-.input-append .add-on, .input-prepend .add-on { border:none; background:none; font-size:18px; line-height:1.8; }
 
 /*  CUSTOM SELECT   */
 .modal .controls input.customAmt { width:50%; font-size: 1.75em; height: 1em; max-width:200px; font-weight:500; } 
@@ -3241,8 +3243,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 	#tab00 .row-fluid .span9{width:72% !important;}
 	#view-campaign .cpn-contact-info{margin-top:15px;}
     .top-title-area{margin-bottom:10px;}
-
-    
     .ie.aui .span12.form-control{ width:100% !important; max-width:none !important; }
     .aui.ie #uf-dockbar-search-mobile  input[type="text"],
     .aui.ie #search-form input[type="text"] { max-width: 95% !important; width: 100% !important; }
@@ -3680,29 +3680,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     }
     #causes-wrapper.mobile-slider{min-width: 600px;padding-bottom: 30px;overflow: visible;}
     .donation-wrapper #causes-wrapper{margin-left: 0px;margin: 0 auto;max-width: 270px;}
-    #causes-wrapper .cause-box.inline-mobile.span4 { 
-        margin: 8px 0;border-radius: 6px;border: 1px solid #cccccc;overflow: hidden; 
-        width: 100%;max-width: 260px; height: auto;
-    }
-    .cause-box.inline-mobile input[type=checkbox] + label:before {
-        width: 208px;
-        height: 50px;
-        line-height: 3em;
-        font-size: 1em;
-        bottom: -41px;
-        left: 42px;
-        top: 0px;
-        border:none;
-        border-left:1px solid #cccccc;
-        border-radius: 0;
-        background-color:#f9f9f9;
-        padding-left: 10px;
-        text-align: left;
-        }
-    .cause-box.inline-mobile input[type=checkbox]:checked + label:after {top: 13px;}
-    .cause-box.inline-mobile input[type=checkbox]:checked + label:before {background-color: #ffffff;}
-
-    .cause-box.inline-mobile input[type=checkbox] + label {height: 50px;background-size: contain;margin:0;border-radius: 0;border:none;}
+    
     
     #causes-span{margin-left: 30px;margin-right: 30px;display: block;}
 
@@ -3835,38 +3813,40 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     .cause-box.mobile-block.span4, #causes-mobile .cause-box.span4 {
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
-    #causes-mobile { overflow: hidden; }
-    #causes-wrapper .cause-box,  .cause-box a.mobile-block, #causes-wrapper .swdiper-slide, 
+    /* CAUSES OPTIONS */
+    #causes-mobile { overflow:hidden; }
+    #causes-wrapper .cause-box, .cause-box a.mobile-block, #causes-wrapper .swdiper-slide, 
         .cause-box.block-mobile input[type=checkbox] + label{
         width: 140px; height:140px;
     }
-
+    #causes-wrapper .cause-box.inline-mobile.span4 { 
+        margin:8px 0; border:1px solid #dcddde; overflow:hidden; width:100%;max-width:260px; height:auto;
+    }
+    .cause-box.inline-mobile input[type=checkbox] + label { 
+        height:50px; background-size: 26px; margin:0; border-radius:0; border:none;
+        background-position:4% 50%; background-repeat: no-repeat;
+    }
+    .cause-box.inline-mobile input[type=checkbox] + label:before {
+        /* width:208px; height:50px; left:42px; bottom:-41px; font-size:1em; line-height:3em; 
+        border-radius: 0; background-color:#f9f9f9; border:none; border-left:1px solid #CCC; */
+        line-height:2.5em; padding-left:15px; top:0; text-align:left; height:44px;
+    }
+    /*.cause-box.inline-mobile input[type=checkbox]:checked + label:after { top:13px;}
+    .cause-box.inline-mobile input[type=checkbox]:checked + label:before { background-color:#FFF; }*/
     #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
+    .acc-toggle.landing{ margin-bottom: 10px; }
 
-    .acc-toggle.landing{
-        margin-bottom: 10px;
-    }
-
-    .listings-wrapper .cpn-sgtn-item {
-      margin: 1em 0px 5em;
-    }
+    .listings-wrapper .cpn-sgtn-item { margin: 1em 0px 5em; }
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
     h3.landing{ font-size:1.0625em; color:#FFF; padding:10px 20px 10px; }
         .bg-lightgrey h3.landing{ font-size: 1.5em ;color: #333; }
 
-    /*.span12.bg-lightgrey{padding-bottom:40px;}*/
     .wrapper-925.inner .title-search .span6{ float:none; width:auto;  }
     .tab-section .cpn-suggestions { transform:none; display:block; padding:0; max-height:100%; height:auto; }
     .tab-section .cpn-sgtn-item{
-        float:none;
-        border-width:0 0 1px;
-        width:100%;
-        margin: 1em auto;
-        height:auto !important;
-        transform:none;
-        min-height:1px !important;
-        flex-shrink:none;
+        float:none; border-width:0 0 1px; width:100%; margin: 1em auto;
+        height:auto !important; transform:none; min-height:1px !important;flex-shrink:none;
     }
     .tab-section .cpn-sgtn-item .sgtn-body{ border:0; }
     .tab-section .sgtn-img { display:none; }
@@ -4070,13 +4050,6 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
 
     .data-list li .person-actions{height:auto !important;}
 
-
-    /***********************************************************************
-                                CAUSE ICONS
-    ***********************************************************************/
-    .cause-box.inline-mobile input[type=checkbox] + label {
-        background-size: 26px;  background-position: 4% center; background-repeat: no-repeat;
-    }
 }
 
 @media (max-width: 600px) {
