@@ -3199,7 +3199,8 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
     h5 { font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
-    #causes-wrapper .setup {margin-right:1.4%; margin-left: 1.4%;} /**specially for 205 set up page**/
+    #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { margin:0 1.4% 1em;} 
+    /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label{display: inline-block;margin-top: 0;line-height: 1.2em;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
