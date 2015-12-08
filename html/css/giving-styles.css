@@ -285,6 +285,8 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
 .centered, .row-fluid .centered, .aui .centered, .aui .row-fluid .centered { 
     margin-left:auto; margin-right:auto; float:none; 
 }
+.aui #addLeadersModal .row-fluid .span8{margin:0 auto;}
+.aui #addLeadersModal .modal-body .row-fluid.non-respv{min-width:1px;}
 .m-0 { margin: 0 !important; }
 .m-10 { margin: 10px; }
 .m-bot0{margin-bottom: 0px !important;}
@@ -565,7 +567,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     text-align: center; float: left;
 }
 
-#user-about-links input { border-width:0 0 1px; font-size:16px; color:#333; height: 40px; margin:0 auto; padding-right:36px;}
+#user-about-links input { border-width:0 0 1px; font-size:16px; color:#333; height: 40px; margin:0 auto; padding-right:25px;}
 #shortUrl { max-width: 305px; border-color: #ddd !important;}
 
 #cpn-meta .special-btn{ padding: 50px 20px; }
@@ -1659,6 +1661,7 @@ body .btn-success{margin-bottom:15px !important;}
 
 .swiper-button-prev:hover, .swiper-button-next:hover,
     .aui .swiper-button-prev:hover, .aui .swiper-button-next:hover { background:none; opacity:1; }
+	
 .swiper-button-prev:before, .swiper-button-next:before, .carousel-control .fa,
     .aui .swiper-button-prev:before, .aui .swiper-button-next:before, .aui .carousel-control .fa  {
     font-family:"fontAwesome"; display:table-cell; text-align:center; font-size:5em; font-weight:100;
@@ -2411,7 +2414,7 @@ display:inline-block !important; vertical-align:top;
 .search-head{ padding:40px 50px 0; }
 .input-search{position: relative;}
 .input-search input{padding-right:30px;position: relative;}
-.input-search label{ position: absolute; right:22px; width:20px; height:20px; top:50%; margin-top: -8px; z-index:99; }
+.input-search label{ position: absolute; right:10px; width:20px; height:20px; top:50%; margin-top: -8px; z-index:99; }
 .search-results{
     color:#6a6c6f; min-height: 100px; padding-bottom:80px;
     border-left:1px solid #dcddde; border-right:1px solid #dcddde; border-bottom:1px solid #dcddde;
@@ -2538,7 +2541,7 @@ body .control-group.error .checkbox,
     border: 1px solid #CCC !important;
     height: 36px; border-radius: 6px; padding: .5em !important;
     margin: 0; text-align: left; width: 92% !important; max-width:none;
-	padding-right:40px !important;
+	padding-right:25px !important;
 }
 
 .volunteer-check{display: none;}
@@ -3245,6 +3248,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 }
 
 @media (max-width: 979px) {
+	#donate-buttons button{width:46% !important;}
 	#tab00 .row-fluid .span9{width:72% !important;}
 	#view-campaign .cpn-contact-info{margin-top:15px;}
     .top-title-area{margin-bottom:10px;}
@@ -3482,6 +3486,12 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 }
 
 @media (max-width: 767px) {
+	#donate-buttons button{width:90% !important;float:none !important;display:block !important;}
+	#cpn-info .carousel-indicators{
+		bottom:65px !important;
+	}
+	#cpn-info .carousel-no-add-box{bottom:20px !important;}
+	#sortable .row-fluid.non-respv .pull-right[class*="span"]{float:left !important;}
 	#tab00 .data-list .data-list-item{padding-top:0;}
 	#sortable .t-header .ui.checkbox{margin-top:9px;}
     #wrapper { padding-top:50px; }
@@ -3507,7 +3517,12 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #cpn-info { width:90%; padding:0;margin: 0 auto;}
         
     .tab-section .row-fluid.non-respv .span6{width:48.7179% !important;}
-	#sortable .span11 .select-like.pull-left{padding:0 0 0 25px;}
+	#sortable .span11 .select-like.pull-left{padding:0;}
+	#sortable.table-section .t-header .select-like.pull-left{
+		margin-right:15px;
+		width:auto !important;
+		float:left !important;
+	}
 	#sortable .non-respv .ui.checkbox{padding-left:10px;}
 	#sortable .span4.person{margin-top:-15px !important;}
 	#tab00 .highlights .highlight-item::before{display:none;}
@@ -3593,7 +3608,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .aui #signupModal .signup-section.step3 h2{font-size: 1.5em;}
     .aui #signupModal .signup-section.step3 h3{font-size: 1.2em;}
     .aui #loginModal .modal-body{padding:0 !important;}
-    .aui #donate-buttons button{font-size:0.8em;line-height:1.2;}
+    .aui #donate-buttons button{font-size:16px;line-height:1.2;}
     .steps-list{padding:0 15px 0 0;}
     .btn-row h3{display:block;}
     .popup-inner-page .popover .arrow{display:none;}
@@ -4028,7 +4043,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 }
 
 @media (max-width: 600px) {
-	
+	.aui .carousel-indicators{bottom:65px !important;}
+	.carousel-control.right, .aui .carousel-control.right,
 	.cpn-holder .swiper-button-prev,
 	.cpn-holder .swiper-button-next{display:none;}
 	
