@@ -19,11 +19,12 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 #_145_navAddControlsNavbarBtn.btn-navbar,
 #_145_navAccountControlsNavbarBtn.btn-navbar {
   display: none !important; }
-
+/* DB commented 
 .main-content, .modal-content {
   margin-top: 0px !important;
   /*padding: 0px !important;*/ }
 /* DB commented 
+
 .validation-feedback {
   z-index: 1;
   position: absolute;
@@ -73,7 +74,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   /*Db Comment
 .modal .row-fluid .span6 {
  padding: 1em 1.5em !important; 
-  padding: 1em 2em 4.6em !important; }*/
+  padding: 1em 2em 4.6em !important; }
 
 .aui .modal.fade {
   transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
@@ -92,7 +93,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   width: auto\9; }
 
 .aui .btn-block {
-  width: auto; }
+  width: auto; }*/
 
 /**********************************************************/
 /***** FOR ALL MODAL, MUST APPLY FOLLOWING STYLE : START */
@@ -227,9 +228,9 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .DOB.below-age {
   color: #BD362F !important; }
-
+/* DB*
 .box.span6 {
-  padding: 1em 2em 4.6em !important; }
+  padding: 1em 2em 4.6em !important; } */
 
 #transactionhistorymodal .summary-wrapper .charity-info {
   width: 100% !important; }
@@ -397,13 +398,13 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
   #signinmodal form #login_button {
     width: 120px !important; }
-
+/* DB COmment
   .modal-body {
     padding: 15px 0% !important; }
 
   .modal, .modal-one-column {
     max-width: 70% !important;
-    max-width: 100% !important; }
+    max-width: 100% !important; } */
 
   #cpn-donate-now .btn {
     width: 100% !important; }
@@ -423,7 +424,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /* general settings */
 #_2_WAR_notificationsportlet_userNotifications {
   display: none; }
-
+/* DB
 .navbar {
   background: none !important; }
 
@@ -642,7 +643,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   padding: 11px 19px;
   font-size: 17.5px;
   border-radius: 6px; }
-
+/*
 .aui .btn {
   line-height: 20px;
   display: inline-block;
@@ -658,7 +659,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   -moz-border-left-colors: none;
   border-image: none;
   box-shadow: none;
-  font-size: inherit; }
+  font-size: inherit; } */
 
 .popover-content .aui .btn {
   margin-bottom: 10px; }
@@ -934,9 +935,9 @@ div.charity-donors img.dr-img {
 /********************************/
 /******************* CI *********/
 /********************************/
-.aui .btn.active, .aui .btn:active {
+/* DB  COMMENT .aui .btn.active, .aui .btn:active {
   box-shadow: none; }
-/* DB  COMMENT 
+
 #login_button, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active, .btn-toggle .btn.active {
   border: medium none;
  font-weight: 300 !important;  }
@@ -1002,12 +1003,12 @@ div.charity-donors img.dr-img {
 /******************* COLORS *****/
 /********************************/
 .aui select, .aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
-  color: #999 !important;
-  font-weight: 400 !important; }
+  color: #999 ;
+  font-weight: 400; }
 
 .aui input[disabled] {
-  border-color: #eee !important;
-  color: #999 !important;
+  border-color: #eee ;
+  color: #999;
   background-color: #eeeeee;
   cursor: not-allowed; }
 
@@ -1028,9 +1029,9 @@ div.charity-donors img.dr-img {
 .ico-tdr a i, .indicate-tdr i, .multiple .fa-check-circle-o, .upload-section .btn,
 .tax-status .fa-check-circle-o {
   color: #9DC9EE !important; }
-
+/*
 .section-header h5, .section-header h6, .p-section h5, .conf-states-wrapper .box h5 {
-  color: #999 !important; }
+  color: #999 !important; }*/
 
 .aui .control-group.error .control-label, .control-group.error .control-label {
   font-weight: 600; }
@@ -1152,11 +1153,11 @@ div.charity-donors img.dr-img {
 
 .home-slider .slider-navigation {
   bottom: 0px !important; }
-
+/* DB comment
 .aui .navbar-inverse .navbar-inner {
   background-color: transparent !important;
   background: none;
-  box-shadow: none; }
+  box-shadow: none; } */
 
 /* button, input disabled class  */
 .button-disabled {
@@ -1708,7 +1709,6 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
   font-weight: normal;
   color: #141414; }
-
 .aui .modal-footer {
   background: #F5F5F5;
   border-top: 0px solid #dddddd; }
@@ -1722,8 +1722,8 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
     ADDED : APPLY BLUE-CI, overwriting giving sg by ufinity
 ***************************************************************************/
 /** DB COMMENT  #custom-amt-input .button-input {
-  font-size: 1em !important; } */
-
+  font-size: 1em !important; } */ 
+   
 .aui button.close, .aui button.btn.close {
   min-width: 50px; }
 
@@ -1811,8 +1811,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 .preset-amts button, #vol-buttons button {
   font-size: 16px !important;
   border: 1px solid #CCC !important;
-  border-radius: 4px !important; } */
-/*
+  border-radius: 4px !important; } 
 #setup-dtn-carousel {
   border: 1px solid #CCC !important; } */
 
@@ -2198,10 +2197,10 @@ button, input[type="submit"], .btn, .aui .btn,  .open-more, .btn-more-img, #user
 
 #user-about-links input#shortUrlGenerator {
   margin-left: 0px !important; }
-/* DB COMMENT 
+/* DB COMMENT
 #setup-dtn-carousel .carousel-control .fa {
   font-size: 0.8em !important;
-  color: #17A4E1 !important; } */
+  color: #17A4E1 !important; }   */
 
 .btn:disabled, .aui .btn:disabled {
   color: inherit !important; }

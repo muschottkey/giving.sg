@@ -177,8 +177,6 @@
 .nature .mobile-block > h4 {
   line-height: 30px; }
 
-#cpn-donate-now .donate-btns {
-  margin-top: 15px; }
 
 .row-fluid.m-bot20 .action-link,
 .box-r-footer a,
@@ -206,10 +204,7 @@
 .checkbox-clone.checked[data-parent="ref_allorgs"]:before {
   content: "\f0d7" !important; }
 
-#causes-wrapper:after, .navbar-inverse:after {
-  content: "";
-  clear: both;
-  display: block; }
+
 
 /* Search Page & Search UI */
 #search-form input#search_term::-webkit-input-placeholder, #uf-dockbar-search-mobile input[type="text"]::-webkit-input-placeholder {
@@ -243,23 +238,6 @@
 #cpn-info div.img-box a i {
   padding: 4px 8px; }
 
-/******************************************/
-/*  START OF OTHER PAGES HEADER */
-/*****************************************/
-.navbar .nav-pills {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: auto; }
-
-.navbar .nav-pills li {
-  display: inline-block;
-  height: 38px;
-  padding: 1em; }
-
-/******************************************/
-/*  END OF OTHER PAGES HEADER */
-/*****************************************/
 /******************************************/
 /*  START OF FOOTER*/
 /*****************************************/
@@ -523,7 +501,7 @@
 @media only screen and (max-width: 767px) {
   .pre-footer .acc-toggle {
     color: #fff;
-    background-color: #242424;
+    background-color: #172A35;
     border-color: #424242;
     border-width: 1px 0 0;
     margin-bottom: 0 !important; }
@@ -534,58 +512,6 @@
   .social-share a i {
     line-height: 1.4 !important; } }
 @media only screen and (max-width: 768px) {
-  h1 {
-    font-size: 2em;
-    line-height: 1.25em; }
-
-  /* 32px */
-  h2 {
-    font-size: 1.625em;
-    line-height: 1.15384615em; }
-
-  /* 26px */
-  h3 {
-    font-size: 1.375rem;
-    line-height: 1.13636364em; }
-
-  /* 22px */
-  h4, h5, h6 {
-    line-height: 1.11111111em; }
-
-  p {
-    line-height: 1.25em; }
-
-  /* NAVIGATION */
-  #logo {
-    position: relative; }
-
-  #logo a, .navbar-inverse .brand {
-    overflow: hidden;
-    display: block;
-    margin: 0 auto;
-    max-height: 40px;
-    max-width: 200px; }
-
-  #logo a img, .navbar-inverse .brand img {
-    width: 160px; }
-
-  .navbar-inverse .navbar-inner, #uf-dockbar-right-menu ul {
-    height: 50px;
-    padding: 0; }
-
-  .navbar-inverse .brand {
-    padding: 0;
-    float: none; }
-
-  #main-nav ul a {
-    border-bottom: 0px;
-    font-weight: normal; }
-
-  #main-nav ul a.current, #main-nav ul a.current:hover {
-    box-shadow: 5px 0px #43ad49 inset; }
-
-  #main-nav ul a:hover {
-    box-shadow: 5px 0px rgba(67, 173, 73, 0.5) inset; }
 
   /* HOMEPAGE CAROUSEL */
   #nav li br, .home-slider .slider-navigation {
@@ -646,19 +572,6 @@
     height: auto;
     width: 100%; } }
 @media only screen and (min-width: 769px) {
-  .navbar-inverse .brand {
-    font-size: 1.25em;
-    font-weight: 500;
-    padding: 0;
-    position: absolute;
-    left: 1.1em;
-    top: 0;
-    margin-left: 0;
-    color: #43AD49 !important;
-    text-decoration: none;
-    max-width: 180px;
-    display: inline-block;
-    text-transform: uppercase; }
 
   #main-nav-header, .navbar-inverse .navbar-inner {
     height: 70px;
@@ -736,8 +649,6 @@ button.btn.btn-ghost.delete-row {
 .cpn-url-box input.span10 {
   margin-right: 0; }
 
-#save-actions button, #setup-dtn-conf-submission, .donate-btns button, #vw-gift-bkt-donate button, #donateLoggedModal .modal-footer button {
-  min-width: 150px; }
 
 .cpn-url-box button {
   min-width: inherit; }
@@ -756,8 +667,7 @@ button.btn.btn-ghost.delete-row {
 #uf-dockbar-right-menu ul li img, button img.icon {
   max-height: 100%; }
 
-.donate-btns img.icon {
-  max-height: 24px; }
+
 
 /*************************************************************/
 /* PERMANENT ADDITIONS */
@@ -775,13 +685,5 @@ button.btn.btn-ghost.delete-row {
 #donate-now, #cause-image-preview, .cn-ln-details, s
 #cpn-info .cn-statswrapper, #cpn-info .box.causes, .evn-details .cn-days-wrapper {
   display: none; }
-
-.donate-btns {
-  padding: 0px 1.8em; }
-
 .popover-content .btn-row > h3 {
   display: inline-block; }
-
-/*  Bug probably caused by Dmitriy, hidden modal div overlaps onscreen elements, 
-making them inaccessible for nteraction like clicking etc
-.modal{display: none;}*/
