@@ -3272,11 +3272,7 @@ body:after, .wrapper:after,  .control-group:after, .controls:after, .summary-wra
         .btn-toggle .btn:last-child { width:39%; } 
     .tab-nav-area, .modal .progress-dots ul li .step-label {display:none;}
    .tab-nav-area.pg480, .tab-nav-area.visible-all{display:block;}
-   .tab-section .tab{
-    top:0;
-    position:relative;
-    display:block !important;
-   }
+   .tab-section .tab{ top:0; position:relative; display:block !important; }
     .top-title-area{display:block;}
     .wrapper-925 {max-width: 750px;} 
     .wrapper-925 .title-search { padding-bottom:20px; }
