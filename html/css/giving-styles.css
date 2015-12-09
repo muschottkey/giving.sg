@@ -655,7 +655,8 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 }
 
 /* UI ELEMENTS - TAX TDR ICON */
-#cpn-donate-now .box > h4 + .indicate-tdr {
+#cpn-donate-now .box > h4 + .indicate-tdr,
+#cpn-donate-now .aui .box > h4 + .indicate-tdr {
     background:url(../images/ico-tax-deductible.png) no-repeat 5px -2px; background-size:28px;
     font-size:1em; display:block; line-height:1;
 }
@@ -892,8 +893,10 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .tax-status.large i{margin-left: -26px;margin-top:-3px;position:absolute;font-size: 1.5em;}
 .tax-status i.pull-right{font-size: 1.6em;color: #adadad;cursor: pointer;}
 
-.box > h4{margin-bottom: 0px;}
-#cpn-donate-now .box > h4 {display: none;}
+.box > h4,
+.aui .box > h4 {margin-bottom: 0px;}
+#cpn-donate-now .box > h4,
+#cpn-donate-now .aui .box > h4 {display: none;}
 .box-footer{border-top: 1px solid #DDD;margin-top: 15px;padding-top: 7px;}
 .box-footer h5{margin: 15px 0;font-size: 0.875em;}
 .contact-us { padding-right: 20px; }
@@ -969,12 +972,14 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
     .cause-box img { width:200px; height:auto; background:#EEE; }
 .cause-box a { position:relative; overflow:hidden; }
-.cause-box a h4 {
+.cause-box a h4,
+.aui .cause-box a h4 {
     background-color:rgba(0,0,0,0.6); color:#FFFDFD; position:absolute; bottom: 0; display: block;
     width: 100%; height:30px; border:none; font-size: 1.125em; line-height:30px; margin:0;
     -webkit-transition: all 0.5s ease; transition: all 0.5s ease; text-indent:0;
 }
-.nature .mobile-block > h4{ line-height: 20px;}
+.nature .mobile-block > h4,
+.aui .nature .mobile-block > h4 { line-height: 20px;}
 .cause-box a.mobile-block { width:180px; height:180px; }
 .cause-box a.mobile-block, .causes li a { 
     display:block; background:#FFF no-repeat 50% 25%; border-radius:6px; text-indent:-9999em;
@@ -1279,7 +1284,8 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
     .conf-states-wrapper > .boxed.no-border.centered { position:absolute; background:#FFF;  }
 .conf-states-wrapper .box.reset.span12 { margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
 
-h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
+h4.box.reset, 
+.aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 /* CAMPAIGN WIDGETS*/
@@ -1287,8 +1293,10 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cn-ln-details { padding:0; position: relative;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #CCC; }
 
-.cn-details .more-days h4{font-size: 1.5em;}
-.campaign-stats h4{ display: inline-block; font-size:1.75em; margin:0 5px;}
+.cn-details .more-days h4,
+.aui .cn-details .more-days h4 {font-size: 1.5em;}
+.campaign-stats h4, 
+.aui .campaign-stats h4 { display: inline-block; font-size:1.75em; margin:0 5px;}
 
 #cpn-donate-now .box h3,
 #cpn-donate-now .aui .box h3 { display: none; visibility: hidden; }
@@ -1304,7 +1312,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
    width: 90%; right: 0; top: inherit; position: relative;
    padding: 5px 5%; background-color: rgba(0,0,0,0.5);
 }
-.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span, .bottom-r .more-days span.em { color:#FFF; }
+.bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span, .bottom-r .more-days span.em,
+.aui .bottom-r .cn-days-wrapper h4, .bottom-r .cn-days-wrapper span, .bottom-r .more-days span.em { color:#FFF; }
 
 .campaign-stats span.em{color: #999; font-size: 0.875em;}
 .campaign-stats span.darker{
@@ -1319,7 +1328,8 @@ h4.box.reset{ padding: 1.5em !important; margin-bottom: 1em !important;}
 .cpn-suggestions .load-all-box, .cpn-suggestions .add-cpn-btn { font-size:1.25em;height: auto; border: 0 none;}
 .load-all-box .action-link {margin-bottom:3px;}
 
-.more-days.inline h4{ display: inline-block; }
+.more-days.inline h4,
+.aui .more-days.inline h4 { display: inline-block; }
 .more-days span.em{color: #adadad;}
 .dtn-amt-item{position: relative;overflow:hidden;}
 .dtn-amt-item .dtn-vacs { display:table; }
@@ -1374,7 +1384,8 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .fr-widget { margin-top:20px; padding-top:10px; }
 
-.fr-widget > h4 { margin-top:20px; }
+.fr-widget > h4,
+.aui .fr-widget > h4 { margin-top:20px; }
 
 .fr-widget .box-r-footer{
     background:#FFF; border-top:1px solid #CCC; padding-top: 0.5em;
@@ -2244,7 +2255,8 @@ body .popover-content input[type=checkbox] + label:hover, .popover-content input
 }
 #sidebar .profile-nav { padding:30px;border-bottom:1px solid #CCC; }
     #sidebar .profile-nav .img-circle { max-width:150px;background: #F7F7F7;border: 1px solid #ccc;max-height: 150px;margin-bottom: 10px;}
-#sidebar .profile-nav h4 { margin-top:10px; }
+#sidebar .profile-nav h4,
+#sidebar .aui .profile-nav h4 { margin-top:10px; }
 
 
 aside.profile-nav.mobile-fallback{
@@ -2252,7 +2264,8 @@ aside.profile-nav.mobile-fallback{
 }
 aside.profile-nav.mobile-fallback img{
 }
-aside.profile-nav.mobile-fallback h4{
+aside.profile-nav.mobile-fallback h4,
+.aui aside.profile-nav.mobile-fallback h4 {
    display: inline-block;
 }
 
@@ -3138,11 +3151,13 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 }
 
 @media (max-width: 1199px){
-	.donation-wrapper .p-section h4{margin:0 0 10px;}
+	.donation-wrapper .p-section h4,
+    .aui .donation-wrapper .p-section h4 {margin:0 0 10px;}
     #donate-buttons{margin: 0;}
     #donate-now{margin-top: 0;}
     .dtn-amt-item .dtn-btns .btn{margin-top: 5px;}
-    #cpn-donate-now .box > h4 + .indicate-tdr { 
+    #cpn-donate-now .box > h4 + .indicate-tdr,
+    #cpn-donate-now .aui .box > h4 + .indicate-tdr { 
         padding-left:28px; background-position:-1px 0; text-align:left; line-height:1.4; padding-bottom:5px; }
 
     /* Responsivity Override */
@@ -3219,7 +3234,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .dtn-amt-item .dtn-btns { position:absolute; right:0; top:50%; margin-top:-50px; }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
-    h4 { font-size: 1.5em; } /* 24px */
+    h4,
+    .aui h4 { font-size: 1.5em; } /* 24px */
     h5 { font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
@@ -3276,7 +3292,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .box.reset {padding-top:10px !important;}
     #cause-image-preview {margin:15px !important;}
     .contact-us p {margin-left:10px;}
-    #dtn-add-logo>h4{text-align:center !important;}
+    #dtn-add-logo>h4,
+    .aui h4{text-align:center !important;}
     .modal .progress-dots { text-align: center; }
     .progress-dots ul li, .progress-dots ul li:first-child, .progress-dots ul li:last-child { width:auto; float:none; }
     .progress-dots ul li .step-dot{ margin-right:10px; margin-left: 10px; }
@@ -3409,7 +3426,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .cpn-contact-info { text-align:left; }
     #contact-logo { width:80%; max-width:280px; margin:0 auto;  }
     #cpn-donate-now .box { display:block; border:none; padding-bottom:0; }
-    #cpn-donate-now .box > h4, #cpn-donate-now .box > #donate-buttons { display:none; }
+    #cpn-donate-now .box > h4, #cpn-donate-now .box > #donate-buttons,
+    #cpn-donate-now .aui .box > h4, #cpn-donate-now .box > #donate-buttons  { display:none; }
 
     .fr-widget-wrapper.closed{max-height: 460px;}
 
@@ -3683,7 +3701,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .section-header{padding: 15px 0;}
     .p-section{margin-bottom:0 ;}
     #tax-deduc .span6:last-child {border-left: none;}
-    .p-section h4 { font-size:1.2em; }
+    .p-section h4,
+    .aui .p-section h4 { font-size:1.2em; }
 
     #causes-wrapper { margin-top:10px;margin-bottom: 10px; margin-left:15px; }
     #causes-mobile .swiper-wrapper{
@@ -3771,7 +3790,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #dtn-org-name{width: 70%;margin-right: auto !important;margin-left: auto !important;}
     #save-status{width: 100%;margin-left: 0;margin-top: 20px;margin-bottom: 20px;}
     #save-status.pull-right{margin-right: 0 !important;}
-    h4.td-large-sm{margin:auto 15px;}
+    h4.td-large-sm,
+    .aui h4.td-large-sm {margin:auto 15px;}
     #vw-gift-bkt-donate{margin-top: 40px;}
     #vw-gift-bkt-donate div.box{padding-left: 0;padding-right: 0;}
     #vw-gift-bkt-donate span.small{padding-bottom: 20px;width:100%;display: block;border-bottom: 1px solid #cccccc;margin-bottom: 15px;}
@@ -3925,7 +3945,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 
     /* 408 */
     .vpos-meta{padding: 10px 5% !important;border-top: 1px solid #cccccc;border-left:none;}
-    .vpos-meta h4,.vpos-meta span{display: inline-block;}
+    .vpos-meta h4,.vpos-meta span,
+    .aui .vpos-meta h4,.vpos-meta span {display: inline-block;}
     .vpos-meta button{
         display: inline-block;
         max-width: 130px;
@@ -3950,7 +3971,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
         display: block;
         right: 0;
     }
-    .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span{
+    .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span,
+    .aui .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span {
         display: inline-block;
     }
     #dateNAdd ul li h6{font-size: 1em;}
@@ -4048,8 +4070,10 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     
     /*from @320 RICH*/
     #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
-    h4 {text-align:center !important;}
-    #dtn-add-logo>h4{text-align:center !important;}
+    h4,
+    .aui h4 {text-align:center !important;}
+    #dtn-add-logo>h4,
+    #dtn-add-logo>.aui h4 {text-align:center !important;}
     .box.reset {padding-top:5px !important;}
     #cause-image-preview {padding:10px 0 !important;}
     
@@ -4096,7 +4120,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 		margin:0 auto 8px;
 		clear:both;
 	}
-    #cpn-donate-now .box > h4 + .indicate-tdr { line-height:1.5; }
+    #cpn-donate-now .box > h4 + .indicate-tdr,
+    #cpn-donate-now .aui .box > h4 + .indicate-tdr  { line-height:1.5; }
 
     .evn-details .img-box{margin-right:6px;}
     .img-box { width:19%; max-width:48px; height:50px; margin-right:2%; }
