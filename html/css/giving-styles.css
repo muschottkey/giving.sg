@@ -97,11 +97,15 @@ p.small.text-center { font-size:1em; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3 { margin:0; }
-.bg-giving-blue,Â .causes li.ico-tdr { 
+.bg-giving-blue, .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
 #view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
 hr { border-top: 1px solid #CCC; }
+
+
+.aui .row-fluid [class*="span"]{min-height:0; }
+.aui .row-fluid [class*="span"]:first-child { margin-left:0;}
 
 /* NAVIGATION +++++++++++++++++++++++++++++++++++++++++++ */
 .aui #main-nav, .aui #uf-dockbar-cart, .aui #uf-dockbar-sidebar {
@@ -128,7 +132,6 @@ hr { border-top: 1px solid #CCC; }
 /* Navbar SIDEBAR */
 .aui .navbar .nav-pills { position: absolute; top: 0; right: 0; left: auto; }
 .aui .navbar .nav-pills li { display: inline-block; height: 38px; padding: 1em; }
-
 
 /*  FORM ELEMENTS STYLING       +++++++++++++++++++++++++++++++++++++++++++ */
 body::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#bec0c2; }
@@ -217,7 +220,7 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
 .aui .control-group.error .radio, .aui .control-group.error .checkbox {
     color:#172A35 !important;
 }
-.aui .control-group.error .help-block, .auiÂ .control-group.error .help-inline,
+.aui .control-group.error .help-block, .aui .control-group.error .help-inline,
 .aui .control-group.error .validation-feedback i, .aui .control-group.error .help-block p,
 .aui .alert-danger, .aui .alert-error, .aui .alert-error i, .aui .alert-error h6 {
     color:#F16577; 
@@ -1518,22 +1521,14 @@ body .btn-success{margin-bottom:15px !important;}
     height:9px;
     text-align:center;
 }
-.sgtn-body h5,Â #cpn-meta .sgtn-body h5 {
-    font-size: 1.125em;
-    min-height: 3.44em;
-    max-height: 3.44em;
-    margin: 0 auto 5px;
-    overflow: hidden;
-    font-weight:500;
-    line-height: 1.15;
+.sgtn-body h5, #cpn-meta .sgtn-body h5 {
+    font-size: 1.125em; min-height: 3.44em; max-height: 3.44em; margin: 0 auto 5px;
+    overflow: hidden; font-weight:500; line-height: 1.15;
 }
     .sgtn-body .heading-group  h5 { min-height: auto; }
 
 
 /*  Cards UI no Buttons - In Accordion  */
-
-
-
 .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
 .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #F7F7F7;}
 .modal-dtn-amts .dtn-amt-item .dtn-amt{float:left;width: 20%; }
@@ -2589,9 +2584,6 @@ body .control-group.error .checkbox,
 .highlights .highlight-item > span.small, .highlights .highlight-item .leaders span.small {
     color:#333; line-height:1; 
 }
-
-
-.row-fluid [class*="span"]{min-height:0px}
 .volunteer-contact .name, .volunteer-name {font-size:1.25em; display:inline-box; font-weight:bold;}
 .volunteer-contact .name a{color:#000;}
 .volunteer-contact .email{margin-top:0px; word-break:break-all;}
@@ -3736,7 +3728,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
     #user-about-links input{width: 90% !important;}
-    #save-actions .btn {width: 48%;font-size: .875em;padding-left: 15px;padding-right: 15px;}
+    #save-actions .btn {width: 48%;font-size: .875em;padding-left: 15px;padding-right: 15px;min-width: auto;}
     .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
     .gf-bkt tbody tr td:first-child{height: 130px;}
     .gf-bkt tbody tr td:nth-child(2) {width:65%;}

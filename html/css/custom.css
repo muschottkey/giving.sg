@@ -584,7 +584,8 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   display: block; }
 
 .aui .row-fluid [class*="span"] {
-  min-height: 0px; }
+  /* min-height: 0px; */
+  }
 
 @media (max-width: 979px) and (min-width: 768px) {
   .aui .row-fluid [class*="span"] {
