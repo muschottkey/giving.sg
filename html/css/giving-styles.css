@@ -42,7 +42,8 @@ header a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .aui header a, .aui h1 a, .aui h2 
         .aui h2 a:hover, .aui h3 a:hover, .aui h4 a:hover, .aui h5 a:hover, .aui h6 a:hover {
             color:#172A35; text-decoration:underline; 
     }
-/* 44px */  .inform-area h2 { font-size:2.75em; font-weight: 100; }         
+/* 44px */  .inform-area h2,
+.aui .inform-area h2 { font-size:2.75em; font-weight: 100; }         
 /* 34px */  
 h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title { font-size:2.125em; font-weight:300; }  
 h3.p-title, h3.cpn-story-title, h4.cpn-story-title, #setup-dtn-2-wrapper h4 { 
@@ -66,7 +67,8 @@ h3.may-like-title { margin-top:10px; margin-bottom:5px; }
 .main-content h3.landing { font-size:2.75em;font-weight:100;}   /* 44px */
 .main-content h3 { font-size: 2.125em; }
 .main-content .ttl-row h3 { float:left; width:65%; text-align:left; margin:.25em 0 0; font-size:1.75em; }
-.signup-section h2{font-weight: 100;}
+.signup-section h2, 
+.aui .signup-section h2{font-weight: 100;}
 .signup-section h3{ font-size: 1.5em !important;}
 .bg-lightgrey h5 { color:#294b5e; font-size: 1.25em; margin-top:0; }
 /* BODY TEXT */
@@ -90,13 +92,14 @@ p.small.text-center { font-size:1em; }
     { font-size:1em; }
     p#emailFeedback { margin-top:15px; }
 
-.modalwrapper > .row-fluid > .text-center h2.black,
+.modalwrapper > .row-fluid > .text-center h2.black, .aui .text-center h2.black
 .modalwrapper > .row-fluid > .span6 .text-center h4.black {color: #333;}
 
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
-.signup-section h2, .signup-section h3 { margin:0; }
+.signup-section h2, .signup-section h3,
+.aui .signup-section h2, .aui .signup-section h3 { margin:0; }
 .bg-giving-blue, .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
@@ -2706,6 +2709,7 @@ body .control-group.error .checkbox,
     text-align:left;
     padding:5px 0 0;
 }
+.steps-content h2,
 .steps-content h2{
     font-size:22px;
     line-height:26px;
