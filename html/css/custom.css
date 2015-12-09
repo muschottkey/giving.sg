@@ -331,11 +331,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 #cpn-info div.img-box a:hover, #cpn-info div.img-box a:active, #cpn-info div.img-box a:focus {
   color: #333 !important; }
-
+/* db 
 #contact-logo {
   background-color: #FFF !important;
   border: 0px !important;
-  max-width: 100% !important; }
+  max-width: 100% !important; } */
 
 .cpn-contact-info .side-contact p .fa {
   width: 30px;

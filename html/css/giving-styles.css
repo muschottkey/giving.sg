@@ -3,6 +3,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 .aui body, body {
     font:16px/1.25 "Roboto", Arial, sans-serif; color:#6a6c6f; margin:0 auto; -webkit-font-smoothing:antialiased; 
 }
+.aui label, .aui input, .aui button, .aui select, .aui textarea { font:16px/1.25 "Roboto", Arial, sans-serif; }
 .aui .non-respv, body.non-respv { min-width: 1002px; overflow-x: visible; }  
 #wrapper, .aui  #wrapper { padding-top:70px; position: relative; }
 
@@ -153,7 +154,8 @@ hr { border-top: 1px solid #DCDDDE; }
 /*  FORM STYLING */
 .box.focused{ border:1px solid #dcddde; }
 .row-fluid form.form { margin:0 0 10px; }
-.aui .control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important; }
+.aui .control-group, .aui .row-fluid .row-fluid > .control-group { 
+    margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px; }
 
 /* LABEL */
 .aui .control-group .controls > span, .aui label, table td label { font-size:1em; color:#6a6c6f; }
@@ -174,7 +176,7 @@ label.small.grey{color: #919396;}
     padding:6px 25px 6px 5px; margin-bottom:5px; height:33px; width: 100%; color: #172A35;
     box-sizing:border-box;  -webkit-box-sizing:border-box;
 }
-.aui .modal input:not([type="checkbox"]), .aui .wrapper input:not([type="checkbox"]) {
+.aui input:not([type="checkbox"]), .aui input:not([type="checkbox"]) {
     width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
 }
 
@@ -297,7 +299,8 @@ label.small.grey{color: #919396;}
 .block{display: block;}
 .relative{position: relative;}
 .absolute{position: absolute;}
-.centered, .row-fluid .centered, .aui .centered, .aui .row-fluid .centered { 
+.centered, .row-fluid .centered, .aui .centered, .aui .row-fluid .centered, 
+    .aui .row-fluid .social-share .span8 { 
     margin-left:auto; margin-right:auto; float:none; 
 }
 .aui #addLeadersModal .row-fluid .span8{margin:0 auto;}
@@ -1310,12 +1313,13 @@ h4.box.reset,
 .dtn-amt-item .dtn-desc { border-left: 1px solid #DCDDDE; padding:1.3em 1em; }
 .dtn-amt-item .dtn-btns { padding: 1em 0; }
 .dtn-amt-item .dtn-btns .btn{ float:left; margin:10px 15px 0 0; width:42%; padding:8px; }
-.vpos-wrapper .btn { font-size:0.875em; padding:8px; width:75%; margin:5px auto 0;} 
+.aui .vpos-wrapper .btn {  min-width:0; margin:5px auto 0; background-color:#00acd0; color: #FFF; } 
+    .aui .vpos-wrapper .btn:hover { background:#0E678E; color: #FFF; }
 
 /* Campaign Story */
-#cpn-meta, body #cpn-meta { padding:20px 30px; }
+#cpn-meta, .aui #cpn-meta { padding:20px 30px; }
 .cpn-story { position:relative;margin-bottom: 30px;} 
-.cpn-story .body, body .cpn-story .body { height:inherit; position:relative; margin-left:0; }
+.cpn-story .body, .aui .cpn-story .body { height:inherit; position:relative; margin-left:0; }
 .cpn-end-date.smaller {margin-top: 30px;color: #f5866c; font-weight: 400;}
 .cpn-story .body.closed:before{
     content: ""; width:100%; height:100px; position: absolute;bottom:0;
@@ -1383,10 +1387,11 @@ span.span12.read-more.text-left.m-0{display: none;}
 
 /* Copy Url Box */
 .cpn-url-box { position: relative; float: none; }
-.cpn-url-box input.span10 { height:40px; background:#FFF;width: 70%; padding-right: 5px;padding-left: 5px;border-width: 1px;max-width: 73%;}
+.cpn-url-box input.span10 { 
+    height:40px; background:#FFF; width: 70%; padding:10px;border-width: 1px;max-width: 75%; }
     .mod-tell-friends .cpn-url-box input.span10 { float: left;}
-.cpn-url-box button, body .cpn-url-box button { padding:8px 10px; height:40px; border:none; width:30%; } 
-#copy-url, #cpn-url {font-size: 16px;box-shadow: none;min-width: inherit;}
+.aui .cpn-url-box button, body .cpn-url-box button { 
+    padding:8px 10px; height:40px; border:none; width:25%; font-size:16px; box-shadow:none; min-width:inherit; } 
  
 /* Subscribe to Newsletter */
 .pre-footer-social input.span9 {
@@ -1588,29 +1593,17 @@ span.span12.read-more.text-left.m-0{display: none;}
 .f-block .input-append, body .f-block .input-append { 
     margin-left:0; position:relative; width:auto; float:none; overflow:hidden; padding:0 0 7px 0;
 }
-
 #contact-logo{
-    background-color: #e3e3e3;
-    min-height: 70px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
+    border:1px solid #dcddde; overflow:hidden; min-height:70px;
+    display: -webkit-box; display: -ms-flexbox; display: -webkit-flex;display: flex;
+    -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;
+    justify-content: center; -webkit-box-align: center; -ms-flex-align: center;
+    -webkit-align-items: center; align-items: center;
 }
 .btn-block + .btn-block {margin-top:0 !important;}
 
 /* CAMPAIGN LANDING */
-
 .landing-cpn-slider-wrapper.slider-small .swiper-slide{ margin-bottom:0; }
-
 .landing-cpn-slider-wrapper .swiper-slide { margin:0; border:1px solid #DCDDDE; }
 .landing-cpn-slider-wrapper .cpn-slide-img { overflow: hidden; }
 
@@ -1882,10 +1875,7 @@ body .swiper-button-next:before { content:"\f105"; }
     display: block;
 }
 #actDescription ul li h6, .aui #actDescription ul li h6 { color: #172A35; margin:0; }
-#act-meta ol{
-    margin-left: 20px;
-}
-
+#act-meta ol{  margin-left: 20px; }
 .vpos-wrapper{
     border-radius: 5px;
     margin-bottom: 30px;
@@ -1894,10 +1884,8 @@ body .swiper-button-next:before { content:"\f105"; }
     padding: 20px 5% !important;
     float: left;
 }
-.vpos-meta{
-    padding: 40px 2% 20px !important;
-    border-left:1px solid #DCDDDE;
-    text-align: center;
+.aui .row-fluid.breakpoint-override .span4.vpos-meta {
+    padding:20px 2%; border-left:1px solid #DCDDDE; float:right; text-align: center;
 }
 
 .evn-details .box{padding: 1em 1em;border:none;border-right:1px solid #DCDDDE;}
@@ -2976,12 +2964,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 .carousel-control .fa-chevron-right:before{
     content: "\f105";
 }
-.vpos-wrapper .btn{
-  background-color:#00acd0 !important; color: #FFF !important; 
-}
-.vpos-wrapper .btn:hover{
-  background-color:#0E678E !important; color: #FFF !important; 
-}
 .main-image__centerer--cell .btn{
     border: 1px solid #b4f2ff !important;
     color: #FFF !important;
@@ -3929,9 +3911,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
      .tab-nav-area.pg480{display:none;}
     
     /*from @320 RICH*/
-
     #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
-    h4, .aui h4 {text-align:center !important;}
     #dtn-add-logo>h4, .aui #dtn-add-logo>h4 {text-align:center !important;}
     .box.reset {padding-top:5px !important;}
     #cause-image-preview {padding:10px 0 !important;}
