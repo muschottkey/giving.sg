@@ -382,9 +382,9 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
     width: 48% !important;
     display: inline-block !important;
     margin-bottom: 0px !important; } */
-
+/*
   .dtn-amt-item .dtn-desc {
-    width: 100% !important; } }
+    width: 100% !important; } */} 
 @media (max-width: 767px) {
   #signinmodal {
     left: 0px !important;

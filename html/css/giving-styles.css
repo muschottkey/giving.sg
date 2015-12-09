@@ -1286,8 +1286,8 @@ h4.box.reset,
 .aui .more-days span.em{color: #adadad;}
 .aui .dtn-amt-item{position: relative;overflow:hidden;}
 .aui .dtn-amt-item .dtn-vacs { display:table; }
-.aui .dtn-amt-item .dtn-amt h3 { vertical-align: middle; display: table-cell; margin: 1.368rem 0 1.168rem 0; }
-    .dtn-amt h3 { position: absolute; top: 50%; margin: -13px 0 0 !important; right:0; left: 0; }
+.aui .dtn-amt-item .dtn-amt h3 { vertical-align: middle; display: table-cell; }
+   .aui  .dtn-amt h3 { position: absolute; top: 50%; margin: -13px 0 0 !important; right:0; left: 0; }
 
 .aui .dtn-amt-item .dtn-amt, .aui .dtn-amt-item .dtn-desc {min-height:100px; }
 .aui #custom-amt-input-modal { min-height:30px; padding: 1em;  }
@@ -1503,12 +1503,13 @@ h4.box.reset,
 
 
 /*  Cards UI no Buttons - In Accordion  */
+.aui .row-fluid .span8.modal-dtn-amts { width:100%; }
 .aui .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
 .aui .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #F7F7F7;}
-.aui .modal-dtn-amts .dtn-amt-item .dtn-amt{float:left;width: 20%; }
+.aui .modal-dtn-amts .dtn-amt-item .dtn-amt { float:left; width:18%; }
     .aui .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
 
-.aui .modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 80% !important;float: right;}
+.aui .modal-dtn-amts .dtn-amt-item .dtn-desc{ font-size: 0.875em; width:78%; float: right;}
 .aui .modal-dtn-amts .dtn-amt-item .dtn-desc .small{font-size: 1em;}
 .aui .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .aui .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #DCDDDE;background-color: #FFF;color: #172A35;}
