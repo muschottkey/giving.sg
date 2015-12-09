@@ -938,7 +938,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 
 .p-section{margin-bottom: 40px;}
-#tax-deduc,.box.reset{margin:0;padding-left: 0 !important;padding-right: 0 !important;}
+#tax-deduc,.box.reset, .aui .box.reset {margin:0;padding-left: 0;padding-right: 0;}
 .box.m-top0{margin-top: 0 !important;}
 .box .box{padding-right: 20px !important;padding-left: 20px !important;}
 #tax-deduc .span6{padding-bottom: 30px;}
@@ -980,14 +980,25 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
     display:block; background:#FFF no-repeat 50% 25%; border-radius:6px; text-indent:-9999em;
 }
 /* Causes Options for setting Up */ 
-#causes-wrapper .cause-box.span4, body #causes-wrapper .cause-box.span4 { 
+#causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { 
     width: 27%; margin:1em 2.95% 50px; white-space: nowrap; 
 }
 .cause-box input[type=checkbox] { display: none; }
 .cause-box input[type=checkbox] + label { height:0; background:#FFF; width:100%; background-position:50% 50%; } 
 .cause-box input[type=checkbox] + label:before {
-    content:""; display: block; background: #FFF; padding:5px 3px; position: absolute; bottom:-36px; left:-1px;
-    width: 100%; font-size:1em; line-height: 2em; border:solid 1px #dcddde; color: #172A35; border-radius: 6px;
+    content:"";
+    display: block;
+    background: #FFF;
+    padding:5px 3px;
+    position: absolute;
+    bottom:-36px;
+    left:-1px;
+    width: 100%;
+    font-size:1em;
+    line-height: 2em;
+    border:solid 1px #dcddde;
+    color: #172A35;
+    border-radius: 6px;
 }
 .cause-box input[type=checkbox] + label:hover:before, .cause-box input[type=checkbox]:checked + label:before {
     text-decoration:none; border-color:#00acd0; background:#00acd0; color:#fff; box-shadow: none;
@@ -3223,7 +3234,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     h5 { font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
-    #causes-wrapper .cause-box.span4, body #causes-wrapper .cause-box.span4 { margin:0 1.4% 1em;} 
+    #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 {margin: 0 2% 1em;} 
     /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
     #tax-deduc .span6 {width: 48.61878453038674%;}
@@ -3273,7 +3284,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     }
     .cpn-url-box input.span10 {width: 99%;}
     .centered-small-screen{text-align: center;}
-    .box.reset {padding-top:10px !important;}
     #cause-image-preview {margin:15px !important;}
     .contact-us p {margin-left:10px;}
     #dtn-add-logo>h4{text-align:center !important;}
@@ -3354,7 +3364,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .org-name{width: 80%;float: left !important;}
     .amt-value{float: right !important;width: auto !important;}
     
-    #tax-deduc, .box.reset{padding-left: 9px !important;padding-right: 9px !important;}
+    #tax-deduc, .box.reset{ padding:10px 10px 0 } 
     #collapse-taxdeduc {overflow: hidden;position: relative;}
     #collapse-taxdeduc.collapse.in {overflow: visible;position: relative;}
     #save-status.step1{width: 100%;margin-left: 0;margin-bottom: 20px;margin-top: 15px;}
@@ -3738,7 +3748,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
     #user-about-links input{width: 90% !important;}
-    #save-actions .btn {width: 48%;font-size: .875em;padding-left: 15px;padding-right: 15px;min-width: auto;}
+    #save-actions .btn {width: 47%;font-size: .875em;padding-left: 15px;padding-right: 15px;min-width: auto;}
     .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
     .gf-bkt tbody tr td:first-child{height: 130px;}
     .gf-bkt tbody tr td:nth-child(2) {width:65%;}
@@ -3833,14 +3843,24 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #causes-wrapper .cause-box.inline-mobile.span4 { 
         margin:8px 0; border:1px solid #dcddde; overflow:hidden; width:100%;max-width:260px; height:auto;
     }
-    .cause-box.inline-mobile input[type=checkbox] + label { 
-        height:50px; background-size: 26px; margin:0; border-radius:0; border:none;
-        background-position:4% 50%; background-repeat: no-repeat;
+    .cause-box.inline-mobile input[type=checkbox] + label {
+        height: 50px;
+        background-size: 26px;
+        margin:0;
+        border-radius:0;
+        border:none;
+        background-position:4% 50%;
+        background-repeat: no-repeat;
     }
     .cause-box.inline-mobile input[type=checkbox] + label:before {
         /* width:208px; height:50px; left:42px; bottom:-41px; font-size:1em; line-height:3em; 
         border-radius: 0; background-color:#f9f9f9; border:none; border-left:1px solid #CCC; */
-        line-height:2.5em; padding-left:15px; top:0; text-align:left; height:44px;
+        line-height:2.5em;
+        padding-left:15px;
+        top:0;
+        text-align:left;
+        height:44px;
+        border: 0;
     }
     /*.cause-box.inline-mobile input[type=checkbox]:checked + label:after { top:13px;}
     .cause-box.inline-mobile input[type=checkbox]:checked + label:before { background-color:#FFF; }*/
@@ -4050,7 +4070,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
     h4 {text-align:center !important;}
     #dtn-add-logo>h4{text-align:center !important;}
-    .box.reset {padding-top:5px !important;}
     #cause-image-preview {padding:10px 0 !important;}
     
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
