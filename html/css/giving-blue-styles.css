@@ -612,11 +612,6 @@
   border-bottom: 1px solid #999 !important; }
 
 
-.dtn-amt-item .dtn-amt h3 {
-  vertical-align: middle;
-  display: table-cell;
-  margin: 1.368rem 0 1.168rem 0; }
-
 button.btn.btn-ghost.delete-row {
   margin-right: -10px; }
 

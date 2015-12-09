@@ -1286,7 +1286,8 @@ h4.box.reset,
 .aui .more-days span.em{color: #adadad;}
 .aui .dtn-amt-item{position: relative;overflow:hidden;}
 .aui .dtn-amt-item .dtn-vacs { display:table; }
-.aui .dtn-amt-item .dtn-amt h3, .aui .aui .dtn-amt-item .dtn-amt h3{ vertical-align: middle; display:block;  }
+.aui .dtn-amt-item .dtn-amt h3 { vertical-align: middle; display: table-cell; margin: 1.368rem 0 1.168rem 0; }
+
 .aui .dtn-amt-item .dtn-amt, .aui .dtn-amt-item .dtn-desc {min-height:100px; }
 .aui #custom-amt-input-modal { min-height:30px; padding: 1em;  }
 .aui #custom-amt-input-modal .em {font-size: 1em;}
@@ -1512,12 +1513,12 @@ h4.box.reset,
 .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #DCDDDE;background-color: #FFF;color: #172A35;}
 .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 1px solid #172A35;outline: none; }
 
-.carousel > .ico{
+.aui .carousel > .ico{
     position:absolute; right:17px; top:17px; font-size:1em; z-index:10; 
     padding:6px; background:#fff; cursor:pointer; border:1px solid #DCDDDE;
 }
-.carousel > .active { left:auto; }
-.carousel > .ico.active .fa, .carousel > .ico:hover .fa { color:#F16577; left:0;}
+.aui .carousel > .active { left:auto; }
+.aui .carousel > .ico.active .fa, .aui .carousel > .ico:hover .fa { color:#F16577; left:0;}
 .aui .side-logo{
     border:1px solid #DCDDDE;
     border-radius:6px;
@@ -1697,17 +1698,12 @@ body .swiper-button-next:before { content:"\f105"; }
 
 
 /* CAROUSEL DOTS */
-.landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active{
+.aui .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, 
+    .aui .carousel-indicators li.active{
     background-color: #00acd0;
 }
-.swiper-pagination-bullet, .carousel-indicators li{
-    background-color: #6a6c6f;
-}
-.landing-cpn-slider-wrapper span.swiper-pagination-bullet {
-    margin: 5px 8px 5px;
-    width: 15px;
-    height: 15px;
-}
+.aui .swiper-pagination-bullet, .carousel-indicators li{ background-color: #6a6c6f; }
+.aui .landing-cpn-slider-wrapper span.swiper-pagination-bullet { margin:5px 8px; width:15px; height:15px; }
 
 
 #causes-mobile .acc-toggle{
