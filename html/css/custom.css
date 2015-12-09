@@ -248,11 +248,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   border-collapse: separate !important;
   margin-top: 40px !important;
   vertical-align: middle !important; } */
-
+/* db comment
 #donation-userDetails label {
   font-size: 0.8em !important;
   font-weight: normal; }
-/* db comment
+
 .gf-bkt {
 
   border: 1px solid #DDD !important;
@@ -595,7 +595,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   color: #333;
   font: 16px/1.25 "Roboto", Arial, sans-serif !important;
   margin: 0 auto;
-  -webkit-font-smoothing: antialiased; } */
+  -webkit-font-smoothing: antialiased; } 
 
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui input, .aui button, .aui select, .aui textarea {
   font-family: "Roboto", Arial, sans-serif; }
@@ -623,7 +623,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .aui textarea, .aui input {
   font-size: 1em !important;
-  height: 1.3em; }
+  height: 1.3em; }*/
 /* DB added 1 Dec*/
 
 .aui textarea, .aui input[type="text"], .aui .button-input, .aui .control-group .form-control, .aui select {
@@ -2131,7 +2131,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   font-size: 1em;
   line-height: 1.4;
   word-wrap: break-word; }
-
+/*DB
 .aui .control-group.error .control-label, .aui .control-group.error .help-block, .aui .control-group.error .help-inline {
   color: #F16577 !important; }
 
