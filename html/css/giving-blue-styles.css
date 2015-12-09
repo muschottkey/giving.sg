@@ -418,16 +418,11 @@
 .dropdown > button, .dropdown > button:hover,  .select-like button, .select-like button:hover, .action-btn > button {
   box-shadow: none !important; }
 
-.steps-content .btn-save input, .add-btn-lst a {
-  background-color: #B3E7FF !important; height:33px;
-  color: #006b82 !important; }
 
 .inform-area .box-btn .btn {
   background-color: #B3E7FF;
   color: #006b82 !important; }
 
-.add-bottom-lst li input[type=submit], .btn-area input[type=submit], .btn-save input[type=submit] {
-  line-height: 1 !important; }
 
 /*****************************************/
 /*  BUTTON STYLES END */

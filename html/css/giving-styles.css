@@ -176,7 +176,7 @@ label.small.grey{color: #919396;}
     box-sizing:border-box;  -webkit-box-sizing:border-box;
 }
 .aui input:not([type="checkbox"]), .aui input:not([type="checkbox"]) {
-    width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
+    width:100%; border-width: 0 0 1px; box-shadow:none; color: #172A35;
 }
 
 #respwdForm input.form-control,
@@ -266,7 +266,7 @@ label.small.grey{color: #919396;}
 #user-about-links .input-append.input-prepend .add-on:first-child{
     width:auto; display:block; text-align:left; border:0 none; color:#6a6c6f; background:none; line-height: 1.4;
 }
-#user-about-links .input-append.input-prepend .fa { bottom:10px; font-size:14px;}
+
 /*      RADIO OPTIONS SELECT | LABEL CHECKBOXES     */
 .aui .row-fluid .lbl-chkbox { margin:5px 5% 0 0; }
 .lbl-chkbox label {
@@ -490,8 +490,8 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .decor-ttl{
 	display:block; font-size:17px; line-height:20px; padding:0 0 5px;
 }
-input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .form-control:focus,
-    .pre-footer-social input:focus {
+.aui input[type="text"]:focus, .aui textarea:focus, .aui .button-input:focus, 
+    .aui .control-group .form-control:focus, .aui .pre-footer-social input:focus {
     border-bottom:1px solid #00acd0; box-shadow: none; outline: none;
 }
 /* UI Controls - BUTTONS */
@@ -585,10 +585,10 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 .gallery-txt-box .btn { border: 1px solid #b4f2ff;  color:#FFF; }
 .gallery-txt-box .btn:hover{ background-color: #0e678e; border: 1px solid #0e678e; }
 #user-about-links input#shortUrlGenerator {
-    margin-right:10px !important; margin-left:5px !important; text-align: center; float: left;
+    margin-right:10px !important; margin-left:5px !important; text-align: center; float: left; width: 50%;
 }
-#user-about-links input { border-width:0 0 1px; font-size:16px; height:30px; margin:0 auto; padding-right:25px; }
-#shortUrl { max-width:305px; border-color: #DCDDDE !important; }
+#user-about-links input { border-width:0 0 1px; font-size:16px; margin:0 auto; padding-right:25px; }
+#shortUrl { max-width:305px; border-color:#DCDDDE !important; float:right; }
 
 #cpn-meta .special-btn { padding:40px 20px; height:auto; }
 
@@ -1029,7 +1029,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 #donation-userDetails input#user_address1 {  margin-bottom:30px; }
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
-#user-about-links .input-append.input-prepend { display:block; float:left; position:relative; }
+#user-about-links .input-append.input-prepend { float:left; position:relative; }
 
 /* Set-up donation step 2*/
 .action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
@@ -2535,7 +2535,7 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     overflow:hidden;
     padding:0 10px 25px;
 }
-.steps-list{
+.aui .steps-list{
     margin:0;
     padding:0 30px 0 0; 
     list-style:none;
@@ -2543,11 +2543,11 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     float:left;
     width:37px;
 }
-.steps-list li{
+.aui .steps-list li{
     position:relative;
     line-height:35px;
 }
-.steps-list li span{
+.aui .steps-list li span{
     display:block;
     border:1px solid #DCDDDE;
     border-radius:36px;
@@ -2558,8 +2558,8 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     z-index:10;
     position:relative;
 }
-.steps-list li.active span{background:#DCDDDE; color: #fff;}
-.steps-list li:after{
+.aui .steps-list li.active span{background:#DCDDDE; color: #fff;}
+.aui .steps-list li:after{
     content:"";
     position:absolute;
     top:24px;
@@ -2569,70 +2569,61 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     height:100%;
     z-index:1;
 }
-.steps-list li:last-child:after{display:none;}
-.steps-content{
-    overflow:hidden;
-    text-align:left;
-    padding:5px 0 0;
+.aui .steps-list li:last-child:after{display:none;}
+.aui .steps-content{
+    overflow:hidden; text-align:left; padding:5px 0 0; 
 }
-.steps-content h2, .aui  .steps-content h2{ font-size:22px; line-height:26px; margin:0 0 5px; }
+.steps-content h2, .aui  .steps-content h2{ font-size:1.75em; font-weight:300; margin:0 0 5px; }
 .steps-content h3, .aui .steps-content h3{ font-size:18px; line-height:22px; }
-.steps-content .decor-field { padding:0 0 10px; }
+.steps-content .decor-field { padding:0 0 10px; width:100%;}
 .steps-content .decor-field input[type="text"]{
-    width:100%;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    padding:5px 7px;
-    height:38px;
+    width:100%; text-align:left; box-sizing: border-box; -webkit-box-sizing: border-box;
 }
 .steps-content .btn-save{
     padding:0 0 15px;
     overflow:hidden;
 }
-.add-btn-lst{
+.aui .add-btn-lst{
     margin:0;
     padding:0 0 20px;
     overflow:hidden;
     list-style:none;
 }
-.add-btn-lst li{
+.aui .add-btn-lst li{
     float:right;
     width:48%;
 }
-.add-btn-lst li:first-child{float:left;}
-.add-btn-lst a{
-    display:block;
-    text-align:center;
+.aui .add-btn-lst li:first-child{float:left;}
+.aui .add-btn-lst a{
+    display:block; text-align:center;
     text-decoration:none;
     text-transform: uppercase;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    font-size: 13px !important;
+    border-radius:6px;
+    -webkit-border-radius:6px;
     line-height:28px;
-    padding:5px 20px;
+    padding:10px 20px;
     transition:all 0.3s ease;
     -wekit-transition:all 0.3s ease;
 }
-.add-btn-lst a:hover{background-color: #E6E4DD;color: #172A35333;}
-.steps-content .default-image{padding:0 0 20px;}
-.steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
+.aui .steps-content .default-image{padding:0 0 20px;}
+.aui .steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
 
-.steps-content .btn-save input{
-    float:right; width:150px;
-}
-.add-bottom-lst{
+.aui .steps-content .btn-save input{ float:right; width:150px; }
+.aui .steps-content .btn-save input, .aui .add-btn-lst a { background-color: #B3E7FF; color:#006b82; }
+.aui .add-bottom-lst li input[type=submit], .aui .btn-area input[type=submit] {  line-height: 1 !important; }
+.aui .add-bottom-lst{
     margin:0;
     padding:0;
     list-style:none;
 }
-.add-bottom-lst li{
+.aui .add-bottom-lst li{
     overflow:hidden;
     padding:0 0 10px;
 }
-.add-bottom-lst input{
-    width:100%; float:right;  color:#FFF;
+.aui .add-bottom-lst input{
+    width:100%; float:right;
 }
-.steps-content .input-prepend{
+.aui .steps-content .input-prepend{
     display:block;
     font-size:15px;
 }
@@ -2875,7 +2866,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 .popup-btns a.btn:hover{color:#000;}
 
-body .ttl-row .btn{
+.aui .ttl-row .btn{
     display:inline-block;
     vertical-align:top;
   text-transform:uppercase;
@@ -2883,11 +2874,11 @@ body .ttl-row .btn{
   -wekit-border-radius:6px;
   padding:7px 12px !important;
 }
-body .landing-cpn-slider-wrapper .btn{
+.aui .landing-cpn-slider-wrapper .btn{
     display:inline-block; vertical-align:top; text-transform:uppercase; 
     margin-bottom:5px; 
 }
-body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !important;}
+.aui .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !important;}
 
 .landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
 .response-video {
@@ -3120,7 +3111,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .wrapper-925 .tab .cpn-holder { display:none; }
 
     .aui .row-fluid .span8 {width:100% ;}
-     #user-about-links .input-append.input-prepend { margin-left:20px; width:90%; }
     .dr-img-wrapper .dr-img{margin:0 15px 20px;}
 
     .aui .f-box{ float:none; width:auto; max-width:none; text-align:center;  padding:0 0 20px; }
@@ -3275,10 +3265,10 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .non-respv .date-body span.block{display: block;}
 
     /*          480         */
-    .highlights.resp .highlight-item{}
     .highlights.resp .highlight-item.span3{width: auto;}
     .highlights.resp .highlight-item.span6{width: 48.61878453038674%;}
     .non-respv .ui.checkbox{padding-left: 0;}
+    #user-about-links input#shortUrlGenerator, #shortUrl { width: 100%; max-width:100%; }
 
 }
 @media (min-width: 769px) {

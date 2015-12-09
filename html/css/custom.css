@@ -635,11 +635,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .aui input:-webkit-autofill, .aui textarea:-webkit-autofill, .aui select:-webkit-autofill {
   background-color: #ffffff !important; }
-
+/*
 .aui input:not([type=checkbox]), .aui input[type="radiobutton"] {
   height: 20px;
   height: 1.3em; }
-
+/* 
 .aui .btn-large {
   font-weight: 900;
   padding: 11px 19px;
