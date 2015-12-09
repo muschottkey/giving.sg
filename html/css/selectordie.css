@@ -122,9 +122,7 @@
 
     #sortSearchResults{ font-size: 1em; }
     #sortSearchResults .sod_label{font-size: 16px;}
-    #sortSearchResults{ width:180px;}
         #sortSearchResults:before {display: none;}
-        #sortSearchResults:after {top: 5px;}
 
     .sod_option.custom { border-top: 1px solid #dcddde; padding-top: 15px;}
     .sod_option.custom:before{display: none !important;}

@@ -417,7 +417,7 @@
 /****************************************/
 
 
-.dropdown > button, .dropdown > button:hover, Ã‚Â  .select-like button, .select-like button:hover, .action-btn > button {
+.dropdown > button, .dropdown > button:hover,  .select-like button, .select-like button:hover, .action-btn > button {
   box-shadow: none !important; }
 
 .steps-content .btn-save input, .add-btn-lst a {
