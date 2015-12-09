@@ -412,6 +412,8 @@ hr.m5{margin: 5px 0;}
 .aui .navbar-inverse .brand:hover, .aui .navbar-inverse .nav > li > a:hover{ text-decoration: underline;color: #006b82;}
 .aui .boxed-wrapper {max-width:800px;margin:0 auto; padding-top: 30px;}
 
+.aui .row-fluid #cpn-meta .span12 { margin-left:0; }
+
 footer.footer a{font-size: 14px;text-decoration: underline;}
 .footer p {text-align:center;margin:0; padding:10px 0;}
 .main-content-inner{margin-top:0;padding-top:0;min-height: 300px;}
@@ -3288,7 +3290,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 @media (max-width: 767px) {
 	.aui #donate-buttons button{width:90% !important;float:none !important;display:block !important;}
 	.aui #cpn-info .carousel-indicators{ bottom:65px !important; }
-	.aui #cpn-info .carousel-no-add-box{bottom:20px !important;}
 	.aui #sortable .row-fluid.non-respv .pull-right[class*="span"]{float:left !important;}
 	.aui #tab00 .data-list .data-list-item{padding-top:0;}
 	.aui #sortable .t-header .ui.checkbox{margin-top:9px;}
@@ -3839,13 +3840,13 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 
 @media (max-width: 600px) {
 	.aui .carousel-indicators{bottom:65px !important;}
-	.carousel-control.right, .aui .carousel-control.right,
-	.cpn-holder .swiper-button-prev,
-	.cpn-holder .swiper-button-next{display:none;}
+    .carousel-control.right, .aui .carousel-control.right, .carousel-control.left, .aui .carousel-control.left,
+	.cpn-holder .swiper-button-prev, .cpn-holder .swiper-button-next{display:none;}
 	
     #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0 auto;}
         #cpn-info { width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
     #setup-dtn-carousel {padding-bottom:48px;}
+        .aui #cpn-info .carousel-no-add-box { padding-bottom:0; }
     .carousel-indicators {bottom: 17%;}
     .bottom-r .cn-days-wrapper { background-color: rgba(0,0,0,0.7);position: relative;}
 }
