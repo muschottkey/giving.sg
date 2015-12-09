@@ -1282,19 +1282,19 @@ h4.box.reset,
 .cpn-suggestions .load-all-box, .cpn-suggestions .add-cpn-btn { font-size:1.25em;height: auto; border: 0 none;}
 .load-all-box .action-link {margin-bottom:3px;}
 
-.more-days.inline h4, .aui .more-days.inline h4 { display: inline-block; }
-.more-days span.em{color: #adadad;}
-.dtn-amt-item{position: relative;overflow:hidden;}
-.dtn-amt-item .dtn-vacs { display:table; }
-.dtn-amt-item .dtn-amt  h3, .aui .dtn-amt-item .dtn-amt  h3{ vertical-align: middle; display:block;  }
-.dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {min-height:100px; }
-#custom-amt-input-modal { min-height:30px; padding: 1em;  }
-#custom-amt-input-modal .em {font-size: 1em;}
-    #custom-amt-input-modal .button-input { width: 60% !important; margin: 10px 1em;font-size: 1.4em !important;}
+.aui .more-days.inline h4, .aui .more-days.inline h4 { display: inline-block; }
+.aui .more-days span.em{color: #adadad;}
+.aui .dtn-amt-item{position: relative;overflow:hidden;}
+.aui .dtn-amt-item .dtn-vacs { display:table; }
+.aui .dtn-amt-item .dtn-amt h3, .aui .aui .dtn-amt-item .dtn-amt h3{ vertical-align: middle; display:block;  }
+.aui .dtn-amt-item .dtn-amt, .aui .dtn-amt-item .dtn-desc {min-height:100px; }
+.aui #custom-amt-input-modal { min-height:30px; padding: 1em;  }
+.aui #custom-amt-input-modal .em {font-size: 1em;}
+   .aui #custom-amt-input-modal .button-input { width: 60% !important; margin: 10px 1em;font-size: 1.4em !important;}
 
 .aui .dtn-amt-item .dtn-desc { border-left: 1px solid #DCDDDE; padding:1.3em 1em; }
 .aui .dtn-amt-item .dtn-btns { padding: 1em 0; }
-.aui .dtn-amt-item .dtn-btns .btn{ float:left; margin:10px 15px 0 0; width:42%; padding:8px; }
+.aui .dtn-amt-item .dtn-btns .btn{ float:left; margin:0 15px 0 0; width:42%; padding:8px; }
 .aui .vpos-wrapper .btn {  min-width:0; margin:5px auto 0; background-color:#00acd0; color: #FFF; } 
     .aui .vpos-wrapper .btn:hover { background:#0E678E; color: #FFF; }
 
@@ -1314,9 +1314,9 @@ h4.box.reset,
     background: linear-gradient(to bottom, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#FFF', GradientType=0 );
 }
-.cpn-story .body.open:before{display: none;}
-span.span12.read-more.text-left.m-0{display: none;}
-.cpn-story .toggle-readmore { width: auto !important; }
+.aui .cpn-story .body.open:before{display: none;}
+.aui span.span12.read-more.text-left.m-0{display: none;}
+.aui .cpn-story .toggle-readmore { width: auto !important; }
 
 /* Fundraiser Widgets */
 .fr-widget-wrapper{
@@ -1368,7 +1368,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 .ui.checkbox input:checked ~ label::after{content:"" !important;}
 
 /* Copy Url Box */
-.cpn-url-box { position: relative; float: none; }
+.aui .cpn-url-box { position: relative; float: none; }
 .aui .cpn-url-box input.span10 { 
     height:40px; background:#FFF; width:75%; padding:10px; border-width:1px; max-width:95%; }
     .mod-tell-friends .cpn-url-box input.span10 { float: left; }
@@ -3214,27 +3214,20 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     /**/
     #name-nric, #nric-num{width:92%}
 
-    .dtn-amt-item .dtn-btns{
+    .aui .dtn-amt-item .dtn-btns{
         width: 100%;
         text-align: center;
         padding: 0.5em 0;
         border-top: 1px solid #DCDDDE;
         border-left: 1px solid #DCDDDE;
     }
-	.dtn-amt-item .dtn-desc{
-		padding-bottom:999px;
-		margin-bottom:-999px;
-	}
-	.aui .modalwrapper .dtn-amt-item .dtn-desc{
-		padding-bottom:0; margin-bottom:0;
-	} 
-	.dtn-amt-item .dtn-desc span{padding-bottom:20px;
-	display:block;}
+	.aui .dtn-amt-item .dtn-desc{ padding-bottom:999px; margin-bottom:-999px; }
+	.aui .modalwrapper .dtn-amt-item .dtn-desc{ padding-bottom:0; margin-bottom:0; } 
+	.aui .dtn-amt-item .dtn-desc span{padding-bottom:20px; display:block; }
+    .aui .dtn-amt-item .dtn-btns .btn{ float:none; width: 30%; }
+    .aui .dtn-amt-item .dtn-desc{width: 100%;}
 
-    .dtn-amt-item .dtn-btns .btn{ float:none; width: 30%; }
-    .dtn-amt-item .dtn-desc{width: 100%;}
-
-    .cpn-contact-info { text-align:left; }
+    .aui .cpn-contact-info { text-align:left; }
     #contact-logo { width:80%; max-width:280px; margin:0 auto;  }
     #cpn-donate-now .box { display:block; border:none; padding-bottom:0; }
     #cpn-donate-now .box > h4, .aui #cpn-donate-now .box > h4, #cpn-donate-now .box > #donate-buttons { display:none; }
