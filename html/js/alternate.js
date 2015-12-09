@@ -834,7 +834,7 @@ function showSidebar(winWidth){
         '<label class="control-label small span12 hidden-desktop">TIME</label><input type="text" class="span12 m-right5" placeholder="e.g. 10am -4pm"></div>'+
         '<div class="span3 relative">'+
         '<label class="control-label small span12 hidden-desktop">Activity Hours</label><input type="text" class="span12 m-right5" placeholder="placeholder text">'+
-        '<button href="#" class="btn btn-ghost btn-minimal delete-row"><i class="fa fa-trash-o"></i></button></div>';
+        '<button href="#" class="btn btn-minimal delete-row"><i class="fa fa-trash-o"></i></button></div>';
 
         var insertHTML = '<div class="row-fluid breakpoint-override can-clone cloned">'+cloneHTML+"</div>";
         $(this).parent().find('.time-fields-wrapper').append(insertHTML);
