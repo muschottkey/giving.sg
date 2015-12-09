@@ -562,9 +562,10 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     will-change: opacity, transform; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
 }
+.cpn-holder .btn-more-img { padding: 10px 15px; }
 .donate-trig.btn  { margin-bottom:10px; }
+
  .donors-area .btn-area span:focus, .open-more:focus, 
-}
 .btn-more-img:focus { border:0 none; outline: 0; }
 
 /* UI Controls - BUTTON OPTIONS */
