@@ -92,8 +92,10 @@ p.small.text-center { font-size:1em; }
     { font-size:1em; }
     p#emailFeedback { margin-top:15px; }
 
-.modalwrapper > .row-fluid > .text-center h2.black, .aui .text-center h2.black
-.modalwrapper > .row-fluid > .span6 .text-center h4.black {color: #333;}
+.modalwrapper > .row-fluid > .text-center h2.black, .aui  .modalwrapper > .row-fluid > .text-center h2.black, 
+.modalwrapper > .row-fluid > .span6 .text-center h4.black, .aui .modalwrapper > .row-fluid > .span6 .text-center h4.black {
+    color: #333;
+}
 
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
@@ -2709,19 +2711,9 @@ body .control-group.error .checkbox,
     text-align:left;
     padding:5px 0 0;
 }
-.steps-content h2,
-.steps-content h2{
-    font-size:22px;
-    line-height:26px;
-    margin:0 0 5px;
-}
-.steps-content h3{
-    font-size:18px;
-    line-height:22px;
-}
-.steps-content .decor-field{
-    padding:0 0 10px;
-}
+.steps-content h2, .aui  .steps-content h2{ font-size:22px; line-height:26px; margin:0 0 5px; }
+.steps-content h3, .aui .steps-content h3{ font-size:18px; line-height:22px; }
+.steps-content .decor-field { padding:0 0 10px; }
 .steps-content .decor-field input[type="text"]{
     width:100%;
     box-sizing: border-box;
