@@ -252,7 +252,8 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
 .aui .control-group.success .help-block, .aui .control-group.success .help-inline{
     color:#6a6c6f;  font-weight: 400;
 }
-.alert-danger, .alert-error h6 { text-align:center; }
+.alert-danger, .alert-error h6,
+.alert-danger, .aui .alert-error h6 { text-align:center; }
 
 .aui .btn.disabled, .aui .btn.disabled:hover, .aui .btn.disabled:focus,
 .aui input[disabled], .aui select[disabled], .aui textarea[disabled], .aui input[readonly], 
@@ -1962,7 +1963,8 @@ body .swiper-button-next:before { content:"\f105"; }
 }
 #dateNAdd.dashboard ul li{ margin-bottom: 5px;display: inline-block;float: right; }
 #dateNAdd ul li i{ position: absolute; left:5px; top: 3px; font-size: 1.2em; color: #999; }
-#dateNAdd ul li h6{ color: #000; margin:0; }
+#dateNAdd ul li h6,
+#dateNAdd ul li .aui h6 { color: #000; margin:0; }
 #actDescWrapper, #act-meta{padding: 0 30px 20px;}
 #actDescription ul{margin-left: 0}
 #actDescription ul li{
@@ -1977,7 +1979,8 @@ body .swiper-button-next:before { content:"\f105"; }
 #actDescription ul li span{
     display: block;
 }
-#actDescription ul li h6{
+#actDescription ul li h6,
+#actDescription ul li .aui h6 {
     color: #000;
     margin:0;
 }
@@ -2374,7 +2377,8 @@ display:inline-block !important; vertical-align:top;
     top:15px;
     background-color: #cccccc;
 }
-.data-list li .person-actions h6{ font-size: 16px;font-weight: 800;color: #000;}
+.data-list li .person-actions h6,
+.data-list li .aui .person-actions h6 { font-size: 16px;font-weight: 800;color: #000;}
 .data-list li .person-actions .smaller{ margin-top: 0;}
 .data-list li .person-actions .smaller.gender{ margin-right: 10px;}
 
@@ -2626,7 +2630,8 @@ body .control-group.error .checkbox,
 /*      773     */
 .profile-nav-container h5,
 .aui .profile-nav-container h5 {color:#4a4a4a !important; font-size:15px; margin:5px 0 !important; font-weight:normal;}
-.profile-nav-container h6{color:#4a4a4a !important; font-size:13px; font-weight:normal;}
+.profile-nav-container h6,
+.aui .profile-nav-container h6 {color:#4a4a4a !important; font-size:13px; font-weight:normal;}
 .highlights .highlight-item > span.small, .highlights .highlight-item .leaders span.small {
     color:#333; line-height:1; 
 }
@@ -3391,7 +3396,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #collapse-taxdeduc {overflow: hidden;position: relative;}
     #collapse-taxdeduc.collapse.in {overflow: visible;position: relative;}
     #save-status.step1{width: 100%;margin-left: 0;margin-bottom: 20px;margin-top: 15px;}
-    #tax-deduc .span6 h6{margin-bottom: 0;margin-top: 20px;font-size: 0.95em;}
+    #tax-deduc .span6 h6,
+    #tax-deduc .aui .span6 h6 {margin-bottom: 0;margin-top: 20px;font-size: 0.95em;}
     #cause-image-preview{padding: 0 !important;}
 
     .img-box span.small {margin-top: 15px;}
@@ -3994,7 +4000,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .aui .evn-details .cn-days-wrapper h4 , .evn-details .cn-days-wrapper span {
         display: inline-block;
     }
-    #dateNAdd ul li h6{font-size: 1em;}
+    #dateNAdd ul li h6,
+    #dateNAdd ul li .aui h6 {font-size: 1em;}
 
     /*          Footer         */
     .pre-footer-social .control-label{text-align:center;}
@@ -4031,7 +4038,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     }
     #dateNAdd.dashboard.resp ul li i{left: 0;}
     #dateNAdd.dashboard.resp ul li .datebody{margin-bottom:10px;}
-    #dateNAdd.dashboard.resp ul li .date-body h6{
+    #dateNAdd.dashboard.resp ul li .date-body h6,
+    #dateNAdd.dashboard.resp ul li .aui .date-body h6 {
         display: inline-block;
     }
     .highlights.resp.p-480{padding:0 20px;}
