@@ -461,7 +461,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui .modal .social-media-signup a:focus, .aui .modal .social-media-signup a:hover {
     text-decoration: none; opacity: 0.8; color:#fff !important;
 }
-.social-share a i { font-size: 1.5em; }
+.aui .social-share a i { font-size: 1.5em; }
 .aui .modal .social-media-signup a i { margin-right: 10px; font-size: 1.2em; }
     .aui .modal .social-media-signup a.facebook, .social-share a.facebook { background-color: #334479; }
     .aui .modal .social-media-signup a.linkedin { background-color: #0077B5; }
@@ -476,13 +476,12 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .social-share a.in{ background-color: #0077b5; }
     .social-share a.inst{ background-color: #3f729b; }
     .social-share a.shareit{ background-color: #BBB; }
-    .f-block .social-share { float:left; padding: 0 30px 0 0; }
+    .aui .f-block .social-share { float:left; padding: 0 30px 0 0; }
 
 .or-separator{
     position: absolute; top: 15em; right:calc(50% - 34px); background:#d8d8d8; 
     padding:12px; border:1px solid #DCDDDE; border-radius: 50%; font-size: 0.875em;
 }
-
 /* MODAL - UI Controls */
 #respwdForm .control-group .controls input:not([type=checkbox]){text-align: center;}
 .modal .forgot-pwd {display: block; position: absolute; bottom:0;  right: 0;}
@@ -517,7 +516,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 /* UI Controls - GHOST BUTTON / OPTIONS (WHITE) */
 .btn-group .btn.btn-ghost, .btn-more-img, .aui .btn-ghost { 
     background:#FFF; border:1px solid #dcddde; border-radius: 4px; box-shadow:none; 
-    color:#6a6c6f; line-height:1.2; outline:none; padding:5px 10px;
+    color:#6a6c6f; line-height:1.2; outline:none; padding:10px;
 }
 /* UI Controls - BUTTON (HOVER) */
 .aui button:hover, .aui .btn:hover, .aui .btn-large:hover, .aui .btn-floating:hover, 
@@ -554,7 +553,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 
 /* UI Controls - LARGE BUTTONS */
-.aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; height:45px;  }
+.aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; height:45px; padding:10px 15px; }
 
 /* UI Controls - CUSTOM BUTTONS  GHOST BUTTON (Homepage) */
 .gallery-txt-box .btn {
@@ -565,8 +564,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 .cpn-holder .btn-more-img { padding: 10px 15px; }
 .donate-trig.btn  { margin-bottom:10px; }
 
- .donors-area .btn-area span:focus, .open-more:focus, 
-.btn-more-img:focus { border:0 none; outline: 0; }
+.donors-area .btn-area span:focus, .open-more:focus,  .btn-more-img:focus { border:0 none; outline: 0; }
 
 /* UI Controls - BUTTON OPTIONS */
 .donate-btns { padding:15px 1.8em 0; }
@@ -1520,7 +1518,7 @@ span.span12.read-more.text-left.m-0{display: none;}
 }
 .carousel > .active { left:auto; }
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa { color:#F16577; left:0;}
-.side-logo{
+.aui .side-logo{
     border:1px solid #DCDDDE;
     border-radius:6px;
     -webkit-border-radius:6px;
@@ -1529,10 +1527,10 @@ span.span12.read-more.text-left.m-0{display: none;}
     max-width:220px;
     margin:0 0 15px;
 }
-.side-contact-lst { margin:0; padding:0 0 20px; list-style:none; line-height:17px; font-size:.875em; }
-.side-contact-lst li { font-size: 1.14286em;; }
-.side-contact-lst li:first-child { font-weight:500; }
-.side-contact p .fa{width:18px;color:#6a6c6f;margin-right: 12px;}
+.aui .side-contact-lst { margin:0; padding:0 0 20px; list-style:none; line-height:17px; font-size:.875em; }
+.aui .side-contact-lst li { font-size: 1.14286em;; }
+.aui .side-contact-lst li:first-child { font-weight:500; }
+.aui .side-contact p .fa{width:15px;color:#6a6c6f;margin-right:2px;}
 
 .start-campaign-holder{padding:0 10px;}
 .start-campaign-area{
@@ -3108,11 +3106,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     body.ie #uf-dockbar-search-mobile  input[type="text"],
     body.ie #search-form input[type="text"] { max-width: 95% !important; width: 100% !important; }
     .cpn-holder .btn-close{
-        display: block;
-        padding: 10px;
-        background-color: #efefef;
+        display: block; padding: 10px; background-color: #efefef;
     }
-    .aui .cpn-url-box input.span10 {width:80%;}
     .centered-small-screen{text-align: center;}
     .box.reset {padding-top:10px !important;}
     #cause-image-preview {margin:15px !important;}
@@ -3137,15 +3132,9 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
      #user-about-links .input-append.input-prepend { margin-left:20px; width:90%; }
     .dr-img-wrapper .dr-img{margin:0 15px 20px;}
 
-    .f-box{
-        float:none;
-        width:auto;
-        max-width:none;
-        text-align:center;
-        padding:0 0 20px;
-    }
-    .f-block .social-share{ float:none; padding:20px 0; margin: 0 auto 14px; }
-    .f-block .input-append{margin: 0 auto;}
+    .aui .f-box{ float:none; width:auto; max-width:none; text-align:center;  padding:0 0 20px; }
+    .aui .f-block .social-share{ float:none; padding:20px 0; margin: 0 auto 14px; }
+    .aui .f-block .input-append{margin: 0 auto;}
 
     /* HELPER CLASSES */
     .tr-show-desktop-only{display: none !important;}

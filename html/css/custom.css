@@ -2241,14 +2241,12 @@ div.side-contact {
 
 #cpn-meta .span4 h5, .contact-us h5 .contact-us h4 {
   font-size: 1.125em !important; }
-
-#copy-url, #cpn-url {
+/*#copy-url, #cpn-url {
   margin-top: 0px; }
 
 @media (max-width: 979px) {
-  .cpn-url-box input.span10 {
-    width: 99% !important; } }
-/* .fa-minus-circle:before {
+/*    width: 99% !important; } }
+ .fa-minus-circle:before {
     content: "\f056";
 }
 
