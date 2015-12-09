@@ -623,12 +623,6 @@ button.btn.btn-ghost.delete-row {
 .dtn-amt {
   position: relative; }
 
-.dtn-amt h3 {
-  position: absolute;
-  top: 50%;
-  margin: -13px 0 0 !important;
-  right: 0;
-  left: 0; }
 
 .short .cpn-sgtn-item .sgtn-body {
   min-height: 100px; }

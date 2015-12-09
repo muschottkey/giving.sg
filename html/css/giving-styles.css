@@ -1287,6 +1287,7 @@ h4.box.reset,
 .aui .dtn-amt-item{position: relative;overflow:hidden;}
 .aui .dtn-amt-item .dtn-vacs { display:table; }
 .aui .dtn-amt-item .dtn-amt h3 { vertical-align: middle; display: table-cell; margin: 1.368rem 0 1.168rem 0; }
+    .dtn-amt h3 { position: absolute; top: 50%; margin: -13px 0 0 !important; right:0; left: 0; }
 
 .aui .dtn-amt-item .dtn-amt, .aui .dtn-amt-item .dtn-desc {min-height:100px; }
 .aui #custom-amt-input-modal { min-height:30px; padding: 1em;  }
