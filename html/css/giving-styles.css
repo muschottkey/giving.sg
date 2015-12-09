@@ -97,7 +97,7 @@ p.small.text-center { font-size:1em; }
 .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
 .box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3 { margin:0; }
-.bg-giving-blue, .causes li.ico-tdr { 
+.bg-giving-blue,Â .causes li.ico-tdr { 
     border: 1px solid #CCC; background:none !important; color:#999 !important;
 }
 #view-campaign .boxed-wrapper .row-fluid.border-all.m-top30 { border:0 none; }
@@ -156,9 +156,19 @@ label.small.grey{color: #999;}
 
 /* UI FORM Controls - CONTROLS / FIELDS */
 body textarea, body input[type="text"], body .button-input, body .control-group .form-control {
-    border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none !important; 
-    padding:6px 25px 6px 5px; margin-bottom:5px; height:33px; font-size:16px;
-    line-height:1.25; color: #172A35; box-sizing:border-box; -webkit-box-sizing:border-box;
+    border-width:0 0 1px;
+    border-radius:0;
+    border-color:#dcddde;
+    box-shadow:none !important;
+    padding:6px 25px 6px 5px;
+    margin-bottom:5px;
+    height:33px;
+    font-size:16px;
+    line-height:1.25;
+    color: #172A35;
+    box-sizing:border-box;
+    -webkit-box-sizing:border-box;
+    width: 100%;
 }
 .aui .modal input:not([type="checkbox"]), .aui .wrapper input:not([type="checkbox"]) {
     width:100%; border-width: 0 0 1px; box-shadow:none !important; color: #172A35;
@@ -207,7 +217,7 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
 .aui .control-group.error .radio, .aui .control-group.error .checkbox {
     color:#172A35 !important;
 }
-.aui .control-group.error .help-block, .aui .control-group.error .help-inline,
+.aui .control-group.error .help-block, .auiÂ .control-group.error .help-inline,
 .aui .control-group.error .validation-feedback i, .aui .control-group.error .help-block p,
 .aui .alert-danger, .aui .alert-error, .aui .alert-error i, .aui .alert-error h6 {
     color:#F16577; 
@@ -1037,7 +1047,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 /* Separate styles for each browser pack or they will all be ignored*/
 #donation-userDetails .control-group{margin-top: 5px;margin-bottom: 5px;}
-#donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
+.aui #donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
 #donation-userDetails input#user_address1 {  margin-bottom:30px; }
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
@@ -1508,7 +1518,7 @@ body .btn-success{margin-bottom:15px !important;}
     height:9px;
     text-align:center;
 }
-.sgtn-body h5, #cpn-meta .sgtn-body h5 {
+.sgtn-body h5,Â #cpn-meta .sgtn-body h5 {
     font-size: 1.125em;
     min-height: 3.44em;
     max-height: 3.44em;

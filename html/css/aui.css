@@ -822,7 +822,8 @@
   .aui input,
   .aui textarea,
   .aui .uneditable-input {
-    width: 206px; }
+    width: 206px;
+    }
   .aui textarea {
     height: auto; }
   .aui textarea,
