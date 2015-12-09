@@ -1503,16 +1503,16 @@ h4.box.reset,
 
 
 /*  Cards UI no Buttons - In Accordion  */
-.modal-dtn-amts .dtn-amt-item{border-radius: 0;}
-.modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #F7F7F7;}
-.modal-dtn-amts .dtn-amt-item .dtn-amt{float:left;width: 20%; }
-    .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
+.aui .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
+.aui .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #F7F7F7;}
+.aui .modal-dtn-amts .dtn-amt-item .dtn-amt{float:left;width: 20%; }
+    .aui .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
 
-.modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 80% !important;float: right;}
-.modal-dtn-amts .dtn-amt-item .dtn-desc .small{font-size: 1em;}
-.modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
-.modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #DCDDDE;background-color: #FFF;color: #172A35;}
-.modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 1px solid #172A35;outline: none; }
+.aui .modal-dtn-amts .dtn-amt-item .dtn-desc{font-size: 0.875em!important;width: 80% !important;float: right;}
+.aui .modal-dtn-amts .dtn-amt-item .dtn-desc .small{font-size: 1em;}
+.aui .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
+.aui .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #DCDDDE;background-color: #FFF;color: #172A35;}
+.aui .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 1px solid #172A35;outline: none; }
 
 .aui .carousel > .ico{
     position:absolute; right:17px; top:17px; font-size:1em; z-index:10; 

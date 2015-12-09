@@ -408,14 +408,15 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
   #cpn-donate-now .btn {
     width: 100% !important; }
-
+/* DB COmment
   .dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {
-    min-height: 50px !important; } }
+    min-height: 50px !important; }  */}
 @media (max-width: 979px) {
   form#_58_fm {
     text-align: center !important; } }
+/*    
 #donationAmt .dtn-amt-item .dtn-amt, #donationAmt .dtn-amt-item .dtn-desc {
-  min-height: 50px !important; }
+  min-height: 50px !important; } */
 
 #donationAmt div.modal-body {
   max-width: 280px;
