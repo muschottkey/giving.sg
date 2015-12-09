@@ -64,7 +64,7 @@ h4.cpn-story-title { margin-bottom:0.25em; }
 .box h5, .form-group h5, .aui .box h5, .aui .form-group h5 { font-size: 1.2em; }
 .p-section .form-group h5, .aui .p-section .form-group h5 { color:#294b5e; }
 
-h3.may-like-title, .aui h3.may-like-title { margin-top:10px; margin-bottom:5px; margin-left:20px;}
+h3.may-like-title, .aui h3.may-like-title { margin:10px 30px 5px; }
     .volunteer-activity .m-bot30 h4 { font-weight:500; margin:10px 30px 25px; }
 .may-like-title + .cpn-holder, .volunteer-activity .m-bot30 h4 + .cpn-holder { margin-top: 5px; }
 
@@ -528,13 +528,13 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 /* UI Controls - BUTTONS (LIGHT BLUE) (HOVER / ACTIVE) */
 .aui .btn:hover, .aui .btn:active, .aui .btn:focus, 
 .aui .btn-ghost:hover, .aui .btn-ghost:active, .aui .btn-ghost:focus,  
-.open-more, .open-more:hover, .open-more:active, .open-more:focus, 
+.aui .open-more:hover, .aui .open-more:active, .open-more:focus, #cpn-meta .open-more:hover,
 .btn-more-img:hover, .btn-more-img:active, .btn-more-img:focus, 
 .donate-trig.btn-default:hover, .donate-trig.btn-default:active, .donate-trig.btn-default:focus, 
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
 .ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, 
 #user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover {
-    background-color: #b4f2ff; color: #006b82; border:none; outline:0;
+    background: #b4f2ff; color: #006b82; border:none; outline:0;
 }
 /* UI Controls - PRIMARY BUTTONS (BLUE) (HOVER / ACTIVE) */
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
@@ -592,7 +592,6 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 #shortUrl { max-width:305px; border-color: #DCDDDE !important; }
 
 #cpn-meta .special-btn { padding: 50px 20px; }
-    #user-about-links .control-group input#shortUrlGenerator { color: #006b82 !important; }
 
 /* BUTTON UI (standardization) */
 .popover-content .btn.pull-right{
@@ -1247,12 +1246,11 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
     .conf-states-wrapper > .boxed.no-border.centered { position:absolute; background:#FFF;  }
 .conf-states-wrapper .box.reset.span12 { margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
 
-h4.box.reset, 
-.aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em !important;}
+h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em !important;}
 
 
 /* CAMPAIGN WIDGETS*/
-.cn-details { padding:0 2%; position:relative; }
+.aui .row-fluid .cn-details { padding:0 2%; position:relative; margin-left:0; }
 .cn-ln-details { padding:0; position: relative;}
 .cn-stats-wrapper { width:70%; float:left; padding:10px 3%; border-right: 1px solid #DCDDDE; }
 
