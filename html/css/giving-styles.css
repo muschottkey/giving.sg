@@ -1471,6 +1471,7 @@ h4.box.reset,
 .sgtn-body p { margin:0 auto 5px; min-height:5.8em; max-height:5.8em; overflow:hidden; font-size: .9375em; }
     .sgtn-body .heading-group p { margin-top:25px; }
     .sgtn-body .campaign-stats button { width:100%;}
+    .cpn-sgtn-item:hover .campaign-stats .btn { background-color: #117ca9; color: #FFF; }
 .cpn-sgtn-item .box-r-footer { background-color: #FFF; margin-top: 0; padding: 0;border-top: 1px solid #DCDDDE;}
 .cpn-sgtn-item .box-r-footer .more-days{ padding:8px; }
 .cpn-sgtn-item .sgtn-body .sgt-avatar{
@@ -3118,8 +3119,8 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .btn-toggle .btn { width:30%; padding:5px; }
         .btn-toggle .btn:last-child { width:39%; } 
     .tab-nav-area, .modal .progress-dots ul li .step-label {display:none;}
-   .tab-nav-area.pg480, .tab-nav-area.visible-all{display:block;}
-   .tab-section .tab{ top:0; position:relative; display:block !important; }
+    .aui .tab-nav-area.pg480, .tab-nav-area.visible-all{display:block;}
+    .aui .tab-section .tab{ top:0; position:relative; display:block !important; }
     .top-title-area{display:block;}
     .wrapper-925 {max-width: 750px;} 
     .wrapper-925 .title-search { padding-bottom:20px; }

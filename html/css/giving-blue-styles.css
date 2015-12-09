@@ -366,9 +366,7 @@
 .cpn-sgtn-item:hover .campaign-stats .progress .bar {
   background-color: #49bbec; }
 
-.cpn-sgtn-item:hover .campaign-stats .btn {
-  background-color: #117ca9 !important;
-  color: #ffffff; }
+
 
 .cpn-sgtn-item:hover .more-days.inline h4 {
   color: #FFF; }
