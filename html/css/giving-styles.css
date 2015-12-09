@@ -64,7 +64,7 @@ h4.cpn-story-title { margin-bottom:0.25em; }
 .box h5, .form-group h5, .aui .box h5, .aui .form-group h5 { font-size: 1.2em; }
 .p-section .form-group h5, .aui .p-section .form-group h5 { color:#294b5e; }
 
-h3.may-like-title, .aui h3.may-like-title { margin-top:10px; margin-bottom:5px; }
+h3.may-like-title, .aui h3.may-like-title { margin-top:10px; margin-bottom:5px; margin-left:20px;}
     .volunteer-activity .m-bot30 h4 { font-weight:500; margin:10px 30px 25px; }
 .may-like-title + .cpn-holder, .volunteer-activity .m-bot30 h4 + .cpn-holder { margin-top: 5px; }
 

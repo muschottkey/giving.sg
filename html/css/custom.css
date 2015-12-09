@@ -827,10 +827,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .delete-logo {
   display: none !important; }
-
+/* 
 .cpn-sgtn-item > .sgtn-img img {
   max-height: none !important;
-  max-width: 268px !important; }
+  max-width: 268px !important; } */
 
 @media (max-width: 767px) {
   .cpn-sgtn-item .sgtn-body img {
