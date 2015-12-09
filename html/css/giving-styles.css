@@ -220,13 +220,14 @@ label.small.grey{color: #919396;}
 .aui input:focus:invalid:focus, .aui textarea:focus:invalid:focus { box-shadow:none; border-color:#F16577; }
 
 .aui .control-group.error input, .aui .control-group.error select, .aui .control-group.error textarea,
-.aui .control-group.error .radio, .aui .control-group.error .checkbox {
+.aui .control-group.error .radio, .aui .control-group.error .checkbox,
+.aui input:focus:invalid {
     color:#172A35 !important;
 }
 .aui .control-group.error .help-block, .aui .control-group.error .help-inline,
 .aui .control-group.error .validation-feedback i, .aui .control-group.error .help-block p,
 .aui .alert-danger, .aui .alert-error, .aui .alert-error i, .aui .alert-error h6 {
-    color:#F16577; 
+    color:#F16577; font-size:.875em;
 }
 .aui .control-group.error .input-prepend .add-on, .aui .control-group.error .input-append .add-on{
     border-color: #F16577; color: #F16577; font-weight: 400;
@@ -1618,7 +1619,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .swiper-button-prev, .swiper-button-next, .aui .swiper-button-prev, .aui .swiper-button-next,
     .carousel-control, .aui .carousel-control { 
         height:200px; width:50px; opacity:.5; background:none; background-image:none; border:none;
-        color:#919396; top:22%; margin-top:0; display:table; right:0; 
+        color:#919396; top:22%; margin-top:0; display:table; right:0; z-index:1030;
     }
     .home-slider .swiper-button-next, .home-slider .swiper-button-prev { height:320px; color:#fbfbfb; top:10%; }
     .swiper-button-prev, .aui .carousel-control.left, .carousel-control.left { left:0; text-decoration:none; }
@@ -1649,8 +1650,8 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .navigation-inner .swiper-button-prev:hover, .navigation-inner .swiper-button-next:hover {
     opacity: 1; background: #eee;
 }
-body .swiper-button-prev:before { content:"\f104"; }
-body .swiper-button-next:before { content:"\f105"; }
+.aui .swiper-button-prev:before { content:"\f104"; }
+.aui .swiper-button-next:before { content:"\f105"; }
 
 
 /*
@@ -1840,7 +1841,7 @@ body .swiper-button-next:before { content:"\f105"; }
 #dateNAdd ul li i{ position: absolute; left:5px; top: 3px; font-size: 1.2em; color: #919396; }
 #dateNAdd ul li h6, .aui #dateNAdd ul li  h6 { color: #000; margin:0; }
 #actDescWrapper, #act-meta{padding: 0 30px 20px;}
-#actDescription ul{margin-left: 0}
+#actDescription ul, .aui .row-fluid #actDescWrapper .span12 {margin-left: 0}
 #actDescription ul li{
     list-style: none;
     display: block;
@@ -1849,7 +1850,6 @@ body .swiper-button-next:before { content:"\f105"; }
 }
 #actDescription ul li .span8{width: 65.81196581196582% !important;float: left;}
 #actDescription ul li .span4{width: 31.623931623931625% !important;float: left;}
-
 #actDescription ul li span{
     display: block;
 }
@@ -2417,10 +2417,8 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     border-color: #58c1ee !important; box-shadow: none !important;
 }
 .aui .control-group.error .checkbox,
-  .aui .control-group.error .radio,
-  .aui .control-group.error input,
-  .aui .control-group.error select,
-  .aui .control-group.error textarea {  color: #F16577 !important; }
+  .aui .control-group.error .radio, 
+  .aui .control-group.error select {  color: #F16577 !important; }
 .aui .table-actions .input-search.reset {margin-top:-6px;}
 .aui .table-actions .input-search input {
     border: 1px solid #DCDDDE !important;
@@ -2939,7 +2937,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .dashboard-wrapper{max-width: 1175px;margin-left: auto;margin-right: auto;position: relative;
         border-right: 1px solid #DCDDDE;border-left: 1px solid #DCDDDE;}
     #setup-donation-content .acc-toggle.text-left,  #jira-353-content .acc-toggle.text-left { 
-        width:200px; float:left; margin-left:-280px; margin-top:25px; line-height: 1em;
+        width:200px; float:left; margin-left:-280px; margin-top:15px; line-height: 1em;
     }
     #setup-donation-content #dtn-user-step2 ul li:last-child{width:18%;}
     #save-actions{margin-bottom: 30px; }
@@ -3272,8 +3270,8 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 
 }
 @media (min-width: 769px) {
-    #main-nav, #uf-dockbar-cart, #uf-dockbar-sidebar {top:70px;}
-    #nav { display:table !important; }
+    .aui #main-nav, .aui #uf-dockbar-cart, .aui #uf-dockbar-sidebar {top:70px;}
+    .aui #nav { display:table !important; }
     .aui .navbar-inverse .brand {
         font-size: 1.25em; padding:0; position: absolute; left:1.1em; top:0; margin-left: 0; color:#43AD49;
         text-decoration: none; max-width: 180px;display: inline-block; text-transform: uppercase;

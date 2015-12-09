@@ -139,9 +139,8 @@ xheader
   #main-nav, #uf-dockbar-cart {
     width: 30%;
     padding-top: 70px; }*/
-  #uf-dockbar-cart {
-    max-width: 360px;
-    /* header height has changed */
+  .aui #uf-dockbar-cart {
+    max-width: 360px; 
     /* padding-top: 70px;  */ } }
 /* DB - COMMENTED OUT #main-nav {
   left: -120%;
@@ -150,10 +149,10 @@ xheader
   -moz-transition: left 0.3s;
   transition: left 0.3s;
   background: #fff; } */
-#main-nav.speed-in {
+.aui #main-nav.speed-in {
   left: 0; }
 
-#main-nav ul a {
+.aui #main-nav ul a {
   display: block;
   height: 50px;
   line-height: 50px;
@@ -166,7 +165,7 @@ xheader
   box-shadow: 8px 0px #c66 inset; }
   --- */
 @media only screen and (min-width: 769px) {
-  #main-nav {
+  .aui  #main-nav {
     /* reset main nav style */
     /* position: absolute; */
     height: auto;
@@ -178,14 +177,14 @@ xheader
     box-shadow: none;
     z-index: 1030; }
 
-  #main-nav li {
+  .aui  #main-nav li {
     display: inline-block;
     float: left; }
 
-  #main-nav li:nth-child(n+7) {
+  .aui #main-nav li:nth-child(n+7) {
     display: none !important; }
 
-  #main-nav ul a {
+  .aui #main-nav ul a {
     display: inline-block;
     height: auto;
     line-height: 1;
@@ -203,52 +202,52 @@ xheader
 .no-js #main-nav {
   position: fixed; }
 
-#main-nav ul, .uf-dockbar-cart-items {
+.aui #main-nav ul, .aui .uf-dockbar-cart-items {
   cursor: default;
   list-style: none;
   margin: 0px; }
 
-#uf-dockbar-cart {
+.aui #uf-dockbar-cart {
   right: -120%;
   background: #FFF;
   -webkit-transition: right 0.3s;
   -moz-transition: right 0.3s;
   transition: right 0.3s; }
 
-#uf-dockbar-cart.speed-in {
+.aui #uf-dockbar-cart.speed-in {
   right: 0; }
 
-#uf-dockbar-cart > * {
+.aui #uf-dockbar-cart > * {
   padding: 0 1em; }
 
-#uf-dockbar-cart h2 {
+.aui #uf-dockbar-cart h2 {
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: bold;
   text-transform: uppercase; }
 
-#uf-dockbar-cart .uf-dockbar-cart-items {
+.aui #uf-dockbar-cart .uf-dockbar-cart-items {
   padding: 0;
   margin: 0; }
 
-#uf-dockbar-cart .uf-dockbar-cart-items li {
+.aui #uf-dockbar-cart .uf-dockbar-cart-items li {
   position: relative;
   padding: 1em;
   min-height: 3em;
   max-height: 4em;
   border-top: 1px solid #e0e6ef; }
 
-#uf-dockbar-cart .uf-dockbar-price {
+.aui #uf-dockbar-cart .uf-dockbar-price {
   color: #333; }
 
-#uf-dockbar-cart .uf-dockbar-name {
+.aui #uf-dockbar-cart .uf-dockbar-name {
   width: 65%;
   text-align: left;
   display: inline-block;
   max-height: 3.9em;
   overflow: hidden; }
 
-#uf-dockbar-cart .uf-dockbar-price {
+.aui #uf-dockbar-cart .uf-dockbar-price {
   float: right;
   width: 25%;
   background-color: #F7F7F7;
@@ -258,7 +257,7 @@ xheader
   border: 1px solid #DDD;
   font-weight: 500; }
 
-#uf-dockbar-cart .uf-dockbar-item-remove {
+.aui #uf-dockbar-cart .uf-dockbar-item-remove {
   position: absolute;
   right: 1em;
   top: 50%;
