@@ -2080,11 +2080,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .landing-cpn-slider-wrapper .swiper-button-next:hover,
 .landing-cpn-slider-wrapper .swiper-button-prev:hover {
   z-index: 100 !important; }
-
+/* DB COmment 
 #setup-donation-content #user-about-links .input-append.input-prepend {
   width: 85%;
   float: left; }
-/* DB COmment 
+
 #setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label {
   font-size: 1em !important; }*/
 

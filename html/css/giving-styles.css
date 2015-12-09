@@ -148,15 +148,15 @@ hr { border-top: 1px solid #CCC; }
 .aui .navbar .nav-pills li { display: inline-block; height: 38px; padding: 1em; }
 
 /*  FORM ELEMENTS STYLING       +++++++++++++++++++++++++++++++++++++++++++ */
-body::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#bec0c2; }
-body:-moz-placeholder { /* older Firefox*/ font-size:.875em font-weight:400; color:#bec0c2; }
-body::-moz-placeholder { /* Firefox 19+ */  font-size:.875em font-weight:400; color:#bec0c2; } 
-body:-ms-input-placeholder { font-size:.875em color:#bec0c2; font-weight:400; }
+.aui ::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#bec0c2; }
+.aui :-moz-placeholder { /* older Firefox*/ font-size:.875em font-weight:400; color:#bec0c2; }
+.aui ::-moz-placeholder { /* Firefox 19+ */  font-size:.875em font-weight:400; color:#bec0c2; } 
+.aui :-ms-input-placeholder { font-size:.875em color:#bec0c2; font-weight:400; }
 
 /*  FORM STYLING */
 .box.focused{ border:1px solid #dcddde; }
 .row-fluid form.form { margin:0 0 10px; }
-.control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important; }
+.aui .control-group { margin-top:1em; padding-bottom:16px; position:relative; margin-bottom:5px !important; }
 
 /* LABEL */
 .aui .control-group .controls > span, .aui label { font-size:.875em; color:#6a6c6f; }
@@ -200,7 +200,7 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
 .aui .control-group .input-prepend .add-on.fa, .aui .control-group .input-append .add-on.fa{
     font-family: "FontAwesome";
 } 
-.aui .control-group .validation-feedback { 
+.aui .control-group .validation-feedback, .aui .control-group .input-append.input-prepend .fa:last-child { 
     position:absolute; display:none; background:transparent; height:15px; margin-top:8px; right:0; width:auto;
 }
     #userDetails .validation-feedback i, #payment-type .validation-feedback i { font-size:1em; color:#6a6c6f; }
@@ -224,6 +224,7 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
     border-color:#43AD49; color:#43AD49; font-weight: 400;
 }
 .aui .control-group.success .validation-feedback i { color:#43AD49; }
+.aui .control-group .input-append.input-prepend .fa:last-child {display:block; border:none; bottom: 0; }
 
 /* error state*/
 .aui .control-group.error input, .aui .control-group.error select, .aui .control-group.error textarea, 
@@ -270,14 +271,10 @@ body textarea, body input[type="text"], body .button-input, body .control-group 
     width:100px; margin-right:5px; font-size:24px; height:35px; text-align: right; padding: 0 5px;
 }
 /* CUSTOM FORM STATES */
-#preview-label{background-color: #999;}
-
+#preview-label { background-color: #6a6c6f; }
 #user-about-links .input-append.input-prepend .add-on:first-child{
-    width:auto; display:block; text-align:left; border:0 none;
-    color:#666 !important; background:none; 
+    width:auto; display:block; text-align:left; border:0 none; color:#6a6c6f; background:none; font-size:16px; 
 }
-#user-about-links .input-append.input-prepend .add-on { height: 30px; line-height:2em;}
-
 /*      RADIO OPTIONS SELECT | LABEL CHECKBOXES     */
 .row-fluid .lbl-chkbox { margin:5px 5% 0 0; }
 .lbl-chkbox label {
@@ -489,20 +486,12 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .forgot-pwd a.txt-forgot { font-size:.9em;}
 
 .decor-ttl{
-	display:block;
-	font-size:17px;
-	line-height:20px;
-	padding:0 0 5px;
+	display:block; font-size:17px; line-height:20px; padding:0 0 5px;
 }
-#user-about-links .controls input[type="text"]{height:39px;}
-
 input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .form-control:focus,
     .pre-footer-social input:focus {
-    border-bottom:1px solid #00acd0;
-    box-shadow: none;
-    outline: none;
+    border-bottom:1px solid #00acd0; box-shadow: none; outline: none;
 }
-
 /* UI Controls - BUTTONS */
 .aui nav, .aui .btn, .aui .btn-large { box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); }
 .aui button, .aui .btn, .aui .btn:link, .aui .btn-block { 
@@ -560,6 +549,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 }
 /* UI Controls - DISABLED BUTTONS */
 .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
+
 /* UI Controls - LARGE BUTTONS */
 .aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; height:45px;  }
 
@@ -569,7 +559,9 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     will-change: opacity, transform; -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; transition: all 0.3s ease-out;
 }
-.donate-trig.btn-default:focus, .donors-area .btn-area span:focus, .open-more:focus, 
+.donate-trig.btn  { margin-bottom:10px; }
+ .donors-area .btn-area span:focus, .open-more:focus, 
+}
 .btn-more-img:focus { border:0 none; outline: 0; }
 
 /* UI Controls - BUTTON OPTIONS */
@@ -594,11 +586,10 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     margin-right:10px !important; margin-left:5px !important;
     text-align: center; float: left;
 }
+#user-about-links input { border-width:0 0 1px; font-size:16px; height:30px; margin:0 auto; padding-right:25px; }
+#shortUrl { max-width:305px; border-color: #ddd !important; }
 
-#user-about-links input { border-width:0 0 1px; font-size:16px; color:#333; height: 40px; margin:0 auto; padding-right:25px;}
-#shortUrl { max-width: 305px; border-color: #ddd !important;}
-
-#cpn-meta .special-btn{ padding: 50px 20px; }
+#cpn-meta .special-btn { padding: 50px 20px; }
     #user-about-links .control-group input#shortUrlGenerator { color: #006b82 !important; }
 
 /* BUTTON UI (standardization) */
@@ -655,7 +646,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 }
 
 /* UI ELEMENTS - TAX TDR ICON */
-#cpn-donate-now .box > h4 + .indicate-tdr {
+#cpn-donate-now .box > h4 + .indicate-tdr, #cpn-donate-now .box > h4 + span  {
     background:url(../images/ico-tax-deductible.png) no-repeat 5px -2px; background-size:28px;
     font-size:1em; display:block; line-height:1;
 }
@@ -849,7 +840,8 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 
 #selAmount.sod_select{border-radius: 0;}
 #selAmount.sod_select:before{display: none;}
-#user-about-links .controls{position:relative;}
+#user-about-links { width:95%; }
+#user-about-links .controls { position:relative;}
 
 /* Donation Logged In Page */
 #donateLoggedModal{background-color: #efefef;}
@@ -927,15 +919,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 .gift-box img {width:128px;}
 .gift-box span.badge{position: absolute;top: 27%;right: 30%;padding: 12px;width: 15px;font-size: 16px;}
 
-/* set up donation */
-.focused{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
-            -moz-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
-            box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
-            padding-bottom: 0 !important;}
-.has-slight-shadow{-webkit-box-shadow: 0px 4px 10px -3px rgba(153,151,153,1) !important;
-    -moz-box-shadow: 0px 4px 10px -3px -3px rgba(153,151,153,1) !important;
-    box-shadow: 0px 4px 10px -3px rgba(153,151,153,1) !important;
-}
 
 .p-section{margin-bottom: 40px;}
 #tax-deduc,.box.reset, .aui .box.reset {margin:0;padding-left: 0;padding-right: 0;}
@@ -1080,8 +1063,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #donation-userDetails input#user_address1 {  margin-bottom:30px; }
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
-#user-about-links .input-append.input-prepend{width: 55%;float: left; position:relative;}
-#user-about-links .input-append.input-prepend .add-on:last-child{position:absolute; right:-5px; bottom:0; background: none;border-left: none;font-size: 18px;line-height: 1.8em;color: #868686; border-width:0 0 1px !important; border-radius:0 !important; margin:1px 0 0;}
+#user-about-links .input-append.input-prepend { display:block; float:left; position:relative; }
 #user-about-links .error .input-append.input-prepend .add-on:last-child{color:#F16577;}
 
 #user-about-links .control-group.success .input-append.input-prepend .add-on:last-child:before{color: #43AD49;content: "\f00c";}
@@ -1131,9 +1113,9 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 }
 #custom-amt-input span { font-weight:900; color:#919396; font-size:1.125em; }
 
-
-#dtn-user-about{border: none;margin-top: 0 !important;}
-.contact-us{width:inherit !important;}
+/* Set Up donation */ 
+#dtn-user-about { border: none; }
+.aui .row-fluid #dtn-user-about .span6 { width: 100%; }
 #dtn-about-us-wrapper{padding: 30px;border: 1px solid #cccccc;padding-bottom: 0;}
 #dtn-about-us-wrapper .box.reset{margin-top: 20px;padding-bottom: 30px !important; }
 #dtn-impact-s .box{padding:492px 0 !important;}
@@ -1144,6 +1126,16 @@ p.block{max-width: 300px;padding: 8px;background-color: #ffffff;margin: 0 auto;t
 #dtn-user-actions .btn{height: 40px;line-height: 30px;}
 
 .border-round .centered { padding:10px 0; }  
+
+/* set up donation */
+.focused{-webkit-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
+            -moz-box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
+            box-shadow: -1px 5px 17px -3px rgba(153,151,153,1);
+            padding-bottom: 0 !important;}
+.has-slight-shadow{-webkit-box-shadow: 0px 4px 10px -3px rgba(153,151,153,1) !important;
+    -moz-box-shadow: 0px 4px 10px -3px -3px rgba(153,151,153,1) !important;
+    box-shadow: 0px 4px 10px -3px rgba(153,151,153,1) !important;
+}
 
 /* Search Results */
 .main-content .search-controls input {
@@ -3133,7 +3125,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #setup-donation-content .acc-toggle.text-left, #jira-353-content .acc-toggle.text-left{width: 200px;float: left;margin-left: -280px;margin-top: 0;line-height: 1em;}
     #setup-donation-content #dtn-user-step2 ul li:last-child{width: 16%;}
     #save-actions{margin-bottom: 30px; }
-    #user-about-links .input-append.input-prepend .add-on:last-child{width: 37px;}
     .dr-img-wrapper { width:620px;} 
     .donors-area .dr-img { width:55px; height:55px; }
     #title-activity{margin-top: 15px!important;} 
@@ -3153,8 +3144,10 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     #donate-buttons{margin: 0;}
     #donate-now{margin-top: 0;}
     .dtn-amt-item .dtn-btns .btn{margin-top: 5px;}
-    #cpn-donate-now .box > h4 + .indicate-tdr { 
-        padding-left:28px; background-position:-1px 0; text-align:left; line-height:1.4; padding-bottom:5px; }
+    /* TDR */ 
+    #cpn-donate-now .box > h4 + .indicate-tdr, #cpn-donate-now .box > h4 + span { 
+        padding-left:28px; padding-bottom:5px; background-position:-1px 0; text-align:left; line-height:1.4;
+        margin-bottom:1em; }
 
     /* Responsivity Override */
     /*.wrapper-925.no-break{min-width: 700px;}*/
@@ -3303,7 +3296,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .wrapper-925 .tab .cpn-holder { display:none; }
 
     .row-fluid .span8 {width:100% ;}
-     #user-about-links .input-append.input-prepend {width:75%; margin-left:20px; }
+     #user-about-links .input-append.input-prepend { margin-left:20px; width:90%; }
     .dr-img-wrapper .dr-img{margin:0 15px 20px;}
 
     .f-box{
@@ -3325,7 +3318,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
         #cpn-meta .row-fluid > .span12, .aui  #cpn-meta .row-fluid > .span12 {
             width:100%; margin:0; padding:0;
         }
-        .aui .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1em !important; }
+        .aui .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1.5em; }
         .aui #search-result-holder .row-fluid .span6 { width:48% !important; }
 
     .aui .modal { max-width:598px; }
@@ -3747,7 +3740,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 		}
     hr.m5{margin: 0;}
     #preview-label{margin-top: -20px;}
-    #user-about-links input{width: 90% !important;}
     #save-actions .btn {width: 47%;font-size: .875em;padding-left: 15px;padding-right: 15px;min-width: auto;}
     .gf-bkt tbody tr.visible-phone.summary {display: table-row !important;}
     .gf-bkt tbody tr td:first-child{height: 130px;}
@@ -4067,7 +4059,6 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
      .tab-nav-area.pg480{display:none;}
     
     /*from @320 RICH*/
-    #user-about-links .input-append.input-prepend{width: 87%;float: left; margin-left:20px;}
     h4 {text-align:center !important;}
     #dtn-add-logo>h4{text-align:center !important;}
     #cause-image-preview {padding:10px 0 !important;}
