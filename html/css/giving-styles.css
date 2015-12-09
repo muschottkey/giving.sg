@@ -298,9 +298,9 @@ label.small.grey{color: #919396;}
 .relative{position: relative;}
 .absolute{position: absolute;}
 .centered, .row-fluid .centered, .aui .centered, .aui .row-fluid .centered, 
-    .aui .row-fluid .social-share .span8 { 
-    margin-left:auto; margin-right:auto; float:none; 
-}
+    .aui .row-fluid .social-share .span8, .aui .row-fluid .social-share .span10 { 
+        margin-left:auto; margin-right:auto; float:none; 
+    }
 .aui #addLeadersModal .row-fluid .span8{margin:0 auto;}
 .aui #addLeadersModal .modal-body .row-fluid.non-respv{min-width:1px;}
 .m-0 { margin: 0 !important; }
@@ -585,13 +585,12 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
 .gallery-txt-box .btn { border: 1px solid #b4f2ff;  color:#FFF; }
 .gallery-txt-box .btn:hover{ background-color: #0e678e; border: 1px solid #0e678e; }
 #user-about-links input#shortUrlGenerator {
-    margin-right:10px !important; margin-left:5px !important;
-    text-align: center; float: left;
+    margin-right:10px !important; margin-left:5px !important; text-align: center; float: left;
 }
 #user-about-links input { border-width:0 0 1px; font-size:16px; height:30px; margin:0 auto; padding-right:25px; }
 #shortUrl { max-width:305px; border-color: #DCDDDE !important; }
 
-#cpn-meta .special-btn { padding: 50px 20px; }
+#cpn-meta .special-btn { padding:40px 20px; height:auto; }
 
 /* BUTTON UI (standardization) */
 .popover-content .btn.pull-right{
