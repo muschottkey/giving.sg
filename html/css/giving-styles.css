@@ -501,7 +501,7 @@ input[type="text"]:focus, textarea:focus, .button-input:focus, .control-group .f
     background-image:none !important; text-decoration:none; font-size:16px; font-weight:normal; 
 }
 /* UI Controls - BUTTON (LIGHT BLUE) */
-.aui button, .aui input[type="submit"], .aui .btn, .aui .open-more, .aui .btn.more-donations, 
+.aui button, .aui input[type="submit"], .aui .btn, .aui .open-more, .aui .btn.more-donations, .aui .dtn-btns .btn-ghost,
 .aui #user-about-links .control-group input#shortUrlGenerator {
     font-size:16px; line-height:1.4; font-weight:normal; text-decoration:none; text-transform: uppercase; 
     border-radius:6px; -webkit-border-radius: 6px; border:none; outline:none; margin-bottom:5px;
@@ -1574,9 +1574,9 @@ span.span12.read-more.text-left.m-0{display: none;}
 .accordion-title .fa { position:absolute; right: 18px; top: 9px; font-size: 16px; line-height: 1.5; }
 .accordion-title.active, .accordion-title:hover {background: #F7F7F7;color:#172A35;}
 
-.f-holder { overflow:hidden; }
-.f-box { float:left; max-width:280px; width:40%; text-align:left; }
-.f-block .input-append, body .f-block .input-append { 
+.aui .f-holder { overflow:hidden; }
+.aui .f-box { float:left; max-width:280px; width:40%; text-align:left; }
+.f-block .input-append, .aui .f-block .input-append { 
     margin-left:0; position:relative; width:auto; float:none; overflow:hidden; padding:0 0 7px 0;
 }
 #contact-logo{
