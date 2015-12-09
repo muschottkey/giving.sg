@@ -1292,18 +1292,18 @@ h4.box.reset,
 #custom-amt-input-modal .em {font-size: 1em;}
     #custom-amt-input-modal .button-input { width: 60% !important; margin: 10px 1em;font-size: 1.4em !important;}
 
-.dtn-amt-item .dtn-desc { border-left: 1px solid #DCDDDE; padding:1.3em 1em; }
-.dtn-amt-item .dtn-btns { padding: 1em 0; }
-.dtn-amt-item .dtn-btns .btn{ float:left; margin:10px 15px 0 0; width:42%; padding:8px; }
+.aui .dtn-amt-item .dtn-desc { border-left: 1px solid #DCDDDE; padding:1.3em 1em; }
+.aui .dtn-amt-item .dtn-btns { padding: 1em 0; }
+.aui .dtn-amt-item .dtn-btns .btn{ float:left; margin:10px 15px 0 0; width:42%; padding:8px; }
 .aui .vpos-wrapper .btn {  min-width:0; margin:5px auto 0; background-color:#00acd0; color: #FFF; } 
     .aui .vpos-wrapper .btn:hover { background:#0E678E; color: #FFF; }
 
 /* Campaign Story */
 #cpn-meta, .aui #cpn-meta { padding:20px 30px; }
-.cpn-story { position:relative;margin-bottom: 30px;} 
+.aui .cpn-story { position:relative;margin-bottom: 30px;} 
 .cpn-story .body, .aui .cpn-story .body { height:inherit; position:relative; margin-left:0; }
-.cpn-end-date.smaller {margin-top: 30px;color: #f5866c; font-weight: 400;}
-.cpn-story .body.closed:before{
+.aui .cpn-end-date.smaller {margin-top: 30px;color: #f5866c; font-weight: 400;}
+.aui .cpn-story .body.closed:before{
     content: ""; width:100%; height:100px; position: absolute;bottom:0;
     background: rgba(255,255,255,0);
     background: -moz-linear-gradient(top, rgba(255,255,255,0) 60%, rgba(255,255,255,0.78) 90%, rgba(255,255,255,1) 100%);
@@ -3314,14 +3314,14 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
 }
 
 @media (max-width: 767px) {
-	#donate-buttons button{width:90% !important;float:none !important;display:block !important;}
-	#cpn-info .carousel-indicators{ bottom:65px !important; }
-	#cpn-info .carousel-no-add-box{bottom:20px !important;}
+	.aui #donate-buttons button{width:90% !important;float:none !important;display:block !important;}
+	.aui #cpn-info .carousel-indicators{ bottom:65px !important; }
+	.aui #cpn-info .carousel-no-add-box{bottom:20px !important;}
 	.aui #sortable .row-fluid.non-respv .pull-right[class*="span"]{float:left !important;}
-	#tab00 .data-list .data-list-item{padding-top:0;}
-	#sortable .t-header .ui.checkbox{margin-top:9px;}
-    #wrapper { padding-top:50px; }
-	#tab00 .span3.highlight-item.highlight-button,
+	.aui #tab00 .data-list .data-list-item{padding-top:0;}
+	.aui #sortable .t-header .ui.checkbox{margin-top:9px;}
+    .aui #wrapper { padding-top:50px; }
+	.aui #tab00 .span3.highlight-item.highlight-button,
 	.aui #tab00 .row-fluid .highlights.border-all.span9 { float:none !important; width:auto !important; }
 	.aui .row-fluid.section-bordered-bottom.breakpoint-override.m-top20{margin:0;}
     .aui h1 { font-size:2em; } /* 32px */
@@ -3332,7 +3332,7 @@ body .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !i
     .aui h3.p-title { font-size: 1.5rem;padding: 0 10%;text-align: center;}
     .aui #cpn-meta h5 { font-size: 1.125em; }
 
-    .ttl-row .btn {margin-top: 22px;}
+    .aui .ttl-row .btn {margin-top: 22px;}
 
     /* CONTAINERS */
     .aui [class*="span"], .aui .row-fluid [class*="span"] { float:none; }
