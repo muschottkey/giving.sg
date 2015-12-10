@@ -1631,7 +1631,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .swiper-button-prev, .swiper-button-next, .aui .swiper-button-prev, .aui .swiper-button-next,
     .carousel-control, .aui .carousel-control { 
         height:200px; width:50px; opacity:.5; background:none; background-image:none; border:none;
-        color:#919396; top:25%; margin-top:0; display:table; right:0; z-index:1030;
+        color:#919396; top:25%; margin-top:0; display:table; right:0; z-index:1020;
     }
     .home-slider .swiper-button-next, .home-slider .swiper-button-prev { height:320px; color:#fbfbfb; top:10%; }
     .swiper-button-prev, .aui .carousel-control.left, .carousel-control.left { left:0; text-decoration:none; }
