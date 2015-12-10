@@ -292,10 +292,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 .dashboard-wrapper .check.active {
   background-position: 0px -20px; }
-
+/* DB  COMMENT
 .social-share a:hover, .social-share a:active, .social-share a:focus {
   color: #FFF !important; }
-/* DB  COMMENT 
+ 
 #donate-buttons button {
   font-size: 1.25em !important; } 
 
@@ -1708,9 +1708,9 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
 @media (max-width: 979px) and (min-width: 768px) {
   .aui .row-fluid .span8 {
     width: 100%; } }
-.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
+/** DB COMMENT .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
   font-weight: normal;
-  color: #141414; }
+  color: #141414; } */
 .aui .modal-footer {
   background: #F5F5F5;
   border-top: 0px solid #dddddd; }

@@ -91,6 +91,11 @@ p.small.text-center { font-size:1em; }
 .aui .box { background:#fff; border: 1px solid #DCDDDE; margin-top:4px; margin-bottom:0; padding: 1.5em 1.75em 1em;}
 #tax-deduc,.box.reset, .aui .box.reset { margin:0; padding-left:0; padding-right:0;}
 
+
+/***     BOXES in CONTENT    *****/
+#actDescWrapper, #act-meta, #dateNAdd { padding: 0 30px 20px; }
+    #dateNAdd { padding-top:20px; }
+
 /********************       LANDING PAGES CONTAINERS        ****************/
 .main-content .bg-lightgrey { padding-top:20px; max-height: 400px; }
 .sod_select .sod_option.selected:before{margin:-5px 0 0 !important;}
@@ -486,7 +491,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .social-share a.in{ background-color: #0077b5; }
     .social-share a.inst{ background-color: #3f729b; }
     .social-share a.shareit{ background-color: #BBB; }
-    .aui .f-block .social-share { float:left; padding: 0 30px 0 0; }
+    .aui .f-block .social-share { float:left; padding:0 2% 0 0; }
 
 .or-separator{
     position: absolute; top: 15em; right:calc(50% - 34px); background:#d8d8d8; 
@@ -813,7 +818,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
     .carousel .item button { margin-top:20px; }
 
 /*NPO Detail*/
-#view-campaign div.f-holder{margin:0 auto; width:90%;}
+#view-campaign div.f-holder{ margin:0 auto; width:94%; }
 .cpn-holder .accordion-content .cpn-wrapper {overflow:hidden;}
 
 /* NPO Listing */
@@ -1531,15 +1536,16 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 }
 .aui .carousel > .active { left:auto; }
 .aui .carousel > .ico.active .fa, .aui .carousel > .ico:hover .fa { color:#F16577; left:0;}
-.aui .side-logo{
-    border:1px solid #DCDDDE;
-    border-radius:6px;
-    -webkit-border-radius:6px;
-    padding:23px 10px;
-    text-align:center;
-    max-width:220px;
-    margin:0 0 15px;
+.aui .side-logo, #contact-logo {
+    border:1px solid #DCDDDE; border-radius:6px; -webkit-border-radius:6px; overflow:hidden; 
+    padding:15px; text-align:center; max-width:250px; max-height:141px; margin:0 0 15px;
+    display:-webkit-box; display:-ms-flexbox; display:-webkit-flex; display: flex;
+    -webkit-justify-content: center; justify-content:center; 
+    -webkit-box-align:center; -ms-flex-align:center; -webkit-align-items: center; align-items: center;
 }
+#contact-logo{ margin-top:15px; }
+    .aui .side-logo img, .aui #contact-logo img { max-width:240px; max-height:135px; }
+
 .aui .side-contact-lst { margin:0; padding:0 0 20px; list-style:none; line-height:17px; font-size:.875em; }
 .aui .side-contact-lst li { font-size: 1.14286em;; }
 .aui .side-contact-lst li:first-child { font-weight:500; }
@@ -1586,16 +1592,9 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .accordion-title.active, .accordion-title:hover {background: #F7F7F7;color:#172A35;}
 
 .aui .f-holder { overflow:hidden; }
-.aui .f-box { float:left; max-width:280px; width:40%; text-align:left; }
+.aui .f-box { float:left; max-width:280px; width:30%; text-align:left; }
 .f-block .input-append, .aui .f-block .input-append { 
     margin-left:0; position:relative; width:auto; float:none; overflow:hidden; padding:0 0 7px 0;
-}
-#contact-logo{
-    border:1px solid #dcddde; overflow:hidden; min-height:70px;
-    display: -webkit-box; display: -ms-flexbox; display: -webkit-flex;display: flex;
-    -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center;
-    justify-content: center; -webkit-box-align: center; -ms-flex-align: center;
-    -webkit-align-items: center; align-items: center;
 }
 .btn-block + .btn-block {margin-top:0 !important;}
 
@@ -1790,8 +1789,8 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 
  /* TELL A FRIEND: Social Share */
 .aui .social-share a, .aui .f-block .social-share .span1{
-    width:48px; height:48px; padding:12px 6px; color: #fff; float:none;
-    vertical-align:top; text-align:center; display:inline-block; border-radius: 6px; margin-bottom:7px;
+    width:44px; height:44px; padding:10px 6px; color: #fff; float:none; margin:0 6px 7px 0;
+    vertical-align:top; text-align:center; display:inline-block; border-radius: 6px; 
 }
 .pre-footer-social .social-share a { float:left; margin-right: 7px;} 
 .pre-footer-social .f-block .social-share .span1 { float: left; margin-right: 10px; }
@@ -1841,7 +1840,6 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
                             408 page
 ***************************************************************************/
 
-#dateNAdd { padding:20px 30px; }
 #dateNAdd.dashboard{ padding:15px 0 0px; }
 #dateNAdd ul{margin: 20px 0;}
 #dateNAdd.dashboard ul{ margin: 0; }
@@ -1851,7 +1849,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 #dateNAdd.dashboard ul li{ margin-bottom: 5px;display: inline-block;float: right; }
 #dateNAdd ul li i{ position: absolute; left:5px; top: 3px; font-size: 1.2em; color: #919396; }
 #dateNAdd ul li h6, .aui #dateNAdd ul li  h6 { color: #000; margin:0; }
-#actDescWrapper, #act-meta{padding: 0 30px 20px;}
+
 #actDescription ul, .aui .row-fluid #actDescWrapper .span12 {margin-left: 0}
 #actDescription ul li{
     list-style: none;
@@ -3049,7 +3047,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .dtn-amt-item .dtn-btns { position:absolute; right:0; top:50%; margin-top:-50px; }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
-    h4, .aui h4 { font-size: 1.5em; } /* 24px */
+    h4, .aui h4 { font-size: 1.5em; font-weight:400; } /* 24px */
     h5, .aui h5{ font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
@@ -3225,7 +3223,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .fr-widget-wrapper.closed{max-height: 460px;}
 
     .social-share { text-align:center; max-width:400px; margin:0 auto;padding: 20px 5% 10px;}
-    .social-share a { 
+    .aui .row-fluid .social-share .span8 { 
         width:3em; height:57px; margin: 0; border-radius: 6px;padding:16px 8px; 
         display: inline-block !important; margin-right:0.5em !important;
     }
