@@ -59,12 +59,12 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /****************************************************/
 /******** GLOBAL STYLE FOR MODAL **********************/
 /****************************************************/
-.modal-body .checkbox input[type="checkbox"] {
+/* .modal-body .checkbox input[type="checkbox"] {
   float: none;
   margin-right: 8px;
   font-size: 1.2em;
   font-weight: 300;
-  line-height: 1.4; }
+  line-height: 1.4; } */
 
 .modal-header .fa-minus-circle {
   margin-right: 5px; }

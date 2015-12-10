@@ -92,7 +92,6 @@ p.small.text-center { font-size:1em; }
 .aui .box { background:#fff; border: 1px solid #DCDDDE; margin-top:4px; margin-bottom:0; padding: 1.5em 1.75em 1em;}
 #tax-deduc,.box.reset, .aui .box.reset { margin:0; padding-left:0; padding-right:0;}
 
-
 /***     BOXES in CONTENT    *****/
 #actDescWrapper, #act-meta, #dateNAdd { padding: 0 30px 20px; }
     #dateNAdd { padding-top:20px; }
@@ -158,7 +157,6 @@ hr { border-top: 1px solid #DCDDDE; }
 }
 .aui #logo img {  max-width: 160px; }
 
-
 /*  FORM ELEMENTS STYLING       +++++++++++++++++++++++++++++++++++++++++++ */
 .aui ::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#bec0c2; }
 .aui :-moz-placeholder { /* older Firefox*/ font-size:.875em font-weight:400; color:#bec0c2; }
@@ -173,11 +171,10 @@ hr { border-top: 1px solid #DCDDDE; }
 
 /* LABEL */
 .aui .control-group .controls > span, .aui label, table td label { font-size:1em; color:#6a6c6f; }
-
 .title-search .span6 > .mobile-block > span.text, .upload-section label.small { color:#6a6c6f; line-height:2.2; }
 label.small.grey{color: #919396;}
 .box label.small { color:#6a6c6f; }
-.control-group .controls span small, .control-group .controls .checkbox > .small { font-size: 100% !important; }
+.aui .control-group .controls span small, .aui .control-group .controls .checkbox > .small { font-size: 100% !important; }
 .pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, 
     .pagination ul > .disabled > a:focus { cursor: not-allowed; }
 .pagination ul { box-shadow:none; border-radius:none; }
@@ -187,13 +184,13 @@ label.small.grey{color: #919396;}
 .aui textarea, .aui input[type="text"], .aui .button-input, .aui .control-group .form-control {
     font:16px/1.25 "Roboto", Arial, sans-serif; font-size:16px; line-height:1.25; 
     border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none;
-    padding:6px 25px 6px 5px; margin-bottom:5px; height:33px; width: 100%; color: #172A35;
+    padding:6px 25px 6px 5px; margin-bottom:5px; height:33px; color: #172A35;
     box-sizing:border-box;  -webkit-box-sizing:border-box;
 }
-.aui input:not([type="checkbox"]), .aui input:not([type="checkbox"]) {
+.aui input:not([type="checkbox"]), .aui input[type="text"], .aui textarea {
     width:100%; border-width: 0 0 1px; box-shadow:none; color: #172A35;
 }
-
+input[type="checkbox"], input[type="radio"] { }
 #respwdForm input.form-control,
 #claim-tax input.form-control,
 #gf-bkt-login input.form-control{
@@ -465,12 +462,6 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
     .aui .one-column .span4 { margin-top:40px; }
 .aui .modal-one-column .radio input[type="radio"], .aui .modal-one-column .checkbox input[type="checkbox"] { 
     float:none; margin-top: 0; 
-}
-#signupForm #agree,
-#LoginForm #remember{
-	width:16px;
-	height:16px;
-	margin-top:4px;
 }
 /* MODAL - TWO COLUMN */
 .aui .modalwrapper .row-fluid .span12 { margin-bottom: 20px; }
