@@ -216,11 +216,11 @@
 /******************************************/
 /*  START OF FOOTER*/
 /*****************************************/
-.f-block .social-share .fa {
+.aui .f-block .social-share .fa {
   margin-right: 0;
   }
 
-.pre-footer h4 {
+.aui .pre-footer h4 {
   font-weight: normal;
   font-size: 1.3125em; }
 
@@ -252,9 +252,7 @@
 .footer-ul span {
   color: #ffffff; }
 
-.pre-footer-social label {
-  color: #ffffff;
-  text-transform: uppercase; }
+.aui .pre-footer-social label {  color: #FFF; text-transform: uppercase; }
 
 .acc-toggle:before {
   color: #333; }
