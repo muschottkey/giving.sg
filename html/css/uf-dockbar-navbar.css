@@ -300,13 +300,15 @@ xheader
   width: 100%;
   height: 60px;
   line-height: 60px;
-  background: #00acd0;
+  background: #DCDDDE;
   color: #FFF !important;
   text-align: center;
   padding: 0; }
 
 #uf-dockbar-cart .checkout-btn:hover, #uf-dockbar-cart .checkout-btn:focus {
-  background: #0e678e; }
+  background: #0C5676
+#0C5676
+#0C5676; }
 
 #uf-dockbar-cart .uf-dockbar-go-to-cart {
   text-align: center;

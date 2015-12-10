@@ -355,11 +355,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
   color: #d33030; }
 /* DB COMMENT
 .square-border {
-  border-radius: 0 !important; } */
+  border-radius: 0 !important; } 
 
 .landing-cpn-slider-wrapper .swiper-slide {
   margin: 0 !important; }
-
+*/
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
@@ -1052,7 +1052,7 @@ div.charity-donors img.dr-img {
 
 .main-image__item .main-image__show-holder {
   position: absolute;
-  background: #00acd0;
+  background: #17A4E1;
   color: #fff;
   text-align: left;
   width: 190px;
@@ -1075,7 +1075,7 @@ div.charity-donors img.dr-img {
   color: #FFF; }
 
 .main-image__item .main-image__show-holder .btn {
-  border: 1px solid #B3E7FF;
+  border: 1px solid #B0E1F7;
   color: #FFF !important;
   background-color: transparent;
   font-size: 14px;
@@ -1084,8 +1084,8 @@ div.charity-donors img.dr-img {
 .main-image__item .main-image__show-holder .btn:hover,
 .main-image__item .main-image__show-holder .btn:active,
 .main-image__item .main-image__show-holder .btn:focus {
-  background-color: #0e678e;
-  border: 1px solid #0e678e;
+  background-color: #0C5676;
+  border: 1px solid #0C5676;
   color: #FFF; }
 
 @media (min-width: 768px) {
@@ -1146,7 +1146,7 @@ div.charity-donors img.dr-img {
 .home-slider .swiper-slide {
   border: 0px;
   min-height: 350px; }
-
+/* DB comment
 .home-slider .swiper-slide picture {
   min-height: inherit; }
 
@@ -1155,7 +1155,7 @@ div.charity-donors img.dr-img {
 
 .home-slider .slider-navigation {
   bottom: 0px !important; }
-/* DB comment
+
 .aui .navbar-inverse .navbar-inner {
   background-color: transparent !important;
   background: none;
@@ -1316,7 +1316,7 @@ div.clickable > a.img-placeholder-btn {
 .aui #mc-embedded-subscribe-form .input-append button:hover,
 .aui #mc-embedded-subscribe-form .input-append button:active,
 .aui #mc-embedded-subscribe-form .input-append button:focus {
-  background-color: #0E678E;
+  background-color: #0C5676;
   color: #FFF; }
 
 .aui .footer-ul {
@@ -1684,7 +1684,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
   font-size: 14px; }
 
 .aui #home-trending-campaigns .ttl-row .btn:hover, .aui #home-trending-campaigns .ttl-row .btn:active, .aui #home-trending-campaigns .ttl-row .btn:focus {
-  background-color: #0E678E;
+  background-color: #0C5676;
   color: #FFF; }
 
 .aui #home-trending-campaigns .btn-large-custom {
@@ -1821,7 +1821,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity {
   margin-top: 20px !important; }
 
 .cpn-sgtn-item:hover .btn:not(.load-all-results) {
-  background-color: #117ca9 !important;
+  background-color: #0C5676 !important;
   color: #ffffff; }
 
 .aui #tax-deduc, .aui .box.reset {
@@ -1834,7 +1834,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
   }
 
 .btn-toggle .btn.active:hover, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active, #login_button:focus, .btn-primary:active, .btn-primary:focus, .btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, .add-bottom-lst input:focus {
-  background-color: #0E678E !important;
+  background-color: #0C5676 !important;
   color: #fff !important; }
 
 #login_button, .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
@@ -1932,7 +1932,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     background-color: white !important; }
 
   .cause-box input[type=checkbox]:checked + label:before {
-    background: #B3E7FF !important; }
+    background: #B0E1F7 !important; }
 
   .cause-box.inline-mobile input[type=checkbox] + label:before {
     border: 1px solid #cccccc !important;
@@ -1945,7 +1945,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     margin-top: 20px !important; } }
     /*DB comment
 .cause-box input[type=checkbox]:checked + label:before {
-  background: #B3E7FF; }
+  background: #B0E1F7; }
 
 .cause-box input[type=checkbox] + label:before {
   border-radius: 8px !important;
@@ -2147,7 +2147,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 
 /* db comment
 .btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-success:hover, .btn-success:active, .btn-success:focus, .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus, .aui .btn-success:hover, .aui .btn-success:active, .aui .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus, #login_button:hover, #login_button:focus, #LoginForm .btn:hover, #LoginForm .btn:active, .gallery-txt-box .btn:hover {
-  background-color: #0E678E !important;
+  background-color: #0C5676 !important;
   color: #FFF !important; }
 
 .btn:hover, .btn-large:hover, .btn-floating:hover, .open-more:hover, .btn-more-img:hover, .steps-content .btn-save input:hover, .steps-content .btn-area input:hover, .add-btn-lst li a:hover, .add-bottom-lst input:hover, #user-about-links input#shortUrlGenerator:hover {

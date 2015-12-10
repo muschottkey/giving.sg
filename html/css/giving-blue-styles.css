@@ -35,43 +35,13 @@
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa {
   color: #43AD49; }
 
-.home-slider .swiper-slide picture img {
-  min-height: inherit;
-  width: 100%;
-  margin-top: -10%; }
 
-.home-slider .swiper-slide picture img {
-  min-height: inherit;
-  height: auto;
-  width: 100%; }
 
-.aui .gallery-txt-box h3 {
-  margin-top: 0;
-  max-height: 6em;
-  overflow: hidden;
-  font-size: 1.5em; }
-
-.aui .gallery-txt-box h3 a { text-decoration: none; color: #FFF; }
 
 .p-title.landing + p {
   color: #424242; }
 
-.aui  .gallery-txt-box {
-  position: absolute;
-  background: #00acd0;
-  color: #fff;
-  text-align: left;
-  right: 14%;
-  bottom: 15%;
-  width: 190px;
-  padding: 1em 1.5em;
-  border-radius: 6px; }
 
-.home-slider .swiper-slide picture img {
-  min-height: inherit;
-  width: 100%;
-  margin-top: -10%;
-  height: auto; } 
 
 .aui .nl-form, .aui .nl-form a { color: #333333; text-decoration: none; }
 .aui .nl-form .refine-inputs span {color: #333333 !important; }
@@ -140,13 +110,13 @@
 .box-r-footer a,
 #dtn-user-large-cta .action-link,
 .link-box .action-link {
-  color: #00acd0 !important; }
+  color: #17A4E1 !important; }
 
 .row-fluid.m-bot20 .action-link:hover,
 .box-r-footer a:hover,
 #dtn-user-large-cta .action-link:hover,
 .link-box .action-link:hover {
-  color: #006b82 !important; }
+  color: #0C5676 !important; }
 
 .row-fluid.m-bot20 .small,
 #dtn-add-logo p {
@@ -254,12 +224,10 @@
   font-size: 1.25em;
   color: #141414; }
 
-.more-days.inline span.em {
-  color: #141414 !important; }
 
 .campaign-stats .progress .bar {
   border-radius: 0px;
-  background: #00acd0;
+  background: #17A4E1;
   text-shadow: none;
   box-shadow: none; }
 
@@ -267,7 +235,7 @@
   box-shadow: none; }
 
 .cpn-sgtn-item.corp-blue:hover .sgtn-body .campaign-stats button {
-  background-color: #1283B4; }
+  background-color: #10709a; }
 
 .cpn-sgtn-item .cpn-featured-status, .cpn-featured-status {
   top: 17px;
@@ -291,36 +259,33 @@
 .cpn-sgtn-item:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   border-bottom-color: transparent;
-  background: #00acd0; }
+  background: #17A4E1; }
 
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover {
   background: none;
   box-shadow: none; }
 
 .cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer {
-  background-color: #00acd0;
-  border-bottom-color: #117ca9; }
+  background-color: #17A4E1;
+  border-bottom-color: #0C5676; }
 
-.cpn-sgtn-item:hover .box-r-footer {
-  border-top-color: #117ca9; }
+.cpn-sgtn-item:hover .box-r-footer { border-top-color: #10709a; }
 
 .cpn-sgtn-item:hover .sgtn-body h5 a, .cpn-sgtn-item:hover .sgtn-body h5, .cpn-sgtn-item:hover p, .cpn-sgtn-item:hover .txt-npo {
   color: #ffffff; }
 
 .cpn-sgtn-item:hover .campaign-stats .progress {
-  border: 1px solid #00acd0;
-  background-color: #0c5372; }
+  border: 1px solid #17A4E1;
+  background-color: #0c5676; }
 
-.cpn-sgtn-item:hover .campaign-stats .progress .bar {
-  background-color: #49bbec; }
-
+.cpn-sgtn-item:hover .campaign-stats .progress .bar {  background-color:#6ac7f0; }
 
 
 .cpn-sgtn-item:hover .more-days.inline h4 {
   color: #FFF; }
 
 .cpn-sgtn-item:hover .campaign-stats h4, .volunteer-activity .cpn-sgtn-item:hover h4, .volunteer-activity .cpn-sgtn-item:hover .block, .cpn-sgtn-item:hover .campaign-stats span.em, .cpn-sgtn-item:hover .more-days.inline h4, .cpn-sgtn-item:hover .more-days.inline span.em {
-  color: #0c5372; }
+  color:#172A35; }
 
 .cpn-sgtn-item .action-link {
   position: absolute;
@@ -344,7 +309,7 @@
 
 .cpn-sgtn-item.expired:hover .campaign-stats .progress {
   border: 1px solid #f7f7f7;
-  background-color: #0c5372; }
+  background-color: #0c5676; }
 
 .cpn-sgtn-item.expired:hover .sgtn-body h5 a {
   color: #141414; }
@@ -368,8 +333,8 @@
 
 
 .inform-area .box-btn .btn {
-  background-color: #B3E7FF;
-  color: #006b82 !important; }
+  background-color: #B0E1F7;
+  color: #0C5676 !important; }
 
 
 /*****************************************/
@@ -421,13 +386,6 @@
   .aui #logo a {
     padding: 0 .5em; }
 
-  /* HOMEPAGE CAROUSEL */
-  .aui .gallery-txt-box h3 {
-    font-size: 1.25em; }
-
-  .aui .home-slider .cpn-slider-inner.swiper-wrapper {
-    height: 300px; }
-
   /* CARDS UI  */
   .cpn-sgtn-item .sgtn-img {
     height: auto; }
@@ -453,25 +411,6 @@
   /* HOMEPAGE CAROUSEL */
   .aui #nav li br, .home-slider .slider-navigation { display: none; }
 
-  .aui .home-slider .cpn-slider-inner.swiper-wrapper {
-    max-height: 300px; }
-
-  .aui .home-slider .swiper-slide .gallery-txt-box {
-    width: 95%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 3em;
-    border-radius: 0;
-    padding: 1em 2.5%; }
-
-  .gallery-txt-box h3 {
-    float: left;
-    width: 65%; }
-
-  .gallery-txt-box .btn {
-    margin-left: 2%;
-    max-width: 25%; }
 
   /* LISTINGS PAGE */
   .listings-wrapper .cpn-holder {
@@ -578,12 +517,7 @@ button.btn.btn-ghost.delete-row {
   .donors-area .dr-img {
     margin-left: 3.3%;
     margin-right: 3.3%; } }
-@media (max-width: 760px) {
-  .aui .gallery-txt-box {
-    right: 0;
-    bottom: 0;
-    width: calc(100% - 48px);
-    border-radius: 0; } }
+
 /* IE image fixes for image icons in header and buttons*/
 .aui #uf-dockbar-right-menu ul li img, button img.icon { max-height: 100%; }
 
