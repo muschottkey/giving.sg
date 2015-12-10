@@ -581,7 +581,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui .btn:disabled { background-color: #EEE !important; cursor: not-allowed; }
 
 /* UI Controls - LARGE BUTTONS */
-.aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; height:45px; padding:10px 15px; }
+.aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; min-height:45px; padding:10px 15px; }
 .aui .btn-large-custom.m-left70{margin-left:70px;}
 .aui .donate-btns .btn-block { padding:10px; }
 
