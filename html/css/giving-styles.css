@@ -71,6 +71,7 @@ h3.may-like-title, .aui h3.may-like-title { margin:10px 30px 5px; }
 /* CONTENT HEADINGS */
 .main-content h3.landing, .aui .main-content h3.landing { font-size:2.75em;font-weight:100;}   /* 44px */
 .main-content h3, .aui .main-content h3 { font-size: 2.125em; }
+.cpn-slider-inner .gallery-txt-box h3 { font-size: 20px !important; }
 .main-content .ttl-row h3, .aui .main-content .ttl-row h3 { 
     float:left; width:65%; text-align:left; margin:.25em 0 0; font-size:1.75em; 
 }
@@ -451,6 +452,12 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui .modal-one-column .radio input[type="radio"], .aui .modal-one-column .checkbox input[type="checkbox"] { 
     float:none; margin-top: 0; 
 }
+#signupForm #agree,
+#LoginForm #remember{
+	width:16px;
+	height:16px;
+	margin-top:4px;
+}
 /* MODAL - TWO COLUMN */
 .aui .modalwrapper .row-fluid .span12 { margin-bottom: 20px; }
 .aui .modal .row-fluid .span6, .aui .modal .row-fluid .social-media-signup { padding-left:2em; padding-right:2em; }
@@ -557,6 +564,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 
 /* UI Controls - LARGE BUTTONS */
 .aui .btn-large-custom, .aui .btn-large, .aui .btn-block { min-width:150px; height:45px; padding:10px 15px; }
+.aui .donate-btns .btn-block { padding:10px; }
 
 /* UI Controls - CUSTOM BUTTONS  GHOST BUTTON (Homepage) */
 .gallery-txt-box .btn {
@@ -590,7 +598,8 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #user-about-links input#shortUrlGenerator {
     margin-right:10px !important; margin-left:5px !important; text-align: center; float: left; width: 50%;
 }
-#user-about-links input { border-width:0 0 1px; font-size:16px; margin:0 auto; padding-right:25px; }
+#user-about-links input { border-width:0 0 1px; font-size:16px; margin:0 auto; padding-right:25px; width:100%;}
+#user-about-links .controls .fa.add-on{bottom:17px;}
 #shortUrl { max-width:305px; border-color:#DCDDDE !important; float:right; }
 
 #cpn-meta .special-btn { padding:40px 20px; height:auto; }
@@ -3288,6 +3297,14 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 
 @media (max-width: 767px) {
+	#sortable .span11.pull-right{
+	  padding-left:25px;	
+	 }
+	 #sortable .span11.pull-right > .pull-right{margin-left:-30px;padding-top:10px;margin-right:-5px;}
+	 #sortable .span1.pull-left{
+	 	position:relative;
+		z-index:1000;
+	 }
 	.aui #donate-buttons button{width:90% !important;float:none !important;display:block !important;}
 	.aui #cpn-info .carousel-indicators{ bottom:65px !important; }
 	.aui #sortable .row-fluid.non-respv .pull-right[class*="span"]{float:left !important;}
