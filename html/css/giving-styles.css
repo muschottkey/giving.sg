@@ -1348,7 +1348,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
     max-height: 540px;
     transition: max-height 1s ease;
 }
-.fr-widget { margin-top:20px; padding-top:10px; } 
+.fr-widget { margin-top:20px; padding: 10px 5%;  } 
 .fr-widget > h4, .aui .fr-widget > h4 { margin-top:20px; }
 
 .fr-widget .box-r-footer{
