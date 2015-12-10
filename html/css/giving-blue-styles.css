@@ -90,13 +90,10 @@
   min-height: inherit;
   width: 100%;
   margin-top: -10%;
-  height: auto; }
+  height: auto; } 
 
-.nl-form {
-  color: #333333; }
-
-.nl-form .refine-inputs span {
-  color: #333333 !important; }
+.aui .nl-form, .aui .nl-form a { color: #333333; text-decoration: none; }
+.aui .nl-form .refine-inputs span {color: #333333 !important; }
 
 .gallery-date-box {
   border-top: 1px solid #73C8ED;
@@ -176,14 +173,12 @@
 
 /* NPO lIsting */
 .checkbox-clone.checked:before, #camp-holder .checkbox-clone.checked:before {
-  color: #333 !important;
-  content: "\f00c" !important; }
+  color: #333 !important; content: "\f00c" !important; }
 
 .checkbox-clone.checked[data-parent="ref_allcauses"]:before,
 .checkbox-clone.checked[data-parent="ref_campaigns"]:before,
 .checkbox-clone.checked[data-parent="ref_allorgs"]:before {
   content: "\f0d7" !important; }
-
 
 
 /* Search Page & Search UI */

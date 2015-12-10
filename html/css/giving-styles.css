@@ -31,6 +31,7 @@ h4, .aui h4, h5, .aui h5 { font-weight:500; }
 .aui input::-webkit-clear-button, .aui textarea::-webkit-clear-button { display:none !important; }
 a, .aui a, a:link, .aui a:link { color:#00acd0; text-decoration: underline; }
     a:hover, .aui a:hover { color:#006b82; }  
+.aui ul, .aui ol { margin-bottom:1.5em; }
 
 /* CONTENT HEADINGS */ /* DISPLAY HEADINGS */
 header a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .aui header a, .aui h1 a, .aui h2 a, .aui h3 a, .aui h4 a, 
@@ -79,7 +80,7 @@ h3.may-like-title, .aui h3.may-like-title { margin:10px 30px 5px; }
 .signup-section h3, .aui .signup-section h3 { font-size: 1.5em !important;}
 .bg-lightgrey h5, .aui .bg-lightgrey h5 { color:#294b5e; font-size: 1.25em; margin-top:0; }
 /* BODY TEXT */
-.cpn-story .body p { font-size: 1.0625em;font-weight: 300;margin-bottom: 1.5em;line-height: 1.45;}
+.cpn-story .body p { font-weight:300; font-size:1.0625em; margin-bottom: 1.5em; line-height:1.45; }
     #gf-bkt-wrapper .gf-bkt tr td.warning { color:#F16577;}
     #gf-bkt-wrapper .gf-bkt tr td.info  { color:#172A35;}
 	#gf-bkt-wrapper .gf-bkt tr td.info .fa.fa-info-circle{display:none;}
@@ -122,7 +123,7 @@ p.small.text-center { font-size:1em; }
 hr { border-top: 1px solid #DCDDDE; }
 
 .aui .row-fluid [class*="span"]{min-height:0; }
-.aui .row-fluid [class*="span"]:first-child { margin-left:0;}
+.aui .row-fluid [class*="span"]:first-child, .aui .row-fluid .row-fluid .span12 { margin-left:0; }
 
 /* NAVIGATION +++++++++++++++++++++++++++++++++++++++++++ */
 .aui #main-nav, .aui #uf-dockbar-cart, .aui #uf-dockbar-sidebar {
@@ -822,7 +823,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 .cpn-holder .accordion-content .cpn-wrapper {overflow:hidden;}
 
 /* NPO Listing */
-#npo-listing .bg-lightgrey { background:url(../images/img-section-npo.jpg) no-repeat 0 0/cover; }
+#npo-listing .bg-lightgrey { background:url(../images/img-header-npolisting.jpg) no-repeat 0 0/cover; }
 
 /* Make Donation page*/
 .section-page { text-align: center; }
@@ -844,7 +845,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 
 #selAmount.sod_select{border-radius: 0;}
 #selAmount.sod_select:before{display: none;}
-#user-about-links { width:90%; }
+#user-about-links { width:90%; margin:0 auto; }
 #user-about-links .controls { position:relative;}
 
 /* Donation Logged In Page */
@@ -1629,7 +1630,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .swiper-button-prev, .swiper-button-next, .aui .swiper-button-prev, .aui .swiper-button-next,
     .carousel-control, .aui .carousel-control { 
         height:200px; width:50px; opacity:.5; background:none; background-image:none; border:none;
-        color:#919396; top:22%; margin-top:0; display:table; right:0; z-index:1030;
+        color:#919396; top:25%; margin-top:0; display:table; right:0; z-index:1030;
     }
     .home-slider .swiper-button-next, .home-slider .swiper-button-prev { height:320px; color:#fbfbfb; top:10%; }
     .swiper-button-prev, .aui .carousel-control.left, .carousel-control.left { left:0; text-decoration:none; }
@@ -1662,7 +1663,6 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 }
 .aui .swiper-button-prev:before { content:"\f104"; }
 .aui .swiper-button-next:before { content:"\f105"; }
-
 
 /*
 #cpn-meta .swiper-button-prev div, #cpn-meta .swiper-button-next div{
@@ -1864,10 +1864,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 }
 #actDescription ul li h6, .aui #actDescription ul li h6 { color: #172A35; margin:0; }
 #act-meta ol{  margin-left: 20px; }
-.vpos-wrapper{
-    border-radius: 5px;
-    margin-bottom: 30px;
-}
+.vpos-wrapper { border-radius:6px; margin:15px 0 10px; }
 .vpos-details{
     padding: 20px 5% !important;
     float: left;
