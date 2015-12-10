@@ -56,7 +56,7 @@
 .p-title.landing + p {
   color: #424242; }
 
-.gallery-txt-box {
+.aui  .gallery-txt-box {
   position: absolute;
   background: #00acd0;
   color: #fff;
@@ -425,7 +425,7 @@
   .aui .gallery-txt-box h3 {
     font-size: 1.25em; }
 
-  .home-slider .cpn-slider-inner.swiper-wrapper {
+  .aui .home-slider .cpn-slider-inner.swiper-wrapper {
     height: 300px; }
 
   /* CARDS UI  */
@@ -451,13 +451,12 @@
 @media only screen and (max-width: 768px) {
 
   /* HOMEPAGE CAROUSEL */
-  .aui #nav li br, .home-slider .slider-navigation {
-    display: none; }
+  .aui #nav li br, .home-slider .slider-navigation { display: none; }
 
-  .home-slider .cpn-slider-inner.swiper-wrapper {
+  .aui .home-slider .cpn-slider-inner.swiper-wrapper {
     max-height: 300px; }
 
-  .home-slider .swiper-slide .gallery-txt-box {
+  .aui .home-slider .swiper-slide .gallery-txt-box {
     width: 95%;
     bottom: 0;
     left: 0;
@@ -478,24 +477,24 @@
   .listings-wrapper .cpn-holder {
     margin: 0px auto 20px; } }
 @media only screen and (max-width: 599px) {
-  .home-slider .cpn-slider-inner.swiper-wrapper {
+  .aui .home-slider .cpn-slider-inner.swiper-wrapper {
     height: auto;
     padding-bottom: 3em; }
 
-  .home-slider .swiper-slide .gallery-txt-box {
+  .aui .home-slider .swiper-slide .gallery-txt-box {
     padding: .75em 5%;
     width: 91%;
     text-align: center;
     height: 2.4em;
     bottom: -3em; }
 
-  .gallery-txt-box h3 {
+    .aui .gallery-txt-box h3 {
     font-size: 1em;
     width: auto;
     float: none;
     /* clear: both; */ }
 
-  .gallery-txt-box .btn {
+  .aui .gallery-txt-box .btn {
     display: none; } }
 /* PHONE */
 @media only screen and (max-width: 320px) {
@@ -580,7 +579,7 @@ button.btn.btn-ghost.delete-row {
     margin-left: 3.3%;
     margin-right: 3.3%; } }
 @media (max-width: 760px) {
-  .gallery-txt-box {
+  .aui .gallery-txt-box {
     right: 0;
     bottom: 0;
     width: calc(100% - 48px);
