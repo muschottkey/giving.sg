@@ -517,7 +517,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 }
 /* UI Controls - BUTTON (LIGHT BLUE) */
 .aui button, .aui input[type="submit"], .aui .btn, .aui .open-more, .aui .btn.more-donations, .aui .dtn-btns .btn-ghost,
-.aui #user-about-links .control-group input#shortUrlGenerator {
+.aui #user-about-links .control-group input#shortUrlGenerator, .aui .btn-block a {
     font-size:16px; line-height:1.4; font-weight:normal; text-decoration:none; text-transform: uppercase; 
     border-radius:6px; -webkit-border-radius: 6px; border:none; outline:none; margin-bottom:5px;
     padding:10px 20px; background:#b4f2ff; color: #006b82;
