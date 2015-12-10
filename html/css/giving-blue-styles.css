@@ -28,23 +28,6 @@
   color: #333;
   line-height: 1.4; }
 
-/* LOGO */
-.aui #logo {
-  padding: 0;
-  top: 0;
-  position: absolute;
-  margin: 0 auto;
-  z-index: 1090; }
-
-#logo a {
-  color: #43AD49;
-  max-width: 250px;
-  display: inline-block;
-  text-transform: uppercase;
-  padding: 0 1em; }
-
-#logo img {
-  max-width: 160px; }
 
 /*************************************************************/
 /* HOME PAGE CAROUSEL */
@@ -68,9 +51,7 @@
   overflow: hidden;
   font-size: 1.5em; }
 
-.gallery-txt-box h3 a {
-  text-decoration: none;
-  color: #FFF; }
+.aui .gallery-txt-box h3 a { text-decoration: none; color: #FFF; }
 
 .p-title.landing + p {
   color: #424242; }
@@ -224,41 +205,35 @@
   font-weight: normal;
   font-size: 1.3125em; }
 
-.pre-footer h4 a, .pre-footer h4 a:link {
+.aui .pre-footer h4 a, .pre-footer h4 a:link {
   color: #ffffff !important;
   text-transform: uppercase; }
 
-.footer-links li a, .footer-links li a:link {
+.aui .footer-links li a, .footer-links li a:link {
   text-decoration: none;
   color: #FFF; }
 
-.footer-links li a:hover {
+.aui .footer-links li a:hover {
   text-decoration: underline; }
 
-.footer-links li a:visited {
-  /* color:#AAA; */ }
-
-.footer a, .footer a:link {
+.aui .footer a, .footer a:link {
   text-decoration: underline;
   color: #fff !important; }
 
-.footer a:hover {
+.aui .footer a:hover {
   text-decoration: none; }
 
-.footer {
+.aui .footer {
   background-color: #6b6b6b;
   padding: .35em 0; }
 
-.footer-ul span {
+.aui .footer-ul span {
   color: #ffffff; }
 
 .aui .pre-footer-social label {  color: #FFF; text-transform: uppercase; }
 
-.acc-toggle:before {
-  color: #333; }
-
-.acc-toggle.collapsed:before {
-  color: #666; }
+.aui .acc-toggle:before { color: #333; }
+.aui .acc-toggle.collapsed:before { color: #666; }
 
 /*************************************************************/
 /* SELECTS AND DROPDOWNS */
@@ -438,16 +413,16 @@
 /*****************************************/
 /* TABLET (LARGE) */
 @media only screen and (max-width: 980px) {
-  h1 {
+  .aui h1 {
     font-size: 2.5em;
     line-height: 1.125em; }
 
   /* 40px */
-  #logo a {
+  .aui #logo a {
     padding: 0 .5em; }
 
   /* HOMEPAGE CAROUSEL */
-  .gallery-txt-box h3 {
+  .aui .gallery-txt-box h3 {
     font-size: 1.25em; }
 
   .home-slider .cpn-slider-inner.swiper-wrapper {
@@ -461,14 +436,14 @@
     margin-bottom: 38px; } }
 /* TABLET (SMALL) */
 @media only screen and (max-width: 767px) {
-  .pre-footer .acc-toggle {
+  .aui .pre-footer .acc-toggle {
     color: #fff;
     background-color: #172A35;
     border-color: #424242;
     border-width: 1px 0 0;
     margin-bottom: 0 !important; }
 
-  .pre-footer .p-section {
+  .aui .pre-footer .p-section {
     background-color: #333333; }
 
   .social-share a i {
@@ -476,7 +451,7 @@
 @media only screen and (max-width: 768px) {
 
   /* HOMEPAGE CAROUSEL */
-  #nav li br, .home-slider .slider-navigation {
+  .aui #nav li br, .home-slider .slider-navigation {
     display: none; }
 
   .home-slider .cpn-slider-inner.swiper-wrapper {
@@ -554,7 +529,7 @@
   .aui #main-nav ul a:hover {
     box-shadow: 0 -4px 0 0 rgba(67, 173, 73, 0.5) inset; }
 
-  #uf-dockbar-hamburger-menu {
+  .aui #uf-dockbar-hamburger-menu {
     display: none; } }
 @media only screen and (min-width: 981px) { 
     .aui #main-nav { left: 200px; }
@@ -611,8 +586,7 @@ button.btn.btn-ghost.delete-row {
     width: calc(100% - 48px);
     border-radius: 0; } }
 /* IE image fixes for image icons in header and buttons*/
-#uf-dockbar-right-menu ul li img, button img.icon {
-  max-height: 100%; }
+.aui #uf-dockbar-right-menu ul li img, button img.icon { max-height: 100%; }
 
 
 

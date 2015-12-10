@@ -151,6 +151,14 @@ hr { border-top: 1px solid #DCDDDE; }
 .aui .navbar .nav-pills { position: absolute; top: 0; right: 0; left: auto; }
 .aui .navbar .nav-pills li { display: inline-block; height: 38px; padding: 1em; }
 
+/* LOGO */
+.aui #logo { padding: 0; top: 0; position: absolute; margin: 0 auto; z-index: 1090; }
+.aui #logo a {
+    color: #43AD49; max-width: 250px; display: inline-block; text-transform: uppercase; padding: 0 1em;
+}
+.aui #logo img {  max-width: 160px; }
+
+
 /*  FORM ELEMENTS STYLING       +++++++++++++++++++++++++++++++++++++++++++ */
 .aui ::-webkit-input-placeholder { font-size:.875em; font-weight:400; color:#bec0c2; }
 .aui :-moz-placeholder { /* older Firefox*/ font-size:.875em font-weight:400; color:#bec0c2; }

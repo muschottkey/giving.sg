@@ -42,7 +42,7 @@ xheader
     line-height: 34px; }
 
   li#uf-dockbar-sidebar-trigger a img {
-    margin-right: 10px;
+    margin-right:22px;
     margin-left: 5px; } }
 #uf-dockbar-hamburger-menu, #uf-dockbar-right-menu {
   position: absolute;
@@ -67,8 +67,7 @@ xheader
 
 #uf-dockbar-right-menu ul li {
   display: inline-block;
-  height: 30px;
-  padding: 1em .75em 1em .25em;
+  height:35px; padding:.75em .75em 1em .25em;
   /* margin-right: -5px; DB HIDE for the alignment */ }
 
 #uf-dockbar-right-menu ul li#uf-dockbar-search-list-item {
@@ -359,7 +358,7 @@ xheader
 
 #uf-dockbar-search-desktop input[type="text"] {
   border: 0px;
-  /* padding: 2px 0px !important; */
+  padding: 16px 0px !important;
   border-radius: 0px !important;
   text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   -webkit-transition: all .1s ease-out;
@@ -368,13 +367,12 @@ xheader
   transition: all .1s ease-out;
   background: #FFF;
   text-align: left;
-  height: 50px;
+  height:70px;
   margin-top: 0;
   width: 0;
   min-width: 0px;
-  font-size: 1em;
-  display: block;
-  /* z-index: 1100; */ }
+  font-size: 16px;
+  display: block; }
 
 #uf-dockbar-search-mobile input[type="text"] {
   padding: .5em 0.8em !important;
@@ -391,9 +389,8 @@ box-shadow: none !important;
   border-radius: 0px !important; }
 
 #uf-dockbar-search-desktop.active input[type="text"] {
-  width: 160px;
+  width:260px;
   z-index: 1100;
-  padding: 10px 15px !important;
   padding-right: 40px !important; }
 
 /* search modification
