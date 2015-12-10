@@ -455,10 +455,12 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui .modal-footer { background:none; text-align:center; padding: 10px 5px; border: none;}
 
 /* MODAL - ONE COLUMN */
+.aui .row-fluid .one-column { margin:0 auto; }
 .aui .modal-one-column, .aui .modal-one-column input:not([type=checkbox]) { text-align:center; }
 .aui .modal-one-column .modal-body-container { text-align:left; }
 .aui .modal-one-column { max-width:600px !important; } 
-.aui .modal-one-column .modal-body, .aui .one-column .span4 { max-width:400px; width:100%; margin:0 auto; float:none; }
+.aui .modal-one-column .modal-body, .aui .row-fluid .one-column .span4  { 
+    max-width:400px; width:100%; margin:0 auto; float:none; }
     .aui .one-column .span4 { margin-top:40px; }
 .aui .modal-one-column .radio input[type="radio"], .aui .modal-one-column .checkbox input[type="checkbox"] { 
     float:none; margin-top: 0; 
