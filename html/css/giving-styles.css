@@ -823,7 +823,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 .cpn-holder .accordion-content .cpn-wrapper {overflow:hidden;}
 
 /* NPO Listing */
-#npo-listing .bg-lightgrey { background:url(../images/img-header-npolisting.jpg) no-repeat 0 0/cover; }
+#npo-listing .bg-lightgrey { background:url(../images/img-header-npolisting.jpg) no-repeat top right/cover; }
 
 /* Make Donation page*/
 .section-page { text-align: center; }
@@ -2539,18 +2539,8 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     overflow:hidden;
     padding:0 10px 25px;
 }
-.aui .steps-list{
-    margin:0;
-    padding:0 30px 0 0; 
-    list-style:none;
-    font-size:18px;
-    float:left;
-    width:37px;
-}
-.aui .steps-list li{
-    position:relative;
-    line-height:35px;
-}
+.aui .steps-list { margin:0; padding:0 2% 0 0; list-style:none; font-size:16px; float:left; width:35px; }
+.aui .steps-list li { position:relative; line-height:35px; }
 .aui .steps-list li span{
     display:block;
     border:1px solid #DCDDDE;
@@ -2665,10 +2655,7 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     -webkit-box-sizing: border-box;
 }
 .decor-field-area label{
-    display:block;
-    font-size:17px;
-    line-height:20px;
-    padding:0 0 5px;
+    display:block; 
 }
 
 .landing-cpn-slider-wrapper.slider-small .gallery-txt-box{
@@ -3616,11 +3603,9 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .landing-cpn-slider-wrapper .cpn-slide-right{
         height: auto !important; border:none;
     }
-    .landing-cpn-slider-wrapper.slider-small .gallery-txt-box{
-        padding:40px 0 40px;
-    }
-    .cpn-slide-right .c-inner { width: 88%; padding:15px 5%; margin: 0 auto; }
-    .cause-box.mobile-block.span4, #causes-mobile .cause-box.span4 {
+    .aui .landing-cpn-slider-wrapper.slider-small .gallery-txt-box{ padding:40px 0 40px; }
+    .aui .cpn-slide-right .c-inner { width: 88%; padding:15px 5%; margin: 0 auto; }
+    .aui .cause-box.mobile-block.span4, .aui #causes-mobile .cause-box.span4 {
         width: 180px !important; float: left; border-radius:5px; border:none; margin:0 0 0 20px !important; 
     }
     /* CAUSES OPTIONS */

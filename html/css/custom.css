@@ -927,7 +927,7 @@ div.charity-donors img.dr-img {
 .aui .volunteer-contact .block.email a:hover, .aui .volunteer-contact .block.email a:focus {
   color: #9DC9EE !important;
   text-decoration: none; }
-
+/*
 .aui .volunteer-contact .table-actions .input-search input {
   height: 20px; }
 
