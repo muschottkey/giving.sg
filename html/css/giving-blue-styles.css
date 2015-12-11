@@ -255,11 +255,15 @@
 .more-days span.em {
   font-weight: 400 !important; }
 
+.aui .cn-days-wrapper .more-days h4{
+	font-size:24px;
+}
+
 /* Hover state of card */
 .cpn-sgtn-item:hover {
   box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
   border-bottom-color: transparent;
-  background: #17A4E1; }
+}
 
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover {
   background: none;
@@ -378,6 +382,10 @@
 /*****************************************/
 /* TABLET (LARGE) */
 @media only screen and (max-width: 980px) {
+	#causes-wrapper .cause-box.span4{
+		width:26.25% !important;
+		margin: 1em 3.5% 50px !important;
+	}
   .aui h1 {
     font-size: 2.5em;
     line-height: 1.125em; }
@@ -394,6 +402,11 @@
     margin-bottom: 38px; } }
 /* TABLET (SMALL) */
 @media only screen and (max-width: 767px) {
+	#causes-wrapper .cause-box.span4{
+		width:100% !important;
+		max-width:277px;
+		margin: 10px 0 !important;
+	}
   .aui .pre-footer .acc-toggle {
     color: #fff;
     background-color: #172A35;
