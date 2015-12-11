@@ -3098,9 +3098,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .iebody .span12.form-control{ width:100% !important; max-width:none !important; }
     body.ie #uf-dockbar-search-mobile  input[type="text"],
     body.ie #search-form input[type="text"] { max-width: 95% !important; width: 100% !important; }
-    .cpn-holder .btn-close{
-        display: block; padding: 10px; background-color: #efefef;
-    }
+    .cpn-holder .btn-close { display: block; padding: 10px; background-color: #efefef; }
     .centered-small-screen{text-align: center;}
     .box.reset {padding-top:10px !important;}
     #cause-image-preview {margin:15px !important;}
@@ -3121,7 +3119,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .wrapper-925 .title-search .span6 { width:48.618%; float:left; }
     .wrapper-925 .tab .cpn-holder { display:none; }
 
-    .aui .row-fluid .span8 {width:100% ;}
     .dr-img-wrapper .dr-img{margin:0 15px 20px;}
 
     .aui .f-box{ float:none; width:auto; max-width:none; text-align:center;  padding:0 0 20px; }
@@ -3135,10 +3132,12 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .row-fluid .span6, .aui  .row-fluid .span6, .row-fluid .span4, .aui  .row-fluid .span4, 
         #cpn-meta .row-fluid > .span7, .aui #cpn-meta .row-fluid > .span7, 
         #cpn-meta .row-fluid > .span12, .aui #cpn-meta .row-fluid > .span12 {
-            width:100%; margin:0; padding:0;
+            width:100%; margin:0 auto; padding:0;
         }
-        .aui .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1.5em; }
-        .aui #search-result-holder .row-fluid .span6 { width:48% !important; }
+    .aui .row-fluid .span8 { width:100% ;}
+    .aui .row-fluid .row-fluid .span12 { margin-left:auto; }
+    .aui .row-fluid .box.span6, #dtn-user-about .span6 { padding:0 1.5em; }
+    .aui #search-result-holder .row-fluid .span6 { width:48% !important; }
 
     .aui .modal { max-width:598px; }
     .aui .modal-body { max-width:280px; }
