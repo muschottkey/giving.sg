@@ -3148,7 +3148,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .aui .btn-toggle .btn { height: auto; }
     .aui .btn-toggle .btn span { width: 100%; float:left; text-align: center;font-size:0.7858em;}
     .aui .btn-toggle .btn i { margin:0; }
-    .aui .mobile-separator { margin:4em -15px 1em; }
+    .aui .mobile-separator { display:block !important; margin:4em -15px 1em; }
     .aui .or-separator { position:relative; right:auto; left:calc(50% - 22px); top:5.2em; }
 
     .start-cta, .span12.start-cta{padding: 20px 20px;}
@@ -3895,9 +3895,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .pre-footer-social #signUpNewsletterForm .cpn-url-box button { 
         width:50%; margin:10px auto; border-radius:6px; display: block; }
 }
-@media (min-width:360px) and (max-width:767px) {
-    
-}
 @media (max-width:360px) {
 	.vpos-meta .openings{
 		float:none;
@@ -3928,13 +3925,12 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .footer-ul li{margin-right:5px;}
 }
 @media (max-width:320px) {
-    body {max-width:300px;}
-    .mobile-separator {margin: 4em -15px 1em;}
-    .cpn-story .body.closed:before{max-width: 300px;}
+    body { max-width:302px; }
+    .cpn-story .body.closed:before { max-width: 300px; }
     .cpn-story-title{font-size: 1em;}
     .qk-bkt-li ul{width:300px;}
-    .dr-img { margin-right: 8px;  }
     input#search_term{width: 90%;}
+    .dr-img { margin-right: 8px;  }
     .donors-area .dr-img { margin-left:1.8%; margin-right:1.8%;  }
 
 }   
