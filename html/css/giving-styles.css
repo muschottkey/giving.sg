@@ -14,7 +14,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 h1, .aui h1 { font-size:2.75em; line-height: 1.2em !important; font-weight:100; }            /* 44px */
 h2, .aui h2 { font-size:2.125em; line-height:1.15384615em !important; font-weight:100; }     /* 34px */
 h3, .aui h3 { font-size:1.5em; line-height:1.13636364em !important; }                        /* 24px */
-h4, .aui h4 {font-size: 1.25em; margin: 0;}                                                  /* 20px */
+h4, .aui h4 {font-size: 1.25em; }                                                           /* 20px */
 h5, .aui h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }                                 /* 16px */
 h6, .aui h6 { font-size:.875em; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }       /* 14px */
 h4, .aui h4, h5, .aui h5 { font-weight:500; }
@@ -294,8 +294,7 @@ input[type="checkbox"], input[type="radio"] { }
 /* CUSTOM INPUT (DONATION) */
 .button-input { width:70% !important; font-size:18px; padding-right:5px; text-align:center; margin-bottom:10px;}
 
-
-.action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
+.aui .action-link { text-decoration:none; width:100%; display:inline-block; margin-bottom:10px; }
 .action-link i{width: 100%;margin-bottom: 10px;font-size: 24px;}
 .action-link.inline i{width: auto;margin-bottom: 0px;font-size: 18px; margin-right: 5px;}
 
@@ -1615,20 +1614,18 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 }
     .sgtn-body .heading-group h5, .aui .sgtn-body .heading-group h5 { min-height: auto; }
 
-
 /*  Cards UI no Buttons - In Accordion  */
 .aui .row-fluid .span8.modal-dtn-amts { width:100%; }
-.aui .modal-dtn-amts .dtn-amt-item{border-radius: 0;}
-.aui .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover {outline: none;background-color: #F7F7F7;}
-.aui .modal-dtn-amts .dtn-amt-item .dtn-amt { float:left; width:18%; }
-.aui #donationAmt .modal-dtn-amts .dtn-amt-item .dtn-amt { float:none; width:100%; height:60px !important; min-height:60px !important;box-sizing:border-box;}
-    .aui .dtn-amts-impact .dtn-amt-item .dtn-amt { width: 20%; }
+.aui .modal-dtn-amts .dtn-amt-item .dtn-amt { width:100%; height:60px; min-height:60px; box-sizing:border-box;}
+    .aui .dtn-amts-impact .dtn-amt-item .dtn-amt { float:left; width:18%; }
+.aui .modal-dtn-amts .dtn-amt-item:focus, .modal-dtn-amts .dtn-amt-item:hover { outline:none; background-color: #F7F7F7;}
 
 .aui .modal-dtn-amts .dtn-amt-item .dtn-desc{ font-size: 0.875em; width:78%; float: right;}
 .aui .modal-dtn-amts .dtn-amt-item .dtn-desc .small{font-size: 1em;}
 .aui .modal-dtn-amts #custom-amt-input-modal{border-radius: 0;}
 .aui .modal-dtn-amts #custom-amt-input-modal:hover{border: 1px solid #DCDDDE;background-color: #FFF;color: #172A35;}
-.aui .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{border-bottom: 1px solid #172A35;outline: none; }
+.aui .modal-dtn-amts #custom-amt-input-modal:focus input, .modal-dtn-amts #custom-amt-input-modal:hover input{
+    border-bottom: 1px solid #172A35;outline: none; }
 
 .aui .side-logo, #contact-logo {
     border:1px solid #DCDDDE; border-radius:6px; -webkit-border-radius:6px; overflow:hidden; 
@@ -3042,7 +3039,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 @media (min-width: 980px) {
     .donors-area .dr-img { margin-right:1.2%; margin-left:1.2%; }
     #dtn-about-us-container {margin-left:0;}
-    .dtn-amt-item { position: relative; }
     .dtn-amt-item .dtn-btns { position:absolute; right:0; top:50%; margin-top:-50px; }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
@@ -3874,11 +3870,9 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
     .data-list li .person-actions{height:auto !important;}
-
 }
 
 @media (max-width: 600px) {
-	
     #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0 auto;}
         #cpn-info { width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
     #setup-dtn-carousel {padding-bottom:48px;}
