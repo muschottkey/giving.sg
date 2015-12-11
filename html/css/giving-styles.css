@@ -294,6 +294,12 @@ input[type="checkbox"], input[type="radio"] { }
 /* CUSTOM INPUT (DONATION) */
 .button-input { width:70% !important; font-size:18px; padding-right:5px; text-align:center; margin-bottom:10px;}
 
+
+.action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
+.action-link i{width: 100%;margin-bottom: 10px;font-size: 24px;}
+.action-link.inline i{width: auto;margin-bottom: 0px;font-size: 18px; margin-right: 5px;}
+
+
 /* GLOBAL STYLES & HELPER CLASSES */
 .aui .btn.active, .aui .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 .big { font-size: 1.5em; }
@@ -1144,9 +1150,6 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 #user-about-links .input-append.input-prepend { float:left; position:relative; }
 
 /* Set-up donation step 2*/
-.action-link{text-decoration: none;width: 100%;display: inline-block;margin-bottom: 10px;font-weight: 600;}
-.action-link i{width: 100%;margin-bottom: 10px;font-size: 24px;}
-.action-link.inline i{width: auto;margin-bottom: 0px;font-size: 18px; margin-right: 5px;}
 #dtn-cause-images { padding-top: 0 !important;overflow: hidden;  position: relative; }
 .bg-grey { position:absolute; z-index:1; top:0; left:0; margin:0 auto; width: 100%;height: 100%;}
 .bg-grey .img-placeholder-btn { max-width:100%; margin:17% auto; width: 80%; }
@@ -3875,7 +3878,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 
 @media (max-width: 600px) {
-	.aui .carousel-indicators{bottom:65px !important;}
 	
     #cpn-info, #cpn-meta {width: 100%;padding: 0 5%; margin:0 auto;}
         #cpn-info { width: 110%;padding: 0 5%;margin-right: -5%;margin-left: -5%;}
