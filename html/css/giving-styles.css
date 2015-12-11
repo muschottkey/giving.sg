@@ -844,15 +844,13 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 
 
 /* CAROUSEL DOTS */
+.aui .carousel-indicators{ top:inherit; right:auto; left:45%; bottom:20px; text-align:center; }
 .aui .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, 
-    .aui .carousel-indicators li.active{
-    background-color: #17A4E1;
-}
+    .aui .carousel-indicators li.active{ background-color: #17A4E1; }
 .aui .swiper-pagination-bullet, .carousel-indicators li{ background-color: #6a6c6f; }
 .aui .landing-cpn-slider-wrapper span.swiper-pagination-bullet { margin:5px 8px; width:15px; height:15px; }
 
 .aui .landing-cpn-slider-wrapper.featured-campaigns-component .btn{color:#fff !important;}
-
 .landing-cpn-slider-wrapper .btn:active{background:#e6e6e6;}
 
 /* Sign Up As Individual Page */
@@ -908,7 +906,6 @@ i.signup-envelope { font-size:5.625em;color: #172A35; }
 /* NPO step3 modal carousel */
 #npoItem2 p{margin-top:20px;}
 p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text-align: center;border:1px solid #DCDDDE;}
-.carousel-indicators{ top:inherit; right:auto; left:45%; bottom:20px; text-align:center; }
 #npoCarousel .carousel-indicators{bottom: -30px;}
 #npoCarousel #btnStartYes{display: block;margin: 0 auto;}
 .carousel-indicators li { background:#919396; float:none; display:inline-block; cursor:pointer; }
@@ -1395,7 +1392,6 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .load-all-box .action-link {margin-bottom:3px;}
 
 .aui .more-days.inline h4, .aui .more-days.inline h4 { display: inline-block; }
-.aui .more-days span.em{color:#919396; }
 .aui .dtn-amt-item{position: relative;overflow:hidden;}
 .aui .dtn-amt-item .dtn-vacs { display:table; }
 .aui .dtn-amt-item .dtn-amt h3 { vertical-align: middle; display: table-cell; }
@@ -3316,7 +3312,8 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 		z-index:1000;
 	 }
 	.aui #donate-buttons button{width:90% !important;float:none !important;display:block !important;}
-	.aui #cpn-info .carousel-indicators{ bottom:65px !important; }
+	.aui #cpn-info .carousel-indicators{ top:auto; bottom:65px; }
+        .aui #cpn-info .carousel-no-add-box .carousel-indicators{ bottom:20px; }
 	.aui #sortable .row-fluid.non-respv .pull-right[class*="span"]{float:left !important;}
 	.aui #tab00 .data-list .data-list-item{padding-top:0;}
 	.aui #sortable .t-header .ui.checkbox{margin-top:9px;}
@@ -3509,7 +3506,8 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     #causes-span{margin-left: 30px;margin-right: 30px;display: block;}
 
     .causes { padding: 1em 7px; }
-    .img-box { width:19%; max-width:50px; height:50px; margin-right:2%; padding:0; }
+    .img-box { width:16%;  max-width:50px; height:50px; margin-right:2%; padding:0; }
+
         .img-box:before { width:50px; height:50px; line-height: 4em; }
         .img-box:last-child { margin-right:0;float: none; vertical-align: top;}
     .img-box span.small {margin-top: 10px;}
@@ -3902,7 +3900,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
         width:50%; margin:10px auto; border-radius:6px; display: block; }
 }
 @media (min-width:360px) and (max-width:767px) {
-    .img-box { margin-right:3%; width:16%; max-width:52px; height:52px;  }
+    
 }
 @media (max-width:360px) {
 	.vpos-meta .openings{

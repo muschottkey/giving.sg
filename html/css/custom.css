@@ -305,10 +305,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .img-box span.small {
   font-size: 1em !important;
   line-height: 1.2em !important; }
-
+/* db comment
 .aui .carousel-indicators {
   top: auto;
-  bottom: 20px !important; } 
+  bottom: 20px !important; } */
   /* DB try 55px 1 dec */
 
 .dtn-amt-item .dtn-amt {
