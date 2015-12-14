@@ -569,6 +569,9 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover {
     background: #B0E1F7; color: #0C5676; border:none; outline:0; 
 }
+#copy-url{
+	min-width:74px;	
+}
 /* UI Controls - PRIMARY BUTTONS (BLUE) (HOVER / ACTIVE) */
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
 .aui .btn-success:hover, .aui .btn-success:active,.aui .btn-success:focus, 
@@ -3296,6 +3299,28 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 
 @media (max-width: 767px) {
+	#copy-url{float:left;}
+	.ie.aui #individualProfile input[type='color'],
+	.ie.aui #individualProfile  input[type='date'], 
+	.ie.aui #individualProfile input[type='datetime'], 
+	.ie.aui #individualProfile input[type='datetime-local'], 
+	.ie.aui #individualProfile input[type='email'], 
+	.ie.aui #individualProfile input[type='month'], 
+	.ie.aui #individualProfile input[type='number'], 
+	.ie.aui #individualProfile input[type='password'], 
+	.ie.aui #individualProfile input[type='search'], 
+	.ie.aui #individualProfile input[type='tel'], 
+	.ie.aui #individualProfile input[type='text'], 
+	.ie.aui #individualProfile input[type='time'], 
+	.ie.aui #individualProfile input[type='url'], 
+	.ie.aui #individualProfile input[type='week'], 
+	.ie.aui #individualProfile select, 
+	.ie.aui #individualProfile textarea, 
+	.ie.aui #individualProfile .uneditable-input{
+		max-width:none !important;
+		width:98% !important;
+	}
+	#portlet_individualvolunteeractivities_WAR_givingsgportlet .select-like.pull-left button.dropdown-toggle{margin-left:25px !important;}
 	#setup-donation-wrapper .add-btn-lst{padding:0 10px 10px;}
 	 #setup-donation-wrapper .add-btn-lst li{
 		float:none;
