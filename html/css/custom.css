@@ -2023,11 +2023,11 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 /***************************************************************************
     ADDED : APPLY BLUE-CI, overwriting aui default
 ***************************************************************************/
-
+/*DB Comment
 #wrapper {
     padding-top: 70px !important;
     position: relative;
-}
+}*/
 
 @media (max-width: 767px) {
 	#wrapper {
