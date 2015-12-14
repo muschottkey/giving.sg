@@ -1026,7 +1026,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 
 /*******************        CAUSE ICONS       ********************/
 #causes-wrapper {max-width: 920px; margin: 40px auto 0;}
-    .acc-section #causes-wrapper { max-width: 720px; }
+    .acc-section #causes-wrapper { max-width:720px; margin:1em auto 2em; }
 #causes-wrapper > .span12 { margin-left: 0; }
 #causes-wrapper .cause-box {
     width:180px;
@@ -3046,7 +3046,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     h5, .aui h5{ font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
-    #causes-wrapper .cause-box.span4, body #causes-wrapper .cause-box.span4 { margin:0 1.4% 1em;} 
+    #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { margin-bottom:.5em;} 
 
     /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}

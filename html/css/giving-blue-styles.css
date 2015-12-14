@@ -382,10 +382,6 @@
 /*****************************************/
 /* TABLET (LARGE) */
 @media only screen and (max-width: 980px) {
-	#causes-wrapper .cause-box.span4{
-		width:26.25% !important;
-		margin: 1em 3.5% 50px !important;
-	}
   .aui h1 {
     font-size: 2.5em;
     line-height: 1.125em; }

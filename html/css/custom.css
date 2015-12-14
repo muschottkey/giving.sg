@@ -2292,11 +2292,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 	#orgCausesInfo .cause-box input[type=checkbox] + label:before {
 	    max-width: 90%;
 	}
-	
+	/* DB commment
 	#orgCausesInfo .cause-box.span4,  #causes-wrapper:not(.swiper-wrapper) .cause-box{
 		width: 100% !important;
 		margin: 0 !important;
-	}
+	} */
 	
 	.donation-wrapper .cause-box input[type=checkbox] + label:before,
 	#orgCausesInfo .cause-box input[type=checkbox] + label:before {
@@ -2366,11 +2366,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     border-radius: 8px !important;
     padding: 5px 3px !important;
 }
-*/
+
 #causes-wrapper:not(.swiper-wrapper) .cause-box {
     border: none !important;
 }
-
+*/
 .cause-box input[type=checkbox]:checked + label:after {
     display:none !important;
     top: 3px !important;
