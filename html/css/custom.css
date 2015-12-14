@@ -2559,12 +2559,12 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 /*************************************/
 /* CI UPDATE FOR 27/11/2015 release
 /*************************************/
-
+/*DB COMMENT
 @media (max-width: 767px) and (max-width: 979px) {
 	.aui .btn {
 	    width: auto;
 	}
-}
+}*/
 
 .aui select, .aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
 	font-size: 100%;
