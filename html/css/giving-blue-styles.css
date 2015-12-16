@@ -223,19 +223,6 @@
 /******************************************/
 /*  END OF CARD UI */
 /*****************************************/
-/*****************************************/
-/*  BUTTON STYLES START */
-/****************************************/
-
-
-.dropdown > button, .dropdown > button:hover,  .select-like button, .select-like button:hover, .action-btn > button {
-  box-shadow: none !important; }
-
-
-
-/*****************************************/
-/*  BUTTON STYLES END */
-/****************************************/
 /******************************************/
 /*  START OF SIDEBAR */
 /*****************************************/
@@ -358,12 +345,6 @@
 /*************************************************************/
 /*NON THEMING CSS TO CORRECT LAYOUT ERRORS*/
 /*************************************************************/
-.data-list li .action-btn button, .dropdown-select button { border: 1px solid #ccc !important; }
-
-.dropdown-menu a { text-decoration: none; }
-
-.select-like > button { border-bottom: 1px solid #999 !important; }
-
 button.btn.btn-ghost.delete-row { margin-right: -10px; }
 
 .qk-basket-wrapper li { display: block !important; height: auto !important; padding: 0.2em !important; }

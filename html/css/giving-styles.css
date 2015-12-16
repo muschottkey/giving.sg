@@ -643,19 +643,12 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui .btn.custom{max-width: 180px;margin-left: auto;margin-right: auto;height: 40px;}
 
 .aui .btn-group > .btn { font-size:16px; }
-.aui .btn-group.select-like > .btn{
-    border-radius:0 !important; box-shadow:none !important;  background:none !important;
-}
-.aui .btn-group.select-like.actions-group > .btn.dropdown-toggle { font-size: 16px !important; }
+.aui .btn-group.open .btn.dropdown-toggle { border-radius:0; box-shadow:none; background:none;  }
 
 .aui .btn-primary .caret:before{color: #FFF !important;}
 
-.aui .btn.yes:hover, .aui .btn.yes:active, .aui .btn.yes:focus{
-	background:#43AD49;
-}
-.aui .btn.no:hover, .aui .btn.no:active, .aui .btn.no:focus{
-	background:#F16577;
-}
+.aui .btn.yes:hover, .aui .btn.yes:active, .aui .btn.yes:focus{ background:#43AD49; }
+.aui .btn.no:hover, .aui .btn.no:active, .aui .btn.no:focus{ background:#F16577; }
 .aui .btn-group.open .btn-danger.dropdown-toggle {background-color: #e6e6e6;}
 .error-feedback { display:none; }
 
@@ -2258,9 +2251,8 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     .aui .select-like .dropdown-menu li a {
         padding:7px 20px; text-decoration:none; 
     }
-.aui .data-list li .person-actions .dropdown-menu li.active , .aui .dropdown-select .dropdown-menu li.active, 
-    .aui .select-like .dropdown-menu li.active{font-weight: 800;position: relative; }
-.aui .data-list li .person-actions .dropdown-menu li.active:before , .aui .dropdown-select .dropdown-menu li.active:before, 
+.aui .select-like .dropdown-menu li.active { font-weight:800; position:relative; }
+.aui .dropdown-select .dropdown-menu li.active:before, 
     .aui .select-like .dropdown-menu li.active:before{
     content: "\f00c";
     width: 20px;
@@ -2274,17 +2266,12 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
 	.dropdown.select-like .dropdown-menu li.active:before{
 		font-size:13px !important;
 	}
-
-.aui .data-list li .action-btn{ position: absolute;top: 15px;height: 30px;right: 10px;}
-.aui .data-list li .action-btn button, .dropdown-select button{ 
-    background-color: #fff;
-    border:1px solid #DCDDDE;
-}
+.aui .data-list li .action-btn { position: absolute;top: 15px;height: 30px;right: 10px; }
+.aui .data-list li .action-btn button, .dropdown-select button { background-color:#fff; border:1px solid #DCDDDE; }
 .aui .data-list li .action-btn.deactivated button, .aui .dropdown-select.deactivated button{ color: #172A35;} 
 
 .aui .data-list li .action-btn .caret, .dropdown-select .caret{ border-top-color:#172A35;border-bottom-color: #172A35;}
-.aui .data-list-footer { border-top:1px solid #DCDDDE; }
-.aui .data-list-footer { padding-left:20px; }
+.aui .data-list-footer { border-top:1px solid #DCDDDE; padding-left:20px; }
 .aui .data-list-footer .pagination { margin: 0; }
 .meta_info { color:#6a6c6f; line-height: 2; }
 .meta_info .count, .meta_info .total{font-weight: 800;}
@@ -2501,26 +2488,19 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
 	line-height:19px; 
 }
 .jplist-panel.add-inner .dropdown.select-like{
-	display:inline-block;
-	vertical-align:top;
-	float:none !important;
+	display:inline-block; vertical-align:top;
 }
-.aui .select-like button{
-    background-color: #fff;  border-bottom:1px solid #DCDDDE;
-    padding:5px 10px 0px 5px; margin-bottom: 0; 
-    text-align: left; border-radius: 0;
+.aui .select-like button {
+    background:#FFF; border-bottom:1px solid #dcddde; margin-bottom:0; border-radius:0; 
+    padding:5px 10px 0 2px; box-shadow: none; text-align: left; position:relative;
 }
-.aui .select-like button.dropdown-toggle{ box-shadow:none; }
+    .aui .select-like button.dropdown-toggle{ box-shadow:none; }
 .aui .select-like button:focus, .aui .select-like button:hover{
-    color: #F16577; background:#FFF; border-color:#919396; outline: 0 !important; 
+    color:#F16577; background:#FFF; border-bottom:1px solid #dcddde; 
 }
-.aui .select-like button:focus .caret:before, .aui .select-like button:hover .caret:before, 
-.aui .select-like button .caret:before{
-    color: #6a6c6f;
-}
-.aui .select-like button .caret{ margin-top:0px; border: none; font-weight: 700; font-size: 1.2em; }
+.aui .select-like button .caret{ margin-top:0px; border:none; margin-left:3px; font-size:1em; }
     .aui .select-like button .caret:before, .aui .actions-group button .caret:before{
-        content: "\f0d7"; font-size: 12px; line-height:15px; color: #172A35;
+        content: "\f0d7"; font-size: 12px; line-height:15px; color: #172A35; 
     }
     .actions-group button .caret { margin-top:8px; } 
 .aui .select-like button span[data-type=selected-text]{
@@ -2531,13 +2511,16 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     transition:all 0.3s ease;
 }
 .aui .select-like .dropdown-menu, .dropdown-menu{
-    padding:0; margin-top:0; border-radius:0; box-shadow:0 0 5px rgba(0,0,0,.2);
+    padding:0; margin-top:0; border-radius:0; box-shadow:0 0 5px rgba(0,0,0,.2); font-size:16px;
 }
 
 .aui  .select-like .dropdown-menu li a:hover, .aui .select-like .dropdown-menu li a:focus, 
     .aui .select-like .dropdown-menu li.active a,  .dropdown-menu li a:hover,.dropdown-menu li a:focus, 
     .dropdown-menu li.active a {background-color: #f0f0f0;}
-.aui .select-like .dropdown-menu li a, .dropdown-menu li a { padding:10px 30px 10px 10px; color: #172A35 !important; text-align:left; }
+.aui .select-like .dropdown-menu li a, .dropdown-menu li a { 
+    padding:10px 30px 10px 10px; color: #172A35 !important; text-align:left; 
+    font-size: 1em;
+}
 .aui .select-like .dropdown-menu li a:hover, .aui .select-like .dropdown-menu li a:focus, .dropdown-menu li a:hover,
 .dropdown-menu li a:focus{
     background: #f0f0f0; color:#172A35 !important; outline: 0;font-weight: 400;

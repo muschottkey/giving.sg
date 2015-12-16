@@ -788,10 +788,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	font-size: 1.125em !important;
 	text-decoration: none !important;
 }
-
+/* DB Comment 
 .aui .dropdown-menu {
     top: 90%;
-}
+}*/
 
 .aui .collapse.in {
     height: auto;
@@ -970,7 +970,7 @@ div.charity-donors img.dr-img {
 		height: auto !important;
 	}
 }
-
+/* DB COmment
 .aui .volunteer-contact .select-like button {
 	background-color: #fff;
 	border-radius: 0;
@@ -980,17 +980,17 @@ div.charity-donors img.dr-img {
     color: #333;
     transition: none;
 }
-
+*/
 .aui .volunteer-contact .small {
 	font-size: .85em;
 }
-
+/* DB COmment
 .aui .volunteer-contact .select-like button .caret {
     margin-top: 2px;
     border: none;
     font-weight: 700;
     font-size: 1.2em;
-}
+} */
 
 .aui .volunteer-contact #modal481 {
 	position: absolute;
@@ -2629,11 +2629,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 .popover-content .btn.pull-right {
     width: 70px;
 }
-
+/* DB COmment
 .btn-group.action-btn > .btn:first-child:not(.btn-success) {
 	min-width: 100px;
     height: 50px;
-}
+}*/
 
 @media (max-width: 979px) {
 	.non-respv .ui.checkbox {
