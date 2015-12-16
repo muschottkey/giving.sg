@@ -33,6 +33,9 @@ a, .aui a, a:link, .aui a:link { color:#17A4E1; text-decoration: underline; }
     a:hover, .aui a:hover { color:#0C5676; }  
 .aui ul, .aui ol { margin-bottom:1.5em; }
 
+.modal-body a.underlined{color:#17A4E1;}
+.modal-body a.underlined:hover{color:#0C5676;}
+
 /* CONTENT HEADINGS */ /* DISPLAY HEADINGS */
 header a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .aui header a, .aui h1 a, .aui h2 a, .aui h3 a, .aui h4 a, 
     .aui h5 a, .aui h6 a,  header a:link, h1 a:link, h2 a:link, h3 a:link, h4 a:link, h5 a:link, h6 a:link, 
@@ -262,15 +265,14 @@ label.small.grey{color: #919396;}
 .aui .control-group textarea:focus, .aui .control-group .pretty-text .box-footer {
     border-color: #58c1ee; box-shadow: none;
 }
-
 /* Inline form elements styling in horizontal forms */
 .inline-elements input:not([type=checkbox]) { width:auto; }
 
-/*  CUSTOM SELECT   */
+/*  CUSTOM SELECT  */
 .aui .modal .controls input.customAmt { width:50%; font-size: 1.75em; height: 1em; max-width:200px; font-weight:500; } 
-#selAmount { font-size:1em; width:140px; height: 40px; }
-#selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; }
-    #selAmount.sod_select:after { top:42%; }
+#selAmount { font-size:.9375em; width:180px; height:40px; }
+#selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; text-align:right; }
+    #selAmount.sod_select:after {top:42%;}
 
 #donateLoggedModal #spca, #spca { 
     font-weight:900; margin-bottom: 10px; font-size:2.25em !important; color:#919396; text-align:center; background:#FFF; 
@@ -304,11 +306,8 @@ label.small.grey{color: #919396;}
 
 /* GLOBAL STYLES & HELPER CLASSES */
 .aui .btn.active, .aui .btn:active{box-shadow: none;-webkit-box-shadow:none;}
+
 .big { font-size: 1.5em; }
-
-.side-contact a, .modal-body a.underlined{color:#17A4E1;}
-.side-contact a:hover, .modal-body a.underlined:hover{color:#0C5676;}
-
 .text-uppercase { text-transform:uppercase; }
 .underlined { text-decoration: underline !important;margin-top: 10px; }
 .border-left {border-left: 1px solid #dcddde; }
