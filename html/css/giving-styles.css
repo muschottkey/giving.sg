@@ -528,7 +528,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui #user-about-links .control-group input#shortUrlGenerator, .aui .btn-block a {
     font-size:16px; line-height:1.4; font-weight:normal; text-decoration:none; text-transform: uppercase; 
     border-radius:6px; -webkit-border-radius: 6px; border:none; outline:none; margin-bottom:5px;
-    padding:10px 20px; background:#B0E1F7; color:#17A4E1; text-shadow:none;
+    padding:10px 20px; background:#B0E1F7; color:#2174B5; text-shadow:none;
     -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
     -webkit-font-smoothing:antialiased;
 }
@@ -569,7 +569,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
 .ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, 
 #user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover {
-    background: #B0E1F7; color:#17A4E1; border:none; outline:0; 
+    background: #B0E1F7; color:#2174B5; border:none; outline:0; 
 }
 /* UI Controls - PRIMARY BUTTONS (BLUE) (HOVER / ACTIVE) */
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
