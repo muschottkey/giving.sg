@@ -23,11 +23,10 @@
 /* HOME PAGE CAROUSEL */
 /*************************************************************/
 .carousel > .ico.active .fa, .carousel > .ico:hover .fa { color: #43AD49; }
-
 .p-title.landing + p { color: #424242; }
 
-.aui .nl-form, .aui .nl-form a { color: #333333; text-decoration: none; }
-.aui .nl-form .refine-inputs span {color: #333333 !important; }
+.aui .nl-form, .aui .nl-form a { color:#333333; text-decoration: none; }
+.aui .nl-form .refine-inputs span { color: #333333 !important; }
 
 .gallery-date-box { border-top: 1px solid #73C8ED; margin: 1em -1.5em 0; padding: 1em 1em .5em; }
 .gallery-txt-box p { margin: 0 0 30px; font-size: .9em; float: left; }
@@ -41,9 +40,7 @@
 
 /* Why Giving  Corporate Identity CHANGE (BLUE) */
 .inform-area h3 { font-size: 1.5em; }
-
 .text-block-add { background: #ededed; }
-
 .text-block-add:before { border-color: #ededed transparent transparent transparent; }
 
 /* Why Giving Corporate Identity CHANGE (BLUE) */
@@ -234,10 +231,6 @@
 .dropdown > button, .dropdown > button:hover,  .select-like button, .select-like button:hover, .action-btn > button {
   box-shadow: none !important; }
 
-
-.inform-area .box-btn .btn {
-  background-color: #B0E1F7;
-  color: #0C5676 !important; }
 
 
 /*****************************************/

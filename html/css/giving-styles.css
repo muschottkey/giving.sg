@@ -199,7 +199,6 @@ label.small.grey{color: #919396;}
     transform:scale(1.2); -webkit-transform: scale(1.2); margin:2px 3px 0 0;
 }
 
-#respwdForm input.form-control,
 #claim-tax input.form-control,
 #gf-bkt-login input.form-control{
     padding-left:5px; padding-right:25px; box-sizing:border-box; -webkit-box-sizing:border-box;
@@ -208,7 +207,6 @@ label.small.grey{color: #919396;}
 .aui .control-group .validation-feedback, .aui .control-group .input-append.input-prepend .fa:last-child { 
     position:absolute; display:none; background:transparent; height:15px; margin-top:8px; right:0; width:auto;
 }   
-    .aui .controls > .validation-feedback { right:5%; }
     #userDetails .validation-feedback i, #payment-type .validation-feedback i { font-size:1em; color:#6a6c6f; }
 
 .aui .control-group.error .validation-feedback, .aui .control-group.success .validation-feedback{
@@ -232,7 +230,7 @@ label.small.grey{color: #919396;}
 .aui .control-group.success .input-prepend .add-on, .aui .control-group.success .input-append .add-on{
     border-color:#43AD49; color:#43AD49; font-weight: 400;
 }
-.aui .control-group.success .validation-feedback i { color:#43AD49; }
+.aui .control-group.success .validation-feedback i { color:#43AD49; font-size:.875em; }
 .aui .control-group .input-append.input-prepend .fa:last-child { display:block; border:none; bottom: 0; }
 
 /* error state*/
@@ -530,7 +528,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .aui #user-about-links .control-group input#shortUrlGenerator, .aui .btn-block a {
     font-size:16px; line-height:1.4; font-weight:normal; text-decoration:none; text-transform: uppercase; 
     border-radius:6px; -webkit-border-radius: 6px; border:none; outline:none; margin-bottom:5px;
-    padding:10px 20px; background:#B0E1F7; color: #0C5676; text-shadow:none;
+    padding:10px 20px; background:#B0E1F7; color:#17A4E1; text-shadow:none;
     -webkit-transition: all 0.3s ease; transition: all 0.3s ease;
     -webkit-font-smoothing:antialiased;
 }
@@ -571,7 +569,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 .btn-large-custom:hover, .btn-large-custom:focus, .btn-large-custom:active, 
 .ttl-row .btn:hover, #copy-url, #copy-url:hover, .load-all-results:hover, 
 #user-about-links input#shortUrlGenerator:hover, .inform-area .box-btn .btn:hover {
-    background: #B0E1F7; color: #0C5676; border:none; outline:0; 
+    background: #B0E1F7; color:#17A4E1; border:none; outline:0; 
 }
 /* UI Controls - PRIMARY BUTTONS (BLUE) (HOVER / ACTIVE) */
 .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus,  
@@ -673,7 +671,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #donation-userDetails{padding: 20px; }
 .contact-us #contact-us .action-link{
 	background: #B0E1F7 none; border: medium none; border-radius:6px;
-    color: #0C5676;
+    color:#17A4E1;
     font-size: 16px;
     font-weight: normal;
     line-height: 1.4;
@@ -1033,12 +1031,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
     .acc-section #causes-wrapper { max-width:720px; margin:1em auto 2em; }
 #causes-wrapper > .span12 { margin-left: 0; }
 #causes-wrapper .cause-box {
-    width:180px;
-    float:left;
-    margin: 0px 25px 35px;
-    border-radius:6px;
-    border: none;
-    text-decoration: none;
+    width:180px; float:left; margin:0 25px 35px; border-radius:6px; border:none; text-decoration:none;
 }  
 
 /* Causes Display IMAGES */
@@ -1146,8 +1139,7 @@ p.block{max-width: 300px;padding: 8px;background-color: #FFF;margin: 0 auto;text
 
 /* Separate styles for each browser pack or they will all be ignored*/
 #donation-userDetails .control-group{margin-top: 5px;margin-bottom: 5px;}
-.aui #donation-userDetails .control-group span.validation-feedback.pull-right {display: inline-block;right: 8px;}
-#donation-userDetails input#user_address1 {  margin-bottom:30px; }
+#donation-userDetails input#user_address1 { margin-bottom:30px; }
 
 #save-status{margin-left: 30px;font-size: 0.8em;color: #7c7c7c;margin-top: 1.05em;}
 #user-about-links .input-append.input-prepend { float:left; position:relative; }
@@ -1490,6 +1482,7 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
 .aui .cpn-url-box input.span10 { 
     height:40px; background:#FFF; width:75%; padding:10px; border-width:1px; max-width:95%; }
     .mod-tell-friends .cpn-url-box input.span10 { float: left; }
+.aui .mod-tell-friends h4 { margin:0; }
 .aui .cpn-url-box button, .aui .input-append .btn:last-child { 
     padding:8px 10px; height:40px; border:none; width:25%; font-size:14px; box-shadow:none; min-width:inherit; 
     border-radius:0 6px 6px 0;
@@ -2624,7 +2617,7 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
 .aui .steps-content .btn-area{padding:0 0 25px;overflow:hidden;}
 
 .aui .steps-content .btn-save input{ float:right; width:150px; }
-.aui .steps-content .btn-save input, .aui .add-btn-lst a { background-color: #B0E1F7; color:#0C5676; }
+.aui .steps-content .btn-save input, .aui .add-btn-lst a { background-color: #B0E1F7; color:#17A4E1; }
 .aui .add-bottom-lst li input[type=submit], .aui .btn-area input[type=submit] {  line-height: 1 !important; }
 .aui .add-bottom-lst{
     margin:0;
@@ -3494,7 +3487,6 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     #fundr-content{padding: 10px 0;}
     .donation-wrapper{background-color: #FFF;}
     #donation-userDetails{border: none;}
-    #donation-userDetails  .control-label.small {font-size: 1.1em;}
     .signup-section.step1{margin-top:60px;}
 
     .progress-dots ul { text-align: center; }
