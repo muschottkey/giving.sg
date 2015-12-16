@@ -578,7 +578,7 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus,
 #login_button:hover, #login_button:focus, #LoginForm .btn:hover, #LoginForm .btn:active,
 .gallery-txt-box .btn:hover {
-    background-color: #0C5676; color:#FFF;
+    background-color:#0C5676; color:#FFF;
 }
 /* UI Controls - GHOST BUTTON / OPTIONS (WHITE) (HOVER / ACTIVE) */
 .aui .btn-group .btn.btn-ghost.active, .aui .btn-group .btn.btn-ghost:hover {
@@ -634,10 +634,8 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 /* BUTTON UI (standardization) */
 .popover-content .btn.pull-right{
     padding: 2px 10px !important;
-    border-radius: 3px;
-    margin-bottom: 20px;
-    text-transform: lowercase !important;
-    min-width: inherit;
+    border-radius: 3px; margin-bottom: 20px;
+    text-transform: lowercase !important; min-width: inherit;
 }
 .bootstrap-switch{box-shadow: none !important;border-color: #DCDDDE !important;}
 
