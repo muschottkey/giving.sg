@@ -190,7 +190,7 @@ label.small.grey{color: #919396;}
     font:16px/1.25 "Roboto", Arial, sans-serif; font-size:16px; line-height:1.25; 
     border-width:0 0 1px; border-radius:0; border-color:#dcddde; box-shadow:none;
     padding:6px 25px 6px 5px; margin-bottom:5px; height:33px; color: #172A35;
-    box-sizing:border-box;  -webkit-box-sizing:border-box;
+    box-sizing:border-box; -webkit-box-sizing:border-box;
 }
 .aui input:not([type="checkbox"]), .aui input[type="text"], .aui textarea {
     width:100%; border-width: 0 0 1px; box-shadow:none; color: #172A35;
@@ -271,7 +271,6 @@ label.small.grey{color: #919396;}
 #selAmount { font-size:.9375em; width:180px; height:40px; }
 #selAmount .sod_label { font-size:1.75em; color:#172A35; font-weight:500; text-align:right; }
     #selAmount.sod_select:after {top:42%;}
-
 #donateLoggedModal #spca, #spca { 
     font-weight:900; margin-bottom: 10px; font-size:2.25em !important; color:#919396; text-align:center; background:#FFF; 
 }
@@ -284,7 +283,6 @@ label.small.grey{color: #919396;}
 #user-about-links .input-append.input-prepend .add-on:first-child{
     width:auto; display:block; text-align:left; border:0 none; color:#6a6c6f; background:none; line-height: 1.4;
 }
-
 /*      RADIO OPTIONS SELECT | LABEL CHECKBOXES     */
 .aui .row-fluid .lbl-chkbox { margin:5px 5% 0 0; }
 .lbl-chkbox label {
@@ -301,7 +299,6 @@ label.small.grey{color: #919396;}
 .action-link i{width: 100%;margin-bottom: 10px;font-size: 24px;}
 .action-link.inline i{width: auto;margin-bottom: 0px;font-size: 18px; margin-right: 5px;}
 
-
 /* GLOBAL STYLES & HELPER CLASSES */
 .aui .btn.active, .aui .btn:active{box-shadow: none;-webkit-box-shadow:none;}
 
@@ -317,11 +314,11 @@ label.small.grey{color: #919396;}
 .block{display: block;}
 .relative{position: relative;}
 .absolute{position: absolute;}
-.centered, .row-fluid .centered, .aui .centered, .aui .row-fluid .centered, 
-    .aui .row-fluid .social-share .span8, .aui .row-fluid .social-share .span10 { 
+.row-fluid .centered, .aui .centered, .aui .row-fluid .centered, .aui .row-fluid .social-share .span8,
+    .aui .row-fluid .social-share .span10 { 
         margin-left:auto; margin-right:auto; float:none; 
     }
-.aui #addLeadersModal .row-fluid .span8{margin:0 auto;}
+.aui #addLeadersModal .row-fluid .span8 {margin:0 auto;}
 .aui #addLeadersModal .modal-body .row-fluid.non-respv{min-width:1px;}
 .m-0 { margin: 0 !important; }
 .m-10 { margin: 10px; }
