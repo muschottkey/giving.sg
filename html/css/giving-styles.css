@@ -3147,9 +3147,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     }
     .aui .cpn-url-box input{ text-align: left; }
     .cpn-suggestions { padding:0; }
-    .listings-wrapper .cpn-sgtn-item { width:220px; margin:1em 8px 1.5em;max-height: 390px;}
-
-
+    .listings-wrapper .cpn-sgtn-item { width:220px; margin:1em 8px 1.5em; min-height:390px; max-height:390px; }
 
     .aui #sidebar, .aui body.non-respv .nav-menu-toggle, .aui #sidebar.hide { display: none; }
     .aui .nav-menu-toggle, .aui #sidebar.non-respv { display: block; }

@@ -2472,11 +2472,11 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 #createusermodal .btn-toggle .btn span {
     width: 100% !important;
 }
-
+/*
 #npo-listing .listings-wrapper .cpn-sgtn-item {
     max-height: 410px;
 }
-
+*/
 .ttl-row h3 {
     width: 100% !important;
     text-align: center !important;
