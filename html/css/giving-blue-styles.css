@@ -156,18 +156,12 @@
 }
 
 /* Hover state of card */
-.cpn-sgtn-item:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15);
-  border-bottom-color: transparent;
-}
+
 
 .cpn-suggestions .load-all-box:hover, .cpn-suggestions .add-cpn-btn:hover {
   background: none;
   box-shadow: none; }
 
-.cpn-sgtn-item:hover .sgtn-body, .cpn-sgtn-item:hover .box-r-footer {
-  background-color: #17A4E1;
-  border-bottom-color: #0C5676; }
 
 .cpn-sgtn-item:hover .box-r-footer { border-top-color: #10709a; }
 
@@ -295,7 +289,6 @@
 
   /* HOMEPAGE CAROUSEL */
   .aui #nav li br, .home-slider .slider-navigation { display: none; }
-
 
   /* LISTINGS PAGE */
   .listings-wrapper .cpn-holder {
