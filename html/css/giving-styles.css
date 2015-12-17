@@ -1533,7 +1533,6 @@ h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em 
     user-select: none; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 .cpn-sgtn-item:hover { background:#17A4E1; box-shadow:0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15); }
-
 .listings-wrapper .cpn-sgtn-item { margin:1em 1.35em 1.5em; max-height:430px; min-height:430px; height:100%; }
     .search-results-wrapper .cpn-sgtn-item { display:none; }
     .tab-section .cpn-sgtn-item { display:block !important; }
@@ -3594,7 +3593,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     #causes-mobile .span12.clearfix.swiper-slide{  width: 600px; }
     .acc-toggle.landing{ margin-bottom: 10px; }
 
-    .listings-wrapper .cpn-sgtn-item { margin: 1em 0px 5em; }
+    .listings-wrapper .cpn-sgtn-item { margin: 1em 0px 5em; min-height:430px; max-height:430px; }
     #campaign-landing, #campaign-landing > .wrapper{margin-top: 0;padding-top:0;}
 
     h3.landing,
@@ -3624,7 +3623,9 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 
     /* Search results page*/
     .search-controls form .control-group{margin-top: 1em;}
+    .search-results-wrapper .cpn-suggestions { height: 100%; max-height: 100%;  }
     .search-results-wrapper .cpn-sgtn-item { width:auto; float:none; }
+        
     .refine-search .text { font-size:1.1em; display:block; }
     .refine-search .btn-large-custom { display:block; margin:15px auto 0px; width:100%; }
 
