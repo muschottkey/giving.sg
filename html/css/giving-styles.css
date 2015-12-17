@@ -3043,6 +3043,8 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 
     .aui .dtn-amt-item .dtn-btns{
         width: 100%;
+        position:relative;
+        z-index:10000;
         text-align: center;
         padding: 0.5em 0;
         border-top: 1px solid #DCDDDE;
@@ -3130,6 +3132,22 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 
 @media (max-width: 767px) {
+
+    #btn-subAttendance{
+        float:none;
+        width:208px;
+        margin-top:10px;
+    }
+    .data-list.volunteers-list .data-list-item .span2{
+        padding-top:4px;
+    }
+    .data-list.volunteers-list .data-list-item .volunteer-details{
+        float:none;
+        overflow:hidden;
+        width:auto;
+        padding-left:8px;
+    }
+    
 	#copy-url{float:left;}
 	.ie.aui #individualProfile input[type='color'],
 	.ie.aui #individualProfile  input[type='date'], 
