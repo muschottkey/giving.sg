@@ -3773,7 +3773,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .data-list.volunteers-list .data-list-item [class*="span"] input{max-width: 30px;}
 
     .data-list.volunteers-list .data-list-item img{width: 40px;}
-    .data-list.volunteers-list .data-list-item .label{font-size: 9px;position: absolute;top:50%;margin-top: -9px;}
+    .data-list.volunteers-list .data-list-item .label{font-size: 9px; }
     .data-list.volunteers-list .data-list-item .volunteer-name{font-size: 16px;font-weight: 800;}
     .data-list.volunteers-list .data-list-item label.visible-phone{display: inline-block !important;}
 
