@@ -1260,7 +1260,6 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 #payment-type .input-wrapper .control-group .controls input:not([type=checkbox]){
     line-height: 1.4;border-width: 0 0 1px; box-shadow: none; border-radius: 0;
 }
-
 #vw-gft-dtn-prefs tr td{text-align: left;padding: 10px 15px;height: 40px;}
 #vw-gft-dtn-prefs tr:first-child td{border-top: 0; width: 25%;}
 #vw-gft-dtn-prefs tr td.long{vertical-align: top;padding-top: 30px;}
@@ -1275,7 +1274,8 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
     .fr-person img { padding-right:5px; }
 .conf-states-wrapper{max-width: 400px; position:relative; }
     .conf-states-wrapper > .boxed.no-border.centered { position:absolute; background:#FFF;  }
-.conf-states-wrapper .box.reset.span12 { margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
+.conf-states-wrapper .box.reset.span12 { 
+    margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
 
 h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em !important;}
 
