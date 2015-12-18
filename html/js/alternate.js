@@ -115,6 +115,8 @@ $('#respwdForm').validate({
     }
 });
 
+ 
+
 $('#resendEmail').click(function(e){
     e.stopPropagation();
     e.preventDefault();
