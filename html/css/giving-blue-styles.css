@@ -202,15 +202,13 @@
   .aui #logo a { padding: 0 .5em; }
 
   /* CARDS UI  */
-  .cpn-sgtn-item .sgtn-img { height: auto; }
-
-  .may-like-title { margin-bottom: 38px; } 
+    .cpn-sgtn-item .sgtn-img { height: auto; }
+    .may-like-title { margin-bottom: 38px; } 
+    #causes-wrapper .cause-box.span4 { width:100%; max-width:277px; margin: 10px 0 !important; }
 }
 /* TABLET (SMALL) */
 @media only screen and (max-width: 767px) {
-	#causes-wrapper .cause-box.span4{
-		width:100% !important; max-width:277px; margin: 10px 0 !important;
-	}
+	
     .aui .pre-footer .acc-toggle {
         color: #fff; background-color: #172A35; border-color: #424242;
         border-width: 1px 0 0; margin-bottom: 0 !important; 

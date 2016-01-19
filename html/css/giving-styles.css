@@ -2927,7 +2927,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     h5, .aui h5{ font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
-    #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { margin-bottom:.5em;} 
+    #causes-wrapper .cause-box.span4, .aui #causes-wrapper .cause-box.span4 { margin-top:4em; margin-bottom:.5em;} 
 
     /**specially for 205 set up page**/
     .start-cta, .span12.start-cta{height: 377px;}
@@ -2946,8 +2946,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
         .span8.modal-dtn-amts { width:100%; }
     .fr-widget .span6.centered{padding: 0 25%;}
 
-    /* SPAN12 -- 100%*/
-    /* SPAN6 -- 48%*/
+    /* SPAN12 -- 100%*/ /* SPAN6 -- 48%*/
     .aui .row-fluid.breakpoint-override .span6, .aui .row-fluid.breakpoint-override.can-clone .span6,
         .aui .row-fluid.breakpoint-override.pre-footer-social .span3, #tax-deduc .span6 { 
             width: 48.61878453038674%; 
