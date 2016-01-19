@@ -1,6 +1,14 @@
 /* This file allows you to override default styles in one central location for easier upgrade and maintenance. */
 /* gray out during modal popup */
 
+/* hide liferay nav bar in giving*/
+#_145_navSiteNavigationNavbarBtn.btn-navbar, 
+#_145_navAccountControls.btn-navbar, 
+#_145_navAddControlsNavbarBtn.btn-navbar, 
+#_145_navAccountControlsNavbarBtn.btn-navbar {
+	display: none !important;
+}
+
 /* display portlet title only when user is signed-in and have access to drag portlet*/
 body.controls-hidden header.portlet-topper, body.signed-out header.portlet-topper, 
 body header.portlet-topper {
@@ -16,26 +24,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 }
 
 .yui3-skin-sam .yui3-widget-mask {
+	/* transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s; */
     opacity: 0.8;
+    height: 150% !important;
 }
-
-/* hide liferay nav bar in giving*/
-#_145_navSiteNavigationNavbarBtn.btn-navbar, 
-#_145_navAccountControls.btn-navbar, 
-#_145_navAddControlsNavbarBtn.btn-navbar, 
-#_145_navAccountControlsNavbarBtn.btn-navbar {
-	display: none !important;
-}
-/* DB commented 
-.main-content, .modal-content {
-    margin-top: 0px !important;
-}
-
-.validation-feedback {
-	z-index: 1;
-	position: absolute;
-	right: 0px;
-}*/
 
 .validation-feedback.error i {
 	color: #FC353A;
@@ -73,15 +65,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /****************************************************/
 /******** GLOBAL STYLE FOR MODAL **********************/
 /****************************************************/
-/* DB commented 
-.modal-body .checkbox input[type="checkbox"] {
-	float: none;
-	margin-right: 8px;
-	font-size: 1.2em;
-	font-weight: 300;
-	line-height: 1.4;
-}
-*/
 .modal-header .fa-minus-circle {
 	margin-right: 5px;
 }
@@ -90,60 +73,22 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	max-width: 800px;
 }
 /* DB commented 
-.modal .row-fluid .span6 {
-	/* padding: 1em 1.5em !important; 
-	padding: 1em 2em 4.6em !important;
-}
-
 .aui .modal.fade {
 	transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
 	top: -25%;
 }
 
-.aui .btn-group {
-    font-size: 1em !important;
-}
-
-.aui  .btn-group > .btn {
-    font-size: 16px !important;
-}
-
-.aui .btn-group > .btn + .dropdown-toggle {
-    box-shadow: none;
-}
-
 .aui img { 
 	width: auto\9;
 }
-
-.aui .btn-block { 
-	width: 100%;
-}
 */
+
 /**********************************************************/
 /***** FOR ALL MODAL, MUST APPLY FOLLOWING STYLE : START */
 /********************************************************/
 
-#signinmodal.modal-hidden.modal.fade.in, #createusermodal.modal-hidden.modal.fade.in,
-	#createprofilemodal.modal-hidden.modal.fade.in, #donatenowmodal.modal-hidden.modal.fade.in,
-	#donationsummarymodal.modal-hidden.modal.fade.in,
-	#transactionhistorymodal.modal-hidden.modal.fade.in,
-	#reportAbuseModal.modal-hidden.modal.fade.in {
-	display: none;
-}
-
-#signinmodal.modal-focused, #createusermodal.modal-focused,
-	#createprofilemodal.modal-focused, #donatenowmodal.modal-focused,
-	#donationsummarymodal.modal-focused, #transactionhistorymodal.modal-focused,
-	#reportAbuseModal.modal-focused, #transactionhistorymodal.modal-focused
-	{
-	opacity: 1.0;
-	top: 10%;
-}
-
-#signinmodal, #createusermodal, #createprofilemodal, #donatenowmodal,
-	#donationsummarymodal, #transactionhistorymodal, #reportAbuseModal {
-	transition: top 0.3s ease-out;
+.aui .giving-sg-modal.modal.yui3-widget-modal {
+	transition: opacity 0.3s linear 0s, top 0.3s ease-out 0s;
 	opacity: 1.0;
 	top: -10000px;
 }
@@ -151,34 +96,37 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .aui .giving-sg-modal.modal{
 	height: auto !important;
 	top:20px !important;
-}
-.aui .modal-body, .aui .modal-backdrop {
-  max-height: 100%;
+	z-index:9999 !important;
+ 	position:absolute;
+  	margin-bottom:2em; 
+  	right:0; 
+  	left:0; 
+  	width:100%; 
 }
 
-.giving-sg-modal .modal-body{
+.aui .giving-sg-modal .modal-body{
 	height: auto !important; 
     max-height: 100% !important; 
 }
 
-.aui .giving-sg-modal-margin-auto.modal, .aui .giving-sg-modal-margin-auto .modal-content, .aui .giving-sg-modal-margin-auto .modal-body {
+.aui .modal-body, .aui .modal-backdrop {
+	max-height: 100%;
+}
+
+.aui .giving-sg-modal-margin-auto.modal, 
+.aui .giving-sg-modal-margin-auto .modal-content, 
+.aui .giving-sg-modal-margin-auto .modal-body {
   /* set modal to center of page, only applicable of custom modal provided by DB*/
   margin: 0 auto !important;
 }
 
-.aui .giving-sg-modal.modal, .aui .giving-sg-modal .modal-content, .aui .giving-sg-modal .modal-body {
+.aui .giving-sg-modal.modal, 
+.aui .giving-sg-modal .modal-content, 
+.aui .giving-sg-modal .modal-body {
   /* ISSUE adding margin will cause modal position calculate wrongly in liferay*/
   /* margin: 0 auto !important; */
   overflow-y: initial !important;
   height: auto !important;
-}
-
-.aui .giving-sg-modal.modal { z-index:9999 !important;
- position:absolute;
-  margin-bottom:2em; 
-  right:0; 
-  left:0; 
-  width:100%; 
 }
 
 .aui .modal-header .close {
@@ -194,28 +142,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /**************************************************/
 /***** FOR ALL MODAL, APPLY FOLLOWING STYLE : END*/
 /************************************************/
-
-#signinmodal .modal-one-column .modal-body {
-	max-width : 485px !important;
-}
-
-#signinmodal form.sign-in-form{
-    max-width: 400px;
-    margin: auto;
-}
-
-#signinmodal .modal-body {
-	text-align: center;
-	/* padding: 15px 100px; */
-}
-
-/* #signinmodal .modal-body input, #createprofilemodal .modal-body input {
-	text-align: center;
-}
- */
-#signinmodal .portlet-body {
-	margin: 0px 15px;
-}
 
 #signinmodal .control-label {
 	cursor: pointer;
@@ -282,12 +208,8 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 }
 
 .DOB.below-age {
-	color: #BD362F !important;
+	color: #F16577  !important;
 }
-/* DB commented 
-.box.span6 {
-	padding: 1em 2em 4.6em !important;
-} */
 
 #transactionhistorymodal .summary-wrapper .charity-info {
 	width: 100% !important;
@@ -296,25 +218,11 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 4 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
-
 .aui .table th, .aui .table td {
 	text-align: center;
 	vertical-align: middle;
 }
-/* DB commented 
-.gf-bkt {
-	border: 1px solid #DDD !important;
-	border-radius: 8px !important;
-	border-collapse: separate !important;
-	margin-top: 40px !important;
-	vertical-align: middle !important;
-}
 
-#donation-userDetails label {
-	font-size: 0.8em !important;
-	font-weight: normal;
-}
-*/
 .gf-bkt {
 	border: 1px solid #DDD !important;
 	border-radius: 8px !important;
@@ -334,17 +242,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .clear-both {
 	clear: both;
 }
-/* DB commented 
-#setup-dtn-carousel .carousel-indicators {
-    left: 50%;
-	margin-left: -45px;
-	width: 90px;
-}
-*/
+
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
-
 .dashboard-wrapper {
 	min-height: 800px;
 }
@@ -362,47 +263,16 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .dashboard-wrapper .check.active{
     background-position: 0px -20px;
 }
-/* DB  COMMENT
-.social-share a:hover, .social-share a:active, .social-share a:focus {
-   color: #FFF !important;
-}
 
-#donate-buttons button {
-    font-size: 1.25em !important;
-}
-
-.button-input {
-    margin: 10px 5px !important;
-}
-*/
 .img-box span.small {
     font-size: 1em !important;
     line-height: 1.2em !important;
 }
-/* DB  COMMENT
-.aui .carousel-indicators {
-	top: auto;
-    bottom: 20px !important;
-}
-*/
+
 .dtn-amt-item .dtn-amt {
     display: table !important;
 }
-/* DB  COMMENT
-.f-block .input-append {
-    width: auto !important;
-    float: none !important;
-    height: inherit;
-}
 
-.cpn-url-box input, .cpn-url-box button{
-    height: 40px !important;
-}
-
-.accordion-title {
-    margin: 0px auto 20px !important;
-}
-*/
 #cpn-info div.img-box a i {
     font-size: 1.8em;
     padding: 15px 8px;
@@ -411,27 +281,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 #cpn-info div.img-box a:hover, #cpn-info div.img-box a:active, #cpn-info div.img-box a:focus{
 	color: #333 !important;
 }
-/* DB  COMMENT
-#contact-logo {
-    background-color: #FFF !important;
-    border: 0px !important;
-    max-width: 100% !important;
-}
 
-.cpn-contact-info .side-contact p .fa {
-    width: 30px;
-    color: #666;
-}
-
-.dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {
-    min-height: 100px !important;
-}
-
-.sgtn-img {
-    height:136px;
-    overflow:hidden; 
-}
-*/
 #selPayment {
     min-width: 150px;
 }
@@ -439,24 +289,10 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .fa-heart.active {
 	color: #d33030;
 }
-/* DB comment 
-.square-border {
-	border-radius: 0 !important;
-}
 
-.landing-cpn-slider-wrapper .swiper-slide {
-	margin: 0 !important;
-}
-*/
 /*--------------------------------------------------------*/
 /*----------------- SPRINT 5 CUSTOM CSS START HERE -------*/
 /*--------------------------------------------------------*/
-
-.search-results-wrapper .cpn-sgtn-item>.sgtn-img img {
-	max-width: 100% !important;
-	height:auto !important;
-}
-
 .search-results-wrapper {
 	min-height: 500px;
 }
@@ -469,47 +305,16 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	.aui .dockbar-split .dockbar .navbar-inner {
 		margin-right: 20px
 	}
-	/* DB comment 
-	.donate-btns button {
-	    width: 48% !important;
-	    display: inline-block !important;
-	    margin-bottom: 0px !important;
-	}
-	
-	.dtn-amt-item .dtn-desc {
-   		width: 100% !important;
-	}*/
 }
 
 @media ( max-width : 767px) {
-	#signinmodal {
-		left: 0px !important;
-		right: 0px !important;
-		margin: 0px 15% !important;
-		width: 70% !important;
-	}
-	#signinmodal form {
-		width: 80%;
-		margin: 0px auto;
-	}
 	#signinmodal form #login_button {
 		width: 120px !important;
-	}/* DB comment 
-	.modal-body {
-		padding: 15px 0% !important;
 	}
-	.modal, .modal-one-column {
-		max-width: 70% !important;
-		max-width: 100% !important;
-	}
-	*/
+
 	#cpn-donate-now .btn {
 	    width: 100% !important;
 	}
-	/* DB comment 
-	.dtn-amt-item .dtn-amt, .dtn-amt-item .dtn-desc {
-	    min-height: 50px !important;
-	}*/
 }
 
 @media (max-width: 979px){
@@ -517,89 +322,16 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 		text-align: center !important;
 	}
 }
-/* DB comment 
-#donationAmt .dtn-amt-item .dtn-amt, #donationAmt .dtn-amt-item .dtn-desc {
-    min-height: 50px !important;
-}
-*/
+
 #donationAmt div.modal-body {
     max-width: 280px;
     padding:15px;
 }
 
-
-/* general settings */
-
 #_2_WAR_notificationsportlet_userNotifications {
 	display: none;
 }
-/* DB comment 
-.navbar {
-	background: none !important;
-}
 
-.aui .m-0 { margin: 0 !important; line-height:1 !important; }
-.aui .m-bot0{margin-bottom: 0px !important;}
-.aui .m-bot5{margin-bottom: 5px !important;}
-.aui .m-bot10{margin-bottom: 10px !important;}
-.aui .m-bot15{margin-bottom: 15px !important;}
-.aui .m-bot20{margin-bottom: 20px !important;}
-.aui .m-bot30{margin-bottom: 30px !important;}
-.aui .m-bot40{margin-bottom: 40px !important;}
-.aui .m-bot50{margin-bottom: 50px !important;}
-.aui .m-top0{margin-top: 0 !important;}
-.aui .m-top5{margin-top: 5px !important;}
-.aui .m-top10{margin-top: 10px !important;}
-.aui .m-top15{margin-top: 15px !important;}
-.aui .m-top20{margin-top: 20px !important;}
-.aui .m-top30{margin-top: 30px !important;}
-.aui .m-top40{margin-top: 40px !important;}
-.aui .m-top50{margin-top: 50px !important;}
-.aui .m-top60{margin-top: 60px !important;}
-.aui .m-top-5{margin-top:-5px !important;}
-.aui .m-left0{margin-left: 0 !important;}
-.aui .m-left5{margin-left: 5px !important;}
-.aui .m-left10{margin-left: 10px !important;}
-.aui .m-left20{margin-left: 20px !important;}
-.aui .m-left30{margin-left: 30px !important;}
-.aui .m-left70{margin-left: 70px !important;}
-.aui .m-right0{margin-right: 0px !important;}
-.aui .m-right10{margin-right: 10px !important;}
-.aui .m-right20{margin-right: 20px !important;}
-.aui .p-10{padding: 10px !important;}
-.aui .p-20{padding: 20px !important;}
-.aui .p-30{padding: 30px !important;}
-.aui .p-top5 { padding-top: 5px !important;}
-.aui .p-top10 { padding-top: 10px !important;}
-.aui .p-top12 { padding-top: 12px !important;}
-.aui .p-top20 { padding-top: 20px !important;}
-.aui .p-top30 { padding-top: 30px !important;}
-.aui .p-top40 { padding-top:40px !important;}
-.aui .p-bot0 { padding-bottom:0 !important;}
-.aui .p-bot10{padding-bottom: 10px !important;}
-.aui .p-bot20{padding-bottom: 20px !important;}
-.aui .p-bot30{padding-bottom: 30px !important;}
-.aui .p-bot40{padding-bottom:40px !important;}
-.aui .p-left0{padding-left:0px !important;}
-.aui .p-left70{padding-left:70px !important;}
-.aui .p-0{padding: 0px !important;}
-
-.minimal {
-	font-weight: 400 !important;
-}
-
-.text-left {
-	text-align: left !important;
-}
-
-.text-right {
-	text-align: right !important;
-}
-
-.text-center {
-	text-align: center !important;
-}
-*/
 .aui a.undelined, .aui a.underlined:link {
   text-decoration: underline !important; 
 }
@@ -608,60 +340,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	.aui footer, .aui header, .aui hgroup, .aui nav, .aui section {
 	display: block;
 }
-/* DB comment 
-.aui .row-fluid [class*="span"] {
-    min-height: 0px;
-}*/
-/* DB comment 
-@media (max-width: 979px) and (min-width: 768px){
-	.aui .row-fluid [class*="span"] {
-    	margin-left: auto;
-	}
-}
 
-/* Typography *//* DB comment 
-.aui body {
-    color: #333;
-    font: 16px/1.25 "Roboto", Arial, sans-serif !important;
-    margin: 0 auto;
-    -webkit-font-smoothing: antialiased;
-}
-
-.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6, .aui input, .aui button, .aui select, .aui textarea {
-	font-family: "Roboto", Arial, sans-serif;
-}
-
-.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
-    line-height: 1.1em;
-}
-
-.aui .control-group .controls > span, .aui label {
-    font-size: .875em;
-}
-
-.box h5 {
-    font-size: 1.2em !important;
-}
-
-.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui span, .aui a, .aui p,
-	.aui blockquote, .aui button, .aui input, .aui label {
-	text-shadow: none !important;
-}
-
-.aui p, .aui textarea, .aui input {
-	line-height: 1.4;
-	word-wrap: break-word;
-}
-
-.aui a {
-	text-decoration: underline;
-	color: #08C;
-}
-
-.aui textarea, .aui input {
-	height: 1.3em;
-}
-*/
 .aui textarea, .aui input[type="text"], .aui .button-input, .aui .control-group .form-control, .aui select{
     border-top-width: 0px;
     border-right-width: 0px;
@@ -672,41 +351,7 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 .aui input:-webkit-autofill, .aui textarea:-webkit-autofill, .aui select:-webkit-autofill{
   background-color: #ffffff !important;
 }
-/* DB comment 
-.aui input:not([type=checkbox]), .aui input[type="radiobutton"] {
-	height: 20px;
-	height: 1.3em;
-}
 
-.aui .btn-large {
-	font-weight: 900;
-	padding: 11px 19px;
-	font-size: 17.5px;
-	border-radius: 6px;
-}
-
-.aui .btn {
-	line-height: 20px;
-	display: inline-block;
-	margin-bottom: 0px;
-	text-align: center;
-	vertical-align: middle;
-	cursor: pointer;
-	border-width: 1px;
-	border-style: solid;
-	-moz-border-top-colors: none;
-	-moz-border-right-colors: none;
-	-moz-border-bottom-colors: none;
-	-moz-border-left-colors: none;
-	border-image: none;
-	box-shadow: none;
-	font-size: inherit;
-}
-
-.btn-large, .btn-large-custom  {
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12) !important;
-}
-*/
 .popover-content .aui .btn {margin-bottom:10px;}
 
 .aui .btn:hover, .aui .btn:focus {
@@ -745,7 +390,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 
 /* Prevents a box shadow from appearing for the one line inputs*/
 .aui .modal input:not([type="checkbox"]), .aui .main-content input:not([type="checkbox"]), 
-/* DB Comment #setup-donation-content input:not([type="checkbox"]), */
 #gf-bkt-login input:not([type="checkbox"]), #claim-tax input:not([type="checkbox"]), .aui input[type=checkbox]:focus {
 	box-shadow: none !important;
 }
@@ -766,18 +410,12 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 }
 
 .aui .control-group.error input:focus, .aui .control-group.error select:focus,
-	.aui .control-group.error textarea:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
-  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #f8b9b7; 
+.aui .control-group.error textarea:focus, .aui .control-group.success input:focus, 
+.aui .control-group.success select:focus,
+.aui .control-group.success textarea:focus  {
+  box-shadow: none; 
 }
 
-.aui .control-group.success input:focus, .aui .control-group.success select:focus,
-.aui .control-group.success textarea:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
-  -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #7aba7b; 
-}
 .aui .control-group.success input, .aui .control-group.success select,
 .aui .control-group.success textarea, .aui .control-group.error input,
 .aui .control-group.error select, .aui .control-group.error textarea {
@@ -788,10 +426,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	font-size: 1.125em !important;
 	text-decoration: none !important;
 }
-/* DB Comment 
-.aui .dropdown-menu {
-    top: 90%;
-}*/
 
 .aui .collapse.in {
     height: auto;
@@ -803,32 +437,6 @@ body.controls-visible.signed-in div.yui3-dd-drop header.portlet-topper.allow-vie
 	width: inherit !important;
 }
 
-#setup-dtn-carousel img {
-	display: block;
-	line-height: 1;
-	width: 100%;
-	height: 368px;
-	object-fit: cover;
-	object-position: center;
-	-moz-transform-style: preserve-3d; 
-}
-/* DB comment 
-.refine-inputs input[type=checkbox] + label,
-#select-more-causes input[type=checkbox] + label, #select-more-camp input[type=checkbox] + label,
-.popover-filter input[type=checkbox] + label,
-.refine-inputs .checkbox-clone {
-display:inline-block; height:auto; width:auto; background:#FFF; border-radius: 6px;
-border:1px solid #CCC; padding:5px 25px 5px 8px; margin-right:6px; position:relative;
-cursor: pointer; 
-font-size:1em;
-color: #999 !important;
-}
-
-.popover-content ul {
-	margin-top: 10px !important;
-	margin: 0 30px 10px 15px !important;
-}
-*/
 .popover-filter input[type=checkbox] {
 	display: none;
 }
@@ -874,12 +482,7 @@ color: #999 !important;
 
 .delete-logo {
 	display: none !important;
-}     
-/* DB comment 
-.cpn-sgtn-item > .sgtn-img img{
-  max-height: none !important;
-  max-width: 268px !important;
-} */
+}
 
 @media (max-width: 767px) {
 	.cpn-sgtn-item .sgtn-body img{
@@ -890,27 +493,6 @@ color: #999 !important;
 #portlet_verficationaccount_WAR_givingsgportlet label#email {
 	cursor: default;
   font-weight: bold;
-}
-
-
-/*Campaign Title*/
-.steps-content .decor-txtarea {
-	padding: 0 0 0px;
-}
-
-.control-group {
-	margin-top: 1em;
-	position: relative;
-}
-
-#user-about-links .controls {
-	margin-left: 1px;
-}
-
-input[disabled]#campaign-title-textfield {
-	background: #fff;
-	font-weight: bold;
-	color: #000 !important;
 }
 
 @media (min-width: 767px) {
@@ -941,11 +523,7 @@ input[disabled]#campaign-title-textfield {
 .creditcard-option.enets img {
     max-height:20px
 }
-/* DB Comment
-#vw-gft-dtn-prefs tr td label {
-    min-width: 100%;
-}
-*/
+
 /* collapsible section title in mobile */
 @media (max-width: 767px){
 	.acc-toggle.minimal {
@@ -959,38 +537,9 @@ input[disabled]#campaign-title-textfield {
 	margin : 0px;
 }
 
-/* campaign display donor image max height */
-div.charity-donors img.dr-img { 
-	max-height: 50px; 
-	min-height: 50px; 
-}
-
-@media (max-width: 767px){
-	#portlet_favouritenpo_WAR_givingsgportlet .cpn-sgtn-item {
-		height: auto !important;
-	}
-}
-/* DB COmment
-.aui .volunteer-contact .select-like button {
-	background-color: #fff;
-	border-radius: 0;
-	border-bottom: 1px solid #ccc !important; 
-	padding: 5px 10px 0px 5px !important;
-	text-align: left;
-    color: #333;
-    transition: none;
-}
-*/
 .aui .volunteer-contact .small {
 	font-size: .85em;
 }
-/* DB COmment
-.aui .volunteer-contact .select-like button .caret {
-    margin-top: 2px;
-    border: none;
-    font-weight: 700;
-    font-size: 1.2em;
-} */
 
 .aui .volunteer-contact #modal481 {
 	position: absolute;
@@ -1009,40 +558,13 @@ div.charity-donors img.dr-img {
 	color: #9DC9EE !important;
 	text-decoration: none;
 }
-/* DB Comment
-.aui .volunteer-contact .table-actions .input-search input {
-	height: 20px;
-}
-
-.aui #selAmount .sod_option.custom .customAmt {
-	-webkit-user-select: auto;
-}
 
 /********************************/
 /******************* CI *********/
 /********************************/
-/* DB Comment
-.aui .btn.active, .aui .btn:active {
-    box-shadow: none;
-}
-
 #login_button, #btnDonate, .btn-primary, .btn-success, #donate-buttons .btn.active, .preset-amts .btn-ghost:hover, .preset-amts .btn-ghost.active, .btn-toggle .btn.active {
     border: medium none;
    /*  font-weight: 300 !important; */
-}
-
-/*
-.open-more, .btn-more-img, .btn-ghost {
-	background: #FFF none repeat scroll 0% 0%;
-	border: medium none !important;
-	transition: none 0s ease 0s;
-	font-weight: 300 !important;
-	padding: 7px !important;
-	border-radius: none !important; 
-}*/
-/* DB Comment
-.open-more, .btn-more-img, .btn-ghost {
-    border-radius: 6px !important;
 }
 
 /* easy donation add more donation button */
@@ -1055,22 +577,7 @@ div.charity-donors img.dr-img {
 	font-weight: 400 !important;
 	border-radius: 6px !important;
 }
-/* DB Comment
-.preset-amts button, #donate-buttons button {
-    width: 70px;
-    height: 40px !important;
-    margin: 10px 4px;
-    border: 1px solid #CCC !important;
-    border-radius: 6px !important;
-    outline: medium none;
-}
 
-#donate-buttons button {
-    width: 46% !important;
-    margin: 8px 2% !important;
-    font-size: 1.25em !important;
-}
-*/
 #signinmodal .checkbox input[type="checkbox"] {
     margin-top: 2px;
     margin-right: 8px;
@@ -1089,12 +596,6 @@ div.charity-donors img.dr-img {
 .sod_select.open .sod_list_wrapper {
     min-width: 170px;
 }
-/* DB Comment
-#selAmount {
-	line-height: 1.9em !important;
-	height: 45px !important;
-	margin-bottom:10px;
-} */
 
 .box-footer {
     padding-top: 10px;
@@ -1103,12 +604,6 @@ div.charity-donors img.dr-img {
 /********************************/
 /******************* COLORS *****/
 /********************************/
-
-.aui select, .aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
-    color: #999 !important;
-    font-weight: 400 !important;
-}
-
 .aui input[disabled]{
   border-color: #eee !important;
   color: #999 !important;
@@ -1119,11 +614,7 @@ div.charity-donors img.dr-img {
 #addthis_toolbox a, #addthis_toolbox a:link, #addthis_toolbox a:active {
 	color: #FFF !important;
 }
-/* DB Comment
-.open-more, .btn-more-img, .btn-ghost {
-	box-shadow: none !important;
-    border-radius: 6px;
-}*/
+
 #disabledDonate{
 	margin-bottom: 0 !important;
 }
@@ -1136,11 +627,7 @@ div.charity-donors img.dr-img {
 .tax-status .fa-check-circle-o {
   color: #9DC9EE !important; 
 }
-/* DB Comment
-.section-header h5, .section-header h6, .p-section h5, .conf-states-wrapper .box h5 {
-    color: #999 !important;
-}
-*/
+
 .aui .control-group.error .control-label, .control-group.error .control-label{
 	font-weight: 600;
 }
@@ -1169,11 +656,11 @@ div.charity-donors img.dr-img {
 	border-radius: 6px;
 }
 
-.main-image__item .main-image__show-holder p {
+.aui .main-image__item .main-image__show-holder p {
 	display: none !important;
 }
 
-.main-image__item .main-image__show-holder h3 {
+.aui .main-image__item .main-image__show-holder h3 {
     margin-top: 0;
     max-height: 6em;
     overflow: hidden;
@@ -1182,12 +669,16 @@ div.charity-donors img.dr-img {
     color: #FFF;
 }
 
-.main-image__item .main-image__show-holder a {
+.aui .main-image__item .main-image__show-holder h3 a:hover {
+    color: #FFF !important;
+}
+
+.aui .main-image__item .main-image__show-holder a {
 	text-decoration: none;
     color: #FFF;
 }
 
-.main-image__item .main-image__show-holder .btn {
+.aui .main-image__item .main-image__show-holder .btn {
     border: 1px solid #B3E7FF;
     color: #FFF !important;
     background-color: transparent;
@@ -1195,9 +686,9 @@ div.charity-donors img.dr-img {
     min-width: initial;
 }
 
-.main-image__item .main-image__show-holder .btn:hover,
-.main-image__item .main-image__show-holder .btn:active,
-.main-image__item .main-image__show-holder .btn:focus
+.aui.main-image__item .main-image__show-holder .btn:hover,
+.aui.main-image__item .main-image__show-holder .btn:active,
+.aui.main-image__item .main-image__show-holder .btn:focus
  {
 	background-color: #0e678e;
     border: 1px solid #0e678e;
@@ -1205,32 +696,28 @@ div.charity-donors img.dr-img {
 }
 
 @media (min-width: 768px) {	
-	.main-image__item.right picture, .main-image__item.center picture, .main-image__item.left picture {
+	.aui .main-image__item.right picture, .main-image__item.center picture, .main-image__item.left picture {
         margin: 0;
         float: none;
         width: 100%
     }
     
-    .main-image__item.right .main-image__show-holder {
+    .aui .main-image__item.right .main-image__show-holder {
 		right: 14%;
 		bottom: 15%;
     }
 }
 
 @media (max-width: 768px) {
-	.home-slider .cpn-slider-inner.swiper-wrapper {
+	.aui .home-slider .cpn-slider-inner.swiper-wrapper {
 		max-height: none !important;
 	}
 	
-	.home-slider .slider-navigation {
+	.aui .home-slider .slider-navigation {
 		display:none !important;
 	}
 	
-	.home-slider .swiper-button-prev, .home-slider .swiper-button-next {
-		display: block !important;
-	}
-	
-	.main-image__item .main-image__show-holder {
+	.aui .main-image__item .main-image__show-holder {
 		width: 95%;
 	    bottom: 0;
 	    left: 0;
@@ -1240,28 +727,31 @@ div.charity-donors img.dr-img {
 	    padding: 1em 2.5%;
 	}
 	
-	.main-image__item .main-image__show-holder h3 {
+	.aui .main-image__item .main-image__show-holder h3 {
 		float: left;
     	width: 65%;
+    	font-size: 1.25em
 	}
 	
-	.home-slider .main-image__item .main-image__show-holder .btn {
+	.aui .home-slider .main-image__item .main-image__show-holder .btn {
 		margin-left: 2%;
 		max-width: 25%;
-		padding: 10px 25px !important;
-	}
+		display: inline-block;
+	} 
 }
 
 @media only screen and (max-width: 599px) {
-	.main-image__item .main-image__show-holder h3 {
+	.aui .main-image__item .main-image__show-holder h3 {
 		float: none;
 		font-size: 1em;
 		width: auto;
 		text-align: center;
 	}
 	
-	.home-slider .main-image__item .main-image__show-holder .btn {
+	.aui .home-slider .main-image__item .main-image__show-holder .btn {
 		display: none;
+		background-color: rgba(23,164,225,0.8);
+		margin: 0 !important;
 	}
 }
 
@@ -1278,29 +768,10 @@ div.charity-donors img.dr-img {
   }
 }
 
-.home-slider .swiper-slide {
+.aui .home-slider .swiper-slide {
 	border: 0px;
 	min-height: 350px;
 }
-/* DB comment
-.home-slider .swiper-slide picture{
-	min-height: inherit;
-}
-
-.aui .home-slider .swiper-slide picture img{
-	margin-top: 0;
-}
-
-.home-slider .slider-navigation{
-	bottom: 0px !important;
-}
-
-.aui .navbar-inverse .navbar-inner {
-	background-color: transparent !important;
-	background: none;
-    box-shadow: none;
-}
-*/
 
 /* button, input disabled class  */
 .button-disabled {
@@ -1324,18 +795,7 @@ div.charity-donors img.dr-img {
 #_145_dockbarMessages .footer{
 	background: none !important;
 }
-/* DB comment
-#copy-url {
-    font-size: 16px !important;
-    border-radius: 0 4px 4px 0 !important;
-    border: solid rgb(204, 204, 204) 1px !important;
-}
 
-#cpn-body {
-	height: inherit !important;
-	position: relative; 
-}
-*/
 div.toggle-cpn-body	.cpn-body p , #cpn-meta .cpn-body p {
 	white-space: pre-line;
 }
@@ -1385,32 +845,15 @@ div.clickable>a.img-placeholder-btn {
     width: 200px;
 }
 
-.carousel-youtube-link-label {
-	width: 75%;
-	font-size: 12px !important;
+.carousel-youtube-link-input {
+	display: block !important;
+	width: 100%;
 }
 
-@media (max-width: 1200px) {
-	.carousel-youtube-link-input {
-    	width: 450px !important;
-	}
+.img-browse-btn .input-prepend {
+	width: 100%;
+	margin-top: 10px;
 }
-
-@media (max-width: 979px) {
-	.carousel-youtube-link-input {
-		width: 90% !important;
-	}
-}
-
-@media (max-width: 767px) {
-	.carousel-youtube-link-input {
-		display: block !important;
-	    width: 200px !important;
-	    margin-top: 8px !important;
-	    border: solid 1px #ccc !important;
-	}
-}
-
    
 
 /***************************************************************************
@@ -1444,83 +887,8 @@ div.clickable>a.img-placeholder-btn {
 }
 
 /***************************************************************************
-							Home page causes
-***************************************************************************/
-/* DB comment
-.aui .journal-content-article #manage-all-causes .cause-box a h4 {
-	color: #FFFDFD !important;
-	text-align: center;
-} */
-
-/***************************************************************************
-							Footer
-***************************************************************************/
-.aui .pre-footer .acc-toggle {
-	color: #FFF !important;
-}
-
-@media (min-width: 768px) {
-	.aui .footer-links {
-		margin-left: 0;
-	}
-}
-
-@media ( max-width : 767px) {
-	.aui .pre-footer .acc-toggle {
-		margin: 0 !important;
-	}
-	
-	.aui #mc-embedded-subscribe-form .cpn-url-box {
-		float: none;
-	}
-}
-
-@media (max-width: 767px) and (max-width: 979px) {
-	.aui #mc-embedded-subscribe-form .btn {
-		width: initial;
-	}
-	
-	.aui .pre-footer-social input.span9 {
-		width: 75%;
-	}
-}
-
-.aui #mc-embedded-subscribe-form .cpn-url-box {
-	font-size: inherit;
-}
-
-.aui #mc-embedded-subscribe-form .input-append input {
-	-webkit-border-radius: 0;
-	-moz-border-radius: 0;
-    border-radius: 0;
-    font-weight: 500 !important;
-}
-
-.aui #mc-embedded-subscribe-form .input-append button {
-	-webkit-border-radius: 4px !important;
-	-moz-border-radius: 4px !important;
-	border-radius: 4px !important;
-    padding: 8px 10px;
-    margin-top: 0;
-    font-size: 14px;
-}
-
-.aui #mc-embedded-subscribe-form .input-append button:hover,
-.aui #mc-embedded-subscribe-form .input-append button:active,
-.aui #mc-embedded-subscribe-form .input-append button:focus {
-	background-color: #0E678E;
-    color: #FFF;
-}
-
-
-.aui .footer-ul {
-	margin-left: 0;
-}
-
-/***************************************************************************
                              DASHBOARD PROFILE
 ***************************************************************************/
-
 .dashboard .panel-title span{
 	clear: both !important;
 }
@@ -1612,14 +980,7 @@ div.clickable>a.img-placeholder-btn {
 		width:100% !important;
 	}
 }
-/***************************************************************************
-                            Sign up Modal
-***************************************************************************/
-@media (max-width: 168px) {
-	#_58_btn_non_p_o button{
-		height:inherit !important;
-	}
-}
+
 /***************************************************************************
                             Carousel Image Indicator
 ***************************************************************************/
@@ -1660,15 +1021,9 @@ div.clickable>a.img-placeholder-btn {
 .select-like button:focus{
     border-bottom-color: #999;
 }
-/* DB Comment
-.sod_select:after{
-    color:#666;
-} */
+
 .sod_select:before{
     display: none;
-}
-.cpn-sgtn-item .txt-npo {
-  min-height: 51px;
 }
 
 /***************************************************************************
@@ -1710,10 +1065,10 @@ div.clickable>a.img-placeholder-btn {
 /***************************************************************************
                                   Swipers
 ***************************************************************************/
-/* DB COmment .swiper-button-prev,*/ .swiper-container-rtl .swiper-button-next{
+.swiper-container-rtl .swiper-button-next{
   left:0;
 }
-/* DB COmment .swiper-button-next, */.swiper-container-rtl .swiper-button-prev{
+.swiper-container-rtl .swiper-button-prev{
   right: 0;
 }
 
@@ -1788,15 +1143,6 @@ div.clickable>a.img-placeholder-btn {
 }
 
 /***************************************************************************
-     Filter for listing
-***************************************************************************/
-/* DB COMMENT
-//[NPO Listing] removed coz affected the gaps when selecting causes
-.form-control.inline-block.inner span {
-/* 	display: inline-block; 
-}*/
-
-/***************************************************************************
      Edit Volunteer Activity
 ***************************************************************************/
 input.strike-through{
@@ -1814,17 +1160,11 @@ input.strike-through{
 #jira-353-content .volunteer-event.control-group{
 	  margin-top: 0px;
 }
-#volunteer-step-3 .img-browse-btn .carousel-youtube-link-input{
-		width: auto !important;
-}
-
-.time-fields-wrapper .volunteer-event.control-group input[type="text"] {
-    padding-right: 6px !important;
-}
 
 .duration-disabled {
     cursor: default;
     pointer-events: none;
+    opacity: 0.8;
 }
 
 @media (max-width: 767px) {
@@ -1880,8 +1220,6 @@ input.strike-through{
 	}
 }
 
-
-
 @media (min-width: 438px){
 	.btn-large-custom-max-height {
 		height:100% !important;
@@ -1936,7 +1274,6 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 		  white-space: nowrap;
 		  overflow: hidden;
 	}
-
 }
 
 /***************************************************************************
@@ -1993,40 +1330,10 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 		min-height: 300px;
 	}
 }
-/***************************************************************************
-    Home page: trending campaign 
-***************************************************************************/
-.aui #home-trending-campaigns .ttl-row .btn {
-	padding: 10px 25px !important;
-	font-size: 14px;
-}
-
-.aui #home-trending-campaigns .ttl-row .btn:hover, .aui #home-trending-campaigns .ttl-row .btn:active, .aui #home-trending-campaigns .ttl-row .btn:focus {
-	background-color: #0E678E;
-	color: #FFF;
-}
-
-.aui #home-trending-campaigns .btn-large-custom {
-    height: 48px;
-    text-transform: uppercase;
-    padding-left: 30px;
-    padding-right: 30px;
-    font-size: 1em;
-}
-
-.aui [data-icon]:before {
-	font-family: "Roboto", Arial, sans-serif;
-}
-
 
 /***************************************************************************
     ADDED : APPLY BLUE-CI, overwriting aui default
 ***************************************************************************/
-/*DB Comment
-#wrapper {
-    padding-top: 70px !important;
-    position: relative;
-}*/
 
 @media (max-width: 767px) {
 	#wrapper {
@@ -2040,12 +1347,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 	    width: 100%;
 	}
 }
-/* DB COMMENT
-.aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6 {
-    font-weight: normal;
-    color: #141414;
-} 
-*/
+
 .aui .modal-footer {
     background: #F5F5F5;
     border-top: 0px solid rgb(221, 221, 221);
@@ -2061,11 +1363,7 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 /***************************************************************************
     ADDED : APPLY BLUE-CI, overwriting giving sg by ufinity
 ***************************************************************************/
-/* DB COMMENT
-#custom-amt-input .button-input {
-	font-size: 1em !important;
-}
-*/
+
 .aui button.close, .aui button.btn.close {
 	min-width: 50px;
 }
@@ -2076,117 +1374,28 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 	}
 }
 
-#_58_btn_individual, #_58_btn_non_p_o, #_58_btn_corporate {
-    border-radius: 0px !important;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.16), 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
-    margin-left: -5px;
-    min-height: 85px;
-    margin-top: 0px !important;
-    width: inherit;
-    max-width: 190px;
-}
-
-#_58_btn_individual {
-	border-top-left-radius: 8px !important;
-    border-bottom-left-radius: 8px !important;
-}
-
-#_58_btn_corporate { 
-	border-top-right-radius: 8px !important;
-    border-bottom-right-radius: 8px !important;
-}
-
-@media (min-width: 1200px) {
-	#_58_btn_individual, #_58_btn_non_p_o, #_58_btn_corporate {
-	    min-width: 300px;
-	}
-}
-
-@media (min-width: 979px) {
-	#_58_btn_individual, #_58_btn_non_p_o, #_58_btn_corporate {
-	    max-width: 280px;
-	}
-}
-
-@media (max-width: 580px) {
-	#_58_btn_individual, #_58_btn_non_p_o, #_58_btn_corporate {
-	     max-width: 33.3%;
-	}
-}
-
-#portlet_managecampaigns_WAR_givingsgportlet .cpn-suggestions,
-.wrapper-npoListing .cpn-suggestions {
-	padding: 0px !important;
-	margin: 0px !important;
-}
-
-#portlet_managecampaigns_WAR_givingsgportlet .cpn-sgtn-item {
-	height: auto !important;
-}
-
 /***************************************************************************
     ADDED : APPLY BLUE-CI, changes to be made on giving sg / blue ci .css
 ***************************************************************************/
 
 #tmpGender input{
-	width: 10% !important;
+	width: 20px !important;
 }
 
-/* set margin to 0 as we already apply margin value for liferay #wrapper*/
-/* DB COMMENT
-@media only screen and (min-width: 769px) {
-	.section-page {
-	    margin-top: 0px !important;
-	}
-}
-
-.section-page {
-    margin-top: 0px !important;
-}
-*/
 .boxed-wrapper {
     margin-top: 0px !important;
 }
-
-/* added important to overwrite aui default responsive rule*/
-/* DB COMMENT
-@media (max-width: 979px) {
-	.row-fluid .span6, .row-fluid .span4, #cpn-meta .row-fluid .span7 {
-	    width: 100% !important;
-	    margin: 0;
-	    padding: 0;
-	}
-}*/
 
 /* added important to overwrite aui indicator*/
 .landing-cpn-slider-wrapper span.swiper-pagination-bullet.swiper-pagination-bullet-active, .carousel-indicators li.active {
     background-color: #17A4E1 !important;
 }
-/* DB COMMENT
-.btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-    background-color: #17a4e1 !important;
-    color: #FFF !important;
-}
-*/
+
 /* overwrite giving sg style .aui .btn-success */
 .aui .btn-success.m-bot10, .aui .btn-default.m-bot10 {
 	margin-bottom: 10px !important;
 }
 
-.cpn-sgtn-item .sgtn-img {
-    background: white;
-}
-/* DB COMMENT
-.preset-amts button, #donate-buttons button, #vol-buttons button {
-    font-size: 16px !important;
-    border: 1px solid #CCC !important;
-    border-radius: 4px !important;
-}
-
-#setup-dtn-carousel {
-    border: 1px solid #CCC !important;
-}
-*/
 .fr-widget > h4 {
     margin-top: 20px !important;
 }
@@ -2200,23 +1409,6 @@ button#manage-volunteer-contacts, button#start-volunteer-activity{white-space: n
 	margin-left: 0px;
 }
 
-/* npo listing button round */
-/* DB COMMENT
-button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
-.open-more, .btn-more-img {
-	border-radius: 6px !important;
-}
-
-.btn-toggle .btn.active:hover, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, #login_button:hover, #LoginForm .btn:active, #login_button:focus, .btn-primary:active, .btn-primary:focus, .btn-success:active, .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, .add-bottom-lst input:focus {
-    background-color: #0E678E !important;
-    color: #fff !important;
-}
-
-#login_button, .btn-primary, .btn-success, .add-bottom-lst input, #LoginForm .btn, .btn-toggle .btn.active {
-    background-color: #17A4E1 !important;
-    color: #FFF !important;
-}
-*/
 @media (max-width: 979px) {
 	.upload-section .input-append {
 	    padding-left: 2px;
@@ -2266,34 +1458,16 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 }
 
 @media (max-width: 979px) {
-	/* .aui #causes-wrapper .span12 {
-		min-height: 70px;
-	} 
-	.cause-box.inline-mobile input[type=checkbox] + label:before {
-		width: 245px !important;
-		left: 0px !important;
-	}
-	.cause-box input[type=checkbox] + label:before {
-		max-width: 150px;
-	}*/
-	
 	.cause-box input[type=checkbox]:checked + label:after {
 		right: 25px;
 	}
 }
 
-
 @media (max-width: 979px) and (min-width: 768px) {
-
 	.donation-wrapper .cause-box input[type=checkbox] + label:before,
 	#orgCausesInfo .cause-box input[type=checkbox] + label:before {
 	    max-width: 90%;
 	}
-	/* DB commment
-	#orgCausesInfo .cause-box.span4,  #causes-wrapper:not(.swiper-wrapper) .cause-box{
-		width: 100% !important;
-		margin: 0 !important;
-	} */
 	
 	.donation-wrapper .cause-box input[type=checkbox] + label:before,
 	#orgCausesInfo .cause-box input[type=checkbox] + label:before {
@@ -2310,12 +1484,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 }
 
 @media (max-width: 767px) {
-	/*DB comment
-	#orgCausesInfo .cause-box, #causes-wrapper:not(.swiper-wrapper) .cause-box{
-	    height: 50px !important;
-	    margin: 0 !important;
-	} */
-	
 	#orgCausesInfo .cause-box input[type="checkbox"] + label::before { 
 		bottom: 0px;
 		left: 0px;
@@ -2323,131 +1491,13 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 		margin: auto;
 		max-width: 90%;
 	}
-	/*DB comment
-	.cause-box input[type=checkbox] + label:before {
-		max-width: 300px;
-	}
-	#causes-wrapper:not(.swiper-wrapper) .cause-box.inline-mobile.span4 {
-	    max-width: 277px !important;
-    	height: 62px !important;
-    	margin: 10px 0px !important;
-	} 
-	.cause-box.inline-mobile input[type=checkbox] + label:before {
-	    background-color: white !important;
-	}
-	.cause-box input[type=checkbox]:checked + label:before {
-	    background: #B3E7FF !important;
-	}
-	.cause-box.inline-mobile input[type=checkbox] + label:before {
-	    border: 1px solid #cccccc !important;
-        padding-left: 25px !important;
-	}
-	
-	#setup-donation-wrapper #causes-wrapper:not(.swiper-wrapper) .cause-box {
-	    height: 62px !important;
-	}
-	
-	#setup-donation-wrapper  #causes-wrapper:not(.swiper-wrapper) {
-	    margin-top: 20px !important;
-	}*/
 }
-/*DB comment
-.cause-box input[type=checkbox]:checked + label:before {
-    background: #B3E7FF;
-}
-
-.cause-box input[type=checkbox] + label:before {
-    border-radius: 8px !important;
-    padding: 5px 3px !important;
-}
-
-#causes-wrapper:not(.swiper-wrapper) .cause-box {
-    border: none !important;
-}
-*/
 .cause-box input[type=checkbox]:checked + label:after {
     display:none !important;
     top: 3px !important;
     right: 0px !important;
 }
-/*DB comment
-.cause-box input[type=checkbox] + label {
-    height: 0px !important;;
-}
 
-.cause-box.inline-mobile {
-	white-space: nowrap !important;
-}
-
-#setup-donation-wrapper .cause-box a, #orgCausesInfo .cause-box a{
-    display: none;
-}
-
-#causes-wrapper:not(.swiper-wrapper) .control-group.error {
-	clear:both;
-}
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
-.img-box.animal {
-  background-image: url("/givingsg-theme/images/img-causes-animal.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label,
-.img-box.arts {
-  background-image: url("/givingsg-theme/images/img-causes-arts.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(1) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label,
-.img-box.children {
-  background-image: url("/givingsg-theme/images/img-causes-children.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
-.img-box.community {
-  background-image: url("/givingsg-theme/images/img-causes-community.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label,
-.img-box.disabilities {
-  background-image: url("/givingsg-theme/images/img-causes-disabilities.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(2) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label,
-.img-box.education {
-  background-image: url("/givingsg-theme/images/img-causes-education.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
-.img-box.elderly {
-  background-image: url("/givingsg-theme/images/img-causes-elderly.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label,
-.img-box.families {
-  background-image: url("/givingsg-theme/images/img-causes-families.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(3) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label,
-.img-box.health {
-  background-image: url("/givingsg-theme/images/img-causes-health.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
-.img-box.humanitarian {
-  background-image: url("/givingsg-theme/images/img-causes-humanitarian.jpg") !important; background-size: 100px 100px;}
-  
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label,
-.img-box.nature {
-  background-image: url("/givingsg-theme/images/img-causes-nature.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(4) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label,
-.img-box.public {
-  background-image: url("/givingsg-theme/images/img-causes-public.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(1) input[type=checkbox] + label,
-.img-box.social {
-  background-image: url("/givingsg-theme/images/img-causes-social.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(2) input[type=checkbox] + label,
-.img-box.sports {
-  background-image: url("/givingsg-theme/images/img-causes-sports.jpg") !important; background-size: 100px 100px;}
-
-#causes-wrapper > .span12:nth-child(5) .cause-box.inline-mobile:nth-child(3) input[type=checkbox] + label,
-.img-box.women {
-  background-image: url("/givingsg-theme/images/img-causes-women.jpg") !important; background-size: 100px 100px;}
-*/
-  
  /* NPO Listing */
 #npo-listing .bg-lightgrey { 
 	background:url(../images/img-header-npolisting.jpg) no-repeat 0 0/cover !important; 
@@ -2469,14 +1519,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 	background-position: right 0px top !important;
 }
 
-#createusermodal .btn-toggle .btn span {
-    width: 100% !important;
-}
-/*
-#npo-listing .listings-wrapper .cpn-sgtn-item {
-    max-height: 410px;
-}
-*/
 .ttl-row h3 {
     width: 100% !important;
     text-align: center !important;
@@ -2494,16 +1536,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 .landing-cpn-slider-wrapper .swiper-button-prev:hover {
     z-index: 100 !important;
 }
-/* DB COmment 
-#setup-donation-content #user-about-links .input-append.input-prepend {
-    width: 85%;
-    float: left;
-}
 
-#setup-donation-content .progress-dots ul li .step-label, #jira-353-content .progress-dots ul li .step-label {
-	font-size: 1em !important; 
-}
-*/
 .steps-content .input-prepend.days-row .txt-days {
     font-size: 1em;
 }
@@ -2520,19 +1553,34 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     padding: 0em !important;
 }
 
+#user-about-links div.decor-field input#shortUrlGenerator {
+	margin-left: 0px !important;
+}
 
-#user-about-links .input-append.input-prepend .add-on:first-child {
-    font-size: 15px !important;
+#user-about-links .input-append.input-prepend, 
+#user-about-links .decor-field.pull-left {
+    width: 100%;
+    float: none;
+}
+#user-about-links {
+	min-height: 230px;
+}
+#user-about-links, #collapse-campaign-url .custom-control-group.error {
+	width:85% !important; margin:0 auto;
+}
+
+#collapse-campaign-url .custom-control-group.error #url-error {display: none; max-height: 90px;}
+
+#collapse-campaign-url #shortUrl {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
 }
 
 .carousel-youtube-link-label {
 	min-height: 20px;
 }
-
-#shortUrl {
-	cursor: initial;
-}
-
 
 .steps-content .add-on {
     margin-left: 1px !important;
@@ -2548,17 +1596,15 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
 	}
 }
 
-
-
 /*************************************/
 /* CI UPDATE FOR 27/11/2015 release
 /*************************************/
-/*DB COMMENT
+/*DB COMMENT*/
 @media (max-width: 767px) and (max-width: 979px) {
-	.aui .btn {
+	.aui .modal .btn {
 	    width: auto;
 	}
-}*/
+}
 
 .aui select, .aui textarea, .aui input[type="text"], .aui input[type="password"], .aui input[type="datetime"], .aui input[type="datetime-local"], .aui input[type="date"], .aui input[type="month"], .aui input[type="time"], .aui input[type="week"], .aui input[type="number"], .aui input[type="email"], .aui input[type="url"], .aui input[type="search"], .aui input[type="tel"], .aui input[type="color"], .aui .uneditable-input {
 	font-size: 100%;
@@ -2569,46 +1615,13 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost,
     line-height: 1.4;
     word-wrap: break-word;
 }
-/* DB Comment
-.aui .control-group.error .control-label, .aui .control-group.error .help-block, .aui .control-group.error .help-inline {
-    color: #F16577 !important;
-}
 
-.aui .control-group.error input, .aui .control-group.error select, .aui .control-group.error textarea {
-    border-color: #F16577 !important;
-}
-
-.aui textarea, .aui input[type="text"], .aui .button-input, .aui .control-group .form-control {
-    font-size: inherit;
-}
-
-.one-column .span4 {
-    margin-top: 40px !important;
-}
-
-.btn-primary:hover, .btn-primary:active, .btn-primary:focus, .btn-success:hover, .btn-success:active, .btn-success:focus, .aui .btn-primary:hover, .aui .btn-primary:active, .aui .btn-primary:focus, .aui .btn-success:hover, .aui .btn-success:active, .aui .btn-success:focus, .add-bottom-lst input:hover, .add-bottom-lst input:active, #btnDonate:hover, #btnDonate:active, #btnDonate:focus, .add-bottom-lst input:focus, #login_button:hover, #login_button:focus, #LoginForm .btn:hover, #LoginForm .btn:active, .gallery-txt-box .btn:hover {
-    background-color: #0E678E !important;
-    color: #FFF !important;
-}
-
-.btn:hover, .btn-large:hover, .btn-floating:hover, .open-more:hover, .btn-more-img:hover, .steps-content .btn-save input:hover, .steps-content .btn-area input:hover, .add-btn-lst li a:hover, .add-bottom-lst input:hover, #user-about-links input#shortUrlGenerator:hover {
-    box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 15px 0 rgba(0, 0, 0, 0.15) !important;
-}
-*/
 .modal .btn.close:focus, 
 .modal .btn.close:focus, 
 .modal .btn.close:hover, 
 .modal .btn.close.active, 
 .modal .btn.active.close {
 	box-shadow: none !important;
-}
-/* DB Comment
-button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more-img, #user-about-links .control-group input#shortUrlGenerator {
-    font-weight: normal !important;
-}
-*/
-.control-group.error .help-block p, .control-group.error .help-block, Â .control-group.error .help-inline {
-    color: #F16577 !important;
 }
 
 .choice-buttons button {
@@ -2629,11 +1642,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 .popover-content .btn.pull-right {
     width: 70px;
 }
-/* DB COmment
-.btn-group.action-btn > .btn:first-child:not(.btn-success) {
-	min-width: 100px;
-    height: 50px;
-}*/
 
 @media (max-width: 979px) {
 	.non-respv .ui.checkbox {
@@ -2652,21 +1660,7 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
 	    width: 110% !important;
 	}
 }
-/* DB Comment
-#cpn-donate-now .box > h4 + .indicate-tdr {
-    padding-left: 30px;
-}
 
-#user-about-links input#shortUrlGenerator {
-	margin-left: 0px !important;
-}
-
-
-#setup-dtn-carousel .carousel-control .fa {
-    font-size: 0.8em !important;
-    color: #17A4E1 !important;
-}
-*/
 .btn:disabled, .aui .btn:disabled {
     color: inherit !important;
 }
@@ -2692,12 +1686,6 @@ button, input[type="submit"], .btn, .aui .btn, .btn-ghost, .open-more, .btn-more
     content: "\f0d7" !important;
 }
 
-@media (max-width: 600px) {
-	#setup-dtn-carousel {
-    	padding-bottom: 0px !important;
-	}
-}
-
 #editDonation h6 {
 	font-size: 0.475em !important;
 }
@@ -2710,11 +1698,7 @@ ul.side-contact-lst {
     margin: 0 !important;
     padding: 0 10px 20px !important;
 }
-/* DB Comment
-.side-contact p .fa {
-    margin-right: 0px !important;
-}
-*/
+
 div.side-contact {
 	padding-left: 10px !important;
 }
@@ -2722,31 +1706,11 @@ div.side-contact {
 #cpn-meta .span4 h5, .contact-us h5 .contact-us h4{
     font-size: 1.125em !important;
 }
-/* DB Comment
-#copy-url, #cpn-url {
-    margin-top: 0px;
-}
-@media (max-width: 979px) {
-	.cpn-url-box input.span10 {
-	    width: 99% !important;
-	}
-}
-*/
 
 .roleSwitch .fa-check-circle:before {
     content: "\f058" !important;
 }
-/* DB Comment
-.fa-minus-circle:before {
-	/* content: "\f058"; */
-   /* DB Comment content: "\f00d" !important;
-}
 
-.fa-check-circle:before {
-	/* content: "\f056"; */
-  /* DB Comment  content: "\f00c" !important;
-}
-*/
 .modal-dtn-amts .dtn-amt-item {
 	cursor: pointer;
 }
@@ -2833,34 +1797,6 @@ div.side-contact {
     margin-bottom: 10px !important;
 }
 
-#home-trending-campaigns .main-content .ttl-row h3 {
-	width: 100%!important;
-	text-align: center!important;
-	font-weight: normal;
-}
-
-@media (max-width: 767px) {
-	#home-trending-campaigns .main-content .ttl-row h3 {
-		width: 65% !important;
-		text-align: left !important;
-	}
-}
-
-::-webkit-input-placeholder {
-   color: #A7A7A7;
-}
-
-:-moz-placeholder { /* Firefox 18- */
-   color: #A7A7A7;  
-}
-
-::-moz-placeholder {  /* Firefox 19+ */
-   color: #A7A7A7;  
-}
-
-:-ms-input-placeholder {  
-   color: #A7A7A7;  
-}
 
 .dashboard .section-title {
     font-size: 1.125em !important;
@@ -2870,20 +1806,12 @@ div.side-contact {
     min-height: 3.44em;
 }
 
-.main-content h3.landing {
-    font-size: 2.75em !important;
-}
-
-h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title {
-    font-size: 2.125em !important;
-}
-
 .cpn-slide-right h3 {
     font-size: 1.5em !important;
 }
 
-/** following are hotfixes in production environment, please remove upon 1.0.3 release*/
 
+/** following are hotfixes in production environment, please remove upon 1.0.3 release*/
 @media (max-width: 979px) {
 	.row-fluid .social-share a {
 		width: 40px !important; 
@@ -2891,9 +1819,9 @@ h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title {
 }
 
 @media (max-width: 767px) {
-	.bg-lightgrey h3.landing {
+	/* .bg-lightgrey h3.landing {
 		font-size: 1.5em !important;
-	}
+	} */
 }
 
 .pre-footer-social .social-share {
@@ -2920,4 +1848,558 @@ h3.landing, #causes-mobile h3, .ttl-row h3, h3.p-title {
 	.wrapper-925 .acc-toggle.landing {
 		font-size: 1.0625em !important;
 	}
+}
+
+/* prevent double cross icon */
+.aui.mobile .controls .btn-search-cancel .icon-remove {
+   display: none;
+}
+
+.row-fluid .centered, .aui .centered, .aui .row-fluid .centered, .aui .row-fluid .social-share .span8, .aui .row-fluid .social-share .span10 {
+    margin-left: auto !important;
+}
+
+.aui #main-nav-header {
+	min-height: 51px;
+}
+
+.aui .pre-footer-social .cpn-url-box {
+	margin: auto !important;
+}
+
+.aui #copy-url {
+	margin-top: 0px;
+}
+
+/* centralize button in modal*/
+.modal .btn {
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
+/* solve text overlap with tdr icon  */
+#cpn-donate-now .box > h4 + .indicate-tdr, #cpn-donate-now .box > h4 + span {
+    padding-left: 30px;
+}
+
+@media (min-width: 1200px) {
+	.aui .modal .row-fluid [class*="span"]:not(.alert-info) {
+	    margin-left: 0;
+	}
+}
+
+@media (max-width: 767px) and (max-width: 979px) {
+	.aui .btn {
+	    display: inline-block;
+	    width: auto;
+	}
+}
+
+#btnLoadMore {
+	margin: auto;
+}
+
+.aui .modal .btn-block { 
+	width: auto;
+}
+
+.aui .btn-group > .btn:first-child {
+    margin-left: 0 !important;
+}
+
+.aui .btn-group > .btn + .btn {
+    margin-left: -1px !important;
+}
+
+.aui .btn-group > .btn:first-child, .aui .btn-group > .btn + .btn {
+   margin-right: -4px !important;
+   margin-bottom: 0px;
+}
+
+.aui .volunteering .btn-group > .btn:first-child, .aui .volunteering .btn-group > .btn + .btn {
+   margin-right: 0px !important;
+}
+
+.aui .volunteering .btn-group.open .btn.dropdown-toggle {
+    background-color: #eaeaea;
+}
+
+.aui .volunteering .btn-group > .btn + .dropdown-toggle {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.volunteering .row-fluid .span4, .aui .volunteering .row-fluid .span4 {
+	    width: 31.49171%;
+        margin: auto 0;
+	}
+}
+
+@media (max-width: 767px) {
+	.volunteering #sortable .span4.person {
+	    margin-top: 0px !important;
+	}
+
+	.aui .volunteering .data-list li .person-actions {
+	    min-height: 100px;
+	}
+	
+	.volunteering .select-like, 
+	.volunteering #sortable.table-section .t-header .select-like.pull-left,
+	.volunteering .event-header-titles .btn-group.pull-left {
+		clear: both;
+	    float: none !important;
+    	text-align: center;
+	}
+	
+	.volunteering #sortable .span1.pull-left {
+		text-align: center;
+	}
+	
+	.aui .volunteering .checkbox {
+		padding-left: 0px;
+	}
+	
+	.aui .volunteering #tab00 .data-list .data-list-item {
+		padding-right: 0px;
+	}
+}
+
+.aui .volunteering .select-like.hidden {
+	display: none;
+}
+
+.aui .volunteering .data-list li .person .label {
+	margin-left: 0px;
+	margin-top: 10px;
+}
+
+.aui .volunteering .data-list .btn.manage-sign-up {
+	margin-top: 10px;
+}
+
+/* button group styling for sign up and donation model*/
+#createusermodal .btn-toggle .btn span {
+    width: 100% !important;
+    text-align: center;
+}
+
+#createusermodal .btn-group > .btn {
+    min-height: 80px;
+    min-width: 33%;
+    max-width: 33%;
+}
+
+@media (max-width: 767px) {
+	.aui .btn-group > .btn {
+	    display: inline-block;
+	}
+}
+
+.payType .btn-group > .btn:first-child, .payType .btn-group > .btn + .btn {
+	margin: 0px !important;
+}
+
+.payType {
+	margin: 0px 30px !important;
+}
+
+/*************** listing *****************/
+#portlet_managecampaigns_WAR_givingsgportlet .cpn-suggestions,
+.wrapper-npoListing .cpn-suggestions {
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+#portlet_managecampaigns_WAR_givingsgportlet .cpn-sgtn-item {
+	height: auto !important;
+}
+
+.wrapper-npoListing .listings-wrapper .cpn-sgtn-item,
+#volunteer-listing .listings-wrapper .cpn-sgtn-item {
+	max-height: 420px;
+    min-height: 420px;
+}
+
+#portlet_search_WAR_givingsgportlet .listings-wrapper .cpn-sgtn-item {
+    max-height: 435px;
+    min-height: 435px;
+}
+
+#portlet_managecampaigns_WAR_givingsgportlet .listings-wrapper .cpn-sgtn-item {
+    max-height: 730px;
+    min-height: 590px;
+}
+
+.aui .cpn-sgtn-item .sgtn-body .heading-group { 
+    max-height: 6.5em;
+} 
+
+.cpn-sgtn-item .sgtn-img {
+    background: white;
+}
+
+.aui .cpn-sgtn-item .sgtn-img {
+	max-width: 270px;
+	min-height: 136px;
+}
+
+.aui .cpn-sgtn-item .box-r-footer,
+.aui .cpn-sgtn-item .sgtn-img .box-r-footer {
+   background: transparent;
+}
+
+#home-trending-campaigns .cpn-sgtn-item .sgtn-img {
+    min-height: 152px;
+}
+
+.aui .swiper-container-horizontal .cpn-suggestions .swiper-slide {
+	display: block !important;
+	max-width: 270px !important;
+	max-height: 500px !important;
+}
+
+.listings-wrapper #favNPOListing .cpn-sgtn-item {
+    margin: 1em 0.35em 0.5em;
+    margin-top: 1em;
+    margin-right: 0.35em;
+    margin-bottom: 0.5em;
+    margin-left: 0.35em;
+}
+
+/* time text color for volunteer activity card */
+.cpn-suggestions .cpn-sgtn-item span.block,
+.listings-wrapper .cpn-sgtn-item span.block,
+.listings-wrapper .campaign-stats {
+    color: #172A35;
+}
+
+/********************************/
+
+/* footer */
+.pre-footer-social input.span9 {
+    width: 71% !important;
+} 
+
+.aui .cpn-url-box button, .aui .input-append .btn:last-child { 
+	margin-top:0px;
+} 
+
+@media (max-width: 979px) and (min-width: 768px) {
+	.aui .pre-footer-social .social-share{margin-left:0px !important}
+}
+
+@media (max-width:480px) {
+    .pre-footer-social #mc-embedded-subscribe-form .cpn-url-box { width:80%; }
+    .pre-footer-social #mc-embedded-subscribe-form .cpn-url-box input { display: block; width:100% !important; }
+    .pre-footer-social #mc-embedded-subscribe-form .cpn-url-box button { 
+        width:50%; margin:10px auto; border-radius:6px; display: block; }
+}
+
+.aui .pre-footer .acc-toggle {
+    color: #fff !important;
+}
+
+/* cart checkout button and multiple donation page */
+#vw-gift-bkt-donate .gf-bkt tbody tr td:first-child{
+    color:#172A35; font-weight:500;
+}
+
+.aui #uf-dockbar-cart .checkout-btn {
+    background: #17A4E1;
+}
+
+/* causes */
+.aui .custom-causes-container .cause-box.span4{
+    max-height: 50px;
+}
+
+.aui .custom-causes-container .cause-box a.mobile-block {
+	display: none !important;
+}
+
+.aui .custom-causes-container .cause-box input[type=checkbox] + label:before  {
+	font: 16px/1.25 "Roboto", Arial, sans-serif;
+	font-size: 1em;
+    line-height: 2em;
+	width: 100%;
+}
+
+.aui .custom-causes-container .cause-box input[type=checkbox] + label:hover:before, 
+.aui .custom-causes-container .cause-box input[type=checkbox]:checked + label:before {
+	color: #fff;
+    background: #17A4E1;
+}
+
+.aui .custom-causes-container .cause-box input[type=checkbox] + label:before  {
+	font: 16px/1.25 "Roboto", Arial, sans-serif;
+	font-size: 1em;
+    line-height: 2em;
+	width: 100%;
+}
+
+.aui .custom-causes-container .cause-box input[type=checkbox] + label:hover:before, 
+.aui .custom-causes-container .cause-box input[type=checkbox]:checked + label:before {
+	color: #fff;
+    background: #17A4E1;
+}
+
+.aui .control-group  .cause-box input[type=checkbox] + label:before  {
+	font: 16px/1.25 "Roboto", Arial, sans-serif;
+	font-size: 1em;
+    line-height: 2em;
+	width: 100%;
+}
+
+.aui .control-group  .cause-box input[type=checkbox] + label:hover:before, 
+.aui .control-group  .cause-box input[type=checkbox]:checked + label:before {
+	color: #fff;
+    background: #17A4E1;
+}
+
+.aui .custom-causes-container .control-group.error {
+	clear:both;
+}
+
+/* centralize causes label in home page*/
+#manage-all-causes .cause-box a h4 {
+    color: #fffdfd!important;
+    text-align: center;
+}
+
+/* RESPOnSIVE CAROUSEL IMAGE FOR NPO and CAMPAIGN PAGE*/
+.swiper-button-prev, 
+.swiper-button-next, 
+.aui .swiper-button-prev, 
+.aui .swiper-button-next, 
+.carousel-control, .aui .carousel-control {
+	display: table !important;
+}
+
+@media (max-width: 767px) {
+	.aui .home-slider .swiper-button-next, .aui .home-slider .swiper-button-prev {
+		display: none !important;
+	}
+}
+
+#dtn-cause-images {
+	overflow: visible;
+}
+
+#setup-dtn-carousel img {
+	display: block;
+	line-height: 1;
+	width: 100%;
+    height: 368px;
+    min-height:368px;
+	object-fit: cover;
+	object-position: center;
+	-moz-transform-style: preserve-3d; 
+}
+
+@media (max-width:480px) {
+	#setup-dtn-carousel img {
+	    height: 221px;
+	    min-height: 221px;
+	}
+}
+
+@media (max-width: 767px) {
+	#editDonationLink {
+		float:none;
+	}
+	
+	.image-upload-toggle.img-browse-btn {
+	    background: rgba(0,0,0,0.2);
+	    padding: 0px 20px;
+	}
+}
+
+/* text area styling for campaign, profile, vol */
+.aui textarea, .aui .steps-content textarea, .aui .pretty-text textarea {
+	height: auto;
+    min-height: 120px !important;
+    overflow: auto;
+    resize: vertical;
+}
+
+/* fix time picker popup position issue */
+.aui body .yui3-widget.timepicker-popover .popover-content, 
+.aui .yui3-widget.timepicker-popover .popover-content {
+	width: 100%;
+}
+.aui body .yui3-widget.timepicker-popover .yui3-widget.yui3-widget-positioned {
+	width: 270px !important;
+}
+
+/* manage volunteer attendance page */
+.markAllAsAttendedContainer {
+	margin-top:2px;
+}
+.markAllAsAttendedContainer .volunteer-check + label {
+	margin-top:10px
+}
+#markAllAsAttended {
+	line-height: 2.3;
+	margin-left: 8px;
+}
+
+.aui body .input-append .add-on, .aui body .input-prepend .add-on {
+    border: none;
+    font-size: 16px;
+    line-height: 1.8;
+    padding: 0;
+    padding: 6.5px 5px;
+    font-size: 12.8px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: center;
+    background-color: #eee;
+}
+
+/* margin top for role description in campaign creation*/
+.small.grey.m-top20 {
+	margin-top: 20px;
+}
+
+/* margin top for all error page */
+.span12.box.m-top30 {
+	margin-top: 30px;
+}
+
+.aui button.m-top10 {
+	margin-top: 10px;
+}
+
+#gf-bkt-login .control-group.m-top40 {
+	margin-top: 40px;
+}
+
+/* set min height for campaign submission form : issue - 123 */
+form + #secondSection {
+	min-height: 900px;
+}
+
+/* campaign creation button overlap with text due to background color for aui btn class : issue - 138 */
+.aui .start-campaign-area .btn-block a {
+	background:none;
+	padding-left: 0px;
+}
+/* sub campaign / fundraise button allignment issue */
+#cpn-meta .special-btn a.action-link {
+	padding-left: 0px !important;
+}
+
+/* force tdr to be display in mobile */
+#cpn-donate-now .box.hidden-phone.m-top0 {
+	display:block !important
+}
+
+/***************************************************************************/
+/* donors wrapper */
+/* donors wrapper height for load more button */
+/* dr-img height get overidded by .aui img height:auto*/
+/***************************************************************************/
+.dr-img-wrapper.closed {
+    max-height: 130px !important;
+}
+.dr-img-wrapper.open {
+    max-height: 500px !important;
+}
+.aui .dr-img-wrapper .dr-img.img-circle {
+	height: 50px;
+	width: 50px; 
+	max-height: 50px;
+	min-height: 50px;
+}
+
+/***************************************************************************
+    Home page: trending campaign 
+***************************************************************************/
+.aui #home-trending-campaigns .ttl-row .btn {
+	padding: 10px 25px !important;
+	font-size: 14px;
+}
+
+.aui #home-trending-campaigns .ttl-row .btn:hover, 
+.aui #home-trending-campaigns .ttl-row .btn:active, 
+.aui #home-trending-campaigns .ttl-row .btn:focus {
+	background-color: #0E678E;
+	color: #FFF;
+}
+
+.aui #home-trending-campaigns .btn-large-custom {
+    height: 48px;
+    text-transform: uppercase;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1em;
+}
+
+.aui [data-icon]:before {
+	font-family: "Roboto", Arial, sans-serif;
+}
+
+#home-trending-campaigns .main-content .ttl-row h3 {
+	width: 100%!important;
+	text-align: center!important;
+	font-weight: normal;
+}
+@media (max-width: 767px) {
+	#home-trending-campaigns .main-content .ttl-row h3 {
+		width: 65% !important;
+		text-align: left !important;
+	}
+}
+
+
+/* npo title or campaign title in mobile */
+@media (max-width: 767px) {
+	.aui h3.p-title {
+	    font-size: 1.5rem !important;
+	}
+}
+
+/* set font size for subscript form */
+#mce-EMAIL {
+	font-size: 16px;
+}
+
+/* breakword when text overflow out of contact us box */
+.aui .side-contact-lst,
+.side-contact p {
+	overflow: hidden;
+    word-wrap: break-word;
+}
+
+
+
+/* volunteer sign up, require approval font : issue - 136*/
+.summary-wrapper h4.requireApproval {
+	line-height: 20px !important;
+	font-size: 16px;
+}
+
+.aui .m-left0 {
+    margin-left: 0 !important;
+}
+
+@media (min-width: 1200px) {
+	.aui .modal .row-fluid .span6 {
+	    width: 50%;
+	    padding-left: 1.75em !important;
+        padding-right: 1.75em !important;
+	}
+}
+
+
+/* hide tick icon for agree box in donation modal */
+.aui #agree + .help-block {
+    display: none !important;
+}
+
+.aui .control-group.error p.small.grey {
+    color: rgb(241, 101, 119);
 }
