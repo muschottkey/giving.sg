@@ -118,7 +118,7 @@ p.small.text-center { font-size:1em; }
     color:#172A35;
 }
 #collapse-taxdeduc,.collapse.has-focused { overflow:visible; }
-.aui .p-section.row-fluid .collapse.has-focused{overflow:hidden;}
+/*.aui .p-section.row-fluid .collapse.has-focused{overflow:hidden;}*/
 .box.span12.acc-section{margin-bottom:10px !important;}
 .signup-section h2, .signup-section h3, .aui .signup-section h2, .aui .signup-section h3 { margin:0; }
 .bg-giving-blue, .causes li.ico-tdr { 
