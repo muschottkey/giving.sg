@@ -450,7 +450,8 @@ footer.footer a{font-size: 14px;text-decoration: underline;}
 /* .aui .modal, .aui .modal-content, .aui .modal-body { margin:0 auto; overflow-y:initial; } */
 .aui .modal-content, .aui .modal-body { margin:0 auto; overflow-y:initial; }
 .aui .modal-body, .aui .modal-backdrop  { max-height:100%; }
-.aui .modal { position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; /*margin-right:auto;margin-left:auto;*/}
+/* Modal center alignment in html templates margins left and right auto*/
+.aui .modal { position:absolute; margin-bottom:2em; right:0; left:0; max-width:858px; width:100%; margin-right:auto;margin-left:auto;}
 .aui .modal.non-respv { min-width:858px !important; width:100%; }
 .aui .modal.non-respv .modal-body{ min-width:800px !important; width:100%; }
 .aui .modal.fade { display: none; }
@@ -2766,11 +2767,17 @@ aside.profile-nav.mobile-fallback h4, .aui aside.profile-nav.mobile-fallback h4 
     margin:13px 0 0;
 }
 
-/* CODE FOR IC */
+/* CODE FOR 1C */
 .form-group span.small{
     clear: both;
     display: block;
     font-size: 0.875em;
+}
+i.solid{
+    padding:8px;
+    background-color: #B0E1F7;
+    width: 15px;
+    margin-right: 10px;
 }
 
 /* Clear Fix */
