@@ -1728,7 +1728,8 @@ div.side-contact {
 
 @media (max-width: 979px) {
 	div#sidebar.non-respv {
-	    display: none !important;
+		/* Breaks non responsive functionality of the sidebar for non-responsive pages like 768*/
+	    /*display: none !important;*/
 	}
 	.landing-cpn-slider-wrapper h3.text-left {
 	    font-size: 1.2em !important;
@@ -2352,7 +2353,8 @@ form + #secondSection {
 		width: 65% !important;
 		text-align: left !important;
 	}
-}
+}
+
 
 
 /* npo title or campaign title in mobile */
