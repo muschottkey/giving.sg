@@ -18,6 +18,8 @@ h4, .aui h4 {font-size: 1.25em; }                                               
 h5, .aui h5 { font-size:1em; margin: 0.82rem 0 0.656rem 0; }                                 /* 16px */
 h6, .aui h6 { font-size:.875em; margin: 0.5rem 0 0.4rem 0; text-transform:uppercase; }       /* 14px */
 h4, .aui h4, h5, .aui h5 { font-weight:500; }
+h1 small, .aui h1 small { color: #172A35; font-size:.6em; display:block; font-weight:400; }
+
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui span, .aui a, .aui p, 
     .aui blockquote, .aui button, .aui input, .aui label { text-shadow:none; }
 .aui p, .aui p.black {font-size: 1em;line-height: 1.4;margin: 0 0 1em; color:#6a6c6f;}
@@ -35,6 +37,7 @@ a, .aui a, a:link, .aui a:link { color:#17A4E1; text-decoration: underline; }
 
 .modal-body a.underlined{color:#17A4E1;}
 .modal-body a.underlined:hover{color:#0C5676;}
+
 
 /* CONTENT HEADINGS */ /* DISPLAY HEADINGS */
 header a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, .aui header a, .aui h1 a, .aui h2 a, .aui h3 a, .aui h4 a, 
@@ -885,7 +888,7 @@ i.signup-envelope { font-size:5.625em;color: #172A35; }
     }
 .progress-dots ul li .step-dot.active { background:#43AD49; border:solid 1px #43AD49; color:#fff; }
 .progress-dots ul li .step-label{
-    width:65%; padding-left:7px; font-size: 0.8em; line-height: 1.1em; text-align: left; 
+    width:65%; padding-left:3px; font-size: 0.8em; line-height: 1.1em; text-align: left; 
     display:table-cell; vertical-align:middle; float:none; height:30px;
 }
 .boxed-wrapper .progress-dots ul li .step-label { padding-top:7px; font-weight:700; font-size:1em; }
@@ -1363,7 +1366,7 @@ a:hover .qk-org-name , a:hover .qk-org-amt{text-decoration: underline;}
 .conf-states-wrapper{max-width: 400px; position:relative; }
     .conf-states-wrapper > .boxed.no-border.centered { position:absolute; background:#FFF;  }
     .conf-states-wrapper > .boxed.no-border.centered.relative { position:relative; background:#FFF;  }
-.conf-states-wrapper .box.reset.span12 { margin-bottom: 20px;padding-bottom: 0;  padding-left: 0 !important;padding-right: 0!important;}
+.conf-states-wrapper .box.reset.span12 { margin: 0; }
 
 h4.box.reset, .aui h4.box.reset { padding: 1.5em !important; margin-bottom: 1em !important;}
 
@@ -2962,7 +2965,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .dtn-amt-item .dtn-btns { position:absolute; right:0; top:50%; margin-top:-50px; }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
-    h4, .aui h4 { font-size: 1.5em; font-weight:400; } /* 24px */
+    h4, .aui h4 { font-size: 1.375em; font-weight:400; } /* 22px */
     h5, .aui h5{ font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
     #causes-wrapper {max-width: 690px;}
@@ -3027,7 +3030,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     #dtn-add-logo>h4, .aui #dtn-add-logo>h4 { text-align:center !important;}
     .modal .progress-dots { text-align: center; }
     .progress-dots ul li, .progress-dots ul li:first-child, .progress-dots ul li:last-child { width:auto; float:none; }
-    .progress-dots ul li .step-dot{ margin-right:10px; margin-left: 10px; }
+    .progress-dots ul li .step-dot{ margin-right:5px; }
 
     .btn-toggle .btn { width:30%; padding:5px; }
         .btn-toggle .btn:last-child { width:39%; } 
@@ -3064,7 +3067,7 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     /* .aui .modal-body { max-width:280px; } */
     .aui .modal-body { max-width:90%; }
     .aui .boxed-wrapper {max-width:320px;}
-    .aui .boxed-wrapper.wide, .aui .boxed-wrapper.md, .aui .boxed-wrapper.gf {max-width: 610px;}
+    .aui .boxed-wrapper.wide, .aui .boxed-wrapper.md, .aui .boxed-wrapper.gf {max-width: 680px;}
     .aui .sign-up-form { margin-top:50px; border-left:none; }
 
     /* UI Controls - FORM ELEMENTS  */
