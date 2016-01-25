@@ -5,7 +5,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, nav, sectio
 }
 .aui label, .aui input, .aui button, .aui select, .aui textarea { font:16px/1.25 "Roboto", Arial, sans-serif; }
 #wrapper, .aui  #wrapper { padding-top:70px; position: relative; }
-
+body.non-respv {
+    overflow: scroll !important; 
+    min-width: 1002px;
+}
 /* Typography */
 .aui h1, .aui h2, .aui h3, .aui h4, .aui h5, .aui h6{
     font-family: "Roboto", Arial, Helvetica, sans-serif; font-weight:400; 
@@ -188,7 +191,7 @@ label.small.grey{color: #919396;}
     .pagination ul > .disabled > a:focus { cursor: not-allowed; }
 .pagination ul { box-shadow:none; border-radius:none; }
 .pagination ul > li > a, .pagination ul > li > span { border:0; background:none; }
-
+.red{color: #f00;}
 /* UI FORM Controls - CONTROLS / FIELDS */
 .aui textarea, .aui input[type="text"], .aui .button-input, .aui .control-group .form-control {
     font:16px/1.25 "Roboto", Arial, sans-serif; font-size:16px; line-height:1.25; 
@@ -3840,6 +3843,10 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     
     #vw-gft-dtn-prefs .controls {float:right; width:100%; margin-left:0;}
     .data-list li .person-actions{height:auto !important;}
+
+    /*1c*/
+    /* Padding small left */
+    .psl-40{padding-left: 40px !important;}
 }
 
 @media (max-width: 600px) {

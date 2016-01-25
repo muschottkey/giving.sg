@@ -1246,8 +1246,15 @@ for pseudo elements in the custom checkboxes*/
         };
     })(document.createElement("style"));
 
-
-
+    // Set color of * in form labels to red
+    $('form').find('label').each(function(){
+        var text = $(this).text();
+        if(text.substr(-1) == '*'){
+           $(this).html(
+              $(this).html().replace('*', '<i class="red">*</i>')
+           ); 
+        }
+    })
 
     /* PAGINATION PLUGIN */
 
