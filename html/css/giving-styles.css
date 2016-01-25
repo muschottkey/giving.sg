@@ -2968,6 +2968,16 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
     .dtn-amt-item .dtn-btns { position:absolute; right:0; top:50%; margin-top:-50px; }
 }
 @media (max-width: 979px) and (min-width: 768px) { 
+    /* Column widths, bootstrap 3 style */
+    .aui .span-md-6{width: 48.61878% !important;margin-left: 2.76243% !important; }
+    .aui .span-md-6:first-child{margin-left: 0 !important; }
+    .aui .span-md-5{width: 40.05525% !important;}
+    .aui .span-md-5:first-child{margin-left: 0 !important; }
+    .aui .span-md-7{width: 57.18232%!important;}
+    .aui .span-md-7:first-child{margin-left: 0 !important; }
+    .aui [class*="span-md-"]{
+        float: left;
+    }
     h4, .aui h4 { font-size: 1.375em; font-weight:400; } /* 22px */
     h5, .aui h5{ font-size: 1.125em; } /* 18px */
     .left-tablet{text-align: left;}
@@ -3232,6 +3242,16 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 }
 
 @media (max-width: 767px) {
+    /* Column widths, boottrap 3 style */
+    .aui .span-sm-6{width: 48.61878% !important;margin-left: 2.76243% !important; }
+    .aui .span-sm-6:first-child{margin-left: 0 !important; }
+    .aui [class*="span-sm-"]{float: left !important;}
+    .aui .span-sm-12{width: 100% !important;}
+    #jira-353-content .pretty-text textarea.span-sm-12 {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
 	#btn-subAttendance{
 		float:none;
 		width:208px;
@@ -3517,6 +3537,8 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 			background:#fff;
 			color:#6a6c6f !important;
 		}
+        /* Correct collapse from not hhiding well on mobile due to actice section box shadow due to overflow being shown*/
+        .collapse.has-focused{ overflow: hidden;}
     hr.m5, .aui hr.m5 {margin: 0;}
     #preview-label{margin-top: -20px;}
 
@@ -3714,6 +3736,10 @@ body:after, .wrapper:after, .summary-wrapper:after, .cpn-wrapper:after, .conf-st
 
     #jira-353-content #postcode  {
     margin-top: 10px;
+    }
+
+    .no-mg-sm {
+        margin-top: 0 !important;
     }
 
     /* 408 */
